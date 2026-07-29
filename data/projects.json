@@ -1,5 +1,21 @@
 [
   {
+    "slug": "getlexie",
+    "group": "featured",
+    "featured": true,
+    "date": "Jul 2026",
+    "title": "Lexie",
+    "tagline": "Your home's operator",
+    "description": "An AI agent that makes the contractor calls you don't want to make. Describe the problem in a chat thread and Lexie fans out real outbound phone calls to local vendors in parallel, quotes the same scope to each one, negotiates the appointment, and books it. Every call comes back recorded and transcribed, and nothing dials until you confirm.",
+    "image": "/projects/getlexie.webp",
+    "stats": [
+      { "label": "Idea → production", "value": "Under a week" },
+      { "label": "Outbound calls", "value": "Fanned out in parallel" },
+      { "label": "Interface", "value": "Chat — Telegram / SMS" }
+    ],
+    "links": { "project": "https://getlexie.ai" }
+  },
+  {
     "slug": "project-one",
     "group": "agents",
     "date": "Feb 2026",

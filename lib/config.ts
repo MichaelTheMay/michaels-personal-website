@@ -6,7 +6,7 @@ export const siteConfig = {
   // Short bio shown in the hero. Keep it to 2-3 lines. Replace with your own.
   bio: "Builder at heart. I design and ship AI systems — agents, LLM tooling, and the infrastructure that makes them reliable in production.",
   location: "City, Country",
-  email: "you@example.com",
+  email: "michael@michaelmay.dev",
   headshot: "/headshot-placeholder.svg",
   links: {
     github: "https://github.com/MichaelTheMay",
@@ -24,6 +24,9 @@ export const timelineIntro = {
   subhead:
     "Placeholder line. Replace this with a sentence about the theme running through your recent work.",
 };
+
+// Label on the pill shown at the top of a featured project card.
+export const featuredLabel = "Featured";
 
 // Interstitial sentences keyed to a project group. Placeholder copy.
 export const interstitials: Record<string, string> = {

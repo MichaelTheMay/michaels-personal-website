@@ -73,6 +73,31 @@ body {
   box-shadow: 0 24px 60px -24px rgba(139, 92, 246, 0.5);
 }
 
+/* Featured project showcase card */
+.featured-card {
+  position: relative;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(139, 140, 246, 0.22);
+  background:
+    linear-gradient(160deg, rgba(139, 140, 246, 0.08), transparent 55%),
+    var(--surface);
+  box-shadow: 0 30px 80px -50px rgba(139, 92, 246, 0.65);
+}
+
+/* Hairline accent along the top edge */
+.featured-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(139, 140, 246, 0.6),
+    transparent
+  );
+}
+
 /* Timeline rail: vertical accent line + dots on each entry */
 .timeline-rail {
   position: relative;
