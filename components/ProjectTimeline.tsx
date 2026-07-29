@@ -1,16 +1,12 @@
 import projects from "@/data/projects.json";
-import { timelineIntro, interstitials, featuredLabel } from "@/lib/config";
+import { timelineIntro, interstitials } from "@/lib/config";
 import { Reveal } from "@/components/Reveal";
+import { TimelineBeam } from "@/components/TimelineBeam";
 
 type ProjectLinks = {
   project?: string;
   github?: string;
   youtube?: string;
-};
-
-type ProjectStat = {
-  label: string;
-  value: string;
 };
 
 type Project = {
@@ -20,12 +16,8 @@ type Project = {
   title: string;
   description: string;
   image: string;
-  featured?: boolean;
-  tagline?: string;
   badge?: string;
   stars?: string;
-  stats?: ProjectStat[];
-  stack?: string[];
   links?: ProjectLinks;
 };
 
@@ -54,132 +46,23 @@ function PlayIcon() {
   );
 }
 
-function ProjectLinkRow({ links }: { links: ProjectLinks }) {
-  return (
-    <div className="flex items-center gap-3 text-muted">
-      {links.youtube && (
-        <a href={links.youtube} target="_blank" rel="noopener noreferrer" aria-label="Video" className="hover:text-foreground">
-          <PlayIcon />
-        </a>
-      )}
-      {links.github && (
-        <a href={links.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-foreground">
-          <GitHubMark />
-        </a>
-      )}
-    </div>
-  );
-}
-
-/** "https://www.getlexie.ai/" -> "getlexie.ai" for link labels. */
-function hostLabel(url: string) {
-  try {
-    return new URL(url).host.replace(/^www\./, "");
-  } catch {
-    return url;
-  }
-}
-
-function FeaturedCard({ project }: { project: Project }) {
-  const links = project.links ?? {};
-  const href = links.project || links.github;
-
-  return (
-    <article className="featured-card overflow-hidden">
-      <a
-        href={href || "#"}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block overflow-hidden border-b border-border"
-        tabIndex={-1}
-        aria-hidden={Boolean(links.project)}
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={project.image}
-          alt={`${project.title} — product screenshot`}
-          width={1600}
-          height={900}
-          className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-        />
-      </a>
-
-      <div className="p-6 sm:p-8">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="rounded-full bg-accent-soft px-2.5 py-1 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
-            {featuredLabel}
-          </span>
-          <span className="font-mono text-xs text-muted">{project.date}</span>
-        </div>
-
-        <div className="mt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            {project.title}
-          </h3>
-          {project.tagline && (
-            <p className="text-lg text-accent/90">{project.tagline}</p>
-          )}
-        </div>
-
-        <p className="mt-4 max-w-2xl leading-relaxed text-muted">
-          {project.description}
-        </p>
-
-        {project.stats && project.stats.length > 0 && (
-          <dl className="mt-7 grid grid-cols-1 gap-x-8 gap-y-5 border-t border-border pt-6 sm:grid-cols-3">
-            {project.stats.map((stat) => (
-              <div key={stat.label}>
-                <dt className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
-                  {stat.label}
-                </dt>
-                <dd className="mt-1.5 font-medium text-foreground">{stat.value}</dd>
-              </div>
-            ))}
-          </dl>
-        )}
-
-        {project.stack && project.stack.length > 0 && (
-          <ul className="mt-6 flex flex-wrap gap-2">
-            {project.stack.map((tech) => (
-              <li
-                key={tech}
-                className="rounded-md border border-border bg-background px-2 py-1 font-mono text-[11px] text-muted"
-              >
-                {tech}
-              </li>
-            ))}
-          </ul>
-        )}
-
-        <div className="mt-7 flex flex-wrap items-center gap-4">
-          {links.project && (
-            <a
-              href={links.project}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90"
-            >
-              {hostLabel(links.project)} <span aria-hidden>↗</span>
-            </a>
-          )}
-          <ProjectLinkRow links={links} />
-        </div>
-      </div>
-    </article>
-  );
-}
-
 function ProjectCard({ project }: { project: Project }) {
   const links = project.links ?? {};
   const primary = links.project;
 
   return (
-    <article className="relative pl-8 md:pl-10">
+    <article className="relative pl-8 md:pl-[108px]">
       <span className="timeline-dot" aria-hidden />
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_1.05fr] md:items-start md:gap-8">
+
+      {/* In the left gutter next to the rail on desktop, inline above the
+          title on mobile where there is no room for a gutter. */}
+      <p className="font-mono text-xs leading-4 text-muted md:absolute md:left-0 md:top-1 md:w-16 md:text-right">
+        {project.date}
+      </p>
+
+      <div className="mt-1 grid grid-cols-1 gap-6 md:mt-0 md:grid-cols-[1fr_1.05fr] md:items-start md:gap-8">
         <div>
-          <p className="font-mono text-xs text-muted">{project.date}</p>
-          <div className="mt-1 flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <h3 className="text-xl font-semibold">{project.title}</h3>
             {project.badge && (
               <span className="rounded-full border border-accent/40 px-2.5 py-0.5 font-mono text-[11px] text-accent">
@@ -246,14 +129,12 @@ function ProjectCard({ project }: { project: Project }) {
 
 export function ProjectTimeline() {
   const items = projects as Project[];
-  const featured = items.filter((p) => p.featured);
-  const rest = items.filter((p) => !p.featured);
 
   // Build a flat render list, inserting an interstitial before each new group.
   const seen = new Set<string>();
   const rendered: React.ReactNode[] = [];
 
-  rest.forEach((project, i) => {
+  items.forEach((project, i) => {
     if (!seen.has(project.group)) {
       seen.add(project.group);
       const line = interstitials[project.group];
@@ -284,19 +165,9 @@ export function ProjectTimeline() {
         <p className="mx-auto mt-4 max-w-xl text-muted">{timelineIntro.subhead}</p>
       </Reveal>
 
-      {featured.length > 0 && (
-        <div className="mt-12 space-y-8">
-          {featured.map((project) => (
-            <Reveal key={project.slug}>
-              <FeaturedCard project={project} />
-            </Reveal>
-          ))}
-        </div>
-      )}
-
-      {rendered.length > 0 && (
-        <div className="timeline-rail mt-16 space-y-14">{rendered}</div>
-      )}
+      <TimelineBeam>
+        <div className="mt-12 space-y-14">{rendered}</div>
+      </TimelineBeam>
     </section>
   );
 }

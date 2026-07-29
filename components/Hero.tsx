@@ -28,7 +28,7 @@ export function Hero() {
               src={siteConfig.headshot}
               alt={siteConfig.name}
               width={288}
-              height={346}
+              height={360}
               className="h-auto w-[220px] rounded-2xl sm:w-[288px]"
             />
           </div>

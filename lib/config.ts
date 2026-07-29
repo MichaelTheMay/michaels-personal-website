@@ -7,7 +7,7 @@ export const siteConfig = {
   bio: "Builder at heart. I design and ship AI systems — agents, LLM tooling, and the infrastructure that makes them reliable in production.",
   location: "City, Country",
   email: "michael@michaelmay.dev",
-  headshot: "/headshot-placeholder.svg",
+  headshot: "/headshot.webp",
   // Any link left empty is hidden from the social row.
   links: {
     github: "https://github.com/MichaelTheMay",
@@ -24,9 +24,6 @@ export const timelineIntro = {
   subhead:
     "Placeholder line. Replace this with a sentence about the theme running through your recent work.",
 };
-
-// Label on the pill shown at the top of a featured project card.
-export const featuredLabel = "Featured";
 
 // Interstitial sentences keyed to a project group. Placeholder copy.
 export const interstitials: Record<string, string> = {
