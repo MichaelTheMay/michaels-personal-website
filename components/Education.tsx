@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 type Degree = {
   degree: string;
   institution: string;
-  note: string;
+  note?: string;
   years: string;
 };
 
@@ -26,7 +26,9 @@ export function Education() {
               <div>
                 <h3 className="font-semibold">{degree.degree}</h3>
                 <p className="text-sm text-muted">
-                  {degree.institution} · {degree.note}
+                  {degree.note
+                    ? `${degree.institution} · ${degree.note}`
+                    : degree.institution}
                 </p>
               </div>
               <p className="font-mono text-xs text-muted">{degree.years}</p>

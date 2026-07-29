@@ -10,14 +10,6 @@ function GitHubIcon({ className }: IconProps) {
   );
 }
 
-function XIcon({ className }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden>
-      <path d="M18.9 2H22l-7.3 8.34L23.3 22h-6.75l-5.29-6.92L5.2 22H2.1l7.82-8.94L1 2h6.92l4.78 6.32L18.9 2Zm-2.37 18.15h1.71L7.55 3.75H5.72l10.81 16.4Z" />
-    </svg>
-  );
-}
-
 function LinkedInIcon({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden>
@@ -36,12 +28,13 @@ function YouTubeIcon({ className }: IconProps) {
 
 const socials = [
   { key: "github", href: siteConfig.links.github, label: "GitHub", Icon: GitHubIcon },
-  { key: "x", href: siteConfig.links.x, label: "X", Icon: XIcon },
   { key: "linkedin", href: siteConfig.links.linkedin, label: "LinkedIn", Icon: LinkedInIcon },
   { key: "youtube", href: siteConfig.links.youtube, label: "YouTube", Icon: YouTubeIcon },
-];
+].filter((social) => social.href);
 
 export function SocialIcons() {
+  if (socials.length === 0) return null;
+
   return (
     <div className="inline-flex items-center gap-1 rounded-xl border border-border bg-surface/60 p-1.5">
       {socials.map(({ key, href, label, Icon }) => (

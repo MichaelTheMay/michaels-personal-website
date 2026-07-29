@@ -8,11 +8,11 @@ export const siteConfig = {
   location: "City, Country",
   email: "michael@michaelmay.dev",
   headshot: "/headshot-placeholder.svg",
+  // Any link left empty is hidden from the social row.
   links: {
     github: "https://github.com/MichaelTheMay",
-    x: "https://x.com/your-handle",
-    linkedin: "https://linkedin.com/in/your-handle",
-    youtube: "https://youtube.com/@your-handle",
+    linkedin: "https://www.linkedin.com/in/michael-a-may/",
+    youtube: "",
   },
 };
 
