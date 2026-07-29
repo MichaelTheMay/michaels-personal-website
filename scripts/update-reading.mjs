@@ -85,8 +85,10 @@ Select the ${TARGET_COUNT} best qualifying items. Return only entries you are co
 Do not include any of these URLs, which are already in the collection:
 ${existingUrls.slice(0, 200).join("\n") || "(none yet)"}
 
+These items are published together as one dated issue of a daily reading digest, so also write a headline and a standfirst for the issue as a whole. The headline must name the actual through-line in today's selection (e.g. "Long-horizon memory and the limits of context") — not a generic phrase like "Today's AI research". The standfirst is one or two sentences on what ties the items together.
+
 Respond with ONLY a JSON object (no prose, no code fence) of this exact shape:
-{"items":[{"title":string,"authors":string,"source":string,"url":string,"type":"paper"|"essay"|"scenario","summary":string,"tags":string[]}]}
+{"issueTitle":string,"issueBlurb":string,"items":[{"title":string,"authors":string,"source":string,"url":string,"type":"paper"|"essay"|"scenario","summary":string,"tags":string[]}]}
 Each summary must be 2-3 sentences describing the actual argument, model, or result — not a generic description of the topic.`;
 
   const response = await fetch(API_URL, {
@@ -124,7 +126,11 @@ Each summary must be 2-3 sentences describing the actual argument, model, or res
   }
 
   const parsed = parseJsonLoose(text);
-  return parsed.items ?? [];
+  return {
+    items: parsed.items ?? [],
+    issueTitle: typeof parsed.issueTitle === "string" ? parsed.issueTitle.trim() : "",
+    issueBlurb: typeof parsed.issueBlurb === "string" ? parsed.issueBlurb.trim() : "",
+  };
 }
 
 async function main() {
@@ -135,7 +141,9 @@ async function main() {
   const data = await loadReadingData();
   const existingUrls = new Set(data.items.map((item) => item.url));
 
-  const candidates = await curateNewItems([...existingUrls]);
+  const { items: candidates, issueTitle, issueBlurb } = await curateNewItems([
+    ...existingUrls,
+  ]);
   const today = new Date().toISOString().slice(0, 10);
 
   const fresh = candidates
@@ -164,9 +172,26 @@ async function main() {
     items = items.slice(0, MAX_ITEMS);
   }
 
-  const next = { lastUpdated: today, items };
+  // Each run publishes one dated issue. Re-running on the same day replaces
+  // that day's heading rather than filing a duplicate.
+  const issues = [
+    { date: today, title: issueTitle, blurb: issueBlurb },
+    ...(data.issues ?? []).filter((issue) => issue.date !== today),
+  ];
+
+  // Drop headings whose items have all aged out of the trimmed list.
+  const liveDates = new Set(items.map((item) => item.dateAdded));
+  const next = {
+    lastUpdated: today,
+    issues: issues.filter((issue) => liveDates.has(issue.date)),
+    items,
+  };
+
   await writeFile(DATA_PATH, JSON.stringify(next, null, 2) + "\n", "utf-8");
-  console.log(`Added ${fresh.length} new item(s): ${fresh.map((i) => i.title).join(", ")}`);
+  console.log(
+    `Issue ${today}${issueTitle ? ` — ${issueTitle}` : ""}: added ${fresh.length} item(s): ` +
+      fresh.map((i) => i.title).join(", ")
+  );
 }
 
 main().catch((err) => {
