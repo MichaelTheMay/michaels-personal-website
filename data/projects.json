@@ -23,6 +23,16 @@
     "links": { "project": "https://getlexie.ai" }
   },
   {
+    "slug": "parallely",
+    "group": "flagship",
+    "date": "Jun 2026",
+    "title": "Parallely",
+    "badge": "Open source · MIT",
+    "description": "I built Parallely — a CLI that splits one large coding task into sections and runs them concurrently, one AI coding agent per section, all in a shared git worktree. A fullscreen TUI streams every agent's live progress, output, and token usage, and finished sections auto-commit to a shared integration branch. Backend-agnostic — it drives Codex, Claude Code, or OpenCode.",
+    "image": "/projects/parallely.webp",
+    "links": { "github": "https://github.com/MichaelTheMay/parallely" }
+  },
+  {
     "slug": "project-one",
     "group": "agents",
     "date": "Feb 2026",
