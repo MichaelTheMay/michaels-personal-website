@@ -1,0 +1,30 @@
+[
+  {
+    "company": "Company One — replace me",
+    "role": "AI Engineer",
+    "start": "Aug 2024",
+    "end": "Present",
+    "current": true
+  },
+  {
+    "company": "Company Two — replace me",
+    "role": "Machine Learning Engineer",
+    "start": "Jun 2023",
+    "end": "Aug 2024",
+    "current": false
+  },
+  {
+    "company": "Company Three — replace me",
+    "role": "Software Engineer",
+    "start": "Apr 2022",
+    "end": "Jun 2023",
+    "current": false
+  },
+  {
+    "company": "Company Four — replace me",
+    "role": "Software Engineer",
+    "start": "Feb 2020",
+    "end": "Apr 2022",
+    "current": false
+  }
+]

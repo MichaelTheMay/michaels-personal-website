@@ -1,0 +1,39 @@
+name: Update reading list
+
+on:
+  schedule:
+    # 13:00 UTC daily
+    - cron: "0 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-reading:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - run: npm ci
+
+      - name: Curate today's reading list
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: npm run update:reading
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "reading-list-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- data/reading.json; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git add data/reading.json
+          git commit -m "Update reading list for $(date -u +%Y-%m-%d)"
+          git push

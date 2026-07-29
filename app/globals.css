@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --surface: #131316;
+  --surface-hover: #1c1c21;
+  --border: #26262b;
+  --foreground: #ededf0;
+  --muted: #9a9aa4;
+  --accent: #8b8cf6;
+  --accent-soft: rgba(139, 140, 246, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "ss01" on, "ss02" on;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.prose-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(139, 140, 246, 0.35);
+}
+
+.prose-body a:hover {
+  text-decoration-color: var(--accent);
+}
+
+/* Hero background gradient streaks (purple/magenta, low opacity) */
+.hero-glow {
+  position: absolute;
+  inset: -20% -10% auto -10%;
+  height: 520px;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, transparent 30%, rgba(139, 92, 246, 0.16) 45%, transparent 60%),
+    linear-gradient(155deg, transparent 40%, rgba(219, 39, 119, 0.12) 55%, transparent 72%),
+    radial-gradient(60% 60% at 78% 20%, rgba(139, 92, 246, 0.14), transparent 70%);
+  filter: blur(6px);
+  z-index: 0;
+}
+
+/* Headshot frame with soft glow */
+.headshot-frame {
+  border-radius: 1rem;
+  padding: 6px;
+  background: linear-gradient(160deg, rgba(139, 140, 246, 0.35), rgba(219, 39, 119, 0.18));
+  box-shadow: 0 24px 60px -24px rgba(139, 92, 246, 0.5);
+}
+
+/* Timeline rail: vertical accent line + dots on each entry */
+.timeline-rail {
+  position: relative;
+}
+
+.timeline-rail::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--border) 8%,
+    var(--border) 92%,
+    transparent
+  );
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--background), 0 0 12px rgba(139, 140, 246, 0.6);
+}
+
+.section-divider {
+  margin: 0 auto;
+  max-width: 12rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1c2a40"/>
+      <stop offset="1" stop-color="#0d0c12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g3)"/>
+  <rect x="1" y="1" width="1278" height="718" rx="18" fill="none" stroke="#ffffff14"/>
+  <circle cx="640" cy="300" r="90" fill="none" stroke="#4f9dff" stroke-width="4" opacity="0.7"/>
+  <path d="M610 300l25 25 45-55" stroke="#4f9dff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="640" y="470" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="34" letter-spacing="4" fill="#c8c6d2">PROJECT 3</text>
+  <text x="640" y="520" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" letter-spacing="3" fill="#7c7a88">screenshot placeholder</text>
+</svg>

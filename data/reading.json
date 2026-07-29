@@ -1,0 +1,104 @@
+{
+  "lastUpdated": "2026-07-27",
+  "items": [
+    {
+      "id": "racing-to-the-precipice",
+      "title": "Racing to the Precipice: A Model of Artificial Intelligence Development",
+      "authors": "Stuart Armstrong, Nick Bostrom, Carl Shulman",
+      "source": "AI & Society (2016)",
+      "url": "https://link.springer.com/article/10.1007/s00146-015-0590-y",
+      "type": "paper",
+      "dateAdded": "2026-07-27",
+      "summary": "The founding formal model of AI race dynamics: teams choose a safety level trading off against capability, solved for Nash equilibria under three information regimes. Counterintuitive result — more information about rivals' capabilities increases danger, not less.",
+      "tags": ["game theory", "AI safety", "race dynamics"]
+    },
+    {
+      "id": "uncertainty-information-risk-tech-races",
+      "title": "Uncertainty, Information, and Risk in International Technology Races",
+      "authors": "Nicholas Emery-Xu, Andrew Park, Robert Trager",
+      "source": "Journal of Conflict Resolution (2024)",
+      "url": "https://journals.sagepub.com/doi/10.1177/00220027231214996",
+      "type": "paper",
+      "dateAdded": "2026-07-27",
+      "summary": "Extends the Armstrong–Bostrom–Shulman race model to competing states, showing that 'decisiveness' (how much a capability lead translates into victory probability) drives danger, and that transparency about rivals' capabilities is not unambiguously risk-reducing.",
+      "tags": ["game theory", "policy", "race dynamics"]
+    },
+    {
+      "id": "why-open-source-ai-race",
+      "title": "Why Open Source? A Game-Theoretic Analysis of the AI Race",
+      "authors": "Andjela Mladenovic, Aaron Courville, Gauthier Gidel",
+      "source": "arXiv (2026)",
+      "url": "https://arxiv.org/abs/2604.16227",
+      "type": "paper",
+      "dateAdded": "2026-07-27",
+      "summary": "Models frontier labs choosing between open- and closed-sourcing as a formal race game, proving equilibrium computation is NP-hard in the discrete case while remaining tractable via mixed-integer programming.",
+      "tags": ["game theory", "open source", "AI labs"]
+    },
+    {
+      "id": "unilateralists-curse",
+      "title": "The Unilateralist's Curse and the Case for a Principle of Conformity",
+      "authors": "Nick Bostrom, Thomas Douglas, Anders Sandberg",
+      "source": "Social Epistemology (2016)",
+      "url": "https://nickbostrom.com/papers/unilateralist.pdf",
+      "type": "paper",
+      "dateAdded": "2026-07-27",
+      "summary": "An N-agent decision-theoretic model showing that decentralized unilateral action systematically over-produces risky moves, since the agent who acts is likely the one with the most (miscalibrated) optimistic estimate — even absent malice.",
+      "tags": ["game theory", "AI safety", "coordination"]
+    },
+    {
+      "id": "strategic-preemption-shared-catastrophic-risk",
+      "title": "Strategic Preemption Under Shared Catastrophic Risk: The Suicide Region and the Race to AGI",
+      "authors": "David Tan",
+      "source": "arXiv (2025)",
+      "url": "https://arxiv.org/abs/2512.07526",
+      "type": "paper",
+      "dateAdded": "2026-07-27",
+      "summary": "A continuous-time preemption game between AGI developers facing a shared catastrophic externality. Derives a 'suicide region' where both players rationally deploy despite negative expected payoff, and proposes deployment liability and prize-sharing as fixes.",
+      "tags": ["game theory", "AGI", "mechanism design"]
+    },
+    {
+      "id": "meditations-on-moloch",
+      "title": "Meditations on Moloch",
+      "authors": "Scott Alexander",
+      "source": "Slate Star Codex (2014)",
+      "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
+      "type": "essay",
+      "dateAdded": "2026-07-27",
+      "summary": "The foundational essay on multipolar traps — competitive dynamics where individually rational actors collectively produce outcomes nobody wants. Supplies the vocabulary (multipolar trap, coordination failure) used across nearly all later writing on AI race dynamics.",
+      "tags": ["essay", "coordination failure", "superintelligence"]
+    },
+    {
+      "id": "lets-think-about-slowing-down-ai",
+      "title": "Let's Think About Slowing Down AI",
+      "authors": "Katja Grace",
+      "source": "AI Impacts (2022)",
+      "url": "https://blog.aiimpacts.org/p/lets-think-about-slowing-down-ai",
+      "type": "essay",
+      "dateAdded": "2026-07-27",
+      "summary": "Directly interrogates the 'racing is rational' assumption by modeling actual race scenarios, concluding that under realistic parameters, safety investment often beats speed even in a competitive equilibrium.",
+      "tags": ["essay", "race dynamics", "AI safety"]
+    },
+    {
+      "id": "ai-2027",
+      "title": "AI 2027",
+      "authors": "Daniel Kokotajlo, Scott Alexander, Thomas Larsen, Eli Lifland, Romeo Dean",
+      "source": "AI Futures Project (2025)",
+      "url": "https://ai-2027.com/",
+      "type": "essay",
+      "dateAdded": "2026-07-27",
+      "summary": "A detailed, wargamed scenario modeling US–China competitive dynamics colliding with an intelligence explosion at a composite lab — explicitly modeling how race pressure, not technical inevitability, drives under-testing of a self-improving model.",
+      "tags": ["scenario", "race dynamics", "recursive self-improvement"]
+    },
+    {
+      "id": "takeoff-speeds",
+      "title": "Takeoff Speeds",
+      "authors": "Paul Christiano",
+      "source": "sideways-view.com (2018)",
+      "url": "https://sideways-view.com/2018/02/24/takeoff-speeds/",
+      "type": "essay",
+      "dateAdded": "2026-07-27",
+      "summary": "Argues for continuous, broadly-distributed capability gains over abrupt single-actor discontinuities — the crux essay that changes the game-theoretic stakes of racing, since a slow takeoff means no single lab's breakthrough yields decisive strategic advantage.",
+      "tags": ["essay", "takeoff dynamics", "recursive self-improvement"]
+    }
+  ]
+}
