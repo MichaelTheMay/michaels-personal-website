@@ -1,6 +1,176 @@
 {
-  "lastUpdated": "2026-07-27",
+  "lastUpdated": "2026-07-29",
   "items": [
+    {
+      "id": "harness-handbook-making-evolving-agent-harnesses-readable-navigable-and-editable-2026-07-29",
+      "title": "Harness Handbook: Making Evolving Agent Harnesses Readable, Navigable, and Editable",
+      "authors": "Ruhan Wang, Yucheng Shi, Zongxia Li, Zhongzhi Li, Yue Yu, Junyao Yang, Kishan Panaganti, Haitao Mi, Dongruo Zhou, Leoweiliang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13285",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "The paper introduces the Harness Handbook, an automatically synthesized behavior-centric map of an agent harness codebase produced via static analysis and LLM structuring, linking high-level behaviors to source locations across three levels of detail. It pairs this with Behavior-Guided Progressive Disclosure (BGPD) that guides agents from behaviors to verified implementation sites. On modification tasks from open-source harnesses, the approach improves localization and edit-plan quality while reducing planner tokens, especially for scattered, rare, or cross-module behaviors.",
+      "tags": [
+        "agents",
+        "harnesses",
+        "software engineering",
+        "code localization",
+        "LLM agents"
+      ]
+    },
+    {
+      "id": "from-memory-to-skills-evidence-grounded-co-evolution-governance-for-long-horizon-2026-07-29",
+      "title": "From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents",
+      "authors": "Bo Tang, Yang Zhang, Guomian Zhuang, Wenqiang Wei, Gaoyang Zheng, Lindong Xie, Yanchao Tan, Feiyu Xiong, Qingyu Yang, Edward Chung, Zhiyu li",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.16621",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "MSCE is a training-free framework that organizes agent experience into L1 step traces, L2 procedural policies, and L3 declarative cognition, crystallizing high-value L2 policies into callable skill cards that retain evidence, boundaries, verification rules, and reliability estimates. It uses reflection-weighted value backfilling to propagate sparse terminal rewards through local self-reflections for calibrated evolution of memory and skills. On EvoAgentBench and LoCoMo it outperforms skill-augmented and memory baselines with strong cross-domain transfer and lifelong evolution.",
+      "tags": [
+        "LLM agents",
+        "memory",
+        "skills",
+        "long-horizon",
+        "co-evolution"
+      ]
+    },
+    {
+      "id": "pro-long-programmatic-memory-enables-long-horizon-reasoning-2026-07-29",
+      "title": "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
+      "authors": "Alexis Fox, Junlin Wang, Paul Rosu, Bhuwan Dhingra",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.20064",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "PRO-LONG keeps a complete structured interaction log and uses coding-agent tooling to search it on demand rather than compressing history into lossy summaries. This programmatic memory sidesteps the precision-recall tradeoff of conventional context management for exploratory long-horizon tasks. On the full ARC-AGI-3 public set it improves base coding agents by 18 points on average, matches or exceeds specialized harnesses at up to 76.1% pass@1, and uses 4.2–5.8× fewer tokens.",
+      "tags": [
+        "agents",
+        "long-horizon",
+        "memory",
+        "ARC-AGI",
+        "context management"
+      ]
+    },
+    {
+      "id": "verbalizable-representations-form-a-global-workspace-in-language-models-2026-07-29",
+      "title": "Verbalizable Representations Form a Global Workspace in Language Models",
+      "authors": "Wes Gurnee, Nicholas Sofroniew, Adam Pearce, Mateusz Piotrowski, Isaac Kauvar, Runjin Chen, Anna Soligo, Paul Bogdan, Euan Ong, Rowan Wang, Ben Thompson, David Abrahams, Subhash Kantamneni, Emmanuel Ameisen, Joshua Batson, Jack Lindsey",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15495",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "Using the Jacobian lens the authors identify a small privileged set of residual-stream directions (J-space) that a model is poised to verbalize; these exhibit global-workspace functional properties including reportability, deliberate summoning, silent intermediate reasoning, and broadcast as arguments to downstream computation. J-space occupies ~10% of variance mainly in middle layers; suppressing it preserves fluent parsing and speech while abolishing complex internal reasoning. The technique surfaces strategic deliberation, evaluation awareness, and misaligned dispositions invisible in outputs, and post-training is shown to install the Assistant persona into the workspace.",
+      "tags": [
+        "interpretability",
+        "global workspace",
+        "mechanistic interpretability",
+        "reasoning",
+        "alignment"
+      ]
+    },
+    {
+      "id": "two-level-meta-rubrics-for-evaluating-open-ended-generation-gamut-a-benchmark-fo-2026-07-29",
+      "title": "Two-Level Meta-Rubrics for Evaluating Open-Ended Generation: GAMUT, a Benchmark for Factual Completeness",
+      "authors": "Xilun Chen, Zhaleh Feizollahi, Ross Goodwin, Seungwhan Moon, Scott Yih, Pinar Donmez, Babak Damavandi, Luna Dong",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.19322",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "The paper introduces a two-level meta-rubric that encodes the structured organization and importance of required facts for open-ended answers and mechanically compiles them into flat binary checklists for reliable LLM judging. Instantiated as GAMUT, it provides 1,813 evidence-backed questions grounded in wearable imagery across 10 domains (plus a text-only variant). Across 14 models the best score is only 58.7%, demonstrating that factual completeness remains hard and highly discriminative.",
+      "tags": [
+        "evaluation",
+        "factuality",
+        "completeness",
+        "benchmarks",
+        "multimodal"
+      ]
+    },
+    {
+      "id": "structured-output-collapses-answer-diversity-across-44-language-models-2026-07-29",
+      "title": "Structured Output Collapses Answer Diversity Across 44 Language Models",
+      "authors": "Tapan Parikh",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18476",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "Re-running wide-answer-space prompts under a simple JSON request (no schema enforcement) across 44 models sharply increases modal concentration and reduces answer surprisal; the effect is progressive and specific to tool-use-trained formats (JSON/XML) while absent or reversed for YAML/CSV/arbitrary wrappers. Within-model defaults shift 53% under JSON, mostly toward the crowd, and decoder-level enforcement adds no further compression. The production structured surface therefore yields a measurably more homogeneous model than the chat surface used for evaluation.",
+      "tags": [
+        "diversity",
+        "structured output",
+        "JSON",
+        "evaluation",
+        "model behavior"
+      ]
+    },
+    {
+      "id": "bad-memory-evaluating-prompt-injection-risks-from-memory-in-agentic-systems-2026-07-29",
+      "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
+      "authors": "Soham Gadgil, David Alexander, Sai Sunku, Franziska Roesner",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.14611",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "The work systematically evaluates prompt-injection attacks that exploit persistent memory files in Claude Code and OpenAI Codex across four frontier models. While agents rarely overwrite their own memory from untrusted external content, payloads already planted in memory files reliably compromise current and future sessions, with large variation by system, model, goal, and multi-session strategy. Persistent memory therefore fundamentally alters the prompt-injection threat model and motivates defenses that secure memory updates without eliminating adaptation.",
+      "tags": [
+        "security",
+        "prompt injection",
+        "agents",
+        "memory",
+        "safety"
+      ]
+    },
+    {
+      "id": "frontier-language-models-struggle-to-copy-text-can-be-better-viewed-in-2d-2026-07-29",
+      "title": "Frontier Language Models Struggle to Copy: Text Can Be Better Viewed in 2D",
+      "authors": "Haodong Wen, Yiran Zhang, Yingfa Chen, Kaifeng Lyu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.16072",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "Even frontier LLMs fail at exact string copying well inside their context windows because 1D positional encodings induce a local-context matching shortcut rather than precise position lookup. The authors introduce 2D-RoPE that lays text on a 2D grid with row and column IDs, turning copying into fixed-offset retrieval. Shallow Transformers with 2D-RoPE achieve perfect copying at lengths hundreds of times longer than training, and the advantage persists in large-scale pretraining up to 1.4B parameters on DCLM.",
+      "tags": [
+        "positional encodings",
+        "Transformers",
+        "copying",
+        "architecture",
+        "pretraining"
+      ]
+    },
+    {
+      "id": "robottt-context-scaling-for-robot-policies-2026-07-29",
+      "title": "RoboTTT: Context Scaling for Robot Policies",
+      "authors": "Yunfan Jiang, Yevgen Chebotar, Ruijie Zheng, Fengyuan Hu, Yunhao Ge, Jimmy Wu, Tianyuan Dai, Scott Reed, Li Fei-Fei, Yuke Zhu, Linxi \"Jim\" Fan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.15275",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "RoboTTT integrates test-time training into vision-language-action policies so that recurrent fast weights compress long histories, scaling visuomotor context to 8K timesteps without increasing inference latency. This unlocks one-shot in-context imitation from human video, on-the-fly improvement, perturbation robustness, and completion of multi-stage long-horizon tasks. On real-robot manipulation it improves 87% over single-step baselines, fully solves a ten-stage assembly no baseline finishes, and shows 62% gains from pretraining at 8K versus 1K context.",
+      "tags": [
+        "robotics",
+        "VLA",
+        "test-time training",
+        "long context",
+        "foundation models"
+      ]
+    },
+    {
+      "id": "kimi-k3-open-frontier-intelligence-2026-07-29",
+      "title": "Kimi K3: Open Frontier Intelligence",
+      "authors": "Kimi Team (Tongtong Bai, Yifan Bai, et al.)",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.24653",
+      "type": "paper",
+      "dateAdded": "2026-07-29",
+      "summary": "Kimi K3 is a 2.8-trillion-parameter MoE model (104B activated) with native vision and 1M-token context, built on Kimi Delta Attention, Attention Residuals, and Stable LatentMoE that together deliver ~2.5× scaling efficiency over Kimi K2. Post-training emphasizes multi-domain RL (general, agentic, coding) at multiple reasoning efforts plus infrastructure for million-token agentic RL. It reaches frontier-level results on long-horizon coding, agentic, knowledge, reasoning, and vision benchmarks while remaining fully open-weight, trailing only the strongest proprietary systems.",
+      "tags": [
+        "large language models",
+        "MoE",
+        "open weights",
+        "scaling",
+        "multimodal"
+      ]
+    },
     {
       "id": "racing-to-the-precipice",
       "title": "Racing to the Precipice: A Model of Artificial Intelligence Development",
@@ -10,7 +180,11 @@
       "type": "paper",
       "dateAdded": "2026-07-27",
       "summary": "The founding formal model of AI race dynamics: teams choose a safety level trading off against capability, solved for Nash equilibria under three information regimes. Counterintuitive result — more information about rivals' capabilities increases danger, not less.",
-      "tags": ["game theory", "AI safety", "race dynamics"]
+      "tags": [
+        "game theory",
+        "AI safety",
+        "race dynamics"
+      ]
     },
     {
       "id": "uncertainty-information-risk-tech-races",
@@ -21,7 +195,11 @@
       "type": "paper",
       "dateAdded": "2026-07-27",
       "summary": "Extends the Armstrong–Bostrom–Shulman race model to competing states, showing that 'decisiveness' (how much a capability lead translates into victory probability) drives danger, and that transparency about rivals' capabilities is not unambiguously risk-reducing.",
-      "tags": ["game theory", "policy", "race dynamics"]
+      "tags": [
+        "game theory",
+        "policy",
+        "race dynamics"
+      ]
     },
     {
       "id": "why-open-source-ai-race",
@@ -32,7 +210,11 @@
       "type": "paper",
       "dateAdded": "2026-07-27",
       "summary": "Models frontier labs choosing between open- and closed-sourcing as a formal race game, proving equilibrium computation is NP-hard in the discrete case while remaining tractable via mixed-integer programming.",
-      "tags": ["game theory", "open source", "AI labs"]
+      "tags": [
+        "game theory",
+        "open source",
+        "AI labs"
+      ]
     },
     {
       "id": "unilateralists-curse",
@@ -43,7 +225,11 @@
       "type": "paper",
       "dateAdded": "2026-07-27",
       "summary": "An N-agent decision-theoretic model showing that decentralized unilateral action systematically over-produces risky moves, since the agent who acts is likely the one with the most (miscalibrated) optimistic estimate — even absent malice.",
-      "tags": ["game theory", "AI safety", "coordination"]
+      "tags": [
+        "game theory",
+        "AI safety",
+        "coordination"
+      ]
     },
     {
       "id": "strategic-preemption-shared-catastrophic-risk",
@@ -54,7 +240,11 @@
       "type": "paper",
       "dateAdded": "2026-07-27",
       "summary": "A continuous-time preemption game between AGI developers facing a shared catastrophic externality. Derives a 'suicide region' where both players rationally deploy despite negative expected payoff, and proposes deployment liability and prize-sharing as fixes.",
-      "tags": ["game theory", "AGI", "mechanism design"]
+      "tags": [
+        "game theory",
+        "AGI",
+        "mechanism design"
+      ]
     },
     {
       "id": "meditations-on-moloch",
@@ -65,7 +255,11 @@
       "type": "essay",
       "dateAdded": "2026-07-27",
       "summary": "The foundational essay on multipolar traps — competitive dynamics where individually rational actors collectively produce outcomes nobody wants. Supplies the vocabulary (multipolar trap, coordination failure) used across nearly all later writing on AI race dynamics.",
-      "tags": ["essay", "coordination failure", "superintelligence"]
+      "tags": [
+        "essay",
+        "coordination failure",
+        "superintelligence"
+      ]
     },
     {
       "id": "lets-think-about-slowing-down-ai",
@@ -76,7 +270,11 @@
       "type": "essay",
       "dateAdded": "2026-07-27",
       "summary": "Directly interrogates the 'racing is rational' assumption by modeling actual race scenarios, concluding that under realistic parameters, safety investment often beats speed even in a competitive equilibrium.",
-      "tags": ["essay", "race dynamics", "AI safety"]
+      "tags": [
+        "essay",
+        "race dynamics",
+        "AI safety"
+      ]
     },
     {
       "id": "ai-2027",
@@ -87,7 +285,11 @@
       "type": "essay",
       "dateAdded": "2026-07-27",
       "summary": "A detailed, wargamed scenario modeling US–China competitive dynamics colliding with an intelligence explosion at a composite lab — explicitly modeling how race pressure, not technical inevitability, drives under-testing of a self-improving model.",
-      "tags": ["scenario", "race dynamics", "recursive self-improvement"]
+      "tags": [
+        "scenario",
+        "race dynamics",
+        "recursive self-improvement"
+      ]
     },
     {
       "id": "takeoff-speeds",
@@ -98,7 +300,11 @@
       "type": "essay",
       "dateAdded": "2026-07-27",
       "summary": "Argues for continuous, broadly-distributed capability gains over abrupt single-actor discontinuities — the crux essay that changes the game-theoretic stakes of racing, since a slow takeoff means no single lab's breakthrough yields decisive strategic advantage.",
-      "tags": ["essay", "takeoff dynamics", "recursive self-improvement"]
+      "tags": [
+        "essay",
+        "takeoff dynamics",
+        "recursive self-improvement"
+      ]
     }
   ]
 }
