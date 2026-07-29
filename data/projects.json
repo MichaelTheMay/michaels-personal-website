@@ -1,5 +1,18 @@
 [
   {
+    "slug": "mycelicmemory",
+    "group": "flagship",
+    "date": "Ongoing",
+    "title": "MycelicMemory",
+    "badge": "Open source · MIT",
+    "description": "I built MycelicMemory — an MCP server that gives any coding agent a robust, semantically indexed, knowledge-graph-backed memory system that is fully local and secure. Sub-100ms hybrid search, automatic capture from your coding sessions, zero cloud dependency, and it works with Claude, Cursor, Windsurf, or any MCP client. I always use it when I code.",
+    "image": "/projects/mycelicmemory.webp",
+    "links": {
+      "project": "https://mycelicmemory.com",
+      "github": "https://github.com/MycelicMemory/MycelicMemory"
+    }
+  },
+  {
     "slug": "getlexie",
     "group": "flagship",
     "date": "Jul 2026",

@@ -76,7 +76,7 @@ function ProjectCard({ project }: { project: Project }) {
           <p className="mt-3 max-w-md leading-relaxed text-muted">
             {project.description}
           </p>
-          <div className="mt-4 flex flex-wrap items-center gap-4">
+          <div className="mt-4 flex flex-wrap items-center gap-3">
             {primary && (
               <a
                 href={primary}
@@ -85,6 +85,17 @@ function ProjectCard({ project }: { project: Project }) {
                 className="inline-flex items-center gap-1 text-sm text-foreground transition-colors hover:text-accent"
               >
                 View project <span aria-hidden>↗</span>
+              </a>
+            )}
+            {links.github && (
+              <a
+                href={links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-2.5 py-1.5 text-sm text-muted transition-colors hover:border-accent/40 hover:bg-surface-hover hover:text-foreground"
+              >
+                <GitHubMark />
+                GitHub
               </a>
             )}
             <div className="flex items-center gap-3 text-muted">
@@ -96,11 +107,6 @@ function ProjectCard({ project }: { project: Project }) {
               {links.youtube && (
                 <a href={links.youtube} target="_blank" rel="noopener noreferrer" aria-label="Video" className="hover:text-foreground">
                   <PlayIcon />
-                </a>
-              )}
-              {links.github && (
-                <a href={links.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-foreground">
-                  <GitHubMark />
                 </a>
               )}
             </div>
