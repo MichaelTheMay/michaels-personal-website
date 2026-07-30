@@ -50,29 +50,11 @@ function PlayIcon() {
   );
 }
 
-function ProjectCard({ project, flip = false }: { project: Project; flip?: boolean }) {
+function ProjectCard({ project }: { project: Project }) {
   const links = project.links ?? {};
   const primary = links.project;
   const href = primary || links.github || "#";
   const hasVideo = Boolean(project.video);
-
-  const media = (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group block self-center overflow-hidden rounded-xl border border-border bg-surface"
-    >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={project.image}
-        alt={project.title}
-        width={1280}
-        height={720}
-        className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-      />
-    </a>
-  );
 
   const details = (
     <div>
@@ -175,25 +157,23 @@ function ProjectCard({ project, flip = false }: { project: Project; flip?: boole
           )}
         </div>
       ) : (
-        // Two-column card. Alternating cards flip the media to the other side
-        // (and nudge its column a touch wider) so the timeline doesn't read as
-        // one repeated template as you scroll.
-        <div
-          className={`mt-1 grid grid-cols-1 gap-6 md:mt-0 md:items-start md:gap-8 ${
-            flip ? "md:grid-cols-[1.1fr_1fr]" : "md:grid-cols-[1fr_1.05fr]"
-          }`}
-        >
-          {flip ? (
-            <>
-              {media}
-              {details}
-            </>
-          ) : (
-            <>
-              {details}
-              {media}
-            </>
-          )}
+        <div className="mt-1 grid grid-cols-1 gap-6 md:mt-0 md:grid-cols-[1fr_1.05fr] md:items-start md:gap-8">
+          {details}
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block overflow-hidden rounded-xl border border-border bg-surface"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={project.image}
+              alt={project.title}
+              width={1280}
+              height={720}
+              className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            />
+          </a>
         </div>
       )}
     </article>
@@ -225,10 +205,8 @@ export function ProjectTimeline() {
   const seen = new Set<string>();
   const rendered: React.ReactNode[] = [];
   let philosophyInserted = false;
-  // Alternate the media side of each image card (video cards don't count).
-  let imageCard = 0;
 
-  items.forEach((project) => {
+  items.forEach((project, i) => {
     if (!seen.has(project.group)) {
       seen.add(project.group);
       const line = interstitials[project.group];
@@ -245,10 +223,9 @@ export function ProjectTimeline() {
       rendered.push(<PhilosophyBand key="philosophy" />);
       philosophyInserted = true;
     }
-    const flip = !project.video && imageCard++ % 2 === 0;
     rendered.push(
-      <Reveal key={project.slug} delay={flip ? 80 : 0}>
-        <ProjectCard project={project} flip={flip} />
+      <Reveal key={project.slug} delay={(i % 2) * 60}>
+        <ProjectCard project={project} />
       </Reveal>
     );
   });
