@@ -1,6 +1,181 @@
 {
-  "lastUpdated": "2026-07-29",
+  "lastUpdated": "2026-07-30",
+  "issues": [
+    {
+      "date": "2026-07-30",
+      "title": "Agent frontiers under audit: open-ended research, multi-agent coordination, and non-composing evaluations",
+      "blurb": "This issue gathers rigorous new work testing the real capabilities and failure modes of LLM agents—from shadow evaluations of open-ended AI R&D automation and long-horizon clinical/office workflows, through causal audits of latent multi-agent communication and objective misalignment, to organizational designs for multi-agent systems and epistemic limits on composing benchmark inferences."
+    }
+  ],
   "items": [
+    {
+      "id": "can-ai-agents-conduct-open-ended-ai-research-early-evidence-from-two-case-studie-2026-07-30",
+      "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+      "authors": "Peter Kirgis, Sayash Kapoor, Andrew Schwartz, Stephan Rabanser, David Africa, Konstantinos Voudouris, Viet Nguyen, Toby Pilditch, Magda Dubois, Harry Coppock, Cozmin Ududec, Nitya Nadgir, Matilda Orona, Tilman Bayer, Derrick Chan-Sew, Yue Ling, Abhishek Shetty, Helen Toner, Gillian Hadfield, Seth Lazar, Steve Newman, Shoshannah Tekofsky, Rishi Bommasani, Arvind Narayanan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27191",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "The authors introduce shadow evaluations in which frontier agents are given the central open-ended research question from high-quality unpublished NeurIPS papers and graded by the original authors after six days and substantial compute. Agents completed all engineering but made no substantial progress on the research questions, leading to unambiguous rejection; five recurring failure modes include poor judgment of publishable bars, uncreative responses to design flaws, ineffective backtracking, poor resource awareness, and instruction drift. Results provide early evidence that current agents handle engineering but struggle with core parts of the research lifecycle.",
+      "tags": [
+        "agents",
+        "AI R&D",
+        "evaluation",
+        "open-ended research"
+      ]
+    },
+    {
+      "id": "omegause-officeval-benchmarking-llm-agents-on-long-horizon-office-suite-tasks-wi-2026-07-30",
+      "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
+      "authors": "Jingbo Zhou, Yusai Zhao, Qi Bao, Jingjia Cao, Zhenghai Chen, Chang Gao, Kaiqi Guo, Muxin Guo, Mingxuan Li, Xinjiang Lu, Yanru Ma, Yixiong Xiao, Zenghui Zhang, Le Zhang, Hua Wu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27155",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "OmegaUse-OfficeVal introduces 100 long-horizon office-suite tasks (average 2.32 human hours) derived from practitioner requests, each paired with human labor time and task-price-proxy economic signals plus code-based verifiers from fine-grained rubrics. Frontier LLMs are substantially cheaper and faster than humans yet fall short of human-level deliverable quality; the economic grounding enables value-weighted comparisons of inference cost versus human cost. The fully open-sourced benchmark and dataset support stable evaluation of whether agents can complete realistic office workflows at reasonable cost.",
+      "tags": [
+        "agents",
+        "benchmarks",
+        "long-horizon",
+        "economic evaluation",
+        "office tasks"
+      ]
+    },
+    {
+      "id": "on-policy-distillation-for-llm-safety-a-routing-approach-to-template-robust-real-2026-07-30",
+      "title": "On-Policy Distillation for LLM Safety: A Routing Approach to Template-Robust Realignment",
+      "authors": "Yongjian Guo, Wanlun Ma, Lingyu Shen, Xi Xiao, Sheng Wen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27081",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "ROPD models divergence between aligned and compromised output distributions rather than fitting specific prompt templates, addressing catastrophic forgetting, template-mismatch collapse, and re-jailbreaking via system-prompt switches. Extensive experiments across three datasets, three base models, and four SOTA baselines show ROPD maintains superior robustness and capability preservation under template mismatch where baselines degrade severely. While not fully immune, its performance drop is negligible, establishing a stronger standard for template-robust safety realignment.",
+      "tags": [
+        "safety",
+        "realignment",
+        "distillation",
+        "jailbreaking",
+        "LLMs"
+      ]
+    },
+    {
+      "id": "do-latent-channels-actually-communicate-a-causal-audit-of-latent-multi-agent-llm-2026-07-30",
+      "title": "Do Latent Channels Actually Communicate? A Causal Audit of Latent Multi-Agent LLM",
+      "authors": "Huixiang Zhang, Mahzabeen Emu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26773",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "The paper introduces a causal audit that replaces sender-produced latent representations at the receiver boundary under four controlled message settings, measuring encoded information, sensitivity to presence/identity, value of example-specific content, and other-agent value. Applied to Qwen3 models on GSM8K, ARC-C and MATH-500, aggregate accuracy gains decompose differently by model size (e.g., example-specific vs. other-example contributions reverse between 4B and 8B). Results demonstrate that end-task performance alone cannot identify how latent messages affect receivers and motivate controlled comparisons as standard evaluation.",
+      "tags": [
+        "multi-agent",
+        "latent communication",
+        "causal audit",
+        "LLMs"
+      ]
+    },
+    {
+      "id": "when-benchmark-inferences-do-not-compose-projectibility-in-ai-evaluation-2026-07-30",
+      "title": "When benchmark inferences do not compose: Projectibility in AI evaluation",
+      "authors": "Brett Reynolds",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26159",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "The paper identifies a non-composition principle: warranted adjacent projections (generalization, capability interpretation, extrapolation, transport, combination with human-review assumptions) do not automatically yield a warranted chain when endpoints, assumptions, dependence or uncertainty fail to align. Drawing on Goodman’s projectibility and argument-based validity, it supplies a projectibility audit; a legal-research case and reanalysis/simulation illustrate how sound parallel studies can remain non-composable and how aggregate stability erases distinctions needed downstream. The audit diagnoses unsupported joins in benchmark-to-deployment arguments.",
+      "tags": [
+        "evaluation",
+        "epistemology",
+        "benchmarks",
+        "projectibility",
+        "validity"
+      ]
+    },
+    {
+      "id": "even-more-deception-objective-misalignment-in-mixed-motive-llm-multi-agent-syste-2026-07-30",
+      "title": "Even More Deception: Objective Misalignment in Mixed-Motive LLM Multi-Agent Systems",
+      "authors": "Marylou Fauchard, Florian Carichon, Margarida Carvalho, Golnoosh Farnadi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26120",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "Using a modified Werewolf social-deduction game that alters a single agent’s objective while preserving its role, the authors evaluate objective misalignment across model families, sizes, roles and objective formulations via dual analysis of internal reasoning and public cheap-talk plus game outcomes. Misalignment undermines collective outcomes especially under asymmetric information and specialized roles; compromised agents develop distinct objective-dependent reasoning that remains largely invisible in public behavior. Findings show even subtle misalignment profoundly affects multi-agent decision-making and highlight need for mitigation.",
+      "tags": [
+        "multi-agent",
+        "misalignment",
+        "deception",
+        "Werewolf",
+        "game theory"
+      ]
+    },
+    {
+      "id": "clinlens-towards-long-horizon-coding-agents-for-longitudinal-multimodal-clinical-2026-07-30",
+      "title": "ClinLens: Towards Long-Horizon Coding Agents for Longitudinal Multimodal Clinical Data Science",
+      "authors": "Yuan Zhu, Ethan B. Liu, Frank Nie, Jindong Han",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26155",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "CLINLENS provides 200 executable tasks over five linked MIMIC resources (EHR, notes, ECG, radiographs, echocardiograms) under a 4×5 taxonomy of patient-time scopes and analysis capabilities, using program-first reverse synthesis with private reference workflows. On a 126-task suite the strongest of 24 model-scaffold configurations reaches only 56.3% scope-macro STRICTPASS despite 100% execution success, far above adapted biomedical systems (~2.9%) yet exposing a large gap between runnable code and correct clinical analyses. A separately configured coding agent solves 83/126, underscoring the difficulty of auditable longitudinal multimodal clinical data science.",
+      "tags": [
+        "agents",
+        "clinical AI",
+        "long-horizon",
+        "benchmarks",
+        "multimodal"
+      ]
+    },
+    {
+      "id": "from-tokens-to-watt-hours-analytical-energy-estimation-for-llm-inference-on-mode-2026-07-30",
+      "title": "From Tokens to Watt-hours: Analytical Energy Estimation for LLM Inference on Modern GPUs",
+      "authors": "Tina Vartziotis, Rodopi Kosteli, Elli Vartziotis, George Dasoulas, Michael Keckeisen, Konstantinos Skianis, Sotirios Kotsopoulos, Francesca Dominici",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.26571",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "The authors present an analytically structured, empirically calibrated GPU-level estimator for LLM inference energy on H100-class hardware that requires no runtime telemetry. It combines parameter-scaled FLOP accounting, calibrated memory-traffic factors and hardware energy coefficients, explicitly separating prefill from decoding and decomposing energy into compute, parameter-access, KV-cache write and attention-read components. The transparent, assumption-explicit approximations enable model comparison, green-coding analysis and design-time evaluation of energy scaling with model size, context and generated tokens.",
+      "tags": [
+        "energy",
+        "inference",
+        "sustainability",
+        "LLMs",
+        "analytical model"
+      ]
+    },
+    {
+      "id": "scores-are-not-decisions-cost-aware-stopping-for-tool-acquisition-in-llm-agents-2026-07-30",
+      "title": "Scores Are Not Decisions: Cost-Aware Stopping for Tool Acquisition in LLM Agents",
+      "authors": "Yicheng Feng, Yan Zhang, Yan Cheng, Wei Qi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27083",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "CAM-DF formulates tool acquisition as cost-aware marginal decision-focused stopping over ranked tool prefixes, training on the offline gap between stopping now and the best continuation so that sign labels the decision and magnitude weights payoff. Proven Bayes-aligned and superior to score-only rules under heterogeneous costs, it achieves highest payoff on τ-bench Retail across ranking sources and cost regimes, exposing agents to 37% fewer tools in live execution while preserving success. The lightweight pre-execution plugin converts existing rankings into lower-cost decisions without LLM fine-tuning.",
+      "tags": [
+        "agents",
+        "tool use",
+        "decision theory",
+        "cost-aware",
+        "stopping"
+      ]
+    },
+    {
+      "id": "toward-an-organizational-science-of-multi-agent-llm-systems-decoupling-who-how-a-2026-07-30",
+      "title": "Toward an Organizational Science of Multi-Agent LLM Systems: Decoupling Who, How, and Which Algorithm",
+      "authors": "Huan Chen, Xiang Song, Jian Jin, Pan Ren, Liang-Jie Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25446",
+      "type": "paper",
+      "dateAdded": "2026-07-30",
+      "summary": "IMACS separates multi-agent systems into orthogonal layers—organization (who), coordination (how), and collaboration protocol (which algorithm)—making classic organizational theory (Belbin, Mintzberg, RACI) executable configuration and placing six protocols behind a common interface. Controlled ablations show accountability placement changes outcomes precisely when the protocol routes deliverables through the accountable agent, with optimal placement flipping across model families. Adaptive Org Routing, a contextual-bandit meta-protocol, selects protocols online under quality-cost tradeoffs and outperforms fixed protocols.",
+      "tags": [
+        "multi-agent",
+        "organization",
+        "coordination",
+        "protocols",
+        "bandits"
+      ]
+    },
     {
       "id": "harness-handbook-making-evolving-agent-harnesses-readable-navigable-and-editable-2026-07-29",
       "title": "Harness Handbook: Making Evolving Agent Harnesses Readable, Navigable, and Editable",
