@@ -16,6 +16,9 @@ type Project = {
   title: string;
   description: string;
   image: string;
+  /** Optional looping demo. When set, the card plays this instead of `image`;
+      `image` is used as the poster so there's no blank frame before playback. */
+  video?: { mp4: string; webm?: string };
   badge?: string;
   stars?: string;
   links?: ProjectLinks;
@@ -119,14 +122,32 @@ function ProjectCard({ project }: { project: Project }) {
           rel="noopener noreferrer"
           className="group block overflow-hidden rounded-xl border border-border bg-surface"
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={project.image}
-            alt={project.title}
-            width={1280}
-            height={720}
-            className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-          />
+          {project.video ? (
+            <video
+              className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+              poster={project.image}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={`${project.title} demo`}
+            >
+              {project.video.webm && (
+                <source src={project.video.webm} type="video/webm" />
+              )}
+              <source src={project.video.mp4} type="video/mp4" />
+            </video>
+          ) : (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={project.image}
+              alt={project.title}
+              width={1280}
+              height={720}
+              className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            />
+          )}
         </a>
       </div>
     </article>
