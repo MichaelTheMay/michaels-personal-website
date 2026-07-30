@@ -5,7 +5,8 @@ export const siteConfig = {
   role: "AI Engineer",
   // Short bio shown in the hero. Keep it to 2-3 lines. Replace with your own.
   bio: "Builder at heart. I design and ship AI systems — agents, LLM tooling, and the infrastructure that makes them reliable in production.",
-  location: "City, Country",
+  // Leave empty to hide the footer location line.
+  location: "",
   email: "michael@michaelmay.dev",
   headshot: "/headshot.webp",
   // Any link left empty is hidden from the social row.
@@ -22,7 +23,7 @@ export const timelineIntro = {
   caption: "WHAT I'VE SHIPPED IN 2026...",
   headline: "Lately, I've been obsessed with building AI systems that actually ship.",
   subhead:
-    "Placeholder line. Replace this with a sentence about the theme running through your recent work.",
+    "A memory server I code with every day, an agent that books contractors over real phone calls, and a CLI that runs a swarm of coding agents at once. All shipped, all in use.",
 };
 
 // Engineering-philosophy statement shown once, after the real (flagship)

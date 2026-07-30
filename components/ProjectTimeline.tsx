@@ -205,21 +205,16 @@ export function ProjectTimeline() {
   // Build a flat render list, inserting an interstitial before each new group.
   const seen = new Set<string>();
   const rendered: React.ReactNode[] = [];
-  let philosophyInserted = false;
+
+  // The philosophy band drops in right after the last flagship project, so it
+  // renders whether or not any non-flagship groups follow.
+  const lastFlagship = items.reduce(
+    (last, project, i) => (project.group === "flagship" ? i : last),
+    -1
+  );
 
   items.forEach((project, i) => {
     if (!seen.has(project.group)) {
-      // Drop the philosophy band once, at the boundary where the real
-      // (flagship) projects end and the rest of the timeline begins.
-      if (
-        !philosophyInserted &&
-        project.group !== "flagship" &&
-        seen.has("flagship")
-      ) {
-        rendered.push(<PhilosophyBand key="philosophy" />);
-        philosophyInserted = true;
-      }
-
       seen.add(project.group);
       const line = interstitials[project.group];
       if (line) {
@@ -235,6 +230,9 @@ export function ProjectTimeline() {
         <ProjectCard project={project} />
       </Reveal>
     );
+    if (i === lastFlagship) {
+      rendered.push(<PhilosophyBand key="philosophy" />);
+    }
   });
 
   return (
