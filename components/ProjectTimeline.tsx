@@ -181,17 +181,16 @@ function ProjectCard({ project }: { project: Project }) {
 }
 
 function PhilosophyBand() {
+  // Standalone statement, not a timeline node: centred, no rail inset and no
+  // diamond marker, so it reads as an editorial break rather than a project on
+  // the scroll-driven beam.
   return (
-    <Reveal>
-      <div className="relative py-6 pl-8 md:pl-[108px]">
-        <span
-          className="absolute left-[calc(var(--rail-x)-6px)] top-8 h-[13px] w-[13px] rotate-45 rounded-[3px] border border-accent/70 bg-background"
-          aria-hidden
-        />
+    <Reveal className="relative z-10 text-center">
+      <div className="mx-auto max-w-2xl bg-background py-4">
         <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent">
           {philosophy.label}
         </p>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/90">
+        <p className="mt-4 text-lg leading-relaxed text-foreground/90">
           {philosophy.body}
         </p>
       </div>
@@ -205,13 +204,7 @@ export function ProjectTimeline() {
   // Build a flat render list, inserting an interstitial before each new group.
   const seen = new Set<string>();
   const rendered: React.ReactNode[] = [];
-
-  // The philosophy band drops in right after the last flagship project, so it
-  // renders whether or not any non-flagship groups follow.
-  const lastFlagship = items.reduce(
-    (last, project, i) => (project.group === "flagship" ? i : last),
-    -1
-  );
+  let philosophyInserted = false;
 
   items.forEach((project, i) => {
     if (!seen.has(project.group)) {
@@ -225,15 +218,20 @@ export function ProjectTimeline() {
         );
       }
     }
+    // The parallelism statement leads directly into Parallely.
+    if (project.slug === "parallely" && !philosophyInserted) {
+      rendered.push(<PhilosophyBand key="philosophy" />);
+      philosophyInserted = true;
+    }
     rendered.push(
       <Reveal key={project.slug} delay={(i % 2) * 60}>
         <ProjectCard project={project} />
       </Reveal>
     );
-    if (i === lastFlagship) {
-      rendered.push(<PhilosophyBand key="philosophy" />);
-    }
   });
+
+  // Fallback so the statement never silently vanishes if the Parallely slug changes.
+  if (!philosophyInserted) rendered.push(<PhilosophyBand key="philosophy" />);
 
   return (
     <section className="mx-auto max-w-4xl px-6 py-12">

@@ -32,8 +32,7 @@
     "image": "/projects/parallely.webp",
     "video": {
       "mp4": "/projects/parallely.mp4",
-      "webm": "/projects/parallely.webm",
-      "caption": "Live run — three sections building in parallel via the Claude Code backend"
+      "webm": "/projects/parallely.webm"
     },
     "links": { "github": "https://github.com/MichaelTheMay/parallely" }
   }
