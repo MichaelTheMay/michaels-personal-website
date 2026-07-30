@@ -181,12 +181,11 @@ function ProjectCard({ project }: { project: Project }) {
 }
 
 function PhilosophyBand() {
-  // Standalone statement, not a timeline node: centred, no rail inset and no
-  // diamond marker, so it reads as an editorial break rather than a project on
-  // the scroll-driven beam.
+  // Standalone statement between rail segments — the rail ends above it and a
+  // fresh segment starts below, so no background masking is needed.
   return (
-    <Reveal className="relative z-10 text-center">
-      <div className="mx-auto max-w-2xl bg-background py-4">
+    <Reveal className="text-center">
+      <div className="mx-auto max-w-2xl py-4">
         <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent">
           {philosophy.label}
         </p>
@@ -201,37 +200,60 @@ function PhilosophyBand() {
 export function ProjectTimeline() {
   const items = projects as Project[];
 
-  // Build a flat render list, inserting an interstitial before each new group.
+  // The rail is drawn in segments: each contiguous run of cards gets its own
+  // track + scroll beam, and break content (interstitials, the parallelism
+  // statement) sits between segments — so the line ends when a section ends
+  // and a fresh one starts after the heading, instead of running behind it.
+  type Chunk =
+    | { type: "cards"; nodes: React.ReactNode[] }
+    | { type: "break"; node: React.ReactNode };
+
   const seen = new Set<string>();
-  const rendered: React.ReactNode[] = [];
+  const chunks: Chunk[] = [];
+  let run: React.ReactNode[] = [];
   let philosophyInserted = false;
+
+  const flush = () => {
+    if (run.length) {
+      chunks.push({ type: "cards", nodes: run });
+      run = [];
+    }
+  };
 
   items.forEach((project, i) => {
     if (!seen.has(project.group)) {
       seen.add(project.group);
       const line = interstitials[project.group];
       if (line) {
-        rendered.push(
-          <Reveal key={`intro-${project.group}`}>
-            <p className="py-6 text-center text-lg text-foreground/70">{line}</p>
-          </Reveal>
-        );
+        flush();
+        chunks.push({
+          type: "break",
+          node: (
+            <Reveal key={`intro-${project.group}`}>
+              <p className="py-6 text-center text-lg text-foreground/70">{line}</p>
+            </Reveal>
+          ),
+        });
       }
     }
     // The parallelism statement leads directly into Parallely.
     if (project.slug === "parallely" && !philosophyInserted) {
-      rendered.push(<PhilosophyBand key="philosophy" />);
+      flush();
+      chunks.push({ type: "break", node: <PhilosophyBand key="philosophy" /> });
       philosophyInserted = true;
     }
-    rendered.push(
+    run.push(
       <Reveal key={project.slug} delay={(i % 2) * 60}>
         <ProjectCard project={project} />
       </Reveal>
     );
   });
+  flush();
 
   // Fallback so the statement never silently vanishes if the Parallely slug changes.
-  if (!philosophyInserted) rendered.push(<PhilosophyBand key="philosophy" />);
+  if (!philosophyInserted) {
+    chunks.push({ type: "break", node: <PhilosophyBand key="philosophy" /> });
+  }
 
   return (
     <section className="mx-auto max-w-4xl px-6 py-12">
@@ -245,9 +267,17 @@ export function ProjectTimeline() {
         <p className="mx-auto mt-4 max-w-xl text-muted">{timelineIntro.subhead}</p>
       </Reveal>
 
-      <TimelineBeam>
-        <div className="mt-12 space-y-14">{rendered}</div>
-      </TimelineBeam>
+      <div className="mt-12 space-y-10">
+        {chunks.map((chunk, i) =>
+          chunk.type === "cards" ? (
+            <TimelineBeam key={i}>
+              <div className="space-y-14">{chunk.nodes}</div>
+            </TimelineBeam>
+          ) : (
+            <div key={i}>{chunk.node}</div>
+          )
+        )}
+      </div>
     </section>
   );
 }
