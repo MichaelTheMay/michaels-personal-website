@@ -25,6 +25,13 @@ export const timelineIntro = {
     "Placeholder line. Replace this with a sentence about the theme running through your recent work.",
 };
 
+// Engineering-philosophy statement shown once, after the real (flagship)
+// projects and before the rest of the timeline.
+export const philosophy = {
+  label: "Parallelism",
+  body: "I'm obsessed with using AI to build sharper AI tools. The pattern I keep returning to: give an agent a sandbox with exactly the tools and permissions its task needs — no more — then compose those sandboxes into pipelines that run in parallel. Scope it right and a workflow that used to need a human in the loop runs on its own. It's the throughline in everything above.",
+};
+
 // Interstitial sentences keyed to a project group. Placeholder copy.
 export const interstitials: Record<string, string> = {
   agents: "And of course, like everybody else — falling for autonomous agents.",

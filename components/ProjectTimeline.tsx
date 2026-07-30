@@ -1,5 +1,5 @@
 import projects from "@/data/projects.json";
-import { timelineIntro, interstitials } from "@/lib/config";
+import { timelineIntro, interstitials, philosophy } from "@/lib/config";
 import { Reveal } from "@/components/Reveal";
 import { TimelineBeam } from "@/components/TimelineBeam";
 
@@ -16,9 +16,10 @@ type Project = {
   title: string;
   description: string;
   image: string;
-  /** Optional looping demo. When set, the card plays this instead of `image`;
-      `image` is used as the poster so there's no blank frame before playback. */
-  video?: { mp4: string; webm?: string };
+  /** Optional looping demo. When set, the card plays this instead of `image`
+      (poster falls back to `image`) and uses a wider, full-bleed layout so
+      fine detail like a terminal recording is legible. */
+  video?: { mp4: string; webm?: string; caption?: string };
   badge?: string;
   stars?: string;
   links?: ProjectLinks;
@@ -52,6 +53,64 @@ function PlayIcon() {
 function ProjectCard({ project }: { project: Project }) {
   const links = project.links ?? {};
   const primary = links.project;
+  const href = primary || links.github || "#";
+  const hasVideo = Boolean(project.video);
+
+  const details = (
+    <div>
+      <div className="flex flex-wrap items-center gap-2">
+        <h3 className="text-xl font-semibold">{project.title}</h3>
+        {project.badge && (
+          <span className="rounded-full border border-accent/40 px-2.5 py-0.5 font-mono text-[11px] text-accent">
+            {project.badge}
+          </span>
+        )}
+        {project.stars && (
+          <span className="font-mono text-xs text-muted">★ {project.stars}</span>
+        )}
+      </div>
+      <p
+        className={`mt-3 leading-relaxed text-muted ${hasVideo ? "max-w-2xl" : "max-w-md"}`}
+      >
+        {project.description}
+      </p>
+      <div className="mt-4 flex flex-wrap items-center gap-3">
+        {primary && (
+          <a
+            href={primary}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm text-foreground transition-colors hover:text-accent"
+          >
+            View project <span aria-hidden>↗</span>
+          </a>
+        )}
+        {links.github && (
+          <a
+            href={links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-2.5 py-1.5 text-sm text-muted transition-colors hover:border-accent/40 hover:bg-surface-hover hover:text-foreground"
+          >
+            <GitHubMark />
+            GitHub
+          </a>
+        )}
+        <div className="flex items-center gap-3 text-muted">
+          {links.project && !primary && (
+            <a href={links.project} target="_blank" rel="noopener noreferrer" aria-label="Website" className="hover:text-foreground">
+              <GlobeIcon />
+            </a>
+          )}
+          {links.youtube && (
+            <a href={links.youtube} target="_blank" rel="noopener noreferrer" aria-label="Video" className="hover:text-foreground">
+              <PlayIcon />
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 
   return (
     <article className="relative pl-8 md:pl-[108px]">
@@ -63,68 +122,19 @@ function ProjectCard({ project }: { project: Project }) {
         {project.date}
       </p>
 
-      <div className="mt-1 grid grid-cols-1 gap-6 md:mt-0 md:grid-cols-[1fr_1.05fr] md:items-start md:gap-8">
-        <div>
-          <div className="flex flex-wrap items-center gap-2">
-            <h3 className="text-xl font-semibold">{project.title}</h3>
-            {project.badge && (
-              <span className="rounded-full border border-accent/40 px-2.5 py-0.5 font-mono text-[11px] text-accent">
-                {project.badge}
-              </span>
-            )}
-            {project.stars && (
-              <span className="font-mono text-xs text-muted">★ {project.stars}</span>
-            )}
-          </div>
-          <p className="mt-3 max-w-md leading-relaxed text-muted">
-            {project.description}
-          </p>
-          <div className="mt-4 flex flex-wrap items-center gap-3">
-            {primary && (
-              <a
-                href={primary}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-sm text-foreground transition-colors hover:text-accent"
-              >
-                View project <span aria-hidden>↗</span>
-              </a>
-            )}
-            {links.github && (
-              <a
-                href={links.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-2.5 py-1.5 text-sm text-muted transition-colors hover:border-accent/40 hover:bg-surface-hover hover:text-foreground"
-              >
-                <GitHubMark />
-                GitHub
-              </a>
-            )}
-            <div className="flex items-center gap-3 text-muted">
-              {links.project && !primary && (
-                <a href={links.project} target="_blank" rel="noopener noreferrer" aria-label="Website" className="hover:text-foreground">
-                  <GlobeIcon />
-                </a>
-              )}
-              {links.youtube && (
-                <a href={links.youtube} target="_blank" rel="noopener noreferrer" aria-label="Video" className="hover:text-foreground">
-                  <PlayIcon />
-                </a>
-              )}
-            </div>
-          </div>
-        </div>
-
-        <a
-          href={primary || links.github || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group block overflow-hidden rounded-xl border border-border bg-surface"
-        >
-          {project.video ? (
+      {hasVideo && project.video ? (
+        // Wide layout: text on top, the demo full-bleed below so it's large
+        // enough to read.
+        <div className="mt-1 md:mt-0">
+          {details}
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="video-frame group mt-6 block overflow-hidden rounded-xl"
+          >
             <video
-              className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+              className="aspect-video w-full bg-[#0e0e11] object-cover transition-transform duration-500 group-hover:scale-[1.015]"
               poster={project.image}
               autoPlay
               muted
@@ -138,8 +148,24 @@ function ProjectCard({ project }: { project: Project }) {
               )}
               <source src={project.video.mp4} type="video/mp4" />
             </video>
-          ) : (
-            /* eslint-disable-next-line @next/next/no-img-element */
+          </a>
+          {project.video.caption && (
+            <p className="mt-3 flex items-center gap-2 font-mono text-xs text-muted">
+              <span className="live-dot" aria-hidden />
+              {project.video.caption}
+            </p>
+          )}
+        </div>
+      ) : (
+        <div className="mt-1 grid grid-cols-1 gap-6 md:mt-0 md:grid-cols-[1fr_1.05fr] md:items-start md:gap-8">
+          {details}
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block overflow-hidden rounded-xl border border-border bg-surface"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={project.image}
               alt={project.title}
@@ -147,10 +173,29 @@ function ProjectCard({ project }: { project: Project }) {
               height={720}
               className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
             />
-          )}
-        </a>
-      </div>
+          </a>
+        </div>
+      )}
     </article>
+  );
+}
+
+function PhilosophyBand() {
+  return (
+    <Reveal>
+      <div className="relative py-6 pl-8 md:pl-[108px]">
+        <span
+          className="absolute left-[calc(var(--rail-x)-6px)] top-8 h-[13px] w-[13px] rotate-45 rounded-[3px] border border-accent/70 bg-background"
+          aria-hidden
+        />
+        <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent">
+          {philosophy.label}
+        </p>
+        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-foreground/90">
+          {philosophy.body}
+        </p>
+      </div>
+    </Reveal>
   );
 }
 
@@ -160,9 +205,21 @@ export function ProjectTimeline() {
   // Build a flat render list, inserting an interstitial before each new group.
   const seen = new Set<string>();
   const rendered: React.ReactNode[] = [];
+  let philosophyInserted = false;
 
   items.forEach((project, i) => {
     if (!seen.has(project.group)) {
+      // Drop the philosophy band once, at the boundary where the real
+      // (flagship) projects end and the rest of the timeline begins.
+      if (
+        !philosophyInserted &&
+        project.group !== "flagship" &&
+        seen.has("flagship")
+      ) {
+        rendered.push(<PhilosophyBand key="philosophy" />);
+        philosophyInserted = true;
+      }
+
       seen.add(project.group);
       const line = interstitials[project.group];
       if (line) {
