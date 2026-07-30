@@ -15,9 +15,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://michaelmay.dev";
+
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — ${siteConfig.role}`,
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${siteConfig.name} — ${siteConfig.role}`,
+    template: `%s — ${siteConfig.name}`,
+  },
   description: siteConfig.bio,
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} — ${siteConfig.role}`,
+    description: siteConfig.bio,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} — ${siteConfig.role}`,
+    description: siteConfig.bio,
+  },
 };
 
 export default function RootLayout({
