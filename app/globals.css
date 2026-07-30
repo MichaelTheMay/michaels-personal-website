@@ -51,18 +51,67 @@ body {
   text-decoration-color: var(--accent);
 }
 
-/* Hero background gradient streaks (purple/magenta, low opacity) */
+/* Hero backdrop: diagonal light beams (indigo → violet → crimson) sweeping in
+   from behind the headshot, softened by blur and anchored with a radial glow.
+   Original CSS — no image asset. Beams drift slowly unless reduced-motion. */
 .hero-glow {
   position: absolute;
-  inset: -20% -10% auto -10%;
-  height: 520px;
+  inset: -35% -12% auto -12%;
+  height: 660px;
   pointer-events: none;
-  background:
-    linear-gradient(115deg, transparent 30%, rgba(139, 92, 246, 0.16) 45%, transparent 60%),
-    linear-gradient(155deg, transparent 40%, rgba(219, 39, 119, 0.12) 55%, transparent 72%),
-    radial-gradient(60% 60% at 78% 20%, rgba(139, 92, 246, 0.14), transparent 70%);
-  filter: blur(6px);
   z-index: 0;
+  opacity: 0.95;
+  will-change: transform;
+  background:
+    /* crimson beam, right of the headshot */
+    linear-gradient(
+      122deg,
+      transparent 60%,
+      rgba(225, 29, 72, 0.34) 68%,
+      rgba(190, 18, 60, 0.05) 73%,
+      transparent 78%
+    ),
+    /* bright indigo/blue beam, right behind the headshot */
+    linear-gradient(
+      122deg,
+      transparent 44%,
+      rgba(90, 100, 250, 0.40) 53%,
+      rgba(139, 140, 246, 0.08) 58%,
+      rgba(67, 56, 202, 0.26) 64%,
+      transparent 70%
+    ),
+    /* thin hot streak for beam definition */
+    linear-gradient(
+      122deg,
+      transparent 49.5%,
+      rgba(170, 175, 255, 0.24) 51%,
+      transparent 52.5%
+    ),
+    /* soft violet wash bridging the two */
+    linear-gradient(
+      122deg,
+      transparent 34%,
+      rgba(139, 92, 246, 0.14) 50%,
+      transparent 66%
+    ),
+    /* glow anchored behind the headshot (upper right) */
+    radial-gradient(50% 56% at 74% 14%, rgba(124, 92, 246, 0.24), transparent 70%);
+  filter: blur(11px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-glow {
+    animation: beam-drift 18s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes beam-drift {
+  from {
+    transform: translate3d(-2%, -1%, 0) scale(1.02);
+  }
+  to {
+    transform: translate3d(3%, 1%, 0) scale(1.07);
+  }
 }
 
 /* Headshot frame with soft glow */
