@@ -58,19 +58,22 @@ function ToolCard({ tool, fan }: { tool: Tool; fan: string }) {
   );
 }
 
+// Inline link styling shared by every reference in the explanation paragraphs.
+const LINK_CLASS =
+  "font-medium text-foreground underline decoration-border underline-offset-2 transition-colors hover:text-accent hover:decoration-accent";
+
+function ExtLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={LINK_CLASS}>
+      {children}
+    </a>
+  );
+}
+
 // Inline repo link used inside the combined explanation paragraph.
 function RepoLink({ tool }: { tool?: Tool }) {
   if (!tool) return null;
-  return (
-    <a
-      href={tool.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="font-medium text-foreground underline decoration-border underline-offset-2 transition-colors hover:text-accent hover:decoration-accent"
-    >
-      {tool.title}
-    </a>
-  );
+  return <ExtLink href={tool.href}>{tool.title}</ExtLink>;
 }
 
 export function ToolStack() {
@@ -98,23 +101,29 @@ export function ToolStack() {
       <Reveal className="mt-16 text-center sm:mt-24">
         <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted">
           The one I lean on hardest is <RepoLink tool={bySlug("amux")} /> — an
-          open-source control plane I run as a modified fork, with Claude Code as
+          open-source control plane I run as a modified fork, with{" "}
+          <ExtLink href="https://claude.com/claude-code">Claude Code</ExtLink> as
           its base. It supervises dozens of parallel Claude Code and Codex
           sessions, so I can kick off a run, watch every agent, and merge from my
           phone. Every session writes to{" "}
-          <a
-            href="https://mycelicmemory.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-foreground underline decoration-border underline-offset-2 transition-colors hover:text-accent hover:decoration-accent"
-          >
-            MycelicMemory
-          </a>
-          , my own MCP server for local, persistent memory across runs.{" "}
+          <ExtLink href="https://mycelicmemory.com">MycelicMemory</ExtLink>, my
+          own MCP server for local, persistent memory across runs.{" "}
           <RepoLink tool={bySlug("backdoor")} /> points Claude Code at any
-          provider — I usually route through OpenRouter — and{" "}
+          provider — I usually route through{" "}
+          <ExtLink href="https://openrouter.ai">OpenRouter</ExtLink> — and{" "}
           <RepoLink tool={bySlug("agentflow")} /> wires agents into a graph when a
           job needs real fan-out.
+        </p>
+
+        <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-muted">
+          For browser work my go-to is{" "}
+          <ExtLink href="https://github.com/vercel-labs/agent-browser">
+            agent-browser
+          </ExtLink>{" "}
+          (Vercel Labs) — the base for all my headless browser agents. Its plugin
+          system lets them work through real user-auth flows and, where a site&apos;s
+          terms allow, captchas, so I keep several always-on Hermes agents running
+          around the clock.
         </p>
       </Reveal>
     </section>

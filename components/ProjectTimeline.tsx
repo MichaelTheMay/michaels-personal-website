@@ -50,6 +50,14 @@ function PlayIcon() {
   );
 }
 
+function StarIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="currentColor" aria-hidden>
+      <path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 18.9 6.1 22l1.2-6.5L2.5 9.4l6.6-.9L12 2.5z" />
+    </svg>
+  );
+}
+
 function ProjectCard({ project }: { project: Project }) {
   const links = project.links ?? {};
   const primary = links.project;
@@ -65,9 +73,28 @@ function ProjectCard({ project }: { project: Project }) {
             {project.badge}
           </span>
         )}
-        {project.stars && (
-          <span className="font-mono text-xs text-muted">★ {project.stars}</span>
-        )}
+        {project.stars &&
+          (project.links?.github ? (
+            <a
+              href={project.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${project.stars} stars on GitHub`}
+              className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/30 bg-amber-400/10 px-2.5 py-0.5 font-mono text-xs font-semibold text-amber-300 shadow-[0_0_12px_-2px_rgba(251,191,36,0.35)] transition-colors hover:border-amber-400/60 hover:bg-amber-400/20"
+            >
+              <span className="text-amber-400">
+                <StarIcon />
+              </span>
+              {project.stars}
+            </a>
+          ) : (
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/30 bg-amber-400/10 px-2.5 py-0.5 font-mono text-xs font-semibold text-amber-300 shadow-[0_0_12px_-2px_rgba(251,191,36,0.35)]">
+              <span className="text-amber-400">
+                <StarIcon />
+              </span>
+              {project.stars}
+            </span>
+          ))}
       </div>
       <p
         className={`mt-3 leading-relaxed text-muted ${hasVideo ? "max-w-2xl" : "max-w-md"}`}
