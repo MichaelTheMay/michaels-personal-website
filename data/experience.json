@@ -13,9 +13,17 @@
     "role": "Lead Developer",
     "meta": "Full-time · Austin, TX",
     "logo": "/experience/astronomic.svg",
-    "start": "Sep 2024",
-    "end": "Present",
-    "current": true
+    "start": "Oct 2025",
+    "end": "May 2026",
+    "current": false
+  },
+  {
+    "company": "Pawsitive Holdings",
+    "role": "AI Engineer",
+    "meta": "",
+    "start": "Aug 2025",
+    "end": "Nov 2025",
+    "current": false
   },
   {
     "company": "Brokk, Inc.",
@@ -27,20 +35,12 @@
     "current": false
   },
   {
-    "company": "Pawsitive Holdings",
-    "role": "AI Engineer",
-    "meta": "",
-    "start": "",
-    "end": "",
-    "current": false
-  },
-  {
     "company": "Paragon Innovations",
     "role": "Software Engineering Intern",
     "meta": "Internship",
     "logo": "/experience/paragon.webp",
-    "start": "",
-    "end": "",
+    "start": "Sep 2022",
+    "end": "May 2023",
     "current": false
   }
 ]
