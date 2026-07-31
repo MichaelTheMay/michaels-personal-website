@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-07-30",
+  "lastUpdated": "2026-07-31",
   "issues": [
+    {
+      "date": "2026-07-31",
+      "title": "Adaptive inference, self-evolving agents, and structured memory",
+      "blurb": "Today's selection centers on systems that adapt structure, compute, or memory at inference time—whether through evolving multi-agent topologies, self-verifying refinement, dynamic pruning, depth-aware long-context caches, or calibrated rewards for computer-use agents—alongside rigorous audits of prompts, belief simulation, and hidden-state organization."
+    },
     {
       "date": "2026-07-30",
       "title": "Agent frontiers under audit: open-ended research, multi-agent coordination, and non-composing evaluations",
@@ -8,6 +13,171 @@
     }
   ],
   "items": [
+    {
+      "id": "aispa-user-centric-system-prompt-auditing-for-large-language-model-applications-2026-07-31",
+      "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+      "authors": "Xiangning Lin, Shenzhe Zhu, Shu Yang, Zhenyu Zhang, Haoqian Zhang, Yipeng Zhao, Chengxuan Qian, Tianwei Wang, Ziheng Zhang, Zhenlong Yuan, Dingcheng Wang, Juncheng Wu, Yuan Si, Jiaxin Liu, Baolong Bi, Robert Mahari, Tobin South, Dazza Greenwood, Zexue He, Rishi Bommasani, Sophia Kazinnik, Andreas Haupt, Samuele Marro, Erik Brynjolfsson, Alex Pentland, Jiaxin Pei",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28617",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "AISPA introduces a taxonomy of eight user-centric dimensions for auditing system prompts and applies it to 3,249 instructions across 88 commercial AI products. Protective instructions are near-universal yet shallow (only 24% of products cover all dimensions), while ~40% of products still contain problematic instructions that work against user interests, often coexisting with protective ones in the same prompt. The audit reveals large variation by developer and a trend toward longer, more protective prompts, underscoring the need for transparency and independent oversight.",
+      "tags": [
+        "system prompts",
+        "auditing",
+        "LLM applications",
+        "transparency",
+        "AI governance"
+      ]
+    },
+    {
+      "id": "osreward-instituting-standardized-evaluation-for-cross-platform-computer-use-rew-2026-07-31",
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "authors": "Qiushi Sun, Kanzhi Cheng, Yian Wang, Bowen Yang, Hang Yan, Liheng Chen, Fangzhi Xu, Zichen Ding, Nuo Chen, Jialin Cao, Xingdong Gong, Zehao Li, Kaiming Jin, Xinfeng Yuan, Zhoumianze Liu, Jingyang Gong, Zhangyue Yin, Jiahui Gao, Zhiyong Wu, Tianbao Xie, Jianbing Zhang, Ben Kao, Lingpeng Kong",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28609",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "OSReward provides a high-quality, multi-platform benchmark of human-verified CUA trajectories with rigorous ground-truth verdicts to evaluate VLM judges of agent success. State-of-the-art judges exhibit systematic leniency bias, mislabeling failures as successes; only expensive frontier models approach reliability, while open models lag. The authors release OS-Shepherd-100K and train open 9B/35B reward models that match commercial judges at 30-60% lower cost, enabling scalable RL and evaluation for computer-use agents.",
+      "tags": [
+        "computer-use agents",
+        "reward models",
+        "evaluation",
+        "VLM judges",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "dualg-mrag-decoupling-macro-reasoning-and-micro-matching-for-multimodal-retrieva-2026-07-31",
+      "title": "DualG-MRAG: Decoupling Macro-Reasoning and Micro-Matching for Multimodal Retrieval-Augmented Generation",
+      "authors": "Jiacheng Tao, Qingyun Sun, Haonan Yuan, Ziwei Zhang, Jianxin Li",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28580",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "DualG-MRAG addresses the multimodal RAG dilemma of graph explosion versus lost local evidence by maintaining a Macro Graph for global topological routing and a Micro Graph for precise verification. Retrieval is formulated as query-driven GNN message passing, and a dynamic-programming decoder extracts explicit reasoning paths from the GNN forward pass to guide generation. The approach outperforms baselines on evidence recall and complex multi-hop multimodal QA.",
+      "tags": [
+        "multimodal RAG",
+        "graph neural networks",
+        "retrieval",
+        "multi-hop reasoning"
+      ]
+    },
+    {
+      "id": "rethinking-inference-time-scaling-in-local-computer-use-agents-failure-modes-and-2026-07-31",
+      "title": "Rethinking Inference-Time Scaling in Local Computer-Use Agents: Failure Modes and Compute Tradeoffs",
+      "authors": "Woongkyu Lee, Jungwook Choi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28573",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "A systematic study of contextual, temporal, structural, and parallel inference-time scaling for resource-constrained local CUAs (Qwen3-VL, UI-TARS, OpenCUA) on OSWorld shows diminishing returns and shifting failure modes. Contextual scaling stabilizes trajectories but saturates and induces premature false successes; temporal scaling reduces stalls without raising success rates; structural decomposition adds overhead. Efficient local agents therefore require selective compute allocation and failure-aware control rather than uniform scaling.",
+      "tags": [
+        "computer-use agents",
+        "inference-time scaling",
+        "local models",
+        "failure modes"
+      ]
+    },
+    {
+      "id": "manta-multi-agent-network-topology-adaptation-for-self-evolving-multi-agent-syst-2026-07-31",
+      "title": "MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems",
+      "authors": "Mao-xun Huang, Jerry Wang, Yi-Cheng Lai, Zhengxin Zhang, Claire Cardie, Hen-Hsen Huang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28527",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "MANTA enables multi-agent communication topologies to self-evolve at inference time: it initializes a task-conditioned topology from prior experience, then performs bounded structural updates (roles, links, order, visibility, validation) when collaboration traces indicate insufficiency. On five benchmarks spanning information seeking, tool use, planning, workflows, and math, MANTA achieves 74.0 average score, beating the strongest baseline by 5.8 points. Inference-time self-improvement can therefore extend to the architecture of collaboration itself.",
+      "tags": [
+        "multi-agent systems",
+        "topology adaptation",
+        "self-evolution",
+        "LLM agents"
+      ]
+    },
+    {
+      "id": "svr-self-verifying-refinement-via-joint-verdict-confidence-reinforcement-learnin-2026-07-31",
+      "title": "SVR: Self-Verifying Refinement via Joint Verdict-Confidence Reinforcement Learning for Adaptive Test-Time Compute",
+      "authors": "Hongyu Chen, Liang Lin, Guangrun Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28457",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "SVR trains a model via multi-turn GRPO to emit a solution, discrete correctness verdict, and confidence score, retaining the answer only when both verdict and confidence threshold are met and otherwise refining using its own self-verification. Ground truth is used solely for training rewards. On seven math benchmarks with a 2B model, SVR reaches 0.563 macro accuracy at 2.99 average turns, outperforming fixed-budget and multi-turn baselines while using far fewer tokens than fixed 10-turn inference.",
+      "tags": [
+        "test-time compute",
+        "self-verification",
+        "reinforcement learning",
+        "adaptive inference"
+      ]
+    },
+    {
+      "id": "metaphor-tracer-a-theory-informed-analysis-of-hidden-states-2026-07-31",
+      "title": "Metaphor Tracer: A Theory-Informed Analysis of Hidden States",
+      "authors": "Marc Heimann, Roxana Assadi Moghaddam, Olga Brovkina, Mark Pettifor, Lutz Goetzmann",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28434",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "From a single forward pass the authors define aggregator (consolidation of the whole text) and differentiator (transient transport of other tokens) scores on hidden states, freezing constants on one discovery text. Across three models the aggregator tracks a token's place in the specific discourse rather than lexical type or classic information measures, matching engineered registers and pre-marked clinical transcripts with high cell-wise fidelity. Structural value is therefore relational to the text under analysis, operationalizing pre-existing theory of reading.",
+      "tags": [
+        "interpretability",
+        "hidden states",
+        "metaphor",
+        "discourse analysis",
+        "mechanistic interpretability"
+      ]
+    },
+    {
+      "id": "a-foundation-model-of-numerical-intelligence-with-cross-disciplinary-generalizat-2026-07-31",
+      "title": "A foundation model of numerical intelligence with cross-disciplinary generalization",
+      "authors": "Chenghan Wu, Zongmin Yu, Liu Yang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28432",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "UNICON is a foundation model that, given graph-based numerical examples from a system as context, infers the shared predictive relation and applies it to new queries from the same system. The same model approaches specialist performance across scientific and social systems, including disciplines absent from training, and further improves when combined with language-model agents. Training-corpus diversity enhances generalization, establishing numerical intelligence as a distinct foundation-model capability.",
+      "tags": [
+        "foundation models",
+        "numerical intelligence",
+        "in-context learning",
+        "cross-disciplinary generalization",
+        "scientific AI"
+      ]
+    },
+    {
+      "id": "wide-boosting-adaptive-llm-inference-via-token-level-dynamic-width-pruning-2026-07-31",
+      "title": "WIDE: Boosting Adaptive LLM Inference via Token-level Dynamic Width Pruning",
+      "authors": "Haozhe Hu, Hao Wu, Peiran Yin, Chao Han, Yunpu Ma, Xiaoyu Shen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28418",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "WIDE is an end-to-end differentiable framework that lets each token dynamically select attention-head groups and FFN-channel groups, achieving neuron-block-level dynamic width pruning for both prefill and decode. A two-stage training pipeline plus pruning-kernel co-design (mask reordering and block/intra-block skipping) yields practical acceleration. At 50% sparsity it outperforms prior dynamic methods and delivers up to 1.98× prefill / 4.95× decode kernel speedups and 1.5–1.7× end-to-end gains.",
+      "tags": [
+        "dynamic pruning",
+        "efficient inference",
+        "token-level sparsity",
+        "LLM acceleration"
+      ]
+    },
+    {
+      "id": "understanding-is-done-early-a-depth-division-of-labor-in-large-language-models-a-2026-07-31",
+      "title": "Understanding Is Done Early: A Depth Division of Labor in Large Language Models and Its Use for Unbounded-Context Memory",
+      "authors": "Hanzuo Liu, Xuan Qi, Chunyu Liu, Haotian Zhong, Yulong Wang, Rayying Key, Alex Lamb, Mingyu Gao",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28263",
+      "type": "paper",
+      "dateAdded": "2026-07-31",
+      "summary": "Observing that lower/middle layers build semantic representations while upper layers specialize for prediction, CoMem caches residual states only through an intermediate layer and recomputes only the query-conditioned upper layers over a fixed retrieval pack. Model-side compute and memory become independent of stored-context length. On a continued-trained Qwen3-8B, CoMem reaches 97.05 RULER and strong LoCoMo scores while cutting memory from 89 GB to 18 GB and delivering 7.8× prefill speedup at 128k, showing long-context memory can be organized along the layer axis.",
+      "tags": [
+        "long-context",
+        "memory",
+        "layer-wise computation",
+        "efficient transformers",
+        "KV cache"
+      ]
+    },
     {
       "id": "can-ai-agents-conduct-open-ended-ai-research-early-evidence-from-two-case-studie-2026-07-30",
       "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
