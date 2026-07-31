@@ -3,6 +3,7 @@
     "company": "Veritec AI",
     "role": "Forward Deployed AI Engineer",
     "meta": "Contract · 2 mos",
+    "logo": "/experience/veritec.webp",
     "start": "Jun 2026",
     "end": "Jul 2026",
     "current": false
@@ -11,6 +12,7 @@
     "company": "Astronomic",
     "role": "Lead Developer",
     "meta": "Full-time · Austin, TX",
+    "logo": "/experience/astronomic.svg",
     "start": "Sep 2024",
     "end": "Present",
     "current": true
@@ -19,6 +21,7 @@
     "company": "Brokk, Inc.",
     "role": "Software Engineer",
     "meta": "Full-time · Austin, TX",
+    "logo": "/experience/brokk.webp",
     "start": "Jun 2025",
     "end": "Aug 2025",
     "current": false
@@ -35,6 +38,7 @@
     "company": "Paragon Innovations",
     "role": "Software Engineering Intern",
     "meta": "Internship",
+    "logo": "/experience/paragon.webp",
     "start": "",
     "end": "",
     "current": false

@@ -5,14 +5,29 @@ type Role = {
   company: string;
   role: string;
   meta?: string;
+  logo?: string;
   start: string;
   end: string;
   current?: boolean;
 };
 
-// Simple monogram used as the role icon — the company's initial in an
-// accent-tinted rounded square, so no per-company logo assets are needed.
-function Monogram({ company }: { company: string }) {
+// Company logo on a white tile (object-contain so any logo shape fits), with a
+// monogram fallback for companies we don't have a logo for.
+function CompanyIcon({ company, logo }: { company: string; logo?: string }) {
+  if (logo) {
+    return (
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-white p-1.5">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={logo}
+          alt={`${company} logo`}
+          width={40}
+          height={40}
+          className="h-full w-full object-contain"
+        />
+      </span>
+    );
+  }
   const initial = company.trim().charAt(0).toUpperCase();
   return (
     <span
@@ -43,7 +58,7 @@ export function Experience() {
           <Reveal key={`${role.company}-${role.start}`}>
             <div className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
               <div className="flex items-center gap-4">
-                <Monogram company={role.company} />
+                <CompanyIcon company={role.company} logo={role.logo} />
                 <div>
                   <div className="flex flex-wrap items-center gap-2">
                     <h3 className="font-semibold">{role.role}</h3>
