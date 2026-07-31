@@ -115,6 +115,40 @@ async function resend(pathname, init = {}) {
   return body;
 }
 
+/**
+ * Check the credentials actually work. Run during rehearsals so an empty or
+ * mistyped secret surfaces then, instead of at 13:00 UTC on the first real send.
+ */
+async function preflight() {
+  const key = process.env.RESEND_API_KEY;
+  const audienceId = process.env.RESEND_AUDIENCE_ID;
+
+  if (!key) {
+    console.warn("[preflight] RESEND_API_KEY is missing or empty.");
+    return false;
+  }
+  console.log(`[preflight] RESEND_API_KEY present (${key.length} chars).`);
+
+  try {
+    const res = await fetch(`${RESEND_API}/audiences`, {
+      headers: { Authorization: `Bearer ${key}` },
+    });
+    if (!res.ok) {
+      console.warn(`[preflight] auth check failed: ${res.status} ${await res.text()}`);
+      return false;
+    }
+    const body = await res.json();
+    const found = (body.data || []).some((a) => a.id === audienceId);
+    console.log(
+      `[preflight] auth OK · audience ${audienceId} ${found ? "found" : "NOT found in /audiences"}.`
+    );
+    return true;
+  } catch (error) {
+    console.warn(`[preflight] auth check errored: ${error}`);
+    return false;
+  }
+}
+
 /** The push may not have deployed yet; the known failure mode is a skipped webhook. */
 async function waitForArchive(url) {
   for (let attempt = 1; attempt <= DEPLOY_POLL_ATTEMPTS; attempt++) {
@@ -156,6 +190,9 @@ async function main() {
     console.log(`[dry run] subject: ${subject}`);
     console.log(`[dry run] name: ${broadcastName}`);
     console.log(`[dry run] items: ${issue.items.length}`);
+    // Preflight the credentials too, so a rehearsal catches a missing or empty
+    // secret rather than the first real send failing at 13:00 UTC.
+    await preflight();
     console.log(html);
     return;
   }

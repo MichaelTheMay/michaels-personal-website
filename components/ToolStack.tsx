@@ -122,8 +122,7 @@ export function ToolStack() {
           </ExtLink>{" "}
           (Vercel Labs) — the base for all my headless browser agents. Its plugin
           system lets them work through real user-auth flows and, where a site&apos;s
-          terms allow, captchas, so I keep several always-on Hermes agents running
-          around the clock.
+          terms allow, captchas.
         </p>
       </Reveal>
     </section>
