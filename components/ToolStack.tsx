@@ -12,13 +12,14 @@ type Tool = {
   imageAlt: string;
 };
 
-// Positioning for the three-card fan: left card dips and tilts left, the
-// middle sits upright and raised in front, the right card mirrors the left.
-// Cards straighten and lift on hover.
+// Positioning + sizing for the three-card fan. The fan stays on at every width:
+// amux is the larger, raised center card; Backdoor and AgentFlow are smaller
+// cards tilted off to each side. Widths and overlap scale up at sm+ so the
+// compact mobile fan fits a phone without the cards or labels colliding.
 const FAN = [
-  "z-10 origin-bottom-right rotate-[-8deg] translate-y-6 sm:-mr-10 hover:rotate-[-4deg] hover:-translate-y-1",
-  "z-20 -translate-y-2 hover:-translate-y-4",
-  "z-10 origin-bottom-left rotate-[8deg] translate-y-6 sm:-ml-10 hover:rotate-[4deg] hover:-translate-y-1",
+  "z-10 w-24 origin-bottom-right rotate-[-8deg] translate-y-4 -mr-5 sm:w-52 sm:translate-y-6 sm:-mr-10 sm:hover:rotate-[-4deg] sm:hover:-translate-y-1",
+  "z-20 w-40 -translate-y-1 sm:w-60 sm:-translate-y-2 sm:hover:-translate-y-4",
+  "z-10 w-24 origin-bottom-left rotate-[8deg] translate-y-4 -ml-5 sm:w-52 sm:translate-y-6 sm:-ml-10 sm:hover:rotate-[4deg] sm:hover:-translate-y-1",
 ];
 
 function ToolCard({ tool, fan }: { tool: Tool; fan: string }) {
@@ -28,7 +29,7 @@ function ToolCard({ tool, fan }: { tool: Tool; fan: string }) {
       href={tool.href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group relative block w-52 shrink-0 transition-transform duration-500 ease-out sm:w-60 ${fan}`}
+      className={`group relative block shrink-0 transition-transform duration-500 ease-out ${fan}`}
     >
       <div
         className={`aspect-[4/3] overflow-hidden rounded-xl border bg-[#0e0e11] shadow-2xl shadow-black/50 ${
@@ -47,10 +48,11 @@ function ToolCard({ tool, fan }: { tool: Tool; fan: string }) {
           className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
         />
       </div>
-      {/* Title + stars overlapping the bottom edge, like the reference fan. */}
-      <div className="absolute -bottom-3 left-4 flex items-center gap-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
-        <span className="text-base font-semibold text-foreground">{tool.title}</span>
-        <span className="font-mono text-[11px] text-muted">★ {tool.stars}</span>
+      {/* Title + stars overlapping the bottom edge, like the reference fan.
+          Shrinks on the compact mobile side cards, full size at sm+. */}
+      <div className="absolute -bottom-2.5 left-2 flex items-center gap-1.5 whitespace-nowrap drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)] sm:-bottom-3 sm:left-4 sm:gap-2">
+        <span className="text-[11px] font-semibold text-foreground sm:text-base">{tool.title}</span>
+        <span className="font-mono text-[9px] text-muted sm:text-[11px]">★ {tool.stars}</span>
       </div>
     </a>
   );
@@ -85,7 +87,7 @@ export function ToolStack() {
       </Reveal>
 
       <Reveal className="mt-14 sm:mt-20">
-        <div className="flex flex-col items-center gap-10 sm:flex-row sm:justify-center sm:gap-0 sm:[perspective:1200px]">
+        <div className="flex items-center justify-center [perspective:1200px]">
           {items.map((tool, i) => (
             <ToolCard key={tool.slug} tool={tool} fan={FAN[i] ?? FAN[1]} />
           ))}
@@ -96,13 +98,10 @@ export function ToolStack() {
       <Reveal className="mt-16 text-center sm:mt-24">
         <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted">
           The one I lean on hardest is <RepoLink tool={bySlug("amux")} /> — an
-          open-source control plane for coding agents that I run as a modified
-          fork. It spins up and supervises dozens of parallel Claude Code and
-          Codex sessions, each on its own branch, and surfaces them as a live
-          board of sessions, tasks, and progress. Because it's web-based, I can
-          kick off a run, watch every agent work, and steer or merge them
-          straight from my phone — so a batch of work keeps moving whether I'm at
-          my desk or not. Every session also writes to{" "}
+          open-source control plane I run as a modified fork, with Claude Code as
+          its base. It supervises dozens of parallel Claude Code and Codex
+          sessions, so I can kick off a run, watch every agent, and merge from my
+          phone. Every session writes to{" "}
           <a
             href="https://mycelicmemory.com"
             target="_blank"
@@ -111,13 +110,11 @@ export function ToolStack() {
           >
             MycelicMemory
           </a>
-          , my own MCP server that gives every agent local, persistent memory
-          that survives across runs — no cloud, no leakage. Alongside those,{" "}
-          <RepoLink tool={bySlug("backdoor")} /> lets me point Claude Code at any
-          provider (DeepSeek, Groq, Ollama, OpenRouter) to route each task to
-          whatever's cheapest or fastest, and{" "}
-          <RepoLink tool={bySlug("agentflow")} /> wires agents and harnesses into
-          a graph when a job needs real fan-out instead of a linear script.
+          , my own MCP server for local, persistent memory across runs.{" "}
+          <RepoLink tool={bySlug("backdoor")} /> points Claude Code at any
+          provider — I usually route through OpenRouter — and{" "}
+          <RepoLink tool={bySlug("agentflow")} /> wires agents into a graph when a
+          job needs real fan-out.
         </p>
       </Reveal>
     </section>
