@@ -1,0 +1,119 @@
+import tools from "@/data/tools.json";
+import { toolStack } from "@/lib/config";
+import { Reveal } from "@/components/Reveal";
+
+type Tool = {
+  slug: string;
+  title: string;
+  stars: string;
+  href: string;
+  blurb: string;
+  terminal: { file: string; lines: string[] };
+};
+
+// A faux terminal screenshot standing in for the repo preview. Placeholder art
+// so the fanned-card styling reads without needing real screenshots yet.
+function TerminalMock({ file, lines }: Tool["terminal"]) {
+  return (
+    <div className="flex h-full flex-col bg-[#0e0e11]">
+      <div className="flex items-center gap-1.5 border-b border-white/5 px-3 py-2">
+        <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
+        <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
+        <span className="ml-2 font-mono text-[10px] text-muted">{file}</span>
+      </div>
+      <div className="flex-1 space-y-1.5 px-3.5 py-3">
+        {lines.map((line, i) => (
+          <p
+            key={i}
+            className="font-mono text-[10px] leading-relaxed text-foreground/55"
+          >
+            {line}
+          </p>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// Positioning for the three-card fan: left card dips and tilts left, the
+// middle sits upright and raised in front, the right card mirrors the left.
+// Cards straighten and lift on hover.
+const FAN = [
+  "z-10 origin-bottom-right rotate-[-8deg] translate-y-6 sm:-mr-10 hover:rotate-[-4deg] hover:-translate-y-1",
+  "z-20 -translate-y-2 hover:-translate-y-4",
+  "z-10 origin-bottom-left rotate-[8deg] translate-y-6 sm:-ml-10 hover:rotate-[4deg] hover:-translate-y-1",
+];
+
+function ToolCard({ tool, fan }: { tool: Tool; fan: string }) {
+  const isCenter = fan.includes("z-20");
+  return (
+    <a
+      href={tool.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`group relative block w-64 shrink-0 transition-transform duration-500 ease-out sm:w-72 ${fan}`}
+    >
+      <div
+        className={`aspect-[4/3] overflow-hidden rounded-xl border bg-surface shadow-2xl shadow-black/50 ${
+          isCenter
+            ? "border-accent/40 ring-1 ring-accent/20"
+            : "border-border"
+        }`}
+      >
+        <TerminalMock {...tool.terminal} />
+      </div>
+      {/* Title + stars overlapping the bottom edge, like the reference fan. */}
+      <div className="absolute -bottom-3 left-4 flex items-center gap-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
+        <span className="text-lg font-semibold text-foreground">{tool.title}</span>
+        <span className="font-mono text-xs text-muted">★ {tool.stars}</span>
+      </div>
+    </a>
+  );
+}
+
+export function ToolStack() {
+  const items = tools as Tool[];
+
+  return (
+    <section className="mx-auto max-w-4xl px-6 py-12">
+      <Reveal>
+        <h2 className="text-2xl font-medium leading-snug sm:text-3xl">
+          {toolStack.caption}
+        </h2>
+        <p className="mt-4 max-w-2xl text-muted">{toolStack.subhead}</p>
+      </Reveal>
+
+      <Reveal className="mt-14 sm:mt-20">
+        <div className="flex flex-col items-center gap-10 sm:flex-row sm:justify-center sm:gap-0 sm:[perspective:1200px]">
+          {items.map((tool, i) => (
+            <ToolCard key={tool.slug} tool={tool} fan={FAN[i] ?? FAN[1]} />
+          ))}
+        </div>
+      </Reveal>
+
+      {/* Each repo spelled out, since the fanned cards only carry a name + stars. */}
+      <Reveal className="mt-16 sm:mt-24">
+        <ul className="space-y-6">
+          {items.map((tool) => (
+            <li key={tool.slug} className="border-l border-border pl-4">
+              <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
+                <a
+                  href={tool.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-foreground transition-colors hover:text-accent"
+                >
+                  {tool.title}
+                  <span aria-hidden className="ml-1 text-muted">↗</span>
+                </a>
+                <span className="font-mono text-xs text-muted">★ {tool.stars}</span>
+              </div>
+              <p className="mt-1.5 max-w-2xl leading-relaxed text-muted">{tool.blurb}</p>
+            </li>
+          ))}
+        </ul>
+      </Reveal>
+    </section>
+  );
+}
