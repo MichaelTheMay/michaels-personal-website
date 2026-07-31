@@ -56,16 +56,32 @@ function ToolCard({ tool, fan }: { tool: Tool; fan: string }) {
   );
 }
 
+// Inline repo link used inside the combined explanation paragraph.
+function RepoLink({ tool }: { tool?: Tool }) {
+  if (!tool) return null;
+  return (
+    <a
+      href={tool.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-foreground underline decoration-border underline-offset-2 transition-colors hover:text-accent hover:decoration-accent"
+    >
+      {tool.title}
+    </a>
+  );
+}
+
 export function ToolStack() {
   const items = tools as Tool[];
+  const bySlug = (slug: string) => items.find((t) => t.slug === slug);
 
   return (
     <section className="mx-auto max-w-4xl px-6 py-12">
-      <Reveal>
+      <Reveal className="text-center">
         <h2 className="text-xl font-medium leading-snug sm:text-2xl">
           {toolStack.caption}
         </h2>
-        <p className="mt-3 max-w-2xl text-sm text-muted">{toolStack.subhead}</p>
+        <p className="mx-auto mt-3 max-w-2xl text-sm text-muted">{toolStack.subhead}</p>
       </Reveal>
 
       <Reveal className="mt-14 sm:mt-20">
@@ -76,27 +92,22 @@ export function ToolStack() {
         </div>
       </Reveal>
 
-      {/* Each repo spelled out, since the fanned cards only carry a name + stars. */}
-      <Reveal className="mt-16 sm:mt-24">
-        <ul className="space-y-6">
-          {items.map((tool) => (
-            <li key={tool.slug} className="border-l border-border pl-4">
-              <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
-                <a
-                  href={tool.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-semibold text-foreground transition-colors hover:text-accent"
-                >
-                  {tool.title}
-                  <span aria-hidden className="ml-1 text-muted">↗</span>
-                </a>
-                <span className="font-mono text-[11px] text-muted">★ {tool.stars}</span>
-              </div>
-              <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-muted">{tool.blurb}</p>
-            </li>
-          ))}
-        </ul>
+      {/* One paragraph covering all three, with amux explained in more depth. */}
+      <Reveal className="mt-16 text-center sm:mt-24">
+        <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted">
+          The one I lean on hardest is <RepoLink tool={bySlug("amux")} /> — an
+          open-source control plane for coding agents that I run as a modified
+          fork. It spins up and supervises dozens of parallel Claude Code and
+          Codex sessions, each on its own branch, and surfaces them as a live
+          board of sessions, tasks, and progress. Because it's web-based, I can
+          kick off a run, watch every agent work, and steer or merge them
+          straight from my phone — so a batch of work keeps moving whether I'm at
+          my desk or not. Alongside it, <RepoLink tool={bySlug("backdoor")} /> lets
+          me point Claude Code at any provider (DeepSeek, Groq, Ollama,
+          OpenRouter) to route each task to whatever's cheapest or fastest, and{" "}
+          <RepoLink tool={bySlug("agentflow")} /> wires agents and harnesses into
+          a graph when a job needs real fan-out instead of a linear script.
+        </p>
       </Reveal>
     </section>
   );
