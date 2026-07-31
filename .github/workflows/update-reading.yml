@@ -4,7 +4,12 @@ on:
   schedule:
     # 13:00 UTC daily
     - cron: "0 13 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Render the digest email without sending it"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -27,13 +32,26 @@ jobs:
         run: npm run update:reading
 
       - name: Commit and push if changed
+        id: commit
         run: |
           git config user.name "reading-list-bot"
           git config user.email "actions@users.noreply.github.com"
           if git diff --quiet -- data/reading.json; then
             echo "No changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git add data/reading.json
           git commit -m "Update reading list for $(date -u +%Y-%m-%d)"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Only mails when there is a fresh issue. The script itself no-ops if no
+      # issue carries today's date, and skips if the broadcast already exists.
+      - name: Send daily digest email
+        if: steps.commit.outputs.changed == 'true' || inputs.dry_run
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+        run: npm run send:digest

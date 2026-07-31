@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "update:reading": "node scripts/update-reading.mjs"
+    "update:reading": "node scripts/update-reading.mjs",
+    "send:digest": "node scripts/send-digest.mjs"
   },
   "dependencies": {
     "next": "16.2.12",

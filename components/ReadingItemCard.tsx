@@ -6,9 +6,10 @@ const typeStyles: Record<string, string> = {
   scenario: "border-emerald-400/40 text-emerald-300",
 };
 
+/** Renders a div, not an li — the issue page wraps it so Reveal stays inside the li. */
 export function ReadingItemCard({ item }: { item: ReadingItem }) {
   return (
-    <li className="rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent">
+    <div className="rounded-xl border border-border bg-surface/40 p-6 transition-colors hover:border-accent/50 hover:bg-surface/60">
       <div className="flex flex-wrap items-center gap-3">
         <span
           className={`rounded-full border px-2.5 py-0.5 font-mono text-xs uppercase tracking-wide ${
@@ -39,6 +40,6 @@ export function ReadingItemCard({ item }: { item: ReadingItem }) {
           </span>
         ))}
       </div>
-    </li>
+    </div>
   );
 }

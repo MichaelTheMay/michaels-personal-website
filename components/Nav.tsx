@@ -15,7 +15,7 @@ export function Nav() {
         <div className="flex items-center gap-2 font-mono text-sm">
           <Link
             href="/reading"
-            className="hidden rounded-lg px-3 py-1.5 text-muted transition-colors hover:bg-surface-hover hover:text-foreground sm:inline-block"
+            className="inline-block rounded-lg px-2.5 py-1.5 text-muted transition-colors hover:bg-surface-hover hover:text-foreground sm:px-3"
           >
             ~/reading
           </Link>
