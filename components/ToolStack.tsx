@@ -8,33 +8,9 @@ type Tool = {
   stars: string;
   href: string;
   blurb: string;
-  terminal: { file: string; lines: string[] };
+  image: string;
+  imageAlt: string;
 };
-
-// A faux terminal screenshot standing in for the repo preview. Placeholder art
-// so the fanned-card styling reads without needing real screenshots yet.
-function TerminalMock({ file, lines }: Tool["terminal"]) {
-  return (
-    <div className="flex h-full flex-col bg-[#0e0e11]">
-      <div className="flex items-center gap-1.5 border-b border-white/5 px-3 py-2">
-        <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
-        <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
-        <span className="ml-2 font-mono text-[10px] text-muted">{file}</span>
-      </div>
-      <div className="flex-1 space-y-1.5 px-3.5 py-3">
-        {lines.map((line, i) => (
-          <p
-            key={i}
-            className="font-mono text-[10px] leading-relaxed text-foreground/55"
-          >
-            {line}
-          </p>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 // Positioning for the three-card fan: left card dips and tilts left, the
 // middle sits upright and raised in front, the right card mirrors the left.
@@ -55,13 +31,21 @@ function ToolCard({ tool, fan }: { tool: Tool; fan: string }) {
       className={`group relative block w-64 shrink-0 transition-transform duration-500 ease-out sm:w-72 ${fan}`}
     >
       <div
-        className={`aspect-[4/3] overflow-hidden rounded-xl border bg-surface shadow-2xl shadow-black/50 ${
+        className={`aspect-[4/3] overflow-hidden rounded-xl border bg-[#0e0e11] shadow-2xl shadow-black/50 ${
           isCenter
             ? "border-accent/40 ring-1 ring-accent/20"
             : "border-border"
         }`}
       >
-        <TerminalMock {...tool.terminal} />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={tool.image}
+          alt={tool.imageAlt}
+          width={900}
+          height={675}
+          loading="lazy"
+          className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+        />
       </div>
       {/* Title + stars overlapping the bottom edge, like the reference fan. */}
       <div className="absolute -bottom-3 left-4 flex items-center gap-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">

@@ -4,50 +4,26 @@
     "title": "Backdoor",
     "stars": "301",
     "href": "https://github.com/ajsai47/backdoor",
-    "blurb": "Runs Claude Code against any provider — DeepSeek, Groq, Ollama, OpenRouter. I point my agents at whatever model is cheapest or fastest for the task at hand.",
-    "terminal": {
-      "file": "backdoor",
-      "lines": [
-        "$ backdoor --provider groq",
-        "▸ routing Claude Code → groq/llama-3.3",
-        "▸ tools: bash, edit, read  · ok",
-        "✓ session live · 0.4s ttft",
-        "any model, same agent"
-      ]
-    }
+    "image": "/tools/backdoor.webp",
+    "imageAlt": "ajsai47/backdoor repository on GitHub",
+    "blurb": "Runs Claude Code against any provider — DeepSeek, Groq, Ollama, OpenRouter. I point my agents at whatever model is cheapest or fastest for the task at hand."
   },
   {
     "slug": "amux",
     "title": "amux",
     "stars": "321",
     "href": "https://github.com/mixpeek/amux",
-    "blurb": "A control plane for coding agents. I run a modified fork to orchestrate dozens of parallel Claude Code and Codex sessions — kicking them off and monitoring them straight from my phone.",
-    "terminal": {
-      "file": "amux",
-      "lines": [
-        "$ amux dashboard",
-        "● 12 agents running · 3 queued",
-        "● codex#7  editing api/routes.ts",
-        "● claude#4 writing tests · 92%",
-        "control plane ready — open on phone"
-      ]
-    }
+    "image": "/tools/amux.webp",
+    "imageAlt": "amux control-plane dashboard showing parallel agent sessions on a board",
+    "blurb": "A control plane for coding agents. I run a modified fork to orchestrate dozens of parallel Claude Code and Codex sessions — kicking them off and monitoring them straight from my phone."
   },
   {
     "slug": "agentflow",
     "title": "AgentFlow",
     "stars": "1.4k",
     "href": "https://github.com/berabuddies/agentflow",
-    "blurb": "Orchestrate thousands of agents and harnesses as a graph, programmatically. My reach-for when a workflow needs real fan-out structure instead of a linear script.",
-    "terminal": {
-      "file": "agentflow",
-      "lines": [
-        "$ agentflow run graph.py",
-        "→ compiling DAG · 1,024 nodes",
-        "→ fan-out: 64 harnesses in parallel",
-        "→ join · reduce · 3 retries healed",
-        "graph complete in 41s"
-      ]
-    }
+    "image": "/tools/agentflow.webp",
+    "imageAlt": "berabuddies/agentflow repository on GitHub",
+    "blurb": "Orchestrate thousands of agents and harnesses as a graph, programmatically. My reach-for when a workflow needs real fan-out structure instead of a linear script."
   }
 ]
