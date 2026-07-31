@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { SubscribeModal } from "@/components/SubscribeModal";
 import { siteConfig } from "@/lib/config";
 
 const geistSans = Geist({
@@ -24,6 +25,9 @@ export const metadata: Metadata = {
     template: `%s — ${siteConfig.name}`,
   },
   description: siteConfig.bio,
+  alternates: {
+    types: { "application/rss+xml": `${siteUrl}/rss.xml` },
+  },
   openGraph: {
     type: "website",
     url: siteUrl,
@@ -52,6 +56,7 @@ export default function RootLayout({
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <SubscribeModal />
       </body>
     </html>
   );

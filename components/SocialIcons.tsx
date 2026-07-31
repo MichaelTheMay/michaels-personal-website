@@ -1,4 +1,4 @@
-import { siteConfig } from "@/lib/config";
+import { siteConfig, newsletter } from "@/lib/config";
 
 type IconProps = { className?: string };
 
@@ -26,10 +26,19 @@ function YouTubeIcon({ className }: IconProps) {
   );
 }
 
+function RssIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden>
+      <path d="M6.18 15.64a2.18 2.18 0 1 1 0 4.36 2.18 2.18 0 0 1 0-4.36ZM4 4.44A15.56 15.56 0 0 1 19.56 20h-3.1A12.46 12.46 0 0 0 4 7.54v-3.1Zm0 5.66A9.9 9.9 0 0 1 13.9 20h-3.1A6.8 6.8 0 0 0 4 13.2v-3.1Z" />
+    </svg>
+  );
+}
+
 const socials = [
   { key: "github", href: siteConfig.links.github, label: "GitHub", Icon: GitHubIcon },
   { key: "linkedin", href: siteConfig.links.linkedin, label: "LinkedIn", Icon: LinkedInIcon },
   { key: "youtube", href: siteConfig.links.youtube, label: "YouTube", Icon: YouTubeIcon },
+  { key: "rss", href: newsletter.feedPath, label: "RSS feed", Icon: RssIcon },
 ].filter((social) => social.href);
 
 export function SocialIcons() {

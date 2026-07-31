@@ -33,6 +33,20 @@ export const philosophy = {
   body: "I'm obsessed with using AI to build sharper AI tools. The pattern I keep returning to: give an agent a sandbox with exactly the tools and permissions its task needs — no more — then compose those sandboxes into pipelines that run in parallel. Scope it right and a workflow that used to need a human in the loop runs on its own. It's the throughline in everything above.",
 };
 
+// Daily-digest newsletter copy + delivery settings.
+// Note: the Resend free tier allows 100 emails/day, so the list is effectively
+// capped at ~100 subscribers per daily send until the plan is upgraded.
+export const newsletter = {
+  heading: "Get the daily AI digest",
+  blurb:
+    "Every morning an agentic pipeline reads the day's new AI research and essays, ranks them, and sends you the best of it. One email a day, no noise.",
+  cta: "Subscribe",
+  success: "You're in. The next digest lands in your inbox tomorrow morning.",
+  placeholder: "you@example.com",
+  rssLabel: "RSS",
+  feedPath: "/rss.xml",
+};
+
 // "What do I use to code?" — the agentic tools I build with. Placeholder copy.
 export const toolStack = {
   caption: "What do I use to code?",
