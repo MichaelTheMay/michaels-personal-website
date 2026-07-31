@@ -1,30 +1,46 @@
 [
   {
-    "company": "Company One — replace me",
+    "company": "Veritec AI",
+    "role": "Forward Deployed AI Engineer",
+    "meta": "Contract · 2 mos",
+    "logo": "/experience/veritec.webp",
+    "start": "Jun 2026",
+    "end": "Jul 2026",
+    "current": false
+  },
+  {
+    "company": "Astronomic",
+    "role": "Lead Developer",
+    "meta": "Full-time · Austin, TX",
+    "logo": "/experience/astronomic.svg",
+    "start": "Oct 2025",
+    "end": "May 2026",
+    "current": false
+  },
+  {
+    "company": "Pawsitive Holdings",
     "role": "AI Engineer",
-    "start": "Aug 2024",
-    "end": "Present",
-    "current": true
-  },
-  {
-    "company": "Company Two — replace me",
-    "role": "Machine Learning Engineer",
-    "start": "Jun 2023",
-    "end": "Aug 2024",
+    "meta": "",
+    "start": "Aug 2025",
+    "end": "Nov 2025",
     "current": false
   },
   {
-    "company": "Company Three — replace me",
+    "company": "Brokk, Inc.",
     "role": "Software Engineer",
-    "start": "Apr 2022",
-    "end": "Jun 2023",
+    "meta": "Full-time · Austin, TX",
+    "logo": "/experience/brokk.webp",
+    "start": "Jun 2025",
+    "end": "Aug 2025",
     "current": false
   },
   {
-    "company": "Company Four — replace me",
-    "role": "Software Engineer",
-    "start": "Feb 2020",
-    "end": "Apr 2022",
+    "company": "Paragon Innovations",
+    "role": "Software Engineering Intern",
+    "meta": "Internship",
+    "logo": "/experience/paragon.webp",
+    "start": "Sep 2022",
+    "end": "May 2023",
     "current": false
   }
 ]

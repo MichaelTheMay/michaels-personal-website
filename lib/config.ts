@@ -33,6 +33,13 @@ export const philosophy = {
   body: "I'm obsessed with using AI to build sharper AI tools. The pattern I keep returning to: give an agent a sandbox with exactly the tools and permissions its task needs — no more — then compose those sandboxes into pipelines that run in parallel. Scope it right and a workflow that used to need a human in the loop runs on its own. It's the throughline in everything above.",
 };
 
+// "What do I use to code?" — the agentic tools I build with. Placeholder copy.
+export const toolStack = {
+  caption: "What do I use to code?",
+  subhead:
+    "I use a mixture of several very powerful agentic tools made by the community, including but not limited to:",
+};
+
 // Interstitial sentences keyed to a project group. Placeholder copy.
 export const interstitials: Record<string, string> = {
   agents: "And of course, like everybody else — falling for autonomous agents.",
