@@ -10,6 +10,10 @@ on:
         description: "Render the digest email without sending it"
         type: boolean
         default: false
+      send_now:
+        description: "Send today's digest even if the curation step found nothing new"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -46,10 +50,11 @@ jobs:
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
-      # Only mails when there is a fresh issue. The script itself no-ops if no
-      # issue carries today's date, and skips if the broadcast already exists.
+      # Only mails when there is a fresh issue, or when send_now forces a retry
+      # after a failed run. The script no-ops if no issue carries today's date,
+      # and skips if that day's broadcast already exists, so reruns are safe.
       - name: Send daily digest email
-        if: steps.commit.outputs.changed == 'true' || inputs.dry_run
+        if: steps.commit.outputs.changed == 'true' || inputs.dry_run || inputs.send_now
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
