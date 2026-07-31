@@ -102,9 +102,20 @@ export function ToolStack() {
           board of sessions, tasks, and progress. Because it's web-based, I can
           kick off a run, watch every agent work, and steer or merge them
           straight from my phone — so a batch of work keeps moving whether I'm at
-          my desk or not. Alongside it, <RepoLink tool={bySlug("backdoor")} /> lets
-          me point Claude Code at any provider (DeepSeek, Groq, Ollama,
-          OpenRouter) to route each task to whatever's cheapest or fastest, and{" "}
+          my desk or not. Every session also writes to{" "}
+          <a
+            href="https://mycelicmemory.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-foreground underline decoration-border underline-offset-2 transition-colors hover:text-accent hover:decoration-accent"
+          >
+            MycelicMemory
+          </a>
+          , my own MCP server that gives every agent local, persistent memory
+          that survives across runs — no cloud, no leakage. Alongside those,{" "}
+          <RepoLink tool={bySlug("backdoor")} /> lets me point Claude Code at any
+          provider (DeepSeek, Groq, Ollama, OpenRouter) to route each task to
+          whatever's cheapest or fastest, and{" "}
           <RepoLink tool={bySlug("agentflow")} /> wires agents and harnesses into
           a graph when a job needs real fan-out instead of a linear script.
         </p>
