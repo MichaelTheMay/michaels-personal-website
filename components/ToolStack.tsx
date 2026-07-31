@@ -28,7 +28,7 @@ function ToolCard({ tool, fan }: { tool: Tool; fan: string }) {
       href={tool.href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group relative block w-64 shrink-0 transition-transform duration-500 ease-out sm:w-72 ${fan}`}
+      className={`group relative block w-52 shrink-0 transition-transform duration-500 ease-out sm:w-60 ${fan}`}
     >
       <div
         className={`aspect-[4/3] overflow-hidden rounded-xl border bg-[#0e0e11] shadow-2xl shadow-black/50 ${
@@ -49,8 +49,8 @@ function ToolCard({ tool, fan }: { tool: Tool; fan: string }) {
       </div>
       {/* Title + stars overlapping the bottom edge, like the reference fan. */}
       <div className="absolute -bottom-3 left-4 flex items-center gap-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
-        <span className="text-lg font-semibold text-foreground">{tool.title}</span>
-        <span className="font-mono text-xs text-muted">★ {tool.stars}</span>
+        <span className="text-base font-semibold text-foreground">{tool.title}</span>
+        <span className="font-mono text-[11px] text-muted">★ {tool.stars}</span>
       </div>
     </a>
   );
@@ -62,10 +62,10 @@ export function ToolStack() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-12">
       <Reveal>
-        <h2 className="text-2xl font-medium leading-snug sm:text-3xl">
+        <h2 className="text-xl font-medium leading-snug sm:text-2xl">
           {toolStack.caption}
         </h2>
-        <p className="mt-4 max-w-2xl text-muted">{toolStack.subhead}</p>
+        <p className="mt-3 max-w-2xl text-sm text-muted">{toolStack.subhead}</p>
       </Reveal>
 
       <Reveal className="mt-14 sm:mt-20">
@@ -86,14 +86,14 @@ export function ToolStack() {
                   href={tool.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-foreground transition-colors hover:text-accent"
+                  className="text-sm font-semibold text-foreground transition-colors hover:text-accent"
                 >
                   {tool.title}
                   <span aria-hidden className="ml-1 text-muted">↗</span>
                 </a>
-                <span className="font-mono text-xs text-muted">★ {tool.stars}</span>
+                <span className="font-mono text-[11px] text-muted">★ {tool.stars}</span>
               </div>
-              <p className="mt-1.5 max-w-2xl leading-relaxed text-muted">{tool.blurb}</p>
+              <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-muted">{tool.blurb}</p>
             </li>
           ))}
         </ul>
