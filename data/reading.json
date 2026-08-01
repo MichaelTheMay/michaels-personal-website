@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-07-31",
+  "lastUpdated": "2026-08-01",
   "issues": [
+    {
+      "date": "2026-08-01",
+      "title": "Residual routing, capability nucleation, and agent self-diagnosis",
+      "blurb": "Today's papers probe how information and capabilities actually form and fail inside models and agents: multi-head residual streams and driven-nucleation kinetics for emergence, training-free divergence routing and action-centric graphs for inference-time fusion and memory, plus rigorous diagnoses of asymmetric safety collapse under merging, quantization damage masked by error budgets, and learnable blind-spot diagnosis that lets agents improve without weight updates."
+    },
     {
       "date": "2026-07-31",
       "title": "Selective belief, fragile oracles, and calibrated agent reliability",
@@ -13,6 +18,166 @@
     }
   ],
   "items": [
+    {
+      "id": "multi-head-attention-residuals-2026-08-01",
+      "title": "Multi-Head Attention Residuals",
+      "authors": "Cheng Luo, Zefan Cai, Junjie Hu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27230",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "Standard residual streams force every feature subspace to read depth history through a single shared softmax query, creating growing compromise cost with model width. MHAR reshapes the routing query into H independent per-subspace heads (zero extra parameters), yielding block-diagonal reads; H=1 recovers ordinary attention residuals. Trained from scratch to 1B scale on a filtered Nemotron anneal corpus, it improves validation loss over baselines at every size (gains largest at 350M–1B), with U-shaped dependence on H peaking at 4–8, plus successful identity-preserving conversion that lifts an 8B model on GSM8K and GPQA.",
+      "tags": [
+        "transformers",
+        "architecture",
+        "residuals",
+        "scaling"
+      ]
+    },
+    {
+      "id": "the-kinetics-of-training-a-driven-nucleation-rate-law-for-emergence-plasticity-l-2026-08-01",
+      "title": "The Kinetics of Training: A Driven-Nucleation Rate Law for Emergence, Plasticity Loss, and Circuit Control in Language Models",
+      "authors": "Lei Dong",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27281",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "Capabilities emerge only when the final missing circuit parts align in one stochastic attempt (no partial credit); wait times scale with the number of missing parts, not circuit size, and single-part ablation leaves ~17% residual capability (far below partial-credit predictions). This yields a driven-nucleation rate law (sites × attempts × drive × exp(−βK) − destruction) that predicts ignition timing from precursors to 5% median error, explains irreversible plasticity loss after a critical step despite smooth validation loss, and isolates a cure: re-initializing only query-key slices restores learnability while value slices do not.",
+      "tags": [
+        "emergence",
+        "circuits",
+        "training-dynamics",
+        "interpretability"
+      ]
+    },
+    {
+      "id": "skillmentor-llm-agent-self-evolution-via-learning-blind-spot-diagnosis-2026-08-01",
+      "title": "SkillMentor: LLM Agent Self-Evolution via Learning Blind-Spot Diagnosis",
+      "authors": "Xiaoyi Bao, Yuanzhen Xie, Yunzhi Tan, Jinghang Gu, Zhongqing Wang, Chu-Ren Huang, Bo Hu, Zang Li",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27360",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "Prior agent self-evolution assumes failures are already identified and focuses on repair; this work isolates diagnosis itself as a learnable policy, forbidding executor weight updates or human-curated examples. A Mentor policy trained by RL generates diagnostic tasks, extracts recurrent failure modes, and curates them into reusable corrective skills. On AppWorld and BFCLv3 the approach lifts executor success by 44.2% on average, showing that blind-spot discovery alone can drive self-improvement.",
+      "tags": [
+        "agents",
+        "self-evolution",
+        "RL",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "divergence-decoding-training-free-capability-fusion-2026-08-01",
+      "title": "Divergence Decoding: Training-Free Capability Fusion",
+      "authors": "Yimi Wang, Hao Li, Shuo Yang, He Cao, Dechen Zhang, Ziang Wu, Zhiyuan Yan, Fanyang Mo, Li Yuan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27248",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "Specialist models lose general reasoning while generalists lack domain knowledge; Divergence Decoding reframes speculative decoding as adaptive token-level routing. Jensen-Shannon divergence between specialist and generalist next-token distributions triggers instantaneous hand-off to the generalist precisely when the specialist risks reasoning failure, composing policies at inference time with no training. Across Qwen and Llama families on GPQA, ChemBench and ChemCoTBench the hybrid outperforms both constituent models and most single-model baselines.",
+      "tags": [
+        "inference",
+        "speculative-decoding",
+        "capability-fusion",
+        "scientific-LLMs"
+      ]
+    },
+    {
+      "id": "asymmetric-collapse-in-model-merging-when-refusal-overwrites-recognition-2026-08-01",
+      "title": "Asymmetric Collapse in Model Merging: When Refusal Overwrites Recognition",
+      "authors": "Aarnav Choudhary, Matheus Fonseca Rocha, Jiwon Seo, Vasu Sharma, Maheep Chaudhary",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27240",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "Merging two Gemma-3-1B safety fine-tunes (harm-level classification vs. jailbreak refusal) with Linear, SLERP, TIES and DARE-TIES preserves 81–85% refusal rates but collapses CARES classification accuracy to ≤12.9%. Task vectors are nearly orthogonal (cosine 0.011), so the asymmetry is not directional opposition; instead the refusal vector has systematically larger per-layer magnitudes, causing magnitude-sensitive mergers to overwrite recognition with broad refusal. The result shows standard merging can silently destroy nuanced safety capabilities.",
+      "tags": [
+        "model-merging",
+        "safety",
+        "alignment",
+        "task-vectors"
+      ]
+    },
+    {
+      "id": "bridging-inference-time-scaling-and-episodic-memory-with-action-centric-graphs-2026-08-01",
+      "title": "Bridging Inference-Time Scaling and Episodic Memory with Action-Centric Graphs",
+      "authors": "Xu Zheng, Chaohao Lin, Zhuomin Chen, Weijieying Ren, Haifeng Chen, Wei Cheng, Dongsheng Luo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27415",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "Inference-time search for agents is stateless and redundant; existing memory still leans on expensive LLM reasoning. GAMER stores historical trajectories as a dynamic action-centric graph and learns dual-stream TD values (positive suggestion / negative avoidance) over action nodes, decoupling memory from the LLM. At inference the value function bi-directionally guides search, cutting token cost while raising success/progress rates 20.81%/6.17% over vanilla baselines on multiple agent benchmarks.",
+      "tags": [
+        "agents",
+        "episodic-memory",
+        "inference-scaling",
+        "graphs"
+      ]
+    },
+    {
+      "id": "flat-score-amplified-failures-how-the-error-budget-masks-damage-in-quantized-llm-2026-08-01",
+      "title": "Flat Score, Amplified Failures: How the Error Budget Masks Damage in Quantized LLM Agents",
+      "authors": "Jiwon Jang, Kisu Yang, Heuiseok Lim, Hyunwoo Park",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27275",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "4-bit post-training quantization appears nearly lossless on τ²-bench task scores across dense/MoE models and domains, with no statistically significant score drops after multiple-comparison correction. Process metrics reveal the opposite: quantization amplifies the model’s pre-existing failure modes (e.g., tool-name hallucination) up to 2.5× while creating almost no novel errors; the benchmark’s ten-error budget simply absorbs the extra volume. Tightening the budget to two errors re-exposes a 17-point gap exactly where damage occurred, and a targeted repair prompt eliminates it, arguing for reporting per-channel error rates alongside reward.",
+      "tags": [
+        "quantization",
+        "agents",
+        "evaluation",
+        "robustness"
+      ]
+    },
+    {
+      "id": "rlpf-reinforcement-learning-from-performance-feedback-for-code-generation-2026-08-01",
+      "title": "RLPF: Reinforcement Learning from Performance Feedback for Code Generation",
+      "authors": "Huihao Jing, Haozhe Cui, Wenbin Hu, Shaojin Chen, Haochen Shi, Changxuan Fan, Yuxuan Liu, Hanyu Yang, Sirui Zhang, Ziyi Chen, Haoran Li, Yangqiu Song",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27271",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "Correctness-only execution feedback ignores large runtime differences among passing programs. RLPF constructs a staged reward: failed programs are ranked by execution progress, correct ones by relative efficiency gain toward an expert reference, supplying dense signal both before and after correctness. Fine-tuning Qwen3-32B on PerfCodeBench lifts correct-and-runnable rate from 11.1% to 54.6% and relative efficiency from 8.1% to 38.6%, with modest transfer to EffiBench-X, showing agents can be trained to optimize speed as well as pass tests.",
+      "tags": [
+        "code-generation",
+        "RL",
+        "efficiency",
+        "agents"
+      ]
+    },
+    {
+      "id": "pie-apt-a-unified-framework-for-temporal-planning-and-contradiction-hunting-via--2026-08-01",
+      "title": "PIE-APT: A Unified Framework for Temporal Planning and Contradiction Hunting via Incremental Direct-Derivation Abduction",
+      "authors": "Amir Hossein Sharafi, Alireza Shahbazi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27287",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "Open-world temporal planning over dynamic KGs must handle incomplete knowledge and the ramification problem while remaining decidable. PIE-Abducer replaces combinatorial minimal-hitting-set enumeration by injecting the negation of a goal into a consistent DL branch and extracting missing premises via direct refutation; PIE-APT then interleaves bounded A* backward search with this abducer and validates via forward temporal projection, all natively in OWL. On four OWL benchmarks stressing witness search, mid-search entailment, OWA injection and adversarial contradiction hunting, the approach qualitatively exceeds classical planners and quantitatively beats an MHS baseline.",
+      "tags": [
+        "planning",
+        "description-logics",
+        "abduction",
+        "knowledge-graphs"
+      ]
+    },
+    {
+      "id": "beyond-the-bidirectional-promise-re-evaluating-the-robustness-of-diffusion-langu-2026-08-01",
+      "title": "Beyond the Bidirectional Promise: Re-evaluating the Robustness of Diffusion Language Models",
+      "authors": "Saurabh Yadav, Badri Narayana Patro, Vijay Srinivas Agneeswaran",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27386",
+      "type": "paper",
+      "dateAdded": "2026-08-01",
+      "summary": "Paired parameter-matched comparisons (LLaDA-8B vs LLaMA-3-8B, Dream-7B vs Qwen2.5-7B) across 32 natural perturbations, adversarial probes and hidden-state analyses show DLMs resist gradient-based adversarial suffixes via stochastic loss landscapes yet enjoy no architectural free lunch against natural noise (robustness is weight-dependent). They also exhibit systematic overconfidence; mechanistic probes reveal every model perfectly encodes input corruption, localizing failure to decoder routing. Surface prompt patching therefore fails, implying robustness must be baked into the iterative decoding loop itself.",
+      "tags": [
+        "diffusion-LMs",
+        "robustness",
+        "calibration",
+        "mechanistic"
+      ]
+    },
     {
       "id": "selective-credibility-limited-belief-update-2026-07-31",
       "title": "Selective Credibility-Limited Belief Update",
