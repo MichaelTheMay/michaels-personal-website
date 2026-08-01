@@ -85,14 +85,14 @@ function ProjectCard({ project }: { project: Project }) {
               <span className="text-amber-400">
                 <StarIcon />
               </span>
-              {project.stars}
+              {project.stars} GitHub stars
             </a>
           ) : (
             <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/30 bg-amber-400/10 px-2.5 py-0.5 font-mono text-xs font-semibold text-amber-300 shadow-[0_0_12px_-2px_rgba(251,191,36,0.35)]">
               <span className="text-amber-400">
                 <StarIcon />
               </span>
-              {project.stars}
+              {project.stars} GitHub stars
             </span>
           ))}
       </div>

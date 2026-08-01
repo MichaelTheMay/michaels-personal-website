@@ -16,7 +16,7 @@
     "title": "Parallely",
     "badge": "Open source · MIT",
     "stars": "247",
-    "description": "I built Parallely — a CLI that splits one large coding task into sections and runs them concurrently, one AI coding agent per section, all in a shared git worktree. A fullscreen TUI streams every agent's live progress, output, and token usage, and finished sections auto-commit to a shared integration branch. Backend-agnostic — it drives Codex, Claude Code, or OpenCode. It struck a chord with the developer community, climbing past 240 stars.",
+    "description": "Parallely earned 240+ GitHub stars from the developer community. It's a CLI I built that splits one large coding task into sections and runs them concurrently, one AI coding agent per section, all in a shared git worktree. A fullscreen TUI streams every agent's live progress, output, and token usage, and finished sections auto-commit to a shared integration branch. Backend-agnostic — it drives Codex, Claude Code, or OpenCode.",
     "image": "/projects/parallely.webp",
     "video": {
       "mp4": "/projects/parallely.mp4",
