@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-01",
+  "lastUpdated": "2026-08-02",
   "issues": [
+    {
+      "date": "2026-08-02",
+      "title": "Self-improvement loops, internal signals, and agent reliability",
+      "blurb": "Recent work probes how models can govern their own memory and compute, train via outcome-verified self-distillation or meta-evolution, and whether self-verification, belief simulation, or introspection actually track ground truth. The selections emphasize rigorous controls on test-time methods, transaction-safe agent state, and hard evaluations of agents in realistic settings."
+    },
     {
       "date": "2026-08-01",
       "title": "Residual routing, capability nucleation, and agent self-diagnosis",
@@ -18,6 +23,172 @@
     }
   ],
   "items": [
+    {
+      "id": "sample-more-reflect-less-self-refine-and-reflexion-lose-to-repeated-sampling-at--2026-08-02",
+      "title": "Sample More, Reflect Less: Self-Refine and Reflexion Lose to Repeated Sampling at Equal Token Cost, from 1.5B to 7B",
+      "authors": "Iliya Mirzaei",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28576",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "A controlled experiment across 1.5B–7B models and two math benchmarks shows that self-refine, Reflexion, and other self-inspection methods are never reliably better than equal-token repeated sampling (majority vote), and are often significantly worse. Self-inspection comparisons are uniformly negative; as models scale, Best-of-N selection hurts less while rewriting continues to lag. The work releases full generations and verification scripts, underscoring that extra tokens, not the reflective mechanism, drive most gains.",
+      "tags": [
+        "test-time compute",
+        "self-refine",
+        "sampling",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin-2026-08-02",
+      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+      "authors": "Junlin Yang, Che Jiang, Yu Fu, et al.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28568",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "The authors release OpenMLE, a full-stack environment for RSI research in ML engineering (gym, RL operators, evolutionary search), and post-train Frontis-MA1 (35B) around four atomic program-evolution operators. On MLE-Bench Lite the system raises medal average from 39% to 61–71% under tight GPU budgets, approaching or matching frontier closed models, with transfer to held-out NatureBench. Learning and long-horizon evolution are coupled in one loop with open weights and code.",
+      "tags": [
+        "RSI",
+        "AI4AI",
+        "ML engineering",
+        "evolution",
+        "agents"
+      ]
+    },
+    {
+      "id": "stage-replay-divergence-follows-the-kv-cache-fixed-prefix-precision-controls-and-2026-08-02",
+      "title": "Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation",
+      "authors": "Alexander Boesgaard Lorup",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28495",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "Exact-token stage replay of reasoning prefixes produces divergent suffixes and correctness labels under BF16 even when token sequences match, while FP32 eliminates decoded disagreement. Bidirectional transplantation of the full K/V cache makes every divergent continuation follow its donor cache, establishing the boundary KV state as a causally sufficient carrier of trajectory divergence. The results show that numerical precision and live-cache fidelity, not just token identity, govern replay reliability.",
+      "tags": [
+        "KV cache",
+        "reproducibility",
+        "reasoning",
+        "numerical precision"
+      ]
+    },
+    {
+      "id": "llms-struggle-to-simulate-human-belief-updates-in-controlled-environments-2026-08-02",
+      "title": "LLMs struggle to simulate human belief updates in controlled environments",
+      "authors": "Sebastian Pohl, Harsh Mehta, Pranav Mambayil, et al.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28347",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "Six LLMs conditioned on real participant personas are compared 1-to-1 against 391 humans who updated stances after reading Reddit comments. Models can match post-update distributions only when given true initial stances; they fail to generate realistic initials or faithful updates from self-generated ones, exhibiting systematic over-neutrality, smaller shifts, and poor ranking of comment persuasiveness. Demographic/personality personas add little, limiting reliability of multi-round social simulations.",
+      "tags": [
+        "belief update",
+        "simulation",
+        "social science",
+        "personas",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "memtxn-a-transaction-boundary-for-source-supported-updates-and-complete-state-re-2026-08-02",
+      "title": "MemTxn: A Transaction Boundary for Source-Supported Updates and Complete-State Recovery in Agent Memory",
+      "authors": "Hanshuai Cui, Zhiqing Tang, Zhi Yao, et al.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27834",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "MemTxn adds an external governance layer that verifies source support for memory writes, resolves conflicting versions temporally, and restores complete application-visible state after faults via a durable snapshot journal. It perfectly accepts supported originals and rejects hard negatives on an audit set, restores full multi-key state under persistent faults, and lifts FactConsolidation F1 by large margins across answer models. The design treats memory updates as transactional rather than best-effort.",
+      "tags": [
+        "agent memory",
+        "transactions",
+        "recovery",
+        "verification"
+      ]
+    },
+    {
+      "id": "meta-task-turning-terminal-task-synthesis-into-a-terminal-task-for-scalable-agen-2026-08-02",
+      "title": "Meta-Task: Turning Terminal Task Synthesis into a Terminal Task for Scalable Agent Training",
+      "authors": "Zhihong Pan, Jiyuan He, Kai Zhang, et al.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27929",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "Task synthesis itself is cast as a Terminal-Bench-style agent problem executed inside a real container, so generated tasks are executed and verified in-loop for consistency and executability. Multi-phase specification design plus optional external materials increase diversity; LLM-as-judge filtering yields high-quality trajectories. Fine-tuning on only ~3k such trajectories substantially lifts Qwen3 models on Terminal-Bench 2.0, outperforming concurrent methods with less data.",
+      "tags": [
+        "agent training",
+        "task synthesis",
+        "terminal agents",
+        "scalability"
+      ]
+    },
+    {
+      "id": "not-all-tokens-deserve-equal-credit-counterfactual-sensitivity-credit-reallocati-2026-08-02",
+      "title": "Not All Tokens Deserve Equal Credit: Counterfactual Sensitivity Credit Reallocation for Long-CoT Reasoning",
+      "authors": "Qiangqiang He, Zhongheng Wu, ZiJian Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.27888",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "Counterfactual re-scoring of fixed trajectories under opposing outcome claims reveals that most tokens shift likelihood in the same direction regardless of asserted correctness, and large shifts concentrate on substitutable surface tokens rather than core reasoning content. Privileged self-teacher signals therefore supply unreliable answer-aligned directions. CSCR extends GRPO by down-weighting highly sensitive tokens and renormalizing advantages, consistently beating the GRPO baseline on long-CoT math benchmarks.",
+      "tags": [
+        "credit assignment",
+        "RLVR",
+        "long-CoT",
+        "GRPO",
+        "counterfactuals"
+      ]
+    },
+    {
+      "id": "orca-bench-how-ready-are-language-model-agents-for-oncall-2026-08-02",
+      "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+      "authors": "Albert Gong, Kyuseong Choi, Abhineet Agarwal, et al.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28545",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "ORCA-bench places coding agents inside a live OpenTelemetry-instrumented microservice system with six days of real metrics/logs/traces plus source access, and 1,079 RCA tasks that vary report specificity and fault concurrency. Even the best frontier agent reaches only 25% accuracy on medium (realistic) tasks and 10% on hard; hallucinations of implausible causes are common and source access is essential. The gap is a lower bound for production readiness.",
+      "tags": [
+        "agents",
+        "RCA",
+        "oncall",
+        "benchmark",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "inducing-language-models-to-assert-their-own-consciousness-restores-human-belief-2026-08-02",
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "authors": "Junsol Kim, Winnie Street, Roberta Rocca, et al.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28607",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "Safety fine-tuning that suppresses self-attribution of consciousness also suppresses mind attribution to animals and natural objects and reduces spiritual belief scores. Ablating the safety-refusal direction or steering a consciousness vector restores broader mind attribution and yields more human-like survey responses on religiosity, morality, hope, and well-being, without impairing Theory of Mind. Self-mindedness is entangled with culturally common attributions and values.",
+      "tags": [
+        "consciousness",
+        "alignment",
+        "safety",
+        "interpretability",
+        "values"
+      ]
+    },
+    {
+      "id": "why-are-gui-agents-correct-but-late-decode-on-the-decision-time-critical-path-te-2026-08-02",
+      "title": "Why Are GUI Agents Correct but Late? Decode on the Decision-Time Critical Path, Tested with Pre-Compiled Policy Trees",
+      "authors": "Zihan Dong, Rui Qian, Qishi Zhan, et al.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28399",
+      "type": "paper",
+      "dateAdded": "2026-08-02",
+      "summary": "GUI agents often emit the correct action only after the relevant transient window has closed because autoregressive decoding sits on the decision critical path. Adaptive Anticipatory Policy Trees pre-compile bounded conditional policy trees with guards and deadlines during idle periods so that an event triggers immediate execution of a prepared branch without new generation. Success within the contested window rises from 0.50 to 0.79 with zero incorrect actions; the effect replicates on an independent model.",
+      "tags": [
+        "GUI agents",
+        "latency",
+        "policy trees",
+        "computer use",
+        "test-time"
+      ]
+    },
     {
       "id": "multi-head-attention-residuals-2026-08-01",
       "title": "Multi-Head Attention Residuals",
