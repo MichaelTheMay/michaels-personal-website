@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-02",
+  "lastUpdated": "2026-08-03",
   "issues": [
+    {
+      "date": "2026-08-03",
+      "title": "Agent memory architectures, multi-objective control, and the fragility of alignment",
+      "blurb": "This issue gathers recent work on structured and evolving memory for long-horizon agents, policy-space methods for multi-reward optimization, and formal analyses of value fragility, imitation, and transformer expressivity under transcript management. The through-line is how agents can maintain competence and controllability over extended interactions without collapsing under conflicting objectives or imperfect proxies."
+    },
     {
       "date": "2026-08-02",
       "title": "Self-improvement loops, internal signals, and agent reliability",
@@ -23,6 +28,169 @@
     }
   ],
   "items": [
+    {
+      "id": "fragility-of-value-under-imperfect-alignment-2026-08-03",
+      "title": "Fragility of Value under Imperfect Alignment",
+      "authors": "Winter Cross",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28881",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "The paper formalizes idealized alignment training that enforces a proxy condition on an agent's value function before world-optimization. It derives conditions on the human value function and proxy accuracy under which an η-catastrophic value function (one that drives expected human value below η under unbounded optimization) is still deployed, highlighting over-optimization risk and motivating designs such as quantilizers that limit optimization pressure rather than relying solely on pre-deployment training.",
+      "tags": [
+        "AI alignment",
+        "value fragility",
+        "optimization",
+        "formal methods"
+      ]
+    },
+    {
+      "id": "transcript-managed-transformers-monotone-multi-agent-collapse-and-universality-w-2026-08-03",
+      "title": "Transcript-Managed Transformers: Monotone Multi-Agent Collapse and Universality with Two Pop-Enabled Transcripts",
+      "authors": "Sergey Salishev",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29496",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "The work models fixed-precision causal Transformers that manage transcripts partitioned into bounded channels, with stay/push/pop operations. It proves that pop-free (append-only) systems realize exactly deterministic finite-state transductions even for multi-agent monotone protocols, while two pop-enabled channels restore stack discipline and yield universality (RE), with exact simulation costs and invariance results under fixed block size and visibility.",
+      "tags": [
+        "transformers",
+        "formal languages",
+        "multi-agent",
+        "expressivity",
+        "theory"
+      ]
+    },
+    {
+      "id": "the-grokked-illusion-true-equilibrium-mitigates-catastrophic-forgetting-2026-08-03",
+      "title": "The Grokked Illusion: True Equilibrium Mitigates Catastrophic Forgetting",
+      "authors": "Xiaotian Zhang, Lai Shun Chan, Yue Shang, Entao Yang, Ge Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29503",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "Using modular arithmetic grokking, the authors compare AdamW-trained transformers against high-entropy models sampled via Wang-Landau molecular dynamics that achieve identical saturated performance. After forcing both to memorize random-label data, AdamW models drop original-task accuracy below 75% while high-entropy models retain ~95%, linked to higher effective rank in attention and MLP weights that buffers against interference; perfect generalization therefore masks differences in robustness.",
+      "tags": [
+        "grokking",
+        "catastrophic forgetting",
+        "entropy",
+        "representation learning",
+        "robustness"
+      ]
+    },
+    {
+      "id": "when-does-on-policy-interaction-help-representational-tradeoffs-in-value-based-i-2026-08-03",
+      "title": "When Does On-Policy Interaction Help? Representational Tradeoffs in Value-Based Imitation Learning",
+      "authors": "Luca Viano, Antoine Moulin, Audrey Huang, Volkan Cevher, Philip Amortila, Dylan J. Foster",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29617",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "The paper shows that interactive expert queries along the learner's trajectories relax representational requirements: realizability of the expert's value function (rather than its full policy) suffices for statistical efficiency. It introduces OVI, an on-policy interactive algorithm that is computationally efficient given a linear maximization oracle, proves a matching negative result that offline methods require policy-class complexity under weaker assumptions, and demonstrates largest gains when the learner is less expressive than the expert.",
+      "tags": [
+        "imitation learning",
+        "on-policy",
+        "value functions",
+        "theoretical ML",
+        "interactive learning"
+      ]
+    },
+    {
+      "id": "don-t-mix-rewards-mix-policies-policy-decomposition-and-optimization-for-multi-r-2026-08-03",
+      "title": "Don't Mix Rewards, Mix Policies: Policy Decomposition and Optimization for Multi-Reward RL",
+      "authors": "Ruiming Liang, Yi Zhong, Yizhen Yuan, Yinan Zheng, Tianyi Tan, Tianyue Wang, Haiyun Guo, Jinqiao Wang, Xianyuan Zhan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29246",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "PRISM decomposes multi-reward RL into standalone positive policies plus a global negative policy instead of mixing reward signals, thereby reducing alignment-tax conflicts during optimization. The resulting policies can be flexibly composed at inference for controllable trade-offs; experiments on scientific reasoning, tool-use, and helpfulness-safety show consistent gains over multi-reward baselines together with explicit preference control.",
+      "tags": [
+        "multi-reward RL",
+        "LLM alignment",
+        "policy composition",
+        "post-training"
+      ]
+    },
+    {
+      "id": "lemur-learning-to-align-with-multi-objective-reinforcement-learning-from-prefere-2026-08-03",
+      "title": "LEMUR: Learning to Align with Multi-Objective Reinforcement Learning from Preference Feedback",
+      "authors": "Manith Adikari, Bei Peng, Samuele Vinanzi, Angelo Cangelosi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29559",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "LEMUR bridges multi-objective RL and preference-based RL by jointly learning policies and multiple objective-specific reward models from interactive multi-human preference feedback, without requiring pre-specified scalar or vector rewards. The framework enables agents to balance competing objectives during learning and outperforms baselines on standard multi-objective benchmarks.",
+      "tags": [
+        "multi-objective RL",
+        "preference learning",
+        "human feedback",
+        "alignment"
+      ]
+    },
+    {
+      "id": "beyond-retrieval-analytic-memory-for-multimodal-agents-2026-08-03",
+      "title": "Beyond Retrieval: Analytic Memory for Multimodal Agents",
+      "authors": "Zhoujin Tian, Yao Tian, Hao Zhang, Cheng Chen, Yakun Li, Lei Zhang, Xiaofang Zhou",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29440",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "AdaMM treats analytic memory as a complement to retrieval memory: it extracts provenance-linked attribute-value observations from dialogue, images and metadata, discovers recurring field structures, and materializes them for filtering, aggregation, ranking and temporal comparison. A memory-aware planner decomposes queries into retrieval versus analytic operations; gains reach 11.3% and 7.3% on MemEye and MemGallery long-term multimodal benchmarks.",
+      "tags": [
+        "agent memory",
+        "multimodal",
+        "analytic memory",
+        "long-horizon agents"
+      ]
+    },
+    {
+      "id": "self-play-meets-skill-evolution-self-evolving-search-agents-that-pose-solve-and--2026-08-03",
+      "title": "Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember",
+      "authors": "Zenghuang Fu, Zhaoyang Li, Qiuyuan Ai, Haoyu Wu, Minghui Wu, Chenxu Zhao, Ante Wang, Guannan He, Changwei Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29468",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "SESA couples a challenger that poses problems with a solver that retrieves from an evolving skill memory; informative failures are distilled into reusable skills that rewrite the memory, altering both solver behavior and the future problem distribution. Skills shape on-policy trajectories so benefits enter parameters as well as the external bank, yielding 1.2–3.2 point gains over self-play baselines across seven QA benchmarks while retaining optional inference-time retrieval.",
+      "tags": [
+        "self-play",
+        "skill memory",
+        "agent self-evolution",
+        "search agents"
+      ]
+    },
+    {
+      "id": "zero-mem-zero-token-memory-operations-for-llm-agents-2026-08-03",
+      "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
+      "authors": "Yilin Xiao, Zhehan Zhu, Yujing Zhang, Jin Chen, Zijin Hong, Luyao Zhuang, Qinggang Zhang, Shengyuan Chen, Xiaocao Ouyang, Lingfei Ren, Xiao Huang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29377",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "Zero-Mem performs all memory operations without any intermediate LLM calls or token consumption outside final QA: original traces are organized into an entity-context graph and a temporal hierarchy; queries weigh and retrieve from both views, with deterministic calibration to discard conflicts and ground answers. It matches competitive long-memory QA performance while cutting memory-operation time by 57.6% relative to the fastest baseline under identical final-reader budgets.",
+      "tags": [
+        "agent memory",
+        "efficiency",
+        "zero-token",
+        "long-context QA"
+      ]
+    },
+    {
+      "id": "cage-certified-authorization-under-typed-return-uncertainty-for-tool-using-agent-2026-08-03",
+      "title": "CAGE: Certified Authorization under Typed-Return Uncertainty for Tool-Using Agents",
+      "authors": "Blaise Delattre, Cong Wang, Yang Cao",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.29190",
+      "type": "paper",
+      "dateAdded": "2026-08-03",
+      "summary": "CAGE certifies that a candidate tool action remains authorized over a joint neighborhood of plausible correctly-bound returns (one admissible binding fault plus bounded numerical drift), proving that separate categorical and numerical certificates do not compose. It enumerates discrete branches exactly and certifies continuous perturbations within each, eliminating in-budget false allows that pointwise gates admit while preserving useful autonomy across synthetic, policy-as-code, regulatory and real-transaction settings.",
+      "tags": [
+        "tool-using agents",
+        "certified authorization",
+        "safety",
+        "uncertainty"
+      ]
+    },
     {
       "id": "sample-more-reflect-less-self-refine-and-reflexion-lose-to-repeated-sampling-at--2026-08-02",
       "title": "Sample More, Reflect Less: Self-Refine and Reflexion Lose to Repeated Sampling at Equal Token Cost, from 1.5B to 7B",
