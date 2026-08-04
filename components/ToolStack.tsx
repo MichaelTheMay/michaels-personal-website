@@ -97,47 +97,22 @@ export function ToolStack() {
         </div>
       </Reveal>
 
-      {/* The day-to-day loop: harness + terminal, then the two tools I still
-          reach past it for, then how models get routed. */}
+      {/* One paragraph covering all three, with amux explained in more depth. */}
       <Reveal className="mt-16 text-center sm:mt-24">
         <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted">
           The one I lean on hardest is <RepoLink tool={bySlug("amux")} />, an
-          open-source control plane I run as a modified fork with{" "}
+          open-source control plane I run as a modified fork, with{" "}
           <ExtLink href="https://claude.com/claude-code">Claude Code</ExtLink> as
           its base. It supervises dozens of parallel Claude Code and Codex
-          sessions, all of it inside{" "}
-          <ExtLink href="https://github.com/tmux/tmux">tmux</ExtLink>. Sessions
-          outlive a dropped connection or a closed laptop, panes split so I can
-          watch several agents at once, and I can detach and reattach from my
-          phone to check a run or merge a branch. Every session writes to{" "}
+          sessions, so I can kick off a run, watch every agent, and merge from my
+          phone. Every session writes to{" "}
           <ExtLink href="https://mycelicmemory.com">MycelicMemory</ExtLink>, my
-          own MCP server for local, persistent memory across runs.
-        </p>
-
-        <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-muted">
-          Anything large used to go through{" "}
-          <ExtLink href="https://github.com/MichaelTheMay/parallely">
-            Parallely
-          </ExtLink>
-          , which I built and ran constantly to keep big jobs parallelized across
-          separate worktrees. I still reach for it sometimes, but Claude
-          Code&apos;s recently released ultracode does most of that natively now,
-          which has made it more or less obsolete.
-        </p>
-
-        <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-muted">
-          When a job needs massive parallelism, I use{" "}
-          <RepoLink tool={bySlug("agentflow")} />. It wires agents into a graph
-          and runs thousands of them programmatically, which is the right shape
-          for work too wide to hold in a single session.
-        </p>
-
-        <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-muted">
-          Model choice follows the same discipline every time. I start on the most
-          capable frontier model I have access to, Fable 5 as of writing this on
-          July 29th, and once the hard part is settled I route the rest through{" "}
-          <RepoLink tool={bySlug("backdoor")} /> to something significantly
-          cheaper: usually DeepSeek, more recently Kimi K3.
+          own MCP server for local, persistent memory across runs.{" "}
+          <RepoLink tool={bySlug("backdoor")} /> points Claude Code at any
+          provider, I usually route through{" "}
+          <ExtLink href="https://openrouter.ai">OpenRouter</ExtLink>, and{" "}
+          <RepoLink tool={bySlug("agentflow")} /> wires agents into a graph when a
+          job needs real fan-out.
         </p>
 
         <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-muted">

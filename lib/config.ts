@@ -47,11 +47,11 @@ export const newsletter = {
   feedPath: "/rss.xml",
 };
 
-// "What do I use to code?" section, covering the agentic tools I build with.
+// "What do I use to code?": the agentic tools I build with. Placeholder copy.
 export const toolStack = {
   caption: "What do I use to code?",
   subhead:
-    "I use a mixture of several very powerful agentic tools, most made by the community and one of them mine, including but not limited to:",
+    "I use a mixture of several very powerful agentic tools made by the community, including but not limited to:",
 };
 
 // Interstitial sentences keyed to a project group. Placeholder copy.
