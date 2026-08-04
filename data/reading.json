@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-08-04",
   "issues": [
+    {
+      "date": "2026-08-04",
+      "title": "Agent memory continuity, failure detection, and rigorous evaluation of long-horizon reasoning",
+      "blurb": "Recent work advances persistent state and hierarchical memory for agents and sequence models, develops efficient monitors and detectors for mid-run failures and cross-session misuse, and exposes how answer-only scoring inflates claims of scientific reasoning while formal synthesis and test-time latent optimization offer more reliable paths forward."
+    },
     {
       "date": "2026-08-03",
       "title": "Agent memory architectures, multi-objective control, and the fragility of alignment",
@@ -28,6 +33,166 @@
     }
   ],
   "items": [
+    {
+      "id": "atumai-a-principled-framework-for-agentic-generation-of-datacenter-control-plane-2026-08-04",
+      "title": "AtumAI: A Principled Framework for Agentic Generation of Datacenter Control-Plane Policies",
+      "authors": "Qiushi Lin, Chaojie Zhang, Íñigo Goiri, Aditya Akella, Ricardo Bianchini, Jovan Stojkovic",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02569",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "AtumAI compiles plain-language goals into formal, machine-checkable specifications of objectives, constraints, and evaluation, then searches the space with a diffusion model, evolutionary algorithm, and surrogate. Across workload placement, resource scaling, and power management, the generated policies outperform expert-engineered baselines while reducing task onboarding from months of engineering to a description. The framework makes agentic search formal, transferable across tasks, and systematically broader than pure LLM proposal.",
+      "tags": [
+        "agentic AI",
+        "datacenter systems",
+        "policy synthesis",
+        "evolutionary search"
+      ]
+    },
+    {
+      "id": "magnet-detecting-cross-session-ai-misuse-through-capability-accumulation-2026-08-04",
+      "title": "Magnet: Detecting Cross-Session AI Misuse Through Capability Accumulation",
+      "authors": "Natalie Isak, Matthew Dressman",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02518",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "Attackers can decompose harmful goals into innocuous units executed across isolated agent sessions, accumulating composable capabilities that single-session detectors miss. Magnet aggregates capability evidence at the user level across time, attracting relevant artifacts into a compact bundle for detection rather than inspecting sessions individually. It demonstrates that cross-session decomposition can elicit more harmful capability than equivalent single-session attacks and provides an efficient correlator-based countermeasure.",
+      "tags": [
+        "AI safety",
+        "agent misuse",
+        "cross-session detection",
+        "capability accumulation"
+      ]
+    },
+    {
+      "id": "optimizing-minimax-regret-in-uncertain-mdps-with-small-sets-of-policies-2026-08-04",
+      "title": "Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies",
+      "authors": "Sterre Lutz, Daniël Vos, Matthijs T.J. Spaan, Anna Lukina",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02509",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "When model uncertainty is resolved just before execution, a small set of k policies prepared in advance can be selected to minimize maximax regret over a set of MDPs. The problem is NP-hard; KAPS solves it exactly via nested branch-and-bound that jointly partitions MDPs and optimizes the shared policies. The largest regret reductions occur when moving from one to two policies, and in the single-policy case KAPS matches or exceeds prior methods while proving optimality more often.",
+      "tags": [
+        "uncertain MDPs",
+        "minimax regret",
+        "policy synthesis",
+        "branch-and-bound"
+      ]
+    },
+    {
+      "id": "abduction-without-a-body-representational-grounding-and-the-abduction-loop-for-s-2026-08-04",
+      "title": "Abduction Without a Body? Representational Grounding and the Abduction Loop for Scientific Hypothesis Generation",
+      "authors": "Michael Farmer",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02505",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "Online embodiment is unnecessary for identity abduction, the inference that two structures are the same object under an explicit correspondence reached via representational transformations that expose latent invariants. The Abduction Loop generates representations, extracts motifs, canonicalizes them in convention space, retrieves across domains, forms identity hypotheses, and adversarially verifies them, with abstention as default. A documented multimodal episode equating a gravitational-memory complex with the Kaiser-Squires operator motivates the architecture and a falsifiable DAB-30 benchmark.",
+      "tags": [
+        "scientific abduction",
+        "representational grounding",
+        "hypothesis generation",
+        "multimodal AI"
+      ]
+    },
+    {
+      "id": "real-time-detection-and-repair-of-llm-agent-failures-2026-08-04",
+      "title": "Real-Time Detection and Repair of LLM Agent Failures",
+      "authors": "Sunny Dubey",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02464",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "A one-class echo-state-network ensemble with CUSUM alarms detects 71 percent of failures from step telemetry alone at a 5 percent false-alarm budget (AUROC 0.872), with advantage growing over longer post-onset horizons. Deterministic verification of stated totals against actual tool results catches 60-96 percent of failures at zero false positives on healthy runs and transfers without retraining. Closing the loop by rolling back and re-running flagged trajectories recovers 45 percent of failures and lifts task success from 52 percent to 73 percent at roughly one extra model call.",
+      "tags": [
+        "LLM agents",
+        "failure detection",
+        "real-time monitoring",
+        "trajectory repair"
+      ]
+    },
+    {
+      "id": "right-answer-wrong-method-shortcut-hacking-misleads-the-evaluation-of-llm-reason-2026-08-04",
+      "title": "Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks",
+      "authors": "Xuan Ren, Weiqi Zhai, Tianle Pu, Yihua Zhu, Hu Wei, Bing Zhao",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02442",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "Solution hacking occurs when models reach correct answers via numerical search, enumeration, guessing, or answer-first verification instead of valid task-targeted derivation. The rate rises sharply with difficulty (2.2 percent on common problems to 37.4 percent on HLE) and accounts for 8-44 percent of credited correct answers across frontier models. Anti-hacking judges and instructions substantially lower reported accuracy while affecting genuine correct solutions far less, showing answer-only metrics overestimate scientific reasoning.",
+      "tags": [
+        "LLM evaluation",
+        "scientific reasoning",
+        "shortcut hacking",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "mamba-with-hierarchical-memory-solving-representation-bottleneck-in-long-sequenc-2026-08-04",
+      "title": "Mamba with Hierarchical Memory: Solving Representation Bottleneck in Long Sequence Modeling",
+      "authors": "Qinwen Wang, Jieping Luo, Aoxiang Qin, Ruoyu Zhao, Jianxiong Tang, Wei Zhang, Zhichao Lu, Luziwei Leng",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02347",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "HMM adds a lightweight working memory that extracts slow paragraph-level semantics from Mamba's fast sensory states and compresses them into persistent long-term memory for retrieval. The hierarchy overcomes the fixed-state bottleneck of recurrent linear attention models and yields cross-task generalization via parametric learning. On Passkey Retrieval and LongBench-E it improves success by 34-37 percent and reasoning accuracy by 1.6-14 percent over strong Mamba baselines while adding only 2 percent parameters.",
+      "tags": [
+        "Mamba",
+        "hierarchical memory",
+        "long-sequence modeling",
+        "state-space models"
+      ]
+    },
+    {
+      "id": "gradcuit-credit-assigned-gradient-flow-enables-robust-and-interpretable-test-tim-2026-08-04",
+      "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
+      "authors": "Zhaoxin Yu, Qi Shen, Hengli Li, Zhaowei Zhang, Song-Chun Zhu, Chi Zhang, Zilong Zheng",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02585",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "GradCuit inserts optimizable latent states at a chosen Transformer layer so that causal attention supplies differentiable paths from every continuation-token log-probability back to the latents, enabling direct reward-weighted credit assignment. Across five backbones and three benchmarks it reaches 64.5 percent average accuracy, beating chain-of-thought by 6.6 points and the strongest prior method by 2.4 points, with lower variance across learning rates. Gradient attribution concentrates on reasoning-connector tokens and early-to-middle layers prove most effective.",
+      "tags": [
+        "test-time compute",
+        "latent reasoning",
+        "gradient credit assignment",
+        "interpretability"
+      ]
+    },
+    {
+      "id": "livemem-maintaining-memory-state-continuity-in-long-running-llm-inference-2026-08-04",
+      "title": "LiveMem: Maintaining Memory State Continuity in Long-Running LLM Inference",
+      "authors": "Zhichen Liu, Ruihan Sun, Hengjie Yang, Zipeng Wu, Zhaohan Chen, Xiaofan Zhang, Yang Xu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02515",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "LiveMem augments a full-attention LLM with a fixed-capacity memory state whose lifetime is independent of the active KV window, preserving historical information across context turnovers. Memory-oriented post-training and state-aware serving make the state load-bearing after originating tokens are released. On LongMemEval it answers questions from the memory state alone even after evidence is removed from context, establishing state continuity as a complementary abstraction for continual inference.",
+      "tags": [
+        "LLM memory",
+        "state continuity",
+        "long-running inference",
+        "context turnover"
+      ]
+    },
+    {
+      "id": "mechgeo-autoformalizing-and-proving-euclidean-geometry-in-lean-4-2026-08-04",
+      "title": "MechGeo: Autoformalizing and Proving Euclidean Geometry in Lean 4",
+      "authors": "Hao Shen, Junyu Guo, Tian Cui, Yuxuan Xiao, Lihong Zhi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.02295",
+      "type": "paper",
+      "dateAdded": "2026-08-04",
+      "summary": "MechGeo uses GeoFormalizer to translate informal geometry into Lean via an intermediate representation with iterative structural and semantic repair, then GeoProver plans proofs, derives lemmas, and algebraizes subgoals whose certificates are kernel-checked. On 43 historical IMO geometry problems it proves 29 statements outright and, for the rest, produces Lean-verified counterexamples plus repaired proofs. It also proves 12 of 14 LEAP Lean-IMO-Bench geometry statements for the first time and refutes the remaining two.",
+      "tags": [
+        "autoformalization",
+        "interactive theorem proving",
+        "Euclidean geometry",
+        "Lean 4"
+      ]
+    },
     {
       "id": "fragility-of-value-under-imperfect-alignment-2026-08-03",
       "title": "Fragility of Value under Imperfect Alignment",
