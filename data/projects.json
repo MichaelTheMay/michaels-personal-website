@@ -5,7 +5,7 @@
     "date": "Jul 2026",
     "title": "Lexie",
     "badge": "Shipped in under a week",
-    "description": "An AI agent that makes the contractor calls you don't want to make. Describe the problem in a chat thread and Lexie fans out real outbound calls to local vendors in parallel, quotes the same scope to each one, negotiates the appointment, and books it — recorded and transcribed, and nothing dials until you confirm.",
+    "description": "An AI agent that makes the contractor calls you don't want to make. Describe the problem in a chat thread and Lexie fans out real outbound calls to local vendors in parallel, quotes the same scope to each one, negotiates the appointment, and books it. Every call is recorded and transcribed, and nothing dials until you confirm.",
     "image": "/projects/getlexie.webp",
     "links": { "project": "https://getlexie.ai" }
   },
@@ -16,7 +16,7 @@
     "title": "Parallely",
     "badge": "Open source · MIT",
     "stars": "247",
-    "description": "Parallely earned 240+ GitHub stars from the developer community. It's a CLI I built that splits one large coding task into sections and runs them concurrently, one AI coding agent per section, all in a shared git worktree. A fullscreen TUI streams every agent's live progress, output, and token usage, and finished sections auto-commit to a shared integration branch. Backend-agnostic — it drives Codex, Claude Code, or OpenCode.",
+    "description": "Parallely earned 240+ GitHub stars from the developer community. It's a CLI I built that splits one large coding task into sections and runs them concurrently, one AI coding agent per section, all in a shared git worktree. A fullscreen TUI streams every agent's live progress, output, and token usage, and finished sections auto-commit to a shared integration branch. Backend-agnostic: it drives Codex, Claude Code, or OpenCode.",
     "image": "/projects/parallely.webp",
     "video": {
       "mp4": "/projects/parallely.mp4",
@@ -30,7 +30,7 @@
     "date": "Ongoing",
     "title": "MycelicMemory",
     "badge": "Open source · MIT",
-    "description": "I built MycelicMemory — an MCP server that gives any coding agent a robust, semantically indexed, knowledge-graph-backed memory system that is fully local and secure. Sub-100ms hybrid search, automatic capture from your coding sessions, zero cloud dependency, and it works with Claude, Cursor, Windsurf, or any MCP client. I always use it when I code.",
+    "description": "I built MycelicMemory, an MCP server that gives any coding agent a robust, semantically indexed, knowledge-graph-backed memory system that is fully local and secure. Sub-100ms hybrid search, automatic capture from your coding sessions, zero cloud dependency, and it works with Claude, Cursor, Windsurf, or any MCP client. I always use it when I code.",
     "image": "/projects/mycelicmemory.webp",
     "links": {
       "project": "https://mycelicmemory.com",

@@ -208,7 +208,7 @@ function ProjectCard({ project }: { project: Project }) {
 }
 
 function PhilosophyBand() {
-  // Standalone statement between rail segments — the rail ends above it and a
+  // Standalone statement between rail segments. The rail ends above it and a
   // fresh segment starts below, so no background masking is needed.
   return (
     <Reveal className="text-center">
@@ -229,7 +229,7 @@ export function ProjectTimeline() {
 
   // The rail is drawn in segments: each contiguous run of cards gets its own
   // track + scroll beam, and break content (interstitials, the parallelism
-  // statement) sits between segments — so the line ends when a section ends
+  // statement) sits between segments, so the line ends when a section ends
   // and a fresh one starts after the heading, instead of running behind it.
   type Chunk =
     | { type: "cards"; nodes: React.ReactNode[] }

@@ -1,8 +1,8 @@
-// Daily agentic curation job — run by .github/workflows/update-reading.yml
+// Daily agentic curation job, run by .github/workflows/update-reading.yml
 // Uses xAI's Grok API (Live Search + structured outputs) to find the day's most
 // interesting AI research papers / essays and append the best to data/reading.json.
 //
-// Requires env var XAI_API_KEY (set as a GitHub Actions secret — never commit it).
+// Requires env var XAI_API_KEY (set as a GitHub Actions secret; never commit it).
 // Optional env var XAI_MODEL (defaults to "grok-4").
 import { readFile, writeFile } from "fs/promises";
 import path from "path";
@@ -78,18 +78,19 @@ async function loadReadingData() {
 async function curateNewItems(existingUrls) {
   const prompt = `Use the web_search tool to find AI research papers and technical essays published very recently (prioritize the last 24-48 hours; widen to the last week if nothing recent enough qualifies).
 
-Evaluate candidates for technical depth and intellectual originality — favor formal rigor, novel systems/research results, and substantive technically-serious writing. Avoid press releases, listicles, marketing content, and shallow news summaries.
+Evaluate candidates for technical depth and intellectual originality. Favor formal rigor, novel systems/research results, and substantive technically-serious writing. Avoid press releases, listicles, marketing content, and shallow news summaries.
 
 Select the ${TARGET_COUNT} best qualifying items. Return only entries you are confident are real, currently-live pages you found via search.
 
 Do not include any of these URLs, which are already in the collection:
 ${existingUrls.slice(0, 200).join("\n") || "(none yet)"}
 
-These items are published together as one dated issue of a daily reading digest, so also write a headline and a standfirst for the issue as a whole. The headline must name the actual through-line in today's selection (e.g. "Long-horizon memory and the limits of context") — not a generic phrase like "Today's AI research". The standfirst is one or two sentences on what ties the items together.
+These items are published together as one dated issue of a daily reading digest, so also write a headline and a standfirst for the issue as a whole. The headline must name the actual through-line in today's selection (e.g. "Long-horizon memory and the limits of context"), not a generic phrase like "Today's AI research". The standfirst is one or two sentences on what ties the items together.
 
 Respond with ONLY a JSON object (no prose, no code fence) of this exact shape:
 {"issueTitle":string,"issueBlurb":string,"items":[{"title":string,"authors":string,"source":string,"url":string,"type":"paper"|"essay"|"scenario","summary":string,"tags":string[]}]}
-Each summary must be 2-3 sentences describing the actual argument, model, or result — not a generic description of the topic.`;
+Each summary must be 2-3 sentences describing the actual argument, model, or result, not a generic description of the topic.
+Never use em dashes anywhere in the text you produce. Use commas, colons, parentheses, or separate sentences instead.`;
 
   const response = await fetch(API_URL, {
     method: "POST",
@@ -189,7 +190,7 @@ async function main() {
 
   await writeFile(DATA_PATH, JSON.stringify(next, null, 2) + "\n", "utf-8");
   console.log(
-    `Issue ${today}${issueTitle ? ` — ${issueTitle}` : ""}: added ${fresh.length} item(s): ` +
+    `Issue ${today}${issueTitle ? ` · ${issueTitle}` : ""}: added ${fresh.length} item(s): ` +
       fresh.map((i) => i.title).join(", ")
   );
 }

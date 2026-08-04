@@ -24,7 +24,7 @@
     {
       "date": "2026-07-30",
       "title": "Agent frontiers under audit: open-ended research, multi-agent coordination, and non-composing evaluations",
-      "blurb": "This issue gathers rigorous new work testing the real capabilities and failure modes of LLM agents—from shadow evaluations of open-ended AI R&D automation and long-horizon clinical/office workflows, through causal audits of latent multi-agent communication and objective misalignment, to organizational designs for multi-agent systems and epistemic limits on composing benchmark inferences."
+      "blurb": "This issue gathers rigorous new work testing the real capabilities and failure modes of LLM agents, from shadow evaluations of open-ended AI R&D automation and long-horizon clinical/office workflows, through causal audits of latent multi-agent communication and objective misalignment, to organizational designs for multi-agent systems and epistemic limits on composing benchmark inferences."
     }
   ],
   "items": [
@@ -1010,7 +1010,7 @@
       "url": "https://arxiv.org/abs/2607.25446",
       "type": "paper",
       "dateAdded": "2026-07-30",
-      "summary": "IMACS separates multi-agent systems into orthogonal layers—organization (who), coordination (how), and collaboration protocol (which algorithm)—making classic organizational theory (Belbin, Mintzberg, RACI) executable configuration and placing six protocols behind a common interface. Controlled ablations show accountability placement changes outcomes precisely when the protocol routes deliverables through the accountable agent, with optimal placement flipping across model families. Adaptive Org Routing, a contextual-bandit meta-protocol, selects protocols online under quality-cost tradeoffs and outperforms fixed protocols.",
+      "summary": "IMACS separates multi-agent systems into orthogonal layers: organization (who), coordination (how), and collaboration protocol (which algorithm), making classic organizational theory (Belbin, Mintzberg, RACI) executable configuration and placing six protocols behind a common interface. Controlled ablations show accountability placement changes outcomes precisely when the protocol routes deliverables through the accountable agent, with optimal placement flipping across model families. Adaptive Org Routing, a contextual-bandit meta-protocol, selects protocols online under quality-cost tradeoffs and outperforms fixed protocols.",
       "tags": [
         "multi-agent",
         "organization",
@@ -1197,7 +1197,7 @@
       "url": "https://link.springer.com/article/10.1007/s00146-015-0590-y",
       "type": "paper",
       "dateAdded": "2026-07-27",
-      "summary": "The founding formal model of AI race dynamics: teams choose a safety level trading off against capability, solved for Nash equilibria under three information regimes. Counterintuitive result — more information about rivals' capabilities increases danger, not less.",
+      "summary": "The founding formal model of AI race dynamics: teams choose a safety level trading off against capability, solved for Nash equilibria under three information regimes. Counterintuitive result: more information about rivals' capabilities increases danger, not less.",
       "tags": [
         "game theory",
         "AI safety",
@@ -1242,7 +1242,7 @@
       "url": "https://nickbostrom.com/papers/unilateralist.pdf",
       "type": "paper",
       "dateAdded": "2026-07-27",
-      "summary": "An N-agent decision-theoretic model showing that decentralized unilateral action systematically over-produces risky moves, since the agent who acts is likely the one with the most (miscalibrated) optimistic estimate — even absent malice.",
+      "summary": "An N-agent decision-theoretic model showing that decentralized unilateral action systematically over-produces risky moves, since the agent who acts is likely the one with the most (miscalibrated) optimistic estimate, even absent malice.",
       "tags": [
         "game theory",
         "AI safety",
@@ -1272,7 +1272,7 @@
       "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
       "type": "essay",
       "dateAdded": "2026-07-27",
-      "summary": "The foundational essay on multipolar traps — competitive dynamics where individually rational actors collectively produce outcomes nobody wants. Supplies the vocabulary (multipolar trap, coordination failure) used across nearly all later writing on AI race dynamics.",
+      "summary": "The foundational essay on multipolar traps, competitive dynamics where individually rational actors collectively produce outcomes nobody wants. Supplies the vocabulary (multipolar trap, coordination failure) used across nearly all later writing on AI race dynamics.",
       "tags": [
         "essay",
         "coordination failure",
@@ -1302,7 +1302,7 @@
       "url": "https://ai-2027.com/",
       "type": "essay",
       "dateAdded": "2026-07-27",
-      "summary": "A detailed, wargamed scenario modeling US–China competitive dynamics colliding with an intelligence explosion at a composite lab — explicitly modeling how race pressure, not technical inevitability, drives under-testing of a self-improving model.",
+      "summary": "A detailed, wargamed scenario modeling US–China competitive dynamics colliding with an intelligence explosion at a composite lab, explicitly modeling how race pressure, not technical inevitability, drives under-testing of a self-improving model.",
       "tags": [
         "scenario",
         "race dynamics",
@@ -1317,7 +1317,7 @@
       "url": "https://sideways-view.com/2018/02/24/takeoff-speeds/",
       "type": "essay",
       "dateAdded": "2026-07-27",
-      "summary": "Argues for continuous, broadly-distributed capability gains over abrupt single-actor discontinuities — the crux essay that changes the game-theoretic stakes of racing, since a slow takeoff means no single lab's breakthrough yields decisive strategic advantage.",
+      "summary": "Argues for continuous, broadly-distributed capability gains over abrupt single-actor discontinuities. It's the crux essay that changes the game-theoretic stakes of racing, since a slow takeoff means no single lab's breakthrough yields decisive strategic advantage.",
       "tags": [
         "essay",
         "takeoff dynamics",

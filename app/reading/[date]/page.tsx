@@ -21,7 +21,7 @@ export async function generateMetadata({
   const issue = getIssue(date);
   if (!issue) return { title: "Issue not found" };
   return {
-    title: `${issue.title} — ${formatIssueDate(issue.date)}`,
+    title: `${issue.title} · ${formatIssueDate(issue.date)}`,
     description: issue.blurb,
   };
 }

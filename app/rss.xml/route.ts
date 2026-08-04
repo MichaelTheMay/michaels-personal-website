@@ -31,7 +31,7 @@ export async function GET() {
       // Older issues predate stored blurbs, so fall back to a generated line.
       const description =
         issue.blurb ??
-        `${issue.items.length} picks from ${formatIssueDate(issue.date)} — ${issue.topTags.join(", ")}.`;
+        `${issue.items.length} picks from ${formatIssueDate(issue.date)}: ${issue.topTags.join(", ")}.`;
 
       const body = [
         issue.blurb ? `<p>${escapeXml(issue.blurb)}</p>` : "",
@@ -39,14 +39,14 @@ export async function GET() {
         ...issue.items.map(
           (item) =>
             `<li><a href="${escapeXml(item.url)}">${escapeXml(item.title)}</a>` +
-            ` — <em>${escapeXml(item.source)}</em><br/>${escapeXml(item.summary)}</li>`
+            ` · <em>${escapeXml(item.source)}</em><br/>${escapeXml(item.summary)}</li>`
         ),
         "</ul>",
         `<p><a href="${link}">Read the full issue</a></p>`,
       ].join("");
 
       return `    <item>
-      <title>${escapeXml(`No. ${String(issue.number).padStart(2, "0")} — ${issue.title}`)}</title>
+      <title>${escapeXml(`No. ${String(issue.number).padStart(2, "0")} · ${issue.title}`)}</title>
       <link>${link}</link>
       <guid isPermaLink="true">${link}</guid>
       <pubDate>${pubDate(issue.date)}</pubDate>
@@ -60,10 +60,10 @@ ${issue.topTags.map((tag) => `      <category>${escapeXml(tag)}</category>`).joi
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>${escapeXml(`${siteConfig.name} — Reading Digest`)}</title>
+    <title>${escapeXml(`${siteConfig.name} · Reading Digest`)}</title>
     <link>${SITE}/reading</link>
     <atom:link href="${FEED}" rel="self" type="application/rss+xml" />
-    <description>A daily dispatch on AI research — the best new papers and essays, curated every morning.</description>
+    <description>A daily dispatch on AI research: the best new papers and essays, curated every morning.</description>
     <language>en-us</language>
     <lastBuildDate>${pubDate(lastUpdated)}</lastBuildDate>
 ${items}

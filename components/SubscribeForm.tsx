@@ -48,7 +48,7 @@ export function SubscribeForm({ compact, onSuccess, inputRef }: Props) {
       try {
         window.localStorage.setItem(SUBSCRIBED_KEY, "1");
       } catch {
-        // Private mode or storage disabled — subscribing still worked.
+        // Private mode or storage disabled; subscribing still worked.
       }
       setStatus("success");
       onSuccess?.();

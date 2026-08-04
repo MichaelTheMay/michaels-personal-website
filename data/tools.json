@@ -6,7 +6,7 @@
     "href": "https://github.com/ajsai47/backdoor",
     "image": "/tools/backdoor.webp",
     "imageAlt": "ajsai47/backdoor repository on GitHub",
-    "blurb": "Runs Claude Code against any provider — DeepSeek, Groq, Ollama, OpenRouter. I point my agents at whatever model is cheapest or fastest for the task at hand."
+    "blurb": "Runs Claude Code against any provider: DeepSeek, Groq, Ollama, OpenRouter. I point my agents at whatever model is cheapest or fastest for the task at hand."
   },
   {
     "slug": "amux",
@@ -15,7 +15,7 @@
     "href": "https://github.com/mixpeek/amux",
     "image": "/tools/amux.webp",
     "imageAlt": "amux control-plane dashboard showing parallel agent sessions on a board",
-    "blurb": "A control plane for coding agents. I run a modified fork to orchestrate dozens of parallel Claude Code and Codex sessions — kicking them off and monitoring them straight from my phone."
+    "blurb": "A control plane for coding agents. I run a modified fork to orchestrate dozens of parallel Claude Code and Codex sessions, kicking them off and monitoring them straight from my phone."
   },
   {
     "slug": "agentflow",

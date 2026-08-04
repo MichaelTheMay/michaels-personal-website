@@ -23,7 +23,7 @@ export function SubscribeModal() {
         window.localStorage.getItem(SUBSCRIBED_KEY) === "1" ||
         window.sessionStorage.getItem(DISMISSED_KEY) === "1";
     } catch {
-      // Storage blocked — fall through and show it.
+      // Storage blocked, so fall through and show it.
     }
     if (skip) return;
 
@@ -38,7 +38,7 @@ export function SubscribeModal() {
     try {
       window.sessionStorage.setItem(DISMISSED_KEY, "1");
     } catch {
-      // Nothing to remember — it will simply show again.
+      // Nothing to remember; it will simply show again.
     }
     setOpen(false);
     if (restoreFocusRef.current instanceof HTMLElement) {

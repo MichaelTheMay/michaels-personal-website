@@ -44,7 +44,7 @@ function escapeHtml(value) {
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-/** Table-based, inline-CSS, light background — the layout email clients render most reliably. */
+/** Table-based, inline-CSS, light background, the layout email clients render most reliably. */
 function renderDigestHtml(issue) {
   const archive = `${SITE}/reading/${issue.date}`;
   const number = String(issue.number).padStart(2, "0");
@@ -159,13 +159,13 @@ async function waitForArchive(url) {
         return true;
       }
     } catch {
-      // Network hiccup — just try again.
+      // Network hiccup, just try again.
     }
     if (attempt < DEPLOY_POLL_ATTEMPTS) await sleep(DEPLOY_POLL_INTERVAL_MS);
   }
   console.warn(
     `WARNING: ${url} did not return 200 after ${DEPLOY_POLL_ATTEMPTS} attempts. ` +
-      `Sending anyway — the email is self-contained, but check that the deploy landed.`
+      `Sending anyway; the email is self-contained, but check that the deploy landed.`
   );
   return false;
 }
@@ -178,11 +178,11 @@ async function main() {
   const today = process.env.DIGEST_DATE || new Date().toISOString().slice(0, 10);
   const issue = issues.find((i) => i.date === today);
   if (!issue) {
-    console.log(`No issue dated ${today} — nothing to send.`);
+    console.log(`No issue dated ${today}, nothing to send.`);
     return;
   }
 
-  const subject = `Reading Digest No. ${String(issue.number).padStart(2, "0")} — ${issue.title}`;
+  const subject = `Reading Digest No. ${String(issue.number).padStart(2, "0")} · ${issue.title}`;
   const html = renderDigestHtml(issue);
   const broadcastName = `digest-${issue.date}`;
 
@@ -222,7 +222,7 @@ async function main() {
   const existing = await resend("/broadcasts");
   const already = (existing.data || []).find((b) => b.name === broadcastName);
   if (already) {
-    console.log(`Broadcast ${broadcastName} already exists (${already.id}) — skipping.`);
+    console.log(`Broadcast ${broadcastName} already exists (${already.id}), skipping.`);
     return;
   }
 
