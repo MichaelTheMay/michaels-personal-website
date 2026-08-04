@@ -53,7 +53,7 @@ body {
 
 /* Hero backdrop: diagonal light beams (indigo → violet → crimson) sweeping in
    from behind the headshot, softened by blur and anchored with a radial glow.
-   Original CSS — no image asset. Beams drift slowly unless reduced-motion. */
+   Original CSS, no image asset. Beams drift slowly unless reduced-motion. */
 .hero-glow {
   position: absolute;
   inset: -35% -12% auto -12%;
