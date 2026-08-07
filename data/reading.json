@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-05",
+  "lastUpdated": "2026-08-07",
   "issues": [
+    {
+      "date": "2026-08-07",
+      "title": "World rehearsal, trajectory debugging, and selective trust in long-horizon agents",
+      "blurb": "Fresh results on training and auditing LLM agents emphasize internalizing environment dynamics, tracing critical errors across long trajectories, adaptive on-policy self-distillation, and causal checks that reveal when tools or context truly drive decisions rather than create illusions of competence."
+    },
     {
       "date": "2026-08-05",
       "title": "Embedded agency, continual skill evolution, and the mechanics of test-time reasoning",
@@ -38,6 +43,166 @@
     }
   ],
   "items": [
+    {
+      "id": "envace-internalizing-environment-dynamics-via-world-rehearsal-for-agentic-reinfo-2026-08-07",
+      "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
+      "authors": "Zishan Xu, Zhiyuan Yao, Yuxin Chen, Yifu Guo, Zhengxi Lu, Yuquan Lu, Jinyang Huang, Yan Xu, Yasheng Wang, Weinan Zhang, Xingshan Zeng, Weiwen Liu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06197",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "EnvACE replaces external environment rollouts during agentic RL with world rehearsal, in which the policy alternates between generating tool calls and simulating the induced environment responses, jointly optimizing both roles end-to-end from task success. The resulting internalized agent world model supports private rehearsal at test time and yields strong transferable gains on BFCL-v4, tau^2-Bench, VitaBench, and FinMCP-Bench over environment-scaling baselines. Controlled ablations confirm that world rehearsal improves learning across model scales without requiring costly real or synthetic executable environments.",
+      "tags": [
+        "agents",
+        "reinforcement-learning",
+        "world-models",
+        "tool-use"
+      ]
+    },
+    {
+      "id": "trajdebug-tracing-error-lifecycle-to-identify-critical-failures-in-long-horizon--2026-08-07",
+      "title": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+      "authors": "Yunjia Qi, Zehua Yin, Xintong Shi, Hao Peng, Songyuanyi Lu, Yixian Liu, Richeng Xuan, Yuhong Liu, Zhichao Hu, Xiaozhi Wang, Lei Hou, Bin Xu, Juanzi Li",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06346",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "TrajDebug addresses cascading failures in long agent trajectories by combining multi-granularity history compression with evidence-based error identification and lifecycle tracing that attributes which local errors remain responsible for final failure. On the new TrajErrBench of 486 annotated failed trajectories from Tau2Bench and SWE-Bench Pro, it outperforms prior critical-error detectors and supplies actionable diagnoses that improve downstream agent success. The framework isolates earliest causal steps even when evidence is scattered across distant observations and instructions.",
+      "tags": [
+        "agents",
+        "debugging",
+        "long-horizon",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "dash-divergence-adaptive-supervision-horizons-for-on-policy-self-distillation-of-2026-08-07",
+      "title": "DASH: Divergence-Adaptive Supervision Horizons for On-Policy Self-Distillation of Reasoning Models",
+      "authors": "ZhiYan Hou, Xinyu Tang, Hongyan An, Jianjin Zhang, Weizhen Wang, Yunyun Han, Gengsheng Li, Xiangzhao Hao, Haiyun Guo, Wenbin Hu, Jinqiao Wang, Yafeng Deng",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06243",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "DASH improves on-policy self-distillation by mapping local teacher-student divergences relative to the sequence mean into adaptive propagation gates that control multi-step backward aggregation of token-level supervision weights. This respects the temporal evolution of discrepancy during autoregressive generation, unlike uniform coefficients in standard OPSD. Across three math-reasoning benchmarks and three model scales it consistently beats matched vanilla OPSD reruns while reusing already-computed distributions and adding no extra forward passes.",
+      "tags": [
+        "self-distillation",
+        "reasoning",
+        "RLVR",
+        "on-policy"
+      ]
+    },
+    {
+      "id": "the-low-frequency-trap-video-language-models-fail-at-simple-event-bookkeeping-2026-08-07",
+      "title": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
+      "authors": "Sarvesh Baskar, Zikui Cai, Shayan Shabihi, Anirudh Satheesh, Muhammad R. Islam, Udari Madhushani Sehwag, Tom Goldstein, Furong Huang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06361",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "The authors introduce trace-grounded parametric profiling with executable event traces for controlled video tasks (bouncing balls, blinks, state transitions), systematically varying event count and frequency. Models exhibit staged temporal failure: reliable only at low counts and frequencies for persistent states, collapsing for transient events, with near-zero faithful sequence recovery in high-count high-frequency regimes even when sampling rate or prompting is increased. The diagnostic shifts evaluation from aggregate accuracy to precise localization of temporal bookkeeping breakdowns that also appear in real-world videos.",
+      "tags": [
+        "video-language-models",
+        "temporal-reasoning",
+        "evaluation",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "the-illusion-of-visual-tool-use-a-causal-audit-of-thinking-with-images-2026-08-07",
+      "title": "The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images",
+      "authors": "Zhiheng Wang, Bo Peng, Lai Wei, Chaochao Lu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06270",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "Formulating visual tool-use (crop-and-zoom) as a causal graph, the work audits policy, trajectory, and step levels, defining Visual Evidence Gain to isolate the effect of each returned observation. Across six models and five perception benchmarks it uncovers Calling Without Looking (observations have zero causal effect) and Looking Without Planning (informative observations but incoherent schedules), with accuracy gains concentrated in a calibrated minority. The result demonstrates an illusion of visual tool-use: aggregate gains mask that tool operations are often not causally responsible for answers.",
+      "tags": [
+        "multimodal",
+        "tool-use",
+        "causal-analysis",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "learning-when-to-trust-via-selective-context-preference-optimization-2026-08-07",
+      "title": "Learning When to Trust via Selective Context Preference Optimization",
+      "authors": "Xian Sun, Wei Chow, Yingshuo Wang, Junhao Liu, Wei Gao, Qing Wu, Lingdong Kong",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06377",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "MIST provides matched clean/misleading/correct/irrelevant context conditions and the SC2W metric that counts how often misleading signals flip clean-correct answers. SCOPE mines clean-correct versus misleading-wrong pairs and applies balanced DPO across all four conditions rather than resistance alone. The method substantially lowers susceptibility on open models while preserving accuracy when context is clean, correct, or irrelevant, establishing selective trust rather than blanket resistance as the proper evaluation criterion.",
+      "tags": [
+        "context",
+        "preference-optimization",
+        "robustness",
+        "DPO"
+      ]
+    },
+    {
+      "id": "rrc-unlocking-generative-reward-models-in-llm-reinforcement-learning-via-ranking-2026-08-07",
+      "title": "RRC: Unlocking Generative Reward Models in LLM Reinforcement Learning via Ranking-Based Reward Construction",
+      "authors": "Chenglong Wang, Ziming Zhu, Yifu Huo, Bei Li, Qiaozhi He, Yan Ding, Xiaoyang Hao, Yuxin Gao, Tianhua Zhou, Xiaojia Chang, Tongran Liu, Jingbo Zhu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06310",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "RRC bridges the mismatch between comparative generative reward models and scalar RL rewards by constructing learning signals from relative preference rankings via self-competitive ranking among samples and anchor-guided ranking against reference responses. This unlocks effective use of generative RMs for RL on open-ended chat and reasoning tasks, delivering consistent gains over prior reward-construction baselines. The approach preserves the ranking strengths of generative models while producing dense, scalable signals suitable for policy optimization.",
+      "tags": [
+        "reward-models",
+        "reinforcement-learning",
+        "generative-RM",
+        "ranking"
+      ]
+    },
+    {
+      "id": "the-bitter-lesson-of-tool-calling-2026-08-07",
+      "title": "The Bitter Lesson of Tool Calling",
+      "authors": "Ishan Patel, Sahil Sen, Elias Lumer, Vamse Kumar Subbiah",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06370",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "A systematic comparison of programmatic tool calling (tools as typed Python stubs executed in one agent turn) versus native JSON tool calling across 14 models on BFCL v4 shows PTC matching or beating JSON in 11 of 14 models, with double-digit gains for the strongest family. PTC remains stable under parallel fan-out and context rot where JSON degrades, and performance tracks overall model capability across generations. The results support treating tools-as-code as a robust default rather than a specialized alternative.",
+      "tags": [
+        "tool-use",
+        "agents",
+        "programmatic-calling",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "an-optimal-agnostic-pac-algorithm-2026-08-07",
+      "title": "An Optimal Agnostic PAC Algorithm",
+      "authors": "Markus Engelund Mathiasen, Jian Qian, Nikita Zhivotovskiy",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06363",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "The paper constructs a learner that attains the statistically optimal agnostic PAC risk bound for any finite-VC-dimension hypothesis class, matching known lower bounds up to universal constants at every fixed Bayes risk L*. From n i.i.d. samples the excess risk scales as the familiar square-root and linear terms involving VC-dimension and log(1/delta). This closes the sample-complexity question for agnostic binary classification under the classical Devroye-Györfi-Lugosi lower bounds.",
+      "tags": [
+        "learning-theory",
+        "PAC",
+        "agnostic-learning",
+        "VC-dimension"
+      ]
+    },
+    {
+      "id": "beyond-top-k-replacing-black-box-retrieval-with-interpretable-agentic-operations-2026-08-07",
+      "title": "Beyond Top-K: Replacing Black-Box Retrieval with Interpretable Agentic Operations",
+      "authors": "Sagar Tamang, Ayush Vyas, Tabarakul Hazarika",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06305",
+      "type": "paper",
+      "dateAdded": "2026-08-07",
+      "summary": "On long structured documents such as financial reports, dense top-k chunk retrieval fails because of near-duplicate numbers, severed unit headers, and missing fiscal-year context. READ replaces embeddings with three deterministic agentic operations (normalized lexical search, structural navigation, bounded span reads) that produce replayable audit trails. On 51 verified questions it reaches 58.8% accuracy versus 15.7% for dense retrieval (and still leads tuned dense by 23.5 points), while an agent given only a top-k tool reaches just 27.5%, isolating the gain to the interface itself.",
+      "tags": [
+        "retrieval",
+        "RAG",
+        "agents",
+        "document-understanding"
+      ]
+    },
     {
       "id": "a-game-theory-for-foundation-models-shows-new-paths-to-rational-cooperation-thro-2026-08-05",
       "title": "A game theory for foundation models shows new paths to rational cooperation through similarity inference",
