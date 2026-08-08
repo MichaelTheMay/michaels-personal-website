@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-07",
+  "lastUpdated": "2026-08-08",
   "issues": [
+    {
+      "date": "2026-08-08",
+      "title": "Self-correction loops and the architecture of agent improvement",
+      "blurb": "Recent work converges on how models and agents detect, localize, and repair their own failures: unsupervised on-policy distillation from internal consistency, weak probes that patch strong-model reasoning bugs, externalized state for long-horizon execution, and empirical signs that AI is already accelerating its own development."
+    },
     {
       "date": "2026-08-07",
       "title": "World rehearsal, trajectory debugging, and selective trust in long-horizon agents",
@@ -43,6 +48,176 @@
     }
   ],
   "items": [
+    {
+      "id": "the-ignition-index-measuring-global-workspace-dynamics-in-language-models-2026-08-08",
+      "title": "The Ignition Index: Measuring Global Workspace Dynamics in Language Models",
+      "authors": "Saman Rahbar",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05160",
+      "type": "paper",
+      "dateAdded": "2026-08-08",
+      "summary": "The paper introduces the Ignition Index, a scalar that fits a four-parameter sigmoid to per-layer probe accuracy versus input signal strength and extracts the steepness parameter as a quantitative measure of all-or-none ignition predicted by Global Workspace Theory. Across 11 models from five families, shuffled-label controls show 9.6-fold selectivity for genuine linguistic structure, feedforward transformers exceed SSMs by 89 percent in aggregate ignition, and recurrent models such as Huginn show stronger ignition along the iteration axis than the depth axis. A phase transition is detected in Pythia-410M at training step 256 that precedes induction-head formation, providing a validated bridge between GWT dynamics and mechanistic interpretability.",
+      "tags": [
+        "interpretability",
+        "global workspace",
+        "transformers",
+        "SSMs",
+        "mechanistic"
+      ]
+    },
+    {
+      "id": "woodpecker-distillation-weak-models-diagnose-reasoning-bugs-in-strong-models-2026-08-08",
+      "title": "Woodpecker Distillation: Weak Models Diagnose Reasoning Bugs in Strong Models",
+      "authors": "Dayu Wang, Jiaye Yang, Weikang Li, Jiahui Liang, Yang Li, Deguo Xia, Jizhou Huang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05168",
+      "type": "paper",
+      "dateAdded": "2026-08-08",
+      "summary": "The authors argue that many reasoning failures in strong LLMs arise from localized intermediate bugs rather than global incapacity, and show that short patches from a weak probe model inserted after the same strong-model prefix frequently redirect the trajectory to a correct solution. Direct fine-tuning on the patches or repaired trajectories fails to internalize the fix, so they introduce Woodpecker Distillation: contrast successful versus unsuccessful weak patches at identical prefixes, form a corrective teacher distribution over future tokens, and distill that distribution into the strong model. On mathematical reasoning benchmarks the method consistently improves the strong model and outperforms direct imitation baselines.",
+      "tags": [
+        "reasoning",
+        "weak-to-strong",
+        "distillation",
+        "self-correction",
+        "math"
+      ]
+    },
+    {
+      "id": "on-policy-self-distillation-without-any-supervision-2026-08-08",
+      "title": "On-Policy Self-Distillation without Any Supervision",
+      "authors": "Yijiang Li, Bingyang Wang, Yijun Liang, Yunjie Tian, Di Fu, Nuno Vasconcelos",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06296",
+      "type": "paper",
+      "dateAdded": "2026-08-08",
+      "summary": "U-OPSD achieves genuine unsupervised on-policy self-distillation by sampling multiple rollouts, forming a pseudo-solution via majority vote under a self-consistency threshold, conditioning a teacher on the shortest pseudo-solution, and distilling it into prefixes of the model's longest incorrect completion. This lets the model correct itself precisely where it is confidently wrong, using only its own generations. Across AIME, HMMT, MATH500 and related benchmarks it improves base models by 8.5-10.7 percent at 4B/8B scales in non-thinking mode and matches or exceeds supervised OPSD and GRPO.",
+      "tags": [
+        "self-distillation",
+        "on-policy",
+        "unsupervised",
+        "reasoning",
+        "RL"
+      ]
+    },
+    {
+      "id": "calibforge-adversarial-solver-calibration-for-scaling-learnable-terminal-tasks-2026-08-08",
+      "title": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+      "authors": "Fanzhe Meng, Guoxin Chen, Jiale Zhao, Shuang Sun, Zhiyu Lin, Wayne Xin Zhao, Ruihua Song, Ji-Rong Wen, Kai Jia",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06352",
+      "type": "paper",
+      "dateAdded": "2026-08-08",
+      "summary": "CalibForge synthesizes terminal tasks that are not merely solvable but lie in a solver-relative learnable zone by using verified multi-solver or contrastive strong-pass/weak-fail behavior to adversarially revise candidates. The system produces 5,431 calibrated tasks; models trained on them reach 32.58 percent and 47.57 percent on Terminal-Bench 2.0, with gains up to 24.71 points over base models and large transfers to SWE-bench Pro and Doc2Repo. Ablations confirm that both multi-solver disagreement and contrastive calibration outperform plain authoring-plus-validation or single-solver feedback.",
+      "tags": [
+        "agents",
+        "terminal",
+        "task synthesis",
+        "calibration",
+        "RL"
+      ]
+    },
+    {
+      "id": "longhorizon-harness-advancing-long-horizon-agents-for-real-world-tasks-2026-08-08",
+      "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
+      "authors": "Ziyu Ma, Hailang Huang, Shun Zou, Yong Wang, Shidong Yang, Yiming Hu, Fei Wei, XiangXiang Chu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.01964",
+      "type": "paper",
+      "dateAdded": "2026-08-08",
+      "summary": "The paper reformulates long-horizon agent execution as an external task-state management problem and introduces a Manage-Execute-Audit loop that keeps verified environment facts outside the growing execution context. A manager maintains state and selects the next subtask, a fresh-context executor performs it, and a read-only auditor verifies the resulting state before the next round. The harness lifts Qwen 3.7-Plus from 51.8 percent to 80.7 percent on WeaveBench, 69.7 percent to 77.2 percent on Terminal-Bench 2.1, and 2.8 percent to 8.3 percent on OSWorld 2.0, with similar gains for Claude Opus 4.7.",
+      "tags": [
+        "agents",
+        "long-horizon",
+        "harness",
+        "state management",
+        "tool use"
+      ]
+    },
+    {
+      "id": "skilltrace-multi-trace-provenance-auditing-for-llm-agent-skill-reuse-2026-08-08",
+      "title": "SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse",
+      "authors": "Jialuo Chen, Minghe Wang, Lingqi Jiang, Jianan Ma, Xinhao Deng, Xiaohu Du, Ruixiao Lin, Yunhao Feng, Linkang Du, Jingyi Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05204",
+      "type": "paper",
+      "dateAdded": "2026-08-08",
+      "summary": "SKILLTRACE audits reuse of marketplace LLM-agent skills by extracting three complementary provenance traces (Expression, Implementation, and Operational) and representing the operational trace as a Skill Operational Graph of activation, procedure, and resource flow. An LLM is used only once at ingestion; audit-time comparison is deterministic and calibrated against same-function strict negatives. On a bench of 820 transformed reuse positives and 751 negatives it reaches AUROC 0.938 and F1 0.898, and a 36k-skill wild audit surfaces actionable reuse queues missed by repository-level baselines.",
+      "tags": [
+        "agents",
+        "skills",
+        "provenance",
+        "auditing",
+        "marketplace"
+      ]
+    },
+    {
+      "id": "abstract-event-causal-rules-induction-and-application-2026-08-08",
+      "title": "Abstract Event Causal Rules: Induction and Application",
+      "authors": "Ziwei Zheng, Peiqiong Chen, Bang Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05205",
+      "type": "paper",
+      "dateAdded": "2026-08-08",
+      "summary": "The work proposes Abstract Event Causal Rules (AECR), a relation-level abstraction that lifts concrete cause-effect pairs into generalized causal logic while preserving intrinsic relationships, addressing poor generalization of instance-level pairs on long-tail and unseen events. A multi-agent Concrete-to-Abstract Causal Induction system plus similarity-constrained clustering distills trustworthy AECRs into two knowledge bases. Injecting retrieved AECRs via a rule-guided causal attention encoder yields consistent gains on graph event prediction, especially for rare and unseen samples.",
+      "tags": [
+        "causality",
+        "events",
+        "abstraction",
+        "knowledge",
+        "prediction"
+      ]
+    },
+    {
+      "id": "the-tamed-subgradient-unadjusted-langevin-algorithm-beyond-convexity-2026-08-08",
+      "title": "The Tamed Subgradient Unadjusted Langevin Algorithm beyond Convexity",
+      "authors": "Iosif Lytras, Nikolaos Makras, Sotirios Sabanis",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06283",
+      "type": "paper",
+      "dateAdded": "2026-08-08",
+      "summary": "SG-TULA samples from non-smooth, superlinear-growth, non-convex potentials by operating directly on subgradients with taming to keep the explicit scheme stable, avoiding expensive smoothing. Non-asymptotic Wasserstein-2 convergence bounds are derived with all constants tracked explicitly in dimension and inverse temperature, improving prior subgradient Langevin rates, together with excess-risk estimates for the associated optimization problem. The assumptions are verified with explicit constants on a regularized GPT-2-lineage pretraining potential, and a boosted coordinate-wise variant pretrains competitively against finetuned AdamW and Muon.",
+      "tags": [
+        "sampling",
+        "Langevin",
+        "non-convex",
+        "optimization",
+        "theory"
+      ]
+    },
+    {
+      "id": "microevo-knowledge-guided-llm-sampling-for-efficient-microarchitecture-design-sp-2026-08-08",
+      "title": "MicroEvo: Knowledge-Guided LLM Sampling for Efficient Microarchitecture Design Space Exploration",
+      "authors": "Jia Xiong, Runkai Li, Chenxu Niu, Guangyuan Gao, Changwen Xing, Yifan Zhang, Xinlai Wan, Jieran Cui, Chen Bai, Yusheng Hua, Ying Wang, Ming Ling, Xi Wang, Tao Xie",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06183",
+      "type": "paper",
+      "dateAdded": "2026-08-08",
+      "summary": "MicroEvo couples off-the-shelf LLMs with Monte Carlo Tree Search for multi-objective microarchitecture optimization under tight PPA evaluation budgets. It combines LLM-driven evolutionary operators, a Pareto-aware tree policy balancing contribution and diversity, active knowledge accumulation that extracts and reuses optimization insights, and state-aware directives that adapt search online. Experiments show up to 36.2 percent better Pareto-front quality than NSGA-II and 10.6x higher search efficiency, with strong scalability to industrial-scale cores.",
+      "tags": [
+        "LLM",
+        "MCTS",
+        "hardware",
+        "design space",
+        "multi-objective"
+      ]
+    },
+    {
+      "id": "when-ai-builds-itself-2026-08-08",
+      "title": "When AI builds itself",
+      "authors": "Anthropic Institute",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+      "type": "essay",
+      "dateAdded": "2026-08-08",
+      "summary": "Drawing on public benchmarks and previously unreported internal Anthropic data, the essay documents that AI is already accelerating AI development: Claude authors more than 80 percent of merged code, engineers merge roughly 8x more lines per day than in 2024, and median research staff estimate multi-fold output gains. Claude has moved from helpful to superhuman on well-specified experimental optimization loops (3x to 52x speedups) while still lagging on open-ended goal setting. The piece argues that full recursive self-improvement is not yet here and not inevitable, but that the observed trends make secure monitoring and control mechanisms far more urgent.",
+      "tags": [
+        "recursive self-improvement",
+        "agents",
+        "productivity",
+        "safety",
+        "Anthropic"
+      ]
+    },
     {
       "id": "envace-internalizing-environment-dynamics-via-world-rehearsal-for-agentic-reinfo-2026-08-07",
       "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
