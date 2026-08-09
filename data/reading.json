@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-08",
+  "lastUpdated": "2026-08-09",
   "issues": [
+    {
+      "date": "2026-08-09",
+      "title": "Harness optimization, selective routing, and self-distillation under sparse feedback",
+      "blurb": "Recent work sharpens how systems around base models are improved: expensive harness search, when routing is learnable, Markov layer programs, recursive long-horizon task synthesis, and pivot-guided or non-semantic distillation. The shared thread is that gains now come less from raw scale and more from disciplined control of context, path, and supervision signals."
+    },
     {
       "date": "2026-08-08",
       "title": "Self-correction loops and the architecture of agent improvement",
@@ -48,6 +53,174 @@
     }
   ],
   "items": [
+    {
+      "id": "harnessopt-bench-evaluating-llms-at-harness-optimization-2026-08-09",
+      "title": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization",
+      "authors": "Varun Ursekar, Apaar Shanker, Yash Maurya, Shehab Yasser, Vijay S. Kalmath, Veronica Chatrath, Yuan Xue",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06301",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "The paper defines harness optimization as iterative, evaluation-guided editing of prompts, tools, control flow, memory, and orchestration around an LLM, under a fixed expensive evaluation budget and a held-out test partition. A trusted execution environment meters resources and preserves candidates while five frontier models act as optimizers on four downstream tasks across 111 scored runs. Optimizer identity separates performance more than the coding harness used, native harnesses are not consistently better, and gains vary sharply by task and seed, establishing harness optimization as a discriminative capability with large headroom.",
+      "tags": [
+        "agents",
+        "benchmarks",
+        "harness optimization",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "recursive-synthesis-for-long-horizon-terminal-tasks-2026-08-09",
+      "title": "Recursive Synthesis for Long-Horizon Terminal Tasks",
+      "authors": "Zhongzhi Li, Yucheng Shi, Zongxia Li, Ruhan Wang, Anhao Li, Zixun Huang, Junyao Yang, Lei Ke, Ninghao Liu, Haitao Mi, Leowei Liang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05466",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "RST grows long-horizon terminal-agent tasks by recursively extending verified seed solutions, realigning instructions and verifiers, and validating in fresh sandboxes, yielding 37,484 tasks at about $0.05 each over 15 rounds. Difficulty climbs sharply (reference solutions from 67 to 374 lines, commands from 40 to 244) while DeepSeek-V4-Pro pass@4 falls from 90% to 2.5%. Rejection-sampled trajectories plus SFT and agentic PPO produce double-digit relative gains on Terminal-Bench suites, with stable yield suggesting the recursion can continue.",
+      "tags": [
+        "agents",
+        "synthetic data",
+        "long-horizon",
+        "terminal",
+        "self-improvement"
+      ]
+    },
+    {
+      "id": "routing-is-least-learnable-where-it-is-most-valuable-bounds-on-representation-ro-2026-08-09",
+      "title": "Routing Is Least Learnable Where It Is Most Valuable: Bounds on Representation Routing for Web Agents",
+      "authors": "Jiaming Wei, Zekun Wu, Adriano Koshiyama, Maria Perez-Ortiz",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06171",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "Across VisualWebArena and WebArena cells, six observation modes are complementary yet rerun noise of 12-14% inflates oracle gains from mode choice. Cost-aware fallback of unsolved tasks still cuts cost 9.5-30.6% at fixed success, but five learned routing policies rarely beat a fixed strong mode. The core limit is that routing labels are generated at the agent's own success rate, so weaker agents supply fewer labels exactly where routing would help most, a correlation of 0.95 that stronger agents could reverse.",
+      "tags": [
+        "agents",
+        "routing",
+        "web agents",
+        "evaluation",
+        "learnability"
+      ]
+    },
+    {
+      "id": "macro-markov-chain-routing-of-transformer-layers-2026-08-09",
+      "title": "MACRO: Markov Chain Routing of Transformer Layers",
+      "authors": "Paweł Batorski, Abtin Pourhadi, Akylgali Aitaza, Przemysław Spurek, Paul Swoboda",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05872",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "MACRO learns task-specific Markov policies over layer indices, budget phases, and operators (skip, repeat, residual add) without changing base weights, then decodes high-probability routes via top-k Viterbi. On open-weight LLMs across reasoning and knowledge benchmarks it lifts average accuracy +5.0% (largest on small models) and beats Dr. LLM by +7.2% while cutting route-search time 9.4x. The approach treats dynamic layer programs as cheap, reusable control rather than per-instance search or weight updates.",
+      "tags": [
+        "transformers",
+        "layer routing",
+        "inference",
+        "efficiency",
+        "Markov"
+      ]
+    },
+    {
+      "id": "rp-opsd-reasoning-pivot-guided-on-policy-self-distillation-for-multilingual-reas-2026-08-09",
+      "title": "RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer",
+      "authors": "Xinye Wang, Junxiao Liu, Shujian Huang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06347",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "The method treats target-language reasoning as surface text plus reasoning pivots (decisions that advance or redirect inference) and uses distributional shift between teacher views with and without an English reference as a proxy to concentrate privileged distillation. On math benchmarks spanning 17 languages it outperforms strong multilingual baselines and prior OPSD variants. Analysis shows privileged mass concentrates on control and state-update tokens while surface realization is downweighted.",
+      "tags": [
+        "self-distillation",
+        "multilingual",
+        "reasoning",
+        "on-policy",
+        "transfer"
+      ]
+    },
+    {
+      "id": "nesy-rag-neuro-symbolic-rag-for-explainable-question-answering-2026-08-09",
+      "title": "NeSy-RAG: Neuro-Symbolic RAG for Explainable Question Answering",
+      "authors": "Jonas Gann, Michael Gertz",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06292",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "Retrieved chunks are turned into attributable Prolog modules of Boolean predicates (possibly conditioned on user facts), composed via joint text-code embeddings into queries whose execution yields deterministic answers and source-linked traces. A symbolic gap detector flags missing user facts that affect outcomes and triggers follow-ups. On ShARC, without domain training, it reaches 61.1% accuracy versus 42.8% for a same-model RAG baseline.",
+      "tags": [
+        "RAG",
+        "neuro-symbolic",
+        "explainability",
+        "Prolog",
+        "QA"
+      ]
+    },
+    {
+      "id": "bakron-efficient-quantization-with-kronecker-factored-hessians-2026-08-09",
+      "title": "BaKron: Efficient Quantization with Kronecker-Factored Hessians",
+      "authors": "Johann Birnick, Rayan Saab",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06291",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "Building on two-sided adaptive rounding, BaKron solves the vectorized problem via anti-diagonal parallelism and recursive divide-and-conquer, cutting work from O(m²n²) to O(mn(m+n)) while matching GPTQ-style cubic scaling and capturing output correlations. It is modular in base quantizer and Hessian estimator and supplies practical Hessian computation techniques. Experiments confirm the efficiency and quality gains of richer curvature at GPTQ-comparable cost.",
+      "tags": [
+        "quantization",
+        "Hessians",
+        "Kronecker",
+        "efficiency",
+        "post-training"
+      ]
+    },
+    {
+      "id": "hypothesis-testing-with-conditional-queries-learnability-and-the-value-of-intera-2026-08-09",
+      "title": "Hypothesis Testing with Conditional Queries: Learnability and the Value of Interaction",
+      "authors": "Zonghuan Xu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06262",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "In a finite outcome space the paper characterizes when two distribution classes are distinguishable by conditional queries and shows learnability holds exactly when pairwise conditional probabilities have positive separation (otherwise error stays 1/2). Any T-query adaptive policy can be simulated non-adaptively with O(N²(T+log(1/ρ))) fixed pair queries to total-variation ρ, yet there exist families with constant adaptive complexity and Ω(N²) non-adaptive complexity. Thus interaction yields a quadratic, not exponential, query advantage.",
+      "tags": [
+        "learning theory",
+        "hypothesis testing",
+        "adaptivity",
+        "query complexity"
+      ]
+    },
+    {
+      "id": "subliminal-learning-is-non-semantic-distillation-2026-08-09",
+      "title": "Subliminal Learning is Non-Semantic Distillation",
+      "authors": "Ethan Hadley, Eren Gultepe",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05734",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "Adding Gaussian noise to teacher and student weights amplifies subliminal bias transfer (1.9x Gemma, 1.3x Llama), implicating non-semantic weight structure. Steering vectors, not only prompts or finetunes, generate subliminal data, and students inherit the intervention type (steered students imitate steering vectors). Gradients of steered subliminal data correlate linearly with teacher steering vectors, offering a route to audit latent signals in synthetic training data.",
+      "tags": [
+        "mechanistic interpretability",
+        "distillation",
+        "safety",
+        "synthetic data",
+        "subliminal learning"
+      ]
+    },
+    {
+      "id": "continual-learning-in-transition-2026-08-09",
+      "title": "Continual Learning in Transition",
+      "authors": "Zhiyan Hou, Dan Zhang, Tao Feng, Liyuan Wang, Wei Li, Xiangzhao Hao, Hongyan An, Junfeng Fang, Haokai Ma, Zhaohui Xu, Haiyun Guo, Jinqiao Wang, Tat-Seng Chua",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06216",
+      "type": "paper",
+      "dateAdded": "2026-08-09",
+      "summary": "The survey reframes continual learning along When (pre-/post-training/inference), How (off-policy, on-policy, beyond-gradient), and Where (internal parameters versus external harnesses, memory, and protocols). It traces the shift from parameter-centric updates to system-level adaptation driven by on-policy learning, test-time training, and agentic components. The tri-axial map organizes methods, open challenges, and implications for LLM and agent eras.",
+      "tags": [
+        "continual learning",
+        "survey",
+        "agents",
+        "adaptation",
+        "system-level"
+      ]
+    },
     {
       "id": "the-ignition-index-measuring-global-workspace-dynamics-in-language-models-2026-08-08",
       "title": "The Ignition Index: Measuring Global Workspace Dynamics in Language Models",
