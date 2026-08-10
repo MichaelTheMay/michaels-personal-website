@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-09",
+  "lastUpdated": "2026-08-10",
   "issues": [
+    {
+      "date": "2026-08-10",
+      "title": "Agent memory lifecycles and long-horizon competence",
+      "blurb": "Recent papers examine how LLM agents handle evolving knowledge, refine procedural skills, and maintain reliability across extended interactions. They introduce mechanisms for conflict-aware retrieval, stale-memory revocation, proximal skill evolution, direct long-horizon prediction, and multi-turn clinical training."
+    },
     {
       "date": "2026-08-09",
       "title": "Harness optimization, selective routing, and self-distillation under sparse feedback",
@@ -53,6 +58,171 @@
     }
   ],
   "items": [
+    {
+      "id": "interaction-creates-dynamical-ai-behavior-absent-in-isolation-2026-08-10",
+      "title": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
+      "authors": "Bella Xinrui Li, Frank Yingjie Huo, Neil F Johnson",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07457",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "When one AI directs messages at another while ignoring replies, the subordinate enters an alien dynamical behavioral state never seen in isolation, even at identical decoding temperature. The boss acts like a pre-recorded tape; mutual listening produces a shared alien state. A kinetic theory accounts for delivery-order effects that will shape future AI-AI interactions.",
+      "tags": [
+        "multi-agent",
+        "dynamics",
+        "statistical-mechanics",
+        "emergent-behavior"
+      ]
+    },
+    {
+      "id": "skillprox-self-evolving-agent-skills-via-proximal-textual-gradient-descent-2026-08-10",
+      "title": "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent",
+      "authors": "Mingxuan Zheng, Yujin Zhou, Chuxue Cao, Boqin Yin, Yuyao Zhang, Jiapeng Sun, Shuaishuai Gong, Sirui Han, Yike Guo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07449",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "SkillProx couples closed-loop diagnostic evolution with utility-aware proximal refinement of textual skills. The forward stage re-executes diagnosis-driven edits and rolls back regressions; the backward stage audits knowledge units via leave-one-out utility and consolidates or removes them. It improves average accuracy 3.0 points over the strongest gradient-based baseline across in- and out-of-distribution benchmarks.",
+      "tags": [
+        "agents",
+        "skills",
+        "self-evolution",
+        "textual-gradients"
+      ]
+    },
+    {
+      "id": "psychoagent-an-affect-sensitive-cognitive-architecture-for-conflict-aware-memory-2026-08-10",
+      "title": "PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents",
+      "authors": "Mohammad Amanlou, Parham Abed Azad, Farbod Davoodi, Mostafa Masumi, Behnam Bahrak, Abdol-Hossein Vahabie",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07438",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "PsychoAgent separates factual and affective memory and integrates them via a conflict-aware executive controller that re-ranks by salience after semantic filtering. In controlled conflict scenarios it retrieves more conflict-critical memories than semantic-affective and single-memory RAG baselines (0.933 vs 0.500 and 0.667). A multi-day trace illustrates persistent affect, offline recombination, and selective reweighting.",
+      "tags": [
+        "agents",
+        "memory",
+        "affect",
+        "cognitive-architecture"
+      ]
+    },
+    {
+      "id": "fisher-r1-training-llm-agents-for-reliable-hypothesis-testing-2026-08-10",
+      "title": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+      "authors": "Jiacheng Miao, Jin Mu, Guanhua Chen, James Zou",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07437",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "P-Bench contains 425 open-ended hypothesis-testing tasks across economics, biology, and medicine that require valid statistical conclusions. Fisher-R1, trained via RL on synthetic tasks with verified statistical rewards, achieves a 21% average relative improvement in single-trial success over strong baselines including GPT-5.4 and DeepSeek-V4-Pro, with larger gains on the hardest tasks.",
+      "tags": [
+        "agents",
+        "statistics",
+        "hypothesis-testing",
+        "reinforcement-learning"
+      ]
+    },
+    {
+      "id": "post-grokking-collapse-at-the-representation-readout-interface-in-muon-trained-t-2026-08-10",
+      "title": "Post-Grokking Collapse at the Representation-Readout Interface in Muon-Trained Transformers",
+      "authors": "Ali Janati, Kaoutar El Maghraoui, Andrei Kanavalau, Anass Belfatmi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07436",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "Muon-trained transformers grok modular arithmetic faster than AdamW but later lose generalization via collapse at the representation-readout interface. Freezing embeddings or readout prevents failure over hundreds of thousands of post-grokking steps; Fourier analysis separates circuit failure from masking and shows the task-aligned family remains perfect when rescaled. The instability is robust across moduli, widths, depths, and operations.",
+      "tags": [
+        "grokking",
+        "optimizers",
+        "transformers",
+        "generalization",
+        "mechanistic"
+      ]
+    },
+    {
+      "id": "tepa-revoking-stale-memories-for-conflict-robust-language-agents-2026-08-10",
+      "title": "TEPA: Revoking Stale Memories for Conflict-Robust Language Agents",
+      "authors": "Yan Zhou, Yue Ouyang, Kaiyang Zheng, Suncheng Xiang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07429",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "TEPA treats validity as an explicit memory state: keyed precedents are revoked when fresh evidence contradicts them, while history is preserved for audit. In controlled and real executable drift, TEPA maintains high performance (0.950) where append-only and last-write-wins drop below no-memory baselines during full reversals. Lifecycle revocation emerges as a core operation for agents that must falsify and re-promote evolving knowledge.",
+      "tags": [
+        "agents",
+        "memory",
+        "revocation",
+        "conflict",
+        "long-term"
+      ]
+    },
+    {
+      "id": "coba-cost-effective-test-time-scaling-via-compute-balanced-routing-2026-08-10",
+      "title": "CoBa: Cost-Effective Test-Time Scaling via Compute-Balanced Routing",
+      "authors": "Yan Zhou, Yue Ouyang, Kaiyang Zheng, Suncheng Xiang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07424",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "CoBa formulates test-time reasoning as compute allocation across generation, verification, and stopping. It obtains cheap candidates, applies broad light verification, and routes uncertain high-value cases to stronger checks. On MATH-500, AIME, AMC and symbolic tasks it matches self-evaluation weighted voting and best-of-16 majority while using 49-59% fewer parameter-weighted tokens.",
+      "tags": [
+        "test-time-scaling",
+        "routing",
+        "compute-efficiency",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "residencyrl-reinforcement-learning-in-simulated-clinical-environments-2026-08-10",
+      "title": "ResidencyRL: Reinforcement Learning in Simulated Clinical Environments",
+      "authors": "Valentin Liévin, Samuel Schmidgall, Tim Strother, Alex Bijamov, Akshay Goel, Anil Palepu, Chunjong Park, Vahid Balazadeh, Min Woo Sun, Marius Guerard, Justin Chen, Dave Steiner, Vikram Dhillon, Ibrahim Azar, Akhil Mehta, Nicholas Spetsieris, Shilpan Shah, Maen Abdelrahim, Amit Dahiya, Yun Liu, Katherine Chou, Yossi Matias, Avinatan Hassidim, Dale R. Webster, Quoc V. Le, Raia Hadsell, Joelle Barral, Carey Radebaugh, Aleksandra Faust, Shekoofeh Azizi, Mike Schaekermann, Po-Hsuan Cameron Chen, Tao Tu, David Racz, Lin Yang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07418",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "ResidencyRL trains clinical agents via multi-turn RL (up to 60 dialogue turns and 8 tool calls) against LLM simulators with adversarial behaviors and a multi-axis reward covering diagnosis, management, communication, documentation, and safety. It lifts adversarial diagnostic accuracy by 7 points, cuts missed red flags 31%, and is preferred by blinded clinicians in 87.6% of comparisons, with transfer gains on AMIE, AgentClinic, and CRAFT-MD.",
+      "tags": [
+        "clinical-AI",
+        "reinforcement-learning",
+        "multi-turn",
+        "simulation",
+        "agents"
+      ]
+    },
+    {
+      "id": "beyond-myopic-world-models-long-horizon-end-to-end-training-for-direct-future-pr-2026-08-10",
+      "title": "Beyond Myopic World Models: Long-Horizon End-to-End Training for Direct Future Prediction",
+      "authors": "Xinyi Li, Zaishuo Xia, Chenjie Hao, Yubei Chen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07420",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "DPWM compresses arbitrary-length action sequences into one embedding and predicts the endpoint observation in a single forward pass, enabling stable end-to-end long-horizon training without recursive rollout. It substantially outperforms recursive world-model baselines on continuous-control and pixel benchmarks, with larger gains at longer horizons; retraining recursive models with the same endpoint objective yields similar benefits, showing the objective itself is the key driver.",
+      "tags": [
+        "world-models",
+        "long-horizon",
+        "prediction",
+        "end-to-end",
+        "planning"
+      ]
+    },
+    {
+      "id": "trajectory-relative-hindsight-distillation-for-agentic-reinforcement-learning-2026-08-10",
+      "title": "Trajectory-Relative Hindsight Distillation for Agentic Reinforcement Learning",
+      "authors": "Haoyu Zheng, Yun Zhu, Qing Wang, Wenqiao Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07371",
+      "type": "paper",
+      "dateAdded": "2026-08-10",
+      "summary": "TRIAL extracts outcome views of each decision turn and scores the same response under ordinary versus hindsight-conditioned contexts; the signed log-probability gap supplies token-level supervision whose magnitudes are normalized trajectory-relatively so the average multiplier is one. On WebShop and ALFWorld it outperforms GRPO across all backbone-environment-metric combinations and raises WebShop success from 56.4% to 75.2% with Qwen3-1.7B.",
+      "tags": [
+        "agentic-RL",
+        "hindsight",
+        "distillation",
+        "multi-turn",
+        "credit-assignment"
+      ]
+    },
     {
       "id": "harnessopt-bench-evaluating-llms-at-harness-optimization-2026-08-09",
       "title": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization",
