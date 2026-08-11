@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-10",
+  "lastUpdated": "2026-08-11",
   "issues": [
+    {
+      "date": "2026-08-11",
+      "title": "Internal probes, mutable harnesses, and judgment-free flow control",
+      "blurb": "Recent work repeatedly shows that verbalized confidence, static retrieval, and pure content review are insufficient for reliable agents. The selected papers instead develop internal linear probes, external mutable document environments, representation-based intrinsic rewards, baked-in interpretability, coalition routing, and load-aware governance that bypasses semantic judgment altogether."
+    },
     {
       "date": "2026-08-10",
       "title": "Agent memory lifecycles and long-horizon competence",
@@ -58,6 +63,176 @@
     }
   ],
   "items": [
+    {
+      "id": "the-knowing-saying-gap-when-probes-see-errors-that-confidence-misses-2026-08-11",
+      "title": "The Knowing-Saying Gap: When Probes See Errors that Confidence Misses",
+      "authors": "Jyotin Goel, Ipshita Bandyopadhyay, Justin Shenk",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07528",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "Linear probes detect corrupted context in language models with near-perfect accuracy, yet this signal fails to predict final answer correctness on multi-hop arithmetic chains. Forced structured confidence collapses to two values with identical error rates, and probe persistence across hops does not separate correct from incorrect traces, refuting a pre-registered hypothesis. Probe-based interventions such as branch-and-pick are net-positive and model-dependent, establishing probes as a necessary complement to verbalized confidence that still requires error-type-aware routing.",
+      "tags": [
+        "probes",
+        "monitoring",
+        "confidence",
+        "reasoning",
+        "deployment"
+      ]
+    },
+    {
+      "id": "docatlas-long-document-understanding-as-mutable-state-interaction-2026-08-11",
+      "title": "DocAtlas: Long-Document Understanding as Mutable-State Interaction",
+      "authors": "Hongchen Wei, Yuanzhe Wang, Bei Liu, Yifan Yang, Qi Dai, Kai Qiu, Yunsheng Li, Dongdong Chen, Chong Luo, Zhenzhong Chen, Baining Guo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07527",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "DocAtlas treats long-document understanding as an information-seeking process inside a mutable external harness that exposes search, reading, note-taking and review tools while maintaining a hierarchical tree and note store under a fixed context budget. The same harness supports both inference-time use with large VLMs and end-to-end RL for compact agents. With GPT-5.4 it reaches 71.4% on MMLongBench-Doc (above the human-expert reference of 65.8%), and a 4B VLM trained via RL inside the harness jumps from 54.4% to 63.7%.",
+      "tags": [
+        "long-document",
+        "agents",
+        "mutable-state",
+        "VLM",
+        "reinforcement-learning"
+      ]
+    },
+    {
+      "id": "search-g1-grounded-search-agents-via-representation-based-intrinsic-rewards-2026-08-11",
+      "title": "Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards",
+      "authors": "Cheng Ruoxi, Ma Haoxuan, Zhang Hongyi, Zhang Junming, Duan Ranjie, Xia Qiaolin, Wang Hao, Lu Yu, Shi Haibo, Ma Xingjun",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07531",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "Search-G1 supplies intrinsic rewards from two intervention-calibrated representation readouts: one that estimates closed-book sufficiency (hence retrieval necessity) and one that measures answer-stage sensitivity to evidence deletion. These signals credit necessary grounded search, favor direct answers when knowledge suffices, and penalize redundant search, all without process annotations or LLM judges at training time. Periodic refitting lets the reward co-evolve with the policy, yielding shorter trajectories at competitive accuracy across search QA benchmarks.",
+      "tags": [
+        "search-agents",
+        "intrinsic-rewards",
+        "grounding",
+        "RL",
+        "representations"
+      ]
+    },
+    {
+      "id": "flow-by-flow-content-judgment-bypass-for-governing-ai-output-in-high-loss-domain-2026-08-11",
+      "title": "Flow-by-Flow: Content-Judgment Bypass for Governing AI Output in High-Loss Domains",
+      "authors": "Hiroki Naito",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07474",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "When AI output velocity times per-item cognitive load exceeds human capacity, content-based oversight becomes structurally untenable because triage and response costs do not fall with capability. Flow-by-Flow therefore controls supervisory load via countable formal features and institutional capacity caps, never evaluating semantic correctness. Four design invariants (no content judgment, no scalable examiner consumption, identity-bound friction, no batch clearance) are shown to be jointly satisfiable, and Monte Carlo trials favor composite multi-metric flow control over supervision reinforcement in 90.8% of draws.",
+      "tags": [
+        "governance",
+        "oversight",
+        "cognitive-load",
+        "high-stakes",
+        "safety"
+      ]
+    },
+    {
+      "id": "scaling-inherently-interpretable-language-models-2026-08-11",
+      "title": "Scaling Inherently Interpretable Language Models",
+      "authors": "Guide Labs Team, Andreas Madsen, Aya Abdelsalam Ismail, Giang Nguyen, Isaac Plant, Muawiz Chaudhary, Nathaniel Monson, Saqib Azim, Zhichen Guo, Julius Adebayo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07594",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "Interpretability is imposed as a training constraint optimized jointly with the language-modeling objective rather than recovered post-hoc. Across three orders of magnitude of compute on both autoregressive and diffusion LMs, representations become more disentangled and aligned with human concepts as scale increases. The resulting Steerling-8B diffusion model attributes any generated span to input tokens, concepts and training data, enabling closed-loop concept steering without retraining while remaining competitive with peers trained on far more compute.",
+      "tags": [
+        "interpretability",
+        "scaling",
+        "diffusion-LM",
+        "concept-steering",
+        "training"
+      ]
+    },
+    {
+      "id": "dynamic-coalition-formation-and-communication-pricing-in-skill-based-agentic-ai--2026-08-11",
+      "title": "Dynamic Coalition Formation and Communication Pricing in Skill-Based Agentic AI Systems",
+      "authors": "Mojtaba Eslami",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07532",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "Agent selection and communication are cast as a cooperative game whose net utility separates coalition value from activation and per-edge costs. A marginal-value greedy router, optionally guided by estimated Shapley values, together with limited submodular approximation guarantees, activates far fewer agents than full broadcast while recovering 99.5% of brute-force utility in synthetic settings. Performance remains robust to moderate cost and redundancy variation but degrades under strong submodularity violations or noisy value estimates.",
+      "tags": [
+        "multi-agent",
+        "coalitions",
+        "Shapley",
+        "routing",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "adias-automated-design-of-interactive-agentic-systems-2026-08-11",
+      "title": "ADIAS: Automated Design of Interactive Agentic Systems",
+      "authors": "Lekang Jiang, Bohan Tang, Stephan Goetz, Yiwen Guo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06410",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "Instead of organizing experience around candidate agents, ADIAS maintains an explicit persistent issue state that tracks stable identities, lifecycle status, evidence and intervention outcomes. Issue-guided optimization then jointly proposes repair targets and revision directions for full-code modification. Across five interactive benchmarks the method outperforms the strongest baseline by 25.2% on average; ablating the issue state or reverting to candidate-centric policies drops performance by up to 40.7%.",
+      "tags": [
+        "agent-design",
+        "automation",
+        "issue-centric",
+        "multi-agent",
+        "optimization"
+      ]
+    },
+    {
+      "id": "unified-hallucination-fuzzing-for-multimodal-large-language-models-2026-08-11",
+      "title": "Unified Hallucination Fuzzing for Multimodal Large Language Models",
+      "authors": "Pengfei Zhou, Jiajun Song, Zhiwei Tang, Yixing Ma, Xiaopeng Peng, Donghui Si, Yuhang Xu, Huiqi Song, Yiyuan Miao, Yichen Qian, Weihua Chen, Wangbo Zhao, Bohan Zhuang, Jiasheng Tang, Yang You",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07525",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "UniHall supplies a fine-grained taxonomy-spanning Object, Instruction and Knowledge dimensions, while Self-Adaptive Multimodal Fuzzing evolves inputs via mutation to escape static-benchmark saturation. An ensemble of multi-modal oracles scores the dynamic cases. State-of-the-art MLLMs suffer large degradations under fuzzing, revealing a dissociation between reasoning and factual grounding plus a helpfulness-hallucination trade-off induced by RL alignment.",
+      "tags": [
+        "hallucination",
+        "MLLM",
+        "fuzzing",
+        "benchmark",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "determinization-in-structure-theories-a-unified-framework-via-closure-comparabil-2026-08-11",
+      "title": "Determinization in Structure Theories: A Unified Framework via Closure, Comparability, and Joint Admissibility",
+      "authors": "Hai Hai Fu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07476",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "A structure theory is formalized as signature plus axioms plus inference policy; its admissible interpretations form a family that may be plural. Three levels of canonicalization (closure stabilization, global completion, full determinization) are distinguished, and non-determinism is classified into epistemic versus structural (including strong) plurality. Operator-based and selector-based mechanisms are given sufficient conditions; the framework views LLM hallucination as unsupported canonicalization and shows multi-level canonicalization is structurally non-commutative.",
+      "tags": [
+        "formal-methods",
+        "canonicalization",
+        "reasoning",
+        "LLM",
+        "logic"
+      ]
+    },
+    {
+      "id": "training-variable-long-sequences-with-data-centric-parallel-2026-08-11",
+      "title": "Training Variable Long Sequences with Data-Centric Parallel",
+      "authors": "Geng Zhang, Xuanlei Zhao, Kai Wang, Yang You",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07524",
+      "type": "paper",
+      "dateAdded": "2026-08-11",
+      "summary": "Data-Centric Parallel lets each batch’s sequence length itself drive runtime decisions on parallel size, gradient accumulation and recomputation, eliminating the usual trade-off between static imbalance and complex model-specific code. The method integrates into arbitrary models with roughly ten lines of code and delivers up to 2.88× speedup on 32 H200 GPUs for variable-length training. It is positioned as a simple, general baseline for future distributed long-sequence work.",
+      "tags": [
+        "distributed-training",
+        "long-sequences",
+        "efficiency",
+        "systems",
+        "parallelism"
+      ]
+    },
     {
       "id": "interaction-creates-dynamical-ai-behavior-absent-in-isolation-2026-08-10",
       "title": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
