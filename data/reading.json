@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-12",
+  "lastUpdated": "2026-08-13",
   "issues": [
+    {
+      "date": "2026-08-13",
+      "title": "Test-time harnesses, simulator collapse, and context trade-offs",
+      "blurb": "Recent work examines how capability can be transferred or recovered at inference without parameter updates, how single-simulator training fails to generalize in multi-agent settings, and how longer contexts or compression choices reshape parametric knowledge, rankings, and memory reliability."
+    },
     {
       "date": "2026-08-12",
       "title": "Catastrophic remembering, skill compression, and structured agent memory",
@@ -68,6 +73,176 @@
     }
   ],
   "items": [
+    {
+      "id": "ai4ai-at-test-time-strong-to-weak-capability-transfer-via-harnesses-2026-08-13",
+      "title": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
+      "authors": "Cheng Qian, Wenting Zhao, Liangwei Yang, Heng Wang, Jielin Qiu, Heng Ji, Silvio Savarese, Huan Wang, Shelby Heinecke",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12307",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "Stronger builder models iteratively construct inference-time harnesses on a small validation slice that nearly double weaker target-model accuracy on Theory-of-Mind benchmarks (0.49 to 0.91 average) with no parameter updates. Gains arise mainly from offloading unstable reasoning into deterministic code, routing, and format enforcement rather than from eliciting more sampling or chain-of-thought from the target. Builder reasoning effort monotonically improves harness quality and weaker targets benefit most.",
+      "tags": [
+        "test-time",
+        "distillation",
+        "harnesses",
+        "agents",
+        "ToM"
+      ]
+    },
+    {
+      "id": "vakra-evaluating-multi-hop-reasoning-across-apis-and-retrieval-under-tool-use-po-2026-08-13",
+      "title": "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
+      "authors": "Ankita Rajaram Naik, Anupama Murthi, Benjamin Elder, Siyu Huo, Raavi Gupta, Abhinav Jain, Praveen Venkateswaran, Abdulhamid Adebayo, Danish Contractor",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12282",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "VAKRA supplies over 8,000 executable APIs across 62 domains and tasks of rising difficulty that combine multi-hop structured API use with retrieval under natural-language tool policies, with correctness checked by live re-execution. Even the strongest models reach only ~70% on single-hop endpoint tasks, fall to ~50% on compositional APIs, and collapse further (to as low as 2.4% on unanswerable policy cases) as hop depth and constraints grow. Failures concentrate in language-mediated steps such as entity disambiguation and cross-source grounding rather than tool-call mechanics.",
+      "tags": [
+        "benchmarks",
+        "tool-use",
+        "multi-hop",
+        "agents",
+        "APIs"
+      ]
+    },
+    {
+      "id": "one-frozen-simulator-is-not-enough-simulator-collapse-in-multi-agent-rl-2026-08-13",
+      "title": "One Frozen Simulator Is Not Enough: Simulator Collapse in Multi-Agent RL",
+      "authors": "Simon Yu, Nicholas Tomlin, Marwa Abdulhai, Ximing Lu, Derek Chong, Abe Hou, Dilara Soylu, Sergey Levine, Christopher D. Manning, Weiyan Shi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12253",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "Training an LLM policy against a single frozen simulator LLM produces mode collapse: the policy overfits narrow exploitative strategies that transfer poorly to held-out simulators and real users. Verbalized Sampling at inference diversifies simulator responses, while Co-Training against a population of trainable simulators prevents overfitting; together they raise held-out success by up to 14% on multi-turn benchmarks and improve human-user results while preserving policy diversity. The work releases the SCOPE framework for population co-training.",
+      "tags": [
+        "multi-agent",
+        "RL",
+        "simulators",
+        "generalization",
+        "mode-collapse"
+      ]
+    },
+    {
+      "id": "information-abundance-paradox-long-context-training-undermines-parametric-knowle-2026-08-13",
+      "title": "Information Abundance Paradox: Long-Context Training Undermines Parametric Knowledge",
+      "authors": "Arda Uzunoglu, Benjamin van Durme, Daniel Khashabi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12218",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "Training with longer, information-rich contexts improves language modeling and closed-book performance only up to an intermediate optimum, after which parametric internalization declines and models become more dependent on supplied context. In SFT, richer train-time context boosts in-context performance but reduces robustness when context is missing or misleading at test time. Mechanistically, gradients shift from feed-forward (parametric) pathways toward attention, increasing contextual reliance.",
+      "tags": [
+        "long-context",
+        "parametric-knowledge",
+        "pretraining",
+        "SFT",
+        "mechanistic"
+      ]
+    },
+    {
+      "id": "who-thinks-best-depends-on-how-long-you-let-them-budget-dependent-rankings-in-ll-2026-08-13",
+      "title": "Who Thinks Best Depends on How Long You Let Them: Budget-Dependent Rankings in LLM Evaluation",
+      "authors": "Rodrigo Guedes de Souza, Alison R. Panisson",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12150",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "Varying generation budgets from 64 to 4,096 tokens across four models and three reasoning benchmarks produces ranking reversals on every benchmark and non-monotone accuracy on 3-19% of items (model-specific). Oracle complementarity reaches +27.8 pp, largest under tight budgets; a budget-aware router recovers part of the gap but budget features fail to transfer across domains. The results motivate budget-conditioned evaluation protocols.",
+      "tags": [
+        "evaluation",
+        "test-time-compute",
+        "rankings",
+        "budgets",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "mechanist-ai-as-a-scientific-instrument-for-discovering-the-mechanisms-of-intell-2026-08-13",
+      "title": "Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence",
+      "authors": "Mengru Wang, Junfeng Fang, Shuofei Qiao, Zhenqian Xu, Haoming Xu, Haoxiong Wang, Shumin Deng, Linyi Yang, Zhixiang Cui, Xin Xu, Yunzhi Yao, Buqiang Xu, Fei Shen, Haozhe Luo, Yunxiang Wei, Ningyu Zhang, Julian McAuley, Tat Seng Chua, Huajun Chen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12036",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "Mechanist is an agentic system that treats AI as an instrument for autonomous mechanistic discovery, backed by a 13k-paper interpretability knowledge graph, a 43M-paper multidisciplinary corpus, and a library of 32 analysis methods. It outperforms prior AI-scientist baselines at hypothesis generation and experiment execution, progressing from discovering cross-modal safety risks, to a theory of belief formation and ToM emergence in pretraining, to interventions that improve performance and steer DNA sequence generation.",
+      "tags": [
+        "mechanistic-interpretability",
+        "AI-scientist",
+        "agents",
+        "safety",
+        "belief"
+      ]
+    },
+    {
+      "id": "claim-level-reliability-assessment-for-efficient-test-time-reasoning-2026-08-13",
+      "title": "Claim-Level Reliability Assessment for Efficient Test-Time Reasoning",
+      "authors": "Sen Xu, Wei Wang, Shixi Liu, Jixin Min, Yingwei Dai, Zhibin Yin, Yirong Chen, Junlin Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11994",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "CLR condenses reasoning traces into decision-critical claims and reallocates test-time compute toward semantic falsification rather than extra solution sampling, exploiting the asymmetry that refuting one claim is easier than constructing a fully correct path. Across four models and benchmarks under matched budgets it improves over pass@1 and self-consistency (e.g., +27 pp vs pass@1 and higher accuracy with 37% fewer tokens on one setting) by suppressing high-confidence erroneous consensus.",
+      "tags": [
+        "test-time",
+        "reasoning",
+        "verification",
+        "falsification",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "retry-switch-or-abstain-learning-strategy-aware-tool-use-policies-via-controlled-2026-08-13",
+      "title": "Retry, Switch, or Abstain? Learning Strategy-Aware Tool-Use Policies via Controlled Error Injection",
+      "authors": "Chaoran Chen, Vy Nguyen, Ziji Zhang, Abhinav Gullapalli, Ziyi Wang, Yuxuan Lu, Dakuo Wang, Jing Huang, Zhou Yu, Jin Lai",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11977",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "BENCH2ROBUST converts clean tool-use benchmarks into stochastic environments that force retry, switch, or abstain decisions under controlled failures. Bayesian Tool Memory supplies structured recovery context at runtime (up to +16.8 pp robustness without retraining) while curriculum RL learns complementary recovery policies; combining both reaches 40-45% success under injection while preserving clean performance. A near-universal robustness gap appears across model families once tools can fail.",
+      "tags": [
+        "tool-use",
+        "robustness",
+        "agents",
+        "RL",
+        "recovery"
+      ]
+    },
+    {
+      "id": "oeis-open-how-many-conjectures-can-language-models-turn-into-theorems-2026-08-13",
+      "title": "OEIS Open: How many conjectures can language models turn into theorems?",
+      "authors": "Tom Adamczewski",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11941",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "OEIS Open formalizes 492 open OEIS conjectures in Lean and evaluates generic language models with minimal tools under fixed dollar budgets, securely against cheating. Models resolve 147 conjectures (30%) at $50 per attempt; the best model reaches 44% on a 100-conjecture Lite subset at $200. Access to 476k arXiv math papers or more elaborate agent loops did not improve scores, showing autonomous resolution of open research conjectures is already feasible at modest cost.",
+      "tags": [
+        "formal-math",
+        "Lean",
+        "conjectures",
+        "agents",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "the-sleeping-agent-what-gist-based-context-compression-loses-and-why-2026-08-13",
+      "title": "The Sleeping Agent: What Gist-Based Context Compression Loses and Why",
+      "authors": "Nicholas E. Kyrkewood",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.11775",
+      "type": "paper",
+      "dateAdded": "2026-08-13",
+      "summary": "Salience-Weighted Consolidation (inspired by sleep-based memory) is used as a probe on LoCoMo long-horizon conversations: gist compression beats truncation on multi-hop and factual questions but substantially harms temporal questions because the abstraction prompt discards dates and times while preserving relational structure. A one-sentence prompt change raises temporal-expression preservation ~20-fold and recovers +0.314 judge accuracy on temporal items, demonstrating a precise, low-cost fix.",
+      "tags": [
+        "memory",
+        "compression",
+        "long-horizon",
+        "agents",
+        "temporal"
+      ]
+    },
     {
       "id": "long-horizon-ai-research-for-grothendieck-constant-a-case-study-in-human-ai-math-2026-08-12",
       "title": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
