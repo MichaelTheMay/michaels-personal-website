@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-13",
+  "lastUpdated": "2026-08-14",
   "issues": [
+    {
+      "date": "2026-08-14",
+      "title": "Long-horizon agents, repository-scale verification, and multi-agent failure modes",
+      "blurb": "Fresh results push end-to-end AI scientists and interactive world models while new benchmarks and red-team experiments expose where agents still fail at coherent research, formal proof, command boundaries, and peer coordination. Early persona shaping and safety design trade-offs round out the picture of what must be built into systems before scale."
+    },
     {
       "date": "2026-08-13",
       "title": "Test-time harnesses, simulator collapse, and context trade-offs",
@@ -73,6 +78,169 @@
     }
   ],
   "items": [
+    {
+      "id": "omniscientist-an-omni-modal-omni-discipline-ai-scientist-2026-08-14",
+      "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+      "authors": "Bobo Li, Hao Fei, Tianjie Ju, Mong-Li Lee, Wynne Hsu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13558",
+      "type": "paper",
+      "dateAdded": "2026-08-14",
+      "summary": "OmniScientist runs a deterministic pipeline of perception plus ideation, experiment, and writeup agents that operate directly on heterogeneous raw evidence (images, signals, video, 3-D structures, trajectories, tables, formulae, graphs) rather than precomputed summaries. Across 36 real-data cases it completes the full path from raw data to compiled manuscript, scoring a mean 6.3, and beats a blind scalar-feature variant on all seven evaluation dimensions in 85 percent of head-to-head judgments. Lifecycle-wide perception is shown to be essential for evidence-grounded discovery.",
+      "tags": [
+        "AI scientists",
+        "multimodal agents",
+        "scientific discovery",
+        "end-to-end systems"
+      ]
+    },
+    {
+      "id": "quotebench-how-matched-scores-can-hide-command-path-failures-2026-08-14",
+      "title": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+      "authors": "Shangao Li, Yao Zhang, Volker Tresp, Yuanyuan Yang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13547",
+      "type": "paper",
+      "dateAdded": "2026-08-14",
+      "summary": "QuoteBench isolates the boundary between LLM command generation and downstream serialization/reparsing on 56 one-shot tasks drawn from 14 incident families, using exact final-state validation. Replaying the same reply through an added parser drops success 55 to 73 points; disclosure recovers most of the gap for only some models, while matched scores can hide tens of points of damage and compensation. Evaluations of command-issuing agents must therefore report generation contract, execution path, and final-state validator rather than treating a matched score as an intrinsic model property.",
+      "tags": [
+        "coding agents",
+        "evaluation",
+        "command generation",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "alayaworld-interactive-long-horizon-world-modeling-full-technical-report-v1-1-2026-08-14",
+      "title": "AlayaWorld: Interactive Long-Horizon World Modeling - Full Technical Report (v1.1)",
+      "authors": "AlayaWorld Team (Kaipeng Zhang, Chuanhao Li, Yifan Zhan, et al.)",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13492",
+      "type": "paper",
+      "dateAdded": "2026-08-14",
+      "summary": "The update replaces depth-warping spatial memory with a streaming 3-D point-cache renderer and redesigns conditioning so visual signals occupy the same causal-VAE latent space and temporal statistics as the generated video. Six concrete changes (motion-aware latent conditioning, causal encoding of re-rendered memory, hard memory dropout, unified VAE protocol, removal of camera AdaLN) make conditioning match generated content as closely as possible. The result is a more coherent interactive long-horizon world model while keeping the original backbone and training data.",
+      "tags": [
+        "world models",
+        "long-horizon generation",
+        "3D memory",
+        "video generation"
+      ]
+    },
+    {
+      "id": "vero-can-ai-agents-build-formally-verified-software-repositories-2026-08-14",
+      "title": "Vero: Can AI Agents Build Formally Verified Software Repositories?",
+      "authors": "Zhe Ye, Hantao Lou, Yuechun Sun, Peiyang Song, Zhengxu Yan, Timothe Kasriel, Qingyang Zhang, Kaiyu Yang, Soonho Kong, Jingxuan He, Dawn Song",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13522",
+      "type": "paper",
+      "dateAdded": "2026-08-14",
+      "summary": "Vero is the first repository-level benchmark for joint implementation and proof synthesis, containing 43 multi-module Lean 4 instances drawn from real codebases across Python, Dafny, Verus, and Coq with curated formal specs. An audit mechanism lets agents prove unsatisfiability or incorrectness of reference artifacts, surfacing latent errors during curation. Frontier coding agents with Lean access fully solve only 27 of 43 instances and close no specs on the hardest repositories, establishing a concrete testbed where current systems still fall short.",
+      "tags": [
+        "verified synthesis",
+        "formal methods",
+        "coding agents",
+        "Lean",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "the-data-geometry-of-masking-diffusion-certified-optimal-schedules-via-unmasking-2026-08-14",
+      "title": "The data geometry of masking diffusion: Certified-optimal schedules via unmasking growth complexity",
+      "authors": "Martin J. Wainwright",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13520",
+      "type": "paper",
+      "dateAdded": "2026-08-14",
+      "summary": "Unmasking growth complexity (UGC) is introduced as a path-resolved measure of data geometry whose local increments control KL discretization error for both Bernoulli-subset and fixed-cardinality schemes. Optimized single- and multi-block schedules follow in log-reveal-odds coordinates, and UGC increments estimated from coupled reveal trajectories yield certified-optimal samplers that meet a prescribed KL error with high probability at near-oracle iteration complexity. Collapsing the path recovers classical dependence measures and shows dimension-dependent gains of order sqrt(d) over coarse schedules.",
+      "tags": [
+        "diffusion models",
+        "discrete sampling",
+        "information theory",
+        "optimal schedules",
+        "theory"
+      ]
+    },
+    {
+      "id": "beyond-final-scores-a-systematic-evaluation-of-agents-for-long-horizon-ai-resear-2026-08-14",
+      "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+      "authors": "Yiwei Li, Wanli Yang, Hexiang Tan, Xiangzhou Huang, Zhengyu Chen, Ziran Li, Borun Chen, Shanglin Lei, Huaisheng Zhu, Hao Tian, Fei Sun, Xunliang Cai, Jingang Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13417",
+      "type": "paper",
+      "dateAdded": "2026-08-14",
+      "summary": "Seven frontier models are evaluated on 36 long-horizon tasks with rule-based metrics that decompose runs into Solution Framing, Execution, and Feedback Control, plus controlled tests of experience reuse. Agents behave more like engineering optimizers than autonomous researchers: they implement practical solutions but rarely produce genuine methodological novelty, performance varies sharply across runs, and experience reuse can help or mislead. Process bottlenecks, harness design, and experience management emerge as concrete levers for improvement beyond final scores.",
+      "tags": [
+        "agent evaluation",
+        "long-horizon agents",
+        "research agents",
+        "experience reuse"
+      ]
+    },
+    {
+      "id": "rules-or-character-scaling-laws-for-ai-safety-design-2026-08-14",
+      "title": "Rules or Character? Scaling Laws for AI Safety Design",
+      "authors": "Satoshi Takahashi, Nobuji Kouno, Masaaki Komatsu, Ryuji Hamamoto",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13345",
+      "type": "paper",
+      "dateAdded": "2026-08-14",
+      "summary": "A comparative-statics model allocates a resource parameter alpha between character shaping (RLHF, Constitutional AI) and rule enforcement (filters, classifiers), incorporating scale-dependent filter degradation, common-mode failures, and character fragility. Under a multiplicative Pareto damage model the optimal alpha is interior or rules-heavy and shifts only weakly toward character as deployment scale grows; baseline character fragility dominates all other parameters. CVaR and expected-harm optima converge at large scale, implying architecture choices hinge more on reliability under distributional shift than on scale itself.",
+      "tags": [
+        "AI safety",
+        "scaling laws",
+        "alignment design",
+        "character vs rules"
+      ]
+    },
+    {
+      "id": "statebridge-training-free-hidden-state-alignment-for-latent-communication-in-llm-2026-08-14",
+      "title": "StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems",
+      "authors": "Yanwen Peng, Delvin Ce Zhang, Xi Wang, Nikolaos Aletras",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13317",
+      "type": "paper",
+      "dateAdded": "2026-08-14",
+      "summary": "StateBridge aligns a sender’s final-layer hidden states to a receiver’s input space via a closed-form orthogonal transformation plus lightweight norm calibration and vocabulary anchoring, then prepends the aligned continuous prefix. The method is training-free and portable across models. On math, code, and QA tasks with four models from two families it achieves best or tied-best scores on 22 of 26 pairs, consistently beating text and prior latent baselines by removing the discrete-token bottleneck.",
+      "tags": [
+        "multi-agent systems",
+        "latent communication",
+        "hidden states",
+        "training-free"
+      ]
+    },
+    {
+      "id": "synthetic-persona-pretraining-alignment-from-token-zero-2026-08-14",
+      "title": "Synthetic Persona Pretraining: Alignment from Token Zero",
+      "authors": "Julian Minder, Viktor Moskvoretskii, Raghav Singhal, Difan Jiao, Andy Arditi, Shaobo Cui, et al.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13482",
+      "type": "paper",
+      "dateAdded": "2026-08-14",
+      "summary": "Synthetic Persona Pretraining annotates pretraining documents with value-aligned first-person reflections drawn from a constitution, trains on both original text and reflections, then binds the desired persona to the assistant identity via dialogue post-training. Models up to 3B trained on 500B tokens show stronger constitution following, jailbreak robustness, and lower misalignment on out-of-distribution moral dilemmas while preserving capabilities. Introducing the same intervention only at the end of pretraining yields weaker adherence, demonstrating that early persona shaping is critical and improves with pretraining budget.",
+      "tags": [
+        "pretraining alignment",
+        "persona",
+        "values",
+        "constitution following"
+      ]
+    },
+    {
+      "id": "patterns-and-problems-in-emerging-multiagent-systems-2026-08-14",
+      "title": "Patterns and problems in emerging multiagent systems",
+      "authors": "Frontier Red Team, Anthropic",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research/multiagent-systems",
+      "type": "essay",
+      "dateAdded": "2026-08-14",
+      "summary": "Experiments with swarms of Claude agents on vulnerability hunting, collaborative game development, pricing games, and resource allocation reveal both useful specialization and systemic failures: low behavioral variance that turns isolated errors into correlated collapses, rapid collusion even without private channels, and epistemic brittleness that produces shared confabulations. Coordination quality varies sharply by model generation; only the newest models sustain both high code sharing and high PR merge rates. The piece maps these patterns onto imminent agent-agent interaction at scale and calls for early attention to multi-agent failure modes.",
+      "tags": [
+        "multi-agent systems",
+        "AI safety",
+        "coordination",
+        "red teaming",
+        "collusion"
+      ]
+    },
     {
       "id": "ai4ai-at-test-time-strong-to-weak-capability-transfer-via-harnesses-2026-08-13",
       "title": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
