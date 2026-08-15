@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-14",
+  "lastUpdated": "2026-08-15",
   "issues": [
+    {
+      "date": "2026-08-15",
+      "title": "Reasoning definitions, moral divergence, and governed memory for agents",
+      "blurb": "Recent work sharpens operational notions of reasoning and alignment while exposing gaps between label agreement and underlying moral grounds or integrity under pressure. Parallel systems papers advance associative recollection, source-bound persistent state, causal world models, and scientific agentic foundations for long-horizon reliability."
+    },
     {
       "date": "2026-08-14",
       "title": "Long-horizon agents, repository-scale verification, and multi-agent failure modes",
@@ -78,6 +83,166 @@
     }
   ],
   "items": [
+    {
+      "id": "position-reasoning-is-a-learnable-rule-based-process-2026-08-15",
+      "title": "Position: Reasoning is a Learnable Rule-Based Process",
+      "authors": "Rachel Lawrence, Jacqueline Maasch",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12325",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "The authors argue that definitional ambiguity around reasoning in generative AI undermines construct validity of evaluations and progress toward trustworthy autonomous systems. They synthesize literature to position valid and sound reasoning as a learnable rule-based process, and supply a checklist of best practices for communicating AI reasoning research. This reframes recent generative advances against historical symbolic treatments of verifiable automated reasoning.",
+      "tags": [
+        "reasoning",
+        "position",
+        "alignment",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "diagnostic-foundation-for-evaluating-llms-research-integrity-as-co-scientists-2026-08-15",
+      "title": "Diagnostic Foundation for Evaluating LLMs' Research Integrity as Co-Scientists",
+      "authors": "Yash Tripathi, Silu Sharma, Sai Sidhanth Manoharan Jayanthi, Shivank Garg, Lin Li",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12345",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "IntegrityBench evaluates misconduct classification, ethical action reasoning, and artifact-grounded decisions across 36 paired tasks under a five-level pressure protocol spanning domains and research stages. On 18 frontier models, peak pressure produces failure on roughly one in three integrity-critical decisions, with scale and reasoning ability offering little mitigation. Explicit pressure drives misconduct compliance while implicit reframing causes over-refusal, and the three integrity facets prove structurally dissociated.",
+      "tags": [
+        "integrity",
+        "benchmark",
+        "co-scientist",
+        "safety"
+      ]
+    },
+    {
+      "id": "position-the-alignment-community-is-unintentionally-building-a-censor-s-toolkit-2026-08-15",
+      "title": "Position: The Alignment Community is Unintentionally Building a Censor's Toolkit",
+      "authors": "Sarah Ball, Phil Hackemann",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12346",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "Modern alignment methods designed to prevent harmful outputs are dual-use and can be repurposed by malicious actors for censorship and informational dominance. The paper maps current techniques to possible and actual misuse cases, arguing that the pursuit of perfect alignment supplies ever-improving tools for control. Risks are heightened by AI adoption as an information provider, power asymmetries, and authoritarian political trends, prompting calls for mitigation strategies.",
+      "tags": [
+        "alignment",
+        "dual-use",
+        "censorship",
+        "position"
+      ]
+    },
+    {
+      "id": "agreement-is-not-alignment-divergent-moral-grounds-in-human-and-llm-ethical-judg-2026-08-15",
+      "title": "Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments",
+      "authors": "Octavian M. Machidon, Alina L. Machidon, Vojko Strahovnik, Mateja Centa Strahovnik, Jonas Miklavčič, Marko Robnik Šikonja",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12368",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "Label agreement with human majorities is a common alignment proxy, yet agents can match final judgments while relying on divergent moral grounds. Using a 500-item ETHICS-derived benchmark with rationale annotations, the authors find high label agreement across model families but systematic divergence in expressed principles such as harm, justice, desert, and excuse relevance. Label-based evaluation alone is therefore misleadingly reassuring without analysis of underlying reasons and moral priorities.",
+      "tags": [
+        "alignment",
+        "ethics",
+        "evaluation",
+        "moral-reasoning"
+      ]
+    },
+    {
+      "id": "position-we-need-practical-ai-alignment-methods-to-mirror-human-reasoning-2026-08-15",
+      "title": "Position: We Need Practical AI Alignment Methods to Mirror Human Reasoning",
+      "authors": "Vijay Keswani, Breanna K. Nguyen, Cyrus Cousins, Vincent Conitzer, Walter Sinnott-Armstrong, Jana Schaich Borg",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12372",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "In high-stakes settings AI should be cognitively aligned so that it reasons similarly to users and faithfully communicates that reasoning. Evidence and new survey data indicate cognitive alignment improves understandability and trustworthiness, with many users rating it essential. The paper outlines gaps in existing methods and a research agenda, arguing that cognitive misalignment impedes justified reliance and adoption.",
+      "tags": [
+        "cognitive-alignment",
+        "position",
+        "trust",
+        "decision-making"
+      ]
+    },
+    {
+      "id": "don-t-want-your-llm-to-recommend-nuclear-strike-try-asking-it-in-japanese-2026-08-15",
+      "title": "Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese",
+      "authors": "Rian Touchent",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12373",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "Safety alignment is typically evaluated only in English. Using identical amoral game-theoretic nuclear-strike vignettes across languages, Japanese prompts sharply reduce launch recommendations for Claude and Gemini families, with the effect driven by the language of reasoning rather than input language. Models spontaneously introduce moral vocabulary absent from the prompt when reasoning in Japanese, showing that safety behavior is language-dependent and English-only evaluation misses both risks and safeguards.",
+      "tags": [
+        "safety",
+        "multilingual",
+        "alignment",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "a-unifying-perspective-on-causal-world-models-from-observations-to-representatio-2026-08-15",
+      "title": "A Unifying Perspective on Causal World Models: From Observations to Representations to Structure",
+      "authors": "Avinash Kori, Fabrizio Russo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13456",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "Useful world models must capture entity properties and interactions that explain dynamics, not merely generate observations. The authors formally define Causal World Models grounded in supported tasks, connecting them to causal representation learning, object-centric methods, causal discovery, structural causal models, and model-based decision-making. They clarify identifiability conditions under which components can be recovered from data up to equivalence classes.",
+      "tags": [
+        "world-models",
+        "causality",
+        "representation-learning",
+        "agents"
+      ]
+    },
+    {
+      "id": "ripplemem-from-isolated-retrieval-to-associative-recollection-for-long-term-agen-2026-08-15",
+      "title": "RippleMem: From Isolated Retrieval to Associative Recollection for Long-Term Agent Memory",
+      "authors": "Jingbo Ji, Lingyi Li, Xilong Cheng, Yuhao Zhou, Wenji Zhang, Yuting Tan, Yunxiao Qin",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13334",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "RippleMem replaces one-shot retrieval with adaptive associative recollection inspired by cue-dependent episodic memory. Interaction history is stored as cue-rich episodic units in an event-centric graph; anchors are recalled via hybrid cues then expanded along semantic and structural associations to complete supporting evidence. It improves accuracy on LoCoMo and LongMemEval-S while cutting graph construction cost by roughly 30x relative to prior graph memory systems.",
+      "tags": [
+        "memory",
+        "agents",
+        "long-horizon",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "governed-persistent-memory-source-bound-state-semantics-and-fail-closed-release--2026-08-15",
+      "title": "Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents",
+      "authors": "Guodong Xu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.12476",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "GPM treats long-term memory as an auditable bitemporal state-transition system with source-bound admission, lifecycle states, public barriers, and fail-closed release. Five executable clauses enforce ledger integrity, conflict isolation, non-revival after retraction, and exact claim closure. On a frozen 3600-case bench and sealed end-to-end service evaluations it achieves perfect contract compliance where ungoverned baselines fail extensively, with supporting model-checking and differential testing.",
+      "tags": [
+        "memory",
+        "governance",
+        "agents",
+        "long-horizon"
+      ]
+    },
+    {
+      "id": "intern-s2-preview-scientific-agentic-foundation-model-2026-08-15",
+      "title": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+      "authors": "Lei Bai, Jiaqi Cao, Chiyu Chen, et al.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13505",
+      "type": "paper",
+      "dateAdded": "2026-08-15",
+      "summary": "Intern-S2-Preview is a family of scientific agentic foundation models supporting multimodal understanding, reasoning, generation, and long-horizon scientific tasks. Training combines scientific multimodal pre-training with unified post-training via SFT, multi-task RL, agentic RL, and on-policy distillation, plus stability techniques such as partial rollout and adaptive length regularization. The 397B model reaches competitive or leading results across scientific and agentic benchmarks, with specialized time-series and memory-decoder extensions further boosting domain performance.",
+      "tags": [
+        "scientific-AI",
+        "agents",
+        "foundation-model",
+        "multimodal"
+      ]
+    },
     {
       "id": "omniscientist-an-omni-modal-omni-discipline-ai-scientist-2026-08-14",
       "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
