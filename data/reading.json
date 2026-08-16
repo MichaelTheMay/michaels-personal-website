@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-15",
+  "lastUpdated": "2026-08-16",
   "issues": [
+    {
+      "date": "2026-08-16",
+      "title": "Curriculum sandboxes, draft trees, and intent-group safety",
+      "blurb": "Recent papers isolate knowledge exposure via grade-level pretraining, measure trajectory-level data influence without downstream tasks, verbalize sparse autoencoder features from decoder directions, probe Gricean specificity retreats at knowledge boundaries, construct diffusion-AR draft trees for speculative decoding, virtualize KV tokens for reclaimable caches, and supervise refusal by intent groups rather than surface form. Supporting results cover long-horizon Earth observation reasoning and open hierarchical models trained only on permissible data."
+    },
     {
       "date": "2026-08-15",
       "title": "Reasoning definitions, moral divergence, and governed memory for agents",
@@ -83,6 +88,166 @@
     }
   ],
   "items": [
+    {
+      "id": "littlelearner-language-models-under-pedagogically-controlled-knowledge-exposure-2026-08-16",
+      "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
+      "authors": "Fanfei Li, Jana Zeller, Manuel Prada-Corral, Thaddäus Wiedemer, Prasanna Mayilvahanan, Ryan Cotterell, Wieland Brendel",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13545",
+      "type": "paper",
+      "dateAdded": "2026-08-16",
+      "summary": "The authors construct LittleCurriculum, an 88B-token corpus filtered to U.S. K-5 material that excludes higher-grade concepts, facts, and vocabulary, then train a 5B model (LittleLearner) from scratch on it. The resulting sandbox yields a model with clear, curriculum-mapped knowledge boundaries that still supports open-ended evaluation. Post-training and in-context learning improve utilization of in-scope knowledge but do not lift out-of-scope capabilities, establishing a controlled testbed for studying acquisition under known exposure.",
+      "tags": [
+        "pretraining",
+        "curriculum",
+        "knowledge-boundaries",
+        "sandbox"
+      ]
+    },
+    {
+      "id": "dartree-speculative-diffusion-decoding-with-autoregressive-draft-trees-2026-08-16",
+      "title": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
+      "authors": "Tianyi Li, Yaxin Luo, Xinyi Shang, Zhiqiang Shen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13524",
+      "type": "paper",
+      "dateAdded": "2026-08-16",
+      "summary": "DARTree is a training-free speculative method that builds a fixed-width candidate tree from a diffusion drafter, scores nodes in batch, then applies best-first pruning before verification while extending a pretrained AR correction head from chains to trees. It decouples AR-head inference from sequential heap operations. Across math, code, and chat benchmarks it records the highest average acceptance lengths (up to 12.97 tokens per round) and lossless speedups (up to 9.73×) relative to strong baselines.",
+      "tags": [
+        "speculative-decoding",
+        "diffusion",
+        "trees",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "defensive-boosting-for-online-probabilistic-forecasting-2026-08-16",
+      "title": "Defensive Boosting for Online Probabilistic Forecasting",
+      "authors": "Georgy Noarov, Aaron Roth",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13554",
+      "type": "paper",
+      "dateAdded": "2026-08-16",
+      "summary": "The Defensive Booster simultaneously matches online gradient boosting’s Brier-score competition against the span of a weak class H on every adaptive sequence and, whenever a smooth weak-learning condition holds, drives classification error to zero at the rates of online weak-to-strong boosting. It operationalizes the dual view of boosting: high randomized error produces a smooth hard-core certificate that weak learning has failed. A strongly adaptive variant holds on every interval, and the algorithm uses only a single weak learner while outperforming ensemble baselines in both accuracy and runtime.",
+      "tags": [
+        "online-learning",
+        "boosting",
+        "probabilistic-forecasting",
+        "theory"
+      ]
+    },
+    {
+      "id": "measuring-task-agnostic-training-data-influence-across-language-model-pretrainin-2026-08-16",
+      "title": "Measuring Task-Agnostic Training Data Influence Across Language Model Pretraining",
+      "authors": "Yuto Nishida, Hirokazu Kiyomaru, Yusuke Oda, Takashi Kodama, Chaoran Liu, Daisuke Kawahara, Yusuke Miyao, Max Müller-Eberstein, Masaru Isonuma",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13515",
+      "type": "paper",
+      "dateAdded": "2026-08-16",
+      "summary": "Influence of a training example is defined by how much its gradient update reduces squared distance to the final parameters of a pretraining run, estimated from intermediate checkpoints without retraining or any downstream task. Applied to 18 Pythia and PolyPythia configurations, the measure reveals a systematic crossover: literature-related data dominate early trajectory alignment while STEM data dominate later stages. The qualitative pattern is consistent across model scales and provides a trajectory-level view complementary to task-specific attribution.",
+      "tags": [
+        "data-influence",
+        "pretraining",
+        "trajectory",
+        "attribution"
+      ]
+    },
+    {
+      "id": "saeverbalizer-generating-explanations-for-sparse-autoencoder-features-via-repres-2026-08-16",
+      "title": "SAEVerbalizer: Generating Explanations for Sparse Autoencoder Features via Representation Verbalization",
+      "authors": "Weihan Meng, Hongzhu Guo, Yi Jing, Dewen Liu, Zijun Yao, Xiaozhi Wang, Lei Hou, Juanzi Li",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13538",
+      "type": "paper",
+      "dateAdded": "2026-08-16",
+      "summary": "SAEVerbalizer injects SAE decoder directions into an LLM’s residual stream and fine-tunes downstream layers so the model produces natural-language explanations of the injected features. Once trained, explanations are generated directly from decoder directions without collecting behavioral evidence. The verbalizer generalizes to unseen features, transfers across SAE dictionaries, and, with a light adapter, works on features from other base models; multi-direction injections combine meanings while polarity flips reverse them.",
+      "tags": [
+        "interpretability",
+        "sparse-autoencoders",
+        "verbalization",
+        "mechanistic"
+      ]
+    },
+    {
+      "id": "toward-a-gricean-retreat-probing-llms-for-knowledge-boundaries-and-referent-spec-2026-08-16",
+      "title": "Toward a Gricean Retreat: Probing LLMs for Knowledge Boundaries and Referent Specificity",
+      "authors": "Dananjay Srinivas, Saksham Khatwani, Maria Pacheco",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13484",
+      "type": "paper",
+      "dateAdded": "2026-08-16",
+      "summary": "Using a T-REx benchmark that varies entity familiarity and referent specificity, the authors show that LLM activations encode both whether a referent lies inside the knowledge boundary and the specificity of the forthcoming generation. Despite these signals, models strongly prefer specific referents even for unknown entities and even when correct generic alternatives are offered. The substrate for a cooperative Gricean retreat (trading informativeness for truthfulness) is present, but the generation policy that would couple the two signals is not.",
+      "tags": [
+        "knowledge-boundaries",
+        "hallucination",
+        "pragmatics",
+        "specificity"
+      ]
+    },
+    {
+      "id": "vtoken-token-level-virtualization-for-reclaimable-kv-caches-2026-08-16",
+      "title": "vToken: Token-Level Virtualization for Reclaimable KV Caches",
+      "authors": "Yuanhang Gao, Xiangrui Yang, Yuanfeng Chen, Hongjia Chen, Qianru Lv, Wenfei Wu, Dongsheng Li",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13263",
+      "type": "paper",
+      "dateAdded": "2026-08-16",
+      "summary": "vToken inserts a lightweight token-level virtualization layer over PagedAttention that decouples logical token liveness from physical block placement via indirection tables and asynchronous repacking of live tokens. It preserves existing kernels and CUDA Graphs while eliminating intra-block fragmentation caused by token-granularity eviction. Integrated in vLLM, it cuts retained KV blocks 27–72 percent, raises SLA throughput up to 1.37×, and doubles feasible concurrency under tight active-KV budgets, reducing per-policy integration code from hundreds of lines to under fifty.",
+      "tags": [
+        "KV-cache",
+        "serving",
+        "virtualization",
+        "systems"
+      ]
+    },
+    {
+      "id": "longearth-r1-benchmarking-and-aligning-vision-language-models-for-long-horizon-e-2026-08-16",
+      "title": "LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning",
+      "authors": "Yupan Ding, Jing Xiao, Zhenyuan Zhang, Chaofeng Chen, Liang Liao, Gui-Song Xia, Mi Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13344",
+      "type": "paper",
+      "dateAdded": "2026-08-16",
+      "summary": "LongEarth-Bench supplies roughly 120k QA samples over sequences averaging 15 frames (up to 30) spanning evolution summarization, spatial change, anomaly detection, and future inference, with a 30k subset containing structured reasoning traces. LongEarth is first SFT’d with explicit sequence identifiers and chain-of-thought, then LongEarth-R1 is refined by group-relative policy optimization using format, temporal, and spatial rewards. The resulting model leads all 12 long-sequence tasks while remaining competitive on standard remote-sensing benchmarks.",
+      "tags": [
+        "long-horizon",
+        "earth-observation",
+        "VLM",
+        "RL"
+      ]
+    },
+    {
+      "id": "refusing-intent-not-form-wrapper-based-intent-group-supervision-for-llm-safety-2026-08-16",
+      "title": "Refusing Intent, Not Form: Wrapper-Based Intent-Group Supervision for LLM Safety",
+      "authors": "Ping Wu, Haibo Tong, Feifei Zhao, Han Shen, Yu Shi, Yilin Zhao, Sicheng Shen, Guobin Shen, Yun Luo, Yi Zeng",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13304",
+      "type": "paper",
+      "dateAdded": "2026-08-16",
+      "summary": "WIFA automatically pairs wrapped harmful prompts with structurally matched wrapped benign counterexamples, creating intent groups without external teachers or per-wrapper labels. Two fine-tuning recipes use this data: WIFA-Boost for high transformed-harmful refusal and A-GCRT, which regularizes decision scores within intent groups and anchors harmful versus benign groups across a margin. On Qwen and Llama the methods raise refusal of transformed harmful queries while lowering over-refusal on OR-Bench relative to both base models and reproduced baselines.",
+      "tags": [
+        "safety",
+        "refusal",
+        "intent",
+        "fine-tuning"
+      ]
+    },
+    {
+      "id": "sovereign-by-necessity-frontier-ai-export-controls-cyber-security-and-the-limits-2026-08-16",
+      "title": "Sovereign by necessity? Frontier AI export controls, cyber security, and the limits of national AI capability",
+      "authors": "Alan Woodward, Andrew Rogoyski",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13272",
+      "type": "essay",
+      "dateAdded": "2026-08-16",
+      "summary": "The essay analyzes the interaction of recent U.S. frontier-model export licensing, documented autonomous AI cyber operations, and the extreme concentration of training compute and talent. It argues that access to frontier systems is becoming integral to national cyber defence yet can be revoked, while full sovereign training capability remains feasible for only a few states. A layered strategy is proposed: negotiated access guarantees, sovereignty at inference, open-weight hedging, regional pooling, talent pipelines, and continued investment in basic cyber resilience, with open weights judged both more capable and more politically exposed than often assumed.",
+      "tags": [
+        "export-controls",
+        "sovereignty",
+        "cyber",
+        "policy"
+      ]
+    },
     {
       "id": "position-reasoning-is-a-learnable-rule-based-process-2026-08-15",
       "title": "Position: Reasoning is a Learnable Rule-Based Process",
