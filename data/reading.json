@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-16",
+  "lastUpdated": "2026-08-17",
   "issues": [
+    {
+      "date": "2026-08-17",
+      "title": "Recoverable state, world models, and long-horizon agency",
+      "blurb": "Recent work tightens the loop between what agents remember, how they repair or rewrite their own models of the world, and how long-horizon research or evaluation can continue without collapse. Formal treatments of handover, explosion dynamics, and evidence aggregation sit alongside systems that checkpoint, twin, or re-anchor executable research state."
+    },
     {
       "date": "2026-08-16",
       "title": "Curriculum sandboxes, draft trees, and intent-group safety",
@@ -88,6 +93,166 @@
     }
   ],
   "items": [
+    {
+      "id": "the-dynamics-of-intelligence-explosions-2026-08-17",
+      "title": "The Dynamics of Intelligence Explosions",
+      "authors": "Toby Ord",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14426",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "The paper analyzes feedback loops in which AI systems accelerate AI R&D, showing that singular growth to a vertical asymptote is harder to obtain than recent economics-style models suggest. It isolates a neglected class of super-exponential but non-singular growth rates and demonstrates that generation time (the loop latency) is pivotal: singular growth requires generation time to approach zero rapidly. The mathematics clarifies which parameters actually drive explosive versus merely fast capability growth.",
+      "tags": [
+        "intelligence-explosion",
+        "AI-R&D",
+        "growth-dynamics",
+        "theoretical-AI"
+      ]
+    },
+    {
+      "id": "handover-of-in-context-learning-state-across-session-boundaries-2026-08-17",
+      "title": "Handover of In-Context Learning State Across Session Boundaries",
+      "authors": "Masahiro Kato, Taka Kato",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14528",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "Session handover is formalized as transfer of a task-relative in-context learning state, distinguishing exact recovery of prior material from preservation of the target predictive distribution. Under an exogeneity condition, predictive equivalence yields the coarsest deterministic sufficient handover and a fixed-length bit requirement. Exact finite-dimensional results for Gaussian linear regression and memory-error bounds for nonparametric regression quantify what must be retained and the cost of writing before the downstream query is known.",
+      "tags": [
+        "in-context-learning",
+        "memory",
+        "session-handover",
+        "information-theory"
+      ]
+    },
+    {
+      "id": "twin-playing-an-unknown-game-with-a-test-time-digital-twin-2026-08-17",
+      "title": "Twin: Playing an Unknown Game with a Test-Time Digital Twin",
+      "authors": "Alexy Skoutnev, Kirill Acharya, Gaston Longhitano, Madeleine Udell, Kevin Ellis, Iddo Drori",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14490",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "A frontier coding agent constructs an executable world model at test time for hidden-rule grid games such as ARC-AGI-3, validating every action by requiring the twin to reproduce all prior observed transitions before the next move is taken. Mismatches become counterexamples that repair the model. The system clears 179/183 levels (97.8 percent), outperforming humans on efficiency in most cleared levels, and raises a base model from 7.8 percent to 93.3 percent on a 25-game subset, showing that goal inference is often harder than transition recovery.",
+      "tags": [
+        "world-models",
+        "test-time",
+        "ARC-AGI",
+        "agents"
+      ]
+    },
+    {
+      "id": "agentrewind-recoverable-execution-for-long-horizon-llm-agents-2026-08-17",
+      "title": "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
+      "authors": "Yu Zhuang, Kefei Chen, Yitong Duan, Shuxin Zheng, Jian Li, Xu-Yao Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14380",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "AgentRewind records aligned checkpoints of agent context and controlled environment state so that long-horizon agents can rewind after early errors that would otherwise propagate irreversibly. The accompanying MettleBench evaluates both full completion and partial checklist progress on multi-requirement engineering tasks. Across models, harnesses, and strategies the framework improves success rate and average progress relative to plan-refinement and safety-check baselines that offer little post-error recovery.",
+      "tags": [
+        "long-horizon-agents",
+        "recovery",
+        "checkpointing",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "scienceflow-a-long-horizon-agent-for-ml-research-scientific-discovery-and-beyond-2026-08-17",
+      "title": "ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond",
+      "authors": "Mingming Zhao, Jiqian Dong, Kangping Xu, Zadid Hasan, Chengrui Fan, Shan Jiang, Shuai Mao, Ting Lingya, Linyi Zou, Tailin Zhou, Yun Hin Chan, Wenkai Zhang, Zhanhong Zhou, Guowei Huang, Hongliang Li, Wenjing Cun, Zhitang Chen, Mingxuan Yuan, Yanhui Geng",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14354",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "ScienceFlow organizes autonomous research into recoverable executable workspace segments whose transitions are governed by Executable-State Transition through Re-Anchoring (ESTRA), choosing live or archived states and whether to continue or redirect. An evidence-aware controller allocates compute according to remaining budget and validated progress. On the full MLE-bench under a 24-hour budget it reaches a SOTA 70.22 percent Any-Medal score, outperforming prior reports by 4.92 points, while sustaining longer coherent research trajectories.",
+      "tags": [
+        "autoresearch",
+        "long-horizon",
+        "state-management",
+        "MLE-bench"
+      ]
+    },
+    {
+      "id": "knowing-when-to-stop-bayesian-optimal-stopping-for-llm-evaluations-2026-08-17",
+      "title": "Knowing When to Stop: Bayesian Optimal Stopping for LLM Evaluations",
+      "authors": "Toby D. Pilditch",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14425",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "optstop treats LLM evaluation as sequential measurement under hierarchical Bayesian inference, continuing to sample items whose estimates remain uncertain and stopping where precision or stability is adequate, with a safeguard that samples more cautiously near zero performance. It supports binary, ordinal, and continuous outcomes without a pre-calibrated item bank. In a 200-item 10-epoch illustration it eliminates 57-97 percent of planned trials across nine settings while preserving the same overall conclusions as the full fixed budget.",
+      "tags": [
+        "evaluation",
+        "Bayesian",
+        "adaptive-stopping",
+        "compute-efficiency"
+      ]
+    },
+    {
+      "id": "tripwire-triggering-aligned-refusal-via-statistically-certified-safety-neurons-2026-08-17",
+      "title": "Tripwire: Triggering Aligned Refusal via Statistically Certified Safety Neurons",
+      "authors": "Wei Zhao, Zhe Li, Peixin Zhang, Jun Sun",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14392",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "Safety-specific neurons are identified by per-neuron hypothesis tests under FDR control plus a utility-specificity filter. A trigger-style clamp then holds those neurons at their harmful-conditional mean activations, injecting an internal signal that elicits the model's already-learned refusal behavior. The clamp admits equivalent detector-gated inference-time and offline bias-patch deployments. Across four aligned models and four attacks average attack success falls to at most 2.0 percent with only 0.5-5.3 percent MT-Bench utility drop, the smallest among compared defenses.",
+      "tags": [
+        "safety",
+        "mechanistic-interpretability",
+        "jailbreak-defense",
+        "neurons"
+      ]
+    },
+    {
+      "id": "wrong-but-useful-trajectory-value-beyond-answer-correctness-in-multi-agent-messa-2026-08-17",
+      "title": "Wrong but Useful: Trajectory Value Beyond Answer Correctness in Multi-Agent Messages",
+      "authors": "Chih-Hsuan Yang, Anjir Ahmed Chowdhury, Cheng-Hau Yang, Weijian Zheng, Fernando Llorente, Xiaolong Ma, Xinyang Li, Eliu A. Huerta, Ian T. Foster, Rajeev Thakur",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14375",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "Diverse Hypothesis Deliberation caches independent messages and replays an integrator with each message present or ablated to measure trajectory value: whether the message helps or harms subsequent reasoning regardless of its own answer correctness. Wrong-helpful messages appear in every benchmark-model pair; among wrong messages that change final correctness, more than four in ten changes are helpful. Trajectory-value labels outperform correctness alone for keep-or-remove decisions and supply reusable supervision for when agents should listen.",
+      "tags": [
+        "multi-agent",
+        "trajectory-value",
+        "deliberation",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "split-the-labor-separating-evidence-interpretation-from-decision-aggregation-2026-08-17",
+      "title": "Split the Labor: Separating Evidence Interpretation from Decision Aggregation",
+      "authors": "Zhelun Wu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14509",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "Concatenating many sources into one prompt conflates high-capacity interpretation with fixed-arithmetic aggregation. A four-field evidence tuple (hypothesis, reliability bucket, rationale, provenance) separates the two and exposes count-scale drift: thresholding unnormalized weight sums is posterior thresholding at an operating point that slides with the number of sources. Pooling calibrated log-likelihood ratios restores proper ordering. Instantiations on a longitudinal corpus improve AUPRC from 0.805 to 0.921 and yield falsifiable predictions about what must be re-estimated per domain.",
+      "tags": [
+        "evidence-aggregation",
+        "decision-making",
+        "calibration",
+        "LLM-systems"
+      ]
+    },
+    {
+      "id": "intern-s2-mobius-foundation-model-with-decoupled-knowledge-and-reasoning-2026-08-17",
+      "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+      "authors": "Kai Chen, Jifeng Ding, Ning Ding, Jiaye Ge, Lixin Gu, Yicheng Gu, Qipeng Guo, Ermo Hua, Haian Huang, Haozheng Hou, Jie Hou, Xiangyu Hong, Che Jiang, Minxi Jin, Cheng Liang, Dahua Lin, Dawei Liu, Kuikun Liu, Chengqi Lv, Haijun Lv, Han Lv, Ningsheng Ma, Biqing Qi, Jianmin Qian, Shiya Su, Youbang Sun, Huanze Tang, Zhongbo Tian, Hanjing Wang, Rui Wang, Ting Wang, Yi Wang, Baiting Wu, Jun Xu, Bowen Yang, Hui Wang, Weida Wang, Haochen Ye, Jiashuo Yu, Shan Yu, Xiaoyi Yu, Qirui Zeng, Qi Zhang, Ming Zhang, Wenwei Zhang, Bowen Zhou, Xinyu Zhou",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.14290",
+      "type": "paper",
+      "dateAdded": "2026-08-17",
+      "summary": "Mobius-v0 separates a globally shared Memory (FFN) that stores knowledge vectors from multiple Reasoners (self-attention) that iteratively query the memory, using hidden states as cache and carrier. The separation improves knowledge compression and reasoning efficiency. A 7B model trained from scratch matches a 7B Transformer baseline using only 62.6 percent of the data; continual pretraining of Intern-S2-Mobius from Qwen3.5-35B matches downstream scores while delivering nearly 4x end-to-end inference speedup.",
+      "tags": [
+        "architecture",
+        "knowledge-reasoning-separation",
+        "efficiency",
+        "foundation-models"
+      ]
+    },
     {
       "id": "littlelearner-language-models-under-pedagogically-controlled-knowledge-exposure-2026-08-16",
       "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
