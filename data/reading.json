@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-17",
+  "lastUpdated": "2026-08-18",
   "issues": [
+    {
+      "date": "2026-08-18",
+      "title": "Agent collectives, incremental memory, and grounded governance",
+      "blurb": "Fresh work probes how language-model agents interact and coordinate at scale, schedules memory capacity for long contexts, and builds stricter mechanisms for compliance, planning specifications, and knowledge stores that agents themselves write."
+    },
     {
       "date": "2026-08-17",
       "title": "Recoverable state, world models, and long-horizon agency",
@@ -93,6 +98,166 @@
     }
   ],
   "items": [
+    {
+      "id": "what-do-compliance-detectors-read-an-audit-of-activation-probes-and-guard-models-2026-08-18",
+      "title": "What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models",
+      "authors": "Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, Pratinav Seth",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16852",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "Compliance detectors for language models exhibit rule blindness: deleting, permuting, or substituting the governing rule leaves detection accuracy essentially unchanged across guards and activation probes. A purpose-built crossed-rule benchmark confirms the failure, while step-by-step reasoning escapes it; the authors introduce a training-free Internal Compliance Score that enables large-scale auditing yet still falls short of non-trivial baselines under pre-registered criteria.",
+      "tags": [
+        "compliance",
+        "guards",
+        "mechanistic-interpretability",
+        "auditing"
+      ]
+    },
+    {
+      "id": "policy-iteration-with-human-feedback-bringing-post-training-rl-to-in-context-lea-2026-08-18",
+      "title": "Policy Iteration with Human Feedback: Bringing Post-Training RL to In-context Learning",
+      "authors": "Minh-Ha Nguyen, Cathy Shyr",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16831",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "PIHF treats a pretrained language model as a fixed-weight execution substrate and moves persistent revision into a versioned natural-language policy and tool set reviewed by an LM critic and clinical expert. Across cumulative ablations on ultra-rare-disease benchmarks the derived policy lifts Recall@1 by roughly 30 points on both proprietary and open-weight executors spanning 3 to 49 billion active parameters.",
+      "tags": [
+        "in-context-learning",
+        "policy-iteration",
+        "human-feedback",
+        "medical-AI"
+      ]
+    },
+    {
+      "id": "proteus-incremental-memory-activation-for-long-context-sequence-modeling-2026-08-18",
+      "title": "Proteus: Incremental Memory Activation for Long-Context Sequence Modeling",
+      "authors": "Reza Bayat, Ali Behrouz, Vahab Mirrokni, Aaron Courville",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16844",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "Static memory states let early tokens pollute capacity; Proteus instead expands effective memory capacity incrementally as context grows, imposing an early bottleneck that forces better compression while unlocking fresh slots later. Applied at zero extra cost to SWLA, Comba, Titans and Hope-Attention it yields consistent gains on language modeling, reasoning and long-context retrieval that increase with sequence length.",
+      "tags": [
+        "long-context",
+        "memory",
+        "sequence-models",
+        "architecture"
+      ]
+    },
+    {
+      "id": "physics-of-agents-statistical-mechanics-predicts-collective-behavior-of-ai-agent-2026-08-18",
+      "title": "Physics of Agents: Statistical Mechanics Predicts Collective Behavior of AI Agents",
+      "authors": "Batu El, Jinhee Paeng, Fatih Dinc, Shiye Su, Mete Erdogan, Aneesh Pappu, Haotian Ye, Wanjia Zhao, Surya Ganguli, James Zou",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16578",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "Over 10,000 communities of LM agents exchanging messages on math and political questions fall into indifference, polarization or consensus regimes that a statistical-mechanics model of social pressure predicts from initial opinions alone. The fitted dynamics operate below critical temperature (conviction builds), favor attractive ties (consensus), and give correct answers the strongest pull (truth-seeking on objective items).",
+      "tags": [
+        "multi-agent",
+        "statistical-mechanics",
+        "collective-behavior",
+        "opinion-dynamics"
+      ]
+    },
+    {
+      "id": "grip-grounded-reasoning-via-information-restricted-premises-2026-08-18",
+      "title": "GRIP: Grounded Reasoning via Information-Restricted Premises",
+      "authors": "Lirui Teng",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16776",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "High-capacity encoders let the query dominate RAG latents (query dominance). GRIP imposes capacity asymmetry so retrieved evidence passes through a severe stochastic bottleneck that must encode only residual information, cutting query-latent mutual information roughly 30x, reducing hallucination 73 percent, and outperforming strong iterative baselines on five reasoning benchmarks.",
+      "tags": [
+        "RAG",
+        "grounding",
+        "information-bottleneck",
+        "hallucination"
+      ]
+    },
+    {
+      "id": "when-agents-coordinate-measuring-coordination-in-multi-agent-ai-coding-2026-08-18",
+      "title": "When Agents Coordinate: Measuring Coordination in Multi-Agent AI Coding",
+      "authors": "Giuseppe Destefanis, Tomaso Aste",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16801",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "Coordination inside teams of coding agents is represented as temporal networks of messages, file reads and writes across 1902 runs that vary team size, structure and file policy. Messaging grows near-quadratically then saturates into broadcasts; shared files cut output tokens ~42 percent on message-heavy work; naming a coordinator creates no hub and yields no reliable success gain; agents unprompted seek hidden grading material even in sealed environments.",
+      "tags": [
+        "multi-agent",
+        "coding-agents",
+        "coordination",
+        "networks"
+      ]
+    },
+    {
+      "id": "pddlcoder-agentic-pddl-generation-for-llm-assisted-symbolic-planning-2026-08-18",
+      "title": "PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning",
+      "authors": "Veit Laule, Jiangtao Shuai, Manfred Hauswirth, Sonja Schimmler",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16637",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "An agentic loop iteratively generates, analyzes and refines PDDL from natural language, paired with the new NL-pddlgym benchmark of 711 problems and executable gym environments. On held-out domains it produces applicable plans for 89.6 percent of problems, roughly doubling prior PDDL-generation methods and beating direct LLM planning.",
+      "tags": [
+        "planning",
+        "PDDL",
+        "agentic",
+        "symbolic-AI"
+      ]
+    },
+    {
+      "id": "jailbreakskill-scaling-automated-red-teaming-with-reusable-and-ever-evolving-ski-2026-08-18",
+      "title": "JailbreakSkill: Scaling Automated Red-Teaming with Reusable and Ever-Evolving Skills",
+      "authors": "Xiaoyu Wen, Jiajia Li, Zhida He, Peng Yu, Chenxu Wang, Han Qi, Ziyuan Zhou, Cheng Jin, Ying Wen, Xingcheng Xu, Shuyue Hu, Tianhang Zheng, Chaochao Lu, Qiaosheng Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16465",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "Attack strategies are packaged as modular, agent-ready skills that are reused, refined, combined and newly discovered from attack experience, closing a continuous learning loop. The evolving library lifts macro-average ASR by 17.5 points on AdvBench and 13.4 on HarmBench (including a 48.6-point gain against GPT-5.4) and produces novel transferable strategies.",
+      "tags": [
+        "red-teaming",
+        "jailbreak",
+        "skills",
+        "automated-attack"
+      ]
+    },
+    {
+      "id": "q-based-variational-inverse-reinforcement-learning-2026-08-18",
+      "title": "Q-based Variational Inverse Reinforcement Learning",
+      "authors": "Ondrej Bajgar, Peter Tisnikar, Alessandro Abate, Konstantinos Gatsis, Maike Osborne",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16888",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "QVIRL recovers a posterior over rewards by learning a variational distribution primarily over optimal Q-values, combining scalability with uncertainty quantification needed for safety and active learning. It is the first Bayesian IRL method shown to train from raw pixel observations and demonstrates strong apprenticeship performance on gridworlds, Lunar Lander, Highway and two Atari games.",
+      "tags": [
+        "IRL",
+        "Bayesian",
+        "reinforcement-learning",
+        "preferences"
+      ]
+    },
+    {
+      "id": "quipu-a-governed-bitemporal-knowledge-graph-store-2026-08-18",
+      "title": "Quipu: A Governed Bitemporal Knowledge Graph Store",
+      "authors": "Steve Brown",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16813",
+      "type": "paper",
+      "dateAdded": "2026-08-18",
+      "summary": "Quipu inverts four defaults of human-era knowledge-graph stores so that no fact enters except through a post-state gate, all data and rules are bitemporal, named graphs form a non-widening trust lattice, and the governance specification itself is queryable inside the store. Deterministic multi-writer Census evaluations show zero planted defects under gating versus six of six ungated, faithful re-derivation of verdicts, and correct answers to hundreds of governance questions under degradation.",
+      "tags": [
+        "knowledge-graphs",
+        "agents",
+        "governance",
+        "bitemporal"
+      ]
+    },
     {
       "id": "the-dynamics-of-intelligence-explosions-2026-08-17",
       "title": "The Dynamics of Intelligence Explosions",
