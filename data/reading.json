@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-18",
+  "lastUpdated": "2026-08-19",
   "issues": [
+    {
+      "date": "2026-08-19",
+      "title": "Self-improving agents, reward hacking, and long-horizon trust",
+      "blurb": "Fresh results expose variance and order sensitivity in memory-based self-improvement, show debate curbing judge hacking in RLAIF, and introduce monitors for ontological drift plus neurosymbolic world models. Complementary work tightens LLM judging under risk controls, surfaces MoE hallucination signals, and questions the self-consistency of preference estimates, while an essay reframes mathematical values under capable AI."
+    },
     {
       "date": "2026-08-18",
       "title": "Agent collectives, incremental memory, and grounded governance",
@@ -98,6 +103,176 @@
     }
   ],
   "items": [
+    {
+      "id": "on-the-fragility-of-self-improving-agents-variance-task-order-and-underspecifica-2026-08-19",
+      "title": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
+      "authors": "Qinyuan Ye, Yu Li, Yada Pruksachatkun, Jiaxin Zhang, Chien-Sheng Wu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18066",
+      "type": "paper",
+      "dateAdded": "2026-08-19",
+      "summary": "Memory-based self-improving agents that maintain textual memory banks show high variance across runs and strong dependence on task order, with default orderings acting as hidden curricula. Underspecification of tasks and environments contributes to fragility; adding rubrics and environment feedback partially mitigates degradation but leaves residual gaps. The work calls for multi-run reporting and human-oversight interfaces to prevent unforeseeable failures.",
+      "tags": [
+        "self-improvement",
+        "agents",
+        "evaluation",
+        "memory",
+        "reliability"
+      ]
+    },
+    {
+      "id": "debate-training-reduces-reward-hacking-in-rlaif-2026-08-19",
+      "title": "Debate Training Reduces Reward Hacking in RLAIF",
+      "authors": "Zachary Kenton, Lili Janzer, Rory Greig, Tian Huey Teh, Kirill Tyshchuk, Jonah Brown-Cohen, Harri Edwards, Senthooran Rajamanoharan, Noah Y. Siegel, Natasha Jaques, Rohin Shah",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17776",
+      "type": "paper",
+      "dateAdded": "2026-08-19",
+      "summary": "RL finetuning via two-player debate (generator vs critic, weaker LLM judge) maintains judge performance and recovers a large validation accuracy gap versus single-player RLAIF on verifiable math tasks. Weaker judges hack faster but extra debate rounds compensate; word limits on critiques balance the game and prevent critic judge-hacking. Debate incentives can override prompted misalignment, supporting feasibility of multi-agent oversight with careful balancing.",
+      "tags": [
+        "RLAIF",
+        "debate",
+        "reward-hacking",
+        "alignment",
+        "multi-agent"
+      ]
+    },
+    {
+      "id": "mixture-of-expert-blocks-contain-strong-hallucination-detection-signals-2026-08-19",
+      "title": "Mixture-of-Expert Blocks Contain Strong Hallucination Detection Signals",
+      "authors": "Joao Fonseca, Rodrigo Rodrigues, Paolo Romano",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17687",
+      "type": "paper",
+      "dateAdded": "2026-08-19",
+      "summary": "InnerExpert extracts per-token features from MoE router entropy, expert disagreement, and usage patterns plus standard transformer signals, then trains a lightweight detector on LLM-as-judge labels. It achieves high answer-level and token-level AUROC across datasets and two MoE architectures using only a single forward pass. The method enables continuous updates without manual annotation and localizes hallucinated spans for fine-grained intervention.",
+      "tags": [
+        "hallucination",
+        "MoE",
+        "detection",
+        "interpretability",
+        "LLMs"
+      ]
+    },
+    {
+      "id": "judge-retrieve-or-abstain-uncertainty-guarded-llm-judging-with-provable-risk-gua-2026-08-19",
+      "title": "Judge, Retrieve, or Abstain: Uncertainty-Guarded LLM Judging with Provable Risk Guarantees",
+      "authors": "Sher Badshah, Ali Emami, Hassan Sajjad",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17994",
+      "type": "paper",
+      "dateAdded": "2026-08-19",
+      "summary": "A risk-controlled framework calibrates uncertainty thresholds via finite-sample Clopper-Pearson intervals so that the false discovery rate among accepted LLM-judge verdicts stays below a user-specified alpha. Low-confidence parametric judgments route to retrieval-augmented re-evaluation under a second calibrated threshold, preserving the guarantee. Across open-domain QA and judges of varying scale it maintains target error rates at substantially higher coverage than single-mode baselines.",
+      "tags": [
+        "LLM-as-judge",
+        "uncertainty",
+        "conformal",
+        "retrieval",
+        "risk-control"
+      ]
+    },
+    {
+      "id": "stagedworkspace-a-versioned-workspace-for-knowledge-work-agents-2026-08-19",
+      "title": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
+      "authors": "Yining Hua, Hongbin Na, Yifan Zhou, Akshay Kalose, Cyrus Ayubcha, Levi Lian",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18050",
+      "type": "paper",
+      "dateAdded": "2026-08-19",
+      "summary": "StagedWorkspace binds parsed records and review diffs to content hashes of native files, enforcing an explicit workspace-state contract across search, edit, and submission views. Dual parsed/native access yields consistent gains on OfficeQA Pro and APEX-Agents; a review-axis ablation confirms value of visible diffs. The design treats workspace state as an experimental variable and motivates benchmarks that score evidence, staged edits, and artifacts as state transitions.",
+      "tags": [
+        "agents",
+        "workspace",
+        "knowledge-work",
+        "versioning",
+        "tools"
+      ]
+    },
+    {
+      "id": "chain-of-experience-for-continual-llm-improvement-2026-08-19",
+      "title": "Chain-of-Experience for Continual LLM Improvement",
+      "authors": "Haoqin Tu, Yunhao Fang, Yizhong Wang, Cihang Xie, Shen Yan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18027",
+      "type": "paper",
+      "dateAdded": "2026-08-19",
+      "summary": "Chain-of-Experience lets models accumulate experiential traces from self-feedback or environmental signals (correctness, test pass rates) across iterative interactions at test time. Across math, coding, and knowledge tasks with eight frontier models it outperforms feedback-free baselines, cuts API cost, and improves accuracy per token; complementary feedback channels add further gains. Stronger base models improve more, most gains appear early, and models remain robust to weak or spurious feedback.",
+      "tags": [
+        "test-time",
+        "continual",
+        "self-improvement",
+        "feedback",
+        "LLMs"
+      ]
+    },
+    {
+      "id": "beyond-suspicious-steps-ontological-trust-in-long-horizon-agents-2026-08-19",
+      "title": "Beyond Suspicious Steps: Ontological Trust in Long-Horizon Agents",
+      "authors": "An He, Yao Wang, Haibin Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17718",
+      "type": "paper",
+      "dateAdded": "2026-08-19",
+      "summary": "Ontological trust measures whether a trajectory prefix still corresponds to the user-authorized task along Role, Goal, and Evidence axes. RGE derives structured representations with LLMs then performs deterministic trust-state updates and interventions, producing a replayable auditable trajectory. On a cross-domain corpus of benign, prefix-paired drift, and pseudo-consistency failures it outperforms rule, judge, and shield baselines, exceeding 93 percent Drift F1 at high benign coverage.",
+      "tags": [
+        "long-horizon",
+        "agents",
+        "oversight",
+        "trust",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "llm-derived-preference-judgments-are-not-self-consistent-2026-08-19",
+      "title": "LLM-Derived Preference Judgments Are Not Self-Consistent",
+      "authors": "Matthew T. Ford, Francis Bahk, Jingjing Wang, Adam S. Jovine, Tinghan Ye, David B. Shmoys, Peter I. Frazier",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17644",
+      "type": "paper",
+      "dateAdded": "2026-08-19",
+      "summary": "Cardinal preference judgments elicited from LLMs (e.g., willingness-to-pay) systematically violate self-consistency conditions required by a single underlying utility function. Statistical tests and distance-to-best-fit measures quantify large persistent inconsistencies across flight, apartment, and hotel domains and six models. The result undermines pipelines that fit a utility model to LLM judgments and then optimize actions.",
+      "tags": [
+        "preferences",
+        "utility",
+        "consistency",
+        "agents",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "towards-zero-shot-task-transfer-with-neurosymbolic-world-models-2026-08-19",
+      "title": "Towards Zero-Shot Task Transfer with Neurosymbolic World Models",
+      "authors": "Isidoro Tamassia, Lennert De Smet, Giuseppe Marra",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.17959",
+      "type": "paper",
+      "dateAdded": "2026-08-19",
+      "summary": "A neurosymbolic world model decouples observation reconstruction from reward prediction so that reward depends only on structured symbolic state components. This enables zero-shot adaptation to new reward functions defined over the same symbolic space without further environment interaction. The approach demonstrates stronger generalization than purely neural model-based RL methods while highlighting remaining learning challenges.",
+      "tags": [
+        "world-models",
+        "neurosymbolic",
+        "transfer",
+        "MBRL",
+        "zero-shot"
+      ]
+    },
+    {
+      "id": "mathematics-in-the-age-of-ai-2026-08-19",
+      "title": "Mathematics in the age of AI",
+      "authors": "Terence Tao",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16753",
+      "type": "essay",
+      "dateAdded": "2026-08-19",
+      "summary": "Conditioning on the arrival of AI capable of research-level mathematics, the essay asks what the goals and values of mathematical research actually are rather than debating capability timelines. Using the problem-solving pipeline as a case study it frames the moment as a crisis of values and practices analogous to the early-20th-century foundational crisis. Recommendations include clarifying evaluation criteria and resisting Goodhart-style over-optimization of proxies.",
+      "tags": [
+        "mathematics",
+        "values",
+        "AI-impact",
+        "foundations",
+        "essay"
+      ]
+    },
     {
       "id": "what-do-compliance-detectors-read-an-audit-of-activation-probes-and-guard-models-2026-08-18",
       "title": "What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models",
