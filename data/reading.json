@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-20",
+  "lastUpdated": "2026-08-21",
   "issues": [
+    {
+      "date": "2026-08-21",
+      "title": "Skill induction, adaptive allocation, and auditing self-improvement in agents",
+      "blurb": "Recent work measures whether agents can truly improve their own training algorithms or skill memories, while formalizing routing, compute allocation, and transfer under tight budgets and noisy evaluation. The selection stresses controlled benchmarks, null models, and bicriteria guarantees over raw capability claims."
+    },
     {
       "date": "2026-08-20",
       "title": "Credit assignment and strategy lock-in in long-horizon agents",
@@ -108,6 +113,166 @@
     }
   ],
   "items": [
+    {
+      "id": "ai4ai-bench-benchmarking-llm-agents-in-algorithmic-design-for-recursive-self-imp-2026-08-21",
+      "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+      "authors": "Yizhe Chi, Wenyi Li, Deyao Hong, Xiaoqiu Wang, Mingju Gao, Kaisen Yang, Bingxiang He, Youjie Zheng, Calvin Xiao, Qinhuai Na",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20318",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "The authors introduce AI4AI-Bench with 10 frozen repositories spanning training algorithm families, where an agent rewrites the training algorithm under a fixed compute budget and is scored by a hidden evaluator against the original under identical reruns. Across 29 configurations the mean normalized score is only 0.166 (best 0.250), with most submissions never altering how the model learns; those that do score higher, and extra reasoning effort mainly increases willingness to attempt algorithmic change. The suite, evaluators, and all scored submissions are released for repeated measurement.",
+      "tags": [
+        "recursive self-improvement",
+        "agents",
+        "benchmarks",
+        "training algorithms"
+      ]
+    },
+    {
+      "id": "pandora-s-ai-model-routing-box-efficient-allocation-with-costly-value-estimation-2026-08-21",
+      "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+      "authors": "Adam Fisch, Shubhendu Trivedi, Fantine Huot, William W. Cohen, Michael Kaisers, Mirella Lapata, Kate Larson, Jacob Eisenstein",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20316",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "Heterogeneous model routing is cast as Pandora's Box with costly value estimation, yielding closed-form value-of-information policies under a Gaussian signal model that decide when to refine estimates. The centralized Pandora's Router matches exhaustive estimation quality while querying expensive estimators far less often across multi-LLM, RAG, and variable-reasoning domains. A decentralized Pandora's Bidder variant shows that value-of-information reasoning can raise or lower allocative efficiency depending on competing estimate noise.",
+      "tags": [
+        "model routing",
+        "Pandora's box",
+        "value of information",
+        "multi-model systems"
+      ]
+    },
+    {
+      "id": "phantom-gains-auditing-self-improvement-against-a-measured-null-2026-08-21",
+      "title": "Phantom Gains: Auditing Self-Improvement Against a Measured Null",
+      "authors": "Cheng Xu, Nan Yan, Liming Chen, M-Tahar Kechadi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20290",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "Three rounds of LoRA self-training on Qwen3-8B are audited against a frozen control run through the identical pipeline, exposing seven measurement failures that invert reported findings when the null is omitted. A per-problem exact test under FDR control finds no true gains from self-training on held-out replicates, while external distillation improves rarely reached problems; self-training also corrupts baseline-solved items above the measured floor. Transition-level claims therefore require separately measured nulls built from baseline replicates already present in multi-arm studies.",
+      "tags": [
+        "self-improvement",
+        "evaluation",
+        "null models",
+        "LoRA"
+      ]
+    },
+    {
+      "id": "break-it-down-pass-it-on-cross-task-skill-transfer-in-llm-agents-2026-08-21",
+      "title": "Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents",
+      "authors": "Yiyang Feng, Biddut Sarker Bijoy, Niranjan Balasubramanian, Jiawei Zhou",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20274",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "Controlled comparisons show task-level induced skills often harm performance below a no-memory baseline while subtask-level skills raise it, and text skills transfer better than code skills. Specificity and abstractness together form a skill utility score that correlates with transfer success and can be computed from skills and task descriptions alone, without execution. Subtask-level and text skills score higher on this diagnostic, providing a practical filter before deployment.",
+      "tags": [
+        "skill transfer",
+        "agents",
+        "memory",
+        "utility scoring"
+      ]
+    },
+    {
+      "id": "learning-when-to-think-adaptive-reasoning-for-test-time-compute-allocation-2026-08-21",
+      "title": "Learning When to Think: Adaptive Reasoning for Test-Time Compute Allocation",
+      "authors": "Gijs Kassenaar, Zhao Yang, Vincent François-Lavet",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20256",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "A 1.5B model is trained with GRPO to emit an initial mode token choosing NoThink, Short, or Long reasoning under shaped rewards and hard per-mode caps. Modes remain distinct and sort problems by difficulty; on MATH500 accuracy stays near the base model while mean response length falls 41 percent, with further large savings and accuracy gains transferring to GSM8K without retraining. The result is a single policy that adaptively allocates test-time compute per problem.",
+      "tags": [
+        "test-time compute",
+        "adaptive reasoning",
+        "GRPO",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "memtrapbench-benchmarking-cognitive-traps-in-llm-memory-use-2026-08-21",
+      "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
+      "authors": "Mengru Wang, Haozhe Luo, Zhenqian Xu, Zhixiang Cui, Haoming Xu, Qu Yang, Jizhan Fang, Junfeng Fang, Ningyu Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20202",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "Even correctly stored and relevant memories can induce Reasoning Fixation or Belief Distortion that degrade current-task performance. Across two model families and five memory frameworks every strategy underperforms the no-memory baseline, with drops exceeding 10 percent for the strongest methods. AdaptiveMem, a simple inference-time instruction to avoid traps, mitigates the failures on MemTrapBench while preserving or improving standard memory-benchmark scores.",
+      "tags": [
+        "memory",
+        "cognitive traps",
+        "benchmarks",
+        "agents"
+      ]
+    },
+    {
+      "id": "what-you-can-t-see-is-what-you-learn-restricted-evidence-visibility-favors-compo-2026-08-21",
+      "title": "What You Can't See Is What You Learn: Restricted Evidence Visibility Favors Compositional Generalization in Shared-Genome Language-Model Societies",
+      "authors": "Narcis Marincat",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20054",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "Four-cell societies sharing a frozen LM and LoRA communicate via two continuous vectors; only the attention mask differs between restricted and global evidence visibility. Restricted societies outperform matched global twins by at least 20 points in 9 of 10 pairs on a sealed function-composition task, with advantages persisting on unseen composites, and interventions confirm reusable value-indexed interfaces. Restricted visibility is not necessary for composition but substantially raises the probability of discovering a generalizing relay under this protocol.",
+      "tags": [
+        "compositional generalization",
+        "multi-agent",
+        "evidence visibility",
+        "shared adapters"
+      ]
+    },
+    {
+      "id": "optimal-skill-selection-for-llm-agents-with-provable-bicriteria-guarantees-2026-08-21",
+      "title": "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees",
+      "authors": "Yu Chen, Ruishuo Chen, Xun Wang, Zhuoran Li, Longbo Huang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19993",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "Skill selection under a hard token budget is formulated as maximizing a monotone submodular benefit minus context penalty. Best Prefix Selection (BPS) is a polynomial-time algorithm that attains a bicriteria (1-1/e, 1) approximation, the first such guarantee for the problem. On a contamination-controlled BigCodeBench variant BPS reaches 0.73 task success versus 0.20-0.52 for baselines while using 28 percent fewer tokens than the strongest released router.",
+      "tags": [
+        "skill selection",
+        "submodular optimization",
+        "agents",
+        "approximation algorithms"
+      ]
+    },
+    {
+      "id": "midtool-mid-training-data-synthesis-for-agentic-tool-use-2026-08-21",
+      "title": "MidTool: Mid-training Data Synthesis for Agentic Tool Use",
+      "authors": "Fengqing Jiang, Yite Wang, Boyi Liu, Zhaoyang Wang, Canwen Xu, Zhewei Yao, Radha Poovendran, Yuxiong He",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20314",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "MidTool constructs an open mid-training corpus that mixes web, PDF, and code data with synthesized supervision from real tool APIs, MCP skills, and document-grounded workflows to teach affordance recognition, argument grounding, composition, and recovery. Mid-training Qwen3-4B/8B-Base on MidTool-Mix followed by SFT and RL yields consistent gains on BFCL, tau2-Bench, and MCP Universe over baselines. The results indicate general tool use benefits from dedicated mid-training rather than being deferred entirely to post-training.",
+      "tags": [
+        "mid-training",
+        "tool use",
+        "agents",
+        "data synthesis"
+      ]
+    },
+    {
+      "id": "inducing-task-models-from-computer-use-traces-2026-08-21",
+      "title": "Inducing Task Models from Computer-Use Traces",
+      "authors": "Yucheng Jiang, Zora Zhiruo Wang, Ruishi Chen, Diyi Yang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20319",
+      "type": "paper",
+      "dateAdded": "2026-08-21",
+      "summary": "Task Model Induction discovers latent tasks in unconstrained screenshot-and-action traces, disentangling concurrent activity, then induces for each a hierarchical objective model plus a procedure model of control flow. On controlled trajectories it recovers interleaved tasks at 0.974 agreement and reconstructs 74.9 percent of execution steps, far above workflow baselines. Skills derived from the induced models improve held-out task accuracy by 30 percent over the strongest baseline.",
+      "tags": [
+        "task models",
+        "computer use",
+        "trace induction",
+        "agents"
+      ]
+    },
     {
       "id": "spade-self-play-in-adaptive-synthetic-executable-environments-2026-08-20",
       "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
