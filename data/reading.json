@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-21",
+  "lastUpdated": "2026-08-22",
   "issues": [
+    {
+      "date": "2026-08-22",
+      "title": "Adaptive harnesses, concept audits, and the measurement of agent research",
+      "blurb": "Recent work tightens the loop between agents and their evaluation environments while exposing how easily claimed gains dissolve under better controls. The through-line runs from co-evolving validation tasks and programmable environment plugins to concept-level unlearning, evidence arbitration, and end-to-end formal theoretical research."
+    },
     {
       "date": "2026-08-21",
       "title": "Skill induction, adaptive allocation, and auditing self-improvement in agents",
@@ -113,6 +118,167 @@
     }
   ],
   "items": [
+    {
+      "id": "conceptguard-benchmarking-context-sensitive-unlearning-in-large-language-models-2026-08-22",
+      "title": "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models",
+      "authors": "Sahil Kale, Ian Harris",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20338",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "Effective unlearning must remove harmful uses of dual-use concepts while preserving benign ones, yet existing benchmarks treat forget and retain sets as disjoint facts and score only direct recall. ConceptGuard constructs complementary forget and retain sets around dual-use concepts and evaluates intent-sensitive contextual separation. Current methods show weak contextual separation, strong forgetting-utility trade-offs, and poor concept-level consistency.",
+      "tags": [
+        "unlearning",
+        "safety",
+        "benchmarks",
+        "LLMs"
+      ]
+    },
+    {
+      "id": "formaltcs-benchmarking-end-to-end-frontier-formal-theoretical-computer-science-r-2026-08-22",
+      "title": "FormalTCS: Benchmarking End-to-End Frontier Formal Theoretical Computer Science Research of Large Language Models",
+      "authors": "Dingzirui Wang, Xuanliang Zhang, Keyan Xu, Qingfu Zhu, Wanxiang Che",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20153",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "The benchmark draws 175 expert-validated instances from 2025-2026 STOC, FOCS, SODA, and COLT papers, preserving definitions, assumptions, and proof dependencies with Lean formalizations. Autoformalization is the sharpest bottleneck: the best model scores only 11.5 on translating claims into formal statements versus 28.6 Pass@8 on human-provided statements. An automated research pipeline generates 64 claims of which only 6 survive expert evaluation and proof verification, highlighting limited research taste.",
+      "tags": [
+        "formal methods",
+        "TCS",
+        "autoformalization",
+        "agents",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "task-coevolve-efficient-harness-optimization-via-adaptive-validation-task-select-2026-08-22",
+      "title": "Task-CoEvolve: Efficient Harness Optimization via Adaptive Validation Task Selection",
+      "authors": "Atsuyuki Miyai, Kiyoharu Aizawa, Toshihiko Yamasaki",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20169",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "Harness optimization rewrites agent scaffolding code from validation performance without weight updates, but full fixed validation sets waste compute on non-discriminative tasks. Task-CoEvolve selects tasks on which candidate harnesses disagree via variance-weighted sampling that tracks the capability frontier, then estimates full-set scores from the sampled subset. It matches full-set final performance while cutting evaluations by 80 percent on text classification and Terminal-Bench 2.1.",
+      "tags": [
+        "agents",
+        "harness optimization",
+        "evaluation efficiency",
+        "co-evolution"
+      ]
+    },
+    {
+      "id": "inject-align-recover-staged-post-training-for-retrieval-free-document-knowledge--2026-08-22",
+      "title": "Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization",
+      "authors": "Qian Kou, Xiaofeng Shi, Xiaosong Qiu, Hua Zhou",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20281",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "IAR converts a fixed corpus into parametric knowledge via three stages: structured injection through continuation, rewrite, and reconstruction objectives; QA alignment with answer-only supervision; and recovery by merging with the base instruction model. Across multiple model families and corpora it improves the domain-general frontier, gaining 3.6 points domain QA accuracy and 12.1 points mean general performance over vanilla SFT in most settings. Among methods that reach strong domain internalization, IAR retains one of the strongest general-capability profiles.",
+      "tags": [
+        "post-training",
+        "knowledge internalization",
+        "document QA",
+        "model merging"
+      ]
+    },
+    {
+      "id": "envharness-awakening-static-worlds-for-agent-learning-2026-08-22",
+      "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+      "authors": "Chengsong Huang, Zifeng Wang, Rujun Han, Jun Yan, Yanfei Chen, Zoey CuiZhu, Ke Jiang, Peng Xia, Han Yu, Yufan Zhuang, Yifei Ming, Jiaqi Pan, Bhavana Dalvi Mishra, Jiaxin Huang, Burak Gokturk, Tomas Pfister, Chen-Yu Lee",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19880",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "Static hand-built environments cannot track agent weaknesses or improve with the policy. EnvHarness wraps any static environment with programmable plug-in components that reshape behavior while preserving the original verifier; EnvRigger diagnoses trajectory failures and synthesizes the components automatically. Across five benchmarks it yields up to 9-point gains on held-out instances with fewer steps and supplies a stronger RL co-evolution signal.",
+      "tags": [
+        "agents",
+        "environment generation",
+        "RL",
+        "harnesses"
+      ]
+    },
+    {
+      "id": "when-text-and-numbers-disagree-evidence-arbitration-in-large-language-models-2026-08-22",
+      "title": "When Text and Numbers Disagree: Evidence Arbitration in Large Language Models",
+      "authors": "Mattia Carletti, Edward Phillips, Fredrik K. Gustafsson, Patitapaban Palo, Lei Clifton, Danielle Belgrave, Xiao Gu, David A. Clifton",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20116",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "A controlled benchmark generates latent risk trajectories that produce both numerical series and text summaries so that exactly one modality matches ground truth. Models show systematic rather than random arbitration: distinct text-versus-number preferences, stronger reliance on temporal recency than on explicit reliability cues, and over-reliance on external forecasts even when they contradict direct evidence. These heuristics pose a clear failure mode for tool-augmented decision systems.",
+      "tags": [
+        "evidence integration",
+        "multimodal reasoning",
+        "decision making",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "learning-how-to-forget-fine-tuning-for-long-context-sparse-attention-2026-08-22",
+      "title": "Learning how to Forget: Fine-tuning for Long-Context Sparse Attention",
+      "authors": "Matthias Seeger, Zeyu Zhang, Vihang Patil, Konstantinos Benidis, Sebastian Schelter",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19920",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "The method fine-tunes models under any KV-cache sparse-attention policy on modest hardware so the model co-adapts to the selection rule, often outperforming exact-attention training. An efficient H2O implementation with custom kernels is released inside the KeysAndValues library. Co-adaptation lets sparse policies deliver long-context performance without excessive memory budgets.",
+      "tags": [
+        "long context",
+        "sparse attention",
+        "KV cache",
+        "fine-tuning"
+      ]
+    },
+    {
+      "id": "stopping-and-routing-llm-judge-panels-2026-08-22",
+      "title": "Stopping and Routing LLM Judge Panels",
+      "authors": "Bin Zhu, Yi Xie, Yanghui Rao",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19802",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "Judge-panel design is cast as role-conditioned allocation: from a small audit set the method classifies judges as copies, complements, or specialists and produces a policy that drops redundant copies, routes specialists conditionally, and stops when marginal validation gain falls below cost. Across reasoning, code, safety, preference, and math audits the resulting call plans dominate single judges, flat panels, and fixed cascades. The output is a reusable, auditable routing plan for subsequent evaluation batches.",
+      "tags": [
+        "evaluation",
+        "LLM-as-judge",
+        "routing",
+        "cost-aware panels"
+      ]
+    },
+    {
+      "id": "swe-bench-science-can-coding-agents-resolve-engineering-tasks-in-science-2026-08-22",
+      "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+      "authors": "Zhipeng Xu, Jiahao Lu, Yining Zheng, Yuxin Wang, Xipeng Qiu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19799",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "The benchmark contains 119 repository-level tasks from 98 scientific GitHub projects across 20 domains, organized into issue-driven, expert-exploratory, and engineering-integration paradigms. Even the strongest agent stays below 50 percent pass@1. Four recurring failure modes emerge: missing scientific abstraction, surface-level repair, incomplete system integration, and failure to generalize knowledge; a paired ablation shows that poorly aligned scientific guidance can induce anchoring.",
+      "tags": [
+        "coding agents",
+        "scientific software",
+        "SWE-bench",
+        "failure analysis"
+      ]
+    },
+    {
+      "id": "manifold-drift-in-flow-preference-optimization-a-root-cause-of-reward-hacking-2026-08-22",
+      "title": "Manifold Drift in Flow Preference Optimization: A Root Cause of Reward Hacking",
+      "authors": "Yansen Han, Shengyi Liao, Yuanxing Zhang, Pengfei Wan, Tao Lin",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20011",
+      "type": "paper",
+      "dateAdded": "2026-08-22",
+      "summary": "Preference updates on flow-matching models can displace terminal samples off the pretrained data manifold whenever the induced displacement has a nonzero normal component. ThermoDPO anchors pairwise preference optimization on preferred samples via a temperature-controlled objective that recovers a continuum between rejection sampling and FlowDPO; a weighted variant restores signal at low temperatures. On SD3.5-M it improves OCR by 47.5 percent and the average of four metrics by 16 percent while controlling a reconstruction surrogate for manifold distance.",
+      "tags": [
+        "flow matching",
+        "preference optimization",
+        "reward hacking",
+        "generative models"
+      ]
+    },
     {
       "id": "ai4ai-bench-benchmarking-llm-agents-in-algorithmic-design-for-recursive-self-imp-2026-08-21",
       "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
