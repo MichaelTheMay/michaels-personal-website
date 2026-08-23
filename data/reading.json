@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-22",
+  "lastUpdated": "2026-08-23",
   "issues": [
+    {
+      "date": "2026-08-23",
+      "title": "Hardening agents: memory arbitration, silent failures, and context under cost",
+      "blurb": "Recent work tackles practical failure modes of LLM agents, from correlated multi-agent memories and silent tool errors to costly context acquisition and limited deployer control over frontier models. The selection emphasizes rigorous benchmarks, formal framings, and recovery mechanisms that make long-horizon agent systems more reliable."
+    },
     {
       "date": "2026-08-22",
       "title": "Adaptive harnesses, concept audits, and the measurement of agent research",
@@ -118,6 +123,176 @@
     }
   ],
   "items": [
+    {
+      "id": "active-inference-as-context-acquisition-for-ai-agents-2026-08-23",
+      "title": "Active Inference as Context Acquisition for AI Agents",
+      "authors": "Sanchayan Dutta, Sai Niranjan Ramachandran, Suvrit Sra",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19202",
+      "type": "paper",
+      "dateAdded": "2026-08-23",
+      "summary": "The paper formulates agent context acquisition (clarifying questions, retrieval, tool calls) as active inference that minimizes expected free energy under token or action cost. An inner step updates beliefs over a latent task state while an outer step chooses the next context, task, or stop action. It instantiates the idea in Optimal Question Asking with exact posteriors and a dynamic programming oracle, then benchmarks frontier models on categorical identification tasks and token-budgeted prompt workflows.",
+      "tags": [
+        "active inference",
+        "context acquisition",
+        "agents",
+        "information gain",
+        "token budgets"
+      ]
+    },
+    {
+      "id": "outcome-monitors-recovery-affordances-for-silent-tool-failures-2026-08-23",
+      "title": "Outcome Monitors: Recovery Affordances for Silent Tool Failures",
+      "authors": "Sugam Panthi, Rabab Abdelfattah",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19303",
+      "type": "paper",
+      "dateAdded": "2026-08-23",
+      "summary": "Silent tool failures return well-formed but incorrect results that agents treat as fact. Outcome Monitors detect violations of outcome contracts mined from traces or schemas and issue nonbinding receipts that name the violated property plus public recovery tools. In controlled evaluations with injected failures the monitors lift ToolMaze completion from 10.9% to 28.1% across models and improve tau-bench retail by 12-14 points, with ablations showing the recovery-tool list is the active ingredient.",
+      "tags": [
+        "tool use",
+        "failure recovery",
+        "agents",
+        "monitors",
+        "contracts"
+      ]
+    },
+    {
+      "id": "beyond-imitation-filtering-on-policy-distillation-by-reasoning-progress-2026-08-23",
+      "title": "Beyond Imitation: Filtering On-Policy Distillation by Reasoning Progress",
+      "authors": "Chen Yang, Haiyuan Wan, Rengrong Xiong, Yize Chen, Danny H.K. Tsang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19408",
+      "type": "paper",
+      "dateAdded": "2026-08-23",
+      "summary": "On-policy distillation pairs student trajectories with dense teacher rewards but those rewards often conflict with genuine reasoning progress when the student diverges productively from the teacher. R2-OPD builds two within-trajectory rankings of reasoning spans (teacher reward vs independent progress estimate) and suppresses distillation rewards wherever the rankings disagree. The filtered objective consistently improves reasoning performance over standard OPD.",
+      "tags": [
+        "distillation",
+        "reasoning",
+        "on-policy",
+        "post-training",
+        "reward filtering"
+      ]
+    },
+    {
+      "id": "bounded-sovereignty-and-the-control-tax-pricing-ai-oversight-when-the-deployer-d-2026-08-23",
+      "title": "Bounded Sovereignty and the Control Tax: Pricing AI Oversight When the Deployer Does Not Own the Model",
+      "authors": "Zhen Wen Lim",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19216",
+      "type": "paper",
+      "dateAdded": "2026-08-23",
+      "summary": "Many AI control protocols assume the deployer can instrument model weights, traces, and serving infrastructure, an assumption that fails for API or managed endpoints. The paper introduces bounded sovereignty across data, model, infrastructure, and interaction layers and defines the sovereignty discount cost as the extra control tax paid to substitute for missing access. A large synthetic access-ablation study plus a payments-infrastructure scenario shows which access types enable diagnosis, intervention, and post-incident explanation.",
+      "tags": [
+        "AI control",
+        "oversight",
+        "API deployment",
+        "sovereignty",
+        "safety"
+      ]
+    },
+    {
+      "id": "beyond-memory-majority-latent-source-reasoning-for-multi-agent-memory-arbitratio-2026-08-23",
+      "title": "Beyond Memory Majority: Latent-Source Reasoning for Multi-Agent Memory Arbitration",
+      "authors": "Chenchen Lin, Wenhao Yuan, Xuehe Wang, Edith Cheuk Han Ngai",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19701",
+      "type": "paper",
+      "dateAdded": "2026-08-23",
+      "summary": "Multi-agent memory systems often treat retrieved memories as independent evidence and vote or weight them, creating false majorities when memories share upstream sources or bias. CAMA models memories as query-conditioned evidence groups, estimates the effective number of independent sources via neural dependency inference plus provenance priors, and learns a sequential recovery policy to fetch missing independent evidence. Experiments show it suppresses correlation-induced false majorities better than prior baselines.",
+      "tags": [
+        "multi-agent",
+        "memory",
+        "arbitration",
+        "correlation bias",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "agent-memory-distillation-empowering-small-llm-agents-with-hierarchical-teacher--2026-08-23",
+      "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
+      "authors": "Taeil Kim, Kangsan Kim, Sung Ju Hwang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07169",
+      "type": "paper",
+      "dateAdded": "2026-08-23",
+      "summary": "Small agents rarely generate enough successful trajectories to build useful memory on their own. AMD is a training-free method that distills hierarchical memory (workflow, subtask, function) from a large teacher agent’s successful traces and injects it proactively or reactively into the student. On AppWorld, BFCL V3 and ToolSandbox it yields large average accuracy gains for 4B-8B students, with subtask memory contributing the most and 4B models benefiting most.",
+      "tags": [
+        "memory distillation",
+        "small models",
+        "tool use",
+        "agents",
+        "hierarchical memory"
+      ]
+    },
+    {
+      "id": "air-traffic-control-using-large-language-models-prompt-engineering-architecture--2026-08-23",
+      "title": "Air Traffic Control Using Large Language Models: Prompt Engineering, Architecture, and Evaluation",
+      "authors": "Mahyar Ghazanfari, Matthias Casanova, Jordan Kam, Alex Zongo, Peng Wei, Torsten Darrell, Alexandre Bayen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19299",
+      "type": "paper",
+      "dateAdded": "2026-08-23",
+      "summary": "The study tests whether LLMs can produce operationally realistic ATC transmissions in a multi-turn stateful pipeline conditioned on dialogue history. Across nine models and five prompt regimes of increasing constraint, light prompts plus a worked in-context example perform best while heavy scripting collapses under self-generated error accumulation. Injecting ground-truth history repairs the collapse, outlining both a path and current limits for LLM-assisted ATC.",
+      "tags": [
+        "LLM evaluation",
+        "safety-critical",
+        "prompt engineering",
+        "dialogue",
+        "ATC"
+      ]
+    },
+    {
+      "id": "loreley-repository-scale-program-evolution-with-quality-diversity-search-2026-08-23",
+      "title": "Loreley: Repository-Scale Program Evolution with Quality-Diversity Search",
+      "authors": "Mohan Chen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19703",
+      "type": "paper",
+      "dateAdded": "2026-08-23",
+      "summary": "Loreley keeps complete repository states in a quality-diversity archive and samples them as parents or context for later agent edits, producing Git commits judged by a project evaluator. In a matched Zstandard experiment against sequential champion editing and independent root proposals, QD engaged stepping-stone ancestry but did not establish a clear endpoint advantage at the tested budget. Earlier campaigns nevertheless produced multi-file improvements, showing the archive mechanism can be engaged.",
+      "tags": [
+        "program evolution",
+        "quality-diversity",
+        "coding agents",
+        "search",
+        "repositories"
+      ]
+    },
+    {
+      "id": "second-thought-reasoning-in-parallel-as-llm-agents-act-and-observe-2026-08-23",
+      "title": "Second Thought: Reasoning in Parallel as LLM Agents Act and Observe",
+      "authors": "Zhensu Sun, Chengran Yang, Yunbo Lyu, Jieke Shi, David Lo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.13667",
+      "type": "paper",
+      "dateAdded": "2026-08-23",
+      "summary": "In ReAct-style agents the interval between action emission and observation arrival is a reasoning idle window. Second Thought forks auxiliary reasoning branches at the end of each Thought phase, decodes them concurrently with the main loop, and merges results when the observation arrives. Across three benchmarks and three reasoning models it reduces turn count and main-thread decoding (up to 43% in some settings) while preserving or improving Pass@1 relative to compute-matched controls.",
+      "tags": [
+        "parallel reasoning",
+        "ReAct",
+        "inference efficiency",
+        "agents",
+        "test-time compute"
+      ]
+    },
+    {
+      "id": "how-to-navigate-uncertainty-about-ai-consciousness-2026-08-23",
+      "title": "How to Navigate Uncertainty About AI Consciousness",
+      "authors": "Tom McClelland",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.19215",
+      "type": "essay",
+      "dateAdded": "2026-08-23",
+      "summary": "Deep uncertainty about artificial consciousness creates a dilemma between risking harm to potentially sentient systems and wasting resources on insentient ones. The essay argues for shifting from intractable consciousness questions to tractable valence questions: assess whether an AI has states that would constitute valenced experiences if it were conscious. This valence-focused approach is claimed to be sufficient to ground a responsible development stance under persistent uncertainty.",
+      "tags": [
+        "AI consciousness",
+        "valence",
+        "ethics",
+        "uncertainty",
+        "moral status"
+      ]
+    },
     {
       "id": "conceptguard-benchmarking-context-sensitive-unlearning-in-large-language-models-2026-08-22",
       "title": "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models",
