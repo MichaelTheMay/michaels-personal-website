@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-23",
+  "lastUpdated": "2026-08-24",
   "issues": [
+    {
+      "date": "2026-08-24",
+      "title": "Inference-time control for safety, privacy, and efficient reasoning",
+      "blurb": "A cluster of new results emphasizes lightweight runtime mechanisms that steer models without full retraining. Continuous adapters, attention interventions, tiny comparators, claim-level unlearning, and memory scaffolds improve the safety-utility tradeoff, personalized privacy, agent reliability, and CoT efficiency while exposing limits of static alignment."
+    },
     {
       "date": "2026-08-23",
       "title": "Hardening agents: memory arbitration, silent failures, and context under cost",
@@ -123,6 +128,176 @@
     }
   ],
   "items": [
+    {
+      "id": "clear-continuous-latent-adapter-routing-for-utility-preserving-llm-safety-alignm-2026-08-24",
+      "title": "CLEAR: Continuous Latent Adapter Routing for Utility-Preserving LLM Safety Alignment",
+      "authors": "Chengxiao Wang, Enyi Jiang, Xiaojing Liao, Sanmi Koyejo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21278",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "CLEAR uses a lightweight hidden-state gate to continuously modulate the strength of a safety LoRA adapter, applying safety intervention only when needed. On Llama-3-8B-Instruct it cuts HarmBench attack success rate from 32.3% to 0.5% while retaining far more utility than global SFT or standard LoRA, gaining up to 7.1 points on GSM8K. The approach demonstrates that conditional, continuous routing can substantially improve the safety-utility Pareto frontier.",
+      "tags": [
+        "safety",
+        "alignment",
+        "LoRA",
+        "adapters",
+        "utility"
+      ]
+    },
+    {
+      "id": "personalized-privacy-control-in-llms-via-attention-head-intervention-2026-08-24",
+      "title": "Personalized Privacy Control in LLMs via Attention Head Intervention",
+      "authors": "Junseok Kim, Nakyeong Yang, Kyomin Jung",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21209",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "The paper introduces personalized privacy, where disclosure boundaries vary by user even inside the same context, and releases P3Bench that extends contextual privacy policies with user-specific rules. Prompt-based enforcement fails badly (policy ignorance 51-74% on tested models). Repair, an inference-time attention-head intervention, significantly raises adherence to the personalized policies without retraining.",
+      "tags": [
+        "privacy",
+        "attention",
+        "intervention",
+        "benchmark",
+        "LLMs"
+      ]
+    },
+    {
+      "id": "reframe-evidence-guided-test-time-safety-alignment-in-multimodal-large-language--2026-08-24",
+      "title": "ReFrame: Evidence-Guided Test-Time Safety Alignment in Multimodal Large Language Models",
+      "authors": "Wenzheng Jiang, Xuankun Rong, Yuanzhao Zhai, Dawei Feng, Huaimin Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21100",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "ReFrame is a training-free test-time framework that uses two agents sharing a small local MLLM to generate complementary risk and utility evidence, then rewrite the prompt and route images before calling a frozen downstream MLLM. It counters utility dominance and reasoning inertia that cause models to miss latent multimodal risks. Across multiple MLLMs it strengthens jailbreak defense and safety awareness while reducing oversensitivity and preserving utility.",
+      "tags": [
+        "multimodal",
+        "safety",
+        "test-time",
+        "agents",
+        "jailbreak"
+      ]
+    },
+    {
+      "id": "don-t-solve-just-compare-tiny-advisors-for-runtime-intervention-in-llm-agents-2026-08-24",
+      "title": "Don't Solve, Just Compare: Tiny Advisors for Runtime Intervention in LLM Agents",
+      "authors": "Yanze Jiang, Mingxuan Li, Yuhao Wang, Shengfang Zhai, Jiaheng Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21027",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "COTA trains a tiny comparator on pairwise counterfactual branches that share the same prefix, then uses repeated comparisons at runtime to decide whether an alternative continuation is better and to return non-binding advice. The actor itself replans. Across WebShop, ALFWorld and tau-Retail with three different actors, COTA improves all nine settings even though the advisor is far weaker at the underlying task than the actor.",
+      "tags": [
+        "agents",
+        "runtime",
+        "intervention",
+        "comparison",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "can-scientific-claims-be-removed-from-large-language-models-a-systematic-evaluat-2026-08-24",
+      "title": "Can Scientific Claims Be Removed from Large Language Models? A Systematic Evaluation of Claim-Level Unlearning",
+      "authors": "Snigdha Paul, Manasi Patwardhan, Arman Cohan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20960",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "Scientific knowledge evolves, so obsolete or retracted claims must be forgettable at the claim level rather than the instance level. The authors introduce the SciUnlearn benchmark and show that existing unlearning methods achieve only superficial suppression of interconnected scientific claims. The results highlight the need for specialized techniques that can cleanly excise structured, evolving knowledge while preserving utility.",
+      "tags": [
+        "unlearning",
+        "scientific knowledge",
+        "benchmark",
+        "LLMs",
+        "forgetting"
+      ]
+    },
+    {
+      "id": "memory-augmentation-unlocks-efficient-chain-of-thought-reasoning-2026-08-24",
+      "title": "Memory Augmentation Unlocks Efficient Chain-of-Thought Reasoning",
+      "authors": "Simeng Zhang, Yilong Chen, Wenyuan Zhang, Zhenyu Zhang, Yao Chen, Junyuan Shang, Tingwen Liu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21265",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "The authors formalize a Context-Generation Substitution Law and introduce a training-free Memory-Augmented Compression method that builds reusable reasoning memories from historical traces and injects them as prefill scaffolds. On GSM8K, MATH, BBH and MMLU-Sci the method recovers large accuracy drops caused by Chain-of-Draft compression (gains of 6-29 points) while delivering 1.14-1.49x latency speedups over full CoT. Gains come from relevant pattern summaries rather than raw context length.",
+      "tags": [
+        "reasoning",
+        "CoT",
+        "compression",
+        "memory",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "rethinking-expressivity-and-efficiency-in-test-time-training-2026-08-24",
+      "title": "Rethinking Expressivity and Efficiency in Test-Time Training",
+      "authors": "Zeyun Zhong, Joya Chen, Manuel Martin, Frederik Diederichs, Juergen Gall, Juergen Beyerer",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21308",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "E2-TTT derives a closed-form chunk-level state transition that exactly matches the per-token fast-weight and momentum dynamics under the usual chunk-start gradient approximation. This permits fully parallel chunk training while preserving the temporal structure discarded by prior approximations. Models up to 1.3B parameters match or beat prior TTT baselines on language modeling and in-context retrieval, retain over 90% Needle-in-a-Haystack accuracy at 8x training length, and match the throughput of efficient chunk methods.",
+      "tags": [
+        "test-time training",
+        "TTT",
+        "long-context",
+        "efficiency",
+        "expressivity"
+      ]
+    },
+    {
+      "id": "asymmetric-capacity-allocation-in-self-refinement-pipelines-2026-08-24",
+      "title": "Asymmetric Capacity Allocation in Self-Refinement Pipelines",
+      "authors": "Zhuoyi Yang, Ian G. Harris, Salar Hashemitaheri, Cassie Huang, Yuangang Li, Hyunwoo Oh, Paul Dourish, Tony Givargis, Mohsen Imani, Li Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21345",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "A systematic stage-wise study across five benchmarks and multiple sizes of Qwen3 and Gemma 3 shows that generation and revision benefit strongly from larger models, while an undersized refiner can actively harm final quality. Critic size has surprisingly little effect once any critic is present. The results give concrete guidance for allocating capacity non-uniformly across generate-critique-revise pipelines to improve both performance and compute efficiency.",
+      "tags": [
+        "self-refinement",
+        "agents",
+        "scaling",
+        "capacity allocation",
+        "LLMs"
+      ]
+    },
+    {
+      "id": "anatomy-informed-neural-networks-encoding-anatomic-priors-in-loss-and-architectu-2026-08-24",
+      "title": "Anatomy-Informed Neural Networks: Encoding Anatomic Priors in Loss and Architecture, with an SE(3) Formulation of Guidewire-Induced Aortoiliac Deformation",
+      "authors": "David P. Stonko",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21332",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "AINN embeds soft anatomic priors as loss penalties and hard priors directly into architecture and state, analogous to physics-informed networks. The clinical case models aortoiliac deformation under a stiff guidewire by lifting centerlines to SE(3) frames, coupling a Cosserat rod to a tortuosity-modulated vessel via unilateral contact, and supervising with a Wasserstein-2 loss against 2D angiograms. The formulation guarantees anatomic validity by construction and is verified against known kinematics, providing a foundation for data-efficient deformable anatomy prediction.",
+      "tags": [
+        "medical AI",
+        "physics-informed",
+        "SE(3)",
+        "anatomy",
+        "robotics"
+      ]
+    },
+    {
+      "id": "no-judgment-without-a-reason-counterfactual-receipts-for-versioned-ai-evaluators-2026-08-24",
+      "title": "No Judgment Without a Reason: Counterfactual Receipts for Versioned AI Evaluators",
+      "authors": "Ye Chen, Weining Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20938",
+      "type": "paper",
+      "dateAdded": "2026-08-24",
+      "summary": "The work formalizes evaluator accountability through grounds, norms and authority, then defines judgment receipts as minimal source replacements that reproduce a revised verdict. ReasonBench contains 19k+ cases with verifiable receipts. Strong label accuracy masks severe fragility: meaning-preserving permutations collapse receipt recovery, and models trained on simple changes fail on multi-source updates, showing that reason-aware evaluation must separately certify transformation consistency.",
+      "tags": [
+        "evaluation",
+        "reasoning",
+        "counterfactuals",
+        "accountability",
+        "benchmark"
+      ]
+    },
     {
       "id": "active-inference-as-context-acquisition-for-ai-agents-2026-08-23",
       "title": "Active Inference as Context Acquisition for AI Agents",
