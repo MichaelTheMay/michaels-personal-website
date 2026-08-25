@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-24",
+  "lastUpdated": "2026-08-25",
   "issues": [
+    {
+      "date": "2026-08-25",
+      "title": "Long-horizon agents: memory systems, world models, and self-reflective harnesses",
+      "blurb": "Recent work converges on the infrastructure needed for agents that act over extended trajectories: selective and hierarchical memory, interactive world models that preserve physical structure, open-world skill induction, and training or harness methods that turn sparse outcomes into dense self-supervision. These papers show concrete gains in control fidelity, data efficiency, and scientific reliability while exposing remaining gaps in consistency and introspection."
+    },
     {
       "date": "2026-08-24",
       "title": "Inference-time control for safety, privacy, and efficient reasoning",
@@ -128,6 +133,166 @@
     }
   ],
   "items": [
+    {
+      "id": "reworld-an-interactive-world-model-with-long-horizon-memory-2026-08-25",
+      "title": "ReWorld: An Interactive World Model with Long-Horizon Memory",
+      "authors": "Zhifei Chen, Luozhou Wang, Guibao Shen, Dongyu Yan, Shuai Yang, Tianshuo Xu, Yihua Du, Wei Wang, Tianyi Gui, Lianghua Huang, Yingcong Chen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.23565",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "ReWorld separates short-horizon control from unbounded memory via mixed per-head attention windows, random head routing, and random chunk dropping during training. At inference a fixed-budget KV cache plus pose-indexed landmark bank retrieves relevant history, while a metric-scale-aligned multi-source data engine and LoRA distillation enable real-time 704x1280 interactive video. It achieves state-of-the-art action following and generation quality, regenerating starting views on minute-long out-and-back rollouts where sliding windows fail.",
+      "tags": [
+        "world-models",
+        "long-horizon-memory",
+        "interactive-generation",
+        "KV-cache"
+      ]
+    },
+    {
+      "id": "prime-agent-a-self-improving-rlm-harness-2026-08-25",
+      "title": "Prime Agent: A Self-Improving RLM Harness",
+      "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas, Sebastian Müller, Elie Bakouch, Daniel Auras, Mika Senghaas, Fares Obeid, Konstantin Dunas, Johannes Hagemann, Sami Jaghouar",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.23552",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "Prime Agent provides an open harness built around a persistent IPython REPL under the Recursive Language Model abstraction, plus Continual Harness state across trajectories and recursive subagents with direct communication. It standardizes execution, recovery, verification and accounting so that harness failures do not mask model capability. The system lifts ARC-AGI-3 RHAE Best@1 from 30% to 95.5% and matches or exceeds strong baselines on long-context coding, kernel generation, emulators and Factorio progression.",
+      "tags": [
+        "agent-harness",
+        "self-improvement",
+        "recursive-agents",
+        "long-horizon-coding"
+      ]
+    },
+    {
+      "id": "correcting-a-learned-physical-invariant-improves-world-model-rollouts-2026-08-25",
+      "title": "Correcting a learned physical invariant improves world-model rollouts",
+      "authors": "Richard Bao",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.23526",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "A frozen DreamerV3 trained solely on pendulum video spontaneously learns a scalar energy-like invariant that its latent dynamics approximately conserve; the same search finds none in damped counterparts. The invariant drifts during autonomous rollouts; projecting the latent state back onto its initial level set reduces rollout error in conservative models while random constraints usually increase it. This demonstrates that world models can extract physical constraints from pixels yet still violate them when imagining forward, and that explicit correction helps.",
+      "tags": [
+        "world-models",
+        "physical-invariants",
+        "model-based-RL",
+        "rollout-correction"
+      ]
+    },
+    {
+      "id": "srpo-self-reflective-policy-optimization-for-long-horizon-reasoning-2026-08-25",
+      "title": "SRPO: Self-Reflective Policy Optimization for Long-Horizon Reasoning",
+      "authors": "Jialong Liu, Yuling Shi, Ning Yang, Xiaodong Gu, Zuchao Li",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.23493",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "SRPO lets an LLM analyze its own completed trajectories, synthesize concise reflection patches, and use reflection-conditioned teacher scores on student on-policy rollouts as dense token-level signals. This converts sparse terminal rewards into dense supervision without external critics or larger teachers. On Qwen3-8B it reaches 73.3% AIME'24 with only 8% of the FLOPs of scaled SFT and substantially raises success on WebShop, ALFWorld and SWE-Bench-Lite.",
+      "tags": [
+        "self-reflection",
+        "policy-optimization",
+        "long-horizon-reasoning",
+        "data-efficiency"
+      ]
+    },
+    {
+      "id": "earthverse-benchmarking-scientific-agents-across-dynamic-earth-systems-and-natur-2026-08-25",
+      "title": "EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards",
+      "authors": "Zhiqing Cui, Xinxiang Yin, Yihong Tang, Xinglang Zhang, Yuanzhe Hu, Siru Zhong, Weidong Tang, Yuxuan Liang, Weijia Li, Ming Jin, Shirui Pan, Yuhao Kang, Dingyi Zhuang, Jinhua Zhao",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.23525",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "EarthVerse supplies 405 package-scoped investigation tasks grounded in 199 real events across 19 hazard families, with executable fine-grained answer units and process rubrics that tolerate multiple valid paths. Agents must select compatible evidence, run transparent calculations, reconcile sources and preserve provenance. Across 25 systems the best mean answer-unit accuracy is 84.65% yet Strict@95 reaches only 34.81%, revealing that stepwise competence rarely yields consistent end-to-end scientific chains.",
+      "tags": [
+        "scientific-agents",
+        "benchmarks",
+        "earth-systems",
+        "provenance"
+      ]
+    },
+    {
+      "id": "skillalchemy-open-world-agent-skill-creation-2026-08-25",
+      "title": "SkillAlchemy: Open-World Agent Skill Creation",
+      "authors": "Hengjun Wang, Shuyue Wei, Boyi Liu, Jun Yang, Yongxin Tong",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.23417",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "SkillAlchemy creates reusable skills from underspecified briefs and open-world sources by discovering omitted requirements via contrastive evidence, admitting procedures only within evidence-supported scope, and compiling them into grammar-guided packages. On 87 SkillsBench tasks it raises pass rate 19.9 points over no-skill baselines and 8.6 points over the strongest automated baseline, matching human-curated skills. The admission-centered design grounds skill reliability in source evidence rather than model priors alone.",
+      "tags": [
+        "skill-creation",
+        "open-world-agents",
+        "procedural-memory",
+        "evidence-grounding"
+      ]
+    },
+    {
+      "id": "agent-g-gaussian-guidance-for-agentic-reinforcement-learning-2026-08-25",
+      "title": "Agent-G²: Gaussian Guidance for Agentic Reinforcement Learning",
+      "authors": "Zixuan Wang, Yanrui Miao, Zhengxi Lu, Teng Pan, Yiwen Qiu, Hongxing Li, Peng Qiu, Ruiqing Zhang, Yongliang Shen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.23318",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "Hint-based RL for long-horizon agents benefits from a band of guidance depths whose utility is approximately Gaussian rather than a single optimum. Agent-G² samples depth per task from a Gaussian whose center and spread are estimated online from ordinary policy-optimization rollouts, combining a global baseline with per-cluster difficulty. On ALFWorld and WebShop with 1.5B/7B models it outperforms strong hint-based and hint-free baselines by several points at under one-third the rollout cost of per-sample probing.",
+      "tags": [
+        "agentic-RL",
+        "guidance",
+        "long-horizon",
+        "sample-efficiency"
+      ]
+    },
+    {
+      "id": "weighted-memory-tree-remembering-what-matters-for-long-horizon-llm-agents-2026-08-25",
+      "title": "Weighted Memory Tree: Remembering What Matters for Long-Horizon LLM Agents",
+      "authors": "Quang Dao, Purvi Kathalkar, Kenneth Eaton",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20631",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "WMT organizes execution histories into a hierarchy of tasks, subtasks and actions, each carrying a dynamic retention score updated by events and selection-based decay. Completed trajectories can be folded while still remaining accessible, and low-utility or poisoned content is suppressed. On GAIA-Text across three 8B-class models it improves accuracy by roughly 10 points and cuts prompt tokens by 33% relative to linear memory, while limiting the spread of unreliable information.",
+      "tags": [
+        "hierarchical-memory",
+        "long-horizon-agents",
+        "retention",
+        "memory-hygiene"
+      ]
+    },
+    {
+      "id": "open-weight-masked-introspection-measuring-what-language-models-can-report-about-2026-08-25",
+      "title": "Open-Weight Masked Introspection: Measuring What Language Models Can Report About Their Own Computation",
+      "authors": "Emilio Ferrara",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.20569",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "OWMI intervenes on residual streams, attention heads and SAE features then asks models whether their computation changed, comparing against sham and impact-matched controls. Across eight open-weight models and 78k measurements, verbal reports discriminate real interventions from shams no better than chance (AUROC ~0.5), even though linear probes recover the same interventions at 75-96% accuracy and a fine-tuned reporter succeeds near-perfectly. The bottleneck lies in the mapping from internal state to truthful verbal report, with implications for testimony-based oversight.",
+      "tags": [
+        "introspection",
+        "mechanistic-interpretability",
+        "model-oversight",
+        "open-weight"
+      ]
+    },
+    {
+      "id": "schemarouter-field-aware-tool-routing-for-efficient-heterogeneous-agentic-rag-2026-08-25",
+      "title": "SchemaRouter: Field-Aware Tool Routing for Efficient Heterogeneous Agentic RAG",
+      "authors": "Yong-eun Cho",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.21375",
+      "type": "paper",
+      "dateAdded": "2026-08-25",
+      "summary": "SchemaRouter represents tools, parameters, response fields, concepts, units, provenance and licenses as a schema graph; a small LLM extracts intent while deterministic graph projection selects fields. On a materials-science benchmark it matches fetch-everything accuracy at 0.71 while using 227 versus 2066 context tokens and cutting latency 2.7x versus prompt-all, with perfect parameter validity and provenance grounding in 62% of answers. Over-aggressive field minimization harms accuracy, showing that recall-preserving selection is essential.",
+      "tags": [
+        "tool-routing",
+        "agentic-RAG",
+        "schema-graphs",
+        "efficiency"
+      ]
+    },
     {
       "id": "clear-continuous-latent-adapter-routing-for-utility-preserving-llm-safety-alignm-2026-08-24",
       "title": "CLEAR: Continuous Latent Adapter Routing for Utility-Preserving LLM Safety Alignment",
