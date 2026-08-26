@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-25",
+  "lastUpdated": "2026-08-26",
   "issues": [
+    {
+      "date": "2026-08-26",
+      "title": "Recursive memory, co-evolving feedback, and the harness layer of long-horizon agents",
+      "blurb": "Fresh results treat the agent harness, memory architecture, and critic loop as first-class objects that can be evolved, normalized, or jointly optimized. Across long-horizon benchmarks the gains come from recursive evidence-driven updates, action-token-aligned RL, persistent corpus structure, and tighter coupling between tool creation, safety guardrails, and operational state preservation."
+    },
     {
       "date": "2026-08-25",
       "title": "Long-horizon agents: memory systems, world models, and self-reflective harnesses",
@@ -133,6 +138,166 @@
     }
   ],
   "items": [
+    {
+      "id": "recursive-experiential-working-memory-evolution-for-long-horizon-agent-harnesses-2026-08-26",
+      "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+      "authors": "Zhaochen Yu, Yingcheng Wu, Zhenfei Yin, Kaiyuan Chen, Zhe Zhao, Mengdi Wang, Shuicheng Yan, Ling Yang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24876",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "Recuris couples Working Memory that tracks task progress with Experiential Memory of skills, so skill selection is grounded in current needs rather than full history, and execution traces localize failures for validation-gated skill updates. A fixed Meta-Agent turns that evidence into recursive memory evolution. Across four long-horizon benchmarks and ten models it improves success in 35 of 37 pairs, adding double-digit points to frontier models and cutting common long-horizon failures by up to 80 percent, with the largest gains on the longest tasks.",
+      "tags": [
+        "agents",
+        "memory",
+        "recursive self-improvement",
+        "long-horizon"
+      ]
+    },
+    {
+      "id": "spo-stream-aligned-policy-optimization-for-asynchronous-agentic-rl-2026-08-26",
+      "title": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
+      "authors": "Kai Ruan, Jinghao Lin, Qianshan Wei, Ziqi Zhou, Zihe Huang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24870",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "Group-relative RL waits for sibling rollouts, which is costly for long tool-use trajectories. SPO++ keeps SPO's persistent prompt-level value but standardizes terminal-outcome advantages under the action-token measure rather than whitening per trajectory, and organizes prompt evidence by the policy event that generated it. Matched runs on ALFWorld and Math-TIR show improved online learning efficiency, with action-token-measure normalization as the strongest ablated component.",
+      "tags": [
+        "reinforcement learning",
+        "agents",
+        "asynchronous RL",
+        "policy optimization"
+      ]
+    },
+    {
+      "id": "cafe-self-improving-search-agents-need-co-evolving-feedback-2026-08-26",
+      "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+      "authors": "Boyang Liu, Senjie Jin, Peixin Wang, Zhangyue Yin, Yibo Wang, Yuhao Zhou, Xinbing Liang, Shizheng Zhu, Yuhui Wang, Jingqi Tong, Zhiheng Xi, Jiazheng Zhang, Clive Bai, Clarenceai, Blaze Chen, Tao Gui, Qi Zhang, Xuanjing Huang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24794",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "CAFE uses a shared-parameter model that alternates between search-agent and critic roles, initializing recovery from the base agent's own failures and coupling online comparative feedback estimates with offline preference optimization on matched trajectories. On seven agentic search benchmarks it outperforms prior RL search agents, retains gains out-of-domain, and reduces hallucinations. One-sided ablations plateau while alternating agent and critic updates continue to improve, showing feedback must co-evolve with the policy.",
+      "tags": [
+        "search agents",
+        "self-improvement",
+        "feedback",
+        "RL"
+      ]
+    },
+    {
+      "id": "meta-n-recursive-self-improvement-through-emergent-depth-2026-08-26",
+      "title": "Meta^n: Recursive Self-Improvement through Emergent Depth",
+      "authors": "Zae Myung Kim, Young-Jun Lee, Seungyeon Jwa, Dongyeop Kang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24735",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "Meta^n keeps a fixed meta-operation Omega and recurses on its growing input of solver traces and code, writing successive strategic pre-process layers and callable helpers whose depth is set by convergence rather than a preset limit. An evolutionary archive searches over layer chains. Across two backbones it beats prior self-improving agents on eight benchmark families, alone scoring above zero on ARC-AGI-2, with most gains from the conditioning each layer passes downward and with distinct layer roles emerging unprompted.",
+      "tags": [
+        "recursive self-improvement",
+        "meta-learning",
+        "agents",
+        "ARC"
+      ]
+    },
+    {
+      "id": "stepguard-learning-step-level-guardrails-with-scalable-supervision-and-safety-ut-2026-08-26",
+      "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
+      "authors": "Zhijie Zheng, Yu Li, Chen Qian, Yuqian Fu, Yanwei Fu, Lu Sheng, Jing Shao, Dongrui Liu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24777",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "StepGuard audits completed trajectories and checks tool actions before execution. StepGen generates paired safe and unsafe trajectories that share context but diverge at the risky step, and Balance-GRPO dynamically balances learning on safe versus unsafe actions by observed accuracy. It matches or exceeds strong open-weight and GPT-class guards, cutting mean attack success rate by 77.3 percent on AgentDojo and AgentDyn while dropping utility only 2.8 points.",
+      "tags": [
+        "safety",
+        "guardrails",
+        "agents",
+        "tool use"
+      ]
+    },
+    {
+      "id": "starharness-evolving-harnesses-with-stratified-search-for-enterprise-environment-2026-08-26",
+      "title": "StarHarness: Evolving Harnesses with Stratified Search for Enterprise Environments",
+      "authors": "Esakkivel Esakkiraja, Denis Akhiyarov, Vikas Yadav, Sai Rajeswar, Patrice Bechard, Sridhar Nemala, Sagar Davasam",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24804",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "StarHarness evolves environment-specific harness components (prompts, tools, skills, subagents, loops) while freezing model weights, using stratified failure pools and held-out selection tasks. On ITBench SRE, EnterpriseOps-Gym, and AutomationBench Finance it lifts full-benchmark scores 20-35 points after a handful of accepted changes. Gains generalize to held-out tasks and transfer across GPT and Qwen families via interface repairs and operational knowledge that shortens trajectories.",
+      "tags": [
+        "agent harness",
+        "enterprise",
+        "evolution",
+        "tool use"
+      ]
+    },
+    {
+      "id": "evidence-blindness-in-direct-corpus-interaction-persistent-navigation-with-atlas-2026-08-26",
+      "title": "Evidence Blindness in Direct Corpus Interaction: Persistent Navigation with AtlasNav",
+      "authors": "Hongyu Guo, Zhiyu Zheng, Zhao Cao",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24764",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "Direct corpus interaction still loses required evidence under finite budgets (Evidence Blindness). AtlasNav organizes the corpus once into a reusable multi-view Corpus Atlas so each query navigates rather than reconstructing structure online. On BrowseComp-Plus it reaches 92.05 percent strict accuracy while cutting online inference cost 30 percent versus prior dynamic-workspace SOTA, realizes complete evidence earlier under matched budgets, and transfers to PhantomWiki and enterprise knowledge.",
+      "tags": [
+        "agentic search",
+        "corpus navigation",
+        "RAG",
+        "evidence"
+      ]
+    },
+    {
+      "id": "parason-revealing-subtask-and-trial-parallelism-in-llm-reasoning-2026-08-26",
+      "title": "Parason: Revealing Subtask and Trial Parallelism in LLM Reasoning",
+      "authors": "Zhengyang Zhang, Zijian Zhang, Jiaxuan Gao, Shusheng Xu, Yi Wu, Song Han, Ligeng Zhu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24658",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "Parason identifies Trial Parallelism (parallel speculative attempts) as the dominant parallelizable fraction of reasoning compute, especially on hard problems, alongside classic Subtask Parallelism. It converts sequential traces into CFG-structured parallel trajectories and trains with PA-GRPO that rewards accuracy, latency, and both parallelism ratios. On AIME24/25 it delivers roughly 1.7x wall-clock acceleration at competitive accuracy by executing the learned structure via tool calls.",
+      "tags": [
+        "test-time compute",
+        "parallel reasoning",
+        "efficiency",
+        "RL"
+      ]
+    },
+    {
+      "id": "joint-optimization-of-tool-creation-and-use-for-large-language-model-agents-2026-08-26",
+      "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
+      "authors": "Zhi Rui Tam, Chieh-Yen Lin, Yun-Nung Chen, Shao-Hua Sun, Hung-yi Lee",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24571",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "SMITH jointly RL-trains tool creation and tool use inside one policy, alternating build tasks (write a tool from examples) and use tasks (invoke pooled tools) with separate reward axes for schema, code, and outcome failures. A 4B Qwen3 reaches 79.8 macro accuracy on held-out procedural tasks, beating a much larger untrained tool-writer, and lifts TabMWP-Hard and out-of-domain GQA without domain-specific training data. Tools it writes also improve smaller and larger external models.",
+      "tags": [
+        "tool creation",
+        "agents",
+        "reinforcement learning",
+        "multi-task"
+      ]
+    },
+    {
+      "id": "when-must-becomes-maybe-constraint-weakening-in-llm-agent-workflows-2026-08-26",
+      "title": "When \"Must\" Becomes \"Maybe\": Constraint Weakening in LLM Agent Workflows",
+      "authors": "Yiheng Sun, Huifei Wang, Yancheng Zhu, Zhenyu Li, Zebin Zhao, Yifan Yuan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.24569",
+      "type": "paper",
+      "dateAdded": "2026-08-26",
+      "summary": "In multi-stage agent workflows, handoff artifacts can retain topical content of safety blockers while converting binding prerequisites into mere caveats, producing forbidden actions. Across 1296 controlled episodes, normal compression yields 100 percent deactivation and 54 percent forbidden action, while restoring the four state fields (prerequisite, authority, fallback, consequence) restores full preservation. Downstream verification can contain damage without fixing the artifact, isolating a state-transmission failure distinct from information extraction.",
+      "tags": [
+        "multi-agent",
+        "workflows",
+        "safety",
+        "state preservation"
+      ]
+    },
     {
       "id": "reworld-an-interactive-world-model-with-long-horizon-memory-2026-08-25",
       "title": "ReWorld: An Interactive World Model with Long-Horizon Memory",
