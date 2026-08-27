@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-26",
+  "lastUpdated": "2026-08-27",
   "issues": [
+    {
+      "date": "2026-08-27",
+      "title": "Harness intelligence, world models, and auditable multi-agent systems",
+      "blurb": "Recent papers shift attention from raw model scale to the surrounding machinery of agents: just-in-time harnesses, code- and video-based world models, stigmergic multi-agent societies, and rigorous checks on traces, repairs, and routing. Together they treat reliability, cost, and long-horizon competence as first-class design problems."
+    },
     {
       "date": "2026-08-26",
       "title": "Recursive memory, co-evolving feedback, and the harness layer of long-horizon agents",
@@ -138,6 +143,166 @@
     }
   ],
   "items": [
+    {
+      "id": "jit-agent-scaling-harness-intelligence-via-just-in-time-harness-evolution-2026-08-27",
+      "title": "JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution",
+      "authors": "Guibin Zhang, Leo Lu, Fangzhou Xie, Kang Zhu, Junhao Wang, Zhifei Xie, Zhaochen Yu, Zihang Liu, Zhongxiang Sun, Qiankun Li, Yue Liao, Heng Chang, Xiaobin Hu, Qibing Ren, Wangchunshu Zhou, Shuicheng Yan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.25593",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "The authors formalize the agent harness (memory, planning, action protocol, tool orchestration) as a machine-generatable four-module artifact and train a dedicated model that synthesizes, repairs, and evolves task-adaptive harnesses for off-the-shelf LLMs. With JIT-Agent, weaker models surpass stronger baselines on DeepSearchQA and OdysseyBench, and generated harnesses match mature runtimes such as OpenCode while transferring across model families. The work positions harness intelligence as a trainable dimension of capability orthogonal to foundation-model scaling.",
+      "tags": [
+        "agents",
+        "harness",
+        "tool-use",
+        "self-evolution"
+      ]
+    },
+    {
+      "id": "swarmworld-stigmergic-technological-evolution-in-societies-of-language-model-age-2026-08-27",
+      "title": "SwarmWorld: Stigmergic technological evolution in societies of language-model agents",
+      "authors": "Subhadeep Pal, Fiona Y. Wang, Markus J. Buehler",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.26081",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "Homogeneous LLM agents self-organize in a spatial environment without assigned roles, processing resources, building persistent artifacts, and writing executable controllers that are later stress-tested by a deterministic simulator after the agents are removed. Shared societies produce broader, more resilient technological portfolios than strong isolated best-of-N search, with agents spontaneously differentiating into exploration, construction, maintenance, and coordination roles. Physical stigmergy alone suffices for capable societies, while explicit cultural mechanisms amplify organization over longer timescales.",
+      "tags": [
+        "multi-agent",
+        "stigmergy",
+        "collective-intelligence",
+        "world-simulation"
+      ]
+    },
+    {
+      "id": "code-world-model-coding-agent-as-world-brain-2026-08-27",
+      "title": "Code World Model: Coding Agent as World Brain",
+      "authors": "Yiwen Chen, Guosheng Lin, Chi Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.25927",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "The framework separates rule-consistent world evolution from high-fidelity visual rendering: a coding agent maintains executable state and generates code updates, which are compiled into a proxy video that conditions a video model. Data pipelines produce aligned proxy-observation pairs from gameplay and real video. After fine-tuning, the system follows coding-agent specifications while preserving visual detail, offering a path to open-ended world models with persistent consequences.",
+      "tags": [
+        "world-models",
+        "coding-agents",
+        "video-generation",
+        "simulation"
+      ]
+    },
+    {
+      "id": "zero-wam-in-context-world-action-modeling-from-human-videos-for-open-ended-task--2026-08-27",
+      "title": "Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization",
+      "authors": "Jiaming Zhou, Qihang Zhang, Gangwei Xu, Cunxin Fan, Yujie Zhao, Ruilin Wang, Yiming Luo, Shuai Yang, Xing Zhu, Yujun Shen, Junwei Liang, Yinghao Xu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.26103",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "Zero-WAM treats human video as the natural in-context task specification for robotic manipulation and trains a causal video-action model to follow it without parameter updates. An automatic pipeline converts robot trajectories into matched human videos (HumanGen: 74.2K pairs, 8.6K tasks), and an in-context future-chunk prediction objective forces the policy to use the video prompt rather than shortcuts. On seven unseen RoboTwin tasks it reaches 47% average success (plus 29.5 points over the strongest baseline) and generalizes to real multi-object and insertion settings.",
+      "tags": [
+        "robotics",
+        "world-action-models",
+        "in-context-learning",
+        "video"
+      ]
+    },
+    {
+      "id": "asymspec-context-asymmetric-speculative-decoding-for-agentic-llms-2026-08-27",
+      "title": "AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs",
+      "authors": "Sheng Liang, Yongyue Zhang, Nathanael Brian, Hang Lv, Hao Wang, Chen Zhang, Yong Liu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.26004",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "Standard speculative decoding assumes identical context for drafter and verifier, which collides with the need to compress long agentic contexts. AsymSpec lets a lightweight drafter read the full input while the large verifier sees a compressed view, steering via contrastive logit fusion and a divergence-aware acceptance gate. It recovers about 90% of full-context accuracy at 1.3-1.7x throughput and substantially lower compute on agentic benchmarks.",
+      "tags": [
+        "speculative-decoding",
+        "agents",
+        "efficiency",
+        "inference"
+      ]
+    },
+    {
+      "id": "progrouter-online-progress-guided-orchestration-for-multi-agent-llm-workflows-un-2026-08-27",
+      "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+      "authors": "Songyuan Li, Ahmed M. Abdelmoniem, Shiqiang Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.25992",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "Instead of one-shot cascade routing, ProgRouter scores multi-view task progress (outcome regimes, subtask completion, trends, state quality) and uses dual-path prediction plus meta-gating to choose the next LLM step under time and cost budgets. Online decisions balance immediate progress gain against long-term operating cost. On code, math, and long-form RAG workflows it cuts cost relative to strong baselines while preserving solution quality.",
+      "tags": [
+        "multi-agent",
+        "routing",
+        "cost-efficiency",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "trace-integrity-for-llm-data-agents-a-vision-for-auditable-structured-reasoning--2026-08-27",
+      "title": "Trace Integrity for LLM Data Agents: A Vision for Auditable Structured Reasoning in Real-World Systems",
+      "authors": "Srimonti Dutta, Akshata Kishore Moharir",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.26036",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "Answer accuracy alone is insufficient because a correct final answer can rest on an invalid computational trace. The authors define Trace Integrity via execution contracts that bind intent, schema, operators, queries, and answer linkage, and introduce the CAIT rate measuring silent failures. On BIRD Mini-Dev, answer accuracy stays low while CAIT rates remain high (45-59%), showing that answer-only metrics systematically overcount success.",
+      "tags": [
+        "agents",
+        "verification",
+        "structured-reasoning",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "repair-or-resample-rethinking-failure-debugging-in-llm-multi-agent-systems-2026-08-27",
+      "title": "Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems",
+      "authors": "Zhongwen Luan, Xiaoyu Zhang, Ming Hu, Yue Yang, Jiongchi Yu, Xiaohong Chen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.25920",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "SymTrace freezes execution before failure anchors so only the downstream trajectory is regenerated, enabling causal rather than stochastic diagnosis. On the annotated SymFail set of 536 trajectories, unguided reruns reproduce failures only 68% of the time and repair just 6.9%. A symptom-driven intervention method raises repair rate to 20.15%, a nearly threefold gain over prior repair techniques.",
+      "tags": [
+        "multi-agent",
+        "debugging",
+        "reliability",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "training-alignment-auditors-via-reinforcement-learning-2026-08-27",
+      "title": "Training Alignment Auditors via Reinforcement Learning",
+      "authors": "Paul Rosu, Rowan Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.25460",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "LLM auditors are trained with RL in environments that plant hidden behaviors in target system prompts; a judge that knows the ground truth supplies pairwise rewards against reference investigations. Pairwise rewards and clean-target negatives keep false positives below 1% while improving investigation quality, realism, and detection of concerning behaviors in production models. Gains transfer to adversarially fine-tuned targets on AuditBench.",
+      "tags": [
+        "alignment",
+        "auditing",
+        "reinforcement-learning",
+        "safety"
+      ]
+    },
+    {
+      "id": "imitation-learning-for-connection-tableau-construction-2026-08-27",
+      "title": "Imitation Learning for Connection-Tableau Construction",
+      "authors": "Fredrik Rømming, Mantas Bakšys, Martin S. Fixman, Sean B. Holden",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.26009",
+      "type": "paper",
+      "dateAdded": "2026-08-27",
+      "summary": "Proof construction in clausal connection tableaux is cast as a policy over a calculus-induced transition system, scored by a graph neural network trained via imitation on found proofs. Removing symbolic backtracking scaffolding still yields policies that solve up to 46% more problems than leanCoP on standard suites and reach proofs in an order of magnitude fewer steps. The result shows structure-transferring learned policies can largely replace search scaffolding inside a formal calculus.",
+      "tags": [
+        "theorem-proving",
+        "imitation-learning",
+        "neuro-symbolic",
+        "GNN"
+      ]
+    },
     {
       "id": "recursive-experiential-working-memory-evolution-for-long-horizon-agent-harnesses-2026-08-26",
       "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
@@ -4904,141 +5069,6 @@
         "open weights",
         "scaling",
         "multimodal"
-      ]
-    },
-    {
-      "id": "racing-to-the-precipice",
-      "title": "Racing to the Precipice: A Model of Artificial Intelligence Development",
-      "authors": "Stuart Armstrong, Nick Bostrom, Carl Shulman",
-      "source": "AI & Society (2016)",
-      "url": "https://link.springer.com/article/10.1007/s00146-015-0590-y",
-      "type": "paper",
-      "dateAdded": "2026-07-27",
-      "summary": "The founding formal model of AI race dynamics: teams choose a safety level trading off against capability, solved for Nash equilibria under three information regimes. Counterintuitive result: more information about rivals' capabilities increases danger, not less.",
-      "tags": [
-        "game theory",
-        "AI safety",
-        "race dynamics"
-      ]
-    },
-    {
-      "id": "uncertainty-information-risk-tech-races",
-      "title": "Uncertainty, Information, and Risk in International Technology Races",
-      "authors": "Nicholas Emery-Xu, Andrew Park, Robert Trager",
-      "source": "Journal of Conflict Resolution (2024)",
-      "url": "https://journals.sagepub.com/doi/10.1177/00220027231214996",
-      "type": "paper",
-      "dateAdded": "2026-07-27",
-      "summary": "Extends the Armstrong–Bostrom–Shulman race model to competing states, showing that 'decisiveness' (how much a capability lead translates into victory probability) drives danger, and that transparency about rivals' capabilities is not unambiguously risk-reducing.",
-      "tags": [
-        "game theory",
-        "policy",
-        "race dynamics"
-      ]
-    },
-    {
-      "id": "why-open-source-ai-race",
-      "title": "Why Open Source? A Game-Theoretic Analysis of the AI Race",
-      "authors": "Andjela Mladenovic, Aaron Courville, Gauthier Gidel",
-      "source": "arXiv (2026)",
-      "url": "https://arxiv.org/abs/2604.16227",
-      "type": "paper",
-      "dateAdded": "2026-07-27",
-      "summary": "Models frontier labs choosing between open- and closed-sourcing as a formal race game, proving equilibrium computation is NP-hard in the discrete case while remaining tractable via mixed-integer programming.",
-      "tags": [
-        "game theory",
-        "open source",
-        "AI labs"
-      ]
-    },
-    {
-      "id": "unilateralists-curse",
-      "title": "The Unilateralist's Curse and the Case for a Principle of Conformity",
-      "authors": "Nick Bostrom, Thomas Douglas, Anders Sandberg",
-      "source": "Social Epistemology (2016)",
-      "url": "https://nickbostrom.com/papers/unilateralist.pdf",
-      "type": "paper",
-      "dateAdded": "2026-07-27",
-      "summary": "An N-agent decision-theoretic model showing that decentralized unilateral action systematically over-produces risky moves, since the agent who acts is likely the one with the most (miscalibrated) optimistic estimate, even absent malice.",
-      "tags": [
-        "game theory",
-        "AI safety",
-        "coordination"
-      ]
-    },
-    {
-      "id": "strategic-preemption-shared-catastrophic-risk",
-      "title": "Strategic Preemption Under Shared Catastrophic Risk: The Suicide Region and the Race to AGI",
-      "authors": "David Tan",
-      "source": "arXiv (2025)",
-      "url": "https://arxiv.org/abs/2512.07526",
-      "type": "paper",
-      "dateAdded": "2026-07-27",
-      "summary": "A continuous-time preemption game between AGI developers facing a shared catastrophic externality. Derives a 'suicide region' where both players rationally deploy despite negative expected payoff, and proposes deployment liability and prize-sharing as fixes.",
-      "tags": [
-        "game theory",
-        "AGI",
-        "mechanism design"
-      ]
-    },
-    {
-      "id": "meditations-on-moloch",
-      "title": "Meditations on Moloch",
-      "authors": "Scott Alexander",
-      "source": "Slate Star Codex (2014)",
-      "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
-      "type": "essay",
-      "dateAdded": "2026-07-27",
-      "summary": "The foundational essay on multipolar traps, competitive dynamics where individually rational actors collectively produce outcomes nobody wants. Supplies the vocabulary (multipolar trap, coordination failure) used across nearly all later writing on AI race dynamics.",
-      "tags": [
-        "essay",
-        "coordination failure",
-        "superintelligence"
-      ]
-    },
-    {
-      "id": "lets-think-about-slowing-down-ai",
-      "title": "Let's Think About Slowing Down AI",
-      "authors": "Katja Grace",
-      "source": "AI Impacts (2022)",
-      "url": "https://blog.aiimpacts.org/p/lets-think-about-slowing-down-ai",
-      "type": "essay",
-      "dateAdded": "2026-07-27",
-      "summary": "Directly interrogates the 'racing is rational' assumption by modeling actual race scenarios, concluding that under realistic parameters, safety investment often beats speed even in a competitive equilibrium.",
-      "tags": [
-        "essay",
-        "race dynamics",
-        "AI safety"
-      ]
-    },
-    {
-      "id": "ai-2027",
-      "title": "AI 2027",
-      "authors": "Daniel Kokotajlo, Scott Alexander, Thomas Larsen, Eli Lifland, Romeo Dean",
-      "source": "AI Futures Project (2025)",
-      "url": "https://ai-2027.com/",
-      "type": "essay",
-      "dateAdded": "2026-07-27",
-      "summary": "A detailed, wargamed scenario modeling US–China competitive dynamics colliding with an intelligence explosion at a composite lab, explicitly modeling how race pressure, not technical inevitability, drives under-testing of a self-improving model.",
-      "tags": [
-        "scenario",
-        "race dynamics",
-        "recursive self-improvement"
-      ]
-    },
-    {
-      "id": "takeoff-speeds",
-      "title": "Takeoff Speeds",
-      "authors": "Paul Christiano",
-      "source": "sideways-view.com (2018)",
-      "url": "https://sideways-view.com/2018/02/24/takeoff-speeds/",
-      "type": "essay",
-      "dateAdded": "2026-07-27",
-      "summary": "Argues for continuous, broadly-distributed capability gains over abrupt single-actor discontinuities. It's the crux essay that changes the game-theoretic stakes of racing, since a slow takeoff means no single lab's breakthrough yields decisive strategic advantage.",
-      "tags": [
-        "essay",
-        "takeoff dynamics",
-        "recursive self-improvement"
       ]
     }
   ]
