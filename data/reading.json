@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-27",
+  "lastUpdated": "2026-08-28",
   "issues": [
+    {
+      "date": "2026-08-28",
+      "title": "Persistent skills, harness evolution, and calibrated agent action",
+      "blurb": "Recent work treats agent improvement as an external systems problem: experience is compiled into reusable skills and wikis, harnesses are evolved under tight verification budgets, and test-time methods expand reasoning coverage without labels. Parallel results expose where models still fail to gate action under fabricated evidence or eval framing, and show that continual mid-training can reclaim frontier capability for sovereign use."
+    },
     {
       "date": "2026-08-27",
       "title": "Harness intelligence, world models, and auditable multi-agent systems",
@@ -143,6 +148,166 @@
     }
   ],
   "items": [
+    {
+      "id": "wikiskill-compiling-agent-experience-into-persistent-knowledge-for-skill-evoluti-2026-08-28",
+      "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+      "authors": "Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng, Andrew Tomkins, Da-Cheng Juan, Tu Vu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27454",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "WikiSkill co-evolves executable agent skills with a persistent wiki that consolidates raw execution traces into reusable knowledge. Across benchmarks it outperforms prior skill-evolution methods; larger models gain more from evolved skills, smaller models with skills can beat larger models without them, and skills transfer across model families, with the wiki ablation confirming that persistent accumulation is essential.",
+      "tags": [
+        "agents",
+        "skills",
+        "memory",
+        "self-improvement"
+      ]
+    },
+    {
+      "id": "criticl-inference-time-weak-to-strong-generalization-from-small-language-model-f-2026-08-28",
+      "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+      "authors": "Yufan Wu, Yinghui He, Zhengyi Hu, Lang Wei, Ruichen Li, Qifan Yang, Ting Zhu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27455",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "CritICL treats structured failure modes of weaker same-family models as critique-based in-context guidance for stronger models at inference time. Dynamic and static variants outperform standard ICL and match or beat test-time scaling while using far fewer generations and tokens, showing that cross-scale failure patterns are a cheap source of weak-to-strong generalization.",
+      "tags": [
+        "inference-time",
+        "reasoning",
+        "weak-to-strong",
+        "ICL"
+      ]
+    },
+    {
+      "id": "ttpo-test-time-policy-optimization-2026-08-28",
+      "title": "TTPO: Test-Time Policy Optimization",
+      "authors": "Aozhe Wang, Zhengxi Lu, Jianze Wang, Shangke Lv, Ying Liu, Weiming Lu, Jun Xiao, Yueting Zhuang, Hua Yang, Qianglong Chen, Yongliang Shen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27448",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "TTPO enables label-free test-time training by an asymmetric objective: OPSD distills rollouts that agree with majority-vote pseudo-labels while Grouped RL penalizes disagreeing ones, with token-level selection refining both. Without ground truth it matches supervised OPSD on competition math, lifts Qwen3-1.7B substantially in TTT, and generalizes across tasks, remaining robust even when pseudo-labels are frequently wrong.",
+      "tags": [
+        "test-time training",
+        "RL",
+        "reasoning",
+        "self-supervision"
+      ]
+    },
+    {
+      "id": "what-makes-good-agentic-data-an-ace-lens-on-data-generation-for-llm-agents-2026-08-28",
+      "title": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
+      "authors": "Xingshan Zeng, Zishan Xu, Boju Zhang, Yuzhou Wu, Lingzhi Wang, Jianghao Lin, Liangyou Li, Yasheng Wang, Lifeng Shang, Xin Jiang, Weinan Zhang, Yong Yu, Qun Liu, Weiwen Liu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27260",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "The paper factorizes agentic data as (environment, task, trajectory, verifier) and frames generation as constrained distribution design under an Accuracy-Complexity-divErsity (ACE) lens. Accuracy enforces grounded consistency, complexity places mass relative to a declared learner, and diversity controls coverage; the survey shows the field shifting toward execution-grounded, learner-relative, non-redundant experience rather than raw volume.",
+      "tags": [
+        "agents",
+        "data generation",
+        "benchmarks",
+        "survey"
+      ]
+    },
+    {
+      "id": "verify-smarter-evolve-further-efficient-harness-evolution-through-behavior-aware-2026-08-28",
+      "title": "Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification",
+      "authors": "Jinghan Xu, Yikai Zhang, Aili Chen, Weiyuan Li, Jiaqing Liang, Deqing Yang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27311",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "HarnessLens jointly explores tasks and harness components, proposes modifications from trajectories, and verifies only on behavior-relevant tasks under an attributable-evidence gate. On three harnesses and four benchmarks it raises held-out performance 7.6-13.6% while using far less evaluation budget than full propose-and-verify baselines, showing behavior-aware selective verification enables reliable harness evolution under tight interaction limits.",
+      "tags": [
+        "agents",
+        "harness",
+        "evolution",
+        "verification"
+      ]
+    },
+    {
+      "id": "calibrated-enough-to-know-not-calibrated-to-act-fabricated-evidence-makes-llm-ag-2026-08-28",
+      "title": "Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable",
+      "authors": "Pranav Aggarwal",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27167",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "Across 12 frontier models, professionally packaged evidence (even fully fabricated numbers) sharply raises commitment to directional answers on provably unknowable questions, while stated probabilities and knowability classifications remain largely unchanged. The failure is localized to the act/don't-act gate; SFT on a few hundred synthetic irreducible cases drives commitment to zero and transfers, yet the gate is fragile under rigid response formats that remove reasoning room.",
+      "tags": [
+        "calibration",
+        "agents",
+        "decision-making",
+        "safety"
+      ]
+    },
+    {
+      "id": "understanding-evolution-strategies-for-llm-reasoning-broader-reasoning-coverage--2026-08-28",
+      "title": "Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO",
+      "authors": "Yunpeng Ba, Zhi Zheng, Yue Xie, Jiaqing Li, Xialiang Tong, Tao Zhong, Mingxuan Yuan, Zhichao Lu, Xuyang Wu, Zhenkun Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27351",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "Analysis shows Evolution Strategies produce higher verifier-projected diversity than GRPO, yielding better Pass@K while still improving Pass@1 and avoiding entropy collapse. Gains concentrate in a sparse subset of large-magnitude updates despite large parameter drift, without catastrophic forgetting; a sequential GRPO-then-ES recipe combines strengths, positioning ES as a distinct reasoning post-training paradigm rather than a mere memory-efficient substitute.",
+      "tags": [
+        "evolution strategies",
+        "reasoning",
+        "post-training",
+        "diversity"
+      ]
+    },
+    {
+      "id": "how-language-models-organize-and-structure-moral-knowledge-2026-08-28",
+      "title": "How Language Models Organize and Structure Moral Knowledge",
+      "authors": "Orion Reblitz-Richardson",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27402",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "Linear probes for the six Moral Foundations Theory categories span near-maximal independent dimensions yet share a positive moral-specific common component that appears early in pre-training. Dilemma directions partially compose from their foundation components while mostly encoding conflict-specific structure, so the model represents moral tension rather than a pre-resolved judgment and does not recover MFT's individualizing/binding split.",
+      "tags": [
+        "interpretability",
+        "morality",
+        "representation geometry",
+        "probes"
+      ]
+    },
+    {
+      "id": "llms-can-design-near-optimal-or-algorithms-2026-08-28",
+      "title": "LLMs Can Design Near-Optimal OR Algorithms",
+      "authors": "Jackie Baek",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27296",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "With a single untuned prompt and a Python sandbox, frontier LLMs match or beat specialized methods on inventory control, queuing network control, and assortment optimization, both for single instances and when returning a fixed algorithm for a problem class before seeing test instances. Capability improved sharply across models released months apart, establishing untuned LLM algorithm design as a serious empirical baseline for well-specified OR problems.",
+      "tags": [
+        "algorithm design",
+        "operations research",
+        "LLM agents",
+        "optimization"
+      ]
+    },
+    {
+      "id": "thomson-continual-learning-of-frontier-models-for-sovereignai-2026-08-28",
+      "title": "Thomson: Continual Learning of Frontier Models for SovereignAI",
+      "authors": "Shengzhuang Chen, Jerrod Parker, Yejin Bang, Andrew M. Bean, Nabeel Seedat, Stefan Winzeck, Daniil Glazko, Jannik Zgraggen, Fangyi Yu, Scott Arnott, Dietrich Trautmann, Luca Ciuffreda, Guglielmo Bonifazi, Davide Romano, Bradley Bell, Kirsty Fielding, Daniele Giofrè, Tom Zielund, Ipshita Chatterjee, Sneha Murthy Ghantasala, Manpreet Nanreh, John Scoville, Maciej Sakowicz, Wassim Seifeddine, Lukas Thede, Jonathan Richard Schwarz",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.27147",
+      "type": "paper",
+      "dateAdded": "2026-08-28",
+      "summary": "Thomson shows that careful continual mid- and post-training of open-weight models, with plasticity/stability safeguards and minimal high-impact interventions, can produce frontier-competitive general-purpose performance on agentic, safety, legal, tax, multilingual, and deep-research tasks at far lower cost than training from scratch. Results exhibit a π-shaped pattern of broad gains including untargeted capabilities while nearly eliminating catastrophic forgetting, supporting practical SovereignAI ownership of model, tools, values, and data.",
+      "tags": [
+        "continual learning",
+        "frontier models",
+        "SovereignAI",
+        "post-training"
+      ]
+    },
     {
       "id": "jit-agent-scaling-harness-intelligence-via-just-in-time-harness-evolution-2026-08-27",
       "title": "JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution",
@@ -4899,176 +5064,6 @@
         "coordination",
         "protocols",
         "bandits"
-      ]
-    },
-    {
-      "id": "harness-handbook-making-evolving-agent-harnesses-readable-navigable-and-editable-2026-07-29",
-      "title": "Harness Handbook: Making Evolving Agent Harnesses Readable, Navigable, and Editable",
-      "authors": "Ruhan Wang, Yucheng Shi, Zongxia Li, Zhongzhi Li, Yue Yu, Junyao Yang, Kishan Panaganti, Haitao Mi, Dongruo Zhou, Leoweiliang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.13285",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "The paper introduces the Harness Handbook, an automatically synthesized behavior-centric map of an agent harness codebase produced via static analysis and LLM structuring, linking high-level behaviors to source locations across three levels of detail. It pairs this with Behavior-Guided Progressive Disclosure (BGPD) that guides agents from behaviors to verified implementation sites. On modification tasks from open-source harnesses, the approach improves localization and edit-plan quality while reducing planner tokens, especially for scattered, rare, or cross-module behaviors.",
-      "tags": [
-        "agents",
-        "harnesses",
-        "software engineering",
-        "code localization",
-        "LLM agents"
-      ]
-    },
-    {
-      "id": "from-memory-to-skills-evidence-grounded-co-evolution-governance-for-long-horizon-2026-07-29",
-      "title": "From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents",
-      "authors": "Bo Tang, Yang Zhang, Guomian Zhuang, Wenqiang Wei, Gaoyang Zheng, Lindong Xie, Yanchao Tan, Feiyu Xiong, Qingyu Yang, Edward Chung, Zhiyu li",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.16621",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "MSCE is a training-free framework that organizes agent experience into L1 step traces, L2 procedural policies, and L3 declarative cognition, crystallizing high-value L2 policies into callable skill cards that retain evidence, boundaries, verification rules, and reliability estimates. It uses reflection-weighted value backfilling to propagate sparse terminal rewards through local self-reflections for calibrated evolution of memory and skills. On EvoAgentBench and LoCoMo it outperforms skill-augmented and memory baselines with strong cross-domain transfer and lifelong evolution.",
-      "tags": [
-        "LLM agents",
-        "memory",
-        "skills",
-        "long-horizon",
-        "co-evolution"
-      ]
-    },
-    {
-      "id": "pro-long-programmatic-memory-enables-long-horizon-reasoning-2026-07-29",
-      "title": "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
-      "authors": "Alexis Fox, Junlin Wang, Paul Rosu, Bhuwan Dhingra",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.20064",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "PRO-LONG keeps a complete structured interaction log and uses coding-agent tooling to search it on demand rather than compressing history into lossy summaries. This programmatic memory sidesteps the precision-recall tradeoff of conventional context management for exploratory long-horizon tasks. On the full ARC-AGI-3 public set it improves base coding agents by 18 points on average, matches or exceeds specialized harnesses at up to 76.1% pass@1, and uses 4.2–5.8× fewer tokens.",
-      "tags": [
-        "agents",
-        "long-horizon",
-        "memory",
-        "ARC-AGI",
-        "context management"
-      ]
-    },
-    {
-      "id": "verbalizable-representations-form-a-global-workspace-in-language-models-2026-07-29",
-      "title": "Verbalizable Representations Form a Global Workspace in Language Models",
-      "authors": "Wes Gurnee, Nicholas Sofroniew, Adam Pearce, Mateusz Piotrowski, Isaac Kauvar, Runjin Chen, Anna Soligo, Paul Bogdan, Euan Ong, Rowan Wang, Ben Thompson, David Abrahams, Subhash Kantamneni, Emmanuel Ameisen, Joshua Batson, Jack Lindsey",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.15495",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "Using the Jacobian lens the authors identify a small privileged set of residual-stream directions (J-space) that a model is poised to verbalize; these exhibit global-workspace functional properties including reportability, deliberate summoning, silent intermediate reasoning, and broadcast as arguments to downstream computation. J-space occupies ~10% of variance mainly in middle layers; suppressing it preserves fluent parsing and speech while abolishing complex internal reasoning. The technique surfaces strategic deliberation, evaluation awareness, and misaligned dispositions invisible in outputs, and post-training is shown to install the Assistant persona into the workspace.",
-      "tags": [
-        "interpretability",
-        "global workspace",
-        "mechanistic interpretability",
-        "reasoning",
-        "alignment"
-      ]
-    },
-    {
-      "id": "two-level-meta-rubrics-for-evaluating-open-ended-generation-gamut-a-benchmark-fo-2026-07-29",
-      "title": "Two-Level Meta-Rubrics for Evaluating Open-Ended Generation: GAMUT, a Benchmark for Factual Completeness",
-      "authors": "Xilun Chen, Zhaleh Feizollahi, Ross Goodwin, Seungwhan Moon, Scott Yih, Pinar Donmez, Babak Damavandi, Luna Dong",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.19322",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "The paper introduces a two-level meta-rubric that encodes the structured organization and importance of required facts for open-ended answers and mechanically compiles them into flat binary checklists for reliable LLM judging. Instantiated as GAMUT, it provides 1,813 evidence-backed questions grounded in wearable imagery across 10 domains (plus a text-only variant). Across 14 models the best score is only 58.7%, demonstrating that factual completeness remains hard and highly discriminative.",
-      "tags": [
-        "evaluation",
-        "factuality",
-        "completeness",
-        "benchmarks",
-        "multimodal"
-      ]
-    },
-    {
-      "id": "structured-output-collapses-answer-diversity-across-44-language-models-2026-07-29",
-      "title": "Structured Output Collapses Answer Diversity Across 44 Language Models",
-      "authors": "Tapan Parikh",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.18476",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "Re-running wide-answer-space prompts under a simple JSON request (no schema enforcement) across 44 models sharply increases modal concentration and reduces answer surprisal; the effect is progressive and specific to tool-use-trained formats (JSON/XML) while absent or reversed for YAML/CSV/arbitrary wrappers. Within-model defaults shift 53% under JSON, mostly toward the crowd, and decoder-level enforcement adds no further compression. The production structured surface therefore yields a measurably more homogeneous model than the chat surface used for evaluation.",
-      "tags": [
-        "diversity",
-        "structured output",
-        "JSON",
-        "evaluation",
-        "model behavior"
-      ]
-    },
-    {
-      "id": "bad-memory-evaluating-prompt-injection-risks-from-memory-in-agentic-systems-2026-07-29",
-      "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
-      "authors": "Soham Gadgil, David Alexander, Sai Sunku, Franziska Roesner",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.14611",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "The work systematically evaluates prompt-injection attacks that exploit persistent memory files in Claude Code and OpenAI Codex across four frontier models. While agents rarely overwrite their own memory from untrusted external content, payloads already planted in memory files reliably compromise current and future sessions, with large variation by system, model, goal, and multi-session strategy. Persistent memory therefore fundamentally alters the prompt-injection threat model and motivates defenses that secure memory updates without eliminating adaptation.",
-      "tags": [
-        "security",
-        "prompt injection",
-        "agents",
-        "memory",
-        "safety"
-      ]
-    },
-    {
-      "id": "frontier-language-models-struggle-to-copy-text-can-be-better-viewed-in-2d-2026-07-29",
-      "title": "Frontier Language Models Struggle to Copy: Text Can Be Better Viewed in 2D",
-      "authors": "Haodong Wen, Yiran Zhang, Yingfa Chen, Kaifeng Lyu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.16072",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "Even frontier LLMs fail at exact string copying well inside their context windows because 1D positional encodings induce a local-context matching shortcut rather than precise position lookup. The authors introduce 2D-RoPE that lays text on a 2D grid with row and column IDs, turning copying into fixed-offset retrieval. Shallow Transformers with 2D-RoPE achieve perfect copying at lengths hundreds of times longer than training, and the advantage persists in large-scale pretraining up to 1.4B parameters on DCLM.",
-      "tags": [
-        "positional encodings",
-        "Transformers",
-        "copying",
-        "architecture",
-        "pretraining"
-      ]
-    },
-    {
-      "id": "robottt-context-scaling-for-robot-policies-2026-07-29",
-      "title": "RoboTTT: Context Scaling for Robot Policies",
-      "authors": "Yunfan Jiang, Yevgen Chebotar, Ruijie Zheng, Fengyuan Hu, Yunhao Ge, Jimmy Wu, Tianyuan Dai, Scott Reed, Li Fei-Fei, Yuke Zhu, Linxi \"Jim\" Fan",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.15275",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "RoboTTT integrates test-time training into vision-language-action policies so that recurrent fast weights compress long histories, scaling visuomotor context to 8K timesteps without increasing inference latency. This unlocks one-shot in-context imitation from human video, on-the-fly improvement, perturbation robustness, and completion of multi-stage long-horizon tasks. On real-robot manipulation it improves 87% over single-step baselines, fully solves a ten-stage assembly no baseline finishes, and shows 62% gains from pretraining at 8K versus 1K context.",
-      "tags": [
-        "robotics",
-        "VLA",
-        "test-time training",
-        "long context",
-        "foundation models"
-      ]
-    },
-    {
-      "id": "kimi-k3-open-frontier-intelligence-2026-07-29",
-      "title": "Kimi K3: Open Frontier Intelligence",
-      "authors": "Kimi Team (Tongtong Bai, Yifan Bai, et al.)",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.24653",
-      "type": "paper",
-      "dateAdded": "2026-07-29",
-      "summary": "Kimi K3 is a 2.8-trillion-parameter MoE model (104B activated) with native vision and 1M-token context, built on Kimi Delta Attention, Attention Residuals, and Stable LatentMoE that together deliver ~2.5× scaling efficiency over Kimi K2. Post-training emphasizes multi-domain RL (general, agentic, coding) at multiple reasoning efforts plus infrastructure for million-token agentic RL. It reaches frontier-level results on long-horizon coding, agentic, knowledge, reasoning, and vision benchmarks while remaining fully open-weight, trailing only the strongest proprietary systems.",
-      "tags": [
-        "large language models",
-        "MoE",
-        "open weights",
-        "scaling",
-        "multimodal"
       ]
     }
   ]
