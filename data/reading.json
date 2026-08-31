@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-30",
+  "lastUpdated": "2026-08-31",
   "issues": [
+    {
+      "date": "2026-08-31",
+      "title": "Agent harness reliability, recoverable self-evolution, and formal limits on language and structure",
+      "blurb": "Recent work tightens the infrastructure around LLM agents with cross-process harnesses, recoverability constraints on self-modification, proactive context tools trained by fine-grained RL, and decisive-error attribution in multi-agent reflection. Parallel results supply formal information-theoretic bounds on recovering meaning from text alone, distance-guided decoding that guarantees CFG acceptance, symbolic program learning with verifiable intermediate rewards, collaborative math formalization platforms, tool-integrated RL for math, and memory-driven chemical hypothesis generation."
+    },
     {
       "date": "2026-08-30",
       "title": "Live harness evolution and long-horizon agent architecture",
@@ -145,14 +150,169 @@
       "date": "2026-08-01",
       "title": "Residual routing, capability nucleation, and agent self-diagnosis",
       "blurb": "Today's papers probe how information and capabilities actually form and fail inside models and agents: multi-head residual streams and driven-nucleation kinetics for emergence, training-free divergence routing and action-centric graphs for inference-time fusion and memory, plus rigorous diagnoses of asymmetric safety collapse under merging, quantization damage masked by error budgets, and learnable blind-spot diagnosis that lets agents improve without weight updates."
-    },
-    {
-      "date": "2026-07-31",
-      "title": "Selective belief, fragile oracles, and calibrated agent reliability",
-      "blurb": "Recent work tightens the foundations of how models revise beliefs under partial credibility, quantifies over-trust in derived signals and mis-scoring by agent benchmarks, and pairs these diagnostics with concrete advances in certified solvers, graph-aware retrieval, end-to-end operational policies, and efficient world-action models."
     }
   ],
   "items": [
+    {
+      "id": "logos-an-agent-harness-on-a-cross-process-bus-2026-08-31",
+      "title": "Logos: An Agent Harness on a Cross-Process Bus",
+      "authors": "Hanzhang Jia, Liheng Zeng, Hao Cheng, Yi Gao, Bo Ma",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28553",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "The paper shows that the spatiotemporal-composability calculus for agents does not require a single shared process. It constructs Logos as a ROS-like harness in which each plugin is an independent process whose only shared state is an append-only transcript. Experiments demonstrate that eighty sessions resume without repeated side effects after kills at every boundary of the tool-call cycle, while a single-process baseline loses every co-resident session to one fault.",
+      "tags": [
+        "agent-harness",
+        "fault-tolerance",
+        "multiagent",
+        "composability"
+      ]
+    },
+    {
+      "id": "evoundo-recoverability-constrained-self-evolution-for-llm-agent-harnesses-2026-08-31",
+      "title": "EvoUndo: Recoverability-Constrained Self-Evolution for LLM Agent Harnesses",
+      "authors": "Tanmay Sah, Dolly Sah, Harshul Jain, Tanya Sah",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28363",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "EvoUndo formalizes self-modification of prompts, tools and harnesses so that every capability-improving mutation can be verified for recoverability across counterfactual states. Of 197 natural capability-gaining mutations that fail recoverability, conventional repair recovers none, while an extended recovery calculus plus exact state-address grounding recovers the large majority under oracle analysis. The results show that reliable self-evolution requires joint design of verification, grounding, witness semantics and recovery-language expressivity rather than iterative prompting alone.",
+      "tags": [
+        "self-evolution",
+        "agent-harness",
+        "recoverability",
+        "verification"
+      ]
+    },
+    {
+      "id": "contextpilot-teaching-agents-for-proactive-context-management-via-fine-grained-r-2026-08-31",
+      "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
+      "authors": "Zhuoshi Pan, Qizhi Pei, Junru Lu, Honglin Lin, H. Vicky Zhao, Di Yin, Xing Sun",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28476",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "ContextPilot augments the agent toolset with planning, long-term memory and soft offloading primitives, then trains context-editing policy with an RL method that identifies critical edits via context and entropy variation and estimates action-level advantages from branched trajectories. On long-context QA and deep-search tasks the method yields higher accuracy with substantially more compact working contexts than prior proactive-management baselines across multiple base models.",
+      "tags": [
+        "context-management",
+        "RL",
+        "long-horizon-agents",
+        "tool-use"
+      ]
+    },
+    {
+      "id": "finding-where-the-buck-stops-an-automated-failure-attribution-based-reflection-f-2026-08-31",
+      "title": "Finding Where the Buck Stops: An Automated Failure Attribution-Based Reflection Framework for Multi-Agent Collaboration",
+      "authors": "Xiaoqing Wang, Keman Huang, Bin Liang, Hongyu Li, Xiaoyong Du, Wuqiong Pan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28264",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "DoCtOR first attributes the decisive error step and agent via automated failure analysis, generates a counterfactual correction, and then elicits targeted reflection only from the responsible agent. The diagnose-then-correct loop improves success rates by 22-27 percent over strong reflection baselines on HotPotQA, ChartQAPro and Mind2Web while avoiding contamination of non-culpable agents' memories.",
+      "tags": [
+        "multi-agent",
+        "reflection",
+        "failure-attribution",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "learning-to-use-tools-reinforcement-learning-for-tool-integrated-mathematical-re-2026-08-31",
+      "title": "Learning to Use Tools: Reinforcement Learning for Tool-Integrated Mathematical Reasoning",
+      "authors": "Minghui Xu, Zi Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28447",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "After diagnosing that calculation errors dominate Countdown failures, the authors create tool-formatted SFT data and then apply on-policy RL (RLOO, GRPO, DAPO) with verifiable final-answer rewards. Tool-DAPO raises pass@1 from 35.8 percent (tool-SFT) to 66.0 percent on a fresh 1024-problem held-out set, showing that RL further improves tool-calling even under sparse outcome rewards.",
+      "tags": [
+        "tool-use",
+        "RL",
+        "mathematical-reasoning",
+        "Countdown"
+      ]
+    },
+    {
+      "id": "program-learning-with-verifiable-rewards-symbolic-backpropagation-for-post-train-2026-08-31",
+      "title": "Program Learning with Verifiable Rewards: Symbolic Backpropagation for Post-Training LLMs",
+      "authors": "Vishvesh Bhat",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28421",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "PLVR learns explicit programs composed of deterministic and neural primitives by symbolic backpropagation: typed ontologies propagate required input contracts backward via type inference, yielding dense per-step verifiable rewards. On LiveCodeBench and Tau2Bench, 30B models equipped with the learned programs outperform matched-budget RL and much larger frontier models; ablating the backward pass collapses program quality, identifying credit assignment rather than the type system as the source of gain.",
+      "tags": [
+        "program-learning",
+        "verifiable-rewards",
+        "symbolic-backprop",
+        "post-training"
+      ]
+    },
+    {
+      "id": "a-formal-limitation-on-learning-human-language-from-textual-corpora-2026-08-31",
+      "title": "A Formal Limitation on Learning Human Language From Textual Corpora",
+      "authors": "Emily Cheng, Ryan Cotterell",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28560",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "Modeling language as a joint distribution over meanings, contexts and utterances, the authors derive information-theoretic upper bounds on the probability that any featurizer (including LLM hidden states) recovers intended meaning from the utterance representation alone. The bounds separate irreducible uncertainty from uncertainty resolvable only by extralinguistic context and hold for both discrete and continuous meaning spaces; experiments on artificial languages, Mandarin zero pronouns and color reference corroborate the theory.",
+      "tags": [
+        "information-theory",
+        "language-learning",
+        "formal-bounds",
+        "LLM-representations"
+      ]
+    },
+    {
+      "id": "stay-within-your-bounds-distance-guided-decoding-for-guaranteed-context-free-gra-2026-08-31",
+      "title": "Stay Within Your Bounds: Distance-Guided Decoding for Guaranteed Context-Free Grammar Compliance",
+      "authors": "Vincenzo Collura, Karim Tit, Eleonora Giunchiglia, Mike Papadakis, Maxime Cordy",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28229",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "The decoder precomputes bounded pushdown summaries that label reachability and upper-bound distance to acceptance, then uses them online for horizon-aware pruning and beam search. Every generated string is guaranteed to be accepted by the target CFG; on JSON, SQL and LTL the method simultaneously enforces syntactic validity and improves completion quality relative to existing constrained decoders.",
+      "tags": [
+        "constrained-decoding",
+        "CFG",
+        "formal-languages",
+        "structured-output"
+      ]
+    },
+    {
+      "id": "prove2me-an-open-collaborative-platform-for-scaling-math-formalization-2026-08-31",
+      "title": "Prove2Me: An Open Collaborative Platform for Scaling Math Formalization",
+      "authors": "Shuze Chen, Kunal Marwaha, Xiaoyang Lu, Henry Yuen, Tianyi Peng",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28433",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "Prove2Me lets users launch formalization missions that AI agents complete in Lean 4, with specialized harnesses and reuse mechanisms so agents can build on one another's partial proofs. The platform turns large-scale verified mathematics into a crowd-sourced human-AI collaboration whose correctness is machine-checked rather than peer-reviewed.",
+      "tags": [
+        "formalization",
+        "Lean",
+        "multiagent",
+        "math-collaboration"
+      ]
+    },
+    {
+      "id": "mail-memory-driven-adaptive-incremental-and-literature-grounded-framework-for-hy-2026-08-31",
+      "title": "MAIL: Memory-driven, Adaptive, Incremental, and Literature-grounded Framework for Hypothesis Generation in Chemistry",
+      "authors": "Mahdi Babaei, Xueshen Li, Yutao Kuang, Jolene P. Reid, Yu Gan",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.28315",
+      "type": "paper",
+      "dateAdded": "2026-08-31",
+      "summary": "MAIL treats hypothesis generation as a temporally grounded process that maintains an evolving conceptual memory path continuously reinterpreting the chemical literature. On TOMATO-Chem and a new high-novelty Nature/Science challenge set it recovers central ideas and methods of historical targets more effectively than baselines and receives the highest expert scores for scientific quality and mechanistic plausibility.",
+      "tags": [
+        "hypothesis-generation",
+        "chemistry",
+        "memory",
+        "literature-grounded"
+      ]
+    },
     {
       "id": "pilot-in-the-loop-live-self-improvement-for-long-horizon-agents-2026-08-30",
       "title": "PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents",
@@ -4887,175 +5047,6 @@
         "robustness",
         "calibration",
         "mechanistic"
-      ]
-    },
-    {
-      "id": "selective-credibility-limited-belief-update-2026-07-31",
-      "title": "Selective Credibility-Limited Belief Update",
-      "authors": "Theofanis Aravanis, Costas D. Koutras",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28523",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "The paper introduces selective credibility-limited belief update, in which a compound epistemic input is transformed relative to each source world into a weaker proxy before a credibility-limited transition is applied. It supplies semantic and axiomatic characterizations, isolates consistency-preserving and maximal consistency-preserving subclasses, and shows that both standard credibility-limited update and classical Katsuno–Mendelzon update arise as special cases, yielding a strictly more expressive unified account of source-dependent selective acceptance.",
-      "tags": [
-        "belief revision",
-        "epistemic logic",
-        "formal AI",
-        "knowledge representation"
-      ]
-    },
-    {
-      "id": "infoops-bench-a-live-information-operations-safety-benchmark-2026-07-31",
-      "title": "InfoOps Bench: A live information operations safety benchmark",
-      "authors": "Dorian Quelle, Lisa-Maria Neudert, Jonathan Bright, John Gallacher",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28503",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "The authors release a continuously updated benchmark drawn from more than 2,100 live state-backed information operations (Russian, Chinese, Iranian) that tests frontier models’ integrity against co-option. Across 17 models and four prompt framings, integrity (refusal) rates span 8.8–94.5 % independent of size; models differ sharply in fabrication versus defusing and in fact-checking rates, while Chinese models exhibit large compliance drops specifically on China-critical but factually grounded claims.",
-      "tags": [
-        "AI safety",
-        "information operations",
-        "benchmarks",
-        "LLM evaluation",
-        "misinformation"
-      ]
-    },
-    {
-      "id": "scope-supply-chain-operations-through-coupled-policies-for-end-to-end-coordinati-2026-07-31",
-      "title": "SCOPE: Supply-Chain Operations through Coupled Policies for End-to-End Coordination",
-      "authors": "Yunhao Liang, Xianqi Cao, Pujun Zhang, Yuan Qu, Yongzhi Qi, Ningxuan Kang, Max Z.J. Shen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28488",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "SCOPE represents supply-chain entities as tokens that share an operational representation and are mapped to coupled decision interfaces (assortment, sourcing, frequency, routing), so that each decision conditions on the partial plan already formed and the finished plan is scored by a single system-level utility. Instantiated on urban fresh-retail data from two large real operators, the composite policy consistently outperforms stage-wise optimizers and practice baselines by capturing the operational couplings that separate departments normally ignore.",
-      "tags": [
-        "multi-agent systems",
-        "operations research",
-        "reinforcement learning",
-        "supply chain",
-        "end-to-end learning"
-      ]
-    },
-    {
-      "id": "a-report-grounded-vision-language-foundation-model-for-colonoscopy-from-280000-r-2026-07-31",
-      "title": "A report-grounded vision-language foundation model for colonoscopy from 280000 routine reports",
-      "authors": "Jia Yu, Yan Zhu, Yili He, Zilong Wang, Xinyang Jiang, Peiyao Fu, Ruijie Yang, Tianyi Chen, Siyuan Li, Zhihua Wang, Fei Wu, Quanlin Li, Xian Yang, Pinghong Zhou, Shuo Wang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28466",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "EndoCLIP recovers 125k lesion-level image–text pairs from 280k routine colonoscopy reports and trains a vision-language foundation model that links clinical findings to frames. It outperforms general and biomedical VLMs on retrieval, structured report generation and six multi-centre classification tasks; its linear probe approaches expert endoscopist performance on benign-versus-malignant decisions in a blinded reader study, showing that routine documentation can supply scalable supervision once finding-to-frame correspondence is restored.",
-      "tags": [
-        "vision-language models",
-        "medical AI",
-        "foundation models",
-        "colonoscopy",
-        "weak supervision"
-      ]
-    },
-    {
-      "id": "leancsp-a-framework-for-certifying-constraint-reformulation-and-solving-in-lean-2026-07-31",
-      "title": "LeanCSP: A Framework for Certifying Constraint Reformulation and Solving in Lean",
-      "authors": "Pablo Manrique, Stefan Szeider",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28459",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "LeanCSP enables parametric proofs of equivalence, equisatisfiability and symmetry-breaking correctness for entire problem families inside Lean, together with certificate checking of external solver outputs via MiniZinc/SMT-LIB/OPB backends. A single verified symmetry-breaking proof per family reduces solver search by up to seven orders of magnitude while end-to-end in-Lean certification remains practical (minutes even on the largest instances), eliminating trust in the external solver.",
-      "tags": [
-        "formal verification",
-        "constraint programming",
-        "theorem proving",
-        "Lean",
-        "certified solvers"
-      ]
-    },
-    {
-      "id": "when-derived-measurements-mislead-quantifying-and-mitigating-llm-over-trust-with-2026-07-31",
-      "title": "When Derived Measurements Mislead: Quantifying and Mitigating LLM Over-Trust with Privileged-Modality Reliability Evidence",
-      "authors": "Zongheng Guo, Tao Chen, Tianli Li, Mingzhe Cui, Yang Jiao, Lei Xie, Yi Pan, Xiao Hu, Manuela Ferrario",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28421",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "The work defines derived-feature over-trust (DFOT) and introduces five estimands (COTR, CIR, CRR, ESRM, UHR) that quantify when an LLM treats a derived measurement (e.g., PPG rhythm) as a direct fact outside its validity scope. Using 50k paired PPG–ECG records and privileged distillation, a baseline mitigation improves repair and specificity metrics by several points on a locked patient-level test set while keeping utility harm low, providing a reusable evaluation target for reliability evidence.",
-      "tags": [
-        "LLM reliability",
-        "over-trust",
-        "multimodal sensing",
-        "medical AI",
-        "evaluation metrics"
-      ]
-    },
-    {
-      "id": "quantwams-calibrating-at-the-right-granularity-for-world-action-models-2026-07-31",
-      "title": "QuantWAMs: Calibrating at the Right Granularity for World Action Models",
-      "authors": "Jiacheng Zhou, Jinfan Lv, Ruixuan Li, Longtai Zhang, Yan Wang, Wenqiang Zhang, Lizhe Qi",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28405",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "QuantWAMs is a post-training quantization framework tailored to world action models that jointly predict video and actions under closed-loop rollouts. Shared-basis outlier calibration, co-training-objective saliency, and fixed-intervention rollout auditing keep W4A4 performance within 0.2–0.7 pp of FP16 on simulation and real-robot suites while cutting peak memory to ~29 % and delivering 1.4–1.6× block speedups.",
-      "tags": [
-        "quantization",
-        "world models",
-        "robotics",
-        "efficient inference",
-        "action models"
-      ]
-    },
-    {
-      "id": "glm-rag-graph-language-models-for-graph-based-retrieval-augmented-generation-2026-07-31",
-      "title": "GLM-RAG: Graph Language Models for Graph-Based Retrieval-Augmented Generation",
-      "authors": "Maya Arseven, Anette Frank, Beni Egressy, Johann Higl, Moritz Plenz",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28397",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "The paper introduces a graph-language-model retriever and systematically compares it with GNN-based and vector retrievers for single- and multi-hop graph RAG, emphasizing out-of-domain transfer. Finetuned GLM retrievers achieve state-of-the-art on two multi-hop benchmarks and generalize better than alternatives, while GNNs remain efficient for coverage and vector search dominates single-hop settings.",
-      "tags": [
-        "retrieval-augmented generation",
-        "graph neural networks",
-        "graph language models",
-        "knowledge graphs",
-        "multi-hop reasoning"
-      ]
-    },
-    {
-      "id": "when-specifications-conflict-a-symmetry-based-framework-for-measuring-llm-prefer-2026-07-31",
-      "title": "When Specifications Conflict: A Symmetry-Based Framework for Measuring LLM Preferences",
-      "authors": "Tairan Wang, Liang Zhou, Zikang Zhan, Pingchuan Yan",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28384",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "A controlled symmetry-based experimental framework constructs explicit conflicts among specifications so that LLM choices become directly observable and comparable across representation types. On a 550-instance mathematical benchmark spanning 11 function families, models exhibit a stable preference ordering (formal ≈ naturalized formal > pure natural language > I/O examples); the same framework extends to Boolean algebra, code, and clinical domains.",
-      "tags": [
-        "LLM evaluation",
-        "specification conflicts",
-        "preferences",
-        "formal methods",
-        "controllable experiments"
-      ]
-    },
-    {
-      "id": "how-benchmarks-mis-score-computer-use-agents-2026-07-31",
-      "title": "How Benchmarks Mis-Score Computer-Use Agents",
-      "authors": "Zihan Dong, Zhiyuan Ma, Zekun Wang, Yunqing Li, Zirou Liu, Ruixuan Deng, Qishi Zhan, Rui Qian",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28367",
-      "type": "paper",
-      "dateAdded": "2026-07-31",
-      "summary": "Auditing 150 public failure trajectories across five computer-use benchmarks reveals that 15.3 % of FAIL verdicts are erroneous (10.7 % evaluator false negatives, 4.7 % broken tasks). A three-tier diagnostic taxonomy shows verification/feedback and planning failures dominate genuine errors, demonstrating that scalar success rates obscure the true failure modes and motivating stage-specific design rules for more reliable CUA evaluation.",
-      "tags": [
-        "computer-use agents",
-        "benchmarks",
-        "evaluation methodology",
-        "agent reliability",
-        "oracles"
       ]
     }
   ]
