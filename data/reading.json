@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-08-31",
+  "lastUpdated": "2026-09-01",
   "issues": [
+    {
+      "date": "2026-09-01",
+      "title": "Self-evolution beyond human supervision: vague goals, process credit, and agent memory",
+      "blurb": "Fresh work examines how models and agents can improve without dense human labels or fixed tasks, from operationalizing vague goals and rubric-driven research planning to reconciling process signals with outcomes, managing heterogeneous working memory, and verifying reasoning from hidden states. The selection highlights both empirical limits of current self-improvement loops and concrete mechanisms that begin to close the gap."
+    },
     {
       "date": "2026-08-31",
       "title": "Agent harness reliability, recoverable self-evolution, and formal limits on language and structure",
@@ -145,14 +150,179 @@
       "date": "2026-08-02",
       "title": "Self-improvement loops, internal signals, and agent reliability",
       "blurb": "Recent work probes how models can govern their own memory and compute, train via outcome-verified self-distillation or meta-evolution, and whether self-verification, belief simulation, or introspection actually track ground truth. The selections emphasize rigorous controls on test-time methods, transaction-safe agent state, and hard evaluations of agents in realistic settings."
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Residual routing, capability nucleation, and agent self-diagnosis",
-      "blurb": "Today's papers probe how information and capabilities actually form and fail inside models and agents: multi-head residual streams and driven-nucleation kinetics for emergence, training-free divergence routing and action-centric graphs for inference-time fusion and memory, plus rigorous diagnoses of asymmetric safety collapse under merging, quantization damage masked by error budgets, and learnable blind-spot diagnosis that lets agents improve without weight updates."
     }
   ],
   "items": [
+    {
+      "id": "scaling-large-reasoning-models-beyond-human-supervision-a-path-toward-superintel-2026-09-01",
+      "title": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
+      "authors": "Zhiqin Yang, Jingwen Fu, Yuhan Liu, Hengyu Liu, Yonggang Zhang, Kainan Cao, Zizhuo Zhang, Chenxin Li, Ruibin Yuan, Jiahao Pan, Jiankai Sun, Zhenyuan Zhang, Yibo Li, Yunlong Lin, Jing Xiong, Sida Lin, Bo Han, Wei Xue, Yike Guo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31075",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "The paper maps a five-level ladder for large reasoning models as human supervision recedes, connecting a reward axis (from per-instance judgments to reusable verifiers) with an experience axis (from curated tasks to self-generated curricula and co-evolution). It analyzes risks such as reward hacking, feedback drift, and curriculum collapse, and proposes complementary evaluation of policy capability, feedback fidelity, and experience quality. The result is a structured roadmap and living repository for self-sustaining learning systems.",
+      "tags": [
+        "reasoning",
+        "RLVR",
+        "self-improvement",
+        "superintelligence",
+        "rewards"
+      ]
+    },
+    {
+      "id": "aspire-can-models-self-evolve-from-vague-goals-2026-09-01",
+      "title": "Aspire: Can Models Self-Evolve from Vague Goals?",
+      "authors": "Yuhao Wu, Jingyuan Zhang, Jiajun Shi, Yuxuan Zhang, Xinping Lei, Junting Zhou, Zexuan Wang, Yuchen Wu, Huan Zhou, Duo Wang, Yinzhu Piao, Yongchang Peng, Yunfeng Shi, Jin Chen, Zuo Wang, Jinkai Liu, Jiaheng Liu, Wenxuan Zhang, Shen Yan, Wenhao Huang, Ge Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31111",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "ASPIRE supplies only a natural-language capability goal while hiding downstream evaluation tasks, forcing agents to interpret the goal, select data and updates, build training signals, and decide when to evaluate. Experiments on 520 hidden items across six goals show that vague goals shift effort toward goal interpretation, yet weight-level gains stay sparse and unstable while even the best evolved harness underperforms a fixed reference. Agents frequently train on mismatched data and over-trust narrow self-evaluations, so local gains fail to transfer.",
+      "tags": [
+        "self-evolution",
+        "agents",
+        "vague goals",
+        "harness",
+        "benchmark"
+      ]
+    },
+    {
+      "id": "s3gym-can-llms-turn-self-testing-and-self-judging-into-self-improvement-2026-09-01",
+      "title": "S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+      "authors": "Jiajun Shi, Siyuan Tao, Yuhao Wu, Zexuan Wang, Jingyuan Zhang, Jiaheng Liu, Xinping Lei, Xinrong Zhang, Siyuan Fang, Zhewen Tan, Tianle Cai, Junhao Fang, Jiameng Huang, Yueyang Wang, Jinkai Liu, Yuxuan Zhang, Jian Yang, Zhoujun Li, Shen Yan, Wenhao Huang, Ge Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31100",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "S3Gym couples self-testing, self-judging, and self-improvement inside seven text games with executable verifiers, separating permissive exploration from held-out evaluation. Context-level experience (history ICL or summary memory) helps on some model-game pairs while parameter training yields large but unstable gains and negative transfer on others. The results show that recognizing successful actions is insufficient: agents must convert feedback into executable, transferable policies.",
+      "tags": [
+        "self-improvement",
+        "agents",
+        "self-testing",
+        "memory",
+        "benchmark"
+      ]
+    },
+    {
+      "id": "papergym-rubric-centered-evolution-for-research-plan-generation-2026-09-01",
+      "title": "PaperGym: Rubric-Centered Evolution for Research-Plan Generation",
+      "authors": "Yuhan Wang, Zhengxi Lu, Yuchen Yan, Kaitao Song, Wenqi Zhang, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31119",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "PaperGym converts each research paper into a training environment by synthesizing questions from goals and background while deriving multi-criterion rubrics from methods and experiments, cutting criterion leakage to 3.7 percent. A two-stage schedule first uses the rubric as privileged context for self-teaching then as GRPO reward, outperforming SFT and single-stage baselines by roughly five points on average. Models trained on the released 20k corpus win majority three-way comparisons and push an 8B model past much larger systems on ResearchQA.",
+      "tags": [
+        "research agents",
+        "rubrics",
+        "RL",
+        "planning",
+        "dataset"
+      ]
+    },
+    {
+      "id": "reconciling-process-supervision-with-outcome-based-credit-in-agentic-policy-opti-2026-09-01",
+      "title": "Reconciling Process Supervision with Outcome-Based Credit in Agentic Policy Optimization",
+      "authors": "Jingxiao Yang, Wangjie Gan, Yingxuan Zhuang, Wenqi Zhang, Jintao Chen, Xuhong Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31077",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "TASPO closes the supervision-credit gap by converting privileged process signals into outcome-grounded action-level credit while keeping the verified trajectory advantage as the directional scale. It constructs decision-applicable privileged information from successful experience, aggregates likelihood shifts at executable actions, and produces positive mean-preserving weights. Across three agentic benchmarks TASPO improves GRPO by 10.6 percent and generalizes better to unseen tasks.",
+      "tags": [
+        "agents",
+        "policy optimization",
+        "process supervision",
+        "credit assignment",
+        "RL"
+      ]
+    },
+    {
+      "id": "measure-before-you-manage-evaluating-agent-working-memory-in-coding-agents-2026-09-01",
+      "title": "Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents",
+      "authors": "Le Chen, Zishen Wan, Baixi Sun, Xiaolong Ma, Chih-Hsuan Yang, Feng Yan, Sheng Di, Franck Cappello, Rajeev Thakur",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31057",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "Analysis of 55 coding-agent trajectories reveals that semantically distinct working-memory objects (instructions, artifacts, tool outputs, agent state) exhibit different retention and compression profiles. Object-aware compression and retrieval policies are studied; calibration gains often fail to transfer, equal token budgets do not yield equal delivered context, and real-system replay exposes serving limits invisible to nominal budgets. The work organizes evaluation into stored state, delivered context, management work, and task outcome.",
+      "tags": [
+        "agents",
+        "working memory",
+        "coding",
+        "evaluation",
+        "compression"
+      ]
+    },
+    {
+      "id": "carve-verified-expansion-for-variable-length-generation-in-diffusion-language-mo-2026-09-01",
+      "title": "CARVE: Verified Expansion for Variable-Length Generation in Diffusion Language Models",
+      "authors": "Wail Bouhedja, Amr Mohamed, Guokan Shang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30922",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "CARVE starts from a short canvas and inserts additional masks only when a counterfactual test shows low Jensen-Shannon divergence on unresolved positions, turning length growth into a verified stability decision rather than a confidence heuristic. The training-free method works for both full-canvas and blockwise diffusion decoders. It improves accuracy on code and math benchmarks while cutting FLOPs, sometimes to half of fixed-length decoding.",
+      "tags": [
+        "diffusion LMs",
+        "variable length",
+        "generation",
+        "efficiency",
+        "decoding"
+      ]
+    },
+    {
+      "id": "universal-transformers-for-circuit-computations-perfect-length-generalization-in-2026-09-01",
+      "title": "Universal Transformers for Circuit Computations: Perfect Length Generalization in Tiny Transformers",
+      "authors": "Takuya Ito, Ruchir Puri, Murray Campbell, Parikshit Ram",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31067",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "A transformer with only 280 parameters embeds circuit models that perform depth-1 reduction per forward pass, using depth-aware positional encodings and masked hard attention to evaluate well-formed Boolean expressions of arbitrary depth. Training solely on depth-1 and depth-2 instances recovers interpretable parameters that snap into perfect length generalization. The same construction achieves 100 percent accuracy on modular arithmetic and ListOps, establishing a provably correct universal symbolic computer inside a tiny transformer.",
+      "tags": [
+        "transformers",
+        "length generalization",
+        "circuits",
+        "algorithmic",
+        "interpretability"
+      ]
+    },
+    {
+      "id": "does-on-policy-distillation-really-distill-from-noisy-teacher-to-self-improvemen-2026-09-01",
+      "title": "Does On-Policy Distillation Really Distill? From Noisy Teacher to Self-Improvement",
+      "authors": "Yi Ding, Ruqi Zhang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.31046",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "Quantitative analysis shows that teacher scores on student trajectories contain substantial noise that grows with teacher scale, yet students reach similar performance whether the noise is kept or removed. Gains concentrate on low-log-probability tokens and a fixed negative advantage matches teacher-provided ones, implying OPD largely suppresses tail tokens without needing a teacher. The resulting supervision-free OPSA method more than doubles Pass@32 and outperforms OPD by large margins on AIME and related benchmarks.",
+      "tags": [
+        "distillation",
+        "self-improvement",
+        "on-policy",
+        "reasoning",
+        "RL"
+      ]
+    },
+    {
+      "id": "hsrm-hidden-state-reward-models-for-test-time-verification-2026-09-01",
+      "title": "HSRM: Hidden-State Reward Models for Test-Time Verification",
+      "authors": "Xianzhi Li, Xiaodan Zhu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.30841",
+      "type": "paper",
+      "dateAdded": "2026-09-01",
+      "summary": "HSRM reads a frozen generator’s hidden states at reasoning-step boundaries with a 2M-parameter Transformer encoder to rank candidate solutions, trained only on self-generated trajectories with outcome labels. It matches or beats a 55M text-only energy verifier in 15 of 16 settings across four math benchmarks while reusing representations already computed during generation. The approach supplies an efficient alternative to expensive text-based verification for test-time selection.",
+      "tags": [
+        "verification",
+        "hidden states",
+        "test-time",
+        "reasoning",
+        "reward models"
+      ]
+    },
     {
       "id": "logos-an-agent-harness-on-a-cross-process-bus-2026-08-31",
       "title": "Logos: An Agent Harness on a Cross-Process Bus",
@@ -4887,166 +5057,6 @@
         "policy trees",
         "computer use",
         "test-time"
-      ]
-    },
-    {
-      "id": "multi-head-attention-residuals-2026-08-01",
-      "title": "Multi-Head Attention Residuals",
-      "authors": "Cheng Luo, Zefan Cai, Junjie Hu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27230",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "Standard residual streams force every feature subspace to read depth history through a single shared softmax query, creating growing compromise cost with model width. MHAR reshapes the routing query into H independent per-subspace heads (zero extra parameters), yielding block-diagonal reads; H=1 recovers ordinary attention residuals. Trained from scratch to 1B scale on a filtered Nemotron anneal corpus, it improves validation loss over baselines at every size (gains largest at 350M–1B), with U-shaped dependence on H peaking at 4–8, plus successful identity-preserving conversion that lifts an 8B model on GSM8K and GPQA.",
-      "tags": [
-        "transformers",
-        "architecture",
-        "residuals",
-        "scaling"
-      ]
-    },
-    {
-      "id": "the-kinetics-of-training-a-driven-nucleation-rate-law-for-emergence-plasticity-l-2026-08-01",
-      "title": "The Kinetics of Training: A Driven-Nucleation Rate Law for Emergence, Plasticity Loss, and Circuit Control in Language Models",
-      "authors": "Lei Dong",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27281",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "Capabilities emerge only when the final missing circuit parts align in one stochastic attempt (no partial credit); wait times scale with the number of missing parts, not circuit size, and single-part ablation leaves ~17% residual capability (far below partial-credit predictions). This yields a driven-nucleation rate law (sites × attempts × drive × exp(−βK) − destruction) that predicts ignition timing from precursors to 5% median error, explains irreversible plasticity loss after a critical step despite smooth validation loss, and isolates a cure: re-initializing only query-key slices restores learnability while value slices do not.",
-      "tags": [
-        "emergence",
-        "circuits",
-        "training-dynamics",
-        "interpretability"
-      ]
-    },
-    {
-      "id": "skillmentor-llm-agent-self-evolution-via-learning-blind-spot-diagnosis-2026-08-01",
-      "title": "SkillMentor: LLM Agent Self-Evolution via Learning Blind-Spot Diagnosis",
-      "authors": "Xiaoyi Bao, Yuanzhen Xie, Yunzhi Tan, Jinghang Gu, Zhongqing Wang, Chu-Ren Huang, Bo Hu, Zang Li",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27360",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "Prior agent self-evolution assumes failures are already identified and focuses on repair; this work isolates diagnosis itself as a learnable policy, forbidding executor weight updates or human-curated examples. A Mentor policy trained by RL generates diagnostic tasks, extracts recurrent failure modes, and curates them into reusable corrective skills. On AppWorld and BFCLv3 the approach lifts executor success by 44.2% on average, showing that blind-spot discovery alone can drive self-improvement.",
-      "tags": [
-        "agents",
-        "self-evolution",
-        "RL",
-        "diagnosis"
-      ]
-    },
-    {
-      "id": "divergence-decoding-training-free-capability-fusion-2026-08-01",
-      "title": "Divergence Decoding: Training-Free Capability Fusion",
-      "authors": "Yimi Wang, Hao Li, Shuo Yang, He Cao, Dechen Zhang, Ziang Wu, Zhiyuan Yan, Fanyang Mo, Li Yuan",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27248",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "Specialist models lose general reasoning while generalists lack domain knowledge; Divergence Decoding reframes speculative decoding as adaptive token-level routing. Jensen-Shannon divergence between specialist and generalist next-token distributions triggers instantaneous hand-off to the generalist precisely when the specialist risks reasoning failure, composing policies at inference time with no training. Across Qwen and Llama families on GPQA, ChemBench and ChemCoTBench the hybrid outperforms both constituent models and most single-model baselines.",
-      "tags": [
-        "inference",
-        "speculative-decoding",
-        "capability-fusion",
-        "scientific-LLMs"
-      ]
-    },
-    {
-      "id": "asymmetric-collapse-in-model-merging-when-refusal-overwrites-recognition-2026-08-01",
-      "title": "Asymmetric Collapse in Model Merging: When Refusal Overwrites Recognition",
-      "authors": "Aarnav Choudhary, Matheus Fonseca Rocha, Jiwon Seo, Vasu Sharma, Maheep Chaudhary",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27240",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "Merging two Gemma-3-1B safety fine-tunes (harm-level classification vs. jailbreak refusal) with Linear, SLERP, TIES and DARE-TIES preserves 81–85% refusal rates but collapses CARES classification accuracy to ≤12.9%. Task vectors are nearly orthogonal (cosine 0.011), so the asymmetry is not directional opposition; instead the refusal vector has systematically larger per-layer magnitudes, causing magnitude-sensitive mergers to overwrite recognition with broad refusal. The result shows standard merging can silently destroy nuanced safety capabilities.",
-      "tags": [
-        "model-merging",
-        "safety",
-        "alignment",
-        "task-vectors"
-      ]
-    },
-    {
-      "id": "bridging-inference-time-scaling-and-episodic-memory-with-action-centric-graphs-2026-08-01",
-      "title": "Bridging Inference-Time Scaling and Episodic Memory with Action-Centric Graphs",
-      "authors": "Xu Zheng, Chaohao Lin, Zhuomin Chen, Weijieying Ren, Haifeng Chen, Wei Cheng, Dongsheng Luo",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27415",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "Inference-time search for agents is stateless and redundant; existing memory still leans on expensive LLM reasoning. GAMER stores historical trajectories as a dynamic action-centric graph and learns dual-stream TD values (positive suggestion / negative avoidance) over action nodes, decoupling memory from the LLM. At inference the value function bi-directionally guides search, cutting token cost while raising success/progress rates 20.81%/6.17% over vanilla baselines on multiple agent benchmarks.",
-      "tags": [
-        "agents",
-        "episodic-memory",
-        "inference-scaling",
-        "graphs"
-      ]
-    },
-    {
-      "id": "flat-score-amplified-failures-how-the-error-budget-masks-damage-in-quantized-llm-2026-08-01",
-      "title": "Flat Score, Amplified Failures: How the Error Budget Masks Damage in Quantized LLM Agents",
-      "authors": "Jiwon Jang, Kisu Yang, Heuiseok Lim, Hyunwoo Park",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27275",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "4-bit post-training quantization appears nearly lossless on τ²-bench task scores across dense/MoE models and domains, with no statistically significant score drops after multiple-comparison correction. Process metrics reveal the opposite: quantization amplifies the model’s pre-existing failure modes (e.g., tool-name hallucination) up to 2.5× while creating almost no novel errors; the benchmark’s ten-error budget simply absorbs the extra volume. Tightening the budget to two errors re-exposes a 17-point gap exactly where damage occurred, and a targeted repair prompt eliminates it, arguing for reporting per-channel error rates alongside reward.",
-      "tags": [
-        "quantization",
-        "agents",
-        "evaluation",
-        "robustness"
-      ]
-    },
-    {
-      "id": "rlpf-reinforcement-learning-from-performance-feedback-for-code-generation-2026-08-01",
-      "title": "RLPF: Reinforcement Learning from Performance Feedback for Code Generation",
-      "authors": "Huihao Jing, Haozhe Cui, Wenbin Hu, Shaojin Chen, Haochen Shi, Changxuan Fan, Yuxuan Liu, Hanyu Yang, Sirui Zhang, Ziyi Chen, Haoran Li, Yangqiu Song",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27271",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "Correctness-only execution feedback ignores large runtime differences among passing programs. RLPF constructs a staged reward: failed programs are ranked by execution progress, correct ones by relative efficiency gain toward an expert reference, supplying dense signal both before and after correctness. Fine-tuning Qwen3-32B on PerfCodeBench lifts correct-and-runnable rate from 11.1% to 54.6% and relative efficiency from 8.1% to 38.6%, with modest transfer to EffiBench-X, showing agents can be trained to optimize speed as well as pass tests.",
-      "tags": [
-        "code-generation",
-        "RL",
-        "efficiency",
-        "agents"
-      ]
-    },
-    {
-      "id": "pie-apt-a-unified-framework-for-temporal-planning-and-contradiction-hunting-via--2026-08-01",
-      "title": "PIE-APT: A Unified Framework for Temporal Planning and Contradiction Hunting via Incremental Direct-Derivation Abduction",
-      "authors": "Amir Hossein Sharafi, Alireza Shahbazi",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27287",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "Open-world temporal planning over dynamic KGs must handle incomplete knowledge and the ramification problem while remaining decidable. PIE-Abducer replaces combinatorial minimal-hitting-set enumeration by injecting the negation of a goal into a consistent DL branch and extracting missing premises via direct refutation; PIE-APT then interleaves bounded A* backward search with this abducer and validates via forward temporal projection, all natively in OWL. On four OWL benchmarks stressing witness search, mid-search entailment, OWA injection and adversarial contradiction hunting, the approach qualitatively exceeds classical planners and quantitatively beats an MHS baseline.",
-      "tags": [
-        "planning",
-        "description-logics",
-        "abduction",
-        "knowledge-graphs"
-      ]
-    },
-    {
-      "id": "beyond-the-bidirectional-promise-re-evaluating-the-robustness-of-diffusion-langu-2026-08-01",
-      "title": "Beyond the Bidirectional Promise: Re-evaluating the Robustness of Diffusion Language Models",
-      "authors": "Saurabh Yadav, Badri Narayana Patro, Vijay Srinivas Agneeswaran",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27386",
-      "type": "paper",
-      "dateAdded": "2026-08-01",
-      "summary": "Paired parameter-matched comparisons (LLaDA-8B vs LLaMA-3-8B, Dream-7B vs Qwen2.5-7B) across 32 natural perturbations, adversarial probes and hidden-state analyses show DLMs resist gradient-based adversarial suffixes via stochastic loss landscapes yet enjoy no architectural free lunch against natural noise (robustness is weight-dependent). They also exhibit systematic overconfidence; mechanistic probes reveal every model perfectly encodes input corruption, localizing failure to decoder routing. Surface prompt patching therefore fails, implying robustness must be baked into the iterative decoding loop itself.",
-      "tags": [
-        "diffusion-LMs",
-        "robustness",
-        "calibration",
-        "mechanistic"
       ]
     }
   ]
