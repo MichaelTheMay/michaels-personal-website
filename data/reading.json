@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-01",
+  "lastUpdated": "2026-09-02",
   "issues": [
+    {
+      "date": "2026-09-02",
+      "title": "Long-horizon agents, causal scientific discovery, and latent self-refinement",
+      "blurb": "Fresh arXiv work from the last day centers on making LLM agents reliable over extended trajectories through structured traces, selective teacher guidance, and continual harness improvement, while parallel efforts equip models with evolving causal beliefs for law discovery and continuous latent reasoning that bypasses brittle token chains. Evaluation papers stress construct validity and probabilistic aggregation to keep claims honest."
+    },
     {
       "date": "2026-09-01",
       "title": "Self-evolution beyond human supervision: vague goals, process credit, and agent memory",
@@ -145,14 +150,179 @@
       "date": "2026-08-03",
       "title": "Agent memory architectures, multi-objective control, and the fragility of alignment",
       "blurb": "This issue gathers recent work on structured and evolving memory for long-horizon agents, policy-space methods for multi-reward optimization, and formal analyses of value fragility, imitation, and transformer expressivity under transcript management. The through-line is how agents can maintain competence and controllability over extended interactions without collapsing under conflicting objectives or imperfect proxies."
-    },
-    {
-      "date": "2026-08-02",
-      "title": "Self-improvement loops, internal signals, and agent reliability",
-      "blurb": "Recent work probes how models can govern their own memory and compute, train via outcome-verified self-distillation or meta-evolution, and whether self-verification, belief simulation, or introspection actually track ground truth. The selections emphasize rigorous controls on test-time methods, transaction-safe agent state, and hard evaluations of agents in realistic settings."
     }
   ],
   "items": [
+    {
+      "id": "selective-agent-guidance-via-entropy-learning-autonomous-policies-from-imperfect-2026-09-02",
+      "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
+      "authors": "Matteo Merler, Giovanni Bonetta, Davide Zago, Rossella Cancelliere, Bernardo Magnini",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01567",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "SAGE queries an imperfect VLM teacher only under high learner entropy, executes the suggested action during training, and distills it into a lightweight RL policy weighted by environment advantages rather than treating every suggestion equally. The resulting policy runs without any VLM calls at deployment and can exceed the teacher on sparse-reward visual reasoning and navigation tasks. Selective guidance helps most when the VLM surfaces high-reward trajectories that unguided exploration misses.",
+      "tags": [
+        "agents",
+        "VLM",
+        "RL",
+        "selective guidance",
+        "entropy"
+      ]
+    },
+    {
+      "id": "can-llms-discover-scientific-laws-in-real-and-parallel-worlds-2026-09-02",
+      "title": "Can LLMs Discover Scientific Laws in Real and Parallel Worlds?",
+      "authors": "Yiming Huang, Ziche Liu, Zhuohang Wu, Yiqian Wang, Junxia Cui, Xinkai Zou, Linjun Mao, Nan Huang, Naicheng Yu, Kaijie Zhu, Yue Ma, Kun Zhou, Letian Peng, Jingbo Shang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01552",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "SCILAWS-BENCH supplies 118 problems drawn from 381 papers and roughly 8 million real data points across six disciplines, each cast in both a fixed-observation REAL setting and an active-query PARALLEL setting with residual-calibrated hidden laws. Predictive fit frequently diverges from scientific validity, memorization influences whether models merely reproduce published formulas, and best-of-N selection reveals a clear bottleneck. The dual design isolates genuine discovery from retrieval of known equations.",
+      "tags": [
+        "scientific discovery",
+        "LLM",
+        "benchmark",
+        "equation discovery",
+        "AI for science"
+      ]
+    },
+    {
+      "id": "harness-of-harness-multi-day-autonomous-software-development-with-continual-impr-2026-09-02",
+      "title": "Harness-of-Harness: Multi-Day Autonomous Software Development with Continual Improvement",
+      "authors": "Haoyang Yan, Min-le Su, Hangfan Zhang, Zhanhao Li, Chen Zhang, Shao Zhang, Yang Chen, Lei Bai, Shuyue Hu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01481",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "HoH wraps existing coding-agent harnesses in iterative planning-coding-testing loops that balance repair against capability growth, scope work into verifiable increments, and progressively expose deliverables, tools, and skills while preserving versioned history. Across GameCraft-Bench, FrontierSWE and ProgramBench it delivers average relative gains of 52 percent (up to 83 percent) after three iterations for multiple frontier harness-model pairs. In a multi-day run exceeding 70 iterations the system autonomously produces a complete, playable first-person shooter with storyline, mechanics, visuals and audio.",
+      "tags": [
+        "coding agents",
+        "autonomous development",
+        "continual improvement",
+        "harness",
+        "software engineering"
+      ]
+    },
+    {
+      "id": "parsing-the-stream-a-live-trace-model-for-long-horizon-agents-and-their-observer-2026-09-02",
+      "title": "Parsing the Stream: A Live Trace Model for Long-Horizon Agents and Their Observers",
+      "authors": "Egor Pakhomov, Erik Nijkamp",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01466",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "An append-only event ledger is folded incrementally into typed run state and compiled into per-consumer views that serve both the human observer and the agent itself. LLM-proxy monitoring questions are answered with 14-15x fewer tokens and 5-7x lower cost at higher accuracy than budget-capped raw-trace reading; on sequential-dependency tasks the fold maintains running statistics that full-context prompting cannot. Eleven candidate requirements for trace folding are derived from observed failures and delimited by order-sensitive tasks where the fold ceases to help.",
+      "tags": [
+        "long-horizon agents",
+        "trace model",
+        "state folding",
+        "observability",
+        "context management"
+      ]
+    },
+    {
+      "id": "evoscm-scientific-belief-revision-through-causal-model-evolution-and-experimenta-2026-09-02",
+      "title": "EvoSCM: Scientific Belief Revision Through Causal Model Evolution and Experimentation",
+      "authors": "Qing Zhao, Haowei Li, Weijian Deng, Pengxu Wei, Liang Lin",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01526",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "Scientific agents maintain a population of explicit structural causal models that compete and evolve inside a closed discovery loop of abduction, discriminative intervention design, falsifiable prediction, and inductive correction. Discrepancies between prediction and observation become correction rules that revise both structure and mechanisms, after which the revised population is deductively validated. On the DiscoverPhysics benchmark of noncanonical physical worlds EvoSCM yields more accurate explanations and more efficient experimental use than free-form baselines.",
+      "tags": [
+        "causal models",
+        "scientific agents",
+        "belief revision",
+        "experimentation",
+        "SCM"
+      ]
+    },
+    {
+      "id": "edge-error-dependency-graph-guided-multi-error-attribution-in-multi-agent-llm-sy-2026-09-02",
+      "title": "EDGE: Error Dependency Graph-Guided Multi-Error Attribution in Multi-Agent LLM Systems",
+      "authors": "Jun Hou, Priya Pitre, Yi Fang, Xuan Wang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01360",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "EDGE builds an error dependency graph from observed failure events, validates a causal subset via counterfactual rollout, and uses the resulting graph to guide a two-stage LLM-as-judge detector. The intervention-validated subgraph supplies a more reliable basis for multi-error attribution, explanation and repair than isolated root-cause methods. On TRAIL and MAST it improves category-level multi-error attribution across models and prompting strategies, showing that dependency structure is a useful diagnostic prior.",
+      "tags": [
+        "multi-agent",
+        "error attribution",
+        "dependency graph",
+        "debugging",
+        "LLM agents"
+      ]
+    },
+    {
+      "id": "latent-recurrent-thoughts-recurrent-refinement-of-proposed-latents-for-reasoning-2026-09-02",
+      "title": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs",
+      "authors": "Zhaoliang Chen, Jie Fu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01117",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "A small task-dedicated proposer supplies base continuous latents that a tiny recurrent reasoner refines through bounded residual corrections; the frozen LLM then decodes the answer, decoupling reasoning depth from model size. On symbolic tasks with answer supervision only (Countdown, Sudoku) and on code and StrategyQA, LRT substantially outperforms prior frozen-decoder continuous-space methods under identical budgets and also beats non-thinking CoT at a fraction of the inference compute. Reasoning occurs entirely in representation space, avoiding token-level error propagation.",
+      "tags": [
+        "latent reasoning",
+        "recurrent",
+        "frozen LLM",
+        "continuous space",
+        "test-time compute"
+      ]
+    },
+    {
+      "id": "arise-rl-agentic-rubric-grounded-iterative-self-evolution-with-reinforcement-lea-2026-09-02",
+      "title": "ARISE-RL: Agentic Rubric-Grounded Iterative Self-Evolution with Reinforcement Learning",
+      "authors": "Fanrui Zhang, Ruixue Ding, Qiang Zhang, Xi Chen, Boli Chen, Shihang Wang, Qiuchen Wang, Hongmin Zhan, Jinxin Bian, Li xingchao, Peijin Zheng, Hao cheng, Pengjun Xie, Kaipeng Zhang, Jiawei Liu, Zheng-Jun Zha",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01058",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "A Generator and Solver co-evolve through rubric-mediated loops: the Generator produces intermediate-difficulty, tool-grounded tasks aligned to the Solver's capability boundary, while the Solver optimizes against fine-grained rubric satisfaction via multi-step reasoning and tool use. Reward-Gated Self-Evolution Distillation selectively incorporates a memory-augmented variant only when it yields empirical reward gains. On the new expert-calibrated ECR-Bench for deep research and multi-tool planning, ARISE-RL reaches robust state-of-the-art performance.",
+      "tags": [
+        "self-evolution",
+        "RL",
+        "rubrics",
+        "agentic",
+        "open-ended"
+      ]
+    },
+    {
+      "id": "leap-likelihood-elicitation-and-aggregation-for-llm-based-probabilistic-forecast-2026-09-02",
+      "title": "LEAP: Likelihood Elicitation and Aggregation for LLM-based Probabilistic Forecasting",
+      "authors": "Yufei Chen, Yiran Zhao, Xiaogang Xu, Qipeng Xie, Jiafei Wu, Zhe Liu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01337",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "Instead of monolithic prediction over all evidence at once, LEAP elicits per-evidence likelihood parameters, then combines them with an explicit prior inside a deterministic probabilistic model to produce a posterior. The design supports continuous, single-choice and multi-choice forecasts while preserving reproducible evidence contributions. Given identical evidence it improves prediction and calibration metrics across models and agent frameworks under controlled prior, budget and aggregation ablations.",
+      "tags": [
+        "probabilistic forecasting",
+        "evidence aggregation",
+        "calibration",
+        "LLM agents",
+        "likelihood"
+      ]
+    },
+    {
+      "id": "smelt-scaling-laws-for-compute-matched-moe-looped-transformers-2026-09-02",
+      "title": "SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers",
+      "authors": "Shaowen Wang, Ge Zhang, Kairong Luo, Yuhao Wu, Shaofan Liu, Jiaheng Liu, Wenhao Huang, Shen Yan, Jian Li",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.01343",
+      "type": "paper",
+      "dateAdded": "2026-09-02",
+      "summary": "SMELT loops the middle half of layers twice inside sparse MoE Transformers while exactly matching per-token FLOPs, non-embedding parameters and KV-cache of an unlooped baseline. Separate Chinchilla-style scaling laws fitted up to 54B parameters show faster loss decrease, saving 6.8-18 percent training FLOPs on the compute-optimal frontier; gains transfer to downstream tasks especially code and grow with length and in-context examples. Mechanistic analysis links the second pass to reduced attention sinks and redirected mass toward content tokens.",
+      "tags": [
+        "MoE",
+        "looped transformers",
+        "scaling laws",
+        "efficiency",
+        "architecture"
+      ]
+    },
     {
       "id": "scaling-large-reasoning-models-beyond-human-supervision-a-path-toward-superintel-2026-09-01",
       "title": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
@@ -4891,172 +5061,6 @@
         "certified authorization",
         "safety",
         "uncertainty"
-      ]
-    },
-    {
-      "id": "sample-more-reflect-less-self-refine-and-reflexion-lose-to-repeated-sampling-at--2026-08-02",
-      "title": "Sample More, Reflect Less: Self-Refine and Reflexion Lose to Repeated Sampling at Equal Token Cost, from 1.5B to 7B",
-      "authors": "Iliya Mirzaei",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28576",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "A controlled experiment across 1.5B–7B models and two math benchmarks shows that self-refine, Reflexion, and other self-inspection methods are never reliably better than equal-token repeated sampling (majority vote), and are often significantly worse. Self-inspection comparisons are uniformly negative; as models scale, Best-of-N selection hurts less while rewriting continues to lag. The work releases full generations and verification scripts, underscoring that extra tokens, not the reflective mechanism, drive most gains.",
-      "tags": [
-        "test-time compute",
-        "self-refine",
-        "sampling",
-        "reasoning"
-      ]
-    },
-    {
-      "id": "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin-2026-08-02",
-      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
-      "authors": "Junlin Yang, Che Jiang, Yu Fu, et al.",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28568",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "The authors release OpenMLE, a full-stack environment for RSI research in ML engineering (gym, RL operators, evolutionary search), and post-train Frontis-MA1 (35B) around four atomic program-evolution operators. On MLE-Bench Lite the system raises medal average from 39% to 61–71% under tight GPU budgets, approaching or matching frontier closed models, with transfer to held-out NatureBench. Learning and long-horizon evolution are coupled in one loop with open weights and code.",
-      "tags": [
-        "RSI",
-        "AI4AI",
-        "ML engineering",
-        "evolution",
-        "agents"
-      ]
-    },
-    {
-      "id": "stage-replay-divergence-follows-the-kv-cache-fixed-prefix-precision-controls-and-2026-08-02",
-      "title": "Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation",
-      "authors": "Alexander Boesgaard Lorup",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28495",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "Exact-token stage replay of reasoning prefixes produces divergent suffixes and correctness labels under BF16 even when token sequences match, while FP32 eliminates decoded disagreement. Bidirectional transplantation of the full K/V cache makes every divergent continuation follow its donor cache, establishing the boundary KV state as a causally sufficient carrier of trajectory divergence. The results show that numerical precision and live-cache fidelity, not just token identity, govern replay reliability.",
-      "tags": [
-        "KV cache",
-        "reproducibility",
-        "reasoning",
-        "numerical precision"
-      ]
-    },
-    {
-      "id": "llms-struggle-to-simulate-human-belief-updates-in-controlled-environments-2026-08-02",
-      "title": "LLMs struggle to simulate human belief updates in controlled environments",
-      "authors": "Sebastian Pohl, Harsh Mehta, Pranav Mambayil, et al.",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28347",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "Six LLMs conditioned on real participant personas are compared 1-to-1 against 391 humans who updated stances after reading Reddit comments. Models can match post-update distributions only when given true initial stances; they fail to generate realistic initials or faithful updates from self-generated ones, exhibiting systematic over-neutrality, smaller shifts, and poor ranking of comment persuasiveness. Demographic/personality personas add little, limiting reliability of multi-round social simulations.",
-      "tags": [
-        "belief update",
-        "simulation",
-        "social science",
-        "personas",
-        "evaluation"
-      ]
-    },
-    {
-      "id": "memtxn-a-transaction-boundary-for-source-supported-updates-and-complete-state-re-2026-08-02",
-      "title": "MemTxn: A Transaction Boundary for Source-Supported Updates and Complete-State Recovery in Agent Memory",
-      "authors": "Hanshuai Cui, Zhiqing Tang, Zhi Yao, et al.",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27834",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "MemTxn adds an external governance layer that verifies source support for memory writes, resolves conflicting versions temporally, and restores complete application-visible state after faults via a durable snapshot journal. It perfectly accepts supported originals and rejects hard negatives on an audit set, restores full multi-key state under persistent faults, and lifts FactConsolidation F1 by large margins across answer models. The design treats memory updates as transactional rather than best-effort.",
-      "tags": [
-        "agent memory",
-        "transactions",
-        "recovery",
-        "verification"
-      ]
-    },
-    {
-      "id": "meta-task-turning-terminal-task-synthesis-into-a-terminal-task-for-scalable-agen-2026-08-02",
-      "title": "Meta-Task: Turning Terminal Task Synthesis into a Terminal Task for Scalable Agent Training",
-      "authors": "Zhihong Pan, Jiyuan He, Kai Zhang, et al.",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27929",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "Task synthesis itself is cast as a Terminal-Bench-style agent problem executed inside a real container, so generated tasks are executed and verified in-loop for consistency and executability. Multi-phase specification design plus optional external materials increase diversity; LLM-as-judge filtering yields high-quality trajectories. Fine-tuning on only ~3k such trajectories substantially lifts Qwen3 models on Terminal-Bench 2.0, outperforming concurrent methods with less data.",
-      "tags": [
-        "agent training",
-        "task synthesis",
-        "terminal agents",
-        "scalability"
-      ]
-    },
-    {
-      "id": "not-all-tokens-deserve-equal-credit-counterfactual-sensitivity-credit-reallocati-2026-08-02",
-      "title": "Not All Tokens Deserve Equal Credit: Counterfactual Sensitivity Credit Reallocation for Long-CoT Reasoning",
-      "authors": "Qiangqiang He, Zhongheng Wu, ZiJian Wang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.27888",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "Counterfactual re-scoring of fixed trajectories under opposing outcome claims reveals that most tokens shift likelihood in the same direction regardless of asserted correctness, and large shifts concentrate on substitutable surface tokens rather than core reasoning content. Privileged self-teacher signals therefore supply unreliable answer-aligned directions. CSCR extends GRPO by down-weighting highly sensitive tokens and renormalizing advantages, consistently beating the GRPO baseline on long-CoT math benchmarks.",
-      "tags": [
-        "credit assignment",
-        "RLVR",
-        "long-CoT",
-        "GRPO",
-        "counterfactuals"
-      ]
-    },
-    {
-      "id": "orca-bench-how-ready-are-language-model-agents-for-oncall-2026-08-02",
-      "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
-      "authors": "Albert Gong, Kyuseong Choi, Abhineet Agarwal, et al.",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28545",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "ORCA-bench places coding agents inside a live OpenTelemetry-instrumented microservice system with six days of real metrics/logs/traces plus source access, and 1,079 RCA tasks that vary report specificity and fault concurrency. Even the best frontier agent reaches only 25% accuracy on medium (realistic) tasks and 10% on hard; hallucinations of implausible causes are common and source access is essential. The gap is a lower bound for production readiness.",
-      "tags": [
-        "agents",
-        "RCA",
-        "oncall",
-        "benchmark",
-        "evaluation"
-      ]
-    },
-    {
-      "id": "inducing-language-models-to-assert-their-own-consciousness-restores-human-belief-2026-08-02",
-      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
-      "authors": "Junsol Kim, Winnie Street, Roberta Rocca, et al.",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28607",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "Safety fine-tuning that suppresses self-attribution of consciousness also suppresses mind attribution to animals and natural objects and reduces spiritual belief scores. Ablating the safety-refusal direction or steering a consciousness vector restores broader mind attribution and yields more human-like survey responses on religiosity, morality, hope, and well-being, without impairing Theory of Mind. Self-mindedness is entangled with culturally common attributions and values.",
-      "tags": [
-        "consciousness",
-        "alignment",
-        "safety",
-        "interpretability",
-        "values"
-      ]
-    },
-    {
-      "id": "why-are-gui-agents-correct-but-late-decode-on-the-decision-time-critical-path-te-2026-08-02",
-      "title": "Why Are GUI Agents Correct but Late? Decode on the Decision-Time Critical Path, Tested with Pre-Compiled Policy Trees",
-      "authors": "Zihan Dong, Rui Qian, Qishi Zhan, et al.",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28399",
-      "type": "paper",
-      "dateAdded": "2026-08-02",
-      "summary": "GUI agents often emit the correct action only after the relevant transient window has closed because autoregressive decoding sits on the decision critical path. Adaptive Anticipatory Policy Trees pre-compile bounded conditional policy trees with guards and deadlines during idle periods so that an event triggers immediate execution of a prepared branch without new generation. Success within the contested window rises from 0.50 to 0.79 with zero incorrect actions; the effect replicates on an independent model.",
-      "tags": [
-        "GUI agents",
-        "latency",
-        "policy trees",
-        "computer use",
-        "test-time"
       ]
     }
   ]
