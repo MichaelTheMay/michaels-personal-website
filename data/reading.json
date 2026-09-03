@@ -3,18 +3,18 @@
   "issues": [
     {
       "date": "2026-09-03",
-      "title": "Declarative attention, open world models, and process rewards for agents",
-      "blurb": "Fresh results show language models can declare where to attend, open pipelines make long-horizon interactive video world models reproducible, and process-level rewards plus distilled operational skills raise agent reliability while cutting evaluation cost."
+      "title": "Control planes for agents you already run",
+      "blurb": "Five GitHub-native harnesses power users actually wire around their coding agents: long-horizon control, sandboxed workers, context compression, and a Go binary that repairs its own code. None of these are the usual terminal chatbots."
     },
     {
       "date": "2026-09-02",
-      "title": "Long-horizon agents, causal scientific discovery, and latent self-refinement",
-      "blurb": "Fresh arXiv work from the last day centers on making LLM agents reliable over extended trajectories through structured traces, selective teacher guidance, and continual harness improvement, while parallel efforts equip models with evolving causal beliefs for law discovery and continuous latent reasoning that bypasses brittle token chains. Evaluation papers stress construct validity and probabilistic aggregation to keep claims honest."
+      "title": "Runtimes, memory, and proof that the agent did the work",
+      "blurb": "The interesting layer this week is underneath the model: a runtime agents live on, graph memory that survives sessions, a fleet ADE, computer-use drivers, and a harness that checks the artifacts instead of the transcript."
     },
     {
       "date": "2026-09-01",
-      "title": "Self-evolution beyond human supervision: vague goals, process credit, and agent memory",
-      "blurb": "Fresh work examines how models and agents can improve without dense human labels or fixed tasks, from operationalizing vague goals and rubric-driven research planning to reconciling process signals with outcomes, managing heterogeneous working memory, and verifying reasoning from hidden states. The selection highlights both empirical limits of current self-improvement loops and concrete mechanisms that begin to close the gap."
+      "title": "Clone-and-run loops from the research stack",
+      "blurb": "A 100-line SWE agent, an open computer-use desktop, an MCP runtime, a multi-CLI orchestrator, and DeepCode's agent harness. These are repos you clone, not products that want a seat at your IDE."
     },
     {
       "date": "2026-08-31",
@@ -154,514 +154,403 @@
   ],
   "items": [
     {
-      "id": "language-models-can-control-their-own-attention-2026-09-03",
-      "title": "Language Models Can Control Their Own Attention",
-      "authors": "Namgyu Ho, Huzama Ahmad, Woosung Koh, Se-Young Yun, Tal Schuster, Cicero Nogueira dos Santos",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02737",
-      "type": "paper",
-      "dateAdded": "2026-09-03",
-      "summary": "The authors introduce Declarative Attention, a protocol in which the model itself emits mode tags inside its chain of thought to select global, focused, or local attention over the KV cache. The inference engine treats these declarations like tool calls and skips most cache reads. Zero-shot evaluation on 15 long-context tasks with Gemma-4-31B and Qwen-3.6-27B cuts attended tokens by 52% and 31% respectively, with only 1.27 and 2.75 point accuracy drops that shrink further with scale.",
+      "title": "LoopX",
+      "authors": "huangruiteng",
+      "url": "https://github.com/huangruiteng/loopx",
+      "type": "harness",
+      "summary": "A long-horizon control plane that keeps coding agents on durable, governed work instead of one-shot chats. Power users treat it as the supervisor, not another model.",
+      "usecase": "Use it to keep an overnight refactor alive across tool crashes, with a human gate on the risky steps.",
       "tags": [
-        "attention",
-        "long-context",
-        "inference",
-        "sparse-attention",
-        "KV-cache"
-      ]
-    },
-    {
-      "id": "solarwm-open-data-and-scalable-training-for-long-horizon-video-world-models-2026-09-03",
-      "title": "SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models",
-      "authors": "Junchao Huang, Guian Fang, Shengju Qian, Xianghao Kong, Zhuoran Zhao, Wei Huang, Yihua Du, Zixin Zhang, Justin Cui, Yuchao Gu, Yukang Chen, Xinting Hu, Tianyu He, Shaoshuai Shi, Zhuotao Tian, Xin Wang, Mike Zheng Shou, Li Jiang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02886",
-      "type": "paper",
-      "dateAdded": "2026-09-03",
-      "summary": "SolarWM releases a reconfigurable multi-source data engine that unifies 1.43 million clips from heterogeneous datasets into a frame-aligned contract of observations, metric cameras, captions, and provenance. A shared three-stage recipe (bidirectional adaptation, teacher-forced autoregressive init, distribution matching distillation) produces four backbone-native causal models from 5B to 33B that support real-time interactive rollouts lasting minutes to hours after training only on 5-second sequences. Full data, pipeline, weights, and framework are open-sourced for reproducible interactive world-model research.",
-      "tags": [
-        "world-models",
-        "video",
-        "open-source",
+        "control plane",
         "long-horizon",
-        "interactive"
-      ]
-    },
-    {
-      "id": "post-training-language-models-for-gold-medal-performance-in-coding-competitions-2026-09-03",
-      "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
-      "authors": "Aleksander Ficek, Sean Narenthiran, Mehrzad Samadi, Somshubra Majumdar, Boris Ginsburg",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02849",
-      "type": "paper",
+        "orchestration"
+      ],
       "dateAdded": "2026-09-03",
-      "summary": "An end-to-end pipeline of curated problems, synthetic reasoning traces, SFT, and RL produces Nemotron-3 coding specialists. GenCorrect, a feedback-driven test-time loop that generates, evaluates, and refines solutions, lifts Nano-CC past the IOI 2025 gold threshold. A competition-tuned Ultra-CC system evaluated live under IOI 2026 human constraints scores 535.4/600, exceeding both the gold cutoff and the top human score of 498.27, the first reported AI system to outscore the highest human contestant on an IOI set.",
-      "tags": [
-        "coding",
-        "RL",
-        "post-training",
-        "test-time-compute",
-        "competitions"
-      ]
+      "returning": false,
+      "source": "GitHub",
+      "id": "loopx-2026-09-03"
     },
     {
-      "id": "repo-to-skill-distilling-github-repositories-into-ai4ai-skills-2026-09-03",
-      "title": "Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills",
-      "authors": "Jianlyu Chen, Yuyang Hu, Hongjin Qian, Jiawei Liu, Wenqing Wei, Xiaolong Chen, Defu Lian, Zhicheng Dou, Chaozhuo Li, Qiwei Ye, Zheng Liu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02749",
-      "type": "paper",
+      "title": "Omnigent",
+      "authors": "omnigent-ai",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "type": "harness",
+      "summary": "Open-source meta-harness: one orchestrator that fans work across several coding agents. Born June 2026, already the loudest new control plane on GitHub.",
+      "usecase": "Use it to run three different coding agents on the same ticket and merge the first one that lands a green test.",
+      "tags": [
+        "meta-harness",
+        "orchestration",
+        "open source"
+      ],
       "dateAdded": "2026-09-03",
-      "summary": "DisCo is a skill-powered research agent that distills operational know-how from repositories into compact verified skills, both task-agnostically (yielding the 5,000+ skill AREX library from 1,000 ML repos) and task-orientedly. With backbone, harness, and budget fixed, the skill-equipped agent gains 134% on MLE-bench, 34% on PaperBench, and solid lifts on FrontierCS and PassNet over the identical agent without skills. The gains come purely from reusable operating context rather than larger models or more search.",
-      "tags": [
-        "agents",
-        "skills",
-        "distillation",
-        "ML-research",
-        "repositories"
-      ]
+      "returning": false,
+      "source": "GitHub",
+      "id": "omnigent-2026-09-03"
     },
     {
-      "id": "cliff-learning-process-rewards-from-the-first-mistake-2026-09-03",
-      "title": "Cliff: Learning Process Rewards from the First Mistake",
-      "authors": "Peixuan Han, Runhui Wang, Ketan Ramaneti, Jie Hao, Gerald Friedland, Chris Kong",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02817",
-      "type": "paper",
+      "title": "Warren",
+      "authors": "jayminwest",
+      "url": "https://github.com/jayminwest/warren",
+      "type": "harness",
+      "summary": "Treats coding agents as infrastructure, not terminal sessions. Isolation, lifetimes, and scheduling so a fleet of agents looks like a job queue.",
+      "usecase": "Use it to fire 20 isolated agent jobs against a monorepo without them trampling each other's working trees.",
+      "tags": [
+        "sandbox",
+        "fleet",
+        "isolation"
+      ],
       "dateAdded": "2026-09-03",
-      "summary": "Cliff uses an off-the-shelf teacher LLM to locate the first mistake in each RLVR rollout, splitting it into a correct prefix and incorrect suffix, then assigns positive token-level advantages before the cliff and negative ones after. Across 12 scenarios it outperforms on-policy distillation by 15% and standard GRPO by 7%, even with modest teachers. The method supplies dense process supervision without a specialized process reward model or identical teacher-student reasoning styles.",
-      "tags": [
-        "RLVR",
-        "process-rewards",
-        "reasoning",
-        "reward-shaping",
-        "LLM-post-training"
-      ]
+      "returning": false,
+      "source": "GitHub",
+      "id": "warren-2026-09-03"
     },
     {
-      "id": "discriminative-world-models-for-web-agents-2026-09-03",
-      "title": "Discriminative World Models for Web Agents",
-      "authors": "Kelvin Li, Dhruv Pendharkar, Anish Pahilajani, Chuyi Shang, Leon Oks, Leonid Karlinsky, Rogerio Feris, Trevor Darrell, Roei Herzig",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02885",
-      "type": "paper",
+      "title": "context-mode",
+      "authors": "mksglu",
+      "url": "https://github.com/mksglu/context-mode",
+      "type": "tool",
+      "summary": "Context-window surgery for coding agents. Sandboxes tool output so the model sees the signal instead of a 40k-token log.",
+      "usecase": "Use it when your agent keeps blowing the window on build logs and you need the loop to survive a real compile.",
+      "tags": [
+        "context",
+        "tool output",
+        "coding agents"
+      ],
       "dateAdded": "2026-09-03",
-      "summary": "Instead of supervised next-state prediction, the authors train world models with a predicted-state matching objective that forces predicted representations to discriminate the true next state from those of alternative actions. Models trained on branching WebArena trajectories outperform supervised next-state baselines on a held-out matching benchmark and improve PRM-style action ranking on WebPRMBench. At test time the discriminative world model raises end-to-end success on WebArena-Lite.",
-      "tags": [
-        "web-agents",
-        "world-models",
-        "discriminative",
-        "action-selection",
-        "PRM"
-      ]
+      "returning": false,
+      "source": "GitHub",
+      "id": "context-mode-2026-09-03"
     },
     {
-      "id": "safeevolve-harness-policy-co-evolution-from-agent-experience-for-safety-alignmen-2026-09-03",
-      "title": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
-      "authors": "Qinghua Mao, Wanying Qu, Dadi Guo, Leitao Yuan, Qingyu Liu, Yu Li, Guanxu Chen, Yanwei Fu, Xi Lin, Xia Hu, Dongrui Liu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02786",
-      "type": "paper",
+      "title": "Agenvoy",
+      "authors": "agenvoy",
+      "url": "https://github.com/agenvoy/Agenvoy",
+      "type": "harness",
+      "summary": "Self-hosted AI agent harness in a single Go binary. Writes, sandbox-tests, and repairs its own code. No Electron, no account.",
+      "usecase": "Use it as a local coding worker you can scp onto a box and run unattended against a failing test suite.",
+      "tags": [
+        "go",
+        "self-hosted",
+        "self-repair"
+      ],
       "dateAdded": "2026-09-03",
-      "summary": "SafeEvolve turns completed on-policy trajectories into continual harness-policy co-evolution: trajectory safety evidence produces bounded, auditable updates to safety prompts and hierarchical skills, while a two-stage SFT-then-RL policy learns to use those artifacts and internalize safer multi-step behavior. On agentic safety benchmarks the method yields a stronger safety-utility tradeoff; for Qwen3.5-4B it cuts attack success rate threefold on AgentDojo while raising benign utility.",
-      "tags": [
-        "agent-safety",
-        "harness",
-        "co-evolution",
-        "alignment",
-        "multi-step"
-      ]
+      "returning": false,
+      "source": "GitHub",
+      "id": "agenvoy-2026-09-03"
     },
     {
-      "id": "trace-as-state-reasoning-traces-as-conditional-states-for-long-context-transform-2026-09-03",
-      "title": "Trace as State: Reasoning Traces as Conditional States for Long-Context Transformers",
-      "authors": "Xu Zou, Jie Tang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02702",
-      "type": "paper",
-      "dateAdded": "2026-09-03",
-      "summary": "The paper formalizes that causal transformers need exponentially less memory when a conditioning state arrives early rather than late. Trace as State therefore places previously collected reasoning traces before the long context on a fresh pass so the derived state can guide rereading. Across three models and three long-context datasets it beats the matched Trace Append control in 26 of 27 settings, lifting GraphWalks exact match dramatically (e.g., DeepSeek from 29-43% to 81.8%).",
+      "title": "Smithers",
+      "authors": "smithersai",
+      "url": "https://github.com/smithersai/smithers",
+      "type": "article",
+      "summary": "Agent workflows with live observability and time travel: watch every step, rewind, fork. This is how power users debug a loop instead of rereading a chat.",
       "tags": [
-        "long-context",
-        "reasoning-traces",
-        "conditional-state",
-        "transformers",
-        "memory"
-      ]
-    },
-    {
-      "id": "earlyeval-cheaper-agent-evaluation-via-early-outcome-prediction-2026-09-03",
-      "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
-      "authors": "Yuling Shi, Zhensu Sun, Junsen Dong, Chengcheng Wan, David Lo, Xiaodong Gu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02783",
-      "type": "paper",
-      "dateAdded": "2026-09-03",
-      "summary": "EarlyEval trains lightweight LightGBM success and failure classifiers on behavioral, textual, and reference features and halts an agent run as soon as either crosses a calibrated threshold. On SWE-bench Verified, TerminalBench, and Toolathlon it eliminates 13-26% of steps and up to 44% of input tokens at 89-97% prediction accuracy, while shifting resolve rates by only 1-2 points on average. The approach cuts per-task cost without discarding tasks.",
-      "tags": [
-        "evaluation",
-        "agents",
-        "efficiency",
-        "early-stopping",
-        "benchmarks"
-      ]
-    },
-    {
-      "id": "ohc-orthogonal-hyper-connections-on-so-4-via-quaternions-2026-09-03",
-      "title": "oHC: Orthogonal Hyper-Connections on SO(4) via Quaternions",
-      "authors": "Haoqiang Guo, Xuyi Chen, Bo Ke, Yishu Lei, Ziyang Xu, Shikun Feng, Ximen, Wenhan Luo",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.02672",
-      "type": "paper",
-      "dateAdded": "2026-09-03",
-      "summary": "Unconstrained Hyper-Connections can amplify residuals unboundedly; manifold-constrained versions on doubly stochastic matrices prevent amplification but force stream differences to contract, eroding diversity. Orthogonal Hyper-Connections restrict the residual mixing matrix to SO(n), preserving norms exactly. For the common four-stream case the group is parameterized by a pair of unit quaternions with no extra parameters and a fixed pattern of signed additions, outperforming single-stream residuals, mHC, and identity HC across downstream tasks.",
-      "tags": [
-        "architecture",
-        "residuals",
-        "hyper-connections",
-        "quaternions",
-        "stability"
-      ]
-    },
-    {
-      "id": "selective-agent-guidance-via-entropy-learning-autonomous-policies-from-imperfect-2026-09-02",
-      "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
-      "authors": "Matteo Merler, Giovanni Bonetta, Davide Zago, Rossella Cancelliere, Bernardo Magnini",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01567",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "SAGE queries an imperfect VLM teacher only under high learner entropy, executes the suggested action during training, and distills it into a lightweight RL policy weighted by environment advantages rather than treating every suggestion equally. The resulting policy runs without any VLM calls at deployment and can exceed the teacher on sparse-reward visual reasoning and navigation tasks. Selective guidance helps most when the VLM surfaces high-reward trajectories that unguided exploration misses.",
-      "tags": [
-        "agents",
-        "VLM",
-        "RL",
-        "selective guidance",
-        "entropy"
-      ]
-    },
-    {
-      "id": "can-llms-discover-scientific-laws-in-real-and-parallel-worlds-2026-09-02",
-      "title": "Can LLMs Discover Scientific Laws in Real and Parallel Worlds?",
-      "authors": "Yiming Huang, Ziche Liu, Zhuohang Wu, Yiqian Wang, Junxia Cui, Xinkai Zou, Linjun Mao, Nan Huang, Naicheng Yu, Kaijie Zhu, Yue Ma, Kun Zhou, Letian Peng, Jingbo Shang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01552",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "SCILAWS-BENCH supplies 118 problems drawn from 381 papers and roughly 8 million real data points across six disciplines, each cast in both a fixed-observation REAL setting and an active-query PARALLEL setting with residual-calibrated hidden laws. Predictive fit frequently diverges from scientific validity, memorization influences whether models merely reproduce published formulas, and best-of-N selection reveals a clear bottleneck. The dual design isolates genuine discovery from retrieval of known equations.",
-      "tags": [
-        "scientific discovery",
-        "LLM",
-        "benchmark",
-        "equation discovery",
-        "AI for science"
-      ]
-    },
-    {
-      "id": "harness-of-harness-multi-day-autonomous-software-development-with-continual-impr-2026-09-02",
-      "title": "Harness-of-Harness: Multi-Day Autonomous Software Development with Continual Improvement",
-      "authors": "Haoyang Yan, Min-le Su, Hangfan Zhang, Zhanhao Li, Chen Zhang, Shao Zhang, Yang Chen, Lei Bai, Shuyue Hu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01481",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "HoH wraps existing coding-agent harnesses in iterative planning-coding-testing loops that balance repair against capability growth, scope work into verifiable increments, and progressively expose deliverables, tools, and skills while preserving versioned history. Across GameCraft-Bench, FrontierSWE and ProgramBench it delivers average relative gains of 52 percent (up to 83 percent) after three iterations for multiple frontier harness-model pairs. In a multi-day run exceeding 70 iterations the system autonomously produces a complete, playable first-person shooter with storyline, mechanics, visuals and audio.",
-      "tags": [
-        "coding agents",
-        "autonomous development",
-        "continual improvement",
-        "harness",
-        "software engineering"
-      ]
-    },
-    {
-      "id": "parsing-the-stream-a-live-trace-model-for-long-horizon-agents-and-their-observer-2026-09-02",
-      "title": "Parsing the Stream: A Live Trace Model for Long-Horizon Agents and Their Observers",
-      "authors": "Egor Pakhomov, Erik Nijkamp",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01466",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "An append-only event ledger is folded incrementally into typed run state and compiled into per-consumer views that serve both the human observer and the agent itself. LLM-proxy monitoring questions are answered with 14-15x fewer tokens and 5-7x lower cost at higher accuracy than budget-capped raw-trace reading; on sequential-dependency tasks the fold maintains running statistics that full-context prompting cannot. Eleven candidate requirements for trace folding are derived from observed failures and delimited by order-sensitive tasks where the fold ceases to help.",
-      "tags": [
-        "long-horizon agents",
-        "trace model",
-        "state folding",
         "observability",
-        "context management"
-      ]
+        "time travel",
+        "harness"
+      ],
+      "dateAdded": "2026-09-03",
+      "returning": false,
+      "source": "GitHub",
+      "id": "smithers-2026-09-03"
     },
     {
-      "id": "evoscm-scientific-belief-revision-through-causal-model-evolution-and-experimenta-2026-09-02",
-      "title": "EvoSCM: Scientific Belief Revision Through Causal Model Evolution and Experimentation",
-      "authors": "Qing Zhao, Haowei Li, Weijian Deng, Pengxu Wei, Liang Lin",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01526",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "Scientific agents maintain a population of explicit structural causal models that compete and evolve inside a closed discovery loop of abduction, discriminative intervention design, falsifiable prediction, and inductive correction. Discrepancies between prediction and observation become correction rules that revise both structure and mechanisms, after which the revised population is deductively validated. On the DiscoverPhysics benchmark of noncanonical physical worlds EvoSCM yields more accurate explanations and more efficient experimental use than free-form baselines.",
+      "title": "Building an Advanced Agentic Harness",
+      "authors": "Data4Sci",
+      "source": "data4sci.com",
+      "url": "https://data4sci.com/blog/building-an-advanced-agentic-harness",
+      "type": "article",
+      "summary": "A working writeup of the control plane around a coding agent: tools, memory, retries, and the loop that actually lands code.",
       "tags": [
-        "causal models",
-        "scientific agents",
-        "belief revision",
-        "experimentation",
-        "SCM"
-      ]
-    },
-    {
-      "id": "edge-error-dependency-graph-guided-multi-error-attribution-in-multi-agent-llm-sy-2026-09-02",
-      "title": "EDGE: Error Dependency Graph-Guided Multi-Error Attribution in Multi-Agent LLM Systems",
-      "authors": "Jun Hou, Priya Pitre, Yi Fang, Xuan Wang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01360",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "EDGE builds an error dependency graph from observed failure events, validates a causal subset via counterfactual rollout, and uses the resulting graph to guide a two-stage LLM-as-judge detector. The intervention-validated subgraph supplies a more reliable basis for multi-error attribution, explanation and repair than isolated root-cause methods. On TRAIL and MAST it improves category-level multi-error attribution across models and prompting strategies, showing that dependency structure is a useful diagnostic prior.",
-      "tags": [
-        "multi-agent",
-        "error attribution",
-        "dependency graph",
-        "debugging",
-        "LLM agents"
-      ]
-    },
-    {
-      "id": "latent-recurrent-thoughts-recurrent-refinement-of-proposed-latents-for-reasoning-2026-09-02",
-      "title": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs",
-      "authors": "Zhaoliang Chen, Jie Fu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01117",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "A small task-dedicated proposer supplies base continuous latents that a tiny recurrent reasoner refines through bounded residual corrections; the frozen LLM then decodes the answer, decoupling reasoning depth from model size. On symbolic tasks with answer supervision only (Countdown, Sudoku) and on code and StrategyQA, LRT substantially outperforms prior frozen-decoder continuous-space methods under identical budgets and also beats non-thinking CoT at a fraction of the inference compute. Reasoning occurs entirely in representation space, avoiding token-level error propagation.",
-      "tags": [
-        "latent reasoning",
-        "recurrent",
-        "frozen LLM",
-        "continuous space",
-        "test-time compute"
-      ]
-    },
-    {
-      "id": "arise-rl-agentic-rubric-grounded-iterative-self-evolution-with-reinforcement-lea-2026-09-02",
-      "title": "ARISE-RL: Agentic Rubric-Grounded Iterative Self-Evolution with Reinforcement Learning",
-      "authors": "Fanrui Zhang, Ruixue Ding, Qiang Zhang, Xi Chen, Boli Chen, Shihang Wang, Qiuchen Wang, Hongmin Zhan, Jinxin Bian, Li xingchao, Peijin Zheng, Hao cheng, Pengjun Xie, Kaipeng Zhang, Jiawei Liu, Zheng-Jun Zha",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01058",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "A Generator and Solver co-evolve through rubric-mediated loops: the Generator produces intermediate-difficulty, tool-grounded tasks aligned to the Solver's capability boundary, while the Solver optimizes against fine-grained rubric satisfaction via multi-step reasoning and tool use. Reward-Gated Self-Evolution Distillation selectively incorporates a memory-augmented variant only when it yields empirical reward gains. On the new expert-calibrated ECR-Bench for deep research and multi-tool planning, ARISE-RL reaches robust state-of-the-art performance.",
-      "tags": [
-        "self-evolution",
-        "RL",
-        "rubrics",
-        "agentic",
-        "open-ended"
-      ]
-    },
-    {
-      "id": "leap-likelihood-elicitation-and-aggregation-for-llm-based-probabilistic-forecast-2026-09-02",
-      "title": "LEAP: Likelihood Elicitation and Aggregation for LLM-based Probabilistic Forecasting",
-      "authors": "Yufei Chen, Yiran Zhao, Xiaogang Xu, Qipeng Xie, Jiafei Wu, Zhe Liu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01337",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "Instead of monolithic prediction over all evidence at once, LEAP elicits per-evidence likelihood parameters, then combines them with an explicit prior inside a deterministic probabilistic model to produce a posterior. The design supports continuous, single-choice and multi-choice forecasts while preserving reproducible evidence contributions. Given identical evidence it improves prediction and calibration metrics across models and agent frameworks under controlled prior, budget and aggregation ablations.",
-      "tags": [
-        "probabilistic forecasting",
-        "evidence aggregation",
-        "calibration",
-        "LLM agents",
-        "likelihood"
-      ]
-    },
-    {
-      "id": "smelt-scaling-laws-for-compute-matched-moe-looped-transformers-2026-09-02",
-      "title": "SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers",
-      "authors": "Shaowen Wang, Ge Zhang, Kairong Luo, Yuhao Wu, Shaofan Liu, Jiaheng Liu, Wenhao Huang, Shen Yan, Jian Li",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.01343",
-      "type": "paper",
-      "dateAdded": "2026-09-02",
-      "summary": "SMELT loops the middle half of layers twice inside sparse MoE Transformers while exactly matching per-token FLOPs, non-embedding parameters and KV-cache of an unlooped baseline. Separate Chinchilla-style scaling laws fitted up to 54B parameters show faster loss decrease, saving 6.8-18 percent training FLOPs on the compute-optimal frontier; gains transfer to downstream tasks especially code and grow with length and in-context examples. Mechanistic analysis links the second pass to reduced attention sinks and redirected mass toward content tokens.",
-      "tags": [
-        "MoE",
-        "looped transformers",
-        "scaling laws",
-        "efficiency",
-        "architecture"
-      ]
-    },
-    {
-      "id": "scaling-large-reasoning-models-beyond-human-supervision-a-path-toward-superintel-2026-09-01",
-      "title": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
-      "authors": "Zhiqin Yang, Jingwen Fu, Yuhan Liu, Hengyu Liu, Yonggang Zhang, Kainan Cao, Zizhuo Zhang, Chenxin Li, Ruibin Yuan, Jiahao Pan, Jiankai Sun, Zhenyuan Zhang, Yibo Li, Yunlong Lin, Jing Xiong, Sida Lin, Bo Han, Wei Xue, Yike Guo",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.31075",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "The paper maps a five-level ladder for large reasoning models as human supervision recedes, connecting a reward axis (from per-instance judgments to reusable verifiers) with an experience axis (from curated tasks to self-generated curricula and co-evolution). It analyzes risks such as reward hacking, feedback drift, and curriculum collapse, and proposes complementary evaluation of policy capability, feedback fidelity, and experience quality. The result is a structured roadmap and living repository for self-sustaining learning systems.",
-      "tags": [
-        "reasoning",
-        "RLVR",
-        "self-improvement",
-        "superintelligence",
-        "rewards"
-      ]
-    },
-    {
-      "id": "aspire-can-models-self-evolve-from-vague-goals-2026-09-01",
-      "title": "Aspire: Can Models Self-Evolve from Vague Goals?",
-      "authors": "Yuhao Wu, Jingyuan Zhang, Jiajun Shi, Yuxuan Zhang, Xinping Lei, Junting Zhou, Zexuan Wang, Yuchen Wu, Huan Zhou, Duo Wang, Yinzhu Piao, Yongchang Peng, Yunfeng Shi, Jin Chen, Zuo Wang, Jinkai Liu, Jiaheng Liu, Wenxuan Zhang, Shen Yan, Wenhao Huang, Ge Zhang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.31111",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "ASPIRE supplies only a natural-language capability goal while hiding downstream evaluation tasks, forcing agents to interpret the goal, select data and updates, build training signals, and decide when to evaluate. Experiments on 520 hidden items across six goals show that vague goals shift effort toward goal interpretation, yet weight-level gains stay sparse and unstable while even the best evolved harness underperforms a fixed reference. Agents frequently train on mismatched data and over-trust narrow self-evaluations, so local gains fail to transfer.",
-      "tags": [
-        "self-evolution",
-        "agents",
-        "vague goals",
         "harness",
-        "benchmark"
-      ]
+        "engineering",
+        "agents"
+      ],
+      "dateAdded": "2026-09-03",
+      "returning": false,
+      "id": "building-an-advanced-agentic-harness-2026-09-03"
     },
     {
-      "id": "s3gym-can-llms-turn-self-testing-and-self-judging-into-self-improvement-2026-09-01",
-      "title": "S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
-      "authors": "Jiajun Shi, Siyuan Tao, Yuhao Wu, Zexuan Wang, Jingyuan Zhang, Jiaheng Liu, Xinping Lei, Xinrong Zhang, Siyuan Fang, Zhewen Tan, Tianle Cai, Junhao Fang, Jiameng Huang, Yueyang Wang, Jinkai Liu, Yuxuan Zhang, Jian Yang, Zhoujun Li, Shen Yan, Wenhao Huang, Ge Zhang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.31100",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "S3Gym couples self-testing, self-judging, and self-improvement inside seven text games with executable verifiers, separating permissive exploration from held-out evaluation. Context-level experience (history ICL or summary memory) helps on some model-game pairs while parameter training yields large but unstable gains and negative transfer on others. The results show that recognizing successful actions is insufficient: agents must convert feedback into executable, transferable policies.",
+      "title": "HUD, a minimal terminal UI for coding agents",
+      "authors": "adrida",
+      "url": "https://github.com/adrida/hud-mode",
+      "type": "release",
+      "summary": "A compact heads-up display that instruments a coding agent while it works. Shipped recently. Power-user overlay the big CLIs do not bother to build.",
       "tags": [
-        "self-improvement",
-        "agents",
-        "self-testing",
+        "tui",
+        "instrumentation",
+        "release"
+      ],
+      "dateAdded": "2026-09-03",
+      "returning": false,
+      "source": "GitHub",
+      "id": "hud,-a-minimal-terminal-ui-for-coding-agents-2026-09-03"
+    },
+    {
+      "title": "Herdr",
+      "authors": "herdrdev",
+      "url": "https://github.com/herdrdev/herdr",
+      "type": "harness",
+      "summary": "The runtime your coding agents live on. Not another chat wrapper: a place agents persist, resume, and share a machine.",
+      "usecase": "Use it when you want agents to survive a laptop sleep and pick up the same checkout, secrets, and tools.",
+      "tags": [
+        "runtime",
+        "persistence",
+        "agents"
+      ],
+      "dateAdded": "2026-09-02",
+      "returning": false,
+      "source": "GitHub",
+      "id": "herdr-2026-09-02"
+    },
+    {
+      "title": "Orca",
+      "authors": "stablyai",
+      "url": "https://github.com/stablyai/orca",
+      "type": "tool",
+      "summary": "An ADE for a fleet of parallel agents. Run any coding agent against your repo in parallel panes instead of one blessed CLI.",
+      "usecase": "Use it to fan the same failing test across four agents and keep only the patch that compiles.",
+      "tags": [
+        "fleet",
+        "ade",
+        "parallel"
+      ],
+      "dateAdded": "2026-09-02",
+      "returning": false,
+      "source": "GitHub",
+      "id": "orca-2026-09-02"
+    },
+    {
+      "title": "Mnemon",
+      "authors": "mnemon-dev",
+      "url": "https://github.com/mnemon-dev/mnemon",
+      "type": "repo",
+      "summary": "LLM-supervised persistent memory for agents: graph recall, cross-session knowledge, no vector-store cargo cult.",
+      "usecase": "Use it to give a coding agent a graph of the last two weeks of decisions so it stops re-deriving your architecture every session.",
+      "tags": [
         "memory",
-        "benchmark"
-      ]
+        "graph",
+        "agents"
+      ],
+      "dateAdded": "2026-09-02",
+      "returning": false,
+      "source": "GitHub",
+      "id": "mnemon-2026-09-02"
     },
     {
-      "id": "papergym-rubric-centered-evolution-for-research-plan-generation-2026-09-01",
-      "title": "PaperGym: Rubric-Centered Evolution for Research-Plan Generation",
-      "authors": "Yuhan Wang, Zhengxi Lu, Yuchen Yan, Kaitao Song, Wenqi Zhang, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.31119",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "PaperGym converts each research paper into a training environment by synthesizing questions from goals and background while deriving multi-criterion rubrics from methods and experiments, cutting criterion leakage to 3.7 percent. A two-stage schedule first uses the rubric as privileged context for self-teaching then as GRPO reward, outperforming SFT and single-stage baselines by roughly five points on average. Models trained on the released 20k corpus win majority three-way comparisons and push an 8B model past much larger systems on ResearchQA.",
-      "tags": [
-        "research agents",
-        "rubrics",
-        "RL",
-        "planning",
-        "dataset"
-      ]
-    },
-    {
-      "id": "reconciling-process-supervision-with-outcome-based-credit-in-agentic-policy-opti-2026-09-01",
-      "title": "Reconciling Process Supervision with Outcome-Based Credit in Agentic Policy Optimization",
-      "authors": "Jingxiao Yang, Wangjie Gan, Yingxuan Zhuang, Wenqi Zhang, Jintao Chen, Xuhong Zhang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.31077",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "TASPO closes the supervision-credit gap by converting privileged process signals into outcome-grounded action-level credit while keeping the verified trajectory advantage as the directional scale. It constructs decision-applicable privileged information from successful experience, aggregates likelihood shifts at executable actions, and produces positive mean-preserving weights. Across three agentic benchmarks TASPO improves GRPO by 10.6 percent and generalizes better to unseen tasks.",
-      "tags": [
-        "agents",
-        "policy optimization",
-        "process supervision",
-        "credit assignment",
-        "RL"
-      ]
-    },
-    {
-      "id": "measure-before-you-manage-evaluating-agent-working-memory-in-coding-agents-2026-09-01",
-      "title": "Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents",
-      "authors": "Le Chen, Zishen Wan, Baixi Sun, Xiaolong Ma, Chih-Hsuan Yang, Feng Yan, Sheng Di, Franck Cappello, Rajeev Thakur",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.31057",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "Analysis of 55 coding-agent trajectories reveals that semantically distinct working-memory objects (instructions, artifacts, tool outputs, agent state) exhibit different retention and compression profiles. Object-aware compression and retrieval policies are studied; calibration gains often fail to transfer, equal token budgets do not yield equal delivered context, and real-system replay exposes serving limits invisible to nominal budgets. The work organizes evaluation into stored state, delivered context, management work, and task outcome.",
-      "tags": [
-        "agents",
-        "working memory",
-        "coding",
-        "evaluation",
-        "compression"
-      ]
-    },
-    {
-      "id": "carve-verified-expansion-for-variable-length-generation-in-diffusion-language-mo-2026-09-01",
-      "title": "CARVE: Verified Expansion for Variable-Length Generation in Diffusion Language Models",
-      "authors": "Wail Bouhedja, Amr Mohamed, Guokan Shang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.30922",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "CARVE starts from a short canvas and inserts additional masks only when a counterfactual test shows low Jensen-Shannon divergence on unresolved positions, turning length growth into a verified stability decision rather than a confidence heuristic. The training-free method works for both full-canvas and blockwise diffusion decoders. It improves accuracy on code and math benchmarks while cutting FLOPs, sometimes to half of fixed-length decoding.",
-      "tags": [
-        "diffusion LMs",
-        "variable length",
-        "generation",
-        "efficiency",
-        "decoding"
-      ]
-    },
-    {
-      "id": "universal-transformers-for-circuit-computations-perfect-length-generalization-in-2026-09-01",
-      "title": "Universal Transformers for Circuit Computations: Perfect Length Generalization in Tiny Transformers",
-      "authors": "Takuya Ito, Ruchir Puri, Murray Campbell, Parikshit Ram",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.31067",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "A transformer with only 280 parameters embeds circuit models that perform depth-1 reduction per forward pass, using depth-aware positional encodings and masked hard attention to evaluate well-formed Boolean expressions of arbitrary depth. Training solely on depth-1 and depth-2 instances recovers interpretable parameters that snap into perfect length generalization. The same construction achieves 100 percent accuracy on modular arithmetic and ListOps, establishing a provably correct universal symbolic computer inside a tiny transformer.",
-      "tags": [
-        "transformers",
-        "length generalization",
-        "circuits",
-        "algorithmic",
-        "interpretability"
-      ]
-    },
-    {
-      "id": "does-on-policy-distillation-really-distill-from-noisy-teacher-to-self-improvemen-2026-09-01",
-      "title": "Does On-Policy Distillation Really Distill? From Noisy Teacher to Self-Improvement",
-      "authors": "Yi Ding, Ruqi Zhang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.31046",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "Quantitative analysis shows that teacher scores on student trajectories contain substantial noise that grows with teacher scale, yet students reach similar performance whether the noise is kept or removed. Gains concentrate on low-log-probability tokens and a fixed negative advantage matches teacher-provided ones, implying OPD largely suppresses tail tokens without needing a teacher. The resulting supervision-free OPSA method more than doubles Pass@32 and outperforms OPD by large margins on AIME and related benchmarks.",
-      "tags": [
-        "distillation",
-        "self-improvement",
-        "on-policy",
-        "reasoning",
-        "RL"
-      ]
-    },
-    {
-      "id": "hsrm-hidden-state-reward-models-for-test-time-verification-2026-09-01",
-      "title": "HSRM: Hidden-State Reward Models for Test-Time Verification",
-      "authors": "Xianzhi Li, Xiaodan Zhu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.30841",
-      "type": "paper",
-      "dateAdded": "2026-09-01",
-      "summary": "HSRM reads a frozen generator’s hidden states at reasoning-step boundaries with a 2M-parameter Transformer encoder to rank candidate solutions, trained only on self-generated trajectories with outcome labels. It matches or beats a 55M text-only energy verifier in 15 of 16 settings across four math benchmarks while reusing representations already computed during generation. The approach supplies an efficient alternative to expensive text-based verification for test-time selection.",
+      "title": "oh-my-agent",
+      "authors": "first-fluke",
+      "url": "https://github.com/first-fluke/oh-my-agent",
+      "type": "harness",
+      "summary": "A multi-agent harness that checks the work by artifacts, not vibes. Stop-hooks verify diffs, tests, and files before the run is allowed to claim success.",
+      "usecase": "Use it to stop a coding agent from declaring done when the test file was never written.",
       "tags": [
         "verification",
-        "hidden states",
-        "test-time",
-        "reasoning",
-        "reward models"
-      ]
+        "stop-hooks",
+        "harness"
+      ],
+      "dateAdded": "2026-09-02",
+      "returning": false,
+      "source": "GitHub",
+      "id": "oh-my-agent-2026-09-02"
+    },
+    {
+      "title": "CUA",
+      "authors": "trycua",
+      "url": "https://github.com/trycua/cua",
+      "type": "tool",
+      "summary": "Open-source computer-use 2.0: drivers, cross-OS fleets, and benchmarks for training and evaluating desktop agents.",
+      "usecase": "Use it to give a coding agent a real desktop when the job is a GUI installer, not an API.",
+      "tags": [
+        "computer use",
+        "desktop",
+        "benchmarks"
+      ],
+      "dateAdded": "2026-09-02",
+      "returning": false,
+      "source": "GitHub",
+      "id": "cua-2026-09-02"
+    },
+    {
+      "title": "Harness engineering for self-improvement",
+      "authors": "Lilian Weng",
+      "source": "lilianweng.github.io",
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+      "type": "article",
+      "summary": "Weng essay on the scaffolding around self-improving agents. The harness, not the next model bump, is where competence compounds.",
+      "tags": [
+        "harness",
+        "essay",
+        "self-improvement"
+      ],
+      "dateAdded": "2026-09-02",
+      "returning": false,
+      "id": "harness-engineering-for-self-improvement-2026-09-02"
+    },
+    {
+      "title": "graff (codegraff)",
+      "authors": "justrach",
+      "url": "https://github.com/justrach/codegraff",
+      "type": "release",
+      "summary": "A fast agentic coding harness in Zig: multi-provider, MCP, workflows. Tiny star count, serious systems taste.",
+      "tags": [
+        "zig",
+        "harness",
+        "mcp"
+      ],
+      "dateAdded": "2026-09-02",
+      "returning": false,
+      "source": "GitHub",
+      "id": "graff-(codegraff)-2026-09-02"
+    },
+    {
+      "title": "Agent skills that bring team coding standards to coding agents",
+      "authors": "Tikal",
+      "url": "https://github.com/tikalk/adlc-team-skills",
+      "type": "release",
+      "summary": "A public skills pack that encodes a team's coding standards as agent skills. The style guide becomes a tool, not a wiki page.",
+      "tags": [
+        "skills",
+        "standards",
+        "agents"
+      ],
+      "dateAdded": "2026-09-02",
+      "returning": false,
+      "source": "GitHub",
+      "id": "agent-skills-that-bring-team-coding-standards-to-coding-agen-2026-09-02"
+    },
+    {
+      "title": "mini-SWE-agent",
+      "authors": "SWE-agent",
+      "url": "https://github.com/SWE-agent/mini-swe-agent",
+      "type": "repo",
+      "summary": "The 100-line AI agent from the Princeton SWE-agent line. Research origin, radical simplicity, still beating bloated wrappers on SWE-bench-class work.",
+      "usecase": "Use it to throw a GitHub issue at a 100-line loop you can actually read, fork, and instrument.",
+      "tags": [
+        "research",
+        "swe-bench",
+        "minimal"
+      ],
+      "dateAdded": "2026-09-01",
+      "returning": false,
+      "source": "GitHub",
+      "id": "mini-swe-agent-2026-09-01"
+    },
+    {
+      "title": "DeepCode",
+      "authors": "HKUDS",
+      "url": "https://github.com/HKUDS/DeepCode",
+      "type": "harness",
+      "summary": "Open agentic coding from HKU: agent harness, loop engineering, multi-agent orchestration. Academic lab software that ships as a repo you run.",
+      "usecase": "Use it when you want a research harness with a real coding loop, not a chatbot with extra steps.",
+      "tags": [
+        "research",
+        "harness",
+        "multi-agent"
+      ],
+      "dateAdded": "2026-09-01",
+      "returning": false,
+      "source": "GitHub",
+      "id": "deepcode-2026-09-01"
+    },
+    {
+      "title": "open-computer-use",
+      "authors": "e2b-dev",
+      "url": "https://github.com/e2b-dev/open-computer-use",
+      "type": "tool",
+      "summary": "Computer-use agents on open models plus an E2B desktop sandbox. The open alternative to a vendor's computer-use API.",
+      "usecase": "Use it to let an open model click through a desktop app inside a throwaway VM.",
+      "tags": [
+        "computer use",
+        "sandbox",
+        "open models"
+      ],
+      "dateAdded": "2026-09-01",
+      "returning": false,
+      "source": "GitHub",
+      "id": "open-computer-use-2026-09-01"
+    },
+    {
+      "title": "mcp-agent",
+      "authors": "lastmile-ai",
+      "url": "https://github.com/lastmile-ai/mcp-agent",
+      "type": "harness",
+      "summary": "Build effective agents with Model Context Protocol and small workflow patterns.",
+      "usecase": "Use it to compose MCP servers into a durable agent without standing up a full IDE plugin.",
+      "tags": [
+        "mcp",
+        "runtime",
+        "workflows"
+      ],
+      "dateAdded": "2026-09-01",
+      "returning": false,
+      "source": "GitHub",
+      "id": "mcp-agent-2026-09-01"
+    },
+    {
+      "title": "CLI Agent Orchestrator",
+      "authors": "awslabs",
+      "url": "https://github.com/awslabs/cli-agent-orchestrator",
+      "type": "harness",
+      "summary": "AWS Labs multi-agent orchestration for AI coding CLIs. The interesting part is the coordinator, not the branded CLIs it wraps.",
+      "usecase": "Use it to run two vendor CLIs as workers under one policy instead of alt-tabbing between terminals.",
+      "tags": [
+        "orchestration",
+        "cli",
+        "aws"
+      ],
+      "dateAdded": "2026-09-01",
+      "returning": false,
+      "source": "GitHub",
+      "id": "cli-agent-orchestrator-2026-09-01"
+    },
+    {
+      "title": "Devtools must be open source",
+      "authors": "exe.dev",
+      "source": "blog.exe.dev",
+      "url": "https://blog.exe.dev/devtools-must-be-open-source",
+      "type": "article",
+      "summary": "A 700-point HN essay arguing that the tools you code with have to be inspectable. Agent CLIs are becoming the new IDE, and lock-in is the default path.",
+      "tags": [
+        "open source",
+        "devtools",
+        "essay"
+      ],
+      "dateAdded": "2026-09-01",
+      "returning": false,
+      "id": "devtools-must-be-open-source-2026-09-01"
+    },
+    {
+      "title": "OSWorld 2.0",
+      "authors": "xlang-ai",
+      "url": "https://github.com/xlang-ai/OSWorld-V2",
+      "type": "release",
+      "summary": "The long-horizon computer-use benchmark, version 2. If you are training or grading desktop agents, this is the eval the serious repos cite.",
+      "tags": [
+        "benchmark",
+        "computer use",
+        "eval"
+      ],
+      "dateAdded": "2026-09-01",
+      "returning": false,
+      "source": "GitHub",
+      "id": "osworld-2.0-2026-09-01"
+    },
+    {
+      "title": "Ironcurtain",
+      "authors": "provos",
+      "url": "https://github.com/provos/ironcurtain",
+      "type": "article",
+      "summary": "A secure runtime for autonomous agents with policy from plain-English constitutions. Aimed at people who will not give a coding agent root.",
+      "tags": [
+        "security",
+        "runtime",
+        "policy"
+      ],
+      "dateAdded": "2026-09-01",
+      "returning": false,
+      "source": "GitHub",
+      "id": "ironcurtain-2026-09-01"
     },
     {
       "id": "logos-an-agent-harness-on-a-cross-process-bus-2026-08-31",
@@ -1290,12 +1179,12 @@
     {
       "id": "thomson-continual-learning-of-frontier-models-for-sovereignai-2026-08-28",
       "title": "Thomson: Continual Learning of Frontier Models for SovereignAI",
-      "authors": "Shengzhuang Chen, Jerrod Parker, Yejin Bang, Andrew M. Bean, Nabeel Seedat, Stefan Winzeck, Daniil Glazko, Jannik Zgraggen, Fangyi Yu, Scott Arnott, Dietrich Trautmann, Luca Ciuffreda, Guglielmo Bonifazi, Davide Romano, Bradley Bell, Kirsty Fielding, Daniele Giofrè, Tom Zielund, Ipshita Chatterjee, Sneha Murthy Ghantasala, Manpreet Nanreh, John Scoville, Maciej Sakowicz, Wassim Seifeddine, Lukas Thede, Jonathan Richard Schwarz",
+      "authors": "Shengzhuang Chen, Jerrod Parker, Yejin Bang, Andrew M. Bean, Nabeel Seedat, Stefan Winzeck, Daniil Glazko, Jannik Zgraggen, Fangyi Yu, Scott Arnott, Dietrich Trautmann, Luca Ciuffreda, Guglielmo Bonifazi, Davide Romano, Bradley Bell, Kirsty Fielding, Daniele Giofr\u00e8, Tom Zielund, Ipshita Chatterjee, Sneha Murthy Ghantasala, Manpreet Nanreh, John Scoville, Maciej Sakowicz, Wassim Seifeddine, Lukas Thede, Jonathan Richard Schwarz",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.27147",
       "type": "paper",
       "dateAdded": "2026-08-28",
-      "summary": "Thomson shows that careful continual mid- and post-training of open-weight models, with plasticity/stability safeguards and minimal high-impact interventions, can produce frontier-competitive general-purpose performance on agentic, safety, legal, tax, multilingual, and deep-research tasks at far lower cost than training from scratch. Results exhibit a π-shaped pattern of broad gains including untargeted capabilities while nearly eliminating catastrophic forgetting, supporting practical SovereignAI ownership of model, tools, values, and data.",
+      "summary": "Thomson shows that careful continual mid- and post-training of open-weight models, with plasticity/stability safeguards and minimal high-impact interventions, can produce frontier-competitive general-purpose performance on agentic, safety, legal, tax, multilingual, and deep-research tasks at far lower cost than training from scratch. Results exhibit a \u03c0-shaped pattern of broad gains including untargeted capabilities while nearly eliminating catastrophic forgetting, supporting practical SovereignAI ownership of model, tools, values, and data.",
       "tags": [
         "continual learning",
         "frontier models",
@@ -1450,7 +1339,7 @@
     {
       "id": "imitation-learning-for-connection-tableau-construction-2026-08-27",
       "title": "Imitation Learning for Connection-Tableau Construction",
-      "authors": "Fredrik Rømming, Mantas Bakšys, Martin S. Fixman, Sean B. Holden",
+      "authors": "Fredrik R\u00f8mming, Mantas Bak\u0161ys, Martin S. Fixman, Sean B. Holden",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.26009",
       "type": "paper",
@@ -1642,7 +1531,7 @@
     {
       "id": "prime-agent-a-self-improving-rlm-harness-2026-08-25",
       "title": "Prime Agent: A Self-Improving RLM Harness",
-      "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas, Sebastian Müller, Elie Bakouch, Daniel Auras, Mika Senghaas, Fares Obeid, Konstantin Dunas, Johannes Hagemann, Sami Jaghouar",
+      "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas, Sebastian M\u00fcller, Elie Bakouch, Daniel Auras, Mika Senghaas, Fares Obeid, Konstantin Dunas, Johannes Hagemann, Sami Jaghouar",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.23552",
       "type": "paper",
@@ -1721,13 +1610,13 @@
     },
     {
       "id": "agent-g-gaussian-guidance-for-agentic-reinforcement-learning-2026-08-25",
-      "title": "Agent-G²: Gaussian Guidance for Agentic Reinforcement Learning",
+      "title": "Agent-G\u00b2: Gaussian Guidance for Agentic Reinforcement Learning",
       "authors": "Zixuan Wang, Yanrui Miao, Zhengxi Lu, Teng Pan, Yiwen Qiu, Hongxing Li, Peng Qiu, Ruiqing Zhang, Yongliang Shen",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.23318",
       "type": "paper",
       "dateAdded": "2026-08-25",
-      "summary": "Hint-based RL for long-horizon agents benefits from a band of guidance depths whose utility is approximately Gaussian rather than a single optimum. Agent-G² samples depth per task from a Gaussian whose center and spread are estimated online from ordinary policy-optimization rollouts, combining a global baseline with per-cluster difficulty. On ALFWorld and WebShop with 1.5B/7B models it outperforms strong hint-based and hint-free baselines by several points at under one-third the rollout cost of per-sample probing.",
+      "summary": "Hint-based RL for long-horizon agents benefits from a band of guidance depths whose utility is approximately Gaussian rather than a single optimum. Agent-G\u00b2 samples depth per task from a Gaussian whose center and spread are estimated online from ordinary policy-optimization rollouts, combining a global baseline with per-cluster difficulty. On ALFWorld and WebShop with 1.5B/7B models it outperforms strong hint-based and hint-free baselines by several points at under one-third the rollout cost of per-sample probing.",
       "tags": [
         "agentic-RL",
         "guidance",
@@ -2046,7 +1935,7 @@
       "url": "https://arxiv.org/abs/2608.07169",
       "type": "paper",
       "dateAdded": "2026-08-23",
-      "summary": "Small agents rarely generate enough successful trajectories to build useful memory on their own. AMD is a training-free method that distills hierarchical memory (workflow, subtask, function) from a large teacher agent’s successful traces and injects it proactively or reactively into the student. On AppWorld, BFCL V3 and ToolSandbox it yields large average accuracy gains for 4B-8B students, with subtask memory contributing the most and 4B models benefiting most.",
+      "summary": "Small agents rarely generate enough successful trajectories to build useful memory on their own. AMD is a training-free method that distills hierarchical memory (workflow, subtask, function) from a large teacher agent\u2019s successful traces and injects it proactively or reactively into the student. On AppWorld, BFCL V3 and ToolSandbox it yields large average accuracy gains for 4B-8B students, with subtask memory contributing the most and 4B models benefiting most.",
       "tags": [
         "memory distillation",
         "small models",
@@ -2351,7 +2240,7 @@
     {
       "id": "learning-when-to-think-adaptive-reasoning-for-test-time-compute-allocation-2026-08-21",
       "title": "Learning When to Think: Adaptive Reasoning for Test-Time Compute Allocation",
-      "authors": "Gijs Kassenaar, Zhao Yang, Vincent François-Lavet",
+      "authors": "Gijs Kassenaar, Zhao Yang, Vincent Fran\u00e7ois-Lavet",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.20256",
       "type": "paper",
@@ -2559,12 +2448,12 @@
     {
       "id": "test-time-scaling-in-the-wild-why-exploitation-not-exploration-is-the-bottleneck-2026-08-20",
       "title": "Test-Time Scaling in the Wild: Why Exploitation, Not Exploration, Is the Bottleneck",
-      "authors": "Davide Romano, Kanak Raj, Jerrod Parker, Daniele Giofrè",
+      "authors": "Davide Romano, Kanak Raj, Jerrod Parker, Daniele Giofr\u00e8",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.18931",
       "type": "paper",
       "dateAdded": "2026-08-20",
-      "summary": "A compute-normalized comparison of five test-time scaling families across five open-ended benchmarks (medicine, law, finance, chat, creative writing) shows that the best candidate in the pool improves steadily with budget, so exploration works. Exploitation fails: state-of-the-art reward models correlate only ρ≈0.12 with true quality, tree search collapses diversity, and only cross-candidate fusion consistently beats single-sample baselines yet still recovers roughly 40% of available quality. The candidate pool is not the bottleneck; selecting from it is.",
+      "summary": "A compute-normalized comparison of five test-time scaling families across five open-ended benchmarks (medicine, law, finance, chat, creative writing) shows that the best candidate in the pool improves steadily with budget, so exploration works. Exploitation fails: state-of-the-art reward models correlate only \u03c1\u22480.12 with true quality, tree search collapses diversity, and only cross-candidate fusion consistently beats single-sample baselines yet still recovers roughly 40% of available quality. The candidate pool is not the bottleneck; selecting from it is.",
       "tags": [
         "test-time scaling",
         "reward models",
@@ -2574,13 +2463,13 @@
     },
     {
       "id": "l-vy-attention-single-pass-predictive-uncertainty-for-continuous-time-attention-2026-08-20",
-      "title": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
+      "title": "L\u00e9vy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
       "authors": "Sotirios P. Chatzis, Loukas Papadoulas",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.19171",
       "type": "paper",
       "dateAdded": "2026-08-20",
-      "summary": "Lévy Attention replaces softmax cross-attention with a stochastic integral against an inhomogeneous Poisson random measure whose intensity is assembled from query-key compatibilities over continuous time-channel space. In expectation it recovers a mollified cosine-kernel attention trainable with exact gradients, while the same deterministic pass emits closed-form evidence and disagreement statistics that form an exact RMS deviation estimate of the sampled operator. On irregular time-series tasks the free uncertainty signal outperforms multi-pass MC dropout and enables calibrated conformal coverage with a single forward pass.",
+      "summary": "L\u00e9vy Attention replaces softmax cross-attention with a stochastic integral against an inhomogeneous Poisson random measure whose intensity is assembled from query-key compatibilities over continuous time-channel space. In expectation it recovers a mollified cosine-kernel attention trainable with exact gradients, while the same deterministic pass emits closed-form evidence and disagreement statistics that form an exact RMS deviation estimate of the sampled operator. On irregular time-series tasks the free uncertainty signal outperforms multi-pass MC dropout and enables calibrated conformal coverage with a single forward pass.",
       "tags": [
         "attention",
         "uncertainty",
@@ -3097,7 +2986,7 @@
     {
       "id": "littlelearner-language-models-under-pedagogically-controlled-knowledge-exposure-2026-08-16",
       "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
-      "authors": "Fanfei Li, Jana Zeller, Manuel Prada-Corral, Thaddäus Wiedemer, Prasanna Mayilvahanan, Ryan Cotterell, Wieland Brendel",
+      "authors": "Fanfei Li, Jana Zeller, Manuel Prada-Corral, Thadd\u00e4us Wiedemer, Prasanna Mayilvahanan, Ryan Cotterell, Wieland Brendel",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.13545",
       "type": "paper",
@@ -3118,7 +3007,7 @@
       "url": "https://arxiv.org/abs/2608.13524",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "DARTree is a training-free speculative method that builds a fixed-width candidate tree from a diffusion drafter, scores nodes in batch, then applies best-first pruning before verification while extending a pretrained AR correction head from chains to trees. It decouples AR-head inference from sequential heap operations. Across math, code, and chat benchmarks it records the highest average acceptance lengths (up to 12.97 tokens per round) and lossless speedups (up to 9.73×) relative to strong baselines.",
+      "summary": "DARTree is a training-free speculative method that builds a fixed-width candidate tree from a diffusion drafter, scores nodes in batch, then applies best-first pruning before verification while extending a pretrained AR correction head from chains to trees. It decouples AR-head inference from sequential heap operations. Across math, code, and chat benchmarks it records the highest average acceptance lengths (up to 12.97 tokens per round) and lossless speedups (up to 9.73\u00d7) relative to strong baselines.",
       "tags": [
         "speculative-decoding",
         "diffusion",
@@ -3134,7 +3023,7 @@
       "url": "https://arxiv.org/abs/2608.13554",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "The Defensive Booster simultaneously matches online gradient boosting’s Brier-score competition against the span of a weak class H on every adaptive sequence and, whenever a smooth weak-learning condition holds, drives classification error to zero at the rates of online weak-to-strong boosting. It operationalizes the dual view of boosting: high randomized error produces a smooth hard-core certificate that weak learning has failed. A strongly adaptive variant holds on every interval, and the algorithm uses only a single weak learner while outperforming ensemble baselines in both accuracy and runtime.",
+      "summary": "The Defensive Booster simultaneously matches online gradient boosting\u2019s Brier-score competition against the span of a weak class H on every adaptive sequence and, whenever a smooth weak-learning condition holds, drives classification error to zero at the rates of online weak-to-strong boosting. It operationalizes the dual view of boosting: high randomized error produces a smooth hard-core certificate that weak learning has failed. A strongly adaptive variant holds on every interval, and the algorithm uses only a single weak learner while outperforming ensemble baselines in both accuracy and runtime.",
       "tags": [
         "online-learning",
         "boosting",
@@ -3145,7 +3034,7 @@
     {
       "id": "measuring-task-agnostic-training-data-influence-across-language-model-pretrainin-2026-08-16",
       "title": "Measuring Task-Agnostic Training Data Influence Across Language Model Pretraining",
-      "authors": "Yuto Nishida, Hirokazu Kiyomaru, Yusuke Oda, Takashi Kodama, Chaoran Liu, Daisuke Kawahara, Yusuke Miyao, Max Müller-Eberstein, Masaru Isonuma",
+      "authors": "Yuto Nishida, Hirokazu Kiyomaru, Yusuke Oda, Takashi Kodama, Chaoran Liu, Daisuke Kawahara, Yusuke Miyao, Max M\u00fcller-Eberstein, Masaru Isonuma",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.13515",
       "type": "paper",
@@ -3166,7 +3055,7 @@
       "url": "https://arxiv.org/abs/2608.13538",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "SAEVerbalizer injects SAE decoder directions into an LLM’s residual stream and fine-tunes downstream layers so the model produces natural-language explanations of the injected features. Once trained, explanations are generated directly from decoder directions without collecting behavioral evidence. The verbalizer generalizes to unseen features, transfers across SAE dictionaries, and, with a light adapter, works on features from other base models; multi-direction injections combine meanings while polarity flips reverse them.",
+      "summary": "SAEVerbalizer injects SAE decoder directions into an LLM\u2019s residual stream and fine-tunes downstream layers so the model produces natural-language explanations of the injected features. Once trained, explanations are generated directly from decoder directions without collecting behavioral evidence. The verbalizer generalizes to unseen features, transfers across SAE dictionaries, and, with a light adapter, works on features from other base models; multi-direction injections combine meanings while polarity flips reverse them.",
       "tags": [
         "interpretability",
         "sparse-autoencoders",
@@ -3198,7 +3087,7 @@
       "url": "https://arxiv.org/abs/2608.13263",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "vToken inserts a lightweight token-level virtualization layer over PagedAttention that decouples logical token liveness from physical block placement via indirection tables and asynchronous repacking of live tokens. It preserves existing kernels and CUDA Graphs while eliminating intra-block fragmentation caused by token-granularity eviction. Integrated in vLLM, it cuts retained KV blocks 27–72 percent, raises SLA throughput up to 1.37×, and doubles feasible concurrency under tight active-KV budgets, reducing per-policy integration code from hundreds of lines to under fifty.",
+      "summary": "vToken inserts a lightweight token-level virtualization layer over PagedAttention that decouples logical token liveness from physical block placement via indirection tables and asynchronous repacking of live tokens. It preserves existing kernels and CUDA Graphs while eliminating intra-block fragmentation caused by token-granularity eviction. Integrated in vLLM, it cuts retained KV blocks 27\u201372 percent, raises SLA throughput up to 1.37\u00d7, and doubles feasible concurrency under tight active-KV budgets, reducing per-policy integration code from hundreds of lines to under fifty.",
       "tags": [
         "KV-cache",
         "serving",
@@ -3214,7 +3103,7 @@
       "url": "https://arxiv.org/abs/2608.13344",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "LongEarth-Bench supplies roughly 120k QA samples over sequences averaging 15 frames (up to 30) spanning evolution summarization, spatial change, anomaly detection, and future inference, with a 30k subset containing structured reasoning traces. LongEarth is first SFT’d with explicit sequence identifiers and chain-of-thought, then LongEarth-R1 is refined by group-relative policy optimization using format, temporal, and spatial rewards. The resulting model leads all 12 long-sequence tasks while remaining competitive on standard remote-sensing benchmarks.",
+      "summary": "LongEarth-Bench supplies roughly 120k QA samples over sequences averaging 15 frames (up to 30) spanning evolution summarization, spatial change, anomaly detection, and future inference, with a 30k subset containing structured reasoning traces. LongEarth is first SFT\u2019d with explicit sequence identifiers and chain-of-thought, then LongEarth-R1 is refined by group-relative policy optimization using format, temporal, and spatial rewards. The resulting model leads all 12 long-sequence tasks while remaining competitive on standard remote-sensing benchmarks.",
       "tags": [
         "long-horizon",
         "earth-observation",
@@ -3305,7 +3194,7 @@
     {
       "id": "agreement-is-not-alignment-divergent-moral-grounds-in-human-and-llm-ethical-judg-2026-08-15",
       "title": "Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments",
-      "authors": "Octavian M. Machidon, Alina L. Machidon, Vojko Strahovnik, Mateja Centa Strahovnik, Jonas Miklavčič, Marko Robnik Šikonja",
+      "authors": "Octavian M. Machidon, Alina L. Machidon, Vojko Strahovnik, Mateja Centa Strahovnik, Jonas Miklav\u010di\u010d, Marko Robnik \u0160ikonja",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.12368",
       "type": "paper",
@@ -3536,7 +3425,7 @@
       "url": "https://arxiv.org/abs/2608.13317",
       "type": "paper",
       "dateAdded": "2026-08-14",
-      "summary": "StateBridge aligns a sender’s final-layer hidden states to a receiver’s input space via a closed-form orthogonal transformation plus lightweight norm calibration and vocabulary anchoring, then prepends the aligned continuous prefix. The method is training-free and portable across models. On math, code, and QA tasks with four models from two families it achieves best or tied-best scores on 22 of 26 pairs, consistently beating text and prior latent baselines by removing the discrete-token bottleneck.",
+      "summary": "StateBridge aligns a sender\u2019s final-layer hidden states to a receiver\u2019s input space via a closed-form orthogonal transformation plus lightweight norm calibration and vocabulary anchoring, then prepends the aligned continuous prefix. The method is training-free and portable across models. On math, code, and QA tasks with four models from two families it achieves best or tied-best scores on 22 of 26 pairs, consistently beating text and prior latent baselines by removing the discrete-token bottleneck.",
       "tags": [
         "multi-agent systems",
         "latent communication",
@@ -3862,7 +3751,7 @@
     {
       "id": "beyond-a-bag-of-features-set-level-instability-in-sparse-autoencoders-2026-08-12",
       "title": "Beyond a Bag of Features: Set-Level Instability in Sparse Autoencoders",
-      "authors": "Nikolai Bolik, Lennart Stöpler, Artur Andrzejak",
+      "authors": "Nikolai Bolik, Lennart St\u00f6pler, Artur Andrzejak",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.11197",
       "type": "paper",
@@ -3894,7 +3783,7 @@
     {
       "id": "data-attribution-of-emergent-misalignment-with-persona-features-2026-08-12",
       "title": "Data Attribution of Emergent Misalignment with Persona Features",
-      "authors": "Clemens Vetter, David Kaczér, Lucie Flek, Florian Mai",
+      "authors": "Clemens Vetter, David Kacz\u00e9r, Lucie Flek, Florian Mai",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.11025",
       "type": "paper",
@@ -4068,7 +3957,7 @@
       "url": "https://arxiv.org/abs/2608.07524",
       "type": "paper",
       "dateAdded": "2026-08-11",
-      "summary": "Data-Centric Parallel lets each batch’s sequence length itself drive runtime decisions on parallel size, gradient accumulation and recomputation, eliminating the usual trade-off between static imbalance and complex model-specific code. The method integrates into arbitrary models with roughly ten lines of code and delivers up to 2.88× speedup on 32 H200 GPUs for variable-length training. It is positioned as a simple, general baseline for future distributed long-sequence work.",
+      "summary": "Data-Centric Parallel lets each batch\u2019s sequence length itself drive runtime decisions on parallel size, gradient accumulation and recomputation, eliminating the usual trade-off between static imbalance and complex model-specific code. The method integrates into arbitrary models with roughly ten lines of code and delivers up to 2.88\u00d7 speedup on 32 H200 GPUs for variable-length training. It is positioned as a simple, general baseline for future distributed long-sequence work.",
       "tags": [
         "distributed-training",
         "long-sequences",
@@ -4194,7 +4083,7 @@
     {
       "id": "residencyrl-reinforcement-learning-in-simulated-clinical-environments-2026-08-10",
       "title": "ResidencyRL: Reinforcement Learning in Simulated Clinical Environments",
-      "authors": "Valentin Liévin, Samuel Schmidgall, Tim Strother, Alex Bijamov, Akshay Goel, Anil Palepu, Chunjong Park, Vahid Balazadeh, Min Woo Sun, Marius Guerard, Justin Chen, Dave Steiner, Vikram Dhillon, Ibrahim Azar, Akhil Mehta, Nicholas Spetsieris, Shilpan Shah, Maen Abdelrahim, Amit Dahiya, Yun Liu, Katherine Chou, Yossi Matias, Avinatan Hassidim, Dale R. Webster, Quoc V. Le, Raia Hadsell, Joelle Barral, Carey Radebaugh, Aleksandra Faust, Shekoofeh Azizi, Mike Schaekermann, Po-Hsuan Cameron Chen, Tao Tu, David Racz, Lin Yang",
+      "authors": "Valentin Li\u00e9vin, Samuel Schmidgall, Tim Strother, Alex Bijamov, Akshay Goel, Anil Palepu, Chunjong Park, Vahid Balazadeh, Min Woo Sun, Marius Guerard, Justin Chen, Dave Steiner, Vikram Dhillon, Ibrahim Azar, Akhil Mehta, Nicholas Spetsieris, Shilpan Shah, Maen Abdelrahim, Amit Dahiya, Yun Liu, Katherine Chou, Yossi Matias, Avinatan Hassidim, Dale R. Webster, Quoc V. Le, Raia Hadsell, Joelle Barral, Carey Radebaugh, Aleksandra Faust, Shekoofeh Azizi, Mike Schaekermann, Po-Hsuan Cameron Chen, Tao Tu, David Racz, Lin Yang",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.07418",
       "type": "paper",
@@ -4295,7 +4184,7 @@
     {
       "id": "macro-markov-chain-routing-of-transformer-layers-2026-08-09",
       "title": "MACRO: Markov Chain Routing of Transformer Layers",
-      "authors": "Paweł Batorski, Abtin Pourhadi, Akylgali Aitaza, Przemysław Spurek, Paul Swoboda",
+      "authors": "Pawe\u0142 Batorski, Abtin Pourhadi, Akylgali Aitaza, Przemys\u0142aw Spurek, Paul Swoboda",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.05872",
       "type": "paper",
@@ -4351,7 +4240,7 @@
       "url": "https://arxiv.org/abs/2608.06291",
       "type": "paper",
       "dateAdded": "2026-08-09",
-      "summary": "Building on two-sided adaptive rounding, BaKron solves the vectorized problem via anti-diagonal parallelism and recursive divide-and-conquer, cutting work from O(m²n²) to O(mn(m+n)) while matching GPTQ-style cubic scaling and capturing output correlations. It is modular in base quantizer and Hessian estimator and supplies practical Hessian computation techniques. Experiments confirm the efficiency and quality gains of richer curvature at GPTQ-comparable cost.",
+      "summary": "Building on two-sided adaptive rounding, BaKron solves the vectorized problem via anti-diagonal parallelism and recursive divide-and-conquer, cutting work from O(m\u00b2n\u00b2) to O(mn(m+n)) while matching GPTQ-style cubic scaling and capturing output correlations. It is modular in base quantizer and Hessian estimator and supplies practical Hessian computation techniques. Experiments confirm the efficiency and quality gains of richer curvature at GPTQ-comparable cost.",
       "tags": [
         "quantization",
         "Hessians",
@@ -4368,7 +4257,7 @@
       "url": "https://arxiv.org/abs/2608.06262",
       "type": "paper",
       "dateAdded": "2026-08-09",
-      "summary": "In a finite outcome space the paper characterizes when two distribution classes are distinguishable by conditional queries and shows learnability holds exactly when pairwise conditional probabilities have positive separation (otherwise error stays 1/2). Any T-query adaptive policy can be simulated non-adaptively with O(N²(T+log(1/ρ))) fixed pair queries to total-variation ρ, yet there exist families with constant adaptive complexity and Ω(N²) non-adaptive complexity. Thus interaction yields a quadratic, not exponential, query advantage.",
+      "summary": "In a finite outcome space the paper characterizes when two distribution classes are distinguishable by conditional queries and shows learnability holds exactly when pairwise conditional probabilities have positive separation (otherwise error stays 1/2). Any T-query adaptive policy can be simulated non-adaptively with O(N\u00b2(T+log(1/\u03c1))) fixed pair queries to total-variation \u03c1, yet there exist families with constant adaptive complexity and \u03a9(N\u00b2) non-adaptive complexity. Thus interaction yields a quadratic, not exponential, query advantage.",
       "tags": [
         "learning theory",
         "hypothesis testing",
@@ -4716,7 +4605,7 @@
       "url": "https://arxiv.org/abs/2608.06363",
       "type": "paper",
       "dateAdded": "2026-08-07",
-      "summary": "The paper constructs a learner that attains the statistically optimal agnostic PAC risk bound for any finite-VC-dimension hypothesis class, matching known lower bounds up to universal constants at every fixed Bayes risk L*. From n i.i.d. samples the excess risk scales as the familiar square-root and linear terms involving VC-dimension and log(1/delta). This closes the sample-complexity question for agnostic binary classification under the classical Devroye-Györfi-Lugosi lower bounds.",
+      "summary": "The paper constructs a learner that attains the statistically optimal agnostic PAC risk bound for any finite-VC-dimension hypothesis class, matching known lower bounds up to universal constants at every fixed Bayes risk L*. From n i.i.d. samples the excess risk scales as the familiar square-root and linear terms involving VC-dimension and log(1/delta). This closes the sample-complexity question for agnostic binary classification under the classical Devroye-Gy\u00f6rfi-Lugosi lower bounds.",
       "tags": [
         "learning-theory",
         "PAC",
@@ -4743,7 +4632,7 @@
     {
       "id": "a-game-theory-for-foundation-models-shows-new-paths-to-rational-cooperation-thro-2026-08-05",
       "title": "A game theory for foundation models shows new paths to rational cooperation through similarity inference",
-      "authors": "Alexander Meulemans, Maciej Wołczyk, Marissa A. Weis, Rajai Nasser, Roberta Rocca, Seijin Kobayashi, Guillaume Lajoie, Angelika Steger, Blake Richards, Marcus Hutter, James Manyika, Rif A. Saurous, João Sacramento, Blaise Agüera y Arcas",
+      "authors": "Alexander Meulemans, Maciej Wo\u0142czyk, Marissa A. Weis, Rajai Nasser, Roberta Rocca, Seijin Kobayashi, Guillaume Lajoie, Angelika Steger, Blake Richards, Marcus Hutter, James Manyika, Rif A. Saurous, Jo\u00e3o Sacramento, Blaise Ag\u00fcera y Arcas",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.03958",
       "type": "paper",
@@ -4913,7 +4802,7 @@
     {
       "id": "atumai-a-principled-framework-for-agentic-generation-of-datacenter-control-plane-2026-08-04",
       "title": "AtumAI: A Principled Framework for Agentic Generation of Datacenter Control-Plane Policies",
-      "authors": "Qiushi Lin, Chaojie Zhang, Íñigo Goiri, Aditya Akella, Ricardo Bianchini, Jovan Stojkovic",
+      "authors": "Qiushi Lin, Chaojie Zhang, \u00cd\u00f1igo Goiri, Aditya Akella, Ricardo Bianchini, Jovan Stojkovic",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.02569",
       "type": "paper",
@@ -4945,7 +4834,7 @@
     {
       "id": "optimizing-minimax-regret-in-uncertain-mdps-with-small-sets-of-policies-2026-08-04",
       "title": "Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies",
-      "authors": "Sterre Lutz, Daniël Vos, Matthijs T.J. Spaan, Anna Lukina",
+      "authors": "Sterre Lutz, Dani\u00ebl Vos, Matthijs T.J. Spaan, Anna Lukina",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.02509",
       "type": "paper",

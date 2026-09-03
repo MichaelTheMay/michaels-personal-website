@@ -37,9 +37,9 @@ export const philosophy = {
 // Note: the Resend free tier allows 100 emails/day, so the list is effectively
 // capped at ~100 subscribers per daily send until the plan is upgraded.
 export const newsletter = {
-  heading: "Get the daily AI digest",
+  heading: "Get the daily tools digest",
   blurb:
-    "Every morning an agentic pipeline reads the day's new AI research and essays, ranks them, and sends you the best of it. One email a day, no noise.",
+    "Every morning an agentic pipeline ranks the five most powerful coding agents, harnesses, and repos, then files three articles or releases. One email a day.",
   cta: "Subscribe",
   success: "You're in. The next digest lands in your inbox tomorrow morning.",
   placeholder: "you@example.com",

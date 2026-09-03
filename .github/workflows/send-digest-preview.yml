@@ -1,0 +1,39 @@
+name: Send digest previews
+
+on:
+  workflow_dispatch:
+    inputs:
+      to:
+        description: "Address to send the five preview emails"
+        type: string
+        default: "michael@michaelmay.dev"
+
+jobs:
+  send-previews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - run: npm ci
+
+      - name: Send perfected Issue 09 plus four algorithm variants
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ inputs.to }}
+          DIGEST_DATE: "2026-08-05"
+        run: |
+          set -euo pipefail
+          echo "Sending perfected stack"
+          DIGEST_VARIANT=perfected node scripts/send-digest.mjs
+          echo "Sending algorithm A: velocity"
+          DIGEST_VARIANT=velocity node scripts/send-digest.mjs
+          echo "Sending algorithm B: research"
+          DIGEST_VARIANT=research node scripts/send-digest.mjs
+          echo "Sending algorithm C: infra"
+          DIGEST_VARIANT=infra node scripts/send-digest.mjs
+          echo "Sending algorithm D: systems"
+          DIGEST_VARIANT=systems node scripts/send-digest.mjs

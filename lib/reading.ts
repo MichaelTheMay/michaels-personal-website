@@ -1,5 +1,12 @@
 import readingData from "@/data/reading.json";
-import { groupIssues, formatIssueDate } from "./reading-core.mjs";
+import {
+  groupIssues,
+  formatIssueDate,
+  formatIssueNumber,
+  isToolType,
+  isHeadlineType,
+  partitionItems,
+} from "./reading-core.mjs";
 
 export type ReadingItem = {
   id: string;
@@ -11,6 +18,8 @@ export type ReadingItem = {
   dateAdded: string;
   summary: string;
   tags: string[];
+  usecase?: string;
+  returning?: boolean;
 };
 
 /** Optional per-day metadata written by the curation job. */
@@ -22,11 +31,15 @@ type StoredIssue = {
 
 export type Issue = {
   date: string;
-  /** 1-based, oldest issue is No. 1 so numbers never shift as days are added. */
+  /** 1-based, oldest issue is Issue 01 so numbers never shift as days are added. */
   number: number;
   title: string;
   blurb?: string;
   items: ReadingItem[];
+  tools: ReadingItem[];
+  headlines: ReadingItem[];
+  rest: ReadingItem[];
+  isLegacy: boolean;
   topTags: string[];
 };
 
@@ -47,4 +60,4 @@ export function getIssue(date: string): Issue | undefined {
   return getIssues().find((issue) => issue.date === date);
 }
 
-export { formatIssueDate };
+export { formatIssueDate, formatIssueNumber, isToolType, isHeadlineType, partitionItems };

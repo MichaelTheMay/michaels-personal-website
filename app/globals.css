@@ -228,6 +228,8 @@ body {
   background: linear-gradient(to right, transparent, var(--border), transparent);
 }
 
+
+
 /* Scroll reveal */
 .reveal {
   opacity: 0;
