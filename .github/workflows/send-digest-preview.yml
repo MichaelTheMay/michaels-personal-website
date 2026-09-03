@@ -20,11 +20,11 @@ jobs:
 
       - run: npm ci
 
-      - name: Send perfected Issue 09 plus four algorithm variants
+      - name: Send perfected Issue 30 plus four algorithm variants
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ inputs.to }}
-          DIGEST_DATE: "2026-08-05"
+          DIGEST_DATE: "2026-09-03"
         run: |
           set -euo pipefail
           echo "Sending perfected stack"
