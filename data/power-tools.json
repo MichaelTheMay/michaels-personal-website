@@ -1,0 +1,488 @@
+{
+  "lastUpdated": "2026-09-03",
+  "count": 24,
+  "tools": [
+    {
+      "slug": "agenvoy",
+      "title": "Agenvoy",
+      "authors": "agenvoy",
+      "source": "GitHub",
+      "url": "https://github.com/agenvoy/Agenvoy",
+      "type": "harness",
+      "summary": "Self-hosted AI agent harness in a single Go binary. Writes, sandbox-tests, and repairs its own code. No Electron, no account.",
+      "usecase": "Use it as a local coding worker you can scp onto a box and run unattended against a failing test suite.",
+      "tags": [
+        "go",
+        "self-hosted",
+        "self-repair"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "perfected",
+        "systems"
+      ]
+    },
+    {
+      "slug": "cmux",
+      "title": "cmux",
+      "authors": "manaflow-ai",
+      "source": "GitHub",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "type": "tool",
+      "summary": "Open-source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents.",
+      "usecase": "Use it as the terminal surface when you are running a swarm of CLIs and need to see which one just finished.",
+      "tags": [
+        "terminal",
+        "macos",
+        "notifications"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "velocity"
+      ]
+    },
+    {
+      "slug": "containarium",
+      "title": "Containarium",
+      "authors": "FootprintAI",
+      "source": "GitHub",
+      "url": "https://github.com/FootprintAI/Containarium",
+      "type": "harness",
+      "summary": "Open-source agent runtime with SSH-native isolation, eBPF egress policy, Kubernetes and LXC backends.",
+      "usecase": "Use it to run untrusted coding agents with real network policy instead of hope.",
+      "tags": [
+        "isolation",
+        "ebpf",
+        "runtime"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "systems"
+      ]
+    },
+    {
+      "slug": "context-mode",
+      "title": "context-mode",
+      "authors": "mksglu",
+      "source": "GitHub",
+      "url": "https://github.com/mksglu/context-mode",
+      "type": "tool",
+      "summary": "Context-window surgery for coding agents. Sandboxes tool output so the model sees the signal instead of a 40k-token log.",
+      "usecase": "Use it when your agent keeps blowing the window on build logs and you need the loop to survive a real compile.",
+      "tags": [
+        "context",
+        "tool output",
+        "coding agents"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "perfected",
+        "infra"
+      ]
+    },
+    {
+      "slug": "cua",
+      "title": "CUA",
+      "authors": "trycua",
+      "source": "GitHub",
+      "url": "https://github.com/trycua/cua",
+      "type": "tool",
+      "summary": "Open-source computer-use 2.0: drivers, cross-OS fleets, and benchmarks for training and evaluating desktop agents.",
+      "usecase": "Use it to give a coding agent a real desktop when the job is a GUI installer, not an API.",
+      "tags": [
+        "computer use",
+        "desktop",
+        "benchmarks"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "infra"
+      ]
+    },
+    {
+      "slug": "deepcode",
+      "title": "DeepCode",
+      "authors": "HKUDS",
+      "source": "GitHub",
+      "url": "https://github.com/HKUDS/DeepCode",
+      "type": "harness",
+      "summary": "Open agentic coding from HKU: agent harness, loop engineering, multi-agent orchestration. Academic lab software that ships as a repo you run.",
+      "usecase": "Use it when you want a research harness with a real coding loop, not a chatbot with extra steps.",
+      "tags": [
+        "research",
+        "harness",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "research"
+      ]
+    },
+    {
+      "slug": "ghostex",
+      "title": "Ghostex",
+      "authors": "maddada",
+      "source": "GitHub",
+      "url": "https://github.com/maddada/Ghostex",
+      "type": "tool",
+      "summary": "Rust and GPUI native agent CLI manager for macOS. Ghostty terminals plus Codex-app UX, without Electron.",
+      "usecase": "Use it to manage a stack of native agent CLIs in Ghostty instead of a webview IDE.",
+      "tags": [
+        "rust",
+        "macos",
+        "terminal"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "systems"
+      ]
+    },
+    {
+      "slug": "codegraff",
+      "title": "graff",
+      "authors": "justrach",
+      "source": "GitHub",
+      "url": "https://github.com/justrach/codegraff",
+      "type": "harness",
+      "summary": "Fast agentic coding harness in Zig: multi-provider, MCP, workflows.",
+      "usecase": "Use it when you want a coding loop with systems-language latency, not a Node daemon.",
+      "tags": [
+        "zig",
+        "harness",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "systems"
+      ]
+    },
+    {
+      "slug": "herdr",
+      "title": "Herdr",
+      "authors": "herdrdev",
+      "source": "GitHub",
+      "url": "https://github.com/herdrdev/herdr",
+      "type": "harness",
+      "summary": "The runtime your coding agents live on. Not another chat wrapper: a place agents persist, resume, and share a machine.",
+      "usecase": "Use it when you want agents to survive a laptop sleep and pick up the same checkout, secrets, and tools.",
+      "tags": [
+        "runtime",
+        "persistence",
+        "agents"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "velocity"
+      ]
+    },
+    {
+      "slug": "ironcurtain",
+      "title": "Ironcurtain",
+      "authors": "provos",
+      "source": "GitHub",
+      "url": "https://github.com/provos/ironcurtain",
+      "type": "harness",
+      "summary": "Secure runtime for autonomous agents. Policy from plain-English constitutions.",
+      "usecase": "Use it when you will not give a coding agent root and still want it to act.",
+      "tags": [
+        "security",
+        "runtime",
+        "policy"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "infra"
+      ]
+    },
+    {
+      "slug": "loopx",
+      "title": "LoopX",
+      "authors": "huangruiteng",
+      "source": "GitHub",
+      "url": "https://github.com/huangruiteng/loopx",
+      "type": "harness",
+      "summary": "A long-horizon control plane that keeps coding agents on durable, governed work instead of one-shot chats. Power users treat it as the supervisor, not another model.",
+      "usecase": "Use it to keep an overnight refactor alive across tool crashes, with a human gate on the risky steps.",
+      "tags": [
+        "control plane",
+        "long-horizon",
+        "orchestration"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "perfected"
+      ]
+    },
+    {
+      "slug": "mcp-agent",
+      "title": "mcp-agent",
+      "authors": "lastmile-ai",
+      "source": "GitHub",
+      "url": "https://github.com/lastmile-ai/mcp-agent",
+      "type": "harness",
+      "summary": "Build effective agents with Model Context Protocol and small workflow patterns.",
+      "usecase": "Use it to compose MCP servers into a durable agent without standing up a full IDE plugin.",
+      "tags": [
+        "mcp",
+        "runtime",
+        "workflows"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "research"
+      ]
+    },
+    {
+      "slug": "mini-swe-agent",
+      "title": "mini-SWE-agent",
+      "authors": "SWE-agent",
+      "source": "GitHub",
+      "url": "https://github.com/SWE-agent/mini-swe-agent",
+      "type": "repo",
+      "summary": "The 100-line AI agent from the Princeton SWE-agent line. Research origin, radical simplicity, still beating bloated wrappers on SWE-bench-class work.",
+      "usecase": "Use it to throw a GitHub issue at a 100-line loop you can actually read, fork, and instrument.",
+      "tags": [
+        "research",
+        "swe-bench",
+        "minimal"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "research"
+      ]
+    },
+    {
+      "slug": "mnemon",
+      "title": "Mnemon",
+      "authors": "mnemon-dev",
+      "source": "GitHub",
+      "url": "https://github.com/mnemon-dev/mnemon",
+      "type": "repo",
+      "summary": "LLM-supervised persistent memory for agents: graph recall, cross-session knowledge, no vector-store cargo cult.",
+      "usecase": "Use it to give a coding agent a graph of the last two weeks of decisions so it stops re-deriving your architecture.",
+      "tags": [
+        "memory",
+        "graph",
+        "agents"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "infra"
+      ]
+    },
+    {
+      "slug": "oh-my-agent",
+      "title": "oh-my-agent",
+      "authors": "first-fluke",
+      "source": "GitHub",
+      "url": "https://github.com/first-fluke/oh-my-agent",
+      "type": "harness",
+      "summary": "A multi-agent harness that checks the work by artifacts, not vibes. Stop-hooks verify diffs, tests, and files before the run is allowed to claim success.",
+      "usecase": "Use it to stop a coding agent from declaring done when the test file was never written.",
+      "tags": [
+        "verification",
+        "stop-hooks",
+        "harness"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "infra"
+      ]
+    },
+    {
+      "slug": "oh-my-claudecode",
+      "title": "oh-my-claudecode",
+      "authors": "Yeachan-Heo",
+      "source": "GitHub",
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "type": "harness",
+      "summary": "Teams-first multi-agent orchestration for Claude Code. Not Claude Code itself: the swarm layer people bolt on.",
+      "usecase": "Use it to run a team of Claude Code workers on one repo with a shared plan file.",
+      "tags": [
+        "orchestration",
+        "teams",
+        "claude-code-layer"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "velocity"
+      ]
+    },
+    {
+      "slug": "oh-my-pi",
+      "title": "oh-my-pi",
+      "authors": "can1357",
+      "source": "GitHub",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "type": "tool",
+      "summary": "A coding agent with the IDE wired in. Created New Year's Eve 2025, still being pushed daily.",
+      "usecase": "Use it when you want the agent and the editor to share one process instead of a plugin talking to a CLI.",
+      "tags": [
+        "ide",
+        "coding agent",
+        "open source"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "velocity"
+      ]
+    },
+    {
+      "slug": "omnigent",
+      "title": "Omnigent",
+      "authors": "omnigent-ai",
+      "source": "GitHub",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "type": "harness",
+      "summary": "Open-source meta-harness: one orchestrator that fans work across several coding agents. Born June 2026, already the loudest new control plane on GitHub.",
+      "usecase": "Use it to run three different coding agents on the same ticket and merge the first one that lands a green test.",
+      "tags": [
+        "meta-harness",
+        "orchestration",
+        "open source"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "perfected"
+      ]
+    },
+    {
+      "slug": "open-computer-use",
+      "title": "open-computer-use",
+      "authors": "e2b-dev",
+      "source": "GitHub",
+      "url": "https://github.com/e2b-dev/open-computer-use",
+      "type": "tool",
+      "summary": "Computer-use agents on open models plus an E2B desktop sandbox. The open alternative to a vendor's computer-use API.",
+      "usecase": "Use it to let an open model click through a desktop app inside a throwaway VM.",
+      "tags": [
+        "computer use",
+        "sandbox",
+        "open models"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "research"
+      ]
+    },
+    {
+      "slug": "orca",
+      "title": "Orca",
+      "authors": "stablyai",
+      "source": "GitHub",
+      "url": "https://github.com/stablyai/orca",
+      "type": "tool",
+      "summary": "An ADE for a fleet of parallel agents. Run any coding agent against your repo in parallel panes instead of one blessed CLI.",
+      "usecase": "Use it to fan the same failing test across four agents and keep only the patch that compiles.",
+      "tags": [
+        "fleet",
+        "ade",
+        "parallel"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "velocity"
+      ]
+    },
+    {
+      "slug": "osworld-v2",
+      "title": "OSWorld 2.0",
+      "authors": "xlang-ai",
+      "source": "GitHub",
+      "url": "https://github.com/xlang-ai/OSWorld-V2",
+      "type": "repo",
+      "summary": "Long-horizon computer-use benchmark. The eval serious desktop-agent repos cite.",
+      "usecase": "Use it to grade your own computer-use agent on real desktop tasks before you trust it on a laptop.",
+      "tags": [
+        "benchmark",
+        "computer use",
+        "eval"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "research"
+      ]
+    },
+    {
+      "slug": "warren",
+      "title": "Warren",
+      "authors": "jayminwest",
+      "source": "GitHub",
+      "url": "https://github.com/jayminwest/warren",
+      "type": "harness",
+      "summary": "Treats coding agents as infrastructure, not terminal sessions. Isolation, lifetimes, and scheduling so a fleet of agents looks like a job queue.",
+      "usecase": "Use it to fire 20 isolated agent jobs against a monorepo without them trampling each other's working trees.",
+      "tags": [
+        "sandbox",
+        "fleet",
+        "isolation"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "perfected"
+      ]
+    },
+    {
+      "slug": "whip",
+      "title": "Whip",
+      "authors": "context-labs",
+      "source": "GitHub",
+      "url": "https://github.com/context-labs/whip",
+      "type": "tool",
+      "summary": "Fast coding-agent harness in Go. Tool-use loop, bubbletea TUI, provider-routable models. Created August 2026.",
+      "usecase": "Use it as a Go TUI coding agent when you want to swap models without swapping the loop.",
+      "tags": [
+        "go",
+        "tui",
+        "coding agent"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-09-03",
+      "algorithms": [
+        "systems"
+      ]
+    },
+    {
+      "slug": "cli-agent-orchestrator",
+      "title": "CLI Agent Orchestrator",
+      "authors": "awslabs",
+      "source": "GitHub",
+      "url": "https://github.com/awslabs/cli-agent-orchestrator",
+      "type": "harness",
+      "summary": "AWS Labs multi-agent orchestration for AI coding CLIs. The interesting part is the coordinator, not the branded CLIs it wraps.",
+      "usecase": "Use it to run two vendor CLIs as workers under one policy instead of alt-tabbing between terminals.",
+      "tags": [
+        "orchestration",
+        "cli",
+        "aws"
+      ],
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01",
+      "algorithms": [
+        "digest"
+      ]
+    }
+  ]
+}

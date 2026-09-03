@@ -22,9 +22,9 @@ export default function ReadingPage() {
           The daily agentic tools digest
         </h1>
         <p className="mt-4 max-w-[62ch] text-base leading-relaxed text-muted">
-          Every morning an agentic pipeline ranks the five most powerful coding
-          agents, harnesses, and repos a working engineer can actually use, then
-          files three articles or releases that are not research papers.
+          Every morning an agentic pipeline ranks the power-user coding agents,
+          harnesses, and repos worth cloning, then files three articles or
+          releases. The running catalog lives on ~/tools.
         </p>
 
         <div className="mt-8 font-mono text-xs text-muted">

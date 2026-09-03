@@ -12,10 +12,11 @@ import { isToolType } from "../lib/reading-core.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "data", "reading.json");
-const MAX_ITEMS = 300;
-const TOOL_COUNT = 5;
+const LOG_PATH = path.join(__dirname, "..", "data", "power-tools.json");
+const MAX_ITEMS = 600;
+const TOOL_COUNT = 20;
 const HEADLINE_COUNT = 3;
-const RETURNING_MAX = 2;
+const RETURNING_MAX = 6;
 
 const API_URL = "https://api.x.ai/v1/responses";
 const MODELS_URL = "https://api.x.ai/v1/models";
@@ -149,8 +150,8 @@ TODAY'S DATE: ${new Date().toISOString().slice(0, 10)}
 CURATION ALGORITHM:
 ${variantSpec()}
 
-SECTION 1 — TOP 5 TOOLS (exactly ${TOOL_COUNT})
-Find the ${TOOL_COUNT} most powerful agentic developer tools, coding harnesses, or code repositories a power user should actually clone or run. Advanced, recently shipped, and non-obvious. Famous IDEs and terminal chatbots are out.
+SECTION 1 — POWER-USER TOOLS (exactly ${TOOL_COUNT})
+Find ${TOOL_COUNT} agentic developer tools, coding harnesses, or code repositories a power user should actually clone or run. Combine angles: GitHub velocity, research-origin loops, infra under the agent, and systems-language harnesses. Advanced, recently shipped, and non-obvious. Famous IDEs and terminal chatbots are out. This is a large daily list, not a top-five.
 
 Hard rules:
 - Search GitHub first. Confirm each URL is a live repo or docs page.
@@ -319,10 +320,61 @@ async function main() {
   };
 
   await writeFile(DATA_PATH, JSON.stringify(next, null, 2) + "\n", "utf-8");
+  await appendPowerToolsLog(freshTools, today);
   console.log(
     `Issue ${today}${issueTitle ? ` · ${issueTitle}` : ""}: added ${freshTools.length} tool(s), ${freshHeadlines.length} headline(s): ` +
       fresh.map((i) => i.title).join(", ")
   );
+}
+
+function slugFromUrl(url, title) {
+  try {
+    const parsed = new URL(url);
+    const last = parsed.pathname.split("/").filter(Boolean).pop();
+    if (last) return last.toLowerCase();
+  } catch {
+    // fall through
+  }
+  return slugify(title);
+}
+
+async function appendPowerToolsLog(freshTools, today) {
+  let log = { lastUpdated: today, count: 0, tools: [] };
+  try {
+    log = JSON.parse(await readFile(LOG_PATH, "utf-8"));
+  } catch {
+    // first run
+  }
+  const byUrl = new Map((log.tools ?? []).map((tool) => [canonicalUrl(tool.url), tool]));
+  for (const item of freshTools) {
+    const key = canonicalUrl(item.url);
+    const existing = byUrl.get(key);
+    if (existing) {
+      existing.lastSeen = today;
+      if (item.summary) existing.summary = item.summary;
+      if (item.usecase) existing.usecase = item.usecase;
+      continue;
+    }
+    byUrl.set(key, {
+      slug: slugFromUrl(item.url, item.title),
+      title: item.title,
+      authors: item.authors,
+      source: item.source,
+      url: item.url,
+      type: item.type,
+      summary: item.summary,
+      usecase: item.usecase || "",
+      tags: item.tags || [],
+      firstSeen: today,
+      lastSeen: today,
+      algorithms: ["digest"],
+    });
+  }
+  const tools = [...byUrl.values()].sort(
+    (a, b) => b.lastSeen.localeCompare(a.lastSeen) || a.title.localeCompare(b.title)
+  );
+  const nextLog = { lastUpdated: today, count: tools.length, tools };
+  await writeFile(LOG_PATH, JSON.stringify(nextLog, null, 2) + "\n", "utf-8");
 }
 
 main().catch((err) => {

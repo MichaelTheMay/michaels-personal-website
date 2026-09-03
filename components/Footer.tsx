@@ -7,6 +7,12 @@ export function Footer() {
       <div className="mx-auto max-w-4xl px-6 py-10 text-center">
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 font-mono text-xs text-muted">
           <Link
+            href="/tools"
+            className="transition-colors hover:text-foreground"
+          >
+            ~/tools
+          </Link>
+          <Link
             href="/reading"
             className="transition-colors hover:text-foreground"
           >

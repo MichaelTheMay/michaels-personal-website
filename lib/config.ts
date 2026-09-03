@@ -39,7 +39,7 @@ export const philosophy = {
 export const newsletter = {
   heading: "Get the daily tools digest",
   blurb:
-    "Every morning an agentic pipeline ranks the five most powerful coding agents, harnesses, and repos, then files three articles or releases. One email a day.",
+    "Every morning an agentic pipeline ranks the power-user coding agents, harnesses, and repos worth cloning, then files three articles or releases. One email a day.",
   cta: "Subscribe",
   success: "You're in. The next digest lands in your inbox tomorrow morning.",
   placeholder: "you@example.com",

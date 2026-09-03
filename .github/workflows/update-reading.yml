@@ -40,12 +40,12 @@ jobs:
         run: |
           git config user.name "reading-list-bot"
           git config user.email "actions@users.noreply.github.com"
-          if git diff --quiet -- data/reading.json; then
+          if git diff --quiet -- data/reading.json data/power-tools.json; then
             echo "No changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git add data/reading.json
+          git add data/reading.json data/power-tools.json
           git commit -m "Update reading list for $(date -u +%Y-%m-%d)"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"

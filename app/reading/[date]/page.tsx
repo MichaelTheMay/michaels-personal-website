@@ -121,10 +121,16 @@ export default async function IssuePage({
               <Reveal>
                 <SectionLabel kicker="01 — Power tools" title="The stack" />
               </Reveal>
-              <ol className="space-y-5">
+              <ol
+                className={
+                  toolCount > 8
+                    ? "grid grid-cols-1 gap-4 sm:grid-cols-2"
+                    : "space-y-5"
+                }
+              >
                 {issue.tools.map((item, i) => (
                   <li key={item.id}>
-                    <Reveal delay={(i % 5) * 50}>
+                    <Reveal delay={(i % 6) * 40}>
                       <ReadingItemCard item={item} rank={i + 1} />
                     </Reveal>
                   </li>
