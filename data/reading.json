@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-02",
+  "lastUpdated": "2026-09-03",
   "issues": [
+    {
+      "date": "2026-09-03",
+      "title": "Declarative attention, open world models, and process rewards for agents",
+      "blurb": "Fresh results show language models can declare where to attend, open pipelines make long-horizon interactive video world models reproducible, and process-level rewards plus distilled operational skills raise agent reliability while cutting evaluation cost."
+    },
     {
       "date": "2026-09-02",
       "title": "Long-horizon agents, causal scientific discovery, and latent self-refinement",
@@ -145,14 +150,179 @@
       "date": "2026-08-04",
       "title": "Agent memory continuity, failure detection, and rigorous evaluation of long-horizon reasoning",
       "blurb": "Recent work advances persistent state and hierarchical memory for agents and sequence models, develops efficient monitors and detectors for mid-run failures and cross-session misuse, and exposes how answer-only scoring inflates claims of scientific reasoning while formal synthesis and test-time latent optimization offer more reliable paths forward."
-    },
-    {
-      "date": "2026-08-03",
-      "title": "Agent memory architectures, multi-objective control, and the fragility of alignment",
-      "blurb": "This issue gathers recent work on structured and evolving memory for long-horizon agents, policy-space methods for multi-reward optimization, and formal analyses of value fragility, imitation, and transformer expressivity under transcript management. The through-line is how agents can maintain competence and controllability over extended interactions without collapsing under conflicting objectives or imperfect proxies."
     }
   ],
   "items": [
+    {
+      "id": "language-models-can-control-their-own-attention-2026-09-03",
+      "title": "Language Models Can Control Their Own Attention",
+      "authors": "Namgyu Ho, Huzama Ahmad, Woosung Koh, Se-Young Yun, Tal Schuster, Cicero Nogueira dos Santos",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02737",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "The authors introduce Declarative Attention, a protocol in which the model itself emits mode tags inside its chain of thought to select global, focused, or local attention over the KV cache. The inference engine treats these declarations like tool calls and skips most cache reads. Zero-shot evaluation on 15 long-context tasks with Gemma-4-31B and Qwen-3.6-27B cuts attended tokens by 52% and 31% respectively, with only 1.27 and 2.75 point accuracy drops that shrink further with scale.",
+      "tags": [
+        "attention",
+        "long-context",
+        "inference",
+        "sparse-attention",
+        "KV-cache"
+      ]
+    },
+    {
+      "id": "solarwm-open-data-and-scalable-training-for-long-horizon-video-world-models-2026-09-03",
+      "title": "SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models",
+      "authors": "Junchao Huang, Guian Fang, Shengju Qian, Xianghao Kong, Zhuoran Zhao, Wei Huang, Yihua Du, Zixin Zhang, Justin Cui, Yuchao Gu, Yukang Chen, Xinting Hu, Tianyu He, Shaoshuai Shi, Zhuotao Tian, Xin Wang, Mike Zheng Shou, Li Jiang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02886",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "SolarWM releases a reconfigurable multi-source data engine that unifies 1.43 million clips from heterogeneous datasets into a frame-aligned contract of observations, metric cameras, captions, and provenance. A shared three-stage recipe (bidirectional adaptation, teacher-forced autoregressive init, distribution matching distillation) produces four backbone-native causal models from 5B to 33B that support real-time interactive rollouts lasting minutes to hours after training only on 5-second sequences. Full data, pipeline, weights, and framework are open-sourced for reproducible interactive world-model research.",
+      "tags": [
+        "world-models",
+        "video",
+        "open-source",
+        "long-horizon",
+        "interactive"
+      ]
+    },
+    {
+      "id": "post-training-language-models-for-gold-medal-performance-in-coding-competitions-2026-09-03",
+      "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+      "authors": "Aleksander Ficek, Sean Narenthiran, Mehrzad Samadi, Somshubra Majumdar, Boris Ginsburg",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02849",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "An end-to-end pipeline of curated problems, synthetic reasoning traces, SFT, and RL produces Nemotron-3 coding specialists. GenCorrect, a feedback-driven test-time loop that generates, evaluates, and refines solutions, lifts Nano-CC past the IOI 2025 gold threshold. A competition-tuned Ultra-CC system evaluated live under IOI 2026 human constraints scores 535.4/600, exceeding both the gold cutoff and the top human score of 498.27, the first reported AI system to outscore the highest human contestant on an IOI set.",
+      "tags": [
+        "coding",
+        "RL",
+        "post-training",
+        "test-time-compute",
+        "competitions"
+      ]
+    },
+    {
+      "id": "repo-to-skill-distilling-github-repositories-into-ai4ai-skills-2026-09-03",
+      "title": "Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills",
+      "authors": "Jianlyu Chen, Yuyang Hu, Hongjin Qian, Jiawei Liu, Wenqing Wei, Xiaolong Chen, Defu Lian, Zhicheng Dou, Chaozhuo Li, Qiwei Ye, Zheng Liu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02749",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "DisCo is a skill-powered research agent that distills operational know-how from repositories into compact verified skills, both task-agnostically (yielding the 5,000+ skill AREX library from 1,000 ML repos) and task-orientedly. With backbone, harness, and budget fixed, the skill-equipped agent gains 134% on MLE-bench, 34% on PaperBench, and solid lifts on FrontierCS and PassNet over the identical agent without skills. The gains come purely from reusable operating context rather than larger models or more search.",
+      "tags": [
+        "agents",
+        "skills",
+        "distillation",
+        "ML-research",
+        "repositories"
+      ]
+    },
+    {
+      "id": "cliff-learning-process-rewards-from-the-first-mistake-2026-09-03",
+      "title": "Cliff: Learning Process Rewards from the First Mistake",
+      "authors": "Peixuan Han, Runhui Wang, Ketan Ramaneti, Jie Hao, Gerald Friedland, Chris Kong",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02817",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "Cliff uses an off-the-shelf teacher LLM to locate the first mistake in each RLVR rollout, splitting it into a correct prefix and incorrect suffix, then assigns positive token-level advantages before the cliff and negative ones after. Across 12 scenarios it outperforms on-policy distillation by 15% and standard GRPO by 7%, even with modest teachers. The method supplies dense process supervision without a specialized process reward model or identical teacher-student reasoning styles.",
+      "tags": [
+        "RLVR",
+        "process-rewards",
+        "reasoning",
+        "reward-shaping",
+        "LLM-post-training"
+      ]
+    },
+    {
+      "id": "discriminative-world-models-for-web-agents-2026-09-03",
+      "title": "Discriminative World Models for Web Agents",
+      "authors": "Kelvin Li, Dhruv Pendharkar, Anish Pahilajani, Chuyi Shang, Leon Oks, Leonid Karlinsky, Rogerio Feris, Trevor Darrell, Roei Herzig",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02885",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "Instead of supervised next-state prediction, the authors train world models with a predicted-state matching objective that forces predicted representations to discriminate the true next state from those of alternative actions. Models trained on branching WebArena trajectories outperform supervised next-state baselines on a held-out matching benchmark and improve PRM-style action ranking on WebPRMBench. At test time the discriminative world model raises end-to-end success on WebArena-Lite.",
+      "tags": [
+        "web-agents",
+        "world-models",
+        "discriminative",
+        "action-selection",
+        "PRM"
+      ]
+    },
+    {
+      "id": "safeevolve-harness-policy-co-evolution-from-agent-experience-for-safety-alignmen-2026-09-03",
+      "title": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
+      "authors": "Qinghua Mao, Wanying Qu, Dadi Guo, Leitao Yuan, Qingyu Liu, Yu Li, Guanxu Chen, Yanwei Fu, Xi Lin, Xia Hu, Dongrui Liu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02786",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "SafeEvolve turns completed on-policy trajectories into continual harness-policy co-evolution: trajectory safety evidence produces bounded, auditable updates to safety prompts and hierarchical skills, while a two-stage SFT-then-RL policy learns to use those artifacts and internalize safer multi-step behavior. On agentic safety benchmarks the method yields a stronger safety-utility tradeoff; for Qwen3.5-4B it cuts attack success rate threefold on AgentDojo while raising benign utility.",
+      "tags": [
+        "agent-safety",
+        "harness",
+        "co-evolution",
+        "alignment",
+        "multi-step"
+      ]
+    },
+    {
+      "id": "trace-as-state-reasoning-traces-as-conditional-states-for-long-context-transform-2026-09-03",
+      "title": "Trace as State: Reasoning Traces as Conditional States for Long-Context Transformers",
+      "authors": "Xu Zou, Jie Tang",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02702",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "The paper formalizes that causal transformers need exponentially less memory when a conditioning state arrives early rather than late. Trace as State therefore places previously collected reasoning traces before the long context on a fresh pass so the derived state can guide rereading. Across three models and three long-context datasets it beats the matched Trace Append control in 26 of 27 settings, lifting GraphWalks exact match dramatically (e.g., DeepSeek from 29-43% to 81.8%).",
+      "tags": [
+        "long-context",
+        "reasoning-traces",
+        "conditional-state",
+        "transformers",
+        "memory"
+      ]
+    },
+    {
+      "id": "earlyeval-cheaper-agent-evaluation-via-early-outcome-prediction-2026-09-03",
+      "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+      "authors": "Yuling Shi, Zhensu Sun, Junsen Dong, Chengcheng Wan, David Lo, Xiaodong Gu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02783",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "EarlyEval trains lightweight LightGBM success and failure classifiers on behavioral, textual, and reference features and halts an agent run as soon as either crosses a calibrated threshold. On SWE-bench Verified, TerminalBench, and Toolathlon it eliminates 13-26% of steps and up to 44% of input tokens at 89-97% prediction accuracy, while shifting resolve rates by only 1-2 points on average. The approach cuts per-task cost without discarding tasks.",
+      "tags": [
+        "evaluation",
+        "agents",
+        "efficiency",
+        "early-stopping",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "ohc-orthogonal-hyper-connections-on-so-4-via-quaternions-2026-09-03",
+      "title": "oHC: Orthogonal Hyper-Connections on SO(4) via Quaternions",
+      "authors": "Haoqiang Guo, Xuyi Chen, Bo Ke, Yishu Lei, Ziyang Xu, Shikun Feng, Ximen, Wenhan Luo",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.02672",
+      "type": "paper",
+      "dateAdded": "2026-09-03",
+      "summary": "Unconstrained Hyper-Connections can amplify residuals unboundedly; manifold-constrained versions on doubly stochastic matrices prevent amplification but force stream differences to contract, eroding diversity. Orthogonal Hyper-Connections restrict the residual mixing matrix to SO(n), preserving norms exactly. For the common four-stream case the group is parameterized by a pair of unit quaternions with no extra parameters and a fixed pattern of signed additions, outperforming single-stream residuals, mHC, and identity HC across downstream tasks.",
+      "tags": [
+        "architecture",
+        "residuals",
+        "hyper-connections",
+        "quaternions",
+        "stability"
+      ]
+    },
     {
       "id": "selective-agent-guidance-via-entropy-learning-autonomous-policies-from-imperfect-2026-09-02",
       "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
@@ -4898,169 +5068,6 @@
         "interactive theorem proving",
         "Euclidean geometry",
         "Lean 4"
-      ]
-    },
-    {
-      "id": "fragility-of-value-under-imperfect-alignment-2026-08-03",
-      "title": "Fragility of Value under Imperfect Alignment",
-      "authors": "Winter Cross",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.28881",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "The paper formalizes idealized alignment training that enforces a proxy condition on an agent's value function before world-optimization. It derives conditions on the human value function and proxy accuracy under which an η-catastrophic value function (one that drives expected human value below η under unbounded optimization) is still deployed, highlighting over-optimization risk and motivating designs such as quantilizers that limit optimization pressure rather than relying solely on pre-deployment training.",
-      "tags": [
-        "AI alignment",
-        "value fragility",
-        "optimization",
-        "formal methods"
-      ]
-    },
-    {
-      "id": "transcript-managed-transformers-monotone-multi-agent-collapse-and-universality-w-2026-08-03",
-      "title": "Transcript-Managed Transformers: Monotone Multi-Agent Collapse and Universality with Two Pop-Enabled Transcripts",
-      "authors": "Sergey Salishev",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.29496",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "The work models fixed-precision causal Transformers that manage transcripts partitioned into bounded channels, with stay/push/pop operations. It proves that pop-free (append-only) systems realize exactly deterministic finite-state transductions even for multi-agent monotone protocols, while two pop-enabled channels restore stack discipline and yield universality (RE), with exact simulation costs and invariance results under fixed block size and visibility.",
-      "tags": [
-        "transformers",
-        "formal languages",
-        "multi-agent",
-        "expressivity",
-        "theory"
-      ]
-    },
-    {
-      "id": "the-grokked-illusion-true-equilibrium-mitigates-catastrophic-forgetting-2026-08-03",
-      "title": "The Grokked Illusion: True Equilibrium Mitigates Catastrophic Forgetting",
-      "authors": "Xiaotian Zhang, Lai Shun Chan, Yue Shang, Entao Yang, Ge Zhang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.29503",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "Using modular arithmetic grokking, the authors compare AdamW-trained transformers against high-entropy models sampled via Wang-Landau molecular dynamics that achieve identical saturated performance. After forcing both to memorize random-label data, AdamW models drop original-task accuracy below 75% while high-entropy models retain ~95%, linked to higher effective rank in attention and MLP weights that buffers against interference; perfect generalization therefore masks differences in robustness.",
-      "tags": [
-        "grokking",
-        "catastrophic forgetting",
-        "entropy",
-        "representation learning",
-        "robustness"
-      ]
-    },
-    {
-      "id": "when-does-on-policy-interaction-help-representational-tradeoffs-in-value-based-i-2026-08-03",
-      "title": "When Does On-Policy Interaction Help? Representational Tradeoffs in Value-Based Imitation Learning",
-      "authors": "Luca Viano, Antoine Moulin, Audrey Huang, Volkan Cevher, Philip Amortila, Dylan J. Foster",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.29617",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "The paper shows that interactive expert queries along the learner's trajectories relax representational requirements: realizability of the expert's value function (rather than its full policy) suffices for statistical efficiency. It introduces OVI, an on-policy interactive algorithm that is computationally efficient given a linear maximization oracle, proves a matching negative result that offline methods require policy-class complexity under weaker assumptions, and demonstrates largest gains when the learner is less expressive than the expert.",
-      "tags": [
-        "imitation learning",
-        "on-policy",
-        "value functions",
-        "theoretical ML",
-        "interactive learning"
-      ]
-    },
-    {
-      "id": "don-t-mix-rewards-mix-policies-policy-decomposition-and-optimization-for-multi-r-2026-08-03",
-      "title": "Don't Mix Rewards, Mix Policies: Policy Decomposition and Optimization for Multi-Reward RL",
-      "authors": "Ruiming Liang, Yi Zhong, Yizhen Yuan, Yinan Zheng, Tianyi Tan, Tianyue Wang, Haiyun Guo, Jinqiao Wang, Xianyuan Zhan",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.29246",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "PRISM decomposes multi-reward RL into standalone positive policies plus a global negative policy instead of mixing reward signals, thereby reducing alignment-tax conflicts during optimization. The resulting policies can be flexibly composed at inference for controllable trade-offs; experiments on scientific reasoning, tool-use, and helpfulness-safety show consistent gains over multi-reward baselines together with explicit preference control.",
-      "tags": [
-        "multi-reward RL",
-        "LLM alignment",
-        "policy composition",
-        "post-training"
-      ]
-    },
-    {
-      "id": "lemur-learning-to-align-with-multi-objective-reinforcement-learning-from-prefere-2026-08-03",
-      "title": "LEMUR: Learning to Align with Multi-Objective Reinforcement Learning from Preference Feedback",
-      "authors": "Manith Adikari, Bei Peng, Samuele Vinanzi, Angelo Cangelosi",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.29559",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "LEMUR bridges multi-objective RL and preference-based RL by jointly learning policies and multiple objective-specific reward models from interactive multi-human preference feedback, without requiring pre-specified scalar or vector rewards. The framework enables agents to balance competing objectives during learning and outperforms baselines on standard multi-objective benchmarks.",
-      "tags": [
-        "multi-objective RL",
-        "preference learning",
-        "human feedback",
-        "alignment"
-      ]
-    },
-    {
-      "id": "beyond-retrieval-analytic-memory-for-multimodal-agents-2026-08-03",
-      "title": "Beyond Retrieval: Analytic Memory for Multimodal Agents",
-      "authors": "Zhoujin Tian, Yao Tian, Hao Zhang, Cheng Chen, Yakun Li, Lei Zhang, Xiaofang Zhou",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.29440",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "AdaMM treats analytic memory as a complement to retrieval memory: it extracts provenance-linked attribute-value observations from dialogue, images and metadata, discovers recurring field structures, and materializes them for filtering, aggregation, ranking and temporal comparison. A memory-aware planner decomposes queries into retrieval versus analytic operations; gains reach 11.3% and 7.3% on MemEye and MemGallery long-term multimodal benchmarks.",
-      "tags": [
-        "agent memory",
-        "multimodal",
-        "analytic memory",
-        "long-horizon agents"
-      ]
-    },
-    {
-      "id": "self-play-meets-skill-evolution-self-evolving-search-agents-that-pose-solve-and--2026-08-03",
-      "title": "Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember",
-      "authors": "Zenghuang Fu, Zhaoyang Li, Qiuyuan Ai, Haoyu Wu, Minghui Wu, Chenxu Zhao, Ante Wang, Guannan He, Changwei Wang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.29468",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "SESA couples a challenger that poses problems with a solver that retrieves from an evolving skill memory; informative failures are distilled into reusable skills that rewrite the memory, altering both solver behavior and the future problem distribution. Skills shape on-policy trajectories so benefits enter parameters as well as the external bank, yielding 1.2–3.2 point gains over self-play baselines across seven QA benchmarks while retaining optional inference-time retrieval.",
-      "tags": [
-        "self-play",
-        "skill memory",
-        "agent self-evolution",
-        "search agents"
-      ]
-    },
-    {
-      "id": "zero-mem-zero-token-memory-operations-for-llm-agents-2026-08-03",
-      "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
-      "authors": "Yilin Xiao, Zhehan Zhu, Yujing Zhang, Jin Chen, Zijin Hong, Luyao Zhuang, Qinggang Zhang, Shengyuan Chen, Xiaocao Ouyang, Lingfei Ren, Xiao Huang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.29377",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "Zero-Mem performs all memory operations without any intermediate LLM calls or token consumption outside final QA: original traces are organized into an entity-context graph and a temporal hierarchy; queries weigh and retrieve from both views, with deterministic calibration to discard conflicts and ground answers. It matches competitive long-memory QA performance while cutting memory-operation time by 57.6% relative to the fastest baseline under identical final-reader budgets.",
-      "tags": [
-        "agent memory",
-        "efficiency",
-        "zero-token",
-        "long-context QA"
-      ]
-    },
-    {
-      "id": "cage-certified-authorization-under-typed-return-uncertainty-for-tool-using-agent-2026-08-03",
-      "title": "CAGE: Certified Authorization under Typed-Return Uncertainty for Tool-Using Agents",
-      "authors": "Blaise Delattre, Cong Wang, Yang Cao",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2607.29190",
-      "type": "paper",
-      "dateAdded": "2026-08-03",
-      "summary": "CAGE certifies that a candidate tool action remains authorized over a joint neighborhood of plausible correctly-bound returns (one admissible binding fault plus bounded numerical drift), proving that separate categorical and numerical certificates do not compose. It enumerates discrete branches exactly and certifies continuous perturbations within each, eliminating in-budget false allows that pointwise gates admit while preserving useful autonomy across synthetic, policy-as-code, regulatory and real-transaction settings.",
-      "tags": [
-        "tool-using agents",
-        "certified authorization",
-        "safety",
-        "uncertainty"
       ]
     }
   ]
