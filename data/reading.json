@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-03",
+  "lastUpdated": "2026-09-04",
   "issues": [
+    {
+      "date": "2026-09-04",
+      "title": "Clone-ready harnesses and runtimes that put the agent loop under your control",
+      "blurb": "Today's picks favor lightweight WASM OSes, Rust terminal harnesses, typed agent SDKs, browser MCP surfaces, and memory graphs you can wire directly into durable loops. Power users get sandboxes, control planes, and eval hooks without vendor lock-in."
+    },
     {
       "date": "2026-09-03",
       "title": "The combined power-user stack",
@@ -153,6 +158,411 @@
     }
   ],
   "items": [
+    {
+      "id": "agentos-2026-09-04",
+      "title": "agentOS",
+      "authors": "rivet-dev",
+      "source": "GitHub",
+      "url": "https://github.com/rivet-dev/agentos",
+      "type": "harness",
+      "dateAdded": "2026-09-04",
+      "summary": "Lightweight WASM and V8 isolate OS library that runs agents inside your process with millisecond cold starts and direct host bindings.",
+      "tags": [
+        "wasm",
+        "sandbox",
+        "runtime",
+        "acp"
+      ],
+      "usecase": "Use it to embed Pi or other ACP agents as in-process VMs with granular permissions instead of spinning full sandboxes.",
+      "returning": false
+    },
+    {
+      "id": "vt-code-2026-09-04",
+      "title": "VT Code",
+      "authors": "vinhnx",
+      "source": "GitHub",
+      "url": "https://github.com/vinhnx/VTCode",
+      "type": "tool",
+      "dateAdded": "2026-09-04",
+      "summary": "Rust terminal coding agent and harness with sandboxed tools, durable sessions, MCP, skills, and multi-provider support.",
+      "tags": [
+        "rust",
+        "tui",
+        "coding-agent",
+        "mcp"
+      ],
+      "usecase": "Use it to run long autonomous coding loops from a TUI or headless mode with built-in verification and worktree isolation.",
+      "returning": false
+    },
+    {
+      "id": "deep-agents-2026-09-04",
+      "title": "Deep Agents",
+      "authors": "langchain-ai",
+      "source": "GitHub",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "type": "harness",
+      "dateAdded": "2026-09-04",
+      "summary": "Batteries-included opinionated agent harness on LangGraph with planning, filesystem tools, sub-agents, and context management.",
+      "tags": [
+        "langgraph",
+        "harness",
+        "subagents",
+        "python"
+      ],
+      "usecase": "Use it to spin up a production-ready long-horizon research or coding agent and override only the pieces you need.",
+      "returning": false
+    },
+    {
+      "id": "stagehand-2026-09-04",
+      "title": "Stagehand",
+      "authors": "browserbase",
+      "source": "GitHub",
+      "url": "https://github.com/browserbase/stagehand",
+      "type": "tool",
+      "dateAdded": "2026-09-04",
+      "summary": "SDK for browser agents built on Playwright with natural language actions, self-healing, and multi-language support.",
+      "tags": [
+        "browser",
+        "playwright",
+        "agent-sdk",
+        "typescript"
+      ],
+      "usecase": "Use it to give coding or research agents reliable web navigation and extraction without brittle selectors.",
+      "returning": false
+    },
+    {
+      "id": "chrome-devtools-mcp-2026-09-04",
+      "title": "Chrome DevTools MCP",
+      "authors": "ChromeDevTools",
+      "source": "GitHub",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "type": "tool",
+      "dateAdded": "2026-09-04",
+      "summary": "Official MCP server exposing full Chrome DevTools for automation, performance traces, network, console, and debugging.",
+      "tags": [
+        "mcp",
+        "devtools",
+        "browser",
+        "performance"
+      ],
+      "usecase": "Use it to let an agent inspect LCP, take heap snapshots, or drive live Chrome sessions during coding tasks.",
+      "returning": false
+    },
+    {
+      "id": "smolagents-2026-09-04",
+      "title": "smolagents",
+      "authors": "huggingface",
+      "source": "GitHub",
+      "url": "https://github.com/huggingface/smolagents",
+      "type": "repo",
+      "dateAdded": "2026-09-04",
+      "summary": "Barebones Python library for code-as-action agents that write and execute Python in sandboxes like E2B.",
+      "tags": [
+        "code-agent",
+        "python",
+        "sandbox",
+        "huggingface"
+      ],
+      "usecase": "Use it to prototype multi-step agents that compose tools via real code rather than JSON tool calls.",
+      "returning": false
+    },
+    {
+      "id": "pydantic-ai-2026-09-04",
+      "title": "Pydantic AI",
+      "authors": "pydantic",
+      "source": "GitHub",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "type": "tool",
+      "dateAdded": "2026-09-04",
+      "summary": "Typed Python AI SDK and agent framework with structured outputs, multi-model support, and MCP integration.",
+      "tags": [
+        "typed",
+        "python",
+        "mcp",
+        "agents"
+      ],
+      "usecase": "Use it to build type-safe agent loops with validated I/O and Logfire observability for production services.",
+      "returning": false
+    },
+    {
+      "id": "openai-agents-sdk-2026-09-04",
+      "title": "OpenAI Agents SDK",
+      "authors": "openai",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-agents-python",
+      "type": "harness",
+      "dateAdded": "2026-09-04",
+      "summary": "Lightweight provider-agnostic framework for multi-agent workflows with handoffs, guardrails, and tracing.",
+      "tags": [
+        "multi-agent",
+        "sdk",
+        "python",
+        "tracing"
+      ],
+      "usecase": "Use it to compose specialist agents with structured handoffs and run them against any tool-calling LLM.",
+      "returning": false
+    },
+    {
+      "id": "graphiti-2026-09-04",
+      "title": "Graphiti",
+      "authors": "getzep",
+      "source": "GitHub",
+      "url": "https://github.com/getzep/graphiti",
+      "type": "repo",
+      "dateAdded": "2026-09-04",
+      "summary": "Framework for building temporal knowledge graphs that track changing facts with provenance for agent memory.",
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "temporal",
+        "agents"
+      ],
+      "usecase": "Use it to give agents a real-time context graph that invalidates stale facts and supports hybrid retrieval.",
+      "returning": false
+    },
+    {
+      "id": "composio-2026-09-04",
+      "title": "Composio",
+      "authors": "ComposioHQ",
+      "source": "GitHub",
+      "url": "https://github.com/ComposioHQ/composio",
+      "type": "tool",
+      "dateAdded": "2026-09-04",
+      "summary": "Tool layer with 1000+ integrations, auth, search, and sandboxed workbench so agents stop reinventing OAuth.",
+      "tags": [
+        "tools",
+        "integrations",
+        "auth",
+        "mcp"
+      ],
+      "usecase": "Use it to drop authenticated toolkits into any agent harness for Gmail, GitHub, Slack, and more.",
+      "returning": false
+    },
+    {
+      "id": "harness-kit-2026-09-04",
+      "title": "Harness Kit",
+      "authors": "deepklarity",
+      "source": "GitHub",
+      "url": "https://github.com/deepklarity/harness-kit",
+      "type": "harness",
+      "dateAdded": "2026-09-04",
+      "summary": "Multi-agent orchestration CLI plus task board with TDD-first patterns, RCA, and cost-aware delegation.",
+      "tags": [
+        "orchestration",
+        "patterns",
+        "task-board",
+        "cli"
+      ],
+      "usecase": "Use it to decompose specs into dependency graphs, route tasks to cheapest capable agents, and keep evidence trails.",
+      "returning": false
+    },
+    {
+      "id": "kit-2026-09-04",
+      "title": "Kit",
+      "authors": "speakeasy-api",
+      "source": "GitHub",
+      "url": "https://github.com/speakeasy-api/kit",
+      "type": "tool",
+      "dateAdded": "2026-09-04",
+      "summary": "Coding agent runtime with one compose tool, ACP server, A2A, and subagent orchestration in a static binary.",
+      "tags": [
+        "runtime",
+        "acp",
+        "compose",
+        "cli"
+      ],
+      "usecase": "Use it as a concise daily-driver harness that reloads skills and MCP dynamically and hosts other agents over ACP.",
+      "returning": false
+    },
+    {
+      "id": "agno-2026-09-04",
+      "title": "Agno",
+      "authors": "agno-agi",
+      "source": "GitHub",
+      "url": "https://github.com/agno-agi/agno",
+      "type": "harness",
+      "dateAdded": "2026-09-04",
+      "summary": "Framework and AgentOS runtime for building, serving, and managing agent platforms with UI control plane.",
+      "tags": [
+        "platform",
+        "runtime",
+        "control-plane",
+        "python"
+      ],
+      "usecase": "Use it to own your full agent stack including sessions, memory, traces, and MCP in your own cloud.",
+      "returning": false
+    },
+    {
+      "id": "letta-code-2026-09-04",
+      "title": "Letta Code",
+      "authors": "letta-ai",
+      "source": "GitHub",
+      "url": "https://github.com/letta-ai/letta-code",
+      "type": "tool",
+      "dateAdded": "2026-09-04",
+      "summary": "Memory-first stateful coding agent that persists identity and long-term memory across sessions and models.",
+      "tags": [
+        "memory",
+        "stateful",
+        "coding-agent",
+        "letta"
+      ],
+      "usecase": "Use it to run coding agents that learn from experience and retain context without prompt stuffing.",
+      "returning": false
+    },
+    {
+      "id": "e2b-desktop-2026-09-04",
+      "title": "E2B Desktop",
+      "authors": "e2b-dev",
+      "source": "GitHub",
+      "url": "https://github.com/e2b-dev/desktop",
+      "type": "repo",
+      "dateAdded": "2026-09-04",
+      "summary": "Open-source virtual desktop sandbox for computer-use agents with graphical environment and streaming.",
+      "tags": [
+        "sandbox",
+        "computer-use",
+        "desktop",
+        "e2b"
+      ],
+      "usecase": "Use it to give agents a full isolated desktop for GUI automation and secure code execution.",
+      "returning": false
+    },
+    {
+      "id": "mcp-use-2026-09-04",
+      "title": "mcp-use",
+      "authors": "mcp-use",
+      "source": "GitHub",
+      "url": "https://github.com/mcp-use/mcp-use",
+      "type": "tool",
+      "dateAdded": "2026-09-04",
+      "summary": "TypeScript framework for building MCP servers and apps rebuilt for the stateless 2026 MCP spec.",
+      "tags": [
+        "mcp",
+        "typescript",
+        "servers",
+        "apps"
+      ],
+      "usecase": "Use it to ship high-throughput MCP servers with inspector, HMR views, and headless screenshot debugging for agents.",
+      "returning": false
+    },
+    {
+      "id": "dmux-2026-09-04",
+      "title": "dmux",
+      "authors": "standardagents",
+      "source": "GitHub",
+      "url": "https://github.com/standardagents/dmux",
+      "type": "harness",
+      "dateAdded": "2026-09-04",
+      "summary": "Dev agent multiplexer that creates git worktrees and tmux panes for parallel coding agents.",
+      "tags": [
+        "worktrees",
+        "tmux",
+        "orchestration",
+        "parallel"
+      ],
+      "usecase": "Use it to launch isolated agent sessions per task then merge or PR the results from a single board.",
+      "returning": false
+    },
+    {
+      "id": "agent-harness-2026-09-04",
+      "title": "agent-harness",
+      "authors": "SUNRNEHUI",
+      "source": "GitHub",
+      "url": "https://github.com/SUNRNEHUI/agent-harness",
+      "type": "harness",
+      "dateAdded": "2026-09-04",
+      "summary": "Plan-native execution harness adding intent-to-contract synthesis, durable handoff, and evidence-based acceptance.",
+      "tags": [
+        "plan",
+        "contracts",
+        "reliability",
+        "skills"
+      ],
+      "usecase": "Use it to add portable contracts and audit gates across Codex, Claude Code, or other file-and-shell agents.",
+      "returning": false
+    },
+    {
+      "id": "praisonai-2026-09-04",
+      "title": "PraisonAI",
+      "authors": "MervinPraison",
+      "source": "GitHub",
+      "url": "https://github.com/MervinPraison/PraisonAI",
+      "type": "harness",
+      "dateAdded": "2026-09-04",
+      "summary": "Fast multi-agent workforce framework with planning, memory, RAG, dashboards, and multi-provider support.",
+      "tags": [
+        "multi-agent",
+        "workforce",
+        "python",
+        "mcp"
+      ],
+      "usecase": "Use it to spin up autonomous agent teams with low-latency orchestration for production workflows.",
+      "returning": false
+    },
+    {
+      "id": "aios-2026-09-04",
+      "title": "AIOS",
+      "authors": "agiresearch",
+      "source": "GitHub",
+      "url": "https://github.com/agiresearch/AIOS",
+      "type": "repo",
+      "dateAdded": "2026-09-04",
+      "summary": "AI Agent Operating System with kernel and SDK for scheduling, context, memory, tools, and computer-use sandboxes.",
+      "tags": [
+        "os",
+        "kernel",
+        "sandbox",
+        "multi-agent"
+      ],
+      "usecase": "Use it to treat agents as first-class OS processes with shared resource management and deployment modes.",
+      "returning": false
+    },
+    {
+      "id": "show-hn-vt-code-my-attempt-at-building-a-coding-agent-harness-2026-09-04",
+      "title": "Show HN: VT Code – My attempt at building a coding-agent harness",
+      "authors": "vinhnx",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49550066",
+      "type": "article",
+      "dateAdded": "2026-09-04",
+      "summary": "A year-long Rust harness project focused on tool execution, context, sandboxing, permissions, and long-running reliability. The author invites feedback from others building similar agent loops.",
+      "tags": [
+        "show-hn",
+        "rust",
+        "harness"
+      ]
+    },
+    {
+      "id": "show-hn-kit-claude-code-but-concise-2026-09-04",
+      "title": "Show HN: Kit. Claude Code but Concise",
+      "authors": "danielkov",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49537801",
+      "type": "release",
+      "dateAdded": "2026-09-04",
+      "summary": "Kit ships as a single-binary coding runtime with one compose tool, ACP server, A2A, and dynamic skill reload. It aims for lower token cost and cleaner subagent orchestration than full IDEs.",
+      "tags": [
+        "release",
+        "cli",
+        "acp"
+      ]
+    },
+    {
+      "id": "show-hn-mcp-use-v2-rebuilt-from-scratch-for-stateless-2026-07-28-mcp-spec-2026-09-04",
+      "title": "Show HN: mcp-use v2 rebuilt from scratch for stateless 2026-07-28 MCP spec",
+      "authors": "luigipederzani",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49198472",
+      "type": "release",
+      "dateAdded": "2026-09-04",
+      "summary": "v2 drops sessions for the new stateless MCP revision and delivers higher throughput plus a smaller install. It targets MCP apps with HMR views and agent-friendly headless debugging.",
+      "tags": [
+        "mcp",
+        "typescript",
+        "release"
+      ]
+    },
     {
       "id": "agenvoy-2026-09-03",
       "title": "Agenvoy",
@@ -1502,12 +1912,12 @@
     {
       "id": "thomson-continual-learning-of-frontier-models-for-sovereignai-2026-08-28",
       "title": "Thomson: Continual Learning of Frontier Models for SovereignAI",
-      "authors": "Shengzhuang Chen, Jerrod Parker, Yejin Bang, Andrew M. Bean, Nabeel Seedat, Stefan Winzeck, Daniil Glazko, Jannik Zgraggen, Fangyi Yu, Scott Arnott, Dietrich Trautmann, Luca Ciuffreda, Guglielmo Bonifazi, Davide Romano, Bradley Bell, Kirsty Fielding, Daniele Giofr\u00e8, Tom Zielund, Ipshita Chatterjee, Sneha Murthy Ghantasala, Manpreet Nanreh, John Scoville, Maciej Sakowicz, Wassim Seifeddine, Lukas Thede, Jonathan Richard Schwarz",
+      "authors": "Shengzhuang Chen, Jerrod Parker, Yejin Bang, Andrew M. Bean, Nabeel Seedat, Stefan Winzeck, Daniil Glazko, Jannik Zgraggen, Fangyi Yu, Scott Arnott, Dietrich Trautmann, Luca Ciuffreda, Guglielmo Bonifazi, Davide Romano, Bradley Bell, Kirsty Fielding, Daniele Giofrè, Tom Zielund, Ipshita Chatterjee, Sneha Murthy Ghantasala, Manpreet Nanreh, John Scoville, Maciej Sakowicz, Wassim Seifeddine, Lukas Thede, Jonathan Richard Schwarz",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.27147",
       "type": "paper",
       "dateAdded": "2026-08-28",
-      "summary": "Thomson shows that careful continual mid- and post-training of open-weight models, with plasticity/stability safeguards and minimal high-impact interventions, can produce frontier-competitive general-purpose performance on agentic, safety, legal, tax, multilingual, and deep-research tasks at far lower cost than training from scratch. Results exhibit a \u03c0-shaped pattern of broad gains including untargeted capabilities while nearly eliminating catastrophic forgetting, supporting practical SovereignAI ownership of model, tools, values, and data.",
+      "summary": "Thomson shows that careful continual mid- and post-training of open-weight models, with plasticity/stability safeguards and minimal high-impact interventions, can produce frontier-competitive general-purpose performance on agentic, safety, legal, tax, multilingual, and deep-research tasks at far lower cost than training from scratch. Results exhibit a π-shaped pattern of broad gains including untargeted capabilities while nearly eliminating catastrophic forgetting, supporting practical SovereignAI ownership of model, tools, values, and data.",
       "tags": [
         "continual learning",
         "frontier models",
@@ -1662,7 +2072,7 @@
     {
       "id": "imitation-learning-for-connection-tableau-construction-2026-08-27",
       "title": "Imitation Learning for Connection-Tableau Construction",
-      "authors": "Fredrik R\u00f8mming, Mantas Bak\u0161ys, Martin S. Fixman, Sean B. Holden",
+      "authors": "Fredrik Rømming, Mantas Bakšys, Martin S. Fixman, Sean B. Holden",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.26009",
       "type": "paper",
@@ -1854,7 +2264,7 @@
     {
       "id": "prime-agent-a-self-improving-rlm-harness-2026-08-25",
       "title": "Prime Agent: A Self-Improving RLM Harness",
-      "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas, Sebastian M\u00fcller, Elie Bakouch, Daniel Auras, Mika Senghaas, Fares Obeid, Konstantin Dunas, Johannes Hagemann, Sami Jaghouar",
+      "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas, Sebastian Müller, Elie Bakouch, Daniel Auras, Mika Senghaas, Fares Obeid, Konstantin Dunas, Johannes Hagemann, Sami Jaghouar",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.23552",
       "type": "paper",
@@ -1933,13 +2343,13 @@
     },
     {
       "id": "agent-g-gaussian-guidance-for-agentic-reinforcement-learning-2026-08-25",
-      "title": "Agent-G\u00b2: Gaussian Guidance for Agentic Reinforcement Learning",
+      "title": "Agent-G²: Gaussian Guidance for Agentic Reinforcement Learning",
       "authors": "Zixuan Wang, Yanrui Miao, Zhengxi Lu, Teng Pan, Yiwen Qiu, Hongxing Li, Peng Qiu, Ruiqing Zhang, Yongliang Shen",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.23318",
       "type": "paper",
       "dateAdded": "2026-08-25",
-      "summary": "Hint-based RL for long-horizon agents benefits from a band of guidance depths whose utility is approximately Gaussian rather than a single optimum. Agent-G\u00b2 samples depth per task from a Gaussian whose center and spread are estimated online from ordinary policy-optimization rollouts, combining a global baseline with per-cluster difficulty. On ALFWorld and WebShop with 1.5B/7B models it outperforms strong hint-based and hint-free baselines by several points at under one-third the rollout cost of per-sample probing.",
+      "summary": "Hint-based RL for long-horizon agents benefits from a band of guidance depths whose utility is approximately Gaussian rather than a single optimum. Agent-G² samples depth per task from a Gaussian whose center and spread are estimated online from ordinary policy-optimization rollouts, combining a global baseline with per-cluster difficulty. On ALFWorld and WebShop with 1.5B/7B models it outperforms strong hint-based and hint-free baselines by several points at under one-third the rollout cost of per-sample probing.",
       "tags": [
         "agentic-RL",
         "guidance",
@@ -2258,7 +2668,7 @@
       "url": "https://arxiv.org/abs/2608.07169",
       "type": "paper",
       "dateAdded": "2026-08-23",
-      "summary": "Small agents rarely generate enough successful trajectories to build useful memory on their own. AMD is a training-free method that distills hierarchical memory (workflow, subtask, function) from a large teacher agent\u2019s successful traces and injects it proactively or reactively into the student. On AppWorld, BFCL V3 and ToolSandbox it yields large average accuracy gains for 4B-8B students, with subtask memory contributing the most and 4B models benefiting most.",
+      "summary": "Small agents rarely generate enough successful trajectories to build useful memory on their own. AMD is a training-free method that distills hierarchical memory (workflow, subtask, function) from a large teacher agent’s successful traces and injects it proactively or reactively into the student. On AppWorld, BFCL V3 and ToolSandbox it yields large average accuracy gains for 4B-8B students, with subtask memory contributing the most and 4B models benefiting most.",
       "tags": [
         "memory distillation",
         "small models",
@@ -2563,7 +2973,7 @@
     {
       "id": "learning-when-to-think-adaptive-reasoning-for-test-time-compute-allocation-2026-08-21",
       "title": "Learning When to Think: Adaptive Reasoning for Test-Time Compute Allocation",
-      "authors": "Gijs Kassenaar, Zhao Yang, Vincent Fran\u00e7ois-Lavet",
+      "authors": "Gijs Kassenaar, Zhao Yang, Vincent François-Lavet",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.20256",
       "type": "paper",
@@ -2771,12 +3181,12 @@
     {
       "id": "test-time-scaling-in-the-wild-why-exploitation-not-exploration-is-the-bottleneck-2026-08-20",
       "title": "Test-Time Scaling in the Wild: Why Exploitation, Not Exploration, Is the Bottleneck",
-      "authors": "Davide Romano, Kanak Raj, Jerrod Parker, Daniele Giofr\u00e8",
+      "authors": "Davide Romano, Kanak Raj, Jerrod Parker, Daniele Giofrè",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.18931",
       "type": "paper",
       "dateAdded": "2026-08-20",
-      "summary": "A compute-normalized comparison of five test-time scaling families across five open-ended benchmarks (medicine, law, finance, chat, creative writing) shows that the best candidate in the pool improves steadily with budget, so exploration works. Exploitation fails: state-of-the-art reward models correlate only \u03c1\u22480.12 with true quality, tree search collapses diversity, and only cross-candidate fusion consistently beats single-sample baselines yet still recovers roughly 40% of available quality. The candidate pool is not the bottleneck; selecting from it is.",
+      "summary": "A compute-normalized comparison of five test-time scaling families across five open-ended benchmarks (medicine, law, finance, chat, creative writing) shows that the best candidate in the pool improves steadily with budget, so exploration works. Exploitation fails: state-of-the-art reward models correlate only ρ≈0.12 with true quality, tree search collapses diversity, and only cross-candidate fusion consistently beats single-sample baselines yet still recovers roughly 40% of available quality. The candidate pool is not the bottleneck; selecting from it is.",
       "tags": [
         "test-time scaling",
         "reward models",
@@ -2786,13 +3196,13 @@
     },
     {
       "id": "l-vy-attention-single-pass-predictive-uncertainty-for-continuous-time-attention-2026-08-20",
-      "title": "L\u00e9vy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
+      "title": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
       "authors": "Sotirios P. Chatzis, Loukas Papadoulas",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.19171",
       "type": "paper",
       "dateAdded": "2026-08-20",
-      "summary": "L\u00e9vy Attention replaces softmax cross-attention with a stochastic integral against an inhomogeneous Poisson random measure whose intensity is assembled from query-key compatibilities over continuous time-channel space. In expectation it recovers a mollified cosine-kernel attention trainable with exact gradients, while the same deterministic pass emits closed-form evidence and disagreement statistics that form an exact RMS deviation estimate of the sampled operator. On irregular time-series tasks the free uncertainty signal outperforms multi-pass MC dropout and enables calibrated conformal coverage with a single forward pass.",
+      "summary": "Lévy Attention replaces softmax cross-attention with a stochastic integral against an inhomogeneous Poisson random measure whose intensity is assembled from query-key compatibilities over continuous time-channel space. In expectation it recovers a mollified cosine-kernel attention trainable with exact gradients, while the same deterministic pass emits closed-form evidence and disagreement statistics that form an exact RMS deviation estimate of the sampled operator. On irregular time-series tasks the free uncertainty signal outperforms multi-pass MC dropout and enables calibrated conformal coverage with a single forward pass.",
       "tags": [
         "attention",
         "uncertainty",
@@ -3309,7 +3719,7 @@
     {
       "id": "littlelearner-language-models-under-pedagogically-controlled-knowledge-exposure-2026-08-16",
       "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
-      "authors": "Fanfei Li, Jana Zeller, Manuel Prada-Corral, Thadd\u00e4us Wiedemer, Prasanna Mayilvahanan, Ryan Cotterell, Wieland Brendel",
+      "authors": "Fanfei Li, Jana Zeller, Manuel Prada-Corral, Thaddäus Wiedemer, Prasanna Mayilvahanan, Ryan Cotterell, Wieland Brendel",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.13545",
       "type": "paper",
@@ -3330,7 +3740,7 @@
       "url": "https://arxiv.org/abs/2608.13524",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "DARTree is a training-free speculative method that builds a fixed-width candidate tree from a diffusion drafter, scores nodes in batch, then applies best-first pruning before verification while extending a pretrained AR correction head from chains to trees. It decouples AR-head inference from sequential heap operations. Across math, code, and chat benchmarks it records the highest average acceptance lengths (up to 12.97 tokens per round) and lossless speedups (up to 9.73\u00d7) relative to strong baselines.",
+      "summary": "DARTree is a training-free speculative method that builds a fixed-width candidate tree from a diffusion drafter, scores nodes in batch, then applies best-first pruning before verification while extending a pretrained AR correction head from chains to trees. It decouples AR-head inference from sequential heap operations. Across math, code, and chat benchmarks it records the highest average acceptance lengths (up to 12.97 tokens per round) and lossless speedups (up to 9.73×) relative to strong baselines.",
       "tags": [
         "speculative-decoding",
         "diffusion",
@@ -3346,7 +3756,7 @@
       "url": "https://arxiv.org/abs/2608.13554",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "The Defensive Booster simultaneously matches online gradient boosting\u2019s Brier-score competition against the span of a weak class H on every adaptive sequence and, whenever a smooth weak-learning condition holds, drives classification error to zero at the rates of online weak-to-strong boosting. It operationalizes the dual view of boosting: high randomized error produces a smooth hard-core certificate that weak learning has failed. A strongly adaptive variant holds on every interval, and the algorithm uses only a single weak learner while outperforming ensemble baselines in both accuracy and runtime.",
+      "summary": "The Defensive Booster simultaneously matches online gradient boosting’s Brier-score competition against the span of a weak class H on every adaptive sequence and, whenever a smooth weak-learning condition holds, drives classification error to zero at the rates of online weak-to-strong boosting. It operationalizes the dual view of boosting: high randomized error produces a smooth hard-core certificate that weak learning has failed. A strongly adaptive variant holds on every interval, and the algorithm uses only a single weak learner while outperforming ensemble baselines in both accuracy and runtime.",
       "tags": [
         "online-learning",
         "boosting",
@@ -3357,7 +3767,7 @@
     {
       "id": "measuring-task-agnostic-training-data-influence-across-language-model-pretrainin-2026-08-16",
       "title": "Measuring Task-Agnostic Training Data Influence Across Language Model Pretraining",
-      "authors": "Yuto Nishida, Hirokazu Kiyomaru, Yusuke Oda, Takashi Kodama, Chaoran Liu, Daisuke Kawahara, Yusuke Miyao, Max M\u00fcller-Eberstein, Masaru Isonuma",
+      "authors": "Yuto Nishida, Hirokazu Kiyomaru, Yusuke Oda, Takashi Kodama, Chaoran Liu, Daisuke Kawahara, Yusuke Miyao, Max Müller-Eberstein, Masaru Isonuma",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.13515",
       "type": "paper",
@@ -3378,7 +3788,7 @@
       "url": "https://arxiv.org/abs/2608.13538",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "SAEVerbalizer injects SAE decoder directions into an LLM\u2019s residual stream and fine-tunes downstream layers so the model produces natural-language explanations of the injected features. Once trained, explanations are generated directly from decoder directions without collecting behavioral evidence. The verbalizer generalizes to unseen features, transfers across SAE dictionaries, and, with a light adapter, works on features from other base models; multi-direction injections combine meanings while polarity flips reverse them.",
+      "summary": "SAEVerbalizer injects SAE decoder directions into an LLM’s residual stream and fine-tunes downstream layers so the model produces natural-language explanations of the injected features. Once trained, explanations are generated directly from decoder directions without collecting behavioral evidence. The verbalizer generalizes to unseen features, transfers across SAE dictionaries, and, with a light adapter, works on features from other base models; multi-direction injections combine meanings while polarity flips reverse them.",
       "tags": [
         "interpretability",
         "sparse-autoencoders",
@@ -3410,7 +3820,7 @@
       "url": "https://arxiv.org/abs/2608.13263",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "vToken inserts a lightweight token-level virtualization layer over PagedAttention that decouples logical token liveness from physical block placement via indirection tables and asynchronous repacking of live tokens. It preserves existing kernels and CUDA Graphs while eliminating intra-block fragmentation caused by token-granularity eviction. Integrated in vLLM, it cuts retained KV blocks 27\u201372 percent, raises SLA throughput up to 1.37\u00d7, and doubles feasible concurrency under tight active-KV budgets, reducing per-policy integration code from hundreds of lines to under fifty.",
+      "summary": "vToken inserts a lightweight token-level virtualization layer over PagedAttention that decouples logical token liveness from physical block placement via indirection tables and asynchronous repacking of live tokens. It preserves existing kernels and CUDA Graphs while eliminating intra-block fragmentation caused by token-granularity eviction. Integrated in vLLM, it cuts retained KV blocks 27–72 percent, raises SLA throughput up to 1.37×, and doubles feasible concurrency under tight active-KV budgets, reducing per-policy integration code from hundreds of lines to under fifty.",
       "tags": [
         "KV-cache",
         "serving",
@@ -3426,7 +3836,7 @@
       "url": "https://arxiv.org/abs/2608.13344",
       "type": "paper",
       "dateAdded": "2026-08-16",
-      "summary": "LongEarth-Bench supplies roughly 120k QA samples over sequences averaging 15 frames (up to 30) spanning evolution summarization, spatial change, anomaly detection, and future inference, with a 30k subset containing structured reasoning traces. LongEarth is first SFT\u2019d with explicit sequence identifiers and chain-of-thought, then LongEarth-R1 is refined by group-relative policy optimization using format, temporal, and spatial rewards. The resulting model leads all 12 long-sequence tasks while remaining competitive on standard remote-sensing benchmarks.",
+      "summary": "LongEarth-Bench supplies roughly 120k QA samples over sequences averaging 15 frames (up to 30) spanning evolution summarization, spatial change, anomaly detection, and future inference, with a 30k subset containing structured reasoning traces. LongEarth is first SFT’d with explicit sequence identifiers and chain-of-thought, then LongEarth-R1 is refined by group-relative policy optimization using format, temporal, and spatial rewards. The resulting model leads all 12 long-sequence tasks while remaining competitive on standard remote-sensing benchmarks.",
       "tags": [
         "long-horizon",
         "earth-observation",
@@ -3517,7 +3927,7 @@
     {
       "id": "agreement-is-not-alignment-divergent-moral-grounds-in-human-and-llm-ethical-judg-2026-08-15",
       "title": "Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments",
-      "authors": "Octavian M. Machidon, Alina L. Machidon, Vojko Strahovnik, Mateja Centa Strahovnik, Jonas Miklav\u010di\u010d, Marko Robnik \u0160ikonja",
+      "authors": "Octavian M. Machidon, Alina L. Machidon, Vojko Strahovnik, Mateja Centa Strahovnik, Jonas Miklavčič, Marko Robnik Šikonja",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.12368",
       "type": "paper",
@@ -3748,7 +4158,7 @@
       "url": "https://arxiv.org/abs/2608.13317",
       "type": "paper",
       "dateAdded": "2026-08-14",
-      "summary": "StateBridge aligns a sender\u2019s final-layer hidden states to a receiver\u2019s input space via a closed-form orthogonal transformation plus lightweight norm calibration and vocabulary anchoring, then prepends the aligned continuous prefix. The method is training-free and portable across models. On math, code, and QA tasks with four models from two families it achieves best or tied-best scores on 22 of 26 pairs, consistently beating text and prior latent baselines by removing the discrete-token bottleneck.",
+      "summary": "StateBridge aligns a sender’s final-layer hidden states to a receiver’s input space via a closed-form orthogonal transformation plus lightweight norm calibration and vocabulary anchoring, then prepends the aligned continuous prefix. The method is training-free and portable across models. On math, code, and QA tasks with four models from two families it achieves best or tied-best scores on 22 of 26 pairs, consistently beating text and prior latent baselines by removing the discrete-token bottleneck.",
       "tags": [
         "multi-agent systems",
         "latent communication",
@@ -4074,7 +4484,7 @@
     {
       "id": "beyond-a-bag-of-features-set-level-instability-in-sparse-autoencoders-2026-08-12",
       "title": "Beyond a Bag of Features: Set-Level Instability in Sparse Autoencoders",
-      "authors": "Nikolai Bolik, Lennart St\u00f6pler, Artur Andrzejak",
+      "authors": "Nikolai Bolik, Lennart Stöpler, Artur Andrzejak",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.11197",
       "type": "paper",
@@ -4106,7 +4516,7 @@
     {
       "id": "data-attribution-of-emergent-misalignment-with-persona-features-2026-08-12",
       "title": "Data Attribution of Emergent Misalignment with Persona Features",
-      "authors": "Clemens Vetter, David Kacz\u00e9r, Lucie Flek, Florian Mai",
+      "authors": "Clemens Vetter, David Kaczér, Lucie Flek, Florian Mai",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.11025",
       "type": "paper",
@@ -4280,7 +4690,7 @@
       "url": "https://arxiv.org/abs/2608.07524",
       "type": "paper",
       "dateAdded": "2026-08-11",
-      "summary": "Data-Centric Parallel lets each batch\u2019s sequence length itself drive runtime decisions on parallel size, gradient accumulation and recomputation, eliminating the usual trade-off between static imbalance and complex model-specific code. The method integrates into arbitrary models with roughly ten lines of code and delivers up to 2.88\u00d7 speedup on 32 H200 GPUs for variable-length training. It is positioned as a simple, general baseline for future distributed long-sequence work.",
+      "summary": "Data-Centric Parallel lets each batch’s sequence length itself drive runtime decisions on parallel size, gradient accumulation and recomputation, eliminating the usual trade-off between static imbalance and complex model-specific code. The method integrates into arbitrary models with roughly ten lines of code and delivers up to 2.88× speedup on 32 H200 GPUs for variable-length training. It is positioned as a simple, general baseline for future distributed long-sequence work.",
       "tags": [
         "distributed-training",
         "long-sequences",
@@ -4406,7 +4816,7 @@
     {
       "id": "residencyrl-reinforcement-learning-in-simulated-clinical-environments-2026-08-10",
       "title": "ResidencyRL: Reinforcement Learning in Simulated Clinical Environments",
-      "authors": "Valentin Li\u00e9vin, Samuel Schmidgall, Tim Strother, Alex Bijamov, Akshay Goel, Anil Palepu, Chunjong Park, Vahid Balazadeh, Min Woo Sun, Marius Guerard, Justin Chen, Dave Steiner, Vikram Dhillon, Ibrahim Azar, Akhil Mehta, Nicholas Spetsieris, Shilpan Shah, Maen Abdelrahim, Amit Dahiya, Yun Liu, Katherine Chou, Yossi Matias, Avinatan Hassidim, Dale R. Webster, Quoc V. Le, Raia Hadsell, Joelle Barral, Carey Radebaugh, Aleksandra Faust, Shekoofeh Azizi, Mike Schaekermann, Po-Hsuan Cameron Chen, Tao Tu, David Racz, Lin Yang",
+      "authors": "Valentin Liévin, Samuel Schmidgall, Tim Strother, Alex Bijamov, Akshay Goel, Anil Palepu, Chunjong Park, Vahid Balazadeh, Min Woo Sun, Marius Guerard, Justin Chen, Dave Steiner, Vikram Dhillon, Ibrahim Azar, Akhil Mehta, Nicholas Spetsieris, Shilpan Shah, Maen Abdelrahim, Amit Dahiya, Yun Liu, Katherine Chou, Yossi Matias, Avinatan Hassidim, Dale R. Webster, Quoc V. Le, Raia Hadsell, Joelle Barral, Carey Radebaugh, Aleksandra Faust, Shekoofeh Azizi, Mike Schaekermann, Po-Hsuan Cameron Chen, Tao Tu, David Racz, Lin Yang",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.07418",
       "type": "paper",
@@ -4507,7 +4917,7 @@
     {
       "id": "macro-markov-chain-routing-of-transformer-layers-2026-08-09",
       "title": "MACRO: Markov Chain Routing of Transformer Layers",
-      "authors": "Pawe\u0142 Batorski, Abtin Pourhadi, Akylgali Aitaza, Przemys\u0142aw Spurek, Paul Swoboda",
+      "authors": "Paweł Batorski, Abtin Pourhadi, Akylgali Aitaza, Przemysław Spurek, Paul Swoboda",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.05872",
       "type": "paper",
@@ -4563,7 +4973,7 @@
       "url": "https://arxiv.org/abs/2608.06291",
       "type": "paper",
       "dateAdded": "2026-08-09",
-      "summary": "Building on two-sided adaptive rounding, BaKron solves the vectorized problem via anti-diagonal parallelism and recursive divide-and-conquer, cutting work from O(m\u00b2n\u00b2) to O(mn(m+n)) while matching GPTQ-style cubic scaling and capturing output correlations. It is modular in base quantizer and Hessian estimator and supplies practical Hessian computation techniques. Experiments confirm the efficiency and quality gains of richer curvature at GPTQ-comparable cost.",
+      "summary": "Building on two-sided adaptive rounding, BaKron solves the vectorized problem via anti-diagonal parallelism and recursive divide-and-conquer, cutting work from O(m²n²) to O(mn(m+n)) while matching GPTQ-style cubic scaling and capturing output correlations. It is modular in base quantizer and Hessian estimator and supplies practical Hessian computation techniques. Experiments confirm the efficiency and quality gains of richer curvature at GPTQ-comparable cost.",
       "tags": [
         "quantization",
         "Hessians",
@@ -4580,7 +4990,7 @@
       "url": "https://arxiv.org/abs/2608.06262",
       "type": "paper",
       "dateAdded": "2026-08-09",
-      "summary": "In a finite outcome space the paper characterizes when two distribution classes are distinguishable by conditional queries and shows learnability holds exactly when pairwise conditional probabilities have positive separation (otherwise error stays 1/2). Any T-query adaptive policy can be simulated non-adaptively with O(N\u00b2(T+log(1/\u03c1))) fixed pair queries to total-variation \u03c1, yet there exist families with constant adaptive complexity and \u03a9(N\u00b2) non-adaptive complexity. Thus interaction yields a quadratic, not exponential, query advantage.",
+      "summary": "In a finite outcome space the paper characterizes when two distribution classes are distinguishable by conditional queries and shows learnability holds exactly when pairwise conditional probabilities have positive separation (otherwise error stays 1/2). Any T-query adaptive policy can be simulated non-adaptively with O(N²(T+log(1/ρ))) fixed pair queries to total-variation ρ, yet there exist families with constant adaptive complexity and Ω(N²) non-adaptive complexity. Thus interaction yields a quadratic, not exponential, query advantage.",
       "tags": [
         "learning theory",
         "hypothesis testing",
@@ -4928,7 +5338,7 @@
       "url": "https://arxiv.org/abs/2608.06363",
       "type": "paper",
       "dateAdded": "2026-08-07",
-      "summary": "The paper constructs a learner that attains the statistically optimal agnostic PAC risk bound for any finite-VC-dimension hypothesis class, matching known lower bounds up to universal constants at every fixed Bayes risk L*. From n i.i.d. samples the excess risk scales as the familiar square-root and linear terms involving VC-dimension and log(1/delta). This closes the sample-complexity question for agnostic binary classification under the classical Devroye-Gy\u00f6rfi-Lugosi lower bounds.",
+      "summary": "The paper constructs a learner that attains the statistically optimal agnostic PAC risk bound for any finite-VC-dimension hypothesis class, matching known lower bounds up to universal constants at every fixed Bayes risk L*. From n i.i.d. samples the excess risk scales as the familiar square-root and linear terms involving VC-dimension and log(1/delta). This closes the sample-complexity question for agnostic binary classification under the classical Devroye-Györfi-Lugosi lower bounds.",
       "tags": [
         "learning-theory",
         "PAC",
@@ -4955,7 +5365,7 @@
     {
       "id": "a-game-theory-for-foundation-models-shows-new-paths-to-rational-cooperation-thro-2026-08-05",
       "title": "A game theory for foundation models shows new paths to rational cooperation through similarity inference",
-      "authors": "Alexander Meulemans, Maciej Wo\u0142czyk, Marissa A. Weis, Rajai Nasser, Roberta Rocca, Seijin Kobayashi, Guillaume Lajoie, Angelika Steger, Blake Richards, Marcus Hutter, James Manyika, Rif A. Saurous, Jo\u00e3o Sacramento, Blaise Ag\u00fcera y Arcas",
+      "authors": "Alexander Meulemans, Maciej Wołczyk, Marissa A. Weis, Rajai Nasser, Roberta Rocca, Seijin Kobayashi, Guillaume Lajoie, Angelika Steger, Blake Richards, Marcus Hutter, James Manyika, Rif A. Saurous, João Sacramento, Blaise Agüera y Arcas",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.03958",
       "type": "paper",
@@ -5125,7 +5535,7 @@
     {
       "id": "atumai-a-principled-framework-for-agentic-generation-of-datacenter-control-plane-2026-08-04",
       "title": "AtumAI: A Principled Framework for Agentic Generation of Datacenter Control-Plane Policies",
-      "authors": "Qiushi Lin, Chaojie Zhang, \u00cd\u00f1igo Goiri, Aditya Akella, Ricardo Bianchini, Jovan Stojkovic",
+      "authors": "Qiushi Lin, Chaojie Zhang, Íñigo Goiri, Aditya Akella, Ricardo Bianchini, Jovan Stojkovic",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.02569",
       "type": "paper",
@@ -5157,7 +5567,7 @@
     {
       "id": "optimizing-minimax-regret-in-uncertain-mdps-with-small-sets-of-policies-2026-08-04",
       "title": "Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies",
-      "authors": "Sterre Lutz, Dani\u00ebl Vos, Matthijs T.J. Spaan, Anna Lukina",
+      "authors": "Sterre Lutz, Daniël Vos, Matthijs T.J. Spaan, Anna Lukina",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2608.02509",
       "type": "paper",

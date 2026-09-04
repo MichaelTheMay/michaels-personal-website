@@ -1,7 +1,427 @@
 {
-  "lastUpdated": "2026-09-03",
-  "count": 24,
+  "lastUpdated": "2026-09-04",
+  "count": 44,
   "tools": [
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness",
+      "authors": "SUNRNEHUI",
+      "source": "GitHub",
+      "url": "https://github.com/SUNRNEHUI/agent-harness",
+      "type": "harness",
+      "summary": "Plan-native execution harness adding intent-to-contract synthesis, durable handoff, and evidence-based acceptance.",
+      "usecase": "Use it to add portable contracts and audit gates across Codex, Claude Code, or other file-and-shell agents.",
+      "tags": [
+        "plan",
+        "contracts",
+        "reliability",
+        "skills"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentos",
+      "title": "agentOS",
+      "authors": "rivet-dev",
+      "source": "GitHub",
+      "url": "https://github.com/rivet-dev/agentos",
+      "type": "harness",
+      "summary": "Lightweight WASM and V8 isolate OS library that runs agents inside your process with millisecond cold starts and direct host bindings.",
+      "usecase": "Use it to embed Pi or other ACP agents as in-process VMs with granular permissions instead of spinning full sandboxes.",
+      "tags": [
+        "wasm",
+        "sandbox",
+        "runtime",
+        "acp"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agno",
+      "title": "Agno",
+      "authors": "agno-agi",
+      "source": "GitHub",
+      "url": "https://github.com/agno-agi/agno",
+      "type": "harness",
+      "summary": "Framework and AgentOS runtime for building, serving, and managing agent platforms with UI control plane.",
+      "usecase": "Use it to own your full agent stack including sessions, memory, traces, and MCP in your own cloud.",
+      "tags": [
+        "platform",
+        "runtime",
+        "control-plane",
+        "python"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "aios",
+      "title": "AIOS",
+      "authors": "agiresearch",
+      "source": "GitHub",
+      "url": "https://github.com/agiresearch/AIOS",
+      "type": "repo",
+      "summary": "AI Agent Operating System with kernel and SDK for scheduling, context, memory, tools, and computer-use sandboxes.",
+      "usecase": "Use it to treat agents as first-class OS processes with shared resource management and deployment modes.",
+      "tags": [
+        "os",
+        "kernel",
+        "sandbox",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "chrome-devtools-mcp",
+      "title": "Chrome DevTools MCP",
+      "authors": "ChromeDevTools",
+      "source": "GitHub",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "type": "tool",
+      "summary": "Official MCP server exposing full Chrome DevTools for automation, performance traces, network, console, and debugging.",
+      "usecase": "Use it to let an agent inspect LCP, take heap snapshots, or drive live Chrome sessions during coding tasks.",
+      "tags": [
+        "mcp",
+        "devtools",
+        "browser",
+        "performance"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "composio",
+      "title": "Composio",
+      "authors": "ComposioHQ",
+      "source": "GitHub",
+      "url": "https://github.com/ComposioHQ/composio",
+      "type": "tool",
+      "summary": "Tool layer with 1000+ integrations, auth, search, and sandboxed workbench so agents stop reinventing OAuth.",
+      "usecase": "Use it to drop authenticated toolkits into any agent harness for Gmail, GitHub, Slack, and more.",
+      "tags": [
+        "tools",
+        "integrations",
+        "auth",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "deepagents",
+      "title": "Deep Agents",
+      "authors": "langchain-ai",
+      "source": "GitHub",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "type": "harness",
+      "summary": "Batteries-included opinionated agent harness on LangGraph with planning, filesystem tools, sub-agents, and context management.",
+      "usecase": "Use it to spin up a production-ready long-horizon research or coding agent and override only the pieces you need.",
+      "tags": [
+        "langgraph",
+        "harness",
+        "subagents",
+        "python"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "dmux",
+      "title": "dmux",
+      "authors": "standardagents",
+      "source": "GitHub",
+      "url": "https://github.com/standardagents/dmux",
+      "type": "harness",
+      "summary": "Dev agent multiplexer that creates git worktrees and tmux panes for parallel coding agents.",
+      "usecase": "Use it to launch isolated agent sessions per task then merge or PR the results from a single board.",
+      "tags": [
+        "worktrees",
+        "tmux",
+        "orchestration",
+        "parallel"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "desktop",
+      "title": "E2B Desktop",
+      "authors": "e2b-dev",
+      "source": "GitHub",
+      "url": "https://github.com/e2b-dev/desktop",
+      "type": "repo",
+      "summary": "Open-source virtual desktop sandbox for computer-use agents with graphical environment and streaming.",
+      "usecase": "Use it to give agents a full isolated desktop for GUI automation and secure code execution.",
+      "tags": [
+        "sandbox",
+        "computer-use",
+        "desktop",
+        "e2b"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "graphiti",
+      "title": "Graphiti",
+      "authors": "getzep",
+      "source": "GitHub",
+      "url": "https://github.com/getzep/graphiti",
+      "type": "repo",
+      "summary": "Framework for building temporal knowledge graphs that track changing facts with provenance for agent memory.",
+      "usecase": "Use it to give agents a real-time context graph that invalidates stale facts and supports hybrid retrieval.",
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "temporal",
+        "agents"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-kit",
+      "title": "Harness Kit",
+      "authors": "deepklarity",
+      "source": "GitHub",
+      "url": "https://github.com/deepklarity/harness-kit",
+      "type": "harness",
+      "summary": "Multi-agent orchestration CLI plus task board with TDD-first patterns, RCA, and cost-aware delegation.",
+      "usecase": "Use it to decompose specs into dependency graphs, route tasks to cheapest capable agents, and keep evidence trails.",
+      "tags": [
+        "orchestration",
+        "patterns",
+        "task-board",
+        "cli"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "kit",
+      "title": "Kit",
+      "authors": "speakeasy-api",
+      "source": "GitHub",
+      "url": "https://github.com/speakeasy-api/kit",
+      "type": "tool",
+      "summary": "Coding agent runtime with one compose tool, ACP server, A2A, and subagent orchestration in a static binary.",
+      "usecase": "Use it as a concise daily-driver harness that reloads skills and MCP dynamically and hosts other agents over ACP.",
+      "tags": [
+        "runtime",
+        "acp",
+        "compose",
+        "cli"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "letta-code",
+      "title": "Letta Code",
+      "authors": "letta-ai",
+      "source": "GitHub",
+      "url": "https://github.com/letta-ai/letta-code",
+      "type": "tool",
+      "summary": "Memory-first stateful coding agent that persists identity and long-term memory across sessions and models.",
+      "usecase": "Use it to run coding agents that learn from experience and retain context without prompt stuffing.",
+      "tags": [
+        "memory",
+        "stateful",
+        "coding-agent",
+        "letta"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mcp-use",
+      "title": "mcp-use",
+      "authors": "mcp-use",
+      "source": "GitHub",
+      "url": "https://github.com/mcp-use/mcp-use",
+      "type": "tool",
+      "summary": "TypeScript framework for building MCP servers and apps rebuilt for the stateless 2026 MCP spec.",
+      "usecase": "Use it to ship high-throughput MCP servers with inspector, HMR views, and headless screenshot debugging for agents.",
+      "tags": [
+        "mcp",
+        "typescript",
+        "servers",
+        "apps"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openai-agents-python",
+      "title": "OpenAI Agents SDK",
+      "authors": "openai",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-agents-python",
+      "type": "harness",
+      "summary": "Lightweight provider-agnostic framework for multi-agent workflows with handoffs, guardrails, and tracing.",
+      "usecase": "Use it to compose specialist agents with structured handoffs and run them against any tool-calling LLM.",
+      "tags": [
+        "multi-agent",
+        "sdk",
+        "python",
+        "tracing"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "praisonai",
+      "title": "PraisonAI",
+      "authors": "MervinPraison",
+      "source": "GitHub",
+      "url": "https://github.com/MervinPraison/PraisonAI",
+      "type": "harness",
+      "summary": "Fast multi-agent workforce framework with planning, memory, RAG, dashboards, and multi-provider support.",
+      "usecase": "Use it to spin up autonomous agent teams with low-latency orchestration for production workflows.",
+      "tags": [
+        "multi-agent",
+        "workforce",
+        "python",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "pydantic-ai",
+      "title": "Pydantic AI",
+      "authors": "pydantic",
+      "source": "GitHub",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "type": "tool",
+      "summary": "Typed Python AI SDK and agent framework with structured outputs, multi-model support, and MCP integration.",
+      "usecase": "Use it to build type-safe agent loops with validated I/O and Logfire observability for production services.",
+      "tags": [
+        "typed",
+        "python",
+        "mcp",
+        "agents"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "smolagents",
+      "title": "smolagents",
+      "authors": "huggingface",
+      "source": "GitHub",
+      "url": "https://github.com/huggingface/smolagents",
+      "type": "repo",
+      "summary": "Barebones Python library for code-as-action agents that write and execute Python in sandboxes like E2B.",
+      "usecase": "Use it to prototype multi-step agents that compose tools via real code rather than JSON tool calls.",
+      "tags": [
+        "code-agent",
+        "python",
+        "sandbox",
+        "huggingface"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "stagehand",
+      "title": "Stagehand",
+      "authors": "browserbase",
+      "source": "GitHub",
+      "url": "https://github.com/browserbase/stagehand",
+      "type": "tool",
+      "summary": "SDK for browser agents built on Playwright with natural language actions, self-healing, and multi-language support.",
+      "usecase": "Use it to give coding or research agents reliable web navigation and extraction without brittle selectors.",
+      "tags": [
+        "browser",
+        "playwright",
+        "agent-sdk",
+        "typescript"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "vtcode",
+      "title": "VT Code",
+      "authors": "vinhnx",
+      "source": "GitHub",
+      "url": "https://github.com/vinhnx/VTCode",
+      "type": "tool",
+      "summary": "Rust terminal coding agent and harness with sandboxed tools, durable sessions, MCP, skills, and multi-provider support.",
+      "usecase": "Use it to run long autonomous coding loops from a TUI or headless mode with built-in verification and worktree isolation.",
+      "tags": [
+        "rust",
+        "tui",
+        "coding-agent",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agenvoy",
       "title": "Agenvoy",
