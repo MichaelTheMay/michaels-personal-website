@@ -1,7 +1,414 @@
 {
-  "lastUpdated": "2026-09-04",
-  "count": 44,
+  "lastUpdated": "2026-09-05",
+  "count": 64,
   "tools": [
+    {
+      "slug": "agent-sandbox",
+      "title": "Agent Sandbox",
+      "authors": "Kubernetes SIGs",
+      "source": "GitHub",
+      "url": "https://github.com/kubernetes-sigs/agent-sandbox",
+      "type": "harness",
+      "summary": "Kubernetes CRD and controller for isolated, stateful, singleton workloads tailored to AI agent runtimes and RL, with warm pools and stable identity.",
+      "usecase": "Use it to declare and manage long-lived agent sandboxes on any K8s cluster with pause/resume and template claims.",
+      "tags": [
+        "kubernetes",
+        "sandbox",
+        "crd",
+        "infra"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "red-team-blue-team-agent-fabric",
+      "title": "Agent Security Harness",
+      "authors": "msaleme",
+      "source": "GitHub",
+      "url": "https://github.com/msaleme/red-team-blue-team-agent-fabric",
+      "type": "harness",
+      "summary": "Adversarial testing harness with hundreds of executable protocol-level tests for MCP, A2A, and governance controls.",
+      "usecase": "Use it to CI-gate agent endpoints by actively probing for policy bypass and tool poisoning.",
+      "tags": [
+        "security",
+        "eval",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agenta",
+      "title": "Agenta",
+      "authors": "Agenta-AI",
+      "source": "GitHub",
+      "url": "https://github.com/Agenta-AI/agenta",
+      "type": "tool",
+      "summary": "Open-source workspace for building, versioning, and collaborating on agents and automations with MCP and self-hosting.",
+      "usecase": "Use it to prototype and share agent workflows as a team with prompt and skill management.",
+      "tags": [
+        "workspace",
+        "mcp",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentteams",
+      "title": "AgentTeams",
+      "authors": "agentscope-ai",
+      "source": "GitHub",
+      "url": "https://github.com/agentscope-ai/AgentTeams",
+      "type": "harness",
+      "summary": "Collaborative multi-agent OS using Matrix rooms for transparent human-in-the-loop coordination across heterogeneous runtimes.",
+      "usecase": "Use it to run mixed OpenClaw, Hermes, and other workers in shared rooms with file exchange and audit.",
+      "tags": [
+        "multi-agent",
+        "matrix",
+        "orchestration"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox",
+      "title": "AIO Sandbox",
+      "authors": "agent-infra",
+      "source": "GitHub",
+      "url": "https://github.com/agent-infra/sandbox",
+      "type": "tool",
+      "summary": "Single Docker container packing browser, shell, filesystem, MCP servers, VSCode Server, and Jupyter for unified agent environments.",
+      "usecase": "Use it to give coding or computer-use agents one shared sandbox with VNC, CDP, and MCP endpoints.",
+      "tags": [
+        "sandbox",
+        "docker",
+        "mcp",
+        "browser"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-cli-coding-agents",
+      "title": "Chorus",
+      "authors": "community",
+      "source": "GitHub",
+      "url": "https://github.com/bradagi/awesome-cli-coding-agents",
+      "type": "harness",
+      "summary": "CLI harness pattern for multi-LLM peer review before shipping code, listed among rising terminal agent tooling.",
+      "usecase": "Use it to add a multi-model review gate in front of any coding agent commit flow.",
+      "tags": [
+        "review",
+        "multi-llm",
+        "cli"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "coze-loop",
+      "title": "Coze Loop",
+      "authors": "coze-dev",
+      "source": "GitHub",
+      "url": "https://github.com/coze-dev/coze-loop",
+      "type": "harness",
+      "summary": "Full-lifecycle agent optimization platform covering development, debugging, evaluation, and monitoring.",
+      "usecase": "Use it to instrument and iterate on agent workflows with playgrounds, evals, and production monitoring.",
+      "tags": [
+        "eval",
+        "observability",
+        "optimization"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "crush",
+      "title": "Crush",
+      "authors": "Charmbracelet",
+      "source": "GitHub",
+      "url": "https://github.com/charmbracelet/crush",
+      "type": "tool",
+      "summary": "Go-native terminal coding agent with polished TUI, LSP intelligence, multi-provider switching mid-session, MCP extensibility, and session persistence.",
+      "usecase": "Use it to run provider-agnostic agentic coding sessions directly in the terminal with LSP-backed edits and MCP tools.",
+      "tags": [
+        "cli",
+        "tui",
+        "go",
+        "mcp",
+        "lsp"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cubesandbox",
+      "title": "CubeSandbox",
+      "authors": "Tencent Cloud",
+      "source": "GitHub",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "type": "repo",
+      "summary": "RustVMM/KVM microVM sandbox service with sub-60ms boot, hardware isolation, under 5MB overhead, and E2B SDK drop-in compatibility.",
+      "usecase": "Use it to self-host high-density, hardware-isolated code execution backends for agent tool calls.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "e2b",
+        "rust"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "best-of-agent-harnesses",
+      "title": "Headroom",
+      "authors": "community (via best-of lists)",
+      "source": "GitHub",
+      "url": "https://github.com/ryanalberts/best-of-agent-harnesses",
+      "type": "repo",
+      "summary": "Content-aware compression layer for tool outputs, logs, and RAG chunks that claims large token reductions for coding agents.",
+      "usecase": "Use it to shrink context before it hits the model while preserving answer quality on long agent runs.",
+      "tags": [
+        "context",
+        "compression",
+        "tokens"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "kimi-code",
+      "title": "Kimi Code CLI",
+      "authors": "Moonshot AI",
+      "source": "GitHub",
+      "url": "https://github.com/MoonshotAI/kimi-code",
+      "type": "tool",
+      "summary": "Single-binary terminal coding agent with fast TUI startup, skills, MCP, and ACP IDE integration, model-agnostic beyond Kimi defaults.",
+      "usecase": "Use it to install a zero-Node coding agent that reads, edits, shells, and plans inside any repo.",
+      "tags": [
+        "cli",
+        "coding-agent",
+        "binary"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "litellm",
+      "title": "LiteLLM",
+      "authors": "BerriAI",
+      "source": "GitHub",
+      "url": "https://github.com/BerriAI/litellm",
+      "type": "tool",
+      "summary": "Unified interface and proxy for 100-plus LLMs with routing, caching, budgets, and agent SDK gateways.",
+      "usecase": "Use it as the model router and spend control plane in front of any custom harness.",
+      "tags": [
+        "proxy",
+        "routing",
+        "multi-provider"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "metaharness",
+      "title": "metaharness",
+      "authors": "ruvnet",
+      "source": "GitHub",
+      "url": "https://github.com/ruvnet/metaharness",
+      "type": "harness",
+      "summary": "Scaffold that generates a focused, branded agent harness with npx CLI, MCP server, scoped memory, skills, and witness-signed releases for multiple host runtimes.",
+      "usecase": "Use it to spin up a repo-specific harness that drops into existing coding agents with governance and provenance.",
+      "tags": [
+        "meta-harness",
+        "scaffold",
+        "mcp",
+        "cli"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mission-control",
+      "title": "Mission Control",
+      "authors": "builderz-labs",
+      "source": "GitHub",
+      "url": "https://github.com/builderz-labs/mission-control",
+      "type": "harness",
+      "summary": "Self-hosted control plane for dispatching tasks, reviewing runs, tracking spend, and operating multiple agent runtimes.",
+      "usecase": "Use it to operate fleets of coding agents with observability, spend controls, and task queues.",
+      "tags": [
+        "control-plane",
+        "ops",
+        "observability"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nanoclaw",
+      "title": "NanoClaw",
+      "authors": "nanocoai",
+      "source": "GitHub",
+      "url": "https://github.com/nanocoai/nanoclaw",
+      "type": "tool",
+      "summary": "Lightweight container-isolated AI assistant inspired by larger claw-style agents, designed for readable code and secure defaults.",
+      "usecase": "Use it to deploy per-agent containers with shared rooms while keeping the codebase small enough to audit.",
+      "tags": [
+        "container",
+        "security",
+        "assistant"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "qwen-code",
+      "title": "Qwen Code",
+      "authors": "QwenLM / Alibaba",
+      "source": "GitHub",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "type": "tool",
+      "summary": "Open-source terminal coding agent with auto-memory, skills, sub-agents, teams, MCP, plan mode, and multi-protocol support optimized for Qwen coder models.",
+      "usecase": "Use it to run headless or interactive agentic coding workflows with free OAuth tiers and IDE plugins.",
+      "tags": [
+        "cli",
+        "coding-agent",
+        "open-source"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "roo-code",
+      "title": "Roo Code",
+      "authors": "RooCodeInc",
+      "source": "GitHub",
+      "url": "https://github.com/RooCodeInc/Roo-Code",
+      "type": "tool",
+      "summary": "VS Code and Cursor extension in the Cline lineage with approval-gated modes, strong MCP support, and custom agent modes.",
+      "usecase": "Use it for plan-then-act coding inside the editor with per-step gates and MCP tools.",
+      "tags": [
+        "ide",
+        "mcp",
+        "extension"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-sdk",
+      "title": "Strands Agents",
+      "authors": "strands-agents",
+      "source": "GitHub",
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "type": "harness",
+      "summary": "Open-source Python and TypeScript SDK for building production agent loops with lifecycle controls, MCP, memory, multi-agent patterns, guardrails, and evals.",
+      "usecase": "Use it to replace hand-rolled agent loops with a portable, model-agnostic harness you control end-to-end.",
+      "tags": [
+        "sdk",
+        "python",
+        "typescript",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "trae-agent",
+      "title": "Trae Agent",
+      "authors": "ByteDance",
+      "source": "GitHub",
+      "url": "https://github.com/bytedance/trae-agent",
+      "type": "tool",
+      "summary": "Research-friendly Python CLI agent for software engineering with modular architecture and multi-LLM support.",
+      "usecase": "Use it to prototype SWE-bench style loops or modular coding agents without heavy product shells.",
+      "tags": [
+        "cli",
+        "research",
+        "python"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "zeroclaw",
+      "title": "ZeroClaw",
+      "authors": "zeroclaw-labs",
+      "source": "GitHub",
+      "url": "https://github.com/zeroclaw-labs/zeroclaw",
+      "type": "tool",
+      "summary": "Single Rust binary agent runtime with multi-channel support, provider plugins, supervised autonomy, and OS-level sandbox options.",
+      "usecase": "Use it to run a low-overhead personal or team agent across Discord, Telegram, and CLI with policy gates.",
+      "tags": [
+        "rust",
+        "runtime",
+        "multi-channel"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-harness",
       "title": "agent-harness",
