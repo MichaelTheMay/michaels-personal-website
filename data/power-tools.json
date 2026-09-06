@@ -1,7 +1,427 @@
 {
-  "lastUpdated": "2026-09-05",
-  "count": 64,
+  "lastUpdated": "2026-09-06",
+  "count": 84,
   "tools": [
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness",
+      "authors": "adambossy",
+      "source": "GitHub",
+      "url": "https://github.com/adambossy/agent-harness",
+      "type": "harness",
+      "summary": "Provider-agnostic modular Python agent harness with Protocols for models, tools, sessions, and sandboxes plus async typed core under 3k LOC.",
+      "usecase": "Use it to assemble a custom loop that plugs Anthropic, OpenAI, Modal sandboxes, or Redis sessions without god-classes.",
+      "tags": [
+        "python",
+        "modular",
+        "provider-agnostic",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-harness",
+      "title": "Agentic Harness",
+      "authors": "moortekweb-art",
+      "source": "GitHub",
+      "url": "https://github.com/moortekweb-art/agentic-harness",
+      "type": "harness",
+      "summary": "Self-hosted completion gate that wraps coding agents with independent verification, durable evidence, CLI, and local GUI before reporting done.",
+      "usecase": "Use it to force an external check and report.md before any agent can claim a goal is finished across compatible CLIs.",
+      "tags": [
+        "verification",
+        "gate",
+        "completion",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-harness-engineering",
+      "title": "Agentic Harness Engineering (AHE)",
+      "authors": "china-qijizhifeng",
+      "source": "GitHub",
+      "url": "https://github.com/china-qijizhifeng/agentic-harness-engineering",
+      "type": "repo",
+      "summary": "Observability-driven system that automatically evolves coding-agent harness components such as prompts, tools, middleware, and memory while holding the base model fixed.",
+      "usecase": "Use it to iterate harness configs over evaluate-analyze-improve loops and freeze transferable components that lift Terminal-Bench scores.",
+      "tags": [
+        "harness-engineering",
+        "observability",
+        "evolution",
+        "eval"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-sandbox",
+      "title": "agentic-sandbox",
+      "authors": "jmagly",
+      "source": "GitHub",
+      "url": "https://github.com/jmagly/agentic-sandbox",
+      "type": "harness",
+      "summary": "Self-hostable runtime for persistent autonomous coding agents using KVM-isolated VMs or rootless containers with A2A protocol, dashboard, and virtiofs storage.",
+      "usecase": "Use it to run long-lived agent sessions on your own hardware with signed AgentCard discovery and mission dispatch without a hosted control plane.",
+      "tags": [
+        "sandbox",
+        "kvm",
+        "self-hosted",
+        "persistent"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agenttier",
+      "title": "AgentTier",
+      "authors": "agenttier",
+      "source": "GitHub",
+      "url": "https://github.com/agenttier/agenttier",
+      "type": "harness",
+      "summary": "Kubernetes-native sandbox platform providing isolated persistent environments for AI agents and developers via CRDs with gVisor options and interactive access.",
+      "usecase": "Use it to provision secure sandboxes for coding agents or teams with declarative lifecycle, network isolation, and multi-agent orchestration.",
+      "tags": [
+        "kubernetes",
+        "sandbox",
+        "crd",
+        "isolation"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox",
+      "title": "Blaxel Sandbox",
+      "authors": "blaxel-ai",
+      "source": "GitHub",
+      "url": "https://github.com/blaxel-ai/sandbox",
+      "type": "repo",
+      "summary": "Open-source microVM sandbox templates and hub for persistent agent compute with standby resume, MCP tools, filesystem, and process APIs.",
+      "usecase": "Use it to give agents dedicated Linux environments that resume in tens of milliseconds while keeping full state across idle periods.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "mcp",
+        "persistent"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "codewhale",
+      "title": "Codewhale",
+      "authors": "Hmbown",
+      "source": "GitHub",
+      "url": "https://github.com/Hmbown/Codewhale",
+      "type": "tool",
+      "summary": "Open-source Rust terminal coding agent with multi-model support, fleets, MCP, hooks, approval modes, snapshots, and local-first extensibility.",
+      "usecase": "Use it to coordinate agent teams on repo tasks with explicit plan or full-access modes and undoable workspace restores.",
+      "tags": [
+        "rust",
+        "cli",
+        "fleet",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "codey",
+      "title": "Codey",
+      "authors": "its-ahoh",
+      "source": "GitHub",
+      "url": "https://github.com/its-ahoh/codey",
+      "type": "tool",
+      "summary": "Multi-agent workbench that orchestrates Claude Code, Codex, OpenCode, and Pi from a native macOS app, chat platforms, or voice with per-project workspaces.",
+      "usecase": "Use it to run parallel agents on the same prompt for comparison or define worker teams with flow graphs and messaging channels.",
+      "tags": [
+        "workbench",
+        "multi-agent",
+        "macos",
+        "parallel"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "har",
+      "title": "HAR",
+      "authors": "os-factory",
+      "source": "GitHub",
+      "url": "https://github.com/os-factory/har",
+      "type": "harness",
+      "summary": "Open agent harness CLI plus MCP that runs coding agents in isolated worktrees with deterministic launch, verify, and teardown stages.",
+      "usecase": "Use it to turn any repo into verified software-factory slots that wrap Claude Code, Cursor, or Codex with project-native checks.",
+      "tags": [
+        "worktree",
+        "verify",
+        "mcp",
+        "cli"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness",
+      "title": "Harness",
+      "authors": "majiayu000",
+      "source": "GitHub",
+      "url": "https://github.com/majiayu000/harness",
+      "type": "harness",
+      "summary": "Rust control plane for fleets of parallel coding agents with orchestration, policy enforcement, cross-agent review, and observability.",
+      "usecase": "Use it to assign work, police permissions, and run independent reviews across Claude Code or Codex adapters in long-running fleets.",
+      "tags": [
+        "rust",
+        "control-plane",
+        "fleet",
+        "policy"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "jcode",
+      "title": "jcode",
+      "authors": "1jehuang",
+      "source": "GitHub",
+      "url": "https://github.com/1jehuang/jcode",
+      "type": "tool",
+      "summary": "High-performance Rust coding agent harness optimized for low RAM, fast boot, semantic memory graphs, side panels, and native swarm collaboration across sessions.",
+      "usecase": "Use it to run dozens of parallel coding sessions on limited hardware with automatic conflict notification and memory recall.",
+      "tags": [
+        "rust",
+        "harness",
+        "swarm",
+        "memory"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "open-harness",
+      "title": "OpenHarness",
+      "authors": "maisieyang",
+      "source": "GitHub",
+      "url": "https://github.com/maisieyang/open-harness",
+      "type": "harness",
+      "summary": "Local-first Python control plane for coding agents featuring Default, Plan, externally judged Goals, sandboxed execution, durable context, plugins, and evals.",
+      "usecase": "Use it to drive REPL sessions with independent judges that decide continue, complete, or pause based on artifacts rather than agent claims.",
+      "tags": [
+        "python",
+        "control-plane",
+        "judge",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openteams",
+      "title": "openteams",
+      "authors": "openteams-lab",
+      "source": "GitHub",
+      "url": "https://github.com/openteams-lab/openteams",
+      "type": "tool",
+      "summary": "Local-first AI desktop app that plans, builds, and ships with a controllable team of coding agents including many popular CLIs plus a bundled CLI.",
+      "usecase": "Use it to assign roles across Claude Code, Codex, Pi, and others inside one workspace with budget caps and reviewer loops.",
+      "tags": [
+        "desktop",
+        "multi-agent",
+        "local-first",
+        "orchestration"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "pi",
+      "title": "Pi",
+      "authors": "earendil-works",
+      "source": "GitHub",
+      "url": "https://github.com/earendil-works/pi",
+      "type": "harness",
+      "summary": "Minimal extensible coding agent harness with unified multi-provider LLM API, agent core loop, TUI, skills, extensions, and session persistence.",
+      "usecase": "Use it to build or extend a lean coding CLI that stays small at core while adding TypeScript packages for custom tools and themes.",
+      "tags": [
+        "harness",
+        "cli",
+        "extensible",
+        "multi-provider"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "remote-swe-agents",
+      "title": "remote-swe-agents",
+      "authors": "aws-samples",
+      "source": "GitHub",
+      "url": "https://github.com/aws-samples/remote-swe-agents",
+      "type": "repo",
+      "summary": "Self-hosted fully open-source autonomous SWE agent example on AWS that works in dedicated cloud environments and opens PRs.",
+      "usecase": "Use it to run laptop-free coding agents that clone, edit, test, and submit pull requests inside isolated AWS workspaces.",
+      "tags": [
+        "aws",
+        "autonomous",
+        "swe",
+        "cloud"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandboxer",
+      "title": "Sandboxer",
+      "authors": "hyperterse",
+      "source": "GitHub",
+      "url": "https://github.com/hyperterse/sandboxer",
+      "type": "repo",
+      "summary": "Unified client libraries in Go, Python, and TypeScript that talk directly to E2B, Daytona, Blaxel, Runloop, Fly, or local Docker sandboxes.",
+      "usecase": "Use it to switch sandbox providers behind one mental model for create, exec, filesystem, and teardown without rewriting agent code.",
+      "tags": [
+        "sandbox",
+        "multi-provider",
+        "sdk",
+        "abstraction"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "swe-forge",
+      "title": "SWE Forge",
+      "authors": "joacod",
+      "source": "GitHub",
+      "url": "https://github.com/joacod/swe-forge",
+      "type": "harness",
+      "summary": "Portable opt-in workflow orchestration that sits above coding harnesses to turn tickets into bounded inspect-plan-implement-verify-review deliveries.",
+      "usecase": "Use it to add evidence-backed SOLO or SUBAGENTS topologies over Pi, OpenCode, or experimental Claude Code adapters without replacing the base harness.",
+      "tags": [
+        "workflow",
+        "orchestration",
+        "verify",
+        "harness-agnostic"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "swe-af",
+      "title": "SWE-AF",
+      "authors": "Agent-Field",
+      "source": "GitHub",
+      "url": "https://github.com/Agent-Field/SWE-AF",
+      "type": "harness",
+      "summary": "Autonomous software engineering fleet runtime that spins up planners, coders, reviewers, and testers to ship production-grade PRs from a single goal call.",
+      "usecase": "Use it to orchestrate multi-repo builds with dependency scheduling, git worktrees, and adaptive factory control for end-to-end delivery.",
+      "tags": [
+        "fleet",
+        "orchestration",
+        "swe",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "swe-agent",
+      "title": "SWE-agent",
+      "authors": "SWE-agent",
+      "source": "GitHub",
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "type": "repo",
+      "summary": "LM-driven harness built for SWE-bench that provides edit state, command execution, and an issue-focused loop as a reference agent-computer interface.",
+      "usecase": "Use it to clone a battle-tested issue-to-PR agent stack and adapt the YAML config for custom benchmarks or cybersecurity tasks.",
+      "tags": [
+        "swe-bench",
+        "harness",
+        "research-origin",
+        "python"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "trueforge",
+      "title": "TrueForge",
+      "authors": "TrueFoundry",
+      "source": "GitHub",
+      "url": "https://github.com/truefoundry/trueforge",
+      "type": "harness",
+      "summary": "Open-source agent harness runtime that handles model calls, MCP tools, skills, sandboxing, approvals, context compaction, and session state with chat UI plus TypeScript SDK.",
+      "usecase": "Use it to deploy cost-controlled multi-step agents locally or hosted while swapping any model provider and MCP servers.",
+      "tags": [
+        "harness",
+        "mcp",
+        "sandbox",
+        "sdk"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-09-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-sandbox",
       "title": "Agent Sandbox",
