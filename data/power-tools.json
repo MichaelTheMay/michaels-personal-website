@@ -1,7 +1,426 @@
 {
-  "lastUpdated": "2026-09-06",
-  "count": 84,
+  "lastUpdated": "2026-09-07",
+  "count": 104,
   "tools": [
+    {
+      "slug": "agencybench",
+      "title": "AgencyBench",
+      "authors": "GAIR-NLP",
+      "source": "GitHub",
+      "url": "https://github.com/GAIR-NLP/AgencyBench",
+      "type": "repo",
+      "summary": "Open agent benchmark suite focused on realistic multi-step agency tasks beyond simple coding patches.",
+      "usecase": "Use it to stress-test long-horizon planning and tool use outside SWE-bench style unit tests.",
+      "tags": [
+        "benchmark",
+        "agents",
+        "eval"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-sandbox",
+      "title": "Agent-Sandbox",
+      "authors": "agent-sandbox",
+      "source": "GitHub",
+      "url": "https://github.com/agent-sandbox/agent-sandbox",
+      "type": "repo",
+      "summary": "Self-hosted E2B-compatible sandbox platform for untrusted LLM code, browser use, computer use and multi-tenant isolation on Kubernetes.",
+      "usecase": "Use it to give every agent turn its own isolated container with shell, VNC and MCP lifecycle control.",
+      "tags": [
+        "sandbox",
+        "kubernetes",
+        "e2b",
+        "computer-use"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-harness",
+      "title": "agentic-harness (Rust)",
+      "authors": "codejunkie99",
+      "source": "GitHub",
+      "url": "https://github.com/codejunkie99/agentic-harness",
+      "type": "tool",
+      "summary": "Rust-native agent runtime, SDK and CLI that ships one binary for laptop, CI, remote Linux sandboxes or edge with HTTP session environments.",
+      "usecase": "Use it to build a coding agent that edits, tests and PRs from a single native binary without a JS runtime.",
+      "tags": [
+        "rust",
+        "cli",
+        "sandbox",
+        "coding"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentscope-java",
+      "title": "AgentScope Java",
+      "authors": "agentscope-ai",
+      "source": "GitHub",
+      "url": "https://github.com/agentscope-ai/agentscope-java",
+      "type": "tool",
+      "summary": "Production Java framework for distributed long-running agents with workspace sandboxes, multi-agent spawn, session recovery and control-plane dashboard.",
+      "usecase": "Use it to deploy enterprise multi-agent systems with Redis-backed memory and Kubernetes sandboxes.",
+      "tags": [
+        "java",
+        "distributed",
+        "sandbox",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ai_harness_engineering",
+      "title": "ai_harness_engineering",
+      "authors": "Cobus Greyling",
+      "source": "GitHub",
+      "url": "https://github.com/cobusgreyling/ai_harness_engineering",
+      "type": "repo",
+      "summary": "Minimal reference implementation of six harness components (tools, memory, context, planning, verification, guardrails) with CLI and Gradio demo.",
+      "usecase": "Use it to study and fork a complete small harness stack powered by Nemotron before building your own.",
+      "tags": [
+        "python",
+        "reference",
+        "guardrails",
+        "demo"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "autoharness",
+      "title": "AutoHarness",
+      "authors": "aiming-lab",
+      "source": "GitHub",
+      "url": "https://github.com/aiming-lab/AutoHarness",
+      "type": "harness",
+      "summary": "Lightweight governance wrapper that turns any LLM client into a governed agent via a 6-to-14 step pipeline, YAML constitutions, risk patterns and audit logs.",
+      "usecase": "Use it to wrap an existing OpenAI-compatible client in two lines and enforce tool permissions plus cost tracking.",
+      "tags": [
+        "governance",
+        "python",
+        "safety",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "best-of-agent-harnesses",
+      "title": "best-of-Agent-Harnesses",
+      "authors": "RyanAlberts",
+      "source": "GitHub",
+      "url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses",
+      "type": "repo",
+      "summary": "Weekly-rescored curated list of 100+ harnesses with MCP server, llms.txt and JSON so agents can recommend harnesses by capability.",
+      "usecase": "Use it as a live catalog and MCP endpoint to let your own agent pick the right harness for a task.",
+      "tags": [
+        "catalog",
+        "mcp",
+        "harness",
+        "meta"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "deepseek-harness",
+      "title": "DeepSeek Harness",
+      "authors": "DeepSeek AI",
+      "source": "GitHub",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "type": "harness",
+      "summary": "Everything-is-a-plugin agent harness on Cordis where model, tools, loop, sandbox, storage and UI are all swappable plugins under MIT.",
+      "usecase": "Use it to compose a custom agent loop by mounting only the plugins you need then run the local web UI.",
+      "tags": [
+        "plugin",
+        "typescript",
+        "sandbox",
+        "open-source"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "deer-flow",
+      "title": "DeerFlow",
+      "authors": "ByteDance",
+      "source": "GitHub",
+      "url": "https://github.com/bytedance/deer-flow",
+      "type": "harness",
+      "summary": "Long-horizon SuperAgent harness on LangGraph with sub-agents, sandboxes, memory, skills and message gateway for multi-hour research and coding tasks.",
+      "usecase": "Use it to orchestrate lead-plus-subagent research and code workflows that survive minutes to hours.",
+      "tags": [
+        "langgraph",
+        "sandbox",
+        "multi-agent",
+        "skills"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "adk-python",
+      "title": "Google ADK Python",
+      "authors": "Google",
+      "source": "GitHub",
+      "url": "https://github.com/google/adk-python",
+      "type": "tool",
+      "summary": "Code-first Agent Development Kit with graph workflow runtime, task delegation, HITL tool confirmation, multi-agent hierarchies, and deploy paths to Cloud Run or Vertex.",
+      "usecase": "Use it to define deterministic agent graphs and eval sets in pure Python then ship them to any model backend.",
+      "tags": [
+        "python",
+        "workflow",
+        "multi-agent",
+        "eval"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harbor",
+      "title": "Harbor",
+      "authors": "harbor-framework",
+      "source": "GitHub",
+      "url": "https://github.com/harbor-framework/harbor",
+      "type": "harness",
+      "summary": "Evaluation and optimization framework that runs arbitrary coding agents against Terminal-Bench and other datasets across thousands of sandboxed environments.",
+      "usecase": "Use it to benchmark Claude-style or custom agents head-to-head on Terminal-Bench 2.0 with concurrent rollouts.",
+      "tags": [
+        "eval",
+        "terminal-bench",
+        "rl",
+        "python"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "inspect_ai",
+      "title": "inspect_ai",
+      "authors": "UKGovernmentBEIS",
+      "source": "GitHub",
+      "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+      "type": "harness",
+      "summary": "Flexible framework for LLM evaluations with agents, scorers, datasets and sandboxed tool use aimed at rigorous agent benchmarking.",
+      "usecase": "Use it to define custom agent eval suites with reproducible scorers and parallel task runners.",
+      "tags": [
+        "eval",
+        "python",
+        "benchmark",
+        "agents"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "lox/agent-harness",
+      "authors": "lox",
+      "source": "GitHub",
+      "url": "https://github.com/lox/agent-harness",
+      "type": "repo",
+      "summary": "Minimal composable Go library that implements the core tool-calling agent loop with hooks and thread state.",
+      "usecase": "Use it to embed a tiny provider-agnostic agent loop inside Go services without pulling a full framework.",
+      "tags": [
+        "go",
+        "minimal",
+        "tool-calling",
+        "library"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openagentharness",
+      "title": "OpenAgentHarness",
+      "authors": "fairyshine",
+      "source": "GitHub",
+      "url": "https://github.com/fairyshine/OpenAgentHarness",
+      "type": "harness",
+      "summary": "Headless workspace-first agent engine exposing HTTP APIs for sessions, runs, actions, sandboxes and SSE streaming for embedded products.",
+      "usecase": "Use it as the backend runtime under your own chat UI and tenant model for internal agent platforms.",
+      "tags": [
+        "headless",
+        "api",
+        "sandbox",
+        "typescript"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openharness",
+      "title": "OpenHarness (HKUDS)",
+      "authors": "HKUDS",
+      "source": "GitHub",
+      "url": "https://github.com/HKUDS/OpenHarness",
+      "type": "harness",
+      "summary": "Lightweight open agent infrastructure with tool loop, 43+ tools, skills, memory, multi-agent coordination, permissions and a personal ohmo gateway.",
+      "usecase": "Use it to run a self-hosted personal coding agent over chat channels that forks branches and opens PRs.",
+      "tags": [
+        "python",
+        "skills",
+        "memory",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "repomaster",
+      "title": "RepoMaster",
+      "authors": "QuantaAlpha",
+      "source": "GitHub",
+      "url": "https://github.com/QuantaAlpha/RepoMaster",
+      "type": "repo",
+      "summary": "Repo-scoped research harness that builds function and module graphs so agents explore only needed context with lower token use on coding benches.",
+      "usecase": "Use it to drive graph-guided exploration of large monorepos before the agent writes patches.",
+      "tags": [
+        "graph",
+        "python",
+        "coding",
+        "research"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "swe-bench",
+      "title": "SWE-bench",
+      "authors": "SWE-bench",
+      "source": "GitHub",
+      "url": "https://github.com/SWE-bench/SWE-bench",
+      "type": "repo",
+      "summary": "Canonical software-engineering benchmark and harness for issue-to-patch agent evaluation across real GitHub repositories.",
+      "usecase": "Use it to measure pass@1 of your coding harness on verified GitHub issues with official Docker runners.",
+      "tags": [
+        "benchmark",
+        "swe",
+        "python",
+        "eval"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "swe-rex",
+      "title": "SWE-ReX",
+      "authors": "SWE-agent team",
+      "source": "GitHub",
+      "url": "https://github.com/SWE-agent/SWE-ReX",
+      "type": "repo",
+      "summary": "Sandboxed remote execution layer for AI agents that keeps the same API across local shells, Docker, Modal, Fargate and parallel sessions.",
+      "usecase": "Use it to run hundreds of coding-agent trajectories in parallel without rewriting agent logic for each backend.",
+      "tags": [
+        "sandbox",
+        "parallel",
+        "swe-bench",
+        "python"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "terminal-bench",
+      "title": "Terminal-Bench",
+      "authors": "harbor-framework",
+      "source": "GitHub",
+      "url": "https://github.com/harbor-framework/terminal-bench",
+      "type": "repo",
+      "summary": "Benchmark measuring agents on complicated real terminal workflows with Harbor as the official runner.",
+      "usecase": "Use it to score shell-native coding agents on multi-step terminal tasks with concurrent Harbor jobs.",
+      "tags": [
+        "terminal",
+        "benchmark",
+        "eval",
+        "shell"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "voltagent",
+      "title": "VoltAgent",
+      "authors": "VoltAgent",
+      "source": "GitHub",
+      "url": "https://github.com/VoltAgent/voltagent",
+      "type": "harness",
+      "summary": "Open-source TypeScript agent engineering platform with core runtime, workflows, supervisors, MCP tools, memory adapters, guardrails, and a paired observability console.",
+      "usecase": "Use it to spin up typed multi-agent teams with durable memory and production evals from a single create-voltagent-app scaffold.",
+      "tags": [
+        "typescript",
+        "multi-agent",
+        "mcp",
+        "observability"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-harness",
       "title": "agent-harness",
