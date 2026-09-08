@@ -1,7 +1,427 @@
 {
-  "lastUpdated": "2026-09-07",
-  "count": 104,
+  "lastUpdated": "2026-09-08",
+  "count": 124,
   "tools": [
+    {
+      "slug": "adk-rust",
+      "title": "ADK-Rust",
+      "authors": "zavora-ai",
+      "source": "GitHub",
+      "url": "https://github.com/zavora-ai/adk-rust",
+      "type": "repo",
+      "summary": "Production Rust agent development kit with modular crates for models, tools, memory, eval, guardrails, sandbox, and realtime.",
+      "usecase": "Use it to build type-safe low-overhead agents and serve them over HTTP or voice.",
+      "tags": [
+        "rust",
+        "sdk",
+        "modular",
+        "eval"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agend-terminal",
+      "title": "AgEnD Terminal",
+      "authors": "suzuke",
+      "source": "GitHub",
+      "url": "https://github.com/suzuke/agend-terminal",
+      "type": "harness",
+      "summary": "Rust PTY fleet manager that declares multi-agent teams in YAML, launches backends, manages worktrees, and wires MCP between them.",
+      "usecase": "Use it to run a declared fleet of coding agents with auto-respawn and branch isolation.",
+      "tags": [
+        "fleet",
+        "pty",
+        "rust",
+        "worktrees"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-sandbox",
+      "title": "Agent Sandbox (scitix)",
+      "authors": "scitix",
+      "source": "GitHub",
+      "url": "https://github.com/scitix/Agent-Sandbox",
+      "type": "repo",
+      "summary": "Fast multi-cloud sandbox engine with pre-warmed pools, Kubernetes CRDs, and E2B-compatible API for agent and RL workloads.",
+      "usecase": "Use it to allocate sub-60ms isolated environments for high-frequency agent loops.",
+      "tags": [
+        "sandbox",
+        "k8s",
+        "rl",
+        "multi-cloud"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-sandbox",
+      "title": "agent-sandbox (WASM)",
+      "authors": "Parassharmaa",
+      "source": "GitHub",
+      "url": "https://github.com/Parassharmaa/agent-sandbox",
+      "type": "repo",
+      "summary": "Embeddable WASM sandbox with 80+ CLI tools, shell interpreter, JS runtime, and SSRF-safe networking under 13ms startup.",
+      "usecase": "Use it to execute agent-generated code without Docker on any host that runs WASM.",
+      "tags": [
+        "wasm",
+        "sandbox",
+        "cli",
+        "embeddable"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "autonomous-harness",
+      "title": "Autonomous Harness",
+      "authors": "autonomous-ai",
+      "source": "GitHub",
+      "url": "https://github.com/autonomous-ai/autonomous-harness",
+      "type": "harness",
+      "summary": "Hardware-plus-software control plane that routes spoken or typed intent to agents across local and remote machines.",
+      "usecase": "Use it to drive multiple coding agents from one device as a left-hand control surface.",
+      "tags": [
+        "control-plane",
+        "multi-machine",
+        "hardware",
+        "cli"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "bello",
+      "title": "Bello",
+      "authors": "Makson179",
+      "source": "GitHub",
+      "url": "https://github.com/Makson179/Bello",
+      "type": "harness",
+      "summary": "Supervised pipeline that keeps long-horizon coding runs on track with independent review, guards, and cost-aware model assignment.",
+      "usecase": "Use it to reduce drift and token spend on multi-step coding tasks under a fixed budget.",
+      "tags": [
+        "supervision",
+        "review",
+        "cost",
+        "pipeline"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "bestie",
+      "title": "Bestie",
+      "authors": "jolexxa",
+      "source": "GitHub",
+      "url": "https://github.com/jolexxa/bestie",
+      "type": "tool",
+      "summary": "Native terminal coding-agent harness focused on full visibility via an inspector pane for every tool call and shell process.",
+      "usecase": "Use it when you want sandboxing and compaction with zero hidden agent actions.",
+      "tags": [
+        "terminal",
+        "inspector",
+        "sandbox",
+        "visibility"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "bmo-agent",
+      "title": "bmo-agent",
+      "authors": "joelhans",
+      "source": "GitHub",
+      "url": "https://github.com/joelhans/bmo-agent",
+      "type": "tool",
+      "summary": "Self-improving terminal coding agent that writes new tools when it hits limits and maintains reflection-driven skills.",
+      "usecase": "Use it to grow a personal toolset automatically across repeated coding sessions.",
+      "tags": [
+        "self-improving",
+        "tools",
+        "terminal",
+        "memory"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "grok-build",
+      "title": "Grok Build",
+      "authors": "xai-org",
+      "source": "GitHub",
+      "url": "https://github.com/xai-org/grok-build",
+      "type": "tool",
+      "summary": "Rust full-screen TUI coding agent with headless CI mode, ACP embedding, MCP, sandboxing, and plugin hooks.",
+      "usecase": "Use it to run interactive or scripted coding sessions with ACP editor integration.",
+      "tags": [
+        "rust",
+        "tui",
+        "acp",
+        "cli"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "h5i",
+      "title": "h5i",
+      "authors": "h5i-dev",
+      "source": "GitHub",
+      "url": "https://github.com/h5i-dev/h5i",
+      "type": "tool",
+      "summary": "Pure-Rust security-first headless browser and multi-tier sandbox (process to microVM) built for agent automation and red-teaming.",
+      "usecase": "Use it to contain agent web and workspace actions with auditable network policies.",
+      "tags": [
+        "browser",
+        "sandbox",
+        "rust",
+        "security"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "happy-agent",
+      "title": "Happy Agent",
+      "authors": "slopus",
+      "source": "GitHub",
+      "url": "https://github.com/slopus/happy-agent",
+      "type": "harness",
+      "summary": "Universal local harness that reuses your existing provider subscriptions with model-native prompts, tools, durable sessions, and subagents.",
+      "usecase": "Use it to run one consistent loop across multiple model subscriptions without new accounts.",
+      "tags": [
+        "multi-provider",
+        "subscriptions",
+        "tui",
+        "sessions"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-101",
+      "title": "Harness 101",
+      "authors": "adamaoc",
+      "source": "GitHub",
+      "url": "https://github.com/adamaoc/harness-101",
+      "type": "repo",
+      "summary": "Minimal TypeScript coding harness plus line-by-line tutorial explaining every piece of a working agent loop.",
+      "usecase": "Use it to learn and fork a readable baseline harness before adding production features.",
+      "tags": [
+        "tutorial",
+        "minimal",
+        "typescript",
+        "learning"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harnesskit",
+      "title": "HarnessKit",
+      "authors": "RealZST",
+      "source": "GitHub",
+      "url": "https://github.com/RealZST/HarnessKit",
+      "type": "tool",
+      "summary": "Desktop and CLI manager that unifies skills, MCP servers, plugins, hooks, configs, memory, and rules across many coding agents.",
+      "usecase": "Use it to inventory and sync extensions for every agent on your machine from one console.",
+      "tags": [
+        "skills",
+        "mcp",
+        "multi-agent",
+        "desktop"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mirage",
+      "title": "Mirage",
+      "authors": "strukto-ai",
+      "source": "GitHub",
+      "url": "https://github.com/strukto-ai/mirage",
+      "type": "tool",
+      "summary": "Virtual terminal and filesystem for agents that mounts S3, Drive, Slack and more under one root with virtualized CLIs and runtimes.",
+      "usecase": "Use it to give agents unix-tool access across heterogeneous data sources without N SDKs.",
+      "tags": [
+        "virtual-terminal",
+        "vfs",
+        "cli",
+        "security"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "opendray",
+      "title": "Opendray",
+      "authors": "Opendray",
+      "source": "GitHub",
+      "url": "https://github.com/Opendray/opendray",
+      "type": "harness",
+      "summary": "Self-hosted gateway that keeps coding-agent sessions alive on your server and drives them from web, mobile, or chat channels with shared memory.",
+      "usecase": "Use it to reattach to long-running agent sessions from any device without SSH fragility.",
+      "tags": [
+        "gateway",
+        "self-hosted",
+        "multi-channel",
+        "memory"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent",
+      "title": "PluggableHarness Agent",
+      "authors": "pluggableharness",
+      "source": "GitHub",
+      "url": "https://github.com/pluggableharness/agent",
+      "type": "harness",
+      "summary": "Go microkernel coding harness with seven out-of-process plugin categories, HCL config, policy gate, and durable session replay.",
+      "usecase": "Use it to assemble a custom agent loop from versioned providers without forking a monolith.",
+      "tags": [
+        "microkernel",
+        "plugins",
+        "go",
+        "terminal"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbase-harness",
+      "title": "SandBase Harness",
+      "authors": "sandbaseai",
+      "source": "GitHub",
+      "url": "https://github.com/sandbaseai/sandbase-harness",
+      "type": "harness",
+      "summary": "Local-first self-hosted runtime and MCP bridge with sandboxed sessions, credential vault, audit/replay, and a built-in Console.",
+      "usecase": "Use it to run durable agent sessions on your own infra with full audit trails.",
+      "tags": [
+        "local-first",
+        "mcp",
+        "sandbox",
+        "console"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "tlbx",
+      "title": "tlbx",
+      "authors": "tlbx-ai",
+      "source": "GitHub",
+      "url": "https://github.com/tlbx-ai/tlbx",
+      "type": "tool",
+      "summary": "Self-hosted terminal and agent-controller multiplexer that renders persistent shells and coding-agent UIs in any browser.",
+      "usecase": "Use it to continue agent work from phone or tablet while the host stays awake.",
+      "tags": [
+        "multiplexer",
+        "browser",
+        "remote",
+        "agents"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "uniharness",
+      "title": "UniHarness",
+      "authors": "UnicomAI",
+      "source": "GitHub",
+      "url": "https://github.com/UnicomAI/UniHarness",
+      "type": "harness",
+      "summary": "Python agent harness that separates the runtime (keys, config) from a pluggable Computer layer (local, VM, E2B) so the agent cannot read its own secrets.",
+      "usecase": "Use it to ship CLI, chat, cowork, or headless products from one isolated runtime.",
+      "tags": [
+        "computer-protocol",
+        "sandbox",
+        "python",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "useagent",
+      "title": "useAgent",
+      "authors": "useagenthq",
+      "source": "GitHub",
+      "url": "https://github.com/useagenthq/useagent",
+      "type": "harness",
+      "summary": "Open-source coworker platform that gives existing coding agents their own cloud computer and returns finished artifacts.",
+      "usecase": "Use it to turn subscription agents into durable team coworkers that hand back PRs and sites.",
+      "tags": [
+        "coworker",
+        "cloud-computer",
+        "multi-agent",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agencybench",
       "title": "AgencyBench",
