@@ -1,7 +1,267 @@
 {
-  "lastUpdated": "2026-09-08",
-  "count": 124,
+  "lastUpdated": "2026-09-09",
+  "count": 137,
   "tools": [
+    {
+      "slug": "2026-agent-harness",
+      "title": "2026-agent-harness",
+      "authors": "bishopZ",
+      "source": "GitHub",
+      "url": "https://github.com/bishopZ/2026-agent-harness",
+      "type": "repo",
+      "summary": "Lifecycle system combining persistent wiki-style memory with staged skill discipline and human gates across an eleven-stage idea pipeline.",
+      "usecase": "Use it to clone a complete on-disk agent workflow that moves ideas from backlog through build and growth with explicit sign-off.",
+      "tags": [
+        "lifecycle",
+        "skills",
+        "memory"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness (Go)",
+      "authors": "BA-CalderonMorales",
+      "source": "GitHub",
+      "url": "https://github.com/BA-CalderonMorales/agent-harness",
+      "type": "repo",
+      "summary": "Clean-room Go implementation of production coding-agent harness patterns with TUI, OpenRouter/Anthropic support, and local-first defaults.",
+      "usecase": "Use it to study or extend a minimal systems-language harness that boots a terminal UI and talks to local or remote models.",
+      "tags": [
+        "Go",
+        "TUI",
+        "clean-room"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "claw-code-agent",
+      "title": "Claw Code Agent",
+      "authors": "HarnessLab",
+      "source": "GitHub",
+      "url": "https://github.com/HarnessLab/claw-code-agent",
+      "type": "repo",
+      "summary": "Zero-external-dependency Python reimplementation of a full coding-agent architecture with plugins, nested delegation, MCP, worktrees, and a local GUI.",
+      "usecase": "Use it to run a complete local-model coding loop with session persistence and custom agent profiles without Rust or TypeScript toolchains.",
+      "tags": [
+        "Python",
+        "local-models",
+        "plugins"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "evolving-agent-harnesses",
+      "title": "evolving-agent-harnesses",
+      "authors": "prakashkagitha",
+      "source": "GitHub",
+      "url": "https://github.com/prakashkagitha/evolving-agent-harnesses",
+      "type": "repo",
+      "summary": "Research program and code where a fixed small model mines its own failures and redesigns its harness under a verified non-regression gate.",
+      "usecase": "Use it to evolve a minimal draft-write_test-fix harness with Haiku-class models and measure SWE-bench lifts without weight updates.",
+      "tags": [
+        "self-harness",
+        "small-models",
+        "SWE-bench"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "gsd-core",
+      "title": "GSD Core",
+      "authors": "open-gsd",
+      "source": "GitHub",
+      "url": "https://github.com/open-gsd/gsd-core",
+      "type": "harness",
+      "summary": "Meta-prompting and context-engineering system that drives agents through discuss-plan-execute-verify-ship phases in fresh subagent windows to avoid context rot.",
+      "usecase": "Use it to install phase commands into your preferred coding agent and ship milestones with structured state that survives compaction.",
+      "tags": [
+        "meta-prompting",
+        "context",
+        "spec-driven"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "gui-agent-skills",
+      "title": "GUI Agent Harness",
+      "authors": "Fzkuji",
+      "source": "GitHub",
+      "url": "https://github.com/Fzkuji/GUI-Agent-Skills",
+      "type": "tool",
+      "summary": "CLI that turns an LLM into a desktop GUI agent with iterative visual grounding, memory, and observe-verify-plan-dispatch loop.",
+      "usecase": "Use it to automate desktop tasks from natural language with screenshot-based element grounding and verification.",
+      "tags": [
+        "GUI",
+        "grounding",
+        "desktop"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harnessed",
+      "title": "harnessed",
+      "authors": "easyinplay",
+      "source": "GitHub",
+      "url": "https://github.com/easyinplay/harnessed",
+      "type": "harness",
+      "summary": "Composition orchestrator that assembles upstream skills and agents via manifests into a gated BDD-SDD-TDD workflow without vendoring code.",
+      "usecase": "Use it to wire gstack, GSD, and superpowers-style packs into one discuss-plan-build-verify-ship engine with checkpoints.",
+      "tags": [
+        "composition",
+        "skills",
+        "orchestration"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harnessx",
+      "title": "HarnessX",
+      "authors": "Darwin-Agent",
+      "source": "GitHub",
+      "url": "https://github.com/Darwin-Agent/HarnessX",
+      "type": "harness",
+      "summary": "Harness foundry that composes typed processors across nine dimensions, adapts configs from traces, and evolves harnesses plus models from reward-annotated trajectories.",
+      "usecase": "Use it to forge reusable coding or research harnesses, then let the meta-loop search better processor stacks without rewriting the agent.",
+      "tags": [
+        "foundry",
+        "composition",
+        "evolution"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "live-swe-agent",
+      "title": "Live-SWE-agent",
+      "authors": "OpenAutoCoder",
+      "source": "GitHub",
+      "url": "https://github.com/OpenAutoCoder/live-swe-agent",
+      "type": "repo",
+      "summary": "Runtime self-evolving software engineering agent that starts from a minimal bash scaffold and rewrites its own tools and scaffold while solving real issues.",
+      "usecase": "Use it to run an agent that expands its own capabilities on the fly against SWE-bench style GitHub issues.",
+      "tags": [
+        "self-evolving",
+        "SWE",
+        "minimal"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "open-swe",
+      "title": "Open SWE",
+      "authors": "langchain-ai",
+      "source": "GitHub",
+      "url": "https://github.com/langchain-ai/open-swe",
+      "type": "harness",
+      "summary": "Open-source asynchronous coding agent built on Deep Agents that plans, codes, reviews, and opens PRs from GitHub issues or a dashboard.",
+      "usecase": "Use it to deploy an internal software-factory agent that researches repos, validates changes, and delivers pull requests in isolated environments.",
+      "tags": [
+        "async",
+        "PR",
+        "LangGraph"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openharness",
+      "title": "openharness",
+      "authors": "AgentBoardTT",
+      "source": "GitHub",
+      "url": "https://github.com/AgentBoardTT/openharness",
+      "type": "tool",
+      "summary": "CLI plus SDK coding agent claimed to hit perfect scores on an internal Harness-Bench across multiple providers.",
+      "usecase": "Use it to run a provider-agnostic coding loop that ships as both interactive CLI and embeddable SDK.",
+      "tags": [
+        "CLI",
+        "SDK",
+        "multi-provider"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "opensandbox",
+      "title": "OpenSandbox",
+      "authors": "opensandbox-group",
+      "source": "GitHub",
+      "url": "https://github.com/opensandbox-group/OpenSandbox",
+      "type": "repo",
+      "summary": "General-purpose sandbox platform with multi-language SDKs, CLI, MCP, Docker/Kubernetes runtimes, and built-in command, filesystem, and code-interpreter environments.",
+      "usecase": "Use it to spin up isolated coding-agent or GUI-agent environments with a unified API for local or cluster deployment.",
+      "tags": [
+        "sandbox",
+        "K8s",
+        "SDK"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox-agent",
+      "title": "sandbox-agent",
+      "authors": "rivet-dev",
+      "source": "GitHub",
+      "url": "https://github.com/rivet-dev/sandbox-agent",
+      "type": "tool",
+      "summary": "Lightweight server that runs inside any sandbox and exposes HTTP/SSE control for coding agents so you can drive them remotely with streaming and permissions.",
+      "usecase": "Use it to install a static binary into E2B or Docker sandboxes and control Claude-style or OpenCode agents over the network from your app.",
+      "tags": [
+        "sandbox",
+        "HTTP",
+        "remote"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "adk-rust",
       "title": "ADK-Rust",

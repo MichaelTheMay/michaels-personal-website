@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-08",
+  "lastUpdated": "2026-09-09",
   "issues": [
+    {
+      "date": "2026-09-09",
+      "title": "Composable foundries and live self-evolving harnesses",
+      "blurb": "Power users are wiring foundries that compose and evolve the harness itself, live self-modifiers that rewrite tools mid-task, and verification gates or sandboxes that sit under any agent loop. The through-line is ownership of the runtime layer rather than another terminal chatbot."
+    },
     {
       "date": "2026-09-08",
       "title": "Pluggable kernels and computer-separated runtimes outrun monolith CLIs",
@@ -178,6 +183,257 @@
     }
   ],
   "items": [
+    {
+      "id": "live-swe-agent-2026-09-09",
+      "title": "Live-SWE-agent",
+      "authors": "OpenAutoCoder",
+      "source": "GitHub",
+      "url": "https://github.com/OpenAutoCoder/live-swe-agent",
+      "type": "repo",
+      "dateAdded": "2026-09-09",
+      "summary": "Runtime self-evolving software engineering agent that starts from a minimal bash scaffold and rewrites its own tools and scaffold while solving real issues.",
+      "tags": [
+        "self-evolving",
+        "SWE",
+        "minimal"
+      ],
+      "usecase": "Use it to run an agent that expands its own capabilities on the fly against SWE-bench style GitHub issues.",
+      "returning": false
+    },
+    {
+      "id": "harnessx-2026-09-09",
+      "title": "HarnessX",
+      "authors": "Darwin-Agent",
+      "source": "GitHub",
+      "url": "https://github.com/Darwin-Agent/HarnessX",
+      "type": "harness",
+      "dateAdded": "2026-09-09",
+      "summary": "Harness foundry that composes typed processors across nine dimensions, adapts configs from traces, and evolves harnesses plus models from reward-annotated trajectories.",
+      "tags": [
+        "foundry",
+        "composition",
+        "evolution"
+      ],
+      "usecase": "Use it to forge reusable coding or research harnesses, then let the meta-loop search better processor stacks without rewriting the agent.",
+      "returning": false
+    },
+    {
+      "id": "claw-code-agent-2026-09-09",
+      "title": "Claw Code Agent",
+      "authors": "HarnessLab",
+      "source": "GitHub",
+      "url": "https://github.com/HarnessLab/claw-code-agent",
+      "type": "repo",
+      "dateAdded": "2026-09-09",
+      "summary": "Zero-external-dependency Python reimplementation of a full coding-agent architecture with plugins, nested delegation, MCP, worktrees, and a local GUI.",
+      "tags": [
+        "Python",
+        "local-models",
+        "plugins"
+      ],
+      "usecase": "Use it to run a complete local-model coding loop with session persistence and custom agent profiles without Rust or TypeScript toolchains.",
+      "returning": false
+    },
+    {
+      "id": "gsd-core-2026-09-09",
+      "title": "GSD Core",
+      "authors": "open-gsd",
+      "source": "GitHub",
+      "url": "https://github.com/open-gsd/gsd-core",
+      "type": "harness",
+      "dateAdded": "2026-09-09",
+      "summary": "Meta-prompting and context-engineering system that drives agents through discuss-plan-execute-verify-ship phases in fresh subagent windows to avoid context rot.",
+      "tags": [
+        "meta-prompting",
+        "context",
+        "spec-driven"
+      ],
+      "usecase": "Use it to install phase commands into your preferred coding agent and ship milestones with structured state that survives compaction.",
+      "returning": false
+    },
+    {
+      "id": "sandbox-agent-2026-09-09",
+      "title": "sandbox-agent",
+      "authors": "rivet-dev",
+      "source": "GitHub",
+      "url": "https://github.com/rivet-dev/sandbox-agent",
+      "type": "tool",
+      "dateAdded": "2026-09-09",
+      "summary": "Lightweight server that runs inside any sandbox and exposes HTTP/SSE control for coding agents so you can drive them remotely with streaming and permissions.",
+      "tags": [
+        "sandbox",
+        "HTTP",
+        "remote"
+      ],
+      "usecase": "Use it to install a static binary into E2B or Docker sandboxes and control Claude-style or OpenCode agents over the network from your app.",
+      "returning": false
+    },
+    {
+      "id": "opensandbox-2026-09-09",
+      "title": "OpenSandbox",
+      "authors": "opensandbox-group",
+      "source": "GitHub",
+      "url": "https://github.com/opensandbox-group/OpenSandbox",
+      "type": "repo",
+      "dateAdded": "2026-09-09",
+      "summary": "General-purpose sandbox platform with multi-language SDKs, CLI, MCP, Docker/Kubernetes runtimes, and built-in command, filesystem, and code-interpreter environments.",
+      "tags": [
+        "sandbox",
+        "K8s",
+        "SDK"
+      ],
+      "usecase": "Use it to spin up isolated coding-agent or GUI-agent environments with a unified API for local or cluster deployment.",
+      "returning": false
+    },
+    {
+      "id": "evolving-agent-harnesses-2026-09-09",
+      "title": "evolving-agent-harnesses",
+      "authors": "prakashkagitha",
+      "source": "GitHub",
+      "url": "https://github.com/prakashkagitha/evolving-agent-harnesses",
+      "type": "repo",
+      "dateAdded": "2026-09-09",
+      "summary": "Research program and code where a fixed small model mines its own failures and redesigns its harness under a verified non-regression gate.",
+      "tags": [
+        "self-harness",
+        "small-models",
+        "SWE-bench"
+      ],
+      "usecase": "Use it to evolve a minimal draft-write_test-fix harness with Haiku-class models and measure SWE-bench lifts without weight updates.",
+      "returning": false
+    },
+    {
+      "id": "agent-harness-go-2026-09-09",
+      "title": "agent-harness (Go)",
+      "authors": "BA-CalderonMorales",
+      "source": "GitHub",
+      "url": "https://github.com/BA-CalderonMorales/agent-harness",
+      "type": "repo",
+      "dateAdded": "2026-09-09",
+      "summary": "Clean-room Go implementation of production coding-agent harness patterns with TUI, OpenRouter/Anthropic support, and local-first defaults.",
+      "tags": [
+        "Go",
+        "TUI",
+        "clean-room"
+      ],
+      "usecase": "Use it to study or extend a minimal systems-language harness that boots a terminal UI and talks to local or remote models.",
+      "returning": false
+    },
+    {
+      "id": "openharness-2026-09-09",
+      "title": "openharness",
+      "authors": "AgentBoardTT",
+      "source": "GitHub",
+      "url": "https://github.com/AgentBoardTT/openharness",
+      "type": "tool",
+      "dateAdded": "2026-09-09",
+      "summary": "CLI plus SDK coding agent claimed to hit perfect scores on an internal Harness-Bench across multiple providers.",
+      "tags": [
+        "CLI",
+        "SDK",
+        "multi-provider"
+      ],
+      "usecase": "Use it to run a provider-agnostic coding loop that ships as both interactive CLI and embeddable SDK.",
+      "returning": false
+    },
+    {
+      "id": "harnessed-2026-09-09",
+      "title": "harnessed",
+      "authors": "easyinplay",
+      "source": "GitHub",
+      "url": "https://github.com/easyinplay/harnessed",
+      "type": "harness",
+      "dateAdded": "2026-09-09",
+      "summary": "Composition orchestrator that assembles upstream skills and agents via manifests into a gated BDD-SDD-TDD workflow without vendoring code.",
+      "tags": [
+        "composition",
+        "skills",
+        "orchestration"
+      ],
+      "usecase": "Use it to wire gstack, GSD, and superpowers-style packs into one discuss-plan-build-verify-ship engine with checkpoints.",
+      "returning": false
+    },
+    {
+      "id": "2026-agent-harness-2026-09-09",
+      "title": "2026-agent-harness",
+      "authors": "bishopZ",
+      "source": "GitHub",
+      "url": "https://github.com/bishopZ/2026-agent-harness",
+      "type": "repo",
+      "dateAdded": "2026-09-09",
+      "summary": "Lifecycle system combining persistent wiki-style memory with staged skill discipline and human gates across an eleven-stage idea pipeline.",
+      "tags": [
+        "lifecycle",
+        "skills",
+        "memory"
+      ],
+      "usecase": "Use it to clone a complete on-disk agent workflow that moves ideas from backlog through build and growth with explicit sign-off.",
+      "returning": false
+    },
+    {
+      "id": "open-swe-2026-09-09",
+      "title": "Open SWE",
+      "authors": "langchain-ai",
+      "source": "GitHub",
+      "url": "https://github.com/langchain-ai/open-swe",
+      "type": "harness",
+      "dateAdded": "2026-09-09",
+      "summary": "Open-source asynchronous coding agent built on Deep Agents that plans, codes, reviews, and opens PRs from GitHub issues or a dashboard.",
+      "tags": [
+        "async",
+        "PR",
+        "LangGraph"
+      ],
+      "usecase": "Use it to deploy an internal software-factory agent that researches repos, validates changes, and delivers pull requests in isolated environments.",
+      "returning": false
+    },
+    {
+      "id": "gui-agent-harness-2026-09-09",
+      "title": "GUI Agent Harness",
+      "authors": "Fzkuji",
+      "source": "GitHub",
+      "url": "https://github.com/Fzkuji/GUI-Agent-Skills",
+      "type": "tool",
+      "dateAdded": "2026-09-09",
+      "summary": "CLI that turns an LLM into a desktop GUI agent with iterative visual grounding, memory, and observe-verify-plan-dispatch loop.",
+      "tags": [
+        "GUI",
+        "grounding",
+        "desktop"
+      ],
+      "usecase": "Use it to automate desktop tasks from natural language with screenshot-based element grounding and verification.",
+      "returning": false
+    },
+    {
+      "id": "show-hn-opair-a-coding-harness-that-eschews-autonomy-2026-09-09",
+      "title": "Show HN: Opair, a coding harness that eschews autonomy",
+      "authors": "philbo",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49625009",
+      "type": "article",
+      "dateAdded": "2026-09-09",
+      "summary": "Opair deliberately limits shell and write access, splits driver versus navigator modes, and aims for pair-programming style collaboration instead of unattended diffs. The post argues that less autonomy and continuous human involvement produce better outcomes than full agent fleets.",
+      "tags": [
+        "HN",
+        "philosophy",
+        "pair"
+      ]
+    },
+    {
+      "id": "dive-into-frontierharness-eval-claude-code-cost-5-6-for-the-same-pass-rate-2026-09-09",
+      "title": "Dive into FrontierHarness Eval: Claude Code cost 5.6× for the same pass rate",
+      "authors": "ADD-SP",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49628679",
+      "type": "article",
+      "dateAdded": "2026-09-09",
+      "summary": "Analysis of a shared-model harness bake-off shows large cost spreads for identical pass rates, with failed attempts still billed. Commenters note that harness design and caching dominate the economics once the model is fixed.",
+      "tags": [
+        "cost",
+        "eval",
+        "harness"
+      ]
+    },
     {
       "id": "pluggableharness-agent-2026-09-08",
       "title": "PluggableHarness Agent",
