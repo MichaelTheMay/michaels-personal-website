@@ -1,7 +1,427 @@
 {
-  "lastUpdated": "2026-09-09",
-  "count": 137,
+  "lastUpdated": "2026-09-10",
+  "count": 157,
   "tools": [
+    {
+      "slug": "adios-dev-sandboxes",
+      "title": "Adios.dev sandboxes",
+      "authors": "clovis818",
+      "source": "HN / product",
+      "url": "https://adios.dev",
+      "type": "tool",
+      "summary": "Fast isolated execution sandboxes aimed at AI agents with low cold-start latency for code and tool loops.",
+      "usecase": "Use it to give agents disposable runtimes that spin up quickly for eval batches or one-shot code execution without long-lived VMs.",
+      "tags": [
+        "sandbox",
+        "fast",
+        "execution",
+        "agents"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-control",
+      "title": "Agent Control",
+      "authors": "agentcontrol",
+      "source": "GitHub",
+      "url": "https://github.com/agentcontrol/agent-control",
+      "type": "harness",
+      "summary": "Centralized runtime control plane that wraps model and tool calls with configurable evaluators to block injections, PII and policy violations.",
+      "usecase": "Use it to enforce org-wide guardrails on LangChain, CrewAI or Strands agents via a single @control decorator without redeploying every agent.",
+      "tags": [
+        "guardrails",
+        "policy",
+        "runtime",
+        "control-plane"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness-core",
+      "title": "Agent Harness Core",
+      "authors": "phenomenoner",
+      "source": "GitHub",
+      "url": "https://github.com/phenomenoner/agent-harness-core",
+      "type": "harness",
+      "summary": "Self-hosted Rust runtime for durable long-horizon agent tasks with virtual sessions, sandboxed reasoning jobs, and auditable receipts.",
+      "usecase": "Use it to leave an agent running on hard multi-day work where continuity, compaction, and recovery are first-class and every step is receipted.",
+      "tags": [
+        "rust",
+        "durable",
+        "long-horizon",
+        "receipts"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "substrate",
+      "title": "Agent Substrate",
+      "authors": "agent-substrate",
+      "source": "GitHub",
+      "url": "https://github.com/agent-substrate/substrate",
+      "type": "harness",
+      "summary": "High-density control plane for agent sandboxes that multiplexes many idle agents onto fewer workers with sub-second suspend/resume over Kubernetes.",
+      "usecase": "Use it to schedule large fleets of agent actors onto shared workers so cold starts stay low while density stays high for RL or evals.",
+      "tags": [
+        "control-plane",
+        "kubernetes",
+        "multiplex",
+        "lifecycle"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentbox",
+      "title": "AgentBox",
+      "authors": "madarco",
+      "source": "GitHub",
+      "url": "https://github.com/madarco/agentbox",
+      "type": "tool",
+      "summary": "CLI that launches parallel coding agents inside dedicated sandboxed VMs (local Docker or cloud) with checkpoints, screen sharing, and credential isolation.",
+      "usecase": "Use it to spin multiple Claude or Codex sessions in isolated boxes so one runaway agent cannot touch your host git credentials or filesystem.",
+      "tags": [
+        "vm",
+        "parallel",
+        "cli",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentcli",
+      "title": "AgentCLI",
+      "authors": "happyvibing",
+      "source": "GitHub",
+      "url": "https://github.com/happyvibing/agentcli",
+      "type": "tool",
+      "summary": "One CLI that turns any MCP server or OpenAPI spec into dynamic commands so agents discover tools on demand instead of loading every schema.",
+      "usecase": "Use it to keep agent context lean by registering MCP and REST backends once then calling only the tools needed per turn from the shell.",
+      "tags": [
+        "cli",
+        "mcp",
+        "openapi",
+        "tools"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentcontrolplane",
+      "title": "agentcontrolplane (ACP)",
+      "authors": "humanlayer",
+      "source": "GitHub",
+      "url": "https://github.com/humanlayer/agentcontrolplane",
+      "type": "harness",
+      "summary": "Kubernetes-native Agent Control Plane for outer-loop agents with durable checkpoints, async tool calls, human feedback and full MCP support.",
+      "usecase": "Use it to run unsupervised long-running agents that pause on tool calls, checkpoint conversations, and resume after human approval gates.",
+      "tags": [
+        "kubernetes",
+        "durable",
+        "mcp",
+        "outer-loop"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-agent-sandboxes",
+      "title": "boxlite / microsandbox family",
+      "authors": "various",
+      "source": "GitHub",
+      "url": "https://github.com/msyvr/awesome-agent-sandboxes",
+      "type": "repo",
+      "summary": "Living index of portable self-contained sandboxes including microVMs, containers and isolation harnesses for coding agents.",
+      "usecase": "Use it to survey local-first options like BoxLite and microsandbox then clone the one that matches your OS and density needs.",
+      "tags": [
+        "awesome-list",
+        "microvm",
+        "isolation",
+        "local"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "boxxkite",
+      "title": "boxxkite",
+      "authors": "EvAlssment",
+      "source": "GitHub",
+      "url": "https://github.com/EvAlssment/boxxkite",
+      "type": "harness",
+      "summary": "Self-hostable agent sandbox with full bash/python/file tool surface, control plane, four SDKs and MCP server on real Kubernetes pod isolation.",
+      "usecase": "Use it to point any agent framework at a batteries-included sandbox you run yourself with non-root pods and deny-by-default egress.",
+      "tags": [
+        "kubernetes",
+        "self-host",
+        "mcp",
+        "tools"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-ai-coding-sandboxes",
+      "title": "Cleanroom / smol-machines patterns",
+      "authors": "fhiltscher et al.",
+      "source": "GitHub",
+      "url": "https://github.com/fhiltscher/awesome-ai-coding-sandboxes",
+      "type": "repo",
+      "summary": "Security-first ranked list of agent sandboxes emphasizing deny-default egress, secrets brokering and isolation strength.",
+      "usecase": "Use it to pick a sandbox whose egress and secrets model match your threat model before you wire the agent loop.",
+      "tags": [
+        "sandbox",
+        "security",
+        "egress",
+        "awesome-list"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "e2b",
+      "title": "E2B",
+      "authors": "e2b-dev",
+      "source": "GitHub",
+      "url": "https://github.com/e2b-dev/E2B",
+      "type": "repo",
+      "summary": "Open-source secure cloud sandboxes with real tools for enterprise agents, Firecracker isolation, and self-hostable infrastructure.",
+      "usecase": "Use it to run agent-generated code in disposable microVMs with Python and JS SDKs while keeping the rest of your stack on your laptop.",
+      "tags": [
+        "sandbox",
+        "firecracker",
+        "code-execution",
+        "self-host"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "gpt-researcher",
+      "title": "gpt-researcher",
+      "authors": "assafelovic",
+      "source": "GitHub",
+      "url": "https://github.com/assafelovic/gpt-researcher",
+      "type": "tool",
+      "summary": "Autonomous deep-research agent harness that produces citation-grounded reports from web and local sources with multi-agent modes.",
+      "usecase": "Use it to spin a research loop that gathers sources, debates findings, and writes a verifiable report without hand-holding every query.",
+      "tags": [
+        "research",
+        "multi-agent",
+        "citations",
+        "harness"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mastra",
+      "title": "Mastra",
+      "authors": "mastra-ai",
+      "source": "GitHub",
+      "url": "https://github.com/mastra-ai/mastra",
+      "type": "tool",
+      "summary": "Modern TypeScript framework for building production AI agents and workflows with model routing, memory, MCP, evals, and sandbox-backed workspaces.",
+      "usecase": "Use it to scaffold a full agent app with suspend-resume workflows and Observational Memory that you can drop into Next.js or run standalone.",
+      "tags": [
+        "typescript",
+        "workflows",
+        "mcp",
+        "agents"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "microsandbox",
+      "title": "microsandbox",
+      "authors": "superradcompany",
+      "source": "GitHub",
+      "url": "https://github.com/superradcompany/microsandbox",
+      "type": "repo",
+      "summary": "Local-first microVM runtime and multi-language SDKs that give agents hardware-isolated environments with OCI images, secrets brokering, and MCP support.",
+      "usecase": "Use it to embed sub-second microVMs in your agent loop so untrusted code runs with its own kernel without Docker daemon overhead.",
+      "tags": [
+        "microvm",
+        "local-first",
+        "sdk",
+        "isolation"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "omnara",
+      "title": "omnara",
+      "authors": "omnara-ai",
+      "source": "GitHub",
+      "url": "https://github.com/omnara-ai/omnara",
+      "type": "harness",
+      "summary": "Open-source managed-agent platform that handles durable execution and state while you choose models, tools, machines and interaction surfaces.",
+      "usecase": "Use it to launch profile-defined coding agents on Blaxel, Daytona or your own VMs with crash recovery and multi-machine attachment.",
+      "tags": [
+        "managed",
+        "durable",
+        "profiles",
+        "multi-machine"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "onecli",
+      "title": "OneCLI",
+      "authors": "onecli",
+      "source": "GitHub",
+      "url": "https://github.com/onecli/onecli",
+      "type": "harness",
+      "summary": "Open-source sandboxed agent harness for teams that gives every employee an isolated personal agent with gateway-injected credentials and policy enforcement.",
+      "usecase": "Use it to provision per-employee agents behind a single org policy so secrets never enter agent context while still allowing Slack and dashboard control.",
+      "tags": [
+        "sandbox",
+        "teams",
+        "gateway",
+        "policy"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-agent-control-plane",
+      "title": "Prismor",
+      "authors": "community",
+      "source": "GitHub",
+      "url": "https://github.com/Ar9av/awesome-agent-control-plane",
+      "type": "repo",
+      "summary": "Curated control-plane resources plus runtime hooks that intercept dangerous commands and secret leaks before coding agents execute them.",
+      "usecase": "Use it to discover and wire policy hooks that sit outside Claude Code or Codex so risky shell calls are blocked at the gateway.",
+      "tags": [
+        "control-plane",
+        "policy",
+        "awesome-list",
+        "hooks"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox-sdk",
+      "title": "sandbox-sdk",
+      "authors": "opencoredev",
+      "source": "GitHub",
+      "url": "https://github.com/opencoredev/sandbox-sdk",
+      "type": "tool",
+      "summary": "Typed TypeScript SDK that unifies local, E2B, Daytona, Vercel Sandbox, Railway and other providers behind one createSandbox API.",
+      "usecase": "Use it to write agent code once and switch sandbox backends from local AgentOS VMs to hosted providers without rewriting execution calls.",
+      "tags": [
+        "sdk",
+        "multi-provider",
+        "typescript",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "smolvm",
+      "title": "SmolVM",
+      "authors": "CelestoAI",
+      "source": "GitHub",
+      "url": "https://github.com/CelestoAI/SmolVM",
+      "type": "repo",
+      "summary": "Secure persistent microVM computers for long-running agents with sub-second boot, browser, code execution, and state that survives sessions.",
+      "usecase": "Use it to give each agent a durable computer that boots fast, persists files, and can be snapshotted for fleets of Grokbot-style workers.",
+      "tags": [
+        "microvm",
+        "persistent",
+        "computer-use",
+        "agents"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "smolvm-sdk",
+      "title": "smolvm-sdk",
+      "authors": "smol-machines",
+      "source": "GitHub",
+      "url": "https://github.com/smol-machines/smolvm-sdk",
+      "type": "repo",
+      "summary": "Official multi-language SDKs for smolVM lightweight microVM sandboxes focused on secure agent code execution.",
+      "usecase": "Use it to create, exec, and tear down microVMs from Node or Python in under a second for tight agent feedback loops.",
+      "tags": [
+        "sdk",
+        "microvm",
+        "python",
+        "typescript"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "2026-agent-harness",
       "title": "2026-agent-harness",
