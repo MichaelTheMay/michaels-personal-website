@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-10",
+  "lastUpdated": "2026-09-11",
   "issues": [
+    {
+      "date": "2026-09-11",
+      "title": "Disposable VMs and resource meshes under every agent loop",
+      "blurb": "Power users are cloning lightweight isolation layers, capability-secure runtimes, and programmatic harnesses that turn sandboxes and cross-machine resources into first-class wiring instead of chat afterthoughts. The through-line is infrastructure you actually run inside your own loops."
+    },
     {
       "date": "2026-09-10",
       "title": "MicroVM sandboxes and team control planes that contain agent fleets",
@@ -188,6 +193,414 @@
     }
   ],
   "items": [
+    {
+      "id": "clawk-2026-09-11",
+      "title": "clawk",
+      "authors": "clawkwork",
+      "source": "GitHub",
+      "url": "https://github.com/clawkwork/clawk",
+      "type": "tool",
+      "dateAdded": "2026-09-11",
+      "summary": "CLI that boots a disposable Linux microVM per project so coding agents run with root inside the guest while host files and keys stay unreachable.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "cli",
+        "isolation"
+      ],
+      "usecase": "Use it to attach Claude Code, Codex, or a shell to a per-repo VM with network allow-lists and resume via attach without Docker.",
+      "returning": false
+    },
+    {
+      "id": "astrid-2026-09-11",
+      "title": "Astrid",
+      "authors": "astrid-runtime",
+      "source": "GitHub",
+      "url": "https://github.com/astrid-runtime/astrid",
+      "type": "repo",
+      "dateAdded": "2026-09-11",
+      "summary": "Portable capability-secure OS runtime built from WebAssembly capsules that compose without inheriting full authority.",
+      "tags": [
+        "wasm",
+        "capability-security",
+        "runtime",
+        "sandbox"
+      ],
+      "usecase": "Use it to run agent workloads as isolated capsules with explicit capabilities on macOS or Linux without full VMs.",
+      "returning": false
+    },
+    {
+      "id": "open-ptc-agent-2026-09-11",
+      "title": "open-ptc-agent",
+      "authors": "Chen-zexi",
+      "source": "GitHub",
+      "url": "https://github.com/Chen-zexi/open-ptc-agent",
+      "type": "harness",
+      "dateAdded": "2026-09-11",
+      "summary": "Open implementation of programmatic tool calling that lets the model write code to invoke MCP tools inside a Daytona sandbox instead of serial JSON calls.",
+      "tags": [
+        "ptc",
+        "mcp",
+        "sandbox",
+        "langgraph"
+      ],
+      "usecase": "Use it to collapse multi-step tool loops into one code-execution turn with progressive discovery and session persistence.",
+      "returning": false
+    },
+    {
+      "id": "maskshift-2026-09-11",
+      "title": "MaskShift",
+      "authors": "nafeeur",
+      "source": "GitHub",
+      "url": "https://github.com/nafeeur/MaskShift",
+      "type": "tool",
+      "dateAdded": "2026-09-11",
+      "summary": "Maximalist local-first coding harness with 149 native tools, zero npm runtime deps, lazy MCP, and bridges to other agents.",
+      "tags": [
+        "harness",
+        "cli",
+        "zero-deps",
+        "multi-provider"
+      ],
+      "usecase": "Use it to give any model a full control plane for LSP, containers, SSH, Git worktrees, and skills while keeping only relevant tools in context.",
+      "returning": false
+    },
+    {
+      "id": "codely-agent-harness-2026-09-11",
+      "title": "Codely Agent Harness",
+      "authors": "CodelyTV",
+      "source": "GitHub",
+      "url": "https://github.com/CodelyTV/agent-harness",
+      "type": "harness",
+      "dateAdded": "2026-09-11",
+      "summary": "Shared skills, plugins, hooks, and utilities that install across agents to enforce conventions and improve output quality.",
+      "tags": [
+        "skills",
+        "hooks",
+        "conventions",
+        "multi-agent"
+      ],
+      "usecase": "Use it to add reusable /skills for docs, quality gates, and SDLC workflows that any compatible agent can discover.",
+      "returning": false
+    },
+    {
+      "id": "treadstone-2026-09-11",
+      "title": "Treadstone",
+      "authors": "earayu",
+      "source": "GitHub",
+      "url": "https://github.com/earayu/treadstone",
+      "type": "tool",
+      "dateAdded": "2026-09-11",
+      "summary": "Agent-native Kubernetes sandbox platform with all-in-one runtime for shell, files, browser, MCP, and long-running state.",
+      "tags": [
+        "kubernetes",
+        "sandbox",
+        "mcp",
+        "self-hosted"
+      ],
+      "usecase": "Use it to run agents inside durable sandboxes or expose sandboxes as on-demand tools via CLI, REST, or Python SDK.",
+      "returning": false
+    },
+    {
+      "id": "latentic-agent-harness-2026-09-11",
+      "title": "Latentic agent-harness",
+      "authors": "getlatentic",
+      "source": "GitHub",
+      "url": "https://github.com/getlatentic/agent-harness",
+      "type": "harness",
+      "dateAdded": "2026-09-11",
+      "summary": "Rust crate that drives existing agent CLIs programmatically through one Harness trait and a normalized event stream.",
+      "tags": [
+        "rust",
+        "cli-stream",
+        "programmatic",
+        "event-stream"
+      ],
+      "usecase": "Use it to embed Claude Code, Codex, or OpenAI-compatible agents in your own process without scraping terminals.",
+      "returning": false
+    },
+    {
+      "id": "ridge-2026-09-11",
+      "title": "Ridge",
+      "authors": "vasinov",
+      "source": "GitHub",
+      "url": "https://github.com/vasinov/ridge-core",
+      "type": "tool",
+      "dateAdded": "2026-09-11",
+      "summary": "Resource mesh that gives agents a uniform interface to local projects, Docker, SSH, and S3 with capability contracts.",
+      "tags": [
+        "mcp",
+        "resources",
+        "multi-machine",
+        "delegation"
+      ],
+      "usecase": "Use it to let agents discover, copy, and execute across machines without stuffing file contents into context.",
+      "returning": false
+    },
+    {
+      "id": "open-ptc-2026-09-11",
+      "title": "Open-PTC",
+      "authors": "daly2211",
+      "source": "GitHub",
+      "url": "https://github.com/daly2211/open-ptc",
+      "type": "harness",
+      "dateAdded": "2026-09-11",
+      "summary": "Proxy and Deno-isolate runtime for programmatic tool calling over MCP so models write TypeScript to orchestrate tools.",
+      "tags": [
+        "ptc",
+        "deno",
+        "mcp",
+        "proxy"
+      ],
+      "usecase": "Use it to cut tool-definition bloat and multi-round latency by executing loops and filters inside a secure isolate.",
+      "returning": false
+    },
+    {
+      "id": "halo-agent-harness-2026-09-11",
+      "title": "HALO agent-harness",
+      "authors": "doubts-suplab",
+      "source": "GitHub",
+      "url": "https://github.com/doubts-suplab/agent-harness",
+      "type": "harness",
+      "dateAdded": "2026-09-11",
+      "summary": "Language-neutral governance runtime with confidence gates, default-deny tools, audit, human review, and kill switch.",
+      "tags": [
+        "governance",
+        "audit",
+        "control-plane",
+        "enterprise"
+      ],
+      "usecase": "Use it to wrap any agent decision path so side-effecting actions stay governed regardless of model or host language.",
+      "returning": false
+    },
+    {
+      "id": "agentic-coding-tools-2026-09-11",
+      "title": "Agentic Coding Tools",
+      "authors": "jankneumann",
+      "source": "GitHub",
+      "url": "https://github.com/jankneumann/agentic-coding-tools",
+      "type": "repo",
+      "dateAdded": "2026-09-11",
+      "summary": "Harness-agnostic skills and primitives for orchestrators, workers, and validators with scope-isolated parallelism.",
+      "tags": [
+        "skills",
+        "orchestration",
+        "worktrees",
+        "long-horizon"
+      ],
+      "usecase": "Use it to install Markdown skills that coordinate multi-agent worktrees, handoffs, and adversarial validation.",
+      "returning": false
+    },
+    {
+      "id": "agent-run-2026-09-11",
+      "title": "agent-run",
+      "authors": "sin-ack",
+      "source": "GitHub",
+      "url": "https://github.com/sin-ack/agent-run",
+      "type": "tool",
+      "dateAdded": "2026-09-11",
+      "summary": "Tiny standalone binary that runs a coding agent inside a bwrap sandbox with simple TOML config.",
+      "tags": [
+        "sandbox",
+        "bwrap",
+        "cli",
+        "lightweight"
+      ],
+      "usecase": "Use it to launch pi, opencode, codex, or claude under namespace isolation on Linux with one binary.",
+      "returning": false
+    },
+    {
+      "id": "apache-maka-2026-09-11",
+      "title": "Apache Maka",
+      "authors": "apache",
+      "source": "GitHub",
+      "url": "https://github.com/apache/maka",
+      "type": "tool",
+      "dateAdded": "2026-09-11",
+      "summary": "High-performance agent workspace that keeps a complete event-sourced record of every action.",
+      "tags": [
+        "event-sourcing",
+        "workspace",
+        "local-first",
+        "apache"
+      ],
+      "usecase": "Use it to run local-first agents with full audit trails and tool-use history for reproducible sessions.",
+      "returning": false
+    },
+    {
+      "id": "toolcraft-2026-09-11",
+      "title": "Toolcraft",
+      "authors": "pixel-point",
+      "source": "GitHub",
+      "url": "https://github.com/pixel-point/toolcraft",
+      "type": "harness",
+      "dateAdded": "2026-09-11",
+      "summary": "MIT starter kit, UI library, and AI harness for building custom design apps that agents can extend.",
+      "tags": [
+        "design",
+        "starter",
+        "skills",
+        "react"
+      ],
+      "usecase": "Use it to bootstrap a canvas-based design tool with agent skills, checks, and export workflows ready to customize.",
+      "returning": false
+    },
+    {
+      "id": "booley-2026-09-11",
+      "title": "Booley",
+      "authors": "boldaxolotl",
+      "source": "GitHub",
+      "url": "https://github.com/boldaxolotl/booley",
+      "type": "tool",
+      "dateAdded": "2026-09-11",
+      "summary": "Open-source IDE sandbox that wires agent CLIs to EDA tools for SystemVerilog chip design via MCP.",
+      "tags": [
+        "eda",
+        "hardware",
+        "mcp",
+        "sandbox"
+      ],
+      "usecase": "Use it to let agents run simulation, synthesis, and waveform inspection under deterministic quality gates.",
+      "returning": false
+    },
+    {
+      "id": "benzi-2026-09-11",
+      "title": "Benzi",
+      "authors": "oooscoos",
+      "source": "GitHub",
+      "url": "https://github.com/oooscoos/Benzi",
+      "type": "tool",
+      "dateAdded": "2026-09-11",
+      "summary": "Code intelligence harness delivered as a VS Code extension with upcoming MCP and headless support.",
+      "tags": [
+        "vscode",
+        "code-intelligence",
+        "harness",
+        "mcp"
+      ],
+      "usecase": "Use it to replace ad-hoc graph tools with a structured intelligence layer that agents query inside the editor.",
+      "returning": false
+    },
+    {
+      "id": "a11-2026-09-11",
+      "title": "A11",
+      "authors": "helenapankov",
+      "source": "a11.to",
+      "url": "https://a11.to",
+      "type": "repo",
+      "dateAdded": "2026-09-11",
+      "summary": "Apache 2.0 layered toolkit of typed streams and reusable actions for building agentic and multimodal apps.",
+      "tags": [
+        "streams",
+        "actions",
+        "layered",
+        "multimodal"
+      ],
+      "usecase": "Use it to compose local helpers, model tools, RPCs, and worker jobs from the same action definitions without framework lock-in.",
+      "returning": false
+    },
+    {
+      "id": "opair-2026-09-11",
+      "title": "Opair",
+      "authors": "philbooth",
+      "source": "GitLab",
+      "url": "https://gitlab.com/philbooth/opair",
+      "type": "harness",
+      "dateAdded": "2026-09-11",
+      "summary": "Coding harness that deliberately limits autonomy with scoped tools, access control, and driver/navigator pair modes.",
+      "tags": [
+        "pair-programming",
+        "restricted",
+        "human-in-loop",
+        "mcp"
+      ],
+      "usecase": "Use it to keep the human in the loop as a true pair programmer instead of reviewing giant terminal diffs.",
+      "returning": false
+    },
+    {
+      "id": "openmetaharness-2026-09-11",
+      "title": "OpenMetaHarness",
+      "authors": "openmetaharness",
+      "source": "GitHub",
+      "url": "https://github.com/openmetaharness",
+      "type": "harness",
+      "dateAdded": "2026-09-11",
+      "summary": "One-file bootloader and README pattern that gives coding agents persistent memory, judgment, and operating discipline across sessions.",
+      "tags": [
+        "meta",
+        "bootloader",
+        "long-horizon",
+        "persistent"
+      ],
+      "usecase": "Use it to drop a model-agnostic operating file into any project so long-horizon work compounds and resumes cleanly.",
+      "returning": false
+    },
+    {
+      "id": "feature-ledger-2026-09-11",
+      "title": "Feature Ledger",
+      "authors": "netizer",
+      "source": "GitHub",
+      "url": "https://github.com/netizer/feature-ledger",
+      "type": "tool",
+      "dateAdded": "2026-09-11",
+      "summary": "CLI that automatically tracks implemented features from agent work and produces client and team reports.",
+      "tags": [
+        "docs",
+        "tracking",
+        "cli",
+        "agent-workflow"
+      ],
+      "usecase": "Use it to bootstrap, audit, and release-cut feature inventories so agents keep documentation current without manual effort.",
+      "returning": false
+    },
+    {
+      "id": "show-hn-ridge-connect-coding-agents-to-local-ssh-docker-and-s3-resources-2026-09-11",
+      "title": "Show HN: Ridge - Connect coding agents to local, SSH, Docker, and S3 resources",
+      "authors": "vasinov",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49647368",
+      "type": "release",
+      "dateAdded": "2026-09-11",
+      "summary": "Ridge ships a resource mesh so agents discover and operate across local projects, containers, SSH hosts, and S3 without custom transfer scripts. Parent agents can delegate scoped resources to workers while the harness stays in charge of planning.",
+      "tags": [
+        "resources",
+        "mcp",
+        "multi-machine",
+        "show-hn"
+      ]
+    },
+    {
+      "id": "show-hn-maskshift-a-maximalist-coding-agent-with-zero-npm-dependencies-2026-09-11",
+      "title": "Show HN: MaskShift – a maximalist coding agent with zero NPM dependencies",
+      "authors": "Nafeeur",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49591238",
+      "type": "release",
+      "dateAdded": "2026-09-11",
+      "summary": "MaskShift launches as a local-first harness with 148+ native tools, lazy MCP, multi-provider support, and zero runtime npm deps. It bridges existing agents and keeps recovery via checkpoints and audit logs.",
+      "tags": [
+        "harness",
+        "zero-deps",
+        "cli",
+        "show-hn"
+      ]
+    },
+    {
+      "id": "show-hn-toolcraft-open-source-ai-harness-and-starter-for-building-design-apps-2026-09-11",
+      "title": "Show HN: Toolcraft – open-source AI harness and starter for building design apps",
+      "authors": "AlexBV",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49658747",
+      "type": "article",
+      "dateAdded": "2026-09-11",
+      "summary": "Toolcraft releases an MIT starter with canvas, component library, layers, timelines, and an AI harness that teaches agents the design system plus automated checks. It targets custom design tools that agents can extend instead of generic chat UIs.",
+      "tags": [
+        "design",
+        "starter",
+        "harness",
+        "show-hn"
+      ]
+    },
     {
       "id": "onecli-2026-09-10",
       "title": "OneCLI",
