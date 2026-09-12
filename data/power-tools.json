@@ -1,7 +1,403 @@
 {
-  "lastUpdated": "2026-09-11",
-  "count": 177,
+  "lastUpdated": "2026-09-12",
+  "count": 196,
   "tools": [
+    {
+      "slug": "agent-governance-toolkit",
+      "title": "Agent Governance Toolkit",
+      "authors": "microsoft",
+      "source": "GitHub",
+      "url": "https://github.com/microsoft/agent-governance-toolkit",
+      "type": "harness",
+      "summary": "Runtime policy engine and mesh packages that enforce OWASP agentic risks at sub-millisecond latency across languages.",
+      "usecase": "Use it to intercept every tool call with YAML, OPA, or Cedar rules before side effects leave the agent process.",
+      "tags": [
+        "governance",
+        "policy",
+        "runtime",
+        "security"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-machines",
+      "title": "Agent Machines",
+      "authors": "Kevin-Liu-01",
+      "source": "GitHub",
+      "url": "https://github.com/Kevin-Liu-01/Agent-Machines",
+      "type": "harness",
+      "summary": "Control plane that keeps Worker identity, memory, and evidence while routing runtimes and sandbox substrates underneath.",
+      "usecase": "Use it to provision specialist workers once and swap E2B, Daytona, or Vercel sandboxes without rewriting the agent contract.",
+      "tags": [
+        "control-plane",
+        "workers",
+        "routing",
+        "fleet"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-orchestrator",
+      "title": "Agent Orchestrator",
+      "authors": "Untrivial-ai",
+      "source": "GitHub",
+      "url": "https://github.com/Untrivial-ai/agent-orchestrator",
+      "type": "harness",
+      "summary": "Supervise teams of coding agents from plan to merge across 27 harnesses with desktop, web, mobile, and cloud surfaces.",
+      "usecase": "Use it to split a project into workspaces, assign any supported harness, and track PRs and reviews in one Kanban.",
+      "tags": [
+        "orchestration",
+        "multi-agent",
+        "fleet",
+        "kanban"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "recursive-agent-harnesses",
+      "title": "Agent Patterns RAH",
+      "authors": "AgentPatterns.ai",
+      "source": "Docs",
+      "url": "https://agentpatterns.ai/patterns/agent-design/recursive-agent-harnesses/",
+      "type": "repo",
+      "summary": "Pattern where a parent agent spawns full subagent harnesses in parallel rather than bare model calls.",
+      "usecase": "Use it to structure long jobs so the recursive unit carries filesystem tools, planning, and its own context.",
+      "tags": [
+        "pattern",
+        "recursive",
+        "subagents"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness (lib.rs style)",
+      "authors": "Tosin Amuda",
+      "source": "GitHub",
+      "url": "https://lib.rs/crates/agent-harness",
+      "type": "harness",
+      "summary": "Rust crate that drives multiple coding agents behind one trait with normalized streaming RunEvent vocabulary.",
+      "usecase": "Use it to call Claude Code, Codex, or OpenAI-compatible loops from Rust without parsing each CLI format.",
+      "tags": [
+        "rust",
+        "unified-api",
+        "streaming",
+        "multi-provider"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness (Siddhant)",
+      "authors": "Siddhant-K-code",
+      "source": "GitHub",
+      "url": "https://github.com/Siddhant-K-code/agent-harness",
+      "type": "harness",
+      "summary": "Local BYOK coding harness with project chat, isolated Docker or AgentCore runs, and independent patch verification.",
+      "usecase": "Use it to turn a repo question into a budgeted coding run whose patch only lands after an external verifier passes.",
+      "tags": [
+        "verifier",
+        "byok",
+        "isolated",
+        "coding"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness-rs",
+      "title": "agent-harness-rs",
+      "authors": "yifanes",
+      "source": "GitHub",
+      "url": "https://github.com/yifanes/agent-harness-rs",
+      "type": "harness",
+      "summary": "Rust agent loop with local tools, MCP, compaction, silent-stop detection, and optional E2B sandbox runtime.",
+      "usecase": "Use it to embed a typed streaming agent loop in a systems binary with pluggable sandbox executors.",
+      "tags": [
+        "rust",
+        "agent-loop",
+        "mcp",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "All-The-Vibes Agent-Harness",
+      "authors": "All-The-Vibes",
+      "source": "GitHub",
+      "url": "https://github.com/All-The-Vibes/Agent-Harness",
+      "type": "repo",
+      "summary": "Five-pillar framework, white paper, and prompt guide for building harnesses around context, tools, loops, and policy.",
+      "usecase": "Use it to scaffold and test your own orchestration layer with explicit continue, retry, and halt signals.",
+      "tags": [
+        "framework",
+        "pillars",
+        "prompts",
+        "design"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "bounded-agent-harness",
+      "title": "Bounded Agent Harness",
+      "authors": "cexplayer01",
+      "source": "GitHub",
+      "url": "https://github.com/cexplayer01/bounded-agent-harness",
+      "type": "harness",
+      "summary": "Deterministic control plane that compiles validated plans into specialist workflows with authority, budget, and contract checks.",
+      "usecase": "Use it to fail closed on capability mismatch, budget overflow, or unknown contracts before any model call runs.",
+      "tags": [
+        "deterministic",
+        "contracts",
+        "specialists",
+        "control-plane"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cybernetic-agent-governance-engine",
+      "title": "CAGE",
+      "authors": "google",
+      "source": "GitHub",
+      "url": "https://github.com/google/cybernetic-agent-governance-engine",
+      "type": "harness",
+      "summary": "Domain-agnostic Kubernetes governance substrate with control barrier functions, consensus, and cryptographic evidence.",
+      "usecase": "Use it to wrap autonomous agents in non-bypassable pipelines that escalate to humans with sealed audit trails.",
+      "tags": [
+        "governance",
+        "kubernetes",
+        "safety",
+        "audit"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "running-ai-agents-in-github-actions-with-docker-sandboxes",
+      "title": "Docker Sandboxes in GHA",
+      "authors": "Docker",
+      "source": "Blog",
+      "url": "https://www.docker.com/blog/running-ai-agents-in-github-actions-with-docker-sandboxes/",
+      "type": "tool",
+      "summary": "MicroVM sandboxes as a GitHub Agentic Workflows runtime so agents can run containers under network policy.",
+      "usecase": "Use it to let CI agents fix integration tests with Testcontainers while the runner stays isolated.",
+      "tags": [
+        "sandbox",
+        "ci",
+        "github-actions",
+        "microvm"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harnext",
+      "title": "harnext",
+      "authors": "QualityUnit",
+      "source": "GitHub",
+      "url": "https://github.com/QualityUnit/harnext",
+      "type": "tool",
+      "summary": "Terminal coding agent plus CI harness that generates staged GitHub Actions from issue labels to merged PR.",
+      "usecase": "Use it to wire an interactive REPL and self-hosted runner that carries labeled issues through verify and merge.",
+      "tags": [
+        "cli",
+        "ci",
+        "github-actions",
+        "coding"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "headroom",
+      "title": "Headroom",
+      "authors": "headroomlabs-ai",
+      "source": "GitHub",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "type": "tool",
+      "summary": "Content-aware compressor for tool outputs, logs, files, and RAG that drops in as library, proxy, or MCP server.",
+      "usecase": "Use it to cut coding-agent token spend 20 percent or more while keeping full originals retrievable on demand.",
+      "tags": [
+        "compression",
+        "context",
+        "proxy",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "introducing-omnigent-meta-harness-combine-control-and-share-your-agents",
+      "title": "Omnigent",
+      "authors": "Databricks",
+      "source": "GitHub/Blog",
+      "url": "https://www.databricks.com/blog/introducing-omnigent-meta-harness-combine-control-and-share-your-agents",
+      "type": "harness",
+      "summary": "Apache-2.0 meta-harness that wraps existing agents in sandboxed sessions with composition, cost policies, and OS sandbox.",
+      "usecase": "Use it to compose multiple harnesses under shared policy and pause runs after a dollar budget threshold.",
+      "tags": [
+        "meta-harness",
+        "composition",
+        "policy",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openexecutive",
+      "title": "Open Executive",
+      "authors": "SenteLabsAI",
+      "source": "GitHub",
+      "url": "https://github.com/SenteLabsAI/OpenExecutive",
+      "type": "repo",
+      "summary": "Virtual executive persona backed by eight specialist agents behind a single coherent FastAPI and Next.js surface.",
+      "usecase": "Use it to clone a multi-specialist executive stack and route strategy, finance, and ops questions through one voice.",
+      "tags": [
+        "multi-agent",
+        "executive",
+        "specialists"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "plandex",
+      "title": "Plandex",
+      "authors": "plandex-ai",
+      "source": "GitHub",
+      "url": "https://github.com/plandex-ai/plandex",
+      "type": "tool",
+      "summary": "Terminal coding agent for large multi-file tasks with cumulative diff sandbox, project maps, and configurable autonomy.",
+      "usecase": "Use it to plan and apply changes spanning dozens of files while keeping diffs isolated until you accept them.",
+      "tags": [
+        "cli",
+        "large-context",
+        "diff-sandbox",
+        "coding"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox0",
+      "title": "Sandbox0",
+      "authors": "sandbox0-ai",
+      "source": "GitHub",
+      "url": "https://github.com/sandbox0-ai/sandbox0",
+      "type": "repo",
+      "summary": "Persistent encrypted gVisor sandboxes scheduled by Nomad, with durable RootFS in object storage and replaceable compute nodes.",
+      "usecase": "Use it to run long-lived agent workspaces that pause and resume identity without treating every session as disposable.",
+      "tags": [
+        "sandbox",
+        "gvisor",
+        "nomad",
+        "persistent"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "session-harness-sandbox-separation",
+      "title": "Session Harness Sandbox Separation",
+      "authors": "AgentPatterns.ai",
+      "source": "Docs",
+      "url": "https://agentpatterns.ai/patterns/agent-design/session-harness-sandbox-separation/",
+      "type": "repo",
+      "summary": "Split long-running agents into append-only session log, stateless harness, and provisioned sandbox primitives.",
+      "usecase": "Use it to crash-recover by waking any harness instance against the durable session and a fresh sandbox.",
+      "tags": [
+        "pattern",
+        "session",
+        "sandbox",
+        "recovery"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-coding-agents",
+      "title": "Strands-adjacent tools pack note",
+      "authors": "community",
+      "source": "GitHub",
+      "url": "https://github.com/tiennm99/awesome-coding-agents",
+      "type": "repo",
+      "summary": "Daily-updated star ranking of coding agents that surfaces mid-tier movers outside household CLIs.",
+      "usecase": "Use it to scan 7-day delta movers and clone rising harnesses before they hit mainstream lists.",
+      "tags": [
+        "catalog",
+        "rankings",
+        "discovery"
+      ],
+      "firstSeen": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "a11",
       "title": "A11",
