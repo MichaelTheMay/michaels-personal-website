@@ -1,7 +1,322 @@
 {
-  "lastUpdated": "2026-09-12",
-  "count": 196,
+  "lastUpdated": "2026-09-13",
+  "count": 211,
   "tools": [
+    {
+      "slug": "agent_harness",
+      "title": "agent_harness (Agent Zero plugin)",
+      "authors": "a0-community-plugins",
+      "source": "GitHub",
+      "url": "https://github.com/a0-community-plugins/agent_harness",
+      "type": "tool",
+      "summary": "Plugin that adds coding workflows, safety checkpoints, per-chat workspaces, and optional parallel task graphs to Agent Zero.",
+      "usecase": "Use it to upgrade Agent Zero with pro/ultra modes, action-bound approvals, and task-graph parallel subagents without touching core code.",
+      "tags": [
+        "plugin",
+        "task-graph",
+        "checkpoint",
+        "workspace"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-execution-harness",
+      "title": "agent-execution-harness",
+      "authors": "lordaeternus",
+      "source": "GitHub",
+      "url": "https://github.com/lordaeternus/agent-execution-harness",
+      "type": "harness",
+      "summary": "Evidence-backed execution harness that forces plans, gates, artifacts, codebase memory, learning loops, and verified claims before an agent can say done.",
+      "usecase": "Use it to wrap any coding agent so every task produces auditable evidence, finish checks, and compact learning notes without extra token bloat.",
+      "tags": [
+        "evidence",
+        "verification",
+        "plan",
+        "memory"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness-guide",
+      "title": "agent-harness-guide",
+      "authors": "paolo-perrone",
+      "source": "GitHub",
+      "url": "https://github.com/paoloap-py/agent-harness-guide",
+      "type": "repo",
+      "summary": "Five runnable layers of an agent harness, each demonstrating the failure it prevents, with no API key required.",
+      "usecase": "Use it to clone and run the demos that show execution boundaries, sandboxing, memory, verification, and context so you can harden your own loop.",
+      "tags": [
+        "educational",
+        "layers",
+        "sandbox",
+        "demo"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-coding-harness-benchmarks",
+      "title": "agentic-coding-harness-benchmarks",
+      "authors": "aarora79",
+      "source": "GitHub",
+      "url": "https://github.com/aarora79/agentic-coding-harness-benchmarks",
+      "type": "repo",
+      "summary": "Benchmark harness that drives real long-horizon coding tasks through multiple agents and models then plots cost/quality Pareto frontiers.",
+      "usecase": "Use it to score models across harnesses on your own repos, produce a live frontier, and let a swe-router skill pick the cheapest model that clears the bar.",
+      "tags": [
+        "benchmark",
+        "pareto",
+        "eval",
+        "cost"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-harness",
+      "title": "agentic-harness (sevenschulte)",
+      "authors": "sevenschulte",
+      "source": "GitHub",
+      "url": "https://github.com/sevenschulte/agentic-harness",
+      "type": "repo",
+      "summary": "Reference six-layer harness for agentic coding with identity, rules, skills, hooks, memory, and adapters for multiple runtimes.",
+      "usecase": "Use it to clone a working reference, adapt the six layers to your preferred agent, and ship a fork-friendly team harness in an afternoon.",
+      "tags": [
+        "reference",
+        "layers",
+        "skills",
+        "hooks"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-stack",
+      "title": "agentic-stack",
+      "authors": "codejunkie99",
+      "source": "GitHub",
+      "url": "https://github.com/codejunkie99/agentic-stack",
+      "type": "repo",
+      "summary": "Portable .agent/ folder carrying memory, skills, and protocols that plugs into many coding harnesses so knowledge survives tool switches.",
+      "usecase": "Use it to drop one brain into a project and keep the same skills and memory when moving between Claude Code, Cursor, OpenCode, Hermes, or a DIY Python loop.",
+      "tags": [
+        "memory",
+        "skills",
+        "portable",
+        "multi-harness"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agents-best-practices",
+      "title": "agents-best-practices",
+      "authors": "DenisSergeevitch",
+      "source": "GitHub",
+      "url": "https://github.com/DenisSergeevitch/agents-best-practices",
+      "type": "repo",
+      "summary": "Provider-neutral Agent Skill for designing, generating MVP blueprints, auditing, and refactoring agentic harnesses.",
+      "usecase": "Use it to generate a production-safe harness blueprint for a domain, then audit an existing loop for missing authorization and observation rules.",
+      "tags": [
+        "skill",
+        "blueprint",
+        "audit",
+        "design"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentsmesh",
+      "title": "AgentsMesh",
+      "authors": "AgentsMesh",
+      "source": "GitHub",
+      "url": "https://github.com/AgentsMesh/AgentsMesh",
+      "type": "harness",
+      "summary": "AI agent workforce platform that schedules, isolates, and steers hundreds of coding agents across self-hosted runner fleets from one console.",
+      "usecase": "Use it to install runners on your machines, schedule agent pods with capacity limits, and command a large fleet without one-box bottlenecks.",
+      "tags": [
+        "fleet",
+        "scheduler",
+        "self-host",
+        "workforce"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "blitzos",
+      "title": "BlitzOS",
+      "authors": "blitzdotdev",
+      "source": "GitHub",
+      "url": "https://github.com/blitzdotdev/BlitzOS",
+      "type": "harness",
+      "summary": "Self-hostable control plane and workspace runtime that gives teammates zero-setup agent environments with shared credentials, ACP harness support, and cloud VMs.",
+      "usecase": "Use it to provision isolated agent workspaces for a team, inject org credentials, and run any ACP-compatible coding agent on Hetzner or AWS.",
+      "tags": [
+        "control-plane",
+        "workspace",
+        "self-host",
+        "acp"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "gastown",
+      "title": "Gas Town",
+      "authors": "gastownhall",
+      "source": "GitHub",
+      "url": "https://github.com/gastownhall/gastown",
+      "type": "harness",
+      "summary": "Multi-agent workspace manager with git-backed persistent hooks, mailboxes, and a Mayor coordinator for reliable long-running coding agent fleets.",
+      "usecase": "Use it to keep work state across agent restarts, hand off tasks via persistent hooks, and scale to dozens of agents without losing context.",
+      "tags": [
+        "persistence",
+        "multi-agent",
+        "workspace",
+        "coordinator"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "maestro",
+      "title": "Maestro",
+      "authors": "RunMaestro",
+      "source": "GitHub",
+      "url": "https://github.com/RunMaestro/Maestro",
+      "type": "tool",
+      "summary": "Cross-platform desktop command center for orchestrating fleets of coding agents with git worktrees, auto-run playbooks, and parallel isolated sessions.",
+      "usecase": "Use it to run unlimited agents in parallel across projects, auto-execute markdown playbooks for long unattended runs, and merge worktree results with one click.",
+      "tags": [
+        "orchestration",
+        "desktop",
+        "worktree",
+        "fleet"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ruflo",
+      "title": "ruflo",
+      "authors": "ruvnet",
+      "source": "GitHub",
+      "url": "https://github.com/ruvnet/ruflo",
+      "type": "harness",
+      "summary": "Meta-harness that turns Claude Code or Codex into coordinated swarms with adaptive memory, federation, 100+ specialized agents, and self-learning loops.",
+      "usecase": "Use it to init a nervous system around your existing coding agent so tasks auto-route, learn from success, and federate securely across machines.",
+      "tags": [
+        "swarm",
+        "memory",
+        "federation",
+        "meta-harness"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "tools",
+      "title": "strands-agents tools",
+      "authors": "strands-agents",
+      "source": "GitHub",
+      "url": "https://github.com/strands-agents/tools",
+      "type": "repo",
+      "summary": "Companion tool pack for the Strands harness SDK giving agents file, shell, browser, and domain capabilities under lifecycle controls.",
+      "usecase": "Use it to wire production-ready tools into a Strands agent loop with turn limits, budgets, MCP, and tracing already in place.",
+      "tags": [
+        "tools",
+        "sdk",
+        "mcp",
+        "production"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "superpowers",
+      "title": "superpowers",
+      "authors": "obra",
+      "source": "GitHub",
+      "url": "https://github.com/obra/superpowers",
+      "type": "repo",
+      "summary": "Composable skills framework and software development methodology that forces specs, TDD plans, and subagent-driven execution across many coding agents.",
+      "usecase": "Use it to install skills that make any supported harness pause for design sign-off then drive red-green TDD subagents until the plan is complete.",
+      "tags": [
+        "skills",
+        "tdd",
+        "methodology",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "symphony",
+      "title": "Symphony",
+      "authors": "openai",
+      "source": "GitHub",
+      "url": "https://github.com/openai/symphony",
+      "type": "harness",
+      "summary": "Spec and reference that turns tracker issues into isolated autonomous implementation runs with proof-of-work artifacts for landing PRs.",
+      "usecase": "Use it to watch Linear or GitHub issues, spawn sandboxed coding agents per ticket, and accept only runs that ship CI status plus walkthrough proof.",
+      "tags": [
+        "autonomous",
+        "issue",
+        "proof",
+        "orchestration"
+      ],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-governance-toolkit",
       "title": "Agent Governance Toolkit",
