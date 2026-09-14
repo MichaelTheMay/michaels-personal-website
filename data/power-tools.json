@@ -1,7 +1,385 @@
 {
-  "lastUpdated": "2026-09-13",
-  "count": 211,
+  "lastUpdated": "2026-09-14",
+  "count": 229,
   "tools": [
+    {
+      "slug": "agent-work-runtime",
+      "title": "Agent Work Runtime",
+      "authors": "originoneai",
+      "source": "GitHub",
+      "url": "https://github.com/originoneai/agent-work-runtime",
+      "type": "tool",
+      "summary": "Local Rust CLI and MCP that indexes project Markdown/YAML, records checkpoints, and compiles bounded context packets without model calls.",
+      "usecase": "Use it to hand a new session only the current goal, unfinished work, and next action instead of the whole history.",
+      "tags": [
+        "context",
+        "checkpoint",
+        "mcp",
+        "rust"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness-kit",
+      "title": "agent-harness-kit",
+      "authors": "enmanuelmag",
+      "source": "GitHub",
+      "url": "https://github.com/enmanuelmag/agent-harness-kit",
+      "type": "harness",
+      "summary": "Provider-agnostic scaffolding with task backlog, five-role workflow, health gate, MCP server, and persistent action logs.",
+      "usecase": "Use it to force Lead/Explorer/Builder/Reviewer roles and a green health check before any agent touches the codebase.",
+      "tags": [
+        "mcp",
+        "scaffolding",
+        "multi-agent",
+        "audit"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentcage",
+      "title": "agentcage",
+      "authors": "agentcage",
+      "source": "GitHub",
+      "url": "https://github.com/agentcage/agentcage",
+      "type": "tool",
+      "summary": "Defense-in-depth proxy sandbox with default-deny egress, zero-leak secret placeholders, TLS inspection, and multi-backend isolation.",
+      "usecase": "Use it to run any coding agent behind an inspecting gateway so real keys never enter the cage and only allowlisted domains resolve.",
+      "tags": [
+        "sandbox",
+        "egress",
+        "secrets",
+        "mitmproxy"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "aide",
+      "title": "aide",
+      "authors": "jskswamy",
+      "source": "GitHub",
+      "url": "https://github.com/jskswamy/aide",
+      "type": "tool",
+      "summary": "One-command OS-native sandbox launcher for any coding agent with Seatbelt/Landlock, capability unlocks, encrypted secrets, and live statusline.",
+      "usecase": "Use it to stop babysitting allow prompts while still unlocking docker/k8s/gcp only when a project needs them.",
+      "tags": [
+        "sandbox",
+        "seatbelt",
+        "landlock",
+        "capabilities"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-agent-sandbox",
+      "title": "Awesome Agent Sandbox",
+      "authors": "fishman",
+      "source": "GitHub",
+      "url": "https://github.com/fishman/awesome-agent-sandbox",
+      "type": "repo",
+      "summary": "Curated map of portable microVM and container isolation harnesses for coding agents with boot-time and mount comparisons.",
+      "usecase": "Use it to pick and clone the right microVM or rootless container primitive before wiring your own agent loop.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "awesome-list",
+        "isolation"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hcom",
+      "title": "hcom",
+      "authors": "aannoo",
+      "source": "GitHub",
+      "url": "https://github.com/aannoo/hcom",
+      "type": "tool",
+      "summary": "Rust CLI that lets heterogeneous coding agents message, watch, spawn, fork, and subscribe across real terminals without changing how you launch them.",
+      "usecase": "Use it to wire Claude, Codex, Pi, and others as each other's subagents with collision detection and a TUI dashboard.",
+      "tags": [
+        "cross-agent",
+        "messaging",
+        "rust",
+        "cli"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hive",
+      "title": "Hive",
+      "authors": "aden-hive",
+      "source": "GitHub",
+      "url": "https://github.com/aden-hive/hive",
+      "type": "harness",
+      "summary": "Production multi-agent runtime where a Queen pilots work then fans out worker clones with crash-safe state, cost limits, and human oversight.",
+      "usecase": "Use it to turn a business outcome into a colony of long-running agents with shared ledger and park/resume.",
+      "tags": [
+        "colonies",
+        "production",
+        "HITL",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "intentkit",
+      "title": "IntentKit",
+      "authors": "crestalnetwork",
+      "source": "GitHub",
+      "url": "https://github.com/crestalnetwork/intentkit",
+      "type": "harness",
+      "summary": "Self-hosted cloud agent cluster that manages collaborative teams of agents around intents rather than one-off chats.",
+      "usecase": "Use it to stand up a multi-agent cluster that keeps working a shared intent with local ownership of state.",
+      "tags": [
+        "cluster",
+        "intent",
+        "multi-agent",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nanobot",
+      "title": "nanobot",
+      "authors": "HKUDS",
+      "source": "GitHub",
+      "url": "https://github.com/HKUDS/nanobot",
+      "type": "tool",
+      "summary": "Ultra-light self-hosted personal agent framework with WebUI, memory, MCP, multi-agent delegation, cron, and OpenAI-compatible API.",
+      "usecase": "Use it to run a small readable core that coordinates helpers, tools, and chat-app gateways on your own box.",
+      "tags": [
+        "self-hosted",
+        "memory",
+        "mcp",
+        "personal-agent"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "neo",
+      "title": "Neo",
+      "authors": "owainlewis",
+      "source": "GitHub",
+      "url": "https://github.com/owainlewis/neo",
+      "type": "harness",
+      "summary": "Minimalist Go multi-agent coding harness with visible plans, parallel subagents, sandbox-first tools, and a single native binary.",
+      "usecase": "Use it to drive repo tasks from inspection through tests and review in one terminal without a heavy plugin stack.",
+      "tags": [
+        "go",
+        "multi-agent",
+        "coding-harness",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "open-multi-agent",
+      "title": "Open Multi-Agent",
+      "authors": "open-multi-agent",
+      "source": "GitHub",
+      "url": "https://github.com/open-multi-agent/open-multi-agent",
+      "type": "harness",
+      "summary": "Self-hosted TypeScript runtime where consequential actions wait for durable approvals and every run leaves a byte-verifiable record.",
+      "usecase": "Use it to run organizational agents you can own, approve offline, and audit without a hosted control plane.",
+      "tags": [
+        "approvals",
+        "audit",
+        "typescript",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openevolve",
+      "title": "OpenEvolve",
+      "authors": "algorithmicsuperintelligence",
+      "source": "GitHub",
+      "url": "https://github.com/algorithmicsuperintelligence/openevolve",
+      "type": "repo",
+      "summary": "Open-source AlphaEvolve-style evolutionary coding agent that iteratively refines algorithms with ensembles and evaluation loops.",
+      "usecase": "Use it to clone a research-origin optimizer loop that discovers stronger code under fixed eval harnesses.",
+      "tags": [
+        "evolutionary",
+        "coding-agent",
+        "research-origin",
+        "optimizer"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "runloop",
+      "title": "Runloop",
+      "authors": "0Albiere",
+      "source": "GitHub",
+      "url": "https://github.com/0Albiere/Runloop",
+      "type": "harness",
+      "summary": "Bun-native production agent runtime with Postgres persistence, BullMQ distribution, type-safe tools, and built-in observability.",
+      "usecase": "Use it to run resilient multi-worker agent loops that survive crashes with full step history in Postgres.",
+      "tags": [
+        "bun",
+        "postgres",
+        "distributed",
+        "runtime"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "runx",
+      "title": "runx",
+      "authors": "runxhq",
+      "source": "GitHub",
+      "url": "https://github.com/runxhq/runx",
+      "type": "harness",
+      "summary": "Governed runtime under skills and graphs that admits each act under narrowing authority, injects credentials off-prompt, and seals verifiable receipts.",
+      "usecase": "Use it to execute portable SKILL.md workflows with policy and audit without embedding another agent framework.",
+      "tags": [
+        "skills",
+        "governance",
+        "receipts",
+        "authority"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "rusty",
+      "title": "Rusty",
+      "authors": "dev-amjad-shaikh",
+      "source": "GitHub",
+      "url": "https://github.com/dev-amjad-shaikh/rusty",
+      "type": "harness",
+      "summary": "Durable LangGraph-style agent runtime in Rust with checkpointed super-steps, WASM nodes, remote workers, and a single static server binary.",
+      "usecase": "Use it to run production graphs with fork/replay, Flight Recorder journals, and Python/TS clients talking HTTP/SSE.",
+      "tags": [
+        "rust",
+        "durable",
+        "checkpoint",
+        "wasm"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "trellis",
+      "title": "Trellis",
+      "authors": "mindfold-ai",
+      "source": "GitHub",
+      "url": "https://github.com/mindfold-ai/Trellis",
+      "type": "harness",
+      "summary": "Repo-native engineering harness that persists specs, task PRDs, journals, and multi-platform agent hooks so sessions stop starting from zero.",
+      "usecase": "Use it to inject scoped conventions and task context into any coding agent across a monorepo team.",
+      "tags": [
+        "specs",
+        "memory",
+        "multi-platform",
+        "agentic-coding"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "vibesdk",
+      "title": "vibesdk",
+      "authors": "cloudflare",
+      "source": "GitHub",
+      "url": "https://github.com/cloudflare/vibesdk",
+      "type": "tool",
+      "summary": "Open-source vibe-coding platform kit built entirely on the Cloudflare stack so you can host your own agent coding surface.",
+      "usecase": "Use it to clone and run a Cloudflare-native coding agent platform instead of renting a closed IDE agent.",
+      "tags": [
+        "cloudflare",
+        "vibe-coding",
+        "platform",
+        "edge"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "runtime",
+      "title": "Vilano Runtime",
+      "authors": "vilano-ai",
+      "source": "GitHub",
+      "url": "https://github.com/vilano-ai/runtime",
+      "type": "harness",
+      "summary": "Durable BEAM-kernel runtime with disposable TS workers, replay-from-top workflows, leases, and supervised long-lived keyed agents.",
+      "usecase": "Use it to replace retry soup with deterministic replay and passivation for production agent systems.",
+      "tags": [
+        "BEAM",
+        "durable",
+        "replay",
+        "typescript"
+      ],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent_harness",
       "title": "agent_harness (Agent Zero plugin)",
