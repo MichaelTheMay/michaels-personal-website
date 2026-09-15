@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-14",
+  "lastUpdated": "2026-09-15",
   "issues": [
+    {
+      "date": "2026-09-15",
+      "title": "In-process agent OSes and durable control planes over disposable sandboxes",
+      "blurb": "Today's clone-and-run stack favors Rust and Go runtimes that embed isolation, policy, and multi-agent rooms inside your process or cluster instead of renting another microVM. Power users wire these control planes, OS sandboxes, and unified harness routers into long-lived loops."
+    },
     {
       "date": "2026-09-14",
       "title": "Clone-and-run harnesses that own sandboxes, state, and multi-agent wiring under any coding agent",
@@ -208,6 +213,289 @@
     }
   ],
   "items": [
+    {
+      "id": "openfang-2026-09-15",
+      "title": "OpenFang",
+      "authors": "RightNow-AI",
+      "source": "GitHub",
+      "url": "https://github.com/RightNow-AI/openfang",
+      "type": "tool",
+      "dateAdded": "2026-09-15",
+      "summary": "Single-binary Rust Agent OS with channels, skills, providers, scheduled Hands, and a local dashboard.",
+      "tags": [
+        "rust",
+        "agent-os",
+        "single-binary"
+      ],
+      "usecase": "Use it to run always-on autonomous agents from one ~32MB binary without a Python dependency tree.",
+      "returning": false
+    },
+    {
+      "id": "ironclaw-2026-09-15",
+      "title": "IronClaw",
+      "authors": "nearai",
+      "source": "GitHub",
+      "url": "https://github.com/nearai/ironclaw",
+      "type": "repo",
+      "dateAdded": "2026-09-15",
+      "summary": "Privacy and security focused Agent OS in Rust with extensible channels, WASM lanes, and supervised autonomy.",
+      "tags": [
+        "rust",
+        "privacy",
+        "agent-os"
+      ],
+      "usecase": "Use it to self-host a multi-channel personal agent stack with OS-level sandbox defaults.",
+      "returning": false
+    },
+    {
+      "id": "rebuno-2026-09-15",
+      "title": "Rebuno",
+      "authors": "rebuno",
+      "source": "GitHub",
+      "url": "https://github.com/rebuno/rebuno",
+      "type": "harness",
+      "dateAdded": "2026-09-15",
+      "summary": "Production execution runtime that records every tool and LLM call as durable steps with YAML policy gates.",
+      "tags": [
+        "durable",
+        "policy",
+        "go"
+      ],
+      "usecase": "Use it to resume interrupted multi-framework agents from Postgres event logs with approval holds.",
+      "returning": false
+    },
+    {
+      "id": "oh-my-agentic-coder-2026-09-15",
+      "title": "oh-my-agentic-coder",
+      "authors": "TNG",
+      "source": "GitHub",
+      "url": "https://github.com/TNG/oh-my-agentic-coder",
+      "type": "tool",
+      "dateAdded": "2026-09-15",
+      "summary": "Harness-agnostic Go CLI that sandboxes coding agents with Seatbelt, bubblewrap, and Landlock while bridging skills and secrets.",
+      "tags": [
+        "sandbox",
+        "go",
+        "os-primitives"
+      ],
+      "usecase": "Use it to confine OpenCode, Pi, or CodeWhale sessions so the harness never holds raw secrets.",
+      "returning": false
+    },
+    {
+      "id": "agentos-smartcomputer-2026-09-15",
+      "title": "AgentOS (smartcomputer)",
+      "authors": "smartcomputer-ai",
+      "source": "GitHub",
+      "url": "https://github.com/smartcomputer-ai/agent-os",
+      "type": "harness",
+      "dateAdded": "2026-09-15",
+      "summary": "Rust harness for self-evolving agents with deterministic replay, signed receipts, and governed self-modification.",
+      "tags": [
+        "self-modifying",
+        "rust",
+        "governance"
+      ],
+      "usecase": "Use it to let agents propose and apply harness changes under audit trails and simulation gates.",
+      "returning": false
+    },
+    {
+      "id": "harnessrouter-2026-09-15",
+      "title": "HarnessRouter",
+      "authors": "HarnessRouter",
+      "source": "GitHub",
+      "url": "https://github.com/HarnessRouter/harnessrouter",
+      "type": "harness",
+      "dateAdded": "2026-09-15",
+      "summary": "Self-hosted unified API that turns existing coding harnesses into backends via the Unified Harness Protocol.",
+      "tags": [
+        "router",
+        "uhp",
+        "self-hosted"
+      ],
+      "usecase": "Use it to route product tasks across Codex, Hermes, and Pi through one session-aware OpenAI-compatible endpoint.",
+      "returning": false
+    },
+    {
+      "id": "prime-agent-2026-09-15",
+      "title": "Prime Agent",
+      "authors": "PrimeIntellect-ai",
+      "source": "GitHub",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "type": "tool",
+      "dateAdded": "2026-09-15",
+      "summary": "Self-improving RLM coding and research agent with a continual harness for durable skills, memory, and subagents.",
+      "tags": [
+        "rlm",
+        "research",
+        "continual"
+      ],
+      "usecase": "Use it to run long-horizon research loops where context lives as REPL variables and refinable harness state.",
+      "returning": false
+    },
+    {
+      "id": "openrig-2026-09-15",
+      "title": "OpenRig",
+      "authors": "mvschwarz",
+      "source": "GitHub",
+      "url": "https://github.com/mvschwarz/openrig",
+      "type": "harness",
+      "dateAdded": "2026-09-15",
+      "summary": "YAML-defined multi-agent rig that boots mixed coding harnesses as a coordinated team.",
+      "tags": [
+        "multi-agent",
+        "yaml",
+        "orchestration"
+      ],
+      "usecase": "Use it to declare Claude-side and Codex-side agents in one config and launch them together.",
+      "returning": false
+    },
+    {
+      "id": "llmfit-2026-09-15",
+      "title": "llmfit",
+      "authors": "AlexsJones",
+      "source": "GitHub",
+      "url": "https://github.com/AlexsJones/llmfit",
+      "type": "tool",
+      "dateAdded": "2026-09-15",
+      "summary": "Rust CLI and TUI that scores which local LLMs fit your CPU, RAM, and GPU before you wire them into agents.",
+      "tags": [
+        "local-llm",
+        "hardware",
+        "tui"
+      ],
+      "usecase": "Use it to pick quantizations and runtimes that actually sustain agent loops on your hardware.",
+      "returning": false
+    },
+    {
+      "id": "agent-browser-2026-09-15",
+      "title": "agent-browser",
+      "authors": "vercel-labs",
+      "source": "GitHub",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "type": "tool",
+      "dateAdded": "2026-09-15",
+      "summary": "Rust agent browser infrastructure aimed at fast, scriptable browser control for agent loops.",
+      "tags": [
+        "browser",
+        "rust",
+        "infra"
+      ],
+      "usecase": "Use it to give coding or research agents a low-latency browser surface without a full desktop stack.",
+      "returning": false
+    },
+    {
+      "id": "rig-2026-09-15",
+      "title": "rig",
+      "authors": "0xPlaygrounds",
+      "source": "GitHub",
+      "url": "https://github.com/0xPlaygrounds/rig",
+      "type": "repo",
+      "dateAdded": "2026-09-15",
+      "summary": "Rust agent framework for composing model providers, tools, and agent loops with strong typing.",
+      "tags": [
+        "rust",
+        "framework",
+        "agents"
+      ],
+      "usecase": "Use it to build custom systems-language agents that share one provider-agnostic core.",
+      "returning": false
+    },
+    {
+      "id": "agent-reliability-harness-2026-09-15",
+      "title": "Agent Reliability Harness",
+      "authors": "SUNRNEHUI",
+      "source": "GitHub",
+      "url": "https://github.com/SUNRNEHUI/agent-reliability-harness",
+      "type": "harness",
+      "dateAdded": "2026-09-15",
+      "summary": "Plan-native continuity layer with intent-to-contract synthesis, durable handoff, and evidence-based acceptance.",
+      "tags": [
+        "continuity",
+        "contracts",
+        "acceptance"
+      ],
+      "usecase": "Use it to keep multi-session coding work portable across model and runtime boundaries with audit modes.",
+      "returning": false
+    },
+    {
+      "id": "microsoft-agent-framework-harness-2026-09-15",
+      "title": "Microsoft Agent Framework Harness",
+      "authors": "Microsoft",
+      "source": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/concepts/harness",
+      "type": "harness",
+      "dateAdded": "2026-09-15",
+      "summary": "Batteries-included harness agent for research, coding, and long-running work over any chat client.",
+      "tags": [
+        "dotnet",
+        "python",
+        "harness"
+      ],
+      "usecase": "Use it to wrap an IChatClient into sessioned multi-step agents with approval and context controls.",
+      "returning": false
+    },
+    {
+      "id": "aichat-2026-09-15",
+      "title": "aichat",
+      "authors": "sigoden",
+      "source": "GitHub",
+      "url": "https://github.com/sigoden/aichat",
+      "type": "tool",
+      "dateAdded": "2026-09-15",
+      "summary": "All-in-one Rust LLM CLI with shell integration, RAG, and agent-style tool use suitable as a thin local harness.",
+      "tags": [
+        "cli",
+        "rust",
+        "llm"
+      ],
+      "usecase": "Use it to script provider-agnostic tool loops from the terminal without a heavy IDE agent.",
+      "returning": false
+    },
+    {
+      "id": "what-is-an-agent-harness-the-architecture-behind-modern-coding-agents-2026-09-15",
+      "title": "What Is an Agent Harness? The Architecture Behind Modern Coding Agents",
+      "authors": "freeCodeCamp",
+      "source": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/news/what-is-an-agent-harness/",
+      "type": "article",
+      "dateAdded": "2026-09-15",
+      "summary": "Explains the harness as the runtime that decides recovery, tool policy, and context around a model core. Argues builders should treat harness choice as first-class infrastructure rather than an afterthought wrapper.",
+      "tags": [
+        "harness",
+        "architecture",
+        "essay"
+      ]
+    },
+    {
+      "id": "harness-rebuilt-its-git-repository-for-nonstop-ai-agent-traffic-2026-09-15",
+      "title": "Harness rebuilt its Git repository for nonstop AI agent traffic",
+      "authors": "The New Stack",
+      "source": "The New Stack",
+      "url": "https://thenewstack.io/harness-ai-code-review/",
+      "type": "article",
+      "dateAdded": "2026-09-15",
+      "summary": "Engineering writeup on how agent-generated PR floods forced deeper Git and review pipeline changes. Covers why enterprises are loosening gates while still needing governance around agent traffic.",
+      "tags": [
+        "engineering",
+        "git",
+        "code-review"
+      ]
+    },
+    {
+      "id": "introducing-the-agents-api-2026-09-15",
+      "title": "Introducing the Agents API",
+      "authors": "OpenAI",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-the-agents-api/",
+      "type": "release",
+      "dateAdded": "2026-09-15",
+      "summary": "Product drop for a managed Agents API powered by the Codex harness for orchestration, long-running sessions, and tool use. Positions cloud agents as a launch path for teams that want hosted control without owning the full runtime.",
+      "tags": [
+        "release",
+        "api",
+        "cloud-agents"
+      ]
+    },
     {
       "id": "neo-2026-09-14",
       "title": "Neo",
