@@ -1,7 +1,238 @@
 {
-  "lastUpdated": "2026-09-15",
-  "count": 243,
+  "lastUpdated": "2026-09-16",
+  "count": 254,
   "tools": [
+    {
+      "slug": "agent-harness-optimizer",
+      "title": "Agent Harness Optimizer",
+      "authors": "Airbnb",
+      "source": "GitHub",
+      "url": "https://github.com/airbnb/agent-harness-optimizer",
+      "type": "harness",
+      "summary": "Benchmark-agnostic framework that evolves system prompts and tool-call middleware via eval feedback using genetic or linear optimizers.",
+      "usecase": "Use it to automatically lift pass rates on coding or tool-use benchmarks by editing only the harness surfaces.",
+      "tags": [
+        "optimizer",
+        "python",
+        "eval",
+        "middleware"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-swarm",
+      "title": "agent-swarm",
+      "authors": "desplega-ai",
+      "source": "GitHub",
+      "url": "https://github.com/desplega-ai/agent-swarm",
+      "type": "harness",
+      "summary": "Open-source agentic OS that lets a lead agent dispatch goals to isolated worker containers running various coding harnesses with shared memory and review gates.",
+      "usecase": "Use it to run Slack- or GitHub-triggered multi-agent fleets with Docker isolation and schema-validated results.",
+      "tags": [
+        "multi-agent",
+        "docker",
+        "orchestration",
+        "os"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ai-coding-agent-harness",
+      "title": "AI Coding Agent Harness (minimal)",
+      "authors": "Zelmoghazy",
+      "source": "GitHub",
+      "url": "https://github.com/Zelmoghazy/ai-coding-agent-harness",
+      "type": "repo",
+      "summary": "Minimal Python example that turns a project folder into an isolated Podman sandbox for tool-calling coding agents.",
+      "usecase": "Use it to prototype a secure agent loop with network-disabled containers and resource caps.",
+      "tags": [
+        "python",
+        "podman",
+        "minimal",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "atomic",
+      "title": "Atomic",
+      "authors": "bastani-inc",
+      "source": "GitHub",
+      "url": "https://github.com/bastani-inc/atomic",
+      "type": "harness",
+      "summary": "Verifiable coding-agent runtime that encodes processes as stages, checks, gates and approval graphs instead of free-form prompts.",
+      "usecase": "Use it to define durable engineering loops with explicit checkpoints and subagent delegation for long-horizon tasks.",
+      "tags": [
+        "typescript",
+        "workflow",
+        "gates",
+        "verifiable"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "atomic-agent",
+      "title": "Atomic Agent",
+      "authors": "AtomicBot-ai",
+      "source": "GitHub",
+      "url": "https://github.com/AtomicBot-ai/atomic-agent",
+      "type": "tool",
+      "summary": "Local-first AI agent that runs open-weight models via llama.cpp, drives browser and shell with approvals, and persists memory across sessions.",
+      "usecase": "Use it to keep private multi-step agent work entirely on-device with local models and MCP tools.",
+      "tags": [
+        "local-first",
+        "llama.cpp",
+        "tui",
+        "memory"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "atomic-agents",
+      "title": "Atomic Agents",
+      "authors": "Eigenwise",
+      "source": "GitHub",
+      "url": "https://github.com/eigenwise/atomic-agents",
+      "type": "repo",
+      "summary": "Lightweight modular framework for building agentic pipelines from single-purpose reusable components with clear schemas.",
+      "usecase": "Use it to compose predictable LEGO-style agents and tools without heavy framework lock-in.",
+      "tags": [
+        "python",
+        "modular",
+        "atomic",
+        "pipeline"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "beagle",
+      "title": "Beagle",
+      "authors": "Salesforce AI Research",
+      "source": "GitHub",
+      "url": "https://github.com/salesforceairesearch/beagle",
+      "type": "harness",
+      "summary": "Framework to evaluate and evolve agent harnesses at scale with DarwinX as the core evolution algorithm and verifier-backed tasks.",
+      "usecase": "Use it to search for harness changes that improve capability while guarding against regressions.",
+      "tags": [
+        "evolution",
+        "eval",
+        "research",
+        "harness"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "goatcode",
+      "title": "GoatCode",
+      "authors": "Arhan-w",
+      "source": "GitHub",
+      "url": "https://github.com/Arhan-w/GoatCode",
+      "type": "tool",
+      "summary": "Single-binary terminal AI agent with 180+ providers, automatic failover mid-session, prompt caching, parallel subagents and rewind.",
+      "usecase": "Use it to keep coding sessions alive across quota limits with live provider switching and cost tracking.",
+      "tags": [
+        "cli",
+        "failover",
+        "multi-provider",
+        "binary"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "herdr-agent-inbox",
+      "title": "Herdr Agent Inbox",
+      "authors": "douglascorrea",
+      "source": "GitHub",
+      "url": "https://github.com/douglascorrea/herdr-agent-inbox",
+      "type": "tool",
+      "summary": "Plugin that adds session titles, settle triage, workspace rollups and resumable chat history for agents running inside Herdr.",
+      "usecase": "Use it to treat agent panes like an inbox you can settle and reopen with native session resume.",
+      "tags": [
+        "plugin",
+        "herdr",
+        "inbox",
+        "session"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nightona",
+      "title": "Nightona",
+      "authors": "nightona-co",
+      "source": "GitHub",
+      "url": "https://github.com/nightona-co/nightona",
+      "type": "repo",
+      "summary": "Community fork continuing the last open AGPL Daytona release as self-hostable elastic sandbox infrastructure for AI code execution.",
+      "usecase": "Use it to keep a fully open sandbox runtime alive after the original project went private.",
+      "tags": [
+        "sandbox",
+        "fork",
+        "self-host",
+        "agpl"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness",
+      "title": "Vercel AI Harness",
+      "authors": "Vercel",
+      "source": "GitHub",
+      "url": "https://github.com/vercel/ai/tree/main/packages/harness",
+      "type": "harness",
+      "summary": "Experimental HarnessAgent plus harness specification with network session sandbox interface for bridge-backed coding agents.",
+      "usecase": "Use it to wire Claude Code style harnesses into Vercel sandboxes with streaming and tool execution.",
+      "tags": [
+        "typescript",
+        "sandbox",
+        "sdk",
+        "experimental"
+      ],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-reliability-harness",
       "title": "Agent Reliability Harness",

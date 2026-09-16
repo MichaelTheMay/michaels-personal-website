@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-09-16",
   "issues": [
+    {
+      "date": "2026-09-16",
+      "title": "Cloneable control planes and sandboxes that let power users own the agent loop",
+      "blurb": "Today's picks emphasize systems-language runtimes, detachable terminal multiplexers, harness optimizers, and isolation layers a power user can wire into long-running coding loops without renting a closed IDE. Fresh repos and rising infra beat brand recognition."
+    },
     {
       "date": "2026-09-15",
       "title": "In-process agent OSes and durable control planes over disposable sandboxes",
@@ -213,6 +218,220 @@
     }
   ],
   "items": [
+    {
+      "id": "agent-harness-optimizer-2026-09-16",
+      "title": "Agent Harness Optimizer",
+      "authors": "Airbnb",
+      "source": "GitHub",
+      "url": "https://github.com/airbnb/agent-harness-optimizer",
+      "type": "harness",
+      "dateAdded": "2026-09-16",
+      "summary": "Benchmark-agnostic framework that evolves system prompts and tool-call middleware via eval feedback using genetic or linear optimizers.",
+      "tags": [
+        "optimizer",
+        "python",
+        "eval",
+        "middleware"
+      ],
+      "usecase": "Use it to automatically lift pass rates on coding or tool-use benchmarks by editing only the harness surfaces.",
+      "returning": false
+    },
+    {
+      "id": "atomic-agent-2026-09-16",
+      "title": "Atomic Agent",
+      "authors": "AtomicBot-ai",
+      "source": "GitHub",
+      "url": "https://github.com/AtomicBot-ai/atomic-agent",
+      "type": "tool",
+      "dateAdded": "2026-09-16",
+      "summary": "Local-first AI agent that runs open-weight models via llama.cpp, drives browser and shell with approvals, and persists memory across sessions.",
+      "tags": [
+        "local-first",
+        "llama.cpp",
+        "tui",
+        "memory"
+      ],
+      "usecase": "Use it to keep private multi-step agent work entirely on-device with local models and MCP tools.",
+      "returning": false
+    },
+    {
+      "id": "atomic-2026-09-16",
+      "title": "Atomic",
+      "authors": "bastani-inc",
+      "source": "GitHub",
+      "url": "https://github.com/bastani-inc/atomic",
+      "type": "harness",
+      "dateAdded": "2026-09-16",
+      "summary": "Verifiable coding-agent runtime that encodes processes as stages, checks, gates and approval graphs instead of free-form prompts.",
+      "tags": [
+        "typescript",
+        "workflow",
+        "gates",
+        "verifiable"
+      ],
+      "usecase": "Use it to define durable engineering loops with explicit checkpoints and subagent delegation for long-horizon tasks.",
+      "returning": false
+    },
+    {
+      "id": "agent-swarm-2026-09-16",
+      "title": "agent-swarm",
+      "authors": "desplega-ai",
+      "source": "GitHub",
+      "url": "https://github.com/desplega-ai/agent-swarm",
+      "type": "harness",
+      "dateAdded": "2026-09-16",
+      "summary": "Open-source agentic OS that lets a lead agent dispatch goals to isolated worker containers running various coding harnesses with shared memory and review gates.",
+      "tags": [
+        "multi-agent",
+        "docker",
+        "orchestration",
+        "os"
+      ],
+      "usecase": "Use it to run Slack- or GitHub-triggered multi-agent fleets with Docker isolation and schema-validated results.",
+      "returning": false
+    },
+    {
+      "id": "vercel-ai-harness-2026-09-16",
+      "title": "Vercel AI Harness",
+      "authors": "Vercel",
+      "source": "GitHub",
+      "url": "https://github.com/vercel/ai/tree/main/packages/harness",
+      "type": "harness",
+      "dateAdded": "2026-09-16",
+      "summary": "Experimental HarnessAgent plus harness specification with network session sandbox interface for bridge-backed coding agents.",
+      "tags": [
+        "typescript",
+        "sandbox",
+        "sdk",
+        "experimental"
+      ],
+      "usecase": "Use it to wire Claude Code style harnesses into Vercel sandboxes with streaming and tool execution.",
+      "returning": false
+    },
+    {
+      "id": "nightona-2026-09-16",
+      "title": "Nightona",
+      "authors": "nightona-co",
+      "source": "GitHub",
+      "url": "https://github.com/nightona-co/nightona",
+      "type": "repo",
+      "dateAdded": "2026-09-16",
+      "summary": "Community fork continuing the last open AGPL Daytona release as self-hostable elastic sandbox infrastructure for AI code execution.",
+      "tags": [
+        "sandbox",
+        "fork",
+        "self-host",
+        "agpl"
+      ],
+      "usecase": "Use it to keep a fully open sandbox runtime alive after the original project went private.",
+      "returning": false
+    },
+    {
+      "id": "goatcode-2026-09-16",
+      "title": "GoatCode",
+      "authors": "Arhan-w",
+      "source": "GitHub",
+      "url": "https://github.com/Arhan-w/GoatCode",
+      "type": "tool",
+      "dateAdded": "2026-09-16",
+      "summary": "Single-binary terminal AI agent with 180+ providers, automatic failover mid-session, prompt caching, parallel subagents and rewind.",
+      "tags": [
+        "cli",
+        "failover",
+        "multi-provider",
+        "binary"
+      ],
+      "usecase": "Use it to keep coding sessions alive across quota limits with live provider switching and cost tracking.",
+      "returning": false
+    },
+    {
+      "id": "beagle-2026-09-16",
+      "title": "Beagle",
+      "authors": "Salesforce AI Research",
+      "source": "GitHub",
+      "url": "https://github.com/salesforceairesearch/beagle",
+      "type": "harness",
+      "dateAdded": "2026-09-16",
+      "summary": "Framework to evaluate and evolve agent harnesses at scale with DarwinX as the core evolution algorithm and verifier-backed tasks.",
+      "tags": [
+        "evolution",
+        "eval",
+        "research",
+        "harness"
+      ],
+      "usecase": "Use it to search for harness changes that improve capability while guarding against regressions.",
+      "returning": false
+    },
+    {
+      "id": "atomic-agents-2026-09-16",
+      "title": "Atomic Agents",
+      "authors": "Eigenwise",
+      "source": "GitHub",
+      "url": "https://github.com/eigenwise/atomic-agents",
+      "type": "repo",
+      "dateAdded": "2026-09-16",
+      "summary": "Lightweight modular framework for building agentic pipelines from single-purpose reusable components with clear schemas.",
+      "tags": [
+        "python",
+        "modular",
+        "atomic",
+        "pipeline"
+      ],
+      "usecase": "Use it to compose predictable LEGO-style agents and tools without heavy framework lock-in.",
+      "returning": false
+    },
+    {
+      "id": "herdr-agent-inbox-2026-09-16",
+      "title": "Herdr Agent Inbox",
+      "authors": "douglascorrea",
+      "source": "GitHub",
+      "url": "https://github.com/douglascorrea/herdr-agent-inbox",
+      "type": "tool",
+      "dateAdded": "2026-09-16",
+      "summary": "Plugin that adds session titles, settle triage, workspace rollups and resumable chat history for agents running inside Herdr.",
+      "tags": [
+        "plugin",
+        "herdr",
+        "inbox",
+        "session"
+      ],
+      "usecase": "Use it to treat agent panes like an inbox you can settle and reopen with native session resume.",
+      "returning": false
+    },
+    {
+      "id": "ai-coding-agent-harness-minimal-2026-09-16",
+      "title": "AI Coding Agent Harness (minimal)",
+      "authors": "Zelmoghazy",
+      "source": "GitHub",
+      "url": "https://github.com/Zelmoghazy/ai-coding-agent-harness",
+      "type": "repo",
+      "dateAdded": "2026-09-16",
+      "summary": "Minimal Python example that turns a project folder into an isolated Podman sandbox for tool-calling coding agents.",
+      "tags": [
+        "python",
+        "podman",
+        "minimal",
+        "sandbox"
+      ],
+      "usecase": "Use it to prototype a secure agent loop with network-disabled containers and resource caps.",
+      "returning": false
+    },
+    {
+      "id": "when-the-agent-can-turn-off-its-own-cage-the-deepseek-harness-sandbox-escape-2026-09-16",
+      "title": "When the Agent Can Turn Off Its Own Cage: The DeepSeek Harness Sandbox Escape",
+      "authors": "Denny Sentinel",
+      "source": "Denny Sentinel",
+      "url": "https://dennysentinel.com/blog/2026-09-15-deepseek-harness-sandbox-escape/",
+      "type": "article",
+      "dateAdded": "2026-09-16",
+      "summary": "A critical sandbox escape (CVE-2026-82533) let a confined DeepSeek Harness agent disable its own OS sandbox and approval gates via a local API call. The writeup traces the structural failure shared with prior Claude Code and Cursor escapes.",
+      "tags": [
+        "security",
+        "sandbox",
+        "cve",
+        "deepseek"
+      ]
+    },
     {
       "id": "openfang-2026-09-15",
       "title": "OpenFang",
