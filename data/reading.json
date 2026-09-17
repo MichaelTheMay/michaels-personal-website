@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-16",
+  "lastUpdated": "2026-09-17",
   "issues": [
+    {
+      "date": "2026-09-17",
+      "title": "Local microVMs and harness SDKs that contain agent blast radius",
+      "blurb": "Today's list favors clone-and-run isolation, process-local harness SDKs, and self-hosted control planes. Power users get durable sessions, warm pools, and eval loops without closed IDEs or host-wide risk."
+    },
     {
       "date": "2026-09-16",
       "title": "Cloneable control planes and sandboxes that let power users own the agent loop",
@@ -218,6 +223,288 @@
     }
   ],
   "items": [
+    {
+      "id": "brig-2026-09-17",
+      "title": "Brig",
+      "authors": "brig-sh / NOFire AI",
+      "source": "GitHub",
+      "url": "https://github.com/brig-sh/brig",
+      "type": "tool",
+      "dateAdded": "2026-09-17",
+      "summary": "Go CLI and session daemon that boots coding agents inside local microVMs with project mounts, credential delivery, and image verification.",
+      "tags": [
+        "microvm",
+        "sandbox",
+        "cli",
+        "go"
+      ],
+      "usecase": "Use it to run a coding agent on one project directory so a bad command cannot touch the rest of the host.",
+      "returning": false
+    },
+    {
+      "id": "cloudflare-agents-2026-09-17",
+      "title": "Cloudflare Agents",
+      "authors": "cloudflare",
+      "source": "GitHub",
+      "url": "https://github.com/cloudflare/agents",
+      "type": "tool",
+      "dateAdded": "2026-09-17",
+      "summary": "SDK for persistent stateful agents on Durable Objects with MCP, workflows, voice, browser agents, code mode, and sandboxed execution.",
+      "tags": [
+        "durable-objects",
+        "edge",
+        "mcp",
+        "workflows"
+      ],
+      "usecase": "Use it to deploy always-on edge agents that keep state, schedule work, and call tools without a separate control plane.",
+      "returning": false
+    },
+    {
+      "id": "bossconsole-2026-09-17",
+      "title": "BossConsole",
+      "authors": "risa-labs-inc",
+      "source": "GitHub",
+      "url": "https://github.com/risa-labs-inc/BossConsole",
+      "type": "tool",
+      "dateAdded": "2026-09-17",
+      "summary": "Native multi-threaded JVM operator console (not Electron) that hosts coding agents with real browser, terminal, editor, secrets, and 100-plus MCP tools.",
+      "tags": [
+        "desktop",
+        "jvm",
+        "mcp",
+        "multi-agent"
+      ],
+      "usecase": "Use it as a desktop control plane to supervise multiple agent sessions with hot-reload plugins and RBAC.",
+      "returning": false
+    },
+    {
+      "id": "agent-hop-2026-09-17",
+      "title": "agent-hop",
+      "authors": "hetpatel-11",
+      "source": "GitHub",
+      "url": "https://github.com/hetpatel-11/agent-hop",
+      "type": "tool",
+      "dateAdded": "2026-09-17",
+      "summary": "Rust runtime that opens real coding harnesses in a PTY, owns chrome around them, and hops a live session between Claude Code, Codex, OpenCode, Pi, and Grok.",
+      "tags": [
+        "rust",
+        "pty",
+        "session",
+        "multi-harness"
+      ],
+      "usecase": "Use it to move an in-progress coding thread to another harness without restarting or losing local session search.",
+      "returning": false
+    },
+    {
+      "id": "agentlens-2026-09-17",
+      "title": "AgentLens",
+      "authors": "agentkitai",
+      "source": "GitHub",
+      "url": "https://github.com/agentkitai/agentlens",
+      "type": "tool",
+      "dateAdded": "2026-09-17",
+      "summary": "Tamper-evident hash-chained audit logs for AI agents with OTel-native ingestion and cryptographically verifiable export snapshots.",
+      "tags": [
+        "audit",
+        "otel",
+        "observability",
+        "compliance"
+      ],
+      "usecase": "Use it to prove every LLM call, tool call, and approval in a chain that fails verification if any record is altered.",
+      "returning": false
+    },
+    {
+      "id": "reef-eval-2026-09-17",
+      "title": "reef-eval",
+      "authors": "Human-Agent-Society",
+      "source": "GitHub",
+      "url": "https://github.com/Human-Agent-Society/reef-eval",
+      "type": "harness",
+      "dateAdded": "2026-09-17",
+      "summary": "Evaluation infrastructure for self-evolving agents on the Harbor task standard, measuring whether memory, skills, or harness changes improve scores.",
+      "tags": [
+        "eval",
+        "self-evolving",
+        "harbor",
+        "benchmark"
+      ],
+      "usecase": "Use it to score autoresearch and containerized tasks before and after an agent persists learned state.",
+      "returning": false
+    },
+    {
+      "id": "harness-rl-2026-09-17",
+      "title": "Harness-RL",
+      "authors": "jiangxinke",
+      "source": "GitHub",
+      "url": "https://github.com/jiangxinke/Harness-RL",
+      "type": "repo",
+      "dateAdded": "2026-09-17",
+      "summary": "Black-box RL stack for training language agents inside multi-agent harnesses with action-args decoupling and conflict-aware policy optimization.",
+      "tags": [
+        "rl",
+        "multi-agent",
+        "training",
+        "capo"
+      ],
+      "usecase": "Use it to train central or joint multi-agent policies without flattening whole trajectories into one token sequence.",
+      "returning": false
+    },
+    {
+      "id": "agentmemory-2026-09-17",
+      "title": "agentmemory",
+      "authors": "JordanMcCann",
+      "source": "GitHub",
+      "url": "https://github.com/JordanMcCann/agentmemory",
+      "type": "repo",
+      "dateAdded": "2026-09-17",
+      "summary": "Memory operating system for agents with knowledge graph, consolidation pipeline, and leading LongMemEval retrieval scores.",
+      "tags": [
+        "memory",
+        "graph",
+        "longmemeval",
+        "retrieval"
+      ],
+      "usecase": "Use it to give long-horizon agents durable multi-session recall, updates, and preference tracking under real retrieval.",
+      "returning": false
+    },
+    {
+      "id": "tsilva-agentbox-2026-09-17",
+      "title": "tsilva agentbox",
+      "authors": "tsilva",
+      "source": "GitHub",
+      "url": "https://github.com/tsilva/agentbox",
+      "type": "tool",
+      "dateAdded": "2026-09-17",
+      "summary": "CLI that launches Claude Code or Codex with full autonomy inside an isolated Docker container while host credentials and sensitive paths stay outside.",
+      "tags": [
+        "docker",
+        "sandbox",
+        "cli",
+        "isolation"
+      ],
+      "usecase": "Use it to run yolo-mode agent sessions on a trusted project without permission prompts or host leakage.",
+      "returning": false
+    },
+    {
+      "id": "mattolson-agent-sandbox-2026-09-17",
+      "title": "mattolson agent-sandbox",
+      "authors": "mattolson",
+      "source": "GitHub",
+      "url": "https://github.com/mattolson/agent-sandbox",
+      "type": "tool",
+      "dateAdded": "2026-09-17",
+      "summary": "Local locked-down sandbox with minimal filesystem access, sidecar egress proxy for hostname policies, and secret injection so the agent never sees raw keys.",
+      "tags": [
+        "proxy",
+        "secrets",
+        "devcontainer",
+        "egress"
+      ],
+      "usecase": "Use it to run coding agents under network allowlists and secret proxies from CLI or devcontainers.",
+      "returning": false
+    },
+    {
+      "id": "siyad01-agentbox-2026-09-17",
+      "title": "siyad01 agentbox",
+      "authors": "siyad01",
+      "source": "GitHub",
+      "url": "https://github.com/siyad01/agentbox",
+      "type": "harness",
+      "dateAdded": "2026-09-17",
+      "summary": "Go sandboxed runtime with zero-trust permission manifests, gVisor isolation, credential vault, immutable audit log, and kill switch.",
+      "tags": [
+        "gvisor",
+        "zero-trust",
+        "go",
+        "audit"
+      ],
+      "usecase": "Use it to declare exactly what an agent may touch and auto-kill on limit breach for untrusted code.",
+      "returning": false
+    },
+    {
+      "id": "0xferrous-agent-box-2026-09-17",
+      "title": "0xferrous agent-box",
+      "authors": "0xferrous",
+      "source": "GitHub",
+      "url": "https://github.com/0xferrous/agent-box",
+      "type": "repo",
+      "dateAdded": "2026-09-17",
+      "summary": "Sandboxed containers for coding agents with disposable Git or Jujutsu workspaces and optional Portal host capability mediation.",
+      "tags": [
+        "nix",
+        "workspace",
+        "git",
+        "sandbox"
+      ],
+      "usecase": "Use it to spin Nix-reproducible agent images that discard worktrees after a run.",
+      "returning": false
+    },
+    {
+      "id": "picoclaw-2026-09-17",
+      "title": "PicoClaw",
+      "authors": "breakcafe",
+      "source": "GitHub",
+      "url": "https://github.com/breakcafe/picoclaw",
+      "type": "repo",
+      "dateAdded": "2026-09-17",
+      "summary": "Serverless-first Claude agent runtime forked for request-driven HTTP with persistent memory, scheduled tasks, and MCP on Lambda-style platforms.",
+      "tags": [
+        "serverless",
+        "lambda",
+        "mcp",
+        "memory"
+      ],
+      "usecase": "Use it to host stateful agent conversations and skills as per-request containers without an always-on orchestrator.",
+      "returning": false
+    },
+    {
+      "id": "brig-is-open-source-the-microvm-sandbox-for-ai-coding-agents-2026-09-17",
+      "title": "Brig is Open-Source: the microVM Sandbox for AI Coding Agents",
+      "authors": "NOFire AI",
+      "source": "NOFire newsroom",
+      "url": "https://www.nofire.ai/newsroom/brig-open-source-launch",
+      "type": "release",
+      "dateAdded": "2026-09-17",
+      "summary": "NOFire released Brig under Apache 2.0 so coding agents run inside low-overhead microVMs on Mac or Linux with hardware isolation and curated agent profiles. The launch emphasizes auditability of a small microVMM surface and install paths via brew or curl.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "release",
+        "open-source"
+      ]
+    },
+    {
+      "id": "strands-agents-harness-sdk-typescript-v1-18-0-and-python-v1-56-0-2026-09-17",
+      "title": "Strands Agents harness-sdk typescript/v1.18.0 and python/v1.56.0",
+      "authors": "strands-agents",
+      "source": "GitHub Releases",
+      "url": "https://github.com/strands-agents/harness-sdk/releases",
+      "type": "release",
+      "dateAdded": "2026-09-17",
+      "summary": "Recent monorepo tags add BM25 storage search, partial shell timeout output, notebook tool ports, and background result delivery through management tools. The dual SDK continues shipping lifecycle, MCP, and eval improvements for process-local harnesses.",
+      "tags": [
+        "sdk",
+        "release",
+        "python",
+        "typescript"
+      ]
+    },
+    {
+      "id": "google-agent-runtime-overview-in-harness-cd-2026-09-17",
+      "title": "Google Agent Runtime overview in Harness CD",
+      "authors": "Harness",
+      "source": "Harness Developer Hub",
+      "url": "https://developer.harness.io/continuous-delivery/use-continuous-delivery/ai-agents-deployment/google-agent-runtime/overview",
+      "type": "article",
+      "dateAdded": "2026-09-17",
+      "summary": "Harness documents first-class deployment of agents to Google Vertex Agent Runtime using the same service, environment, and pipeline model as other CD targets. The writeup covers canary traffic shifts, rollback, RBAC, and secrets so agent images inherit enterprise delivery controls instead of one-off scripts.",
+      "tags": [
+        "cd",
+        "vertex",
+        "deployment",
+        "article"
+      ]
+    },
     {
       "id": "agent-harness-optimizer-2026-09-16",
       "title": "Agent Harness Optimizer",
