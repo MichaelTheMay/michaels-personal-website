@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-17",
+  "lastUpdated": "2026-09-18",
   "issues": [
+    {
+      "date": "2026-09-18",
+      "title": "Sandbox-native harnesses and embeddable runtimes that own the loop",
+      "blurb": "Today's picks cluster around isolation primitives, process-local agent OSes, and batteries-included harness libraries you can clone and wire yourself. Power users get Kubernetes CRDs, KVM sessions, WASM VMs, and memory graphs instead of another closed terminal chatbot."
+    },
     {
       "date": "2026-09-17",
       "title": "Local microVMs and harness SDKs that contain agent blast radius",
@@ -223,6 +228,128 @@
     }
   ],
   "items": [
+    {
+      "id": "agentnetes-2026-09-18",
+      "title": "Agentnetes",
+      "authors": "SuperagenticAI",
+      "source": "GitHub",
+      "url": "https://github.com/SuperagenticAI/agentnetes",
+      "type": "harness",
+      "dateAdded": "2026-09-18",
+      "summary": "Self-organizing multi-agent swarm that invents specialist roles and runs them in isolated sandboxes against a git repo.",
+      "tags": [
+        "multi-agent",
+        "sandbox",
+        "orchestration",
+        "npx"
+      ],
+      "usecase": "Use it to turn a natural-language goal into parallel scout, engineer, and tester agents with emergent roles.",
+      "returning": false
+    },
+    {
+      "id": "forcefield-2026-09-18",
+      "title": "Forcefield",
+      "authors": "fabledruns",
+      "source": "GitHub",
+      "url": "https://github.com/fabledruns/forcefield",
+      "type": "tool",
+      "dateAdded": "2026-09-18",
+      "summary": "Lightweight local-first Go agent harness as a single binary with tools, skills, sessions, memory, and permissions.",
+      "tags": [
+        "go",
+        "local-first",
+        "cli",
+        "harness"
+      ],
+      "usecase": "Use it to run specialized local coding agents with fast startup and no account or telemetry requirement.",
+      "returning": false
+    },
+    {
+      "id": "mem0-2026-09-18",
+      "title": "Mem0",
+      "authors": "Mem0",
+      "source": "GitHub",
+      "url": "https://github.com/mem0ai/mem0",
+      "type": "tool",
+      "dateAdded": "2026-09-18",
+      "summary": "Drop-in multi-level memory layer that extracts facts and retrieves them for agents and apps across sessions.",
+      "tags": [
+        "memory",
+        "facts",
+        "sdk",
+        "production"
+      ],
+      "usecase": "Use it to bolt persistent user, session, and agent memory onto any coding or assistant harness.",
+      "returning": false
+    },
+    {
+      "id": "letta-2026-09-18",
+      "title": "Letta",
+      "authors": "Letta",
+      "source": "GitHub",
+      "url": "https://github.com/letta-ai/letta",
+      "type": "harness",
+      "dateAdded": "2026-09-18",
+      "summary": "Stateful agent runtime in the MemGPT lineage where agents edit their own long-term memory with tools.",
+      "tags": [
+        "memory",
+        "runtime",
+        "stateful",
+        "memgpt"
+      ],
+      "usecase": "Use it to run agents that manage hierarchical memory as first-class OS-style state rather than prompt stuffing.",
+      "returning": false
+    },
+    {
+      "id": "apprentice-2026-09-18",
+      "title": "Apprentice",
+      "authors": "skarnati20",
+      "source": "GitHub",
+      "url": "https://github.com/skarnati20/apprentice",
+      "type": "tool",
+      "dateAdded": "2026-09-18",
+      "summary": "Slim extensible coding harness written in Common Lisp for REPL-native loops, macros, and custom tools.",
+      "tags": [
+        "common-lisp",
+        "repl",
+        "minimal",
+        "experimental"
+      ],
+      "usecase": "Use it to experiment with macro-defined agent loops inside SBCL instead of a heavy TUI product.",
+      "returning": false
+    },
+    {
+      "id": "crush-ships-plan-mode-and-non-interactive-reasoning-controls-2026-09-18",
+      "title": "Crush ships Plan Mode and non-interactive reasoning controls",
+      "authors": "Charmbracelet",
+      "source": "GitHub Releases",
+      "url": "https://github.com/charmbracelet/crush/releases",
+      "type": "release",
+      "dateAdded": "2026-09-18",
+      "summary": "Crush adds Plan Mode activated with shift-tab for collaborative planning before execution, plus performance work and headless reasoning-effort flags. Power users get subscription-backed ChatGPT paths and tighter non-interactive orchestration without leaving the terminal harness.",
+      "tags": [
+        "crush",
+        "release",
+        "plan-mode",
+        "cli"
+      ]
+    },
+    {
+      "id": "what-is-an-agent-harness-and-how-do-you-secure-one-2026-09-18",
+      "title": "What is an agent harness and how do you secure one",
+      "authors": "Sergey Malenkovich",
+      "source": "Adversa AI",
+      "url": "https://adversa.ai/blog/what-is-an-agent-harness/",
+      "type": "article",
+      "dateAdded": "2026-09-18",
+      "summary": "The essay defines the harness as the loop, tool dispatch, memory, approvals, and sandbox around the model, arguing most real exploits land in that layer. It maps CLI, IDE, and assistant harness types and frames security as governance of scaffolding rather than model breakage.",
+      "tags": [
+        "security",
+        "definition",
+        "essay",
+        "harness"
+      ]
+    },
     {
       "id": "brig-2026-09-17",
       "title": "Brig",

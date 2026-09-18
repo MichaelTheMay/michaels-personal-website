@@ -1,7 +1,112 @@
 {
-  "lastUpdated": "2026-09-17",
-  "count": 267,
+  "lastUpdated": "2026-09-18",
+  "count": 272,
   "tools": [
+    {
+      "slug": "agentnetes",
+      "title": "Agentnetes",
+      "authors": "SuperagenticAI",
+      "source": "GitHub",
+      "url": "https://github.com/SuperagenticAI/agentnetes",
+      "type": "harness",
+      "summary": "Self-organizing multi-agent swarm that invents specialist roles and runs them in isolated sandboxes against a git repo.",
+      "usecase": "Use it to turn a natural-language goal into parallel scout, engineer, and tester agents with emergent roles.",
+      "tags": [
+        "multi-agent",
+        "sandbox",
+        "orchestration",
+        "npx"
+      ],
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "apprentice",
+      "title": "Apprentice",
+      "authors": "skarnati20",
+      "source": "GitHub",
+      "url": "https://github.com/skarnati20/apprentice",
+      "type": "tool",
+      "summary": "Slim extensible coding harness written in Common Lisp for REPL-native loops, macros, and custom tools.",
+      "usecase": "Use it to experiment with macro-defined agent loops inside SBCL instead of a heavy TUI product.",
+      "tags": [
+        "common-lisp",
+        "repl",
+        "minimal",
+        "experimental"
+      ],
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "forcefield",
+      "title": "Forcefield",
+      "authors": "fabledruns",
+      "source": "GitHub",
+      "url": "https://github.com/fabledruns/forcefield",
+      "type": "tool",
+      "summary": "Lightweight local-first Go agent harness as a single binary with tools, skills, sessions, memory, and permissions.",
+      "usecase": "Use it to run specialized local coding agents with fast startup and no account or telemetry requirement.",
+      "tags": [
+        "go",
+        "local-first",
+        "cli",
+        "harness"
+      ],
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "letta",
+      "title": "Letta",
+      "authors": "Letta",
+      "source": "GitHub",
+      "url": "https://github.com/letta-ai/letta",
+      "type": "harness",
+      "summary": "Stateful agent runtime in the MemGPT lineage where agents edit their own long-term memory with tools.",
+      "usecase": "Use it to run agents that manage hierarchical memory as first-class OS-style state rather than prompt stuffing.",
+      "tags": [
+        "memory",
+        "runtime",
+        "stateful",
+        "memgpt"
+      ],
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mem0",
+      "title": "Mem0",
+      "authors": "Mem0",
+      "source": "GitHub",
+      "url": "https://github.com/mem0ai/mem0",
+      "type": "tool",
+      "summary": "Drop-in multi-level memory layer that extracts facts and retrieves them for agents and apps across sessions.",
+      "usecase": "Use it to bolt persistent user, session, and agent memory onto any coding or assistant harness.",
+      "tags": [
+        "memory",
+        "facts",
+        "sdk",
+        "production"
+      ],
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-box",
       "title": "0xferrous agent-box",
