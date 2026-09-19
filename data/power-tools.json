@@ -1,7 +1,175 @@
 {
-  "lastUpdated": "2026-09-18",
-  "count": 272,
+  "lastUpdated": "2026-09-19",
+  "count": 280,
   "tools": [
+    {
+      "slug": "agentbox",
+      "title": "agentbox (julianthome)",
+      "authors": "julianthome",
+      "source": "GitHub",
+      "url": "https://github.com/julianthome/agentbox",
+      "type": "tool",
+      "summary": "Minimal Docker Compose sandbox that launches pi or opencode with Ollama, tmux, and git session branching for reviewable runs.",
+      "usecase": "Use it to spin a polished local terminal agent environment that auto-wires host Ollama models and keeps changes on a review branch.",
+      "tags": [
+        "docker",
+        "pi",
+        "opencode",
+        "ollama"
+      ],
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentos",
+      "title": "agentos (iii)",
+      "authors": "iii-experimental / iii-hq",
+      "source": "GitHub",
+      "url": "https://github.com/iii-hq/agentos",
+      "type": "harness",
+      "summary": "Self-evolving agent OS of narrow Rust workers registering functions and triggers on a shared engine with wasm and microVM sandboxes.",
+      "usecase": "Use it to compose domain workers for reasoning, memory, security, and execution that evolve under governed self-modification.",
+      "tags": [
+        "rust",
+        "workers",
+        "self-evolving",
+        "engine"
+      ],
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-os",
+      "title": "AgentOS (Opyt)",
+      "authors": "NarendraPatwardhan / OpytAI",
+      "source": "GitHub",
+      "url": "https://github.com/NarendraPatwardhan/agent-os",
+      "type": "tool",
+      "summary": "WebAssembly VM giving agents a full Unix computer with shell, files, processes, snapshots, host tools, and capability boundaries.",
+      "usecase": "Use it to replace bag-of-tools agents with a programmable guest computer that can pipeline shell work and call host-bound tools safely.",
+      "tags": [
+        "wasm",
+        "vm",
+        "posix",
+        "snapshots"
+      ],
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ephemora-cell",
+      "title": "Ephemora Cell",
+      "authors": "MichaelS1011",
+      "source": "GitHub",
+      "url": "https://github.com/MichaelS1011/ephemora-cell",
+      "type": "repo",
+      "summary": "Capability-based Wasmtime sandbox for MCP tools and untrusted code with fuel, memory, time, and I/O caps plus signed execution records.",
+      "usecase": "Use it to run agent-generated or MCP tool code under hard resource budgets and produce auditable signed results.",
+      "tags": [
+        "wasmtime",
+        "mcp",
+        "capabilities",
+        "audit"
+      ],
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harn",
+      "title": "Harn",
+      "authors": "Harn project",
+      "source": "GitHub / crates",
+      "url": "https://github.com/harn-lang/harn",
+      "type": "tool",
+      "summary": "Language and runtime for defining agent tasks, prompts, tools, and rules with enforced permissions and saved work history.",
+      "usecase": "Use it to author reusable agent workflows as Harn programs that the runtime executes with sandbox boundaries and session logs.",
+      "tags": [
+        "language",
+        "runtime",
+        "permissions",
+        "workflows"
+      ],
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "tasking-agent",
+      "title": "tasking-agent",
+      "authors": "FeynmanZhou",
+      "source": "GitHub",
+      "url": "https://github.com/FeynmanZhou/tasking-agent",
+      "type": "tool",
+      "summary": "Web console workbench for Deep Agents Code with pluggable sandboxes (local, Cube MicroVM, Tencent) and normalized event tracing.",
+      "usecase": "Use it to drive and audit a headless coding agent through a three-pane UI with session history, artifacts, and sandbox swaps.",
+      "tags": [
+        "console",
+        "deep-agents",
+        "cube",
+        "tracing"
+      ],
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "wasmagent-js",
+      "title": "wasmagent-js",
+      "authors": "WasmAgent",
+      "source": "GitHub",
+      "url": "https://github.com/WasmAgent/wasmagent-js",
+      "type": "tool",
+      "summary": "Embedded compliance layer with WASM kernels, MCP firewall, capability manifests, signed AEP rollouts, and trace-to-training export.",
+      "usecase": "Use it to wrap tool calls with policy vetting, emit signed evidence records, and feed verified trajectories into DPO or PPO pipelines.",
+      "tags": [
+        "mcp",
+        "firewall",
+        "compliance",
+        "wasm"
+      ],
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "wasmsh",
+      "title": "wasmsh",
+      "authors": "Mayflower",
+      "source": "GitHub",
+      "url": "https://github.com/Mayflower/wasmsh",
+      "type": "repo",
+      "summary": "Bash-compatible WASM shell runtime with VFS, Pyodide Python, 88 utilities, and K8s-scalable dispatcher for dense agent sessions.",
+      "usecase": "Use it to back Deep Agents or custom loops with an in-process or remote bash-plus-Python sandbox that cannot touch the host.",
+      "tags": [
+        "wasm",
+        "bash",
+        "pyodide",
+        "langchain"
+      ],
+      "firstSeen": "2026-09-19",
+      "lastSeen": "2026-09-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agentnetes",
       "title": "Agentnetes",
