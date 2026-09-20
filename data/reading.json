@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-19",
+  "lastUpdated": "2026-09-20",
   "issues": [
+    {
+      "date": "2026-09-20",
+      "title": "Sandboxes and control planes that put the harness under your keys",
+      "blurb": "Today's digests favor clone-and-run isolation layers, meta-orchestrators, and minimal high-leverage loops. Power users get Kubernetes primitives, all-in-one containers, fleet governors, and code-as-action cores they can own end to end."
+    },
     {
       "date": "2026-09-19",
       "title": "In-process WASM OSes and K8s sandboxes that keep agents off the host",
@@ -220,14 +225,183 @@
       "date": "2026-08-07",
       "title": "World rehearsal, trajectory debugging, and selective trust in long-horizon agents",
       "blurb": "Fresh results on training and auditing LLM agents emphasize internalizing environment dynamics, tracing critical errors across long trajectories, adaptive on-policy self-distillation, and causal checks that reveal when tools or context truly drive decisions rather than create illusions of competence."
-    },
-    {
-      "date": "2026-08-05",
-      "title": "Embedded agency, continual skill evolution, and the mechanics of test-time reasoning",
-      "blurb": "Fresh results probe how foundation-model agents cooperate via similarity inference, consolidate experience into transferable skills, and allocate inference compute, alongside formal treatments of causality, ablation, and pretraining inductive biases."
     }
   ],
   "items": [
+    {
+      "id": "rsiagent-2026-09-20",
+      "title": "RSIAgent",
+      "authors": "AetherLabsAI",
+      "source": "GitHub",
+      "url": "https://github.com/AetherLabsAI/RSIAgent",
+      "type": "repo",
+      "dateAdded": "2026-09-20",
+      "summary": "Training-free multi-agent framework for recursive self-improvement that explores environments, verifies outcomes, and stores reusable memory.",
+      "tags": [
+        "self-improvement",
+        "multi-agent",
+        "memory",
+        "research"
+      ],
+      "usecase": "Use it to let fixed-weight agents discover and retain environment knowledge through curriculum, actor, and verifier loops.",
+      "returning": false
+    },
+    {
+      "id": "steel-browser-2026-09-20",
+      "title": "Steel Browser",
+      "authors": "steel-dev",
+      "source": "GitHub",
+      "url": "https://github.com/steel-dev/steel-browser",
+      "type": "tool",
+      "dateAdded": "2026-09-20",
+      "summary": "Open-source browser API and sandbox built for AI agents, with sessions, stealth, proxies, CDP, and self-host or cloud options.",
+      "tags": [
+        "browser",
+        "sandbox",
+        "agents",
+        "cdp"
+      ],
+      "usecase": "Use it to give any agent reliable web automation without building browser infrastructure or fighting anti-bot measures.",
+      "returning": false
+    },
+    {
+      "id": "litellm-agent-control-plane-2026-09-20",
+      "title": "LiteLLM Agent Control Plane",
+      "authors": "LiteLLM-Labs",
+      "source": "GitHub",
+      "url": "https://github.com/LiteLLM-Labs/litellm-agent-control-plane",
+      "type": "harness",
+      "dateAdded": "2026-09-20",
+      "summary": "Unified control plane and API that registers, runs, schedules, and observes agents across multiple runtimes from one UI.",
+      "tags": [
+        "control-plane",
+        "gateway",
+        "multi-runtime",
+        "sessions"
+      ],
+      "usecase": "Use it to expose OpenCode, Hermes, Deep Agents, and managed runtimes behind a single gateway for your team.",
+      "returning": false
+    },
+    {
+      "id": "superhq-2026-09-20",
+      "title": "SuperHQ",
+      "authors": "superhq-ai",
+      "source": "GitHub",
+      "url": "https://github.com/superhq-ai/superhq",
+      "type": "tool",
+      "dateAdded": "2026-09-20",
+      "summary": "Sandboxed multi-agent orchestration platform that runs coding agents inside microVMs with an auth gateway that never exposes keys.",
+      "tags": [
+        "microvm",
+        "sandbox",
+        "orchestration",
+        "macos"
+      ],
+      "usecase": "Use it to launch isolated Claude Code or Codex workspaces on Apple Silicon with host-side credential injection.",
+      "returning": false
+    },
+    {
+      "id": "agent-runner-2026-09-20",
+      "title": "Agent Runner",
+      "authors": "Design-Arena",
+      "source": "GitHub",
+      "url": "https://github.com/Design-Arena/agent-runner",
+      "type": "harness",
+      "dateAdded": "2026-09-20",
+      "summary": "Model-agnostic open-source harness that runs the same prompt against parallel sandboxed coding agents for preference collection.",
+      "tags": [
+        "eval",
+        "benchmark",
+        "sandbox",
+        "coding"
+      ],
+      "usecase": "Use it to benchmark real multi-file coding behavior across providers and build preference ground truth.",
+      "returning": false
+    },
+    {
+      "id": "stanford-agent-2026-09-20",
+      "title": "Stanford Agent",
+      "authors": "StanfordAgent",
+      "source": "GitHub",
+      "url": "https://github.com/StanfordAgent/stanford-agent",
+      "type": "tool",
+      "dateAdded": "2026-09-20",
+      "summary": "Open-source terminal daemon and orchestration layer that spawns and monitors many coding agents across machines from one interface.",
+      "tags": [
+        "orchestration",
+        "daemon",
+        "multi-agent",
+        "cli"
+      ],
+      "usecase": "Use it to drive native Claude Code, Codex, Pi, and other processes with optional remote relay without wrapping their behavior.",
+      "returning": false
+    },
+    {
+      "id": "hotcell-2026-09-20",
+      "title": "hotcell",
+      "authors": "sinameraji",
+      "source": "GitHub",
+      "url": "https://github.com/sinameraji/hotcell",
+      "type": "repo",
+      "dateAdded": "2026-09-20",
+      "summary": "Local open-source sandbox manager that creates, pauses, and runs agent environments on laptop, VM, or bare metal with Docker, Apple VZ, or Firecracker.",
+      "tags": [
+        "local",
+        "sandbox",
+        "microvm",
+        "devtools"
+      ],
+      "usecase": "Use it to spin multiple isolated coding-agent workspaces with ephemeral tokens instead of injecting real API keys.",
+      "returning": false
+    },
+    {
+      "id": "google-just-shipped-guardrails-for-ai-coding-agents-2026-09-20",
+      "title": "Google Just Shipped Guardrails for AI Coding Agents",
+      "authors": "Avnit Bambah",
+      "source": "Medium",
+      "url": "https://medium.com/@avnitbambah/google-just-shipped-guardrails-for-ai-coding-agents-7cfb26e90a14",
+      "type": "article",
+      "dateAdded": "2026-09-20",
+      "summary": "Google Cloud released a portable Developer Plugin and Agent Plugins specification that bundles skills and MCP servers for any coding harness. The piece argues the guardrail layer traveling across runtimes matters more than another closed harness.",
+      "tags": [
+        "guardrails",
+        "plugins",
+        "google",
+        "security"
+      ]
+    },
+    {
+      "id": "jev-in-superqode-a-harness-for-your-code-and-workflows-with-jev-agent-2026-09-20",
+      "title": "Jev in SuperQode: a harness for your code and workflows with Jev agent",
+      "authors": "Superagentic AI",
+      "source": "Medium",
+      "url": "https://medium.com/superagentic-ai/jev-in-superqode-a-harness-for-your-code-and-workflows-with-jev-agent-aed62fa4c98d",
+      "type": "release",
+      "dateAdded": "2026-09-20",
+      "summary": "SuperQode 2.4.0 adds TypeSafe AI's Jev System One model as an opt-in typed decision service inside the existing permission and control loop. Coding models still generate, while Jev answers frozen questions about state for ALLOW, DENY, or ASK.",
+      "tags": [
+        "release",
+        "permissions",
+        "decision",
+        "harness"
+      ]
+    },
+    {
+      "id": "understanding-and-building-an-agent-harness-2026-09-20",
+      "title": "Understanding and building an agent harness",
+      "authors": "Niklas Palm",
+      "source": "Medium",
+      "url": "https://medium.com/@niklas-palm/chat-assistants-to-tool-calling-agents-to-code-agents-to-managed-harnesses-60e25b90b565",
+      "type": "article",
+      "dateAdded": "2026-09-20",
+      "summary": "The essay walks from chat assistants through tool-calling and code agents to managed harnesses, then builds a lightweight code agent in a managed runtime with tracing. It argues the minimum viable harness is a code agent plus sandbox tools plus observability.",
+      "tags": [
+        "essay",
+        "harness",
+        "architecture",
+        "tutorial"
+      ]
+    },
     {
       "id": "wasmagent-js-2026-09-19",
       "title": "wasmagent-js",
@@ -10227,176 +10401,6 @@
         "RAG",
         "agents",
         "document-understanding"
-      ]
-    },
-    {
-      "id": "a-game-theory-for-foundation-models-shows-new-paths-to-rational-cooperation-thro-2026-08-05",
-      "title": "A game theory for foundation models shows new paths to rational cooperation through similarity inference",
-      "authors": "Alexander Meulemans, Maciej Wołczyk, Marissa A. Weis, Rajai Nasser, Roberta Rocca, Seijin Kobayashi, Guillaume Lajoie, Angelika Steger, Blake Richards, Marcus Hutter, James Manyika, Rif A. Saurous, João Sacramento, Blaise Agüera y Arcas",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.03958",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "Foundation model agents in social dilemmas converge to stable cooperation under optimal planning, contradicting classical Nash predictions of mutual defection. The authors introduce the embedded Bayesian agent, which maintains uncertainty about its own decision algorithms and treats its deliberation as evidence of similarity to partners, formalizing an embedded equilibrium as a new solution concept.",
-      "tags": [
-        "game theory",
-        "embedded agency",
-        "multi-agent",
-        "foundation models",
-        "cooperation"
-      ]
-    },
-    {
-      "id": "reflectrl-learning-from-golden-negative-trajectories-via-reflective-to-direct-re-2026-08-05",
-      "title": "ReflectRL: Learning from Golden Negative Trajectories via Reflective-to-Direct Reasoning",
-      "authors": "Jinhe Bi, Chennan Zhou, Zengjie Jin, Aniri, Shuo Lu, Wenke Huang, Hu Cao, Xun Xiao, Zhihong Zhu, Volker Tresp, Fei Shen, Yunpu Ma, Tat-Seng Chua",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.03972",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "Failed expert trajectories, previously discarded, provide valuable signals when treated as objects of reflection rather than imitation. ReflectRL elicits reflective reasoning from these golden negatives then transitions the policy to direct reasoning, consistently improving on-policy training across nine benchmarks and multiple backbones with low overhead.",
-      "tags": [
-        "reinforcement learning",
-        "reasoning",
-        "on-policy",
-        "LLMs",
-        "reflection"
-      ]
-    },
-    {
-      "id": "test-time-scaling-in-reasoning-llms-inference-regimes-evaluation-and-reproducibi-2026-08-05",
-      "title": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
-      "authors": "Mohsen Hariri, Weicong Chen, Nahal Shahini, Vikash Singh, Kai Ye, Amirhossein Samandar, Debargha Ganguly, Sreehari Sankar, Yanyan Zhang, Shouren Wang, Jerry Peng, Biyao Zhang, Michael Hinczewski, Vipin Chaudhary",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.04001",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "The paper formalizes test-time scaling as budgeted inference over the autoregressive prefix tree and distinguishes single-trajectory, leaf-level, and prefix-level regimes. It supplies evaluation profiles that separate system performance from candidate diagnostics, protocol-matched compute reporting, and reproducibility requirements, releasing over two billion reasoning traces.",
-      "tags": [
-        "test-time scaling",
-        "reasoning",
-        "inference",
-        "evaluation",
-        "reproducibility"
-      ]
-    },
-    {
-      "id": "logic-before-language-pre-pretraining-on-formal-derivations-fosters-skill-acquis-2026-08-05",
-      "title": "Logic Before Language: Pre-pretraining on Formal Derivations Fosters Skill Acquisition and Compressibility",
-      "authors": "Jo-Ku Cheng, Nikolaos Aletras, Marco Valentino",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.03930",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "Pre-pretraining on formal logical derivations accelerates linguistic skill acquisition, reaching 80 percent accuracy with 36 billion fewer tokens than standard initialization at 100B-token scale. The resulting lower-rank, spectrally concentrated representations also enable pruning to roughly 33 percent sparsity while matching dense baseline performance.",
-      "tags": [
-        "pretraining",
-        "logic",
-        "inductive bias",
-        "compressibility",
-        "LLMs"
-      ]
-    },
-    {
-      "id": "cross-model-kv-cache-transfer-in-llm-families-a-closed-form-linear-mapping-for-p-2026-08-05",
-      "title": "Cross-Model KV Cache Transfer in LLM Families: A Closed-Form Linear Mapping for Prefill Reuse",
-      "authors": "Taekyung Heo, Rasoul Shafipour, Ritchie Zhao, Maximilian Golub, Mohammad Mahdi Kamani, Ritika Borkar, Makesh Tarun Chandran, Pantea Zardoshti, Bita Darvish Rouhani",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.03893",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "A closed-form ridge regression mapper transfers KV caches across same-family models that share head dimensions, stripping RoPE for position-free reuse. It retains 73-98 percent of standalone-prefill accuracy on multiple pairs while running 2.7-25x faster than re-prefill and remaining stable across multi-turn handoffs.",
-      "tags": [
-        "KV cache",
-        "efficiency",
-        "model families",
-        "inference",
-        "systems"
-      ]
-    },
-    {
-      "id": "past-bench-benchmarking-the-foundations-of-recursive-self-improvement-in-persona-2026-08-05",
-      "title": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
-      "authors": "Shuhan Xue, Zixin Ding, Yichen Shen, Yinjie Wang, Zhenfei Yin, Yingcheng Wu, Yuxin Chen, Mengdi Wang, Ling Yang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.04003",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "PAST-Bench isolates whether retained experience (preferences, histories, skills) produces later-task gains via the intended save-retrieve-update pathway across 26 scenarios. Gains exist but are uneven; Hermes+ interventions raise average improvement and pathway evidence, especially on state-update tasks, though results remain model- and capability-dependent.",
-      "tags": [
-        "agents",
-        "self-improvement",
-        "memory",
-        "benchmark",
-        "personal agents"
-      ]
-    },
-    {
-      "id": "continualskillbench-can-llm-agents-truly-evolve-their-capabilities-2026-08-05",
-      "title": "ContinualSkillBench: Can LLM Agents Truly Evolve Their Capabilities?",
-      "authors": "Tianyi Guan, Yiding Wang, Haotong Yang, Siyuan Cao, Shirui Liu, Yi Hu, Jiaqi Li, Muhan Zhang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.03874",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "The benchmark evaluates in-context continual skill learning across five domains of interconnected subtasks ordered by difficulty. Sequential execution improves performance, yet much of the gain arises from context adaptation rather than reusable skill abstraction; explicit skills help selectively while weaker models accumulate fragmented task-specific collections.",
-      "tags": [
-        "agents",
-        "continual learning",
-        "skills",
-        "in-context learning",
-        "benchmark"
-      ]
-    },
-    {
-      "id": "computing-actual-causes-for-neural-network-predictions-under-structured-causal-i-2026-08-05",
-      "title": "Computing Actual Causes for Neural Network Predictions under Structured Causal Inputs",
-      "authors": "Jannick Strobel, Muqsit Azeem, Stefan Leue",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.03772",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "Explanations are formalized as Halpern-Pearl actual causes under Boolean SCMs that capture input dependencies, computed via bound propagation and branch-and-bound with completeness and minimality guarantees. The method scales to search spaces of 10^13 candidates and shows that ignoring dependencies produces 14.9 percent spurious causes.",
-      "tags": [
-        "causality",
-        "explainability",
-        "neural networks",
-        "actual causation",
-        "SCM"
-      ]
-    },
-    {
-      "id": "sensitivity-causality-and-repair-dissociate-a-layer-wise-analysis-of-perturbatio-2026-08-05",
-      "title": "Sensitivity, Causality, and Repair Dissociate: A Layer-Wise Analysis of Perturbation Robustness and Its Scaling",
-      "authors": "Nathan Labiosa, David Buff, Ena Nayak, Erica Donno",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.03842",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "Layer maps for representational sensitivity, causal recovery via activation restoration, and adapter repair capacity dissociate under surface perturbations, with anti-correlation between sensitivity and causality. Two propagation regimes appear, late-accumulation strengthens with scale, and cascade disruption explains why causally flagged early layers are often the worst adapter sites.",
-      "tags": [
-        "interpretability",
-        "robustness",
-        "layers",
-        "perturbation",
-        "scaling"
-      ]
-    },
-    {
-      "id": "a-theory-of-conditional-collapse-under-low-rank-weight-space-ablations-i-the-sin-2026-08-05",
-      "title": "A Theory of Conditional Collapse under Low-Rank Weight-Space Ablations: I. The Single-Block Theory and Synthetic Validation",
-      "authors": "Abdallah Khemais",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.03620",
-      "type": "paper",
-      "dateAdded": "2026-08-05",
-      "summary": "Exact results characterize when weight-space ablation of residual carriers collapses conditional computation, contrasting the effects of patching (contrast) versus ablation (absolute level). An attention-head interaction formula is derived with second-order remainder, and synthetic transformers confirm the predictions with strong rank correlation to measured interactions.",
-      "tags": [
-        "mechanistic interpretability",
-        "ablation",
-        "theory",
-        "residual stream",
-        "causality"
       ]
     }
   ]

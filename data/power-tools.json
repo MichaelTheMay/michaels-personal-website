@@ -1,7 +1,154 @@
 {
-  "lastUpdated": "2026-09-19",
-  "count": 280,
+  "lastUpdated": "2026-09-20",
+  "count": 287,
   "tools": [
+    {
+      "slug": "agent-runner",
+      "title": "Agent Runner",
+      "authors": "Design-Arena",
+      "source": "GitHub",
+      "url": "https://github.com/Design-Arena/agent-runner",
+      "type": "harness",
+      "summary": "Model-agnostic open-source harness that runs the same prompt against parallel sandboxed coding agents for preference collection.",
+      "usecase": "Use it to benchmark real multi-file coding behavior across providers and build preference ground truth.",
+      "tags": [
+        "eval",
+        "benchmark",
+        "sandbox",
+        "coding"
+      ],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hotcell",
+      "title": "hotcell",
+      "authors": "sinameraji",
+      "source": "GitHub",
+      "url": "https://github.com/sinameraji/hotcell",
+      "type": "repo",
+      "summary": "Local open-source sandbox manager that creates, pauses, and runs agent environments on laptop, VM, or bare metal with Docker, Apple VZ, or Firecracker.",
+      "usecase": "Use it to spin multiple isolated coding-agent workspaces with ephemeral tokens instead of injecting real API keys.",
+      "tags": [
+        "local",
+        "sandbox",
+        "microvm",
+        "devtools"
+      ],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "litellm-agent-control-plane",
+      "title": "LiteLLM Agent Control Plane",
+      "authors": "LiteLLM-Labs",
+      "source": "GitHub",
+      "url": "https://github.com/LiteLLM-Labs/litellm-agent-control-plane",
+      "type": "harness",
+      "summary": "Unified control plane and API that registers, runs, schedules, and observes agents across multiple runtimes from one UI.",
+      "usecase": "Use it to expose OpenCode, Hermes, Deep Agents, and managed runtimes behind a single gateway for your team.",
+      "tags": [
+        "control-plane",
+        "gateway",
+        "multi-runtime",
+        "sessions"
+      ],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "rsiagent",
+      "title": "RSIAgent",
+      "authors": "AetherLabsAI",
+      "source": "GitHub",
+      "url": "https://github.com/AetherLabsAI/RSIAgent",
+      "type": "repo",
+      "summary": "Training-free multi-agent framework for recursive self-improvement that explores environments, verifies outcomes, and stores reusable memory.",
+      "usecase": "Use it to let fixed-weight agents discover and retain environment knowledge through curriculum, actor, and verifier loops.",
+      "tags": [
+        "self-improvement",
+        "multi-agent",
+        "memory",
+        "research"
+      ],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "stanford-agent",
+      "title": "Stanford Agent",
+      "authors": "StanfordAgent",
+      "source": "GitHub",
+      "url": "https://github.com/StanfordAgent/stanford-agent",
+      "type": "tool",
+      "summary": "Open-source terminal daemon and orchestration layer that spawns and monitors many coding agents across machines from one interface.",
+      "usecase": "Use it to drive native Claude Code, Codex, Pi, and other processes with optional remote relay without wrapping their behavior.",
+      "tags": [
+        "orchestration",
+        "daemon",
+        "multi-agent",
+        "cli"
+      ],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "steel-browser",
+      "title": "Steel Browser",
+      "authors": "steel-dev",
+      "source": "GitHub",
+      "url": "https://github.com/steel-dev/steel-browser",
+      "type": "tool",
+      "summary": "Open-source browser API and sandbox built for AI agents, with sessions, stealth, proxies, CDP, and self-host or cloud options.",
+      "usecase": "Use it to give any agent reliable web automation without building browser infrastructure or fighting anti-bot measures.",
+      "tags": [
+        "browser",
+        "sandbox",
+        "agents",
+        "cdp"
+      ],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "superhq",
+      "title": "SuperHQ",
+      "authors": "superhq-ai",
+      "source": "GitHub",
+      "url": "https://github.com/superhq-ai/superhq",
+      "type": "tool",
+      "summary": "Sandboxed multi-agent orchestration platform that runs coding agents inside microVMs with an auth gateway that never exposes keys.",
+      "usecase": "Use it to launch isolated Claude Code or Codex workspaces on Apple Silicon with host-side credential injection.",
+      "tags": [
+        "microvm",
+        "sandbox",
+        "orchestration",
+        "macos"
+      ],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agentbox",
       "title": "agentbox (julianthome)",
