@@ -1,7 +1,196 @@
 {
-  "lastUpdated": "2026-09-20",
-  "count": 287,
+  "lastUpdated": "2026-09-21",
+  "count": 296,
   "tools": [
+    {
+      "slug": "agentic-harness-engineering",
+      "title": "AHE (Agentic Harness Engineering)",
+      "authors": "china-qijizhifeng",
+      "source": "GitHub",
+      "url": "https://github.com/china-qijizhifeng/agentic-Harness-engineering",
+      "type": "repo",
+      "summary": "Observability-driven automatic evolution of coding-agent harnesses with evaluate-analyze-improve loops and reported Terminal-Bench lifts.",
+      "usecase": "Use it to evolve harness components over iterations inside E2B sandboxes and freeze a transferable harness.",
+      "tags": [
+        "evolution",
+        "eval",
+        "e2b",
+        "research-origin"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox-runtime",
+      "title": "Anthropic Sandbox Runtime (srt)",
+      "authors": "anthropics",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/sandbox-runtime",
+      "type": "tool",
+      "summary": "OS-level sandbox CLI and library using Seatbelt, bubblewrap, and Windows filters plus proxy-based network allowlists without containers.",
+      "usecase": "Use it to wrap MCP servers or agent bash with filesystem deny/allow rules and domain-scoped egress via srt.",
+      "tags": [
+        "os-sandbox",
+        "seatbelt",
+        "bubblewrap",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "boxed",
+      "title": "Boxed",
+      "authors": "akshayaggarwal99",
+      "source": "GitHub",
+      "url": "https://github.com/akshayaggarwal99/boxed",
+      "type": "repo",
+      "summary": "Self-hosted sovereign code-execution substrate with Go control plane, Rust in-sandbox agent, BYOK auth, and Docker/gVisor-hardened ephemeral sessions.",
+      "usecase": "Use it to spawn fail-closed Docker sandboxes from Python or TypeScript SDKs and stream artifacts over JSON-RPC.",
+      "tags": [
+        "go",
+        "rust",
+        "docker",
+        "control-plane"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "defending-code-reference-harness",
+      "title": "defending-code-reference-harness",
+      "authors": "anthropics",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/defending-code-reference-harness",
+      "type": "harness",
+      "summary": "Reference vuln-finding pipeline that forces every agent into gVisor with egress allowlist proxy and never mounts credentials into agent reach.",
+      "usecase": "Use it to study or fork a production-shaped sandboxed agent loop for crash-finding with bin/vp-sandboxed entrypoints.",
+      "tags": [
+        "gvisor",
+        "security",
+        "reference",
+        "pipeline"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "envharness",
+      "title": "EnvHarness",
+      "authors": "google-research",
+      "source": "GitHub",
+      "url": "https://github.com/google-research/envharness",
+      "type": "harness",
+      "summary": "Programmable layer that wraps frozen training environments with plugins so EnvRigger can reshape tasks toward agent weaknesses without changing verifiers.",
+      "usecase": "Use it to co-evolve SWE-bench or WebArena-style envs with your policy via reset/step bridges and targeted component banks.",
+      "tags": [
+        "training",
+        "eval",
+        "rl",
+        "google"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "landstrip",
+      "title": "landstrip",
+      "authors": "landstrip",
+      "source": "GitHub",
+      "url": "https://github.com/landstrip/landstrip",
+      "type": "tool",
+      "summary": "OS-level sandbox for coding agents using Landlock, Seatbelt, and AppContainer with JSON policies and drop-in CLI for command runs.",
+      "usecase": "Use it to run cargo test or agent tools under a parametrized filesystem and network policy without a full container.",
+      "tags": [
+        "landlock",
+        "policy",
+        "cli",
+        "cross-platform"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "meclaw",
+      "title": "meclaw",
+      "authors": "mmeyerlein",
+      "source": "GitHub",
+      "url": "https://github.com/mmeyerlein/meclaw",
+      "type": "repo",
+      "summary": "Ontology-grounded agentic build system in one Rust binary: actor cells with SQLite, sandboxes, vault, voice, and web surfaces for composing agentic OS graphs.",
+      "usecase": "Use it to grow a message-routed multi-cell agent system where each actor owns its sandbox and secrets stay in a vault cell.",
+      "tags": [
+        "rust",
+        "actor",
+        "agentic-os",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "pocket-agent",
+      "title": "POCKET Agent",
+      "authors": "ItsNotAILABS",
+      "source": "GitHub",
+      "url": "https://github.com/ItsNotAILABS/pocket-agent",
+      "type": "harness",
+      "summary": "Long-running repository agent with durable goals, recursive agent harnesses, WASM capsules, budgets, leases, receipts, and detach/reattach sessions.",
+      "usecase": "Use it to set a multi-hour repo goal, run autonomous work with budgets, detach, and reattach with verifiable receipts.",
+      "tags": [
+        "long-running",
+        "wasm",
+        "receipts",
+        "cli"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox-runtime-rs",
+      "title": "sandbox-runtime-rs",
+      "authors": "Ghostlock-AI",
+      "source": "GitHub",
+      "url": "https://github.com/Ghostlock-AI/sandbox-runtime-rs",
+      "type": "tool",
+      "summary": "Rust port of Anthropic sandbox-runtime aiming for much faster startup and smaller binaries with Seatbelt profiles and HTTP proxy filtering.",
+      "usecase": "Use it to drop a single native srt binary in front of agent processes when Node overhead is unacceptable on macOS.",
+      "tags": [
+        "rust",
+        "seatbelt",
+        "performance",
+        "port"
+      ],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-runner",
       "title": "Agent Runner",
