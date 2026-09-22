@@ -1,7 +1,154 @@
 {
-  "lastUpdated": "2026-09-21",
-  "count": 296,
+  "lastUpdated": "2026-09-22",
+  "count": 303,
   "tools": [
+    {
+      "slug": "aeon",
+      "title": "aeon",
+      "authors": "aeonfun",
+      "source": "GitHub",
+      "url": "https://github.com/aeonfun/aeon",
+      "type": "tool",
+      "summary": "Autonomous agent framework that runs unattended on GitHub Actions with self-healing skills and drives multiple coding agents.",
+      "usecase": "Use it to configure once and let agents ship PRs on a schedule with no human approval loops.",
+      "tags": [
+        "github-actions",
+        "autonomous",
+        "self-healing",
+        "devops"
+      ],
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness layers",
+      "authors": "paolo-perrone",
+      "source": "GitHub",
+      "url": "https://github.com/paolo-perrone/agent-harness",
+      "type": "repo",
+      "summary": "Educational five-layer agent harness (execution boundary, sandbox, memory, verification, context) that runs with a scripted model and no API key.",
+      "usecase": "Use it to understand and copy the exact failure modes each harness layer prevents before wiring them into production.",
+      "tags": [
+        "education",
+        "layers",
+        "python",
+        "minimal"
+      ],
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ax",
+      "title": "AX",
+      "authors": "Google / rakyll et al.",
+      "source": "GitHub",
+      "url": "https://github.com/google/ax",
+      "type": "harness",
+      "summary": "Declarative high-throughput orchestrator for agentic tasks that uses Workspace, Gateway, Task and Model primitives on top of Agent Substrate and Kubernetes.",
+      "usecase": "Use it to apply YAML manifests that spin up sandboxed agent workloads with network allowlists, suspend/resume and ax ssh observability at cluster scale.",
+      "tags": [
+        "k8s",
+        "orchestration",
+        "sandbox",
+        "declarative"
+      ],
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "caelis",
+      "title": "caelis",
+      "authors": "caelis-labs",
+      "source": "GitHub",
+      "url": "https://github.com/caelis-labs/caelis",
+      "type": "harness",
+      "summary": "Local-first multi-agent coding harness that binds model providers and ACP agents to specialized roles inside a shared session.",
+      "usecase": "Use it to coordinate specialized coding roles (planner, implementer, reviewer) without leaving your machine.",
+      "tags": [
+        "local-first",
+        "multi-agent",
+        "roles",
+        "acp"
+      ],
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "codeaf",
+      "title": "CodeAF",
+      "authors": "Agent-Field",
+      "source": "GitHub",
+      "url": "https://github.com/Agent-Field/CodeAF",
+      "type": "repo",
+      "summary": "Open-source software factory harness aimed at open models, providing CLI agent fleets and coding workflows.",
+      "usecase": "Use it to stand up a local software factory that drives open-weight coding agents through standardized pipelines.",
+      "tags": [
+        "open-models",
+        "factory",
+        "cli",
+        "fleet"
+      ],
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harnessofharness",
+      "title": "HarnessOfHarness",
+      "authors": "Flesymeb",
+      "source": "GitHub",
+      "url": "https://github.com/Flesymeb/HarnessOfHarness",
+      "type": "harness",
+      "summary": "Framework that wraps existing coding-agent harnesses into multi-day planning-coding-testing loops with continual self-improvement.",
+      "usecase": "Use it to let an agent autonomously develop a full playable game or complex project across dozens of iteration cycles.",
+      "tags": [
+        "continual",
+        "multi-day",
+        "autonomous",
+        "loop"
+      ],
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openhuman",
+      "title": "openhuman",
+      "authors": "tinyhumansai",
+      "source": "GitHub",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "type": "harness",
+      "summary": "Open-source agent harness with local-first memory, orchestration and workflows packaged as a privacy-focused desktop runtime.",
+      "usecase": "Use it to run personal agents that keep all state on-device while still coordinating multi-step workflows.",
+      "tags": [
+        "local-first",
+        "memory",
+        "privacy",
+        "desktop"
+      ],
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agentic-harness-engineering",
       "title": "AHE (Agentic Harness Engineering)",
