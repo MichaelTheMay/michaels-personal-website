@@ -1,7 +1,217 @@
 {
-  "lastUpdated": "2026-09-22",
-  "count": 303,
+  "lastUpdated": "2026-09-23",
+  "count": 313,
   "tools": [
+    {
+      "slug": "agent-safehouse",
+      "title": "Agent Safehouse",
+      "authors": "eugene1g",
+      "source": "GitHub",
+      "url": "https://github.com/eugene1g/agent-safehouse",
+      "type": "tool",
+      "summary": "macOS sandbox-exec wrapper that applies deny-first composable profiles so coding agents can only touch the files and tools they need.",
+      "usecase": "Use it to wrap any local agent CLI so it cannot read SSH keys or shell configs while still working in the project directory.",
+      "tags": [
+        "macos",
+        "sandbox",
+        "policy",
+        "cli"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness (0xenzyme)",
+      "authors": "0xenzyme",
+      "source": "GitHub",
+      "url": "https://github.com/0xenzyme/agent-harness",
+      "type": "harness",
+      "summary": "Adapter-driven control plane that turns roadmaps into goals, tasks, run DAGs, gates, verification, and state sync for coding agents.",
+      "usecase": "Use it to let a host agent drive scoped execution and evidence collection without routing every step manually.",
+      "tags": [
+        "control-plane",
+        "dag",
+        "verification",
+        "adapter"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-sandbox-runtime",
+      "title": "agent-sandbox-runtime",
+      "authors": "ixchio",
+      "source": "GitHub",
+      "url": "https://github.com/ixchio/agent-sandbox-runtime",
+      "type": "repo",
+      "summary": "Self-correcting Docker-sandboxed runtime that generates, executes, catches errors, and iterates until the task passes.",
+      "usecase": "Use it to run generate-execute-repair loops inside locked containers for code tasks.",
+      "tags": [
+        "docker",
+        "self-correct",
+        "python",
+        "loop"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentharness",
+      "title": "AgentHarness",
+      "authors": "alexzhu0",
+      "source": "GitHub",
+      "url": "https://github.com/alexzhu0/AgentHarness",
+      "type": "harness",
+      "summary": "Pre-execution evidence control-plane that makes agent actions policy-driven, testable, and auditable before they hit external runtimes.",
+      "usecase": "Use it to gate tool calls with evidence contracts and keep execution outside the control plane.",
+      "tags": [
+        "control-plane",
+        "policy",
+        "audit",
+        "evidence"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cocoon",
+      "title": "cocoon",
+      "authors": "cocoonstack",
+      "source": "GitHub",
+      "url": "https://github.com/cocoonstack/cocoon",
+      "type": "repo",
+      "summary": "Lightweight MicroVM engine on Cloud Hypervisor with instant snapshot/clone, OCI support, and Docker-like CLI for AI sandboxes.",
+      "usecase": "Use it to spawn CoW-forked VMs for ephemeral agent environments with low memory overhead.",
+      "tags": [
+        "microvm",
+        "snapshot",
+        "kvm",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ai-sandbox",
+      "title": "Drop",
+      "authors": "community",
+      "source": "GitHub",
+      "url": "https://github.com/topics/ai-sandbox",
+      "type": "tool",
+      "summary": "Rootless Linux sandbox with gVisor support for running untrusted apps safely without full virtualization overhead.",
+      "usecase": "Use it to contain agent-generated processes under gVisor on a developer machine.",
+      "tags": [
+        "gvisor",
+        "rootless",
+        "linux",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "niftyagent",
+      "title": "NiftyAgent",
+      "authors": "trevordev",
+      "source": "GitHub",
+      "url": "https://github.com/trevordev/niftyagent",
+      "type": "tool",
+      "summary": "Single-file Node agent CLI under 500 LOC with no framework dependencies for rapid architecture experiments.",
+      "usecase": "Use it as a baseline loop to prototype context or completion strategies without scaffolding weight.",
+      "tags": [
+        "minimal",
+        "nodejs",
+        "cli",
+        "experiment"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "san",
+      "title": "san",
+      "authors": "genai-io",
+      "source": "GitHub",
+      "url": "https://github.com/genai-io/san",
+      "type": "tool",
+      "summary": "Lean open-source terminal agent runtime in a single Go binary with native speed and full openness.",
+      "usecase": "Use it to run a minimal provider-agnostic coding loop from one static binary.",
+      "tags": [
+        "go",
+        "cli",
+        "terminal",
+        "lean"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "software-factory",
+      "title": "software-factory",
+      "authors": "stratonext",
+      "source": "GitHub",
+      "url": "https://github.com/stratonext/software-factory",
+      "type": "harness",
+      "summary": "Local YAML-driven factory that queues coding agents in isolated Git worktrees with plan/code/test/review pipelines.",
+      "usecase": "Use it to parallelize multiple features from one driver agent without worktree conflicts.",
+      "tags": [
+        "worktree",
+        "pipeline",
+        "local",
+        "yaml"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sokit",
+      "title": "Sokit",
+      "authors": "jodan-alberts",
+      "source": "GitHub",
+      "url": "https://github.com/jodan-alberts/sokit",
+      "type": "harness",
+      "summary": "LangChain-like harness for System-1 models such as Jev, focused on tool calls and iterative solving.",
+      "usecase": "Use it to wire simple iterative tool loops around fast decision models.",
+      "tags": [
+        "system-1",
+        "tools",
+        "python",
+        "harness"
+      ],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "aeon",
       "title": "aeon",
