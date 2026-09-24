@@ -1,7 +1,221 @@
 {
-  "lastUpdated": "2026-09-23",
-  "count": 313,
+  "lastUpdated": "2026-09-24",
+  "count": 323,
   "tools": [
+    {
+      "slug": "agent-harness",
+      "title": "Agent Harness (JakeSelby)",
+      "authors": "JakeSelby",
+      "source": "GitHub",
+      "url": "https://github.com/JakeSelby/agent-harness",
+      "type": "harness",
+      "summary": "Control plane that projects one checkout of rules, skills, hooks, and stances into multiple coding agents with telemetry and ownership journals.",
+      "usecase": "Use it to enforce guardrails and cost postures once across different agent CLIs without rewriting each integration.",
+      "tags": [
+        "control-plane",
+        "hooks",
+        "telemetry",
+        "rules"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-native",
+      "title": "Agent-Native",
+      "authors": "BuilderIO",
+      "source": "GitHub",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "type": "tool",
+      "summary": "TypeScript framework for agentic apps where every capability is a shared action callable by both the agent as a tool and the UI from code, with live sync and templates.",
+      "usecase": "Use it to scaffold an app whose agent and React UI share the same validated actions, auth, and state without dual implementation.",
+      "tags": [
+        "typescript",
+        "ui",
+        "actions",
+        "framework",
+        "react"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentgateway",
+      "title": "Agentgateway",
+      "authors": "agentgateway",
+      "source": "GitHub",
+      "url": "https://github.com/agentgateway/agentgateway",
+      "type": "harness",
+      "summary": "Open-source proxy for agent-to-LLM, agent-to-tool, and agent-to-agent traffic with MCP and A2A support, guardrails, RBAC, and inference routing.",
+      "usecase": "Use it as the drop-in connectivity layer that federates MCP tools and enforces budgets and policies across frameworks.",
+      "tags": [
+        "proxy",
+        "mcp",
+        "a2a",
+        "guardrails",
+        "gateway"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentrail",
+      "title": "Agentrail",
+      "authors": "yai-dev",
+      "source": "GitHub",
+      "url": "https://github.com/yai-dev/agentrail",
+      "type": "harness",
+      "summary": "Composable open-source harness with runtime core, hosted server layer, prompt SDK, multi-agent mailboxing, filesystem memory, and Docker sandbox isolation.",
+      "usecase": "Use it to define production agents in code with streaming lifecycle, sub-agent recovery, and no platform lock-in.",
+      "tags": [
+        "typescript",
+        "orchestration",
+        "sandbox",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "macher-agent",
+      "title": "macher-agent",
+      "authors": "elij",
+      "source": "GitHub",
+      "url": "https://github.com/elij/macher-agent",
+      "type": "harness",
+      "summary": "Emacs-native LLM agent harness with isolated sandboxing, asynchronous sub-agent orchestration, and fail-fast sync file merging inside buffers.",
+      "usecase": "Use it to run concurrent multi-agent workflows entirely inside Emacs with Lisp callbacks and secure code execution.",
+      "tags": [
+        "emacs",
+        "multi-agent",
+        "sandbox",
+        "lisp"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nasiko",
+      "title": "Nasiko",
+      "authors": "Nasiko-Labs",
+      "source": "GitHub",
+      "url": "https://github.com/Nasiko-Labs/nasiko",
+      "type": "harness",
+      "summary": "Rust developer control plane that deploys, routes, secures, and observes any A2A-speaking agent behind a single ingress with MCP gateway and LLM router.",
+      "usecase": "Use it to run a multi-language agent fleet where every hop is authenticated, rate-limited, and traced without exposing agents publicly.",
+      "tags": [
+        "rust",
+        "a2a",
+        "control-plane",
+        "mcp",
+        "routing"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "pi-mono",
+      "title": "Pi Coding Agent",
+      "authors": "earendil-works",
+      "source": "GitHub",
+      "url": "https://github.com/badlogic/pi-mono",
+      "type": "tool",
+      "summary": "Minimal extensible terminal coding harness with unified multi-provider API, TUI, skills, MCP, and tree-structured sessions.",
+      "usecase": "Use it as a lightweight TUI agent loop you can extend with TypeScript plugins without a heavy product shell.",
+      "tags": [
+        "tui",
+        "mcp",
+        "skills",
+        "provider-agnostic"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "evals",
+      "title": "Strands Evals",
+      "authors": "strands-agents",
+      "source": "GitHub",
+      "url": "https://github.com/strands-agents/evals",
+      "type": "repo",
+      "summary": "Evaluation framework for agents covering trajectory checks, LLM-as-judge, chaos and corruption effects, skill-level scoring, and multi-provider mappers.",
+      "usecase": "Use it to score agent behavior and tool selection with repeatable suites before shipping a harness change.",
+      "tags": [
+        "evals",
+        "python",
+        "trajectory",
+        "judge"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "shell",
+      "title": "Strands Shell",
+      "authors": "strands-agents",
+      "source": "GitHub",
+      "url": "https://github.com/strands-agents/shell",
+      "type": "tool",
+      "summary": "In-process Bourne-compatible shell for agents with VFS, 50-plus commands, URL allowlists, and secret injection that never forks or exposes host credentials.",
+      "usecase": "Use it to give coding agents grep, sed, jq, and curl in under 1 ms cold start without Docker or microVMs.",
+      "tags": [
+        "rust",
+        "shell",
+        "vfs",
+        "isolation",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "that-agent",
+      "title": "that-agent",
+      "authors": "that-labs",
+      "source": "GitHub",
+      "url": "https://github.com/that-labs/that-agent",
+      "type": "repo",
+      "summary": "Kubernetes-native Rust agent that receives a compiler and a namespace so it can author, build, and deploy its own tools and services at runtime.",
+      "usecase": "Use it to let an agent extend its own capability surface with sandboxed pods, BuildKit, and an LLM-judge eval harness.",
+      "tags": [
+        "rust",
+        "kubernetes",
+        "self-extending",
+        "sandbox"
+      ],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-safehouse",
       "title": "Agent Safehouse",
