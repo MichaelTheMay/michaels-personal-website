@@ -1,7 +1,133 @@
 {
-  "lastUpdated": "2026-09-24",
-  "count": 323,
+  "lastUpdated": "2026-09-25",
+  "count": 329,
   "tools": [
+    {
+      "slug": "microvm",
+      "title": "AerolVM",
+      "authors": "aerol-ai",
+      "source": "GitHub",
+      "url": "https://github.com/aerol-ai/microvm",
+      "type": "harness",
+      "summary": "Single-binary self-hosted sandbox platform supporting containerd, gVisor, Firecracker, WASM and V8 isolates with Raft clustering.",
+      "usecase": "Use it to stand up multi-runtime agent sandboxes on one Linux host or a HA cluster with E2B and Daytona API facades.",
+      "tags": [
+        "multi-runtime",
+        "self-hosted",
+        "cluster",
+        "egress-control"
+      ],
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-memory-leaderboard",
+      "title": "Agent Memory Leaderboard",
+      "authors": "AML-memory",
+      "source": "GitHub",
+      "url": "https://github.com/AML-memory/agent-memory-leaderboard",
+      "type": "harness",
+      "summary": "Open reproducible eval platform and challenge for long-term agent memory systems across textual and coding tracks.",
+      "usecase": "Use it to benchmark your memory graph or store against standardized LongMemEval-style tasks before production.",
+      "tags": [
+        "eval",
+        "memory",
+        "leaderboard",
+        "reproducible"
+      ],
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "dormice",
+      "title": "Dormice",
+      "authors": "BitMiracle-AI",
+      "source": "GitHub",
+      "url": "https://github.com/BitMiracle-AI/Dormice",
+      "type": "harness",
+      "summary": "Self-hosted E2B-compatible sandbox platform where sandboxes are permanent, idle freezes cost almost nothing, and one key always returns the same box.",
+      "usecase": "Use it to give every agent a durable, freezeable sandbox on hardware you already own instead of paying per-second cloud boxes.",
+      "tags": [
+        "e2b-compatible",
+        "permanent",
+        "gvisor",
+        "sqlite"
+      ],
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "infra",
+      "title": "E2B Runtime",
+      "authors": "e2b-dev",
+      "source": "GitHub",
+      "url": "https://github.com/e2b-dev/infra",
+      "type": "repo",
+      "summary": "Open-source Firecracker control plane, orchestrator and guest agent that powers E2B sandboxes, runnable on your own hardware.",
+      "usecase": "Use it to self-host the exact microVM runtime behind E2B so agent code execution stays inside your boundary.",
+      "tags": [
+        "firecracker",
+        "self-host",
+        "control-plane",
+        "open-runtime"
+      ],
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "smolvm",
+      "title": "smolvm",
+      "authors": "smol-machines",
+      "source": "GitHub",
+      "url": "https://github.com/smol-machines/smolvm",
+      "type": "tool",
+      "summary": "Embeddable portable microVM that boots under 200 ms via Hypervisor.framework or KVM, packs into a single file, and supports OCI images.",
+      "usecase": "Use it to run local agent code in hardware-isolated VMs with elastic memory and opt-in networking without a Docker daemon.",
+      "tags": [
+        "portable",
+        "libkrun",
+        "local-first",
+        "oci"
+      ],
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "zeroboot",
+      "title": "Zeroboot",
+      "authors": "zerobootdev",
+      "source": "GitHub",
+      "url": "https://github.com/zerobootdev/zeroboot",
+      "type": "tool",
+      "summary": "Sub-millisecond KVM sandboxes for agents via copy-on-write Firecracker snapshot forking with tiny memory footprints.",
+      "usecase": "Use it to spawn hundreds of hardware-isolated Python or shell sandboxes in under a millisecond for parallel agent tool calls.",
+      "tags": [
+        "firecracker",
+        "cow",
+        "microvm",
+        "low-latency"
+      ],
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-harness",
       "title": "Agent Harness (JakeSelby)",
