@@ -1,7 +1,69 @@
 {
-  "lastUpdated": "2026-09-25",
-  "count": 329,
+  "lastUpdated": "2026-09-26",
+  "count": 332,
   "tools": [
+    {
+      "slug": "canary-verification",
+      "title": "Canary verification",
+      "authors": "runcanary",
+      "source": "GitHub / product",
+      "url": "https://www.runcanary.ai/",
+      "type": "harness",
+      "summary": "Independent verification harness that takes agent changesets, spawns swarms in sandboxes, and returns evidence of failures.",
+      "usecase": "Use it to pressure-test coding-agent patches with runtime scenarios before you accept the claim of done.",
+      "tags": [
+        "verification",
+        "swarm",
+        "sandbox",
+        "evidence"
+      ],
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nev3rfail",
+      "title": "Harness.apk",
+      "authors": "nev3rfail",
+      "source": "GitHub",
+      "url": "https://github.com/nev3rfail",
+      "type": "tool",
+      "summary": "On-device Android agent harness that runs the full loop locally with phone sensors, Maps, browser debugging, and widgets.",
+      "usecase": "Use it to keep an always-on agent in your pocket that can act on photos, maps, and local apps without a remote host.",
+      "tags": [
+        "android",
+        "on-device",
+        "mobile",
+        "local"
+      ],
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "unreallabsai",
+      "title": "Unreal Agent",
+      "authors": "unreallabsai",
+      "source": "GitHub",
+      "url": "https://github.com/unreallabsai",
+      "type": "harness",
+      "summary": "Async-first agent harness focused on non-blocking loops and concurrent tool execution for high-throughput agent systems.",
+      "usecase": "Use it to build agents that schedule many concurrent tool calls without blocking the main reasoning turn.",
+      "tags": [
+        "async",
+        "harness",
+        "concurrency"
+      ],
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "microvm",
       "title": "AerolVM",

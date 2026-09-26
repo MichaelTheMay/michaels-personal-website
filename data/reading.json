@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-25",
+  "lastUpdated": "2026-09-26",
   "issues": [
+    {
+      "date": "2026-09-26",
+      "title": "Hardware-isolated sandboxes and native harnesses power users can own",
+      "blurb": "Today's digest surfaces self-hostable microVMs, Rust runtimes, and Kubernetes primitives that let power users wire isolation and control planes into their agent loops without renting a closed IDE. Fresh clone-and-run repos emphasize local-first execution, secrets that stay off-guest, and evidence gates."
+    },
     {
       "date": "2026-09-25",
       "title": "Self-hosted microVM sandboxes and Rust harnesses that own the agent boundary",
@@ -228,6 +233,107 @@
     }
   ],
   "items": [
+    {
+      "id": "unreal-agent-2026-09-26",
+      "title": "Unreal Agent",
+      "authors": "unreallabsai",
+      "source": "GitHub",
+      "url": "https://github.com/unreallabsai",
+      "type": "harness",
+      "dateAdded": "2026-09-26",
+      "summary": "Async-first agent harness focused on non-blocking loops and concurrent tool execution for high-throughput agent systems.",
+      "tags": [
+        "async",
+        "harness",
+        "concurrency"
+      ],
+      "usecase": "Use it to build agents that schedule many concurrent tool calls without blocking the main reasoning turn.",
+      "returning": false
+    },
+    {
+      "id": "harness-apk-2026-09-26",
+      "title": "Harness.apk",
+      "authors": "nev3rfail",
+      "source": "GitHub",
+      "url": "https://github.com/nev3rfail",
+      "type": "tool",
+      "dateAdded": "2026-09-26",
+      "summary": "On-device Android agent harness that runs the full loop locally with phone sensors, Maps, browser debugging, and widgets.",
+      "tags": [
+        "android",
+        "on-device",
+        "mobile",
+        "local"
+      ],
+      "usecase": "Use it to keep an always-on agent in your pocket that can act on photos, maps, and local apps without a remote host.",
+      "returning": false
+    },
+    {
+      "id": "canary-verification-2026-09-26",
+      "title": "Canary verification",
+      "authors": "runcanary",
+      "source": "GitHub / product",
+      "url": "https://www.runcanary.ai/",
+      "type": "harness",
+      "dateAdded": "2026-09-26",
+      "summary": "Independent verification harness that takes agent changesets, spawns swarms in sandboxes, and returns evidence of failures.",
+      "tags": [
+        "verification",
+        "swarm",
+        "sandbox",
+        "evidence"
+      ],
+      "usecase": "Use it to pressure-test coding-agent patches with runtime scenarios before you accept the claim of done.",
+      "returning": false
+    },
+    {
+      "id": "google-ax-climbs-hn-as-substrate-for-agent-lifecycles-2026-09-26",
+      "title": "Google AX climbs HN as substrate for agent lifecycles",
+      "authors": "Blair Hayes",
+      "source": "Forkast",
+      "url": "https://forkast.news/googles-open-agentic-orchestrator-hit-1-on-hacker-news-the-real-story-is-whats-running-underneath/",
+      "type": "article",
+      "dateAdded": "2026-09-26",
+      "summary": "Google's open agentic orchestrator topped Hacker News by offering a kubectl-shaped control plane over gVisor sandboxes and Actor Teleport snapshots. The piece argues the real story is the harness-agnostic substrate underneath rather than yet another framework.",
+      "tags": [
+        "google",
+        "orchestration",
+        "hn",
+        "sandbox"
+      ]
+    },
+    {
+      "id": "docker-ships-cloud-sandboxes-for-agentic-workloads-2026-09-26",
+      "title": "Docker ships cloud sandboxes for agentic workloads",
+      "authors": "Docker",
+      "source": "Hacker News / Docker",
+      "url": "https://news.ycombinator.com/item?id=49837567",
+      "type": "release",
+      "dateAdded": "2026-09-26",
+      "summary": "Docker released cloud sandboxes that isolate agent code with secret injection via an external network proxy so credentials never enter the guest. Discussion highlights how the proxy model improves on traditional shared-kernel containers for agent safety.",
+      "tags": [
+        "docker",
+        "sandbox",
+        "secrets",
+        "release"
+      ]
+    },
+    {
+      "id": "agent-factory-recap-harnesses-shifting-left-autonomous-coding-2026-09-26",
+      "title": "Agent Factory recap: harnesses, shifting left, autonomous coding",
+      "authors": "Mollie Pettit",
+      "source": "Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding/",
+      "type": "article",
+      "dateAdded": "2026-09-26",
+      "summary": "Google Cloud recaps the Agent Factory sessions defining an agent as model plus harness and showing why better stacks beat smarter models alone. It ties harness engineering to shifting left on verification and parallel coding agents.",
+      "tags": [
+        "google-cloud",
+        "harness",
+        "autonomous",
+        "recap"
+      ]
+    },
     {
       "id": "zeroboot-2026-09-25",
       "title": "Zeroboot",
@@ -10359,102 +10465,6 @@
         "tree memory",
         "self-correction",
         "long-horizon"
-      ]
-    },
-    {
-      "id": "evomem-memory-augmented-evolution-for-code-optimization-2026-08-12",
-      "title": "EvoMem: Memory-Augmented Evolution for Code Optimization",
-      "authors": "Viktor Volkov, Valentin Khrulkov, Andrey V. Galichin, Danil Sivtsov, Nikita Glazkov, Olga Volkova, Konstantin Pchelin, Iaroslav Bespalov, Dmitry V. Dylov, Petr Anokhin, Ivan Oseledets",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.10795",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "EvoMem turns successful LLM-driven mutation events into structured, task-aware advice stored with provenance and later retrieved to guide future evolutionary program search. Across geometric optimization, multi-hop QA, and GPU kernel tasks the persistent memory reduces redundant rediscovery and improves target metrics or search speed in most settings.",
-      "tags": [
-        "evolutionary search",
-        "code optimization",
-        "persistent memory",
-        "LLM agents"
-      ]
-    },
-    {
-      "id": "thinkretrieve-retrieval-augmented-reasoning-traces-for-test-time-scaling-2026-08-12",
-      "title": "ThinkRetrieve: Retrieval-Augmented Reasoning Traces for Test-Time Scaling",
-      "authors": "Vaibhav Singh, Soumya Suvra Ghosal, Sarvesh Gharat, Soumyabrata Pal, Ramasuri Narayanam, Dinesh Manocha",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.10928",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "ThinkRetrieve injects dynamically retrieved solved exemplars into intermediate reasoning steps of large reasoning models, supplying guidance on how to reason rather than only external facts. Across models from 1.5B to 8B parameters it consistently beats standard test-time scaling, with relative gains reaching 60 percent on AIME 2025.",
-      "tags": [
-        "test-time scaling",
-        "retrieval-augmented reasoning",
-        "chain-of-thought",
-        "LRMs"
-      ]
-    },
-    {
-      "id": "hypothesis-frontier-verifier-guided-llm-and-symbolic-search-for-first-order-indu-2026-08-12",
-      "title": "Hypothesis Frontier: Verifier Guided LLM and Symbolic Search for First-Order Induction",
-      "authors": "Serafim Batzoglou",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.10843",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "The framework evaluates every LLM-proposed first-order formula exactly on training structures, retains the strongest verified hypothesis, and feeds remaining errors back to guide the next generation round. Symbolic repair and simplification further increase the number of solved induction problems while shortening many train-valid formulas without changing predictions.",
-      "tags": [
-        "neurosymbolic",
-        "first-order induction",
-        "verifier-guided search",
-        "concept learning"
-      ]
-    },
-    {
-      "id": "beyond-a-bag-of-features-set-level-instability-in-sparse-autoencoders-2026-08-12",
-      "title": "Beyond a Bag of Features: Set-Level Instability in Sparse Autoencoders",
-      "authors": "Nikolai Bolik, Lennart Stöpler, Artur Andrzejak",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.11197",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "Using overlap of active SAE latent sets as a similarity measure, the authors show that these sets recover compositional structure in toys yet fail to track human category boundaries or typicality more faithfully than dense embeddings. Controlled semantic edits reveal large mismatches between human conceptual change and SAE active-set change, arguing against simple bag-of-features compositionality outside idealized regimes.",
-      "tags": [
-        "sparse autoencoders",
-        "interpretability",
-        "feature composition",
-        "LLM representations"
-      ]
-    },
-    {
-      "id": "attention-path-fragility-as-an-uncertainty-signal-in-large-language-models-2026-08-12",
-      "title": "Attention-Path Fragility as an Uncertainty Signal in Large Language Models",
-      "authors": "Minsoo Kim, Sungyoung Ji, Kisung Moon, Ilyong Yoon",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.11138",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "ASMI masks attention heads and measures BALD mutual information among the resulting subnetworks with a semantic-agreement kernel, capturing confident-but-fragile predictions. The training-free signal adds error-predictive information beyond entropy on grounded QA, roughly halves retained error of a confidence filter in its strong regime, and can be read from a single greedy response.",
-      "tags": [
-        "uncertainty estimation",
-        "attention",
-        "interpretability",
-        "calibration"
-      ]
-    },
-    {
-      "id": "data-attribution-of-emergent-misalignment-with-persona-features-2026-08-12",
-      "title": "Data Attribution of Emergent Misalignment with Persona Features",
-      "authors": "Clemens Vetter, David Kaczér, Lucie Flek, Florian Mai",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.11025",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "SAE-based model diffing shows misalignment fine-tuning amplifies jailbreak, sarcasm, deception, and manipulation persona features while suppressing safety and assistant-identity features. Steering these features alone can induce up to 62 percent misalignment or restore near-baseline rates, yet human-written pre-training documents that activate them do not reliably induce the effect, whereas synthetic instruction-response pairs derived from the same content do.",
-      "tags": [
-        "emergent misalignment",
-        "persona features",
-        "data attribution",
-        "safety"
       ]
     }
   ]
