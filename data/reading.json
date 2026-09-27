@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-26",
+  "lastUpdated": "2026-09-27",
   "issues": [
+    {
+      "date": "2026-09-27",
+      "title": "Self-hosted sandboxes and harness control planes that own the agent loop",
+      "blurb": "Power users are wiring microVM isolation, K8s sandbox CRDs, and open harness SDKs into their own loops. The through-line is durable execution outside closed IDEs: clone, run, and govern agents on your infra."
+    },
     {
       "date": "2026-09-26",
       "title": "Hardware-isolated sandboxes and native harnesses power users can own",
@@ -225,14 +230,113 @@
       "date": "2026-08-13",
       "title": "Test-time harnesses, simulator collapse, and context trade-offs",
       "blurb": "Recent work examines how capability can be transferred or recovered at inference without parameter updates, how single-simulator training fails to generalize in multi-agent settings, and how longer contexts or compression choices reshape parametric knowledge, rankings, and memory reliability."
-    },
-    {
-      "date": "2026-08-12",
-      "title": "Catastrophic remembering, skill compression, and structured agent memory",
-      "blurb": "Fresh results examine why agent prompts and skills grow without bound, how to compress reusable structure without costly evaluation, and how tree-structured or persistent memory supports self-correction, cross-run transfer, and long-horizon mathematical and search work."
     }
   ],
   "items": [
+    {
+      "id": "awesome-agent-harness-2026-09-27",
+      "title": "awesome-agent-harness",
+      "authors": "Picrew",
+      "source": "GitHub",
+      "url": "https://github.com/Picrew/awesome-agent-harness",
+      "type": "repo",
+      "dateAdded": "2026-09-27",
+      "summary": "Implementation-first awesome list of agent harness engineering projects, tools, benchmarks, and guides with hundreds of GitHub entries.",
+      "tags": [
+        "awesome-list",
+        "harness",
+        "sandbox",
+        "engineering"
+      ],
+      "usecase": "Use it to discover obscure sandbox and harness layers mapped to execution, tooling, lifecycle, and governance needs.",
+      "returning": false
+    },
+    {
+      "id": "cocoon-sandbox-2026-09-27",
+      "title": "cocoon sandbox",
+      "authors": "cocoonstack",
+      "source": "GitHub",
+      "url": "https://github.com/cocoonstack/sandbox",
+      "type": "repo",
+      "dateAdded": "2026-09-27",
+      "summary": "Fast cold-boot MicroVM sandboxes with warm pools, in-guest daemon, and Go/Python SDKs built on the cocoon stack.",
+      "tags": [
+        "microvm",
+        "warm-pool",
+        "sdk",
+        "agent"
+      ],
+      "usecase": "Use it to claim sub-millisecond warm sandboxes or tens-of-ms golden clones for agent code execution.",
+      "returning": false
+    },
+    {
+      "id": "castor-2026-09-27",
+      "title": "Castor",
+      "authors": "Castor authors",
+      "source": "Hacker News / project",
+      "url": "https://news.ycombinator.com/item?id=47504101",
+      "type": "harness",
+      "dateAdded": "2026-09-27",
+      "summary": "Secure execution layer that treats every tool call as a syscall through a microkernel with budgets, immutable journal, pause, and resume.",
+      "tags": [
+        "microkernel",
+        "syscall",
+        "budget",
+        "security"
+      ],
+      "usecase": "Use it to enforce hard capability limits and budget-based approvals so agents cannot bypass structural gates.",
+      "returning": false
+    },
+    {
+      "id": "recurse-2026-09-27",
+      "title": "Recurse",
+      "authors": "Recurse team",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49850553",
+      "type": "harness",
+      "dateAdded": "2026-09-27",
+      "summary": "Serverless agent harness plus coding-agent skill that iterates prompt and tool variants against verifiable domains with an FSM refinement loop.",
+      "tags": [
+        "serverless",
+        "eval",
+        "fsm",
+        "specialist"
+      ],
+      "usecase": "Use it to auto-generate and evaluate specialist agents when you can define a clear input/output contract and eval.",
+      "returning": false
+    },
+    {
+      "id": "docker-launches-cloud-sandboxes-2026-09-27",
+      "title": "Docker Launches Cloud Sandboxes",
+      "authors": "Docker, Inc.",
+      "source": "Docker Press",
+      "url": "https://www.docker.com/press-release/cloud-sandboxes-extending-secure-ai-agent-isolation-beyond-the-laptop/",
+      "type": "release",
+      "dateAdded": "2026-09-27",
+      "summary": "Docker shipped Cloud Sandboxes so agentic workloads continue in managed microVM isolation after the laptop sleeps. The same release advances Kits as OCI packages that bundle agent, tools, credentials, and network policy.",
+      "tags": [
+        "docker",
+        "sandbox",
+        "cloud",
+        "kits"
+      ]
+    },
+    {
+      "id": "manufacturing-trust-for-ai-agents-2026-09-27",
+      "title": "Manufacturing Trust for AI Agents",
+      "authors": "Deanna Sparks",
+      "source": "Docker Blog",
+      "url": "https://www.docker.com/blog/manufacturing-trust-for-ai-agents-keynote/",
+      "type": "article",
+      "dateAdded": "2026-09-27",
+      "summary": "Docker's WeAreDevelopers keynote argues sandboxes plus external policy create the trust boundary agents need, and that Kits plus Cloud Sandboxes make authority reproducible and portable. The piece frames isolation and packaging as the next industrial layer for agentic work.",
+      "tags": [
+        "trust",
+        "sandbox",
+        "policy",
+        "kits"
+      ]
+    },
     {
       "id": "unreal-agent-2026-09-26",
       "title": "Unreal Agent",
@@ -10367,104 +10471,6 @@
         "agents",
         "RL",
         "recovery"
-      ]
-    },
-    {
-      "id": "oeis-open-how-many-conjectures-can-language-models-turn-into-theorems-2026-08-13",
-      "title": "OEIS Open: How many conjectures can language models turn into theorems?",
-      "authors": "Tom Adamczewski",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.11941",
-      "type": "paper",
-      "dateAdded": "2026-08-13",
-      "summary": "OEIS Open formalizes 492 open OEIS conjectures in Lean and evaluates generic language models with minimal tools under fixed dollar budgets, securely against cheating. Models resolve 147 conjectures (30%) at $50 per attempt; the best model reaches 44% on a 100-conjecture Lite subset at $200. Access to 476k arXiv math papers or more elaborate agent loops did not improve scores, showing autonomous resolution of open research conjectures is already feasible at modest cost.",
-      "tags": [
-        "formal-math",
-        "Lean",
-        "conjectures",
-        "agents",
-        "benchmarks"
-      ]
-    },
-    {
-      "id": "the-sleeping-agent-what-gist-based-context-compression-loses-and-why-2026-08-13",
-      "title": "The Sleeping Agent: What Gist-Based Context Compression Loses and Why",
-      "authors": "Nicholas E. Kyrkewood",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.11775",
-      "type": "paper",
-      "dateAdded": "2026-08-13",
-      "summary": "Salience-Weighted Consolidation (inspired by sleep-based memory) is used as a probe on LoCoMo long-horizon conversations: gist compression beats truncation on multi-hop and factual questions but substantially harms temporal questions because the abstraction prompt discards dates and times while preserving relational structure. A one-sentence prompt change raises temporal-expression preservation ~20-fold and recovers +0.314 judge accuracy on temporal items, demonstrating a precise, low-cost fix.",
-      "tags": [
-        "memory",
-        "compression",
-        "long-horizon",
-        "agents",
-        "temporal"
-      ]
-    },
-    {
-      "id": "long-horizon-ai-research-for-grothendieck-constant-a-case-study-in-human-ai-math-2026-08-12",
-      "title": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
-      "authors": "Alan Li, Rahul Saha, Anton Xue, Swarat Chaudhuri, Adam Klivans, Pravesh K Kothari, Raghu Meka",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.11195",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "The authors report tightened bounds on the Grothendieck constant achieved with an AI research system that produced insights judged novel by domain experts. They detail strengths, failure modes, and the practical conditions under which long-horizon human-AI mathematical collaboration yields breakthrough results rather than incremental noise.",
-      "tags": [
-        "AI-for-math",
-        "human-AI collaboration",
-        "long-horizon agents",
-        "complexity"
-      ]
-    },
-    {
-      "id": "why-does-claude-md-keep-growing-catastrophic-remembering-in-agentic-coding-2026-08-12",
-      "title": "Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding",
-      "authors": "Kushal Chakrabarti",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.11095",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "Across nearly 250k instruction lifetimes the author shows agentic coding prompts more than triple in size because appending is cheap while safe deletion is exponentially hard once rationales are lost. Naming the phenomenon catastrophic remembering, the inverse of catastrophic forgetting, the work shows that latent-reasoning comments can remove over 99 percent of excess instructions and improve real instruction-following by up to 23 percent.",
-      "tags": [
-        "agentic coding",
-        "prompt engineering",
-        "continual learning",
-        "memory"
-      ]
-    },
-    {
-      "id": "skillzip-evaluation-free-skill-compression-for-self-evolving-agents-by-discoveri-2026-08-12",
-      "title": "SkillZip: Evaluation-Free Skill Compression for Self-Evolving Agents by Discovering Reusable Structure",
-      "authors": "Xiaofan Bai, Hongqiang Lin, Chao Liu, Yantao Zhang, Xuan Jin, Xipeng Cao, Yuhong Li",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.11079",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "SkillZip compresses self-evolving agent skills by finding a shortest faithful structural explanation under a typed minimum-description-length objective with hard coverage constraints. It factors repeated rules and action sequences once, keeps rare exceptions by construction, and supports both one-shot and continual Zip-on-Write modes without evaluation rollouts.",
-      "tags": [
-        "self-evolving agents",
-        "skill compression",
-        "MDL",
-        "agent memory"
-      ]
-    },
-    {
-      "id": "self-correcting-long-horizon-search-agents-via-tree-structured-memory-2026-08-12",
-      "title": "Self-Correcting Long-Horizon Search Agents via Tree-Structured Memory",
-      "authors": "Aijun Yang, Qianxue Guo, Ziyi Huang, Yuxuan Chen, Shiyou Qian, Jian Cao",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.10676",
-      "type": "paper",
-      "dateAdded": "2026-08-12",
-      "summary": "ReTree models search as an evidence tree whose nodes store bounded summaries, source-linked evidence, and revision histories. When new evidence contradicts earlier claims it localizes the error, replaces outdated nodes, prunes affected branches, and resumes, cutting context size while raising answer accuracy by up to 25.6 points over full-trajectory ReAct.",
-      "tags": [
-        "search agents",
-        "tree memory",
-        "self-correction",
-        "long-horizon"
       ]
     }
   ]

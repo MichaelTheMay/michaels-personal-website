@@ -1,7 +1,91 @@
 {
-  "lastUpdated": "2026-09-26",
-  "count": 332,
+  "lastUpdated": "2026-09-27",
+  "count": 336,
   "tools": [
+    {
+      "slug": "awesome-agent-harness",
+      "title": "awesome-agent-harness",
+      "authors": "Picrew",
+      "source": "GitHub",
+      "url": "https://github.com/Picrew/awesome-agent-harness",
+      "type": "repo",
+      "summary": "Implementation-first awesome list of agent harness engineering projects, tools, benchmarks, and guides with hundreds of GitHub entries.",
+      "usecase": "Use it to discover obscure sandbox and harness layers mapped to execution, tooling, lifecycle, and governance needs.",
+      "tags": [
+        "awesome-list",
+        "harness",
+        "sandbox",
+        "engineering"
+      ],
+      "firstSeen": "2026-09-27",
+      "lastSeen": "2026-09-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "item",
+      "title": "Castor",
+      "authors": "Castor authors",
+      "source": "Hacker News / project",
+      "url": "https://news.ycombinator.com/item?id=47504101",
+      "type": "harness",
+      "summary": "Secure execution layer that treats every tool call as a syscall through a microkernel with budgets, immutable journal, pause, and resume.",
+      "usecase": "Use it to enforce hard capability limits and budget-based approvals so agents cannot bypass structural gates.",
+      "tags": [
+        "microkernel",
+        "syscall",
+        "budget",
+        "security"
+      ],
+      "firstSeen": "2026-09-27",
+      "lastSeen": "2026-09-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox",
+      "title": "cocoon sandbox",
+      "authors": "cocoonstack",
+      "source": "GitHub",
+      "url": "https://github.com/cocoonstack/sandbox",
+      "type": "repo",
+      "summary": "Fast cold-boot MicroVM sandboxes with warm pools, in-guest daemon, and Go/Python SDKs built on the cocoon stack.",
+      "usecase": "Use it to claim sub-millisecond warm sandboxes or tens-of-ms golden clones for agent code execution.",
+      "tags": [
+        "microvm",
+        "warm-pool",
+        "sdk",
+        "agent"
+      ],
+      "firstSeen": "2026-09-27",
+      "lastSeen": "2026-09-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "item",
+      "title": "Recurse",
+      "authors": "Recurse team",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49850553",
+      "type": "harness",
+      "summary": "Serverless agent harness plus coding-agent skill that iterates prompt and tool variants against verifiable domains with an FSM refinement loop.",
+      "usecase": "Use it to auto-generate and evaluate specialist agents when you can define a clear input/output contract and eval.",
+      "tags": [
+        "serverless",
+        "eval",
+        "fsm",
+        "specialist"
+      ],
+      "firstSeen": "2026-09-27",
+      "lastSeen": "2026-09-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "canary-verification",
       "title": "Canary verification",
