@@ -1,7 +1,91 @@
 {
-  "lastUpdated": "2026-09-27",
-  "count": 336,
+  "lastUpdated": "2026-09-28",
+  "count": 340,
   "tools": [
+    {
+      "slug": "agent_sandbox",
+      "title": "agent_sandbox (HPC)",
+      "authors": "katosh",
+      "source": "GitHub",
+      "url": "https://github.com/katosh/agent_sandbox",
+      "type": "tool",
+      "summary": "Kernel-enforced credential and network jail for untrusted Linux processes with Slurm awareness and built-in agent profiles.",
+      "usecase": "Use it to wrap coding agents on HPC login nodes so sbatch and credentials stay sandboxed without containers.",
+      "tags": [
+        "hpc",
+        "slurm",
+        "jail",
+        "credentials"
+      ],
+      "firstSeen": "2026-09-28",
+      "lastSeen": "2026-09-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-sandbox-os",
+      "title": "agent-sandbox-os",
+      "authors": "dhanababum",
+      "source": "GitHub",
+      "url": "https://github.com/dhanababum/agent-sandbox-os",
+      "type": "tool",
+      "summary": "Easy microVM sandboxes for AI agents and untrusted code on AWS Lambda MicroVMs with Python SDK, asb CLI, and MCP server.",
+      "usecase": "Use it to boot a Firecracker sandbox in seconds, exec agent code, forward ports, and suspend/resume long sessions without managing clusters.",
+      "tags": [
+        "microvm",
+        "lambda",
+        "firecracker",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-28",
+      "lastSeen": "2026-09-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "open-harness",
+      "title": "open-harness (SDK)",
+      "authors": "MaxGfeller",
+      "source": "GitHub",
+      "url": "https://github.com/MaxGfeller/open-harness",
+      "type": "repo",
+      "summary": "Code-first composable SDK built on Vercel AI SDK for powerful AI agents with sessions, middleware, VFS providers, and React/Vue hooks.",
+      "usecase": "Use it to wire Agent plus createFsTools and createBashTool for sandboxed file and shell access inside your own product UI.",
+      "tags": [
+        "sdk",
+        "vercel-ai",
+        "composable",
+        "vfs"
+      ],
+      "firstSeen": "2026-09-28",
+      "lastSeen": "2026-09-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "serverless-runtime",
+      "title": "serverless-runtime / agent-sandbox",
+      "authors": "vivek1504",
+      "source": "GitHub",
+      "url": "https://github.com/vivek1504/serverless-runtime",
+      "type": "repo",
+      "summary": "Firecracker microVM sandboxing for AI agents with millisecond boots from snapshots, full network, and native MCP support.",
+      "usecase": "Use it to give each agent session a dedicated hardware-isolated Linux machine that restores in under 100 ms end-to-end.",
+      "tags": [
+        "firecracker",
+        "microvm",
+        "mcp",
+        "snapshot"
+      ],
+      "firstSeen": "2026-09-28",
+      "lastSeen": "2026-09-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "awesome-agent-harness",
       "title": "awesome-agent-harness",
