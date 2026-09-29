@@ -1,7 +1,161 @@
 {
-  "lastUpdated": "2026-09-28",
-  "count": 340,
+  "lastUpdated": "2026-09-29",
+  "count": 347,
   "tools": [
+    {
+      "slug": "agent-eval-harness",
+      "title": "Agent Eval Harness",
+      "authors": "sn0bored",
+      "source": "GitHub",
+      "url": "https://github.com/sn0bored/agent-eval-harness",
+      "type": "harness",
+      "summary": "Vendor-neutral regression harness for agents and LLM-as-judge workflows with JSONL cases, deterministic graders, and CI fail-on-regress.",
+      "usecase": "Use it to version conversation cases and fail CI when an agent policy or tool-selection drifts.",
+      "tags": [
+        "evals",
+        "regression",
+        "llm-as-judge",
+        "ci",
+        "vendor-neutral"
+      ],
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentos",
+      "title": "AgentOS (framerslab)",
+      "authors": "framerslab",
+      "source": "GitHub",
+      "url": "https://github.com/framerslab/agentos",
+      "type": "harness",
+      "summary": "TypeScript agent framework with cognitive memory, runtime tool forging, multi-agent orchestration, and strong LongMemEval numbers.",
+      "usecase": "Use it to build agents that remember across sessions and forge their own tools under multi-provider dispatch.",
+      "tags": [
+        "typescript",
+        "memory",
+        "tool-forging",
+        "multi-agent",
+        "framework"
+      ],
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "codewhale",
+      "title": "CodeWhale",
+      "authors": "Hmbown",
+      "source": "GitHub",
+      "url": "https://github.com/Hmbown/CodeWhale",
+      "type": "tool",
+      "summary": "Open-source Rust terminal coding agent harness with TUI, multi-provider support, and community-driven loop design.",
+      "usecase": "Use it to drive a fast local coding loop from the terminal when you want a systems-language harness instead of a Node TUI.",
+      "tags": [
+        "rust",
+        "tui",
+        "coding-agent",
+        "cli",
+        "harness"
+      ],
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openshell-deepagent",
+      "title": "openshell-deepagent",
+      "authors": "LangChain + NVIDIA",
+      "source": "GitHub",
+      "url": "https://github.com/langchain-ai/openshell-deepagent",
+      "type": "repo",
+      "summary": "Coding agent that runs inside NVIDIA OpenShell policy sandbox, orchestrated by Deep Agents and Nemotron.",
+      "usecase": "Use it to execute agent-written code under external filesystem and network policies without cloud sandboxes.",
+      "tags": [
+        "openshell",
+        "nvidia",
+        "policy",
+        "deepagents",
+        "on-prem"
+      ],
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "qm",
+      "title": "QM",
+      "authors": "yc-software",
+      "source": "GitHub",
+      "url": "https://github.com/yc-software/qm",
+      "type": "harness",
+      "summary": "Multiplayer organizational agent harness with per-person and per-room scopes, durable sandboxes, memory, permissions, and swappable coding runtimes.",
+      "usecase": "Use it to give a team scoped agent rooms with Postgres-backed sessions and policy-controlled sandboxes.",
+      "tags": [
+        "multiplayer",
+        "org",
+        "sandbox",
+        "policy",
+        "durable"
+      ],
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "rlmagents",
+      "title": "RLMAgents",
+      "authors": "Hmbown",
+      "source": "GitHub",
+      "url": "https://github.com/Hmbown/rlmagents",
+      "type": "harness",
+      "summary": "Recursive Language Model style agent harness built on Deep Agents with persistent REPL control and practical tooling.",
+      "usecase": "Use it to treat prompts and subagents as programmatic variables inside a recursive coding loop.",
+      "tags": [
+        "rlm",
+        "recursive",
+        "deepagents",
+        "harness",
+        "python"
+      ],
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "vm-price-board",
+      "title": "vm-price-board",
+      "authors": "sf-tools",
+      "source": "GitHub",
+      "url": "https://github.com/sf-tools/vm-price-board",
+      "type": "repo",
+      "summary": "Live comparison of agent sandbox and microVM pricing across providers with free-tier visibility.",
+      "usecase": "Use it to pick the cheapest Firecracker or gVisor sandbox shape before locking an agent fleet budget.",
+      "tags": [
+        "pricing",
+        "sandbox",
+        "microvm",
+        "comparison",
+        "ops"
+      ],
+      "firstSeen": "2026-09-29",
+      "lastSeen": "2026-09-29",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent_sandbox",
       "title": "agent_sandbox (HPC)",
