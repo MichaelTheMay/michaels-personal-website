@@ -1,7 +1,236 @@
 {
-  "lastUpdated": "2026-09-29",
-  "count": 347,
+  "lastUpdated": "2026-09-30",
+  "count": 358,
   "tools": [
+    {
+      "slug": "env",
+      "title": "Agent Substrate Env",
+      "authors": "agent-substrate",
+      "source": "GitHub",
+      "url": "https://github.com/agent-substrate/env",
+      "type": "repo",
+      "summary": "Environment abstraction on Substrate providing remote cmd, filesystem and built-in MCP tools inside isolated actors.",
+      "usecase": "Use it to give agents a stable remote environment API while Substrate handles multiplexing and snapshots underneath.",
+      "tags": [
+        "environment",
+        "mcp",
+        "kubernetes",
+        "actor"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentplane",
+      "title": "Agentplane",
+      "authors": "basilisk-labs",
+      "source": "GitHub",
+      "url": "https://github.com/basilisk-labs/agentplane",
+      "type": "harness",
+      "summary": "Git-native control plane that keeps authority, plans, verification and evidence in the repo while agents do the judgment work.",
+      "usecase": "Use it to bound coding-agent authority, advance lifecycle state and produce reviewable PR evidence without hiding state.",
+      "tags": [
+        "control-plane",
+        "git",
+        "verification",
+        "cli"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "arcbox",
+      "title": "ArcBox",
+      "authors": "arcboxlabs",
+      "source": "GitHub",
+      "url": "https://github.com/arcboxlabs/arcbox",
+      "type": "tool",
+      "summary": "Pure-Rust macOS runtime offering Docker drop-in, nested Firecracker sandboxes for agents, full Linux/macOS VMs, and sub-200ms boots.",
+      "usecase": "Use it to run coding agents inside disposable microVMs on Apple Silicon with the same API as cloud sandboxes.",
+      "tags": [
+        "microvm",
+        "sandbox",
+        "macos",
+        "rust"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cleanroom",
+      "title": "Cleanroom",
+      "authors": "buildkite",
+      "source": "GitHub",
+      "url": "https://github.com/buildkite/cleanroom",
+      "type": "tool",
+      "summary": "Policy-to-microVM compiler that bakes warm spores with deps installed, provenance and deny-by-default network for repo workloads.",
+      "usecase": "Use it to turn cleanroom.yaml into reproducible agent sandboxes that fork from hot snapshots for CI or local runs.",
+      "tags": [
+        "microvm",
+        "policy",
+        "ci",
+        "snapshot"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "forkd",
+      "title": "forkd",
+      "authors": "deeplethe",
+      "source": "GitHub",
+      "url": "https://github.com/deeplethe/forkd",
+      "type": "repo",
+      "summary": "KVM microVM fork engine that spawns 100 CoW children from a warm parent in ~100ms for agent tree search or RL.",
+      "usecase": "Use it to branch live agent environments for parallel exploration without cold boots or full image reloads.",
+      "tags": [
+        "microvm",
+        "fork",
+        "kvm",
+        "snapshot"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "frontieragent",
+      "title": "FrontierAgent",
+      "authors": "ApodexAI",
+      "source": "GitHub",
+      "url": "https://github.com/ApodexAI/FrontierAgent",
+      "type": "tool",
+      "summary": "Open-source agent runtime and TUI with native ReAct and Agent Team modes, task-scoped sandboxes and separate eval harness.",
+      "usecase": "Use it to run long-horizon research or coding workflows with parallel sub-agents and fail-closed file/shell isolation.",
+      "tags": [
+        "tui",
+        "multi-agent",
+        "sandbox",
+        "eval"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "gatewaystack",
+      "title": "GatewayStack",
+      "authors": "agentic-control-plane",
+      "source": "GitHub",
+      "url": "https://github.com/agentic-control-plane/GatewayStack",
+      "type": "harness",
+      "summary": "Open-core TypeScript modules for identity, policy, rate limits, routing, PII redaction and audit on every agent tool call.",
+      "usecase": "Use it to insert a control plane that policy-checks tool invocations before any coding agent or MCP server runs them.",
+      "tags": [
+        "control-plane",
+        "policy",
+        "typescript",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hindsight",
+      "title": "Hindsight",
+      "authors": "vectorize-io",
+      "source": "GitHub",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "type": "tool",
+      "summary": "Agent memory system that learns from experience and improves over time with long-term retention for multi-session loops.",
+      "usecase": "Use it to attach a learning memory layer so agents retain and refine skills across coding or research runs.",
+      "tags": [
+        "memory",
+        "learning",
+        "agent"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openharness",
+      "title": "openharness",
+      "authors": "autonomous-ai",
+      "source": "GitHub",
+      "url": "https://github.com/autonomous-ai/openharness",
+      "type": "harness",
+      "summary": "Command-center harness that runs multiple coding agents and craft-specific tools side-by-side across local and remote machines.",
+      "usecase": "Use it to orchestrate code plus CAD, circuits or music agents from one board with per-craft harness.json definitions.",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "tui"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openshell",
+      "title": "OpenShell",
+      "authors": "NVIDIA",
+      "source": "GitHub",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "type": "tool",
+      "summary": "Policy-governed runtime that instruments kernel access, enforces filesystem/network/process rules and keeps credentials outside agent sandboxes.",
+      "usecase": "Use it to wrap any coding agent in declarative allow/deny policies with formal verification before applying changes.",
+      "tags": [
+        "runtime",
+        "policy",
+        "sandbox",
+        "security"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "vetto",
+      "title": "Vetto",
+      "authors": "shleder",
+      "source": "GitHub",
+      "url": "https://github.com/shleder/vetto",
+      "type": "tool",
+      "summary": "Daemon-less rootless kernel sandbox that injects immutable boundaries between fork and execve with sub-4ms latency for coding CLIs.",
+      "usecase": "Use it to shim Claude Code, Codex or Aider so every spawn is Landlock/cgroup constrained without Docker overhead.",
+      "tags": [
+        "kernel",
+        "sandbox",
+        "landlock",
+        "cli"
+      ],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-09-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-eval-harness",
       "title": "Agent Eval Harness",
