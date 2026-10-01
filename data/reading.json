@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-09-30",
+  "lastUpdated": "2026-10-01",
   "issues": [
+    {
+      "date": "2026-10-01",
+      "title": "MicroVM isolation and local harnesses power users wire under agents",
+      "blurb": "Today's tools favor cloneable microVM sandboxes, Kubernetes control planes, and self-hosted runtimes that sit beneath coding agents. They prioritize hardware isolation, universal session APIs, and recoverable loops over branded IDEs."
+    },
     {
       "date": "2026-09-30",
       "title": "MicroVM sandboxes and policy runtimes that own the agent loop",
@@ -225,14 +230,164 @@
       "date": "2026-08-17",
       "title": "Recoverable state, world models, and long-horizon agency",
       "blurb": "Recent work tightens the loop between what agents remember, how they repair or rewrite their own models of the world, and how long-horizon research or evaluation can continue without collapse. Formal treatments of handover, explosion dynamics, and evidence aggregation sit alongside systems that checkpoint, twin, or re-anchor executable research state."
-    },
-    {
-      "date": "2026-08-16",
-      "title": "Curriculum sandboxes, draft trees, and intent-group safety",
-      "blurb": "Recent papers isolate knowledge exposure via grade-level pretraining, measure trajectory-level data influence without downstream tasks, verbalize sparse autoencoder features from decoder directions, probe Gricean specificity retreats at knowledge boundaries, construct diffusion-AR draft trees for speculative decoding, virtualize KV tokens for reclaimable caches, and supervise refusal by intent groups rather than surface form. Supporting results cover long-horizon Earth observation reasoning and open hierarchical models trained only on permissible data."
     }
   ],
   "items": [
+    {
+      "id": "sandbank-2026-10-01",
+      "title": "Sandbank",
+      "authors": "chekusu",
+      "source": "GitHub",
+      "url": "https://github.com/chekusu/sandbank",
+      "type": "harness",
+      "dateAdded": "2026-10-01",
+      "summary": "Unified workspace harness that keeps agent identity, memory and artifacts while scheduling across multiple sandbox backends.",
+      "tags": [
+        "workspace",
+        "multi-backend",
+        "harness"
+      ],
+      "usecase": "Use it to materialize a persistent Workspace protocol then dispatch tasks to E2B, cloud or local runtimes as needed.",
+      "returning": false
+    },
+    {
+      "id": "jauvex-2026-10-01",
+      "title": "Jauvex",
+      "authors": "reindent",
+      "source": "GitHub",
+      "url": "https://github.com/reindent/jauvex",
+      "type": "tool",
+      "dateAdded": "2026-10-01",
+      "summary": "Desktop app for side-by-side voice and text control of multiple coding agents with Kanban workflows and self-development.",
+      "tags": [
+        "voice",
+        "multi-agent",
+        "desktop",
+        "workflow"
+      ],
+      "usecase": "Use it to orchestrate Claude, Codex and Grok sessions into automated voice-driven routines that the app can update itself.",
+      "returning": false
+    },
+    {
+      "id": "agentrun-2026-10-01",
+      "title": "AgentRun",
+      "authors": "Parcha-ai",
+      "source": "GitHub",
+      "url": "https://github.com/Parcha-ai/agentrun",
+      "type": "harness",
+      "dateAdded": "2026-10-01",
+      "summary": "Open DSL and runtime that converts agent traces into reusable workflows mixing tools, code, Jev decisions and agent steps.",
+      "tags": [
+        "dsl",
+        "workflow",
+        "jev",
+        "pi"
+      ],
+      "usecase": "Use it to extract repeatable agent work into inspectable workflows that avoid full loops where code or decisions suffice.",
+      "returning": false
+    },
+    {
+      "id": "yuxi-2026-10-01",
+      "title": "Yuxi",
+      "authors": "xerrors",
+      "source": "GitHub",
+      "url": "https://github.com/xerrors/Yuxi",
+      "type": "harness",
+      "dateAdded": "2026-10-01",
+      "summary": "Agent harness that integrates LightRAG knowledge bases and knowledge graphs on LangChain with MCP support.",
+      "tags": [
+        "rag",
+        "knowledge-graph",
+        "langchain",
+        "mcp"
+      ],
+      "usecase": "Use it to build agents that reason over structured RAG and graphs while exposing tools via MCP.",
+      "returning": false
+    },
+    {
+      "id": "deja-vu-2026-10-01",
+      "title": "deja-vu",
+      "authors": "vshulcz",
+      "source": "GitHub",
+      "url": "https://github.com/vshulcz/deja-vu",
+      "type": "tool",
+      "dateAdded": "2026-10-01",
+      "summary": "Accurate low-cost memory layer that indexes searchable session history across 32-plus coding agent harnesses.",
+      "tags": [
+        "memory",
+        "session",
+        "mcp",
+        "history"
+      ],
+      "usecase": "Use it to give agents persistent recall of prior Claude Code, Codex or Cursor sessions through MCP.",
+      "returning": false
+    },
+    {
+      "id": "gentle-ai-2026-10-01",
+      "title": "gentle-ai",
+      "authors": "Gentleman-Programming",
+      "source": "GitHub",
+      "url": "https://github.com/Gentleman-Programming/gentle-ai",
+      "type": "tool",
+      "dateAdded": "2026-10-01",
+      "summary": "Configuration layer that standardizes persistent memory and tooling across the coding agents you already run.",
+      "tags": [
+        "config",
+        "multi-harness",
+        "memory"
+      ],
+      "usecase": "Use it to apply shared memory and setup patterns to Claude Code, Cursor, OpenCode, Codex and Pi in one place.",
+      "returning": false
+    },
+    {
+      "id": "trpc-agent-go-2026-10-01",
+      "title": "trpc-agent-go",
+      "authors": "trpc-group",
+      "source": "GitHub",
+      "url": "https://github.com/trpc-group/trpc-agent-go",
+      "type": "repo",
+      "dateAdded": "2026-10-01",
+      "summary": "Go framework for production agent systems featuring graph workflows, tools, memory, A2A, MCP, eval and observability.",
+      "tags": [
+        "go",
+        "framework",
+        "multi-agent",
+        "mcp"
+      ],
+      "usecase": "Use it to build multi-agent systems in Go with full production primitives for workflows and evaluation.",
+      "returning": false
+    },
+    {
+      "id": "show-hn-autobox-make-your-agents-sandbox-themselves-2026-10-01",
+      "title": "Show HN: Autobox – Make your agents sandbox themselves",
+      "authors": "freakynit",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49920001",
+      "type": "article",
+      "dateAdded": "2026-10-01",
+      "summary": "Autobox targets Mac users who skip full sandboxes by attaching permissions to every tool call and using clonefile for instant writable repo copies that sync back only after verification. Isolation becomes the default path with V8 and seatbelt layers instead of requiring separate setup.",
+      "tags": [
+        "sandbox",
+        "macos",
+        "show-hn"
+      ]
+    },
+    {
+      "id": "show-hn-agentrun-dsl-to-turn-agents-into-workflows-2026-10-01",
+      "title": "Show HN: AgentRun – DSL to turn agents into workflows",
+      "authors": "miguelrios",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49821438",
+      "type": "release",
+      "dateAdded": "2026-10-01",
+      "summary": "AgentRun open-sources a DSL that extracts repeatable agent work into inspectable workflows mixing tool calls, code nodes, Jev decisions and full agent steps. Traces become reusable pipelines that keep budgets and permissions under application control.",
+      "tags": [
+        "dsl",
+        "workflow",
+        "release",
+        "show-hn"
+      ]
+    },
     {
       "id": "arcbox-2026-09-30",
       "title": "ArcBox",
@@ -10366,150 +10521,6 @@
         "knowledge-reasoning-separation",
         "efficiency",
         "foundation-models"
-      ]
-    },
-    {
-      "id": "littlelearner-language-models-under-pedagogically-controlled-knowledge-exposure-2026-08-16",
-      "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
-      "authors": "Fanfei Li, Jana Zeller, Manuel Prada-Corral, Thaddäus Wiedemer, Prasanna Mayilvahanan, Ryan Cotterell, Wieland Brendel",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13545",
-      "type": "paper",
-      "dateAdded": "2026-08-16",
-      "summary": "The authors construct LittleCurriculum, an 88B-token corpus filtered to U.S. K-5 material that excludes higher-grade concepts, facts, and vocabulary, then train a 5B model (LittleLearner) from scratch on it. The resulting sandbox yields a model with clear, curriculum-mapped knowledge boundaries that still supports open-ended evaluation. Post-training and in-context learning improve utilization of in-scope knowledge but do not lift out-of-scope capabilities, establishing a controlled testbed for studying acquisition under known exposure.",
-      "tags": [
-        "pretraining",
-        "curriculum",
-        "knowledge-boundaries",
-        "sandbox"
-      ]
-    },
-    {
-      "id": "dartree-speculative-diffusion-decoding-with-autoregressive-draft-trees-2026-08-16",
-      "title": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
-      "authors": "Tianyi Li, Yaxin Luo, Xinyi Shang, Zhiqiang Shen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13524",
-      "type": "paper",
-      "dateAdded": "2026-08-16",
-      "summary": "DARTree is a training-free speculative method that builds a fixed-width candidate tree from a diffusion drafter, scores nodes in batch, then applies best-first pruning before verification while extending a pretrained AR correction head from chains to trees. It decouples AR-head inference from sequential heap operations. Across math, code, and chat benchmarks it records the highest average acceptance lengths (up to 12.97 tokens per round) and lossless speedups (up to 9.73×) relative to strong baselines.",
-      "tags": [
-        "speculative-decoding",
-        "diffusion",
-        "trees",
-        "efficiency"
-      ]
-    },
-    {
-      "id": "defensive-boosting-for-online-probabilistic-forecasting-2026-08-16",
-      "title": "Defensive Boosting for Online Probabilistic Forecasting",
-      "authors": "Georgy Noarov, Aaron Roth",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13554",
-      "type": "paper",
-      "dateAdded": "2026-08-16",
-      "summary": "The Defensive Booster simultaneously matches online gradient boosting’s Brier-score competition against the span of a weak class H on every adaptive sequence and, whenever a smooth weak-learning condition holds, drives classification error to zero at the rates of online weak-to-strong boosting. It operationalizes the dual view of boosting: high randomized error produces a smooth hard-core certificate that weak learning has failed. A strongly adaptive variant holds on every interval, and the algorithm uses only a single weak learner while outperforming ensemble baselines in both accuracy and runtime.",
-      "tags": [
-        "online-learning",
-        "boosting",
-        "probabilistic-forecasting",
-        "theory"
-      ]
-    },
-    {
-      "id": "measuring-task-agnostic-training-data-influence-across-language-model-pretrainin-2026-08-16",
-      "title": "Measuring Task-Agnostic Training Data Influence Across Language Model Pretraining",
-      "authors": "Yuto Nishida, Hirokazu Kiyomaru, Yusuke Oda, Takashi Kodama, Chaoran Liu, Daisuke Kawahara, Yusuke Miyao, Max Müller-Eberstein, Masaru Isonuma",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13515",
-      "type": "paper",
-      "dateAdded": "2026-08-16",
-      "summary": "Influence of a training example is defined by how much its gradient update reduces squared distance to the final parameters of a pretraining run, estimated from intermediate checkpoints without retraining or any downstream task. Applied to 18 Pythia and PolyPythia configurations, the measure reveals a systematic crossover: literature-related data dominate early trajectory alignment while STEM data dominate later stages. The qualitative pattern is consistent across model scales and provides a trajectory-level view complementary to task-specific attribution.",
-      "tags": [
-        "data-influence",
-        "pretraining",
-        "trajectory",
-        "attribution"
-      ]
-    },
-    {
-      "id": "saeverbalizer-generating-explanations-for-sparse-autoencoder-features-via-repres-2026-08-16",
-      "title": "SAEVerbalizer: Generating Explanations for Sparse Autoencoder Features via Representation Verbalization",
-      "authors": "Weihan Meng, Hongzhu Guo, Yi Jing, Dewen Liu, Zijun Yao, Xiaozhi Wang, Lei Hou, Juanzi Li",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13538",
-      "type": "paper",
-      "dateAdded": "2026-08-16",
-      "summary": "SAEVerbalizer injects SAE decoder directions into an LLM’s residual stream and fine-tunes downstream layers so the model produces natural-language explanations of the injected features. Once trained, explanations are generated directly from decoder directions without collecting behavioral evidence. The verbalizer generalizes to unseen features, transfers across SAE dictionaries, and, with a light adapter, works on features from other base models; multi-direction injections combine meanings while polarity flips reverse them.",
-      "tags": [
-        "interpretability",
-        "sparse-autoencoders",
-        "verbalization",
-        "mechanistic"
-      ]
-    },
-    {
-      "id": "toward-a-gricean-retreat-probing-llms-for-knowledge-boundaries-and-referent-spec-2026-08-16",
-      "title": "Toward a Gricean Retreat: Probing LLMs for Knowledge Boundaries and Referent Specificity",
-      "authors": "Dananjay Srinivas, Saksham Khatwani, Maria Pacheco",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13484",
-      "type": "paper",
-      "dateAdded": "2026-08-16",
-      "summary": "Using a T-REx benchmark that varies entity familiarity and referent specificity, the authors show that LLM activations encode both whether a referent lies inside the knowledge boundary and the specificity of the forthcoming generation. Despite these signals, models strongly prefer specific referents even for unknown entities and even when correct generic alternatives are offered. The substrate for a cooperative Gricean retreat (trading informativeness for truthfulness) is present, but the generation policy that would couple the two signals is not.",
-      "tags": [
-        "knowledge-boundaries",
-        "hallucination",
-        "pragmatics",
-        "specificity"
-      ]
-    },
-    {
-      "id": "vtoken-token-level-virtualization-for-reclaimable-kv-caches-2026-08-16",
-      "title": "vToken: Token-Level Virtualization for Reclaimable KV Caches",
-      "authors": "Yuanhang Gao, Xiangrui Yang, Yuanfeng Chen, Hongjia Chen, Qianru Lv, Wenfei Wu, Dongsheng Li",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13263",
-      "type": "paper",
-      "dateAdded": "2026-08-16",
-      "summary": "vToken inserts a lightweight token-level virtualization layer over PagedAttention that decouples logical token liveness from physical block placement via indirection tables and asynchronous repacking of live tokens. It preserves existing kernels and CUDA Graphs while eliminating intra-block fragmentation caused by token-granularity eviction. Integrated in vLLM, it cuts retained KV blocks 27–72 percent, raises SLA throughput up to 1.37×, and doubles feasible concurrency under tight active-KV budgets, reducing per-policy integration code from hundreds of lines to under fifty.",
-      "tags": [
-        "KV-cache",
-        "serving",
-        "virtualization",
-        "systems"
-      ]
-    },
-    {
-      "id": "longearth-r1-benchmarking-and-aligning-vision-language-models-for-long-horizon-e-2026-08-16",
-      "title": "LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning",
-      "authors": "Yupan Ding, Jing Xiao, Zhenyuan Zhang, Chaofeng Chen, Liang Liao, Gui-Song Xia, Mi Wang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13344",
-      "type": "paper",
-      "dateAdded": "2026-08-16",
-      "summary": "LongEarth-Bench supplies roughly 120k QA samples over sequences averaging 15 frames (up to 30) spanning evolution summarization, spatial change, anomaly detection, and future inference, with a 30k subset containing structured reasoning traces. LongEarth is first SFT’d with explicit sequence identifiers and chain-of-thought, then LongEarth-R1 is refined by group-relative policy optimization using format, temporal, and spatial rewards. The resulting model leads all 12 long-sequence tasks while remaining competitive on standard remote-sensing benchmarks.",
-      "tags": [
-        "long-horizon",
-        "earth-observation",
-        "VLM",
-        "RL"
-      ]
-    },
-    {
-      "id": "refusing-intent-not-form-wrapper-based-intent-group-supervision-for-llm-safety-2026-08-16",
-      "title": "Refusing Intent, Not Form: Wrapper-Based Intent-Group Supervision for LLM Safety",
-      "authors": "Ping Wu, Haibo Tong, Feifei Zhao, Han Shen, Yu Shi, Yilin Zhao, Sicheng Shen, Guobin Shen, Yun Luo, Yi Zeng",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13304",
-      "type": "paper",
-      "dateAdded": "2026-08-16",
-      "summary": "WIFA automatically pairs wrapped harmful prompts with structurally matched wrapped benign counterexamples, creating intent groups without external teachers or per-wrapper labels. Two fine-tuning recipes use this data: WIFA-Boost for high transformed-harmful refusal and A-GCRT, which regularizes decision scores within intent groups and anchors harmful versus benign groups across a margin. On Qwen and Llama the methods raise refusal of transformed harmful queries while lowering over-refusal on OR-Bench relative to both base models and reproduced baselines.",
-      "tags": [
-        "safety",
-        "refusal",
-        "intent",
-        "fine-tuning"
       ]
     }
   ]

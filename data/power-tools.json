@@ -1,7 +1,152 @@
 {
-  "lastUpdated": "2026-09-30",
-  "count": 358,
+  "lastUpdated": "2026-10-01",
+  "count": 365,
   "tools": [
+    {
+      "slug": "agentrun",
+      "title": "AgentRun",
+      "authors": "Parcha-ai",
+      "source": "GitHub",
+      "url": "https://github.com/Parcha-ai/agentrun",
+      "type": "harness",
+      "summary": "Open DSL and runtime that converts agent traces into reusable workflows mixing tools, code, Jev decisions and agent steps.",
+      "usecase": "Use it to extract repeatable agent work into inspectable workflows that avoid full loops where code or decisions suffice.",
+      "tags": [
+        "dsl",
+        "workflow",
+        "jev",
+        "pi"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "deja-vu",
+      "title": "deja-vu",
+      "authors": "vshulcz",
+      "source": "GitHub",
+      "url": "https://github.com/vshulcz/deja-vu",
+      "type": "tool",
+      "summary": "Accurate low-cost memory layer that indexes searchable session history across 32-plus coding agent harnesses.",
+      "usecase": "Use it to give agents persistent recall of prior Claude Code, Codex or Cursor sessions through MCP.",
+      "tags": [
+        "memory",
+        "session",
+        "mcp",
+        "history"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "gentle-ai",
+      "title": "gentle-ai",
+      "authors": "Gentleman-Programming",
+      "source": "GitHub",
+      "url": "https://github.com/Gentleman-Programming/gentle-ai",
+      "type": "tool",
+      "summary": "Configuration layer that standardizes persistent memory and tooling across the coding agents you already run.",
+      "usecase": "Use it to apply shared memory and setup patterns to Claude Code, Cursor, OpenCode, Codex and Pi in one place.",
+      "tags": [
+        "config",
+        "multi-harness",
+        "memory"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "jauvex",
+      "title": "Jauvex",
+      "authors": "reindent",
+      "source": "GitHub",
+      "url": "https://github.com/reindent/jauvex",
+      "type": "tool",
+      "summary": "Desktop app for side-by-side voice and text control of multiple coding agents with Kanban workflows and self-development.",
+      "usecase": "Use it to orchestrate Claude, Codex and Grok sessions into automated voice-driven routines that the app can update itself.",
+      "tags": [
+        "voice",
+        "multi-agent",
+        "desktop",
+        "workflow"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbank",
+      "title": "Sandbank",
+      "authors": "chekusu",
+      "source": "GitHub",
+      "url": "https://github.com/chekusu/sandbank",
+      "type": "harness",
+      "summary": "Unified workspace harness that keeps agent identity, memory and artifacts while scheduling across multiple sandbox backends.",
+      "usecase": "Use it to materialize a persistent Workspace protocol then dispatch tasks to E2B, cloud or local runtimes as needed.",
+      "tags": [
+        "workspace",
+        "multi-backend",
+        "harness"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "trpc-agent-go",
+      "title": "trpc-agent-go",
+      "authors": "trpc-group",
+      "source": "GitHub",
+      "url": "https://github.com/trpc-group/trpc-agent-go",
+      "type": "repo",
+      "summary": "Go framework for production agent systems featuring graph workflows, tools, memory, A2A, MCP, eval and observability.",
+      "usecase": "Use it to build multi-agent systems in Go with full production primitives for workflows and evaluation.",
+      "tags": [
+        "go",
+        "framework",
+        "multi-agent",
+        "mcp"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "yuxi",
+      "title": "Yuxi",
+      "authors": "xerrors",
+      "source": "GitHub",
+      "url": "https://github.com/xerrors/Yuxi",
+      "type": "harness",
+      "summary": "Agent harness that integrates LightRAG knowledge bases and knowledge graphs on LangChain with MCP support.",
+      "usecase": "Use it to build agents that reason over structured RAG and graphs while exposing tools via MCP.",
+      "tags": [
+        "rag",
+        "knowledge-graph",
+        "langchain",
+        "mcp"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "env",
       "title": "Agent Substrate Env",
