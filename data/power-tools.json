@@ -1,7 +1,204 @@
 {
-  "lastUpdated": "2026-10-01",
-  "count": 365,
+  "lastUpdated": "2026-10-02",
+  "count": 374,
   "tools": [
+    {
+      "slug": "agent-lightning",
+      "title": "Agent Lightning",
+      "authors": "Microsoft",
+      "source": "GitHub",
+      "url": "https://github.com/microsoft/agent-lightning",
+      "type": "harness",
+      "summary": "Training-oriented harness with optimization loops over agent rollouts for policy improvement rather than one-shot scoring.",
+      "usecase": "Use it to close the loop from agent trajectories back into better behavior via APO-style training.",
+      "tags": [
+        "training",
+        "evals",
+        "optimization",
+        "microsoft",
+        "rollouts"
+      ],
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentvm",
+      "title": "AgentVM",
+      "authors": "deepclause",
+      "source": "GitHub",
+      "url": "https://github.com/deepclause/agentvm",
+      "type": "repo",
+      "summary": "Lightweight Node.js WASM-based Alpine Linux VM for agents with shell, networking, firewall and persistence for isolated command execution.",
+      "usecase": "Use it to run agent shell commands inside a worker-thread Linux VM with DHCP, port forwards and snapshottable state.",
+      "tags": [
+        "wasm",
+        "linux-vm",
+        "sandbox",
+        "nodejs",
+        "alpine"
+      ],
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "autobox",
+      "title": "Autobox",
+      "authors": "freakynit",
+      "source": "GitHub",
+      "url": "https://github.com/freakynit/autobox",
+      "type": "tool",
+      "summary": "Low-friction sandbox that attaches per-tool permissions and instant clonefile repo copies so agents can destroy a writable tree then sync back.",
+      "usecase": "Use it on M-series Macs to let hesitant teams get best-effort isolation without full VM setup friction.",
+      "tags": [
+        "sandbox",
+        "permissions",
+        "clonefile",
+        "macos",
+        "low-friction"
+      ],
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "castor",
+      "title": "Castor",
+      "authors": "castor-ai / claytonia et al.",
+      "source": "GitHub",
+      "url": "https://github.com/castor-ai/castor",
+      "type": "harness",
+      "summary": "Secure execution layer that turns every agent tool call into a kernel syscall with budgets, immutable journals, and suspend/resume.",
+      "usecase": "Use it to bound agent power with structural budgets and pause/resume without replaying costly early steps.",
+      "tags": [
+        "execution-layer",
+        "syscall",
+        "budget",
+        "journal",
+        "suspend"
+      ],
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cli-anything",
+      "title": "CLI-Anything",
+      "authors": "HKUDS",
+      "source": "GitHub",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "type": "repo",
+      "summary": "Hub and harnesses that wrap existing CLI software into agent-native interfaces with per-app agent-harness modules and plugins.",
+      "usecase": "Use it to expose Blender, GIMP, Ollama, n8n or dozens of other tools as structured agent skills without rewriting the apps.",
+      "tags": [
+        "cli",
+        "agent-native",
+        "skills",
+        "harness",
+        "plugins"
+      ],
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harbor",
+      "title": "Harbor",
+      "authors": "various / Terminal-Bench related",
+      "source": "GitHub",
+      "url": "https://github.com/laude-institute/harbor",
+      "type": "harness",
+      "summary": "Generalized harness for evaluating and improving agents at scale, paired with terminal benchmarks.",
+      "usecase": "Use it to run large-scale agent rollouts against Terminal-Bench style tasks with consistent isolation and scoring.",
+      "tags": [
+        "eval-harness",
+        "terminal-bench",
+        "scale",
+        "improvement"
+      ],
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "loopx",
+      "title": "LoopX",
+      "authors": "loopx-project",
+      "source": "GitHub",
+      "url": "https://github.com/loopx-project/loopx",
+      "type": "harness",
+      "summary": "Local-first control plane with durable state kernel for long-horizon agents and teams, goals, evidence, heartbeats, and cross-runtime handoffs.",
+      "usecase": "Use it to keep multi-day coding or research goals alive across sessions with claims, leases, reward memory, and recoverable peer ownership.",
+      "tags": [
+        "control-plane",
+        "long-horizon",
+        "durable-state",
+        "heartbeat",
+        "local-first"
+      ],
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mitos",
+      "title": "Mitos",
+      "authors": "snapshot-fork microVM projects",
+      "source": "GitHub",
+      "url": "https://github.com/mitos-ai/mitos",
+      "type": "tool",
+      "summary": "Snapshot-fork microVM sandboxes that give agent sessions clean isolated starting states with declarative lifecycle and parallel execution.",
+      "usecase": "Use it to fork agent sandboxes from snapshots so each trial starts clean and can run in parallel without shared state.",
+      "tags": [
+        "microvm",
+        "snapshot",
+        "fork",
+        "sandbox",
+        "parallel"
+      ],
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "paperclip",
+      "title": "Paperclip",
+      "authors": "paperclipai",
+      "source": "GitHub",
+      "url": "https://github.com/paperclipai/paperclip",
+      "type": "harness",
+      "summary": "Open-source app and server for managing teams of AI agents at work with org charts, budgets, goals, adapters, and cost tracking.",
+      "usecase": "Use it to hire heterogeneous agents as employees, assign company goals, and track handoffs and spend from one dashboard.",
+      "tags": [
+        "orchestration",
+        "multi-agent",
+        "governance",
+        "dashboard",
+        "adapters"
+      ],
+      "firstSeen": "2026-10-02",
+      "lastSeen": "2026-10-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agentrun",
       "title": "AgentRun",
