@@ -1,7 +1,188 @@
 {
-  "lastUpdated": "2026-10-02",
-  "count": 374,
+  "lastUpdated": "2026-10-03",
+  "count": 383,
   "tools": [
+    {
+      "slug": "agent-harness",
+      "title": "agentic-harness (skills)",
+      "authors": "codejunkie99",
+      "source": "GitHub",
+      "url": "https://github.com/codejunkie99/agent-harness",
+      "type": "repo",
+      "summary": "File-based drop-in operating system of skills and workflows for any file-aware coding agent across SaaS, CLI, MCP, and mobile.",
+      "usecase": "Use it to give Claude Code or similar agents a durable spec-to-release cycle with verification gates.",
+      "tags": [
+        "skills",
+        "workflow",
+        "file-based"
+      ],
+      "firstSeen": "2026-10-03",
+      "lastSeen": "2026-10-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "assay",
+      "title": "Assay",
+      "authors": "awss1i",
+      "source": "GitHub",
+      "url": "https://github.com/awss1i/assay",
+      "type": "tool",
+      "summary": "Deterministic QA CLI that drives web pages with Playwright to find self-contradictions without needing written tests or an LLM.",
+      "usecase": "Use it as a post-edit stop hook inside any coding harness to catch UI bugs cheaply.",
+      "tags": [
+        "qa",
+        "eval",
+        "playwright"
+      ],
+      "firstSeen": "2026-10-03",
+      "lastSeen": "2026-10-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cordum-io",
+      "title": "Cordum Edge",
+      "authors": "cordum-io",
+      "source": "GitHub",
+      "url": "https://github.com/cordum-io",
+      "type": "tool",
+      "summary": "Local firewall and sandbox layer that contains AI coding agents with policy enforcement outside the model.",
+      "usecase": "Use it to wrap any coding agent so destructive actions hit a local policy gate first.",
+      "tags": [
+        "firewall",
+        "sandbox",
+        "policy"
+      ],
+      "firstSeen": "2026-10-03",
+      "lastSeen": "2026-10-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ecc",
+      "title": "ECC",
+      "authors": "affaan-m",
+      "source": "GitHub",
+      "url": "https://github.com/affaan-m/ECC",
+      "type": "harness",
+      "summary": "Cross-harness operating system of skills, rules, hooks, and MCP conventions that works across multiple coding agents.",
+      "usecase": "Use it to install a shared skill pack and control pane so Claude Code, Codex, and others share the same workflows.",
+      "tags": [
+        "skills",
+        "cross-harness",
+        "os"
+      ],
+      "firstSeen": "2026-10-03",
+      "lastSeen": "2026-10-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "freestyle",
+      "title": "Freestyle",
+      "authors": "Freestyle",
+      "source": "freestyle.sh",
+      "url": "https://freestyle.sh",
+      "type": "tool",
+      "summary": "Cloud sandboxes purpose-built for coding agents with full Linux, hardware virtualization, fast starts, and memory-level forking.",
+      "usecase": "Use it to give agents EC2-like environments that fork in under 400 ms while preserving running state.",
+      "tags": [
+        "sandbox",
+        "vm",
+        "fork"
+      ],
+      "firstSeen": "2026-10-03",
+      "lastSeen": "2026-10-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "kern",
+      "title": "Kern",
+      "authors": "getkern",
+      "source": "GitHub",
+      "url": "https://github.com/getkern/kern",
+      "type": "tool",
+      "summary": "Daemonless rootless container runtime and sandbox that starts real OCI boxes in a few milliseconds for agent tool calls and LLM-generated code, with MCP bindings.",
+      "usecase": "Use it to execute untrusted agent code in kernel-enforced namespaces and cgroups with zero resident memory when idle.",
+      "tags": [
+        "sandbox",
+        "container",
+        "mcp",
+        "daemonless"
+      ],
+      "firstSeen": "2026-10-03",
+      "lastSeen": "2026-10-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "opencode-harness",
+      "title": "OpenCode Harness",
+      "authors": "samarailly51-pixel",
+      "source": "GitHub",
+      "url": "https://github.com/samarailly51-pixel/opencode-harness",
+      "type": "harness",
+      "summary": "Clean-room model-agnostic harness that standardizes task execution, tool calling, traces, and evaluation reports for coding agents.",
+      "usecase": "Use it to run and benchmark Claude Code-class agents across providers with consistent eval output.",
+      "tags": [
+        "clean-room",
+        "eval",
+        "harness"
+      ],
+      "firstSeen": "2026-10-03",
+      "lastSeen": "2026-10-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ponytail",
+      "title": "Ponytail",
+      "authors": "DietrichGebert",
+      "source": "GitHub",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "type": "repo",
+      "summary": "Skill pack that forces coding agents into lazy-senior-dev mode (YAGNI, reuse, minimal code) across multiple harnesses.",
+      "usecase": "Use it to inject a consistent minimalism policy into DeepSeek Harness or other plugin hosts.",
+      "tags": [
+        "skills",
+        "style",
+        "minimal"
+      ],
+      "firstSeen": "2026-10-03",
+      "lastSeen": "2026-10-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "relay",
+      "title": "Relay",
+      "authors": "rsathwik07",
+      "source": "relayevals.com",
+      "url": "https://relayevals.com",
+      "type": "harness",
+      "summary": "Recovery-and-verify harness that loops coding agents on failing checks inside fresh sandboxes until tests pass, then opens a clean PR.",
+      "usecase": "Use it to turn flaky agent runs into reliable diffs by retaining failure lessons across retries.",
+      "tags": [
+        "recovery",
+        "verify",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-03",
+      "lastSeen": "2026-10-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-lightning",
       "title": "Agent Lightning",

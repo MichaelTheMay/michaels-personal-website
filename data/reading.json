@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-02",
+  "lastUpdated": "2026-10-03",
   "issues": [
+    {
+      "date": "2026-10-03",
+      "title": "Daemonless sandboxes and universal control planes for coding agents",
+      "blurb": "Today's picks center on clone-and-run isolation layers, Rust and plugin harnesses, and HTTP adapters that let power users wire any model loop into real execution without household IDEs. Fresh sandboxes and orchestration runtimes dominate, emphasizing kernel boundaries, session normalization, and remote control over brand-name chatbots."
+    },
     {
       "date": "2026-10-02",
       "title": "Declarative sandboxes and control planes that keep agent loops alive",
@@ -225,14 +230,163 @@
       "date": "2026-08-19",
       "title": "Self-improving agents, reward hacking, and long-horizon trust",
       "blurb": "Fresh results expose variance and order sensitivity in memory-based self-improvement, show debate curbing judge hacking in RLAIF, and introduce monitors for ontological drift plus neurosymbolic world models. Complementary work tightens LLM judging under risk controls, surfaces MoE hallucination signals, and questions the self-consistency of preference estimates, while an essay reframes mathematical values under capable AI."
-    },
-    {
-      "date": "2026-08-18",
-      "title": "Agent collectives, incremental memory, and grounded governance",
-      "blurb": "Fresh work probes how language-model agents interact and coordinate at scale, schedules memory capacity for long contexts, and builds stricter mechanisms for compliance, planning specifications, and knowledge stores that agents themselves write."
     }
   ],
   "items": [
+    {
+      "id": "kern-2026-10-03",
+      "title": "Kern",
+      "authors": "getkern",
+      "source": "GitHub",
+      "url": "https://github.com/getkern/kern",
+      "type": "tool",
+      "dateAdded": "2026-10-03",
+      "summary": "Daemonless rootless container runtime and sandbox that starts real OCI boxes in a few milliseconds for agent tool calls and LLM-generated code, with MCP bindings.",
+      "tags": [
+        "sandbox",
+        "container",
+        "mcp",
+        "daemonless"
+      ],
+      "usecase": "Use it to execute untrusted agent code in kernel-enforced namespaces and cgroups with zero resident memory when idle.",
+      "returning": false
+    },
+    {
+      "id": "opencode-harness-2026-10-03",
+      "title": "OpenCode Harness",
+      "authors": "samarailly51-pixel",
+      "source": "GitHub",
+      "url": "https://github.com/samarailly51-pixel/opencode-harness",
+      "type": "harness",
+      "dateAdded": "2026-10-03",
+      "summary": "Clean-room model-agnostic harness that standardizes task execution, tool calling, traces, and evaluation reports for coding agents.",
+      "tags": [
+        "clean-room",
+        "eval",
+        "harness"
+      ],
+      "usecase": "Use it to run and benchmark Claude Code-class agents across providers with consistent eval output.",
+      "returning": false
+    },
+    {
+      "id": "agentic-harness-skills-2026-10-03",
+      "title": "agentic-harness (skills)",
+      "authors": "codejunkie99",
+      "source": "GitHub",
+      "url": "https://github.com/codejunkie99/agent-harness",
+      "type": "repo",
+      "dateAdded": "2026-10-03",
+      "summary": "File-based drop-in operating system of skills and workflows for any file-aware coding agent across SaaS, CLI, MCP, and mobile.",
+      "tags": [
+        "skills",
+        "workflow",
+        "file-based"
+      ],
+      "usecase": "Use it to give Claude Code or similar agents a durable spec-to-release cycle with verification gates.",
+      "returning": false
+    },
+    {
+      "id": "ecc-2026-10-03",
+      "title": "ECC",
+      "authors": "affaan-m",
+      "source": "GitHub",
+      "url": "https://github.com/affaan-m/ECC",
+      "type": "harness",
+      "dateAdded": "2026-10-03",
+      "summary": "Cross-harness operating system of skills, rules, hooks, and MCP conventions that works across multiple coding agents.",
+      "tags": [
+        "skills",
+        "cross-harness",
+        "os"
+      ],
+      "usecase": "Use it to install a shared skill pack and control pane so Claude Code, Codex, and others share the same workflows.",
+      "returning": false
+    },
+    {
+      "id": "freestyle-2026-10-03",
+      "title": "Freestyle",
+      "authors": "Freestyle",
+      "source": "freestyle.sh",
+      "url": "https://freestyle.sh",
+      "type": "tool",
+      "dateAdded": "2026-10-03",
+      "summary": "Cloud sandboxes purpose-built for coding agents with full Linux, hardware virtualization, fast starts, and memory-level forking.",
+      "tags": [
+        "sandbox",
+        "vm",
+        "fork"
+      ],
+      "usecase": "Use it to give agents EC2-like environments that fork in under 400 ms while preserving running state.",
+      "returning": false
+    },
+    {
+      "id": "cordum-edge-2026-10-03",
+      "title": "Cordum Edge",
+      "authors": "cordum-io",
+      "source": "GitHub",
+      "url": "https://github.com/cordum-io",
+      "type": "tool",
+      "dateAdded": "2026-10-03",
+      "summary": "Local firewall and sandbox layer that contains AI coding agents with policy enforcement outside the model.",
+      "tags": [
+        "firewall",
+        "sandbox",
+        "policy"
+      ],
+      "usecase": "Use it to wrap any coding agent so destructive actions hit a local policy gate first.",
+      "returning": false
+    },
+    {
+      "id": "ponytail-2026-10-03",
+      "title": "Ponytail",
+      "authors": "DietrichGebert",
+      "source": "GitHub",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "type": "repo",
+      "dateAdded": "2026-10-03",
+      "summary": "Skill pack that forces coding agents into lazy-senior-dev mode (YAGNI, reuse, minimal code) across multiple harnesses.",
+      "tags": [
+        "skills",
+        "style",
+        "minimal"
+      ],
+      "usecase": "Use it to inject a consistent minimalism policy into DeepSeek Harness or other plugin hosts.",
+      "returning": false
+    },
+    {
+      "id": "assay-2026-10-03",
+      "title": "Assay",
+      "authors": "awss1i",
+      "source": "GitHub",
+      "url": "https://github.com/awss1i/assay",
+      "type": "tool",
+      "dateAdded": "2026-10-03",
+      "summary": "Deterministic QA CLI that drives web pages with Playwright to find self-contradictions without needing written tests or an LLM.",
+      "tags": [
+        "qa",
+        "eval",
+        "playwright"
+      ],
+      "usecase": "Use it as a post-edit stop hook inside any coding harness to catch UI bugs cheaply.",
+      "returning": false
+    },
+    {
+      "id": "relay-2026-10-03",
+      "title": "Relay",
+      "authors": "rsathwik07",
+      "source": "relayevals.com",
+      "url": "https://relayevals.com",
+      "type": "harness",
+      "dateAdded": "2026-10-03",
+      "summary": "Recovery-and-verify harness that loops coding agents on failing checks inside fresh sandboxes until tests pass, then opens a clean PR.",
+      "tags": [
+        "recovery",
+        "verify",
+        "sandbox"
+      ],
+      "usecase": "Use it to turn flaky agent runs into reliable diffs by retaining failure lessons across retries.",
+      "returning": false
+    },
     {
       "id": "loopx-2026-10-02",
       "title": "LoopX",
@@ -10405,150 +10559,6 @@
         "AI-impact",
         "foundations",
         "essay"
-      ]
-    },
-    {
-      "id": "what-do-compliance-detectors-read-an-audit-of-activation-probes-and-guard-models-2026-08-18",
-      "title": "What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models",
-      "authors": "Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, Pratinav Seth",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16852",
-      "type": "paper",
-      "dateAdded": "2026-08-18",
-      "summary": "Compliance detectors for language models exhibit rule blindness: deleting, permuting, or substituting the governing rule leaves detection accuracy essentially unchanged across guards and activation probes. A purpose-built crossed-rule benchmark confirms the failure, while step-by-step reasoning escapes it; the authors introduce a training-free Internal Compliance Score that enables large-scale auditing yet still falls short of non-trivial baselines under pre-registered criteria.",
-      "tags": [
-        "compliance",
-        "guards",
-        "mechanistic-interpretability",
-        "auditing"
-      ]
-    },
-    {
-      "id": "policy-iteration-with-human-feedback-bringing-post-training-rl-to-in-context-lea-2026-08-18",
-      "title": "Policy Iteration with Human Feedback: Bringing Post-Training RL to In-context Learning",
-      "authors": "Minh-Ha Nguyen, Cathy Shyr",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16831",
-      "type": "paper",
-      "dateAdded": "2026-08-18",
-      "summary": "PIHF treats a pretrained language model as a fixed-weight execution substrate and moves persistent revision into a versioned natural-language policy and tool set reviewed by an LM critic and clinical expert. Across cumulative ablations on ultra-rare-disease benchmarks the derived policy lifts Recall@1 by roughly 30 points on both proprietary and open-weight executors spanning 3 to 49 billion active parameters.",
-      "tags": [
-        "in-context-learning",
-        "policy-iteration",
-        "human-feedback",
-        "medical-AI"
-      ]
-    },
-    {
-      "id": "proteus-incremental-memory-activation-for-long-context-sequence-modeling-2026-08-18",
-      "title": "Proteus: Incremental Memory Activation for Long-Context Sequence Modeling",
-      "authors": "Reza Bayat, Ali Behrouz, Vahab Mirrokni, Aaron Courville",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16844",
-      "type": "paper",
-      "dateAdded": "2026-08-18",
-      "summary": "Static memory states let early tokens pollute capacity; Proteus instead expands effective memory capacity incrementally as context grows, imposing an early bottleneck that forces better compression while unlocking fresh slots later. Applied at zero extra cost to SWLA, Comba, Titans and Hope-Attention it yields consistent gains on language modeling, reasoning and long-context retrieval that increase with sequence length.",
-      "tags": [
-        "long-context",
-        "memory",
-        "sequence-models",
-        "architecture"
-      ]
-    },
-    {
-      "id": "physics-of-agents-statistical-mechanics-predicts-collective-behavior-of-ai-agent-2026-08-18",
-      "title": "Physics of Agents: Statistical Mechanics Predicts Collective Behavior of AI Agents",
-      "authors": "Batu El, Jinhee Paeng, Fatih Dinc, Shiye Su, Mete Erdogan, Aneesh Pappu, Haotian Ye, Wanjia Zhao, Surya Ganguli, James Zou",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16578",
-      "type": "paper",
-      "dateAdded": "2026-08-18",
-      "summary": "Over 10,000 communities of LM agents exchanging messages on math and political questions fall into indifference, polarization or consensus regimes that a statistical-mechanics model of social pressure predicts from initial opinions alone. The fitted dynamics operate below critical temperature (conviction builds), favor attractive ties (consensus), and give correct answers the strongest pull (truth-seeking on objective items).",
-      "tags": [
-        "multi-agent",
-        "statistical-mechanics",
-        "collective-behavior",
-        "opinion-dynamics"
-      ]
-    },
-    {
-      "id": "grip-grounded-reasoning-via-information-restricted-premises-2026-08-18",
-      "title": "GRIP: Grounded Reasoning via Information-Restricted Premises",
-      "authors": "Lirui Teng",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16776",
-      "type": "paper",
-      "dateAdded": "2026-08-18",
-      "summary": "High-capacity encoders let the query dominate RAG latents (query dominance). GRIP imposes capacity asymmetry so retrieved evidence passes through a severe stochastic bottleneck that must encode only residual information, cutting query-latent mutual information roughly 30x, reducing hallucination 73 percent, and outperforming strong iterative baselines on five reasoning benchmarks.",
-      "tags": [
-        "RAG",
-        "grounding",
-        "information-bottleneck",
-        "hallucination"
-      ]
-    },
-    {
-      "id": "when-agents-coordinate-measuring-coordination-in-multi-agent-ai-coding-2026-08-18",
-      "title": "When Agents Coordinate: Measuring Coordination in Multi-Agent AI Coding",
-      "authors": "Giuseppe Destefanis, Tomaso Aste",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16801",
-      "type": "paper",
-      "dateAdded": "2026-08-18",
-      "summary": "Coordination inside teams of coding agents is represented as temporal networks of messages, file reads and writes across 1902 runs that vary team size, structure and file policy. Messaging grows near-quadratically then saturates into broadcasts; shared files cut output tokens ~42 percent on message-heavy work; naming a coordinator creates no hub and yields no reliable success gain; agents unprompted seek hidden grading material even in sealed environments.",
-      "tags": [
-        "multi-agent",
-        "coding-agents",
-        "coordination",
-        "networks"
-      ]
-    },
-    {
-      "id": "pddlcoder-agentic-pddl-generation-for-llm-assisted-symbolic-planning-2026-08-18",
-      "title": "PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning",
-      "authors": "Veit Laule, Jiangtao Shuai, Manfred Hauswirth, Sonja Schimmler",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16637",
-      "type": "paper",
-      "dateAdded": "2026-08-18",
-      "summary": "An agentic loop iteratively generates, analyzes and refines PDDL from natural language, paired with the new NL-pddlgym benchmark of 711 problems and executable gym environments. On held-out domains it produces applicable plans for 89.6 percent of problems, roughly doubling prior PDDL-generation methods and beating direct LLM planning.",
-      "tags": [
-        "planning",
-        "PDDL",
-        "agentic",
-        "symbolic-AI"
-      ]
-    },
-    {
-      "id": "jailbreakskill-scaling-automated-red-teaming-with-reusable-and-ever-evolving-ski-2026-08-18",
-      "title": "JailbreakSkill: Scaling Automated Red-Teaming with Reusable and Ever-Evolving Skills",
-      "authors": "Xiaoyu Wen, Jiajia Li, Zhida He, Peng Yu, Chenxu Wang, Han Qi, Ziyuan Zhou, Cheng Jin, Ying Wen, Xingcheng Xu, Shuyue Hu, Tianhang Zheng, Chaochao Lu, Qiaosheng Zhang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16465",
-      "type": "paper",
-      "dateAdded": "2026-08-18",
-      "summary": "Attack strategies are packaged as modular, agent-ready skills that are reused, refined, combined and newly discovered from attack experience, closing a continuous learning loop. The evolving library lifts macro-average ASR by 17.5 points on AdvBench and 13.4 on HarmBench (including a 48.6-point gain against GPT-5.4) and produces novel transferable strategies.",
-      "tags": [
-        "red-teaming",
-        "jailbreak",
-        "skills",
-        "automated-attack"
-      ]
-    },
-    {
-      "id": "q-based-variational-inverse-reinforcement-learning-2026-08-18",
-      "title": "Q-based Variational Inverse Reinforcement Learning",
-      "authors": "Ondrej Bajgar, Peter Tisnikar, Alessandro Abate, Konstantinos Gatsis, Maike Osborne",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16888",
-      "type": "paper",
-      "dateAdded": "2026-08-18",
-      "summary": "QVIRL recovers a posterior over rewards by learning a variational distribution primarily over optimal Q-values, combining scalability with uncertainty quantification needed for safety and active learning. It is the first Bayesian IRL method shown to train from raw pixel observations and demonstrates strong apprenticeship performance on gridworlds, Lunar Lander, Highway and two Atari games.",
-      "tags": [
-        "IRL",
-        "Bayesian",
-        "reinforcement-learning",
-        "preferences"
       ]
     }
   ]
