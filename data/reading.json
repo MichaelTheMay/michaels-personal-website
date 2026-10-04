@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-03",
+  "lastUpdated": "2026-10-04",
   "issues": [
+    {
+      "date": "2026-10-04",
+      "title": "Self-hostable microVM sandboxes and declarative control planes",
+      "blurb": "Power users are cloning KVM and Firecracker runtimes, Kubernetes CRD orchestrators, and meta-harnesses that treat isolation and policy as first-class infrastructure. The leverage is in warm pools, pod-per-session boundaries, and sandbox-as-tool patterns rather than another chat IDE."
+    },
     {
       "date": "2026-10-03",
       "title": "Daemonless sandboxes and universal control planes for coding agents",
@@ -233,6 +238,94 @@
     }
   ],
   "items": [
+    {
+      "id": "microvm-0xthierry-2026-10-04",
+      "title": "microvm (0xthierry)",
+      "authors": "0xthierry",
+      "source": "GitHub",
+      "url": "https://github.com/0xthierry/microvm",
+      "type": "repo",
+      "dateAdded": "2026-10-04",
+      "summary": "Local Firecracker microVM tool for running isolated coding agents and dev workloads from Dockerfiles.",
+      "tags": [
+        "Firecracker",
+        "local",
+        "microVM",
+        "isolation"
+      ],
+      "usecase": "Use it to give any CLI coding agent a real VM boundary on your laptop with persistent disks and controlled networking.",
+      "returning": false
+    },
+    {
+      "id": "ai-agent-eval-harness-agentv-2026-10-04",
+      "title": "ai-agent-eval-harness (AgentV)",
+      "authors": "najeed",
+      "source": "GitHub",
+      "url": "https://github.com/najeed/ai-agent-eval-harness",
+      "type": "harness",
+      "dateAdded": "2026-10-04",
+      "summary": "MultiAgentOps verification OS and evaluation harness with industrial scenarios, mutation testing and tool sandbox.",
+      "tags": [
+        "eval",
+        "verification",
+        "harness",
+        "enterprise"
+      ],
+      "usecase": "Use it to verify enterprise agent workflows across thousands of industry scenarios before production.",
+      "returning": false
+    },
+    {
+      "id": "agent-sandbox-sheerwill-2026-10-04",
+      "title": "Agent Sandbox (SheerWill)",
+      "authors": "SheerWill007",
+      "source": "GitHub",
+      "url": "https://github.com/SheerWill007/Agent-Sandbox",
+      "type": "repo",
+      "dateAdded": "2026-10-04",
+      "summary": "Firecracker microVM sandbox with MCP, TypeScript SDK, jailer isolation and network namespaces.",
+      "tags": [
+        "Firecracker",
+        "MCP",
+        "microVM",
+        "self-host"
+      ],
+      "usecase": "Use it to run agent code in hardware-isolated VMs with native MCP tool surface on your infra.",
+      "returning": false
+    },
+    {
+      "id": "kagent-2026-10-04",
+      "title": "kagent",
+      "authors": "kagent-dev",
+      "source": "GitHub",
+      "url": "https://github.com/kagent-dev/kagent",
+      "type": "tool",
+      "dateAdded": "2026-10-04",
+      "summary": "Kubernetes-native agent platform with sandbox workflows, templates and group agent commands.",
+      "tags": [
+        "kubernetes",
+        "sandbox",
+        "CLI",
+        "agent"
+      ],
+      "usecase": "Use it to discover and run agents plus standalone sandboxes under one CLI on a cluster.",
+      "returning": false
+    },
+    {
+      "id": "agentos-2026-10-x-desktop-and-gateway-updates-2026-10-04",
+      "title": "AgentOS 2026.10.x desktop and gateway updates",
+      "authors": "use-agent-os",
+      "source": "GitHub Releases",
+      "url": "https://github.com/use-agent-os/agent-os/releases",
+      "type": "release",
+      "dateAdded": "2026-10-04",
+      "summary": "AgentOS shipped Run modes popovers, menu-bar gateway status, Touch ID approvals and stronger credential redaction across Mac and Windows builds. The cadence shows a local-first agent OS hardening trading and skill surfaces in daily drops.",
+      "tags": [
+        "AgentOS",
+        "desktop",
+        "release",
+        "local-first"
+      ]
+    },
     {
       "id": "kern-2026-10-03",
       "title": "Kern",
@@ -10474,91 +10567,6 @@
         "knowledge-work",
         "versioning",
         "tools"
-      ]
-    },
-    {
-      "id": "chain-of-experience-for-continual-llm-improvement-2026-08-19",
-      "title": "Chain-of-Experience for Continual LLM Improvement",
-      "authors": "Haoqin Tu, Yunhao Fang, Yizhong Wang, Cihang Xie, Shen Yan",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.18027",
-      "type": "paper",
-      "dateAdded": "2026-08-19",
-      "summary": "Chain-of-Experience lets models accumulate experiential traces from self-feedback or environmental signals (correctness, test pass rates) across iterative interactions at test time. Across math, coding, and knowledge tasks with eight frontier models it outperforms feedback-free baselines, cuts API cost, and improves accuracy per token; complementary feedback channels add further gains. Stronger base models improve more, most gains appear early, and models remain robust to weak or spurious feedback.",
-      "tags": [
-        "test-time",
-        "continual",
-        "self-improvement",
-        "feedback",
-        "LLMs"
-      ]
-    },
-    {
-      "id": "beyond-suspicious-steps-ontological-trust-in-long-horizon-agents-2026-08-19",
-      "title": "Beyond Suspicious Steps: Ontological Trust in Long-Horizon Agents",
-      "authors": "An He, Yao Wang, Haibin Zhang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.17718",
-      "type": "paper",
-      "dateAdded": "2026-08-19",
-      "summary": "Ontological trust measures whether a trajectory prefix still corresponds to the user-authorized task along Role, Goal, and Evidence axes. RGE derives structured representations with LLMs then performs deterministic trust-state updates and interventions, producing a replayable auditable trajectory. On a cross-domain corpus of benign, prefix-paired drift, and pseudo-consistency failures it outperforms rule, judge, and shield baselines, exceeding 93 percent Drift F1 at high benign coverage.",
-      "tags": [
-        "long-horizon",
-        "agents",
-        "oversight",
-        "trust",
-        "monitoring"
-      ]
-    },
-    {
-      "id": "llm-derived-preference-judgments-are-not-self-consistent-2026-08-19",
-      "title": "LLM-Derived Preference Judgments Are Not Self-Consistent",
-      "authors": "Matthew T. Ford, Francis Bahk, Jingjing Wang, Adam S. Jovine, Tinghan Ye, David B. Shmoys, Peter I. Frazier",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.17644",
-      "type": "paper",
-      "dateAdded": "2026-08-19",
-      "summary": "Cardinal preference judgments elicited from LLMs (e.g., willingness-to-pay) systematically violate self-consistency conditions required by a single underlying utility function. Statistical tests and distance-to-best-fit measures quantify large persistent inconsistencies across flight, apartment, and hotel domains and six models. The result undermines pipelines that fit a utility model to LLM judgments and then optimize actions.",
-      "tags": [
-        "preferences",
-        "utility",
-        "consistency",
-        "agents",
-        "evaluation"
-      ]
-    },
-    {
-      "id": "towards-zero-shot-task-transfer-with-neurosymbolic-world-models-2026-08-19",
-      "title": "Towards Zero-Shot Task Transfer with Neurosymbolic World Models",
-      "authors": "Isidoro Tamassia, Lennert De Smet, Giuseppe Marra",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.17959",
-      "type": "paper",
-      "dateAdded": "2026-08-19",
-      "summary": "A neurosymbolic world model decouples observation reconstruction from reward prediction so that reward depends only on structured symbolic state components. This enables zero-shot adaptation to new reward functions defined over the same symbolic space without further environment interaction. The approach demonstrates stronger generalization than purely neural model-based RL methods while highlighting remaining learning challenges.",
-      "tags": [
-        "world-models",
-        "neurosymbolic",
-        "transfer",
-        "MBRL",
-        "zero-shot"
-      ]
-    },
-    {
-      "id": "mathematics-in-the-age-of-ai-2026-08-19",
-      "title": "Mathematics in the age of AI",
-      "authors": "Terence Tao",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.16753",
-      "type": "essay",
-      "dateAdded": "2026-08-19",
-      "summary": "Conditioning on the arrival of AI capable of research-level mathematics, the essay asks what the goals and values of mathematical research actually are rather than debating capability timelines. Using the problem-solving pipeline as a case study it frames the moment as a crisis of values and practices analogous to the early-20th-century foundational crisis. Recommendations include clarifying evaluation criteria and resisting Goodhart-style over-optimization of proxies.",
-      "tags": [
-        "mathematics",
-        "values",
-        "AI-impact",
-        "foundations",
-        "essay"
       ]
     }
   ]

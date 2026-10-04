@@ -1,7 +1,91 @@
 {
-  "lastUpdated": "2026-10-03",
-  "count": 383,
+  "lastUpdated": "2026-10-04",
+  "count": 387,
   "tools": [
+    {
+      "slug": "agent-sandbox",
+      "title": "Agent Sandbox (SheerWill)",
+      "authors": "SheerWill007",
+      "source": "GitHub",
+      "url": "https://github.com/SheerWill007/Agent-Sandbox",
+      "type": "repo",
+      "summary": "Firecracker microVM sandbox with MCP, TypeScript SDK, jailer isolation and network namespaces.",
+      "usecase": "Use it to run agent code in hardware-isolated VMs with native MCP tool surface on your infra.",
+      "tags": [
+        "Firecracker",
+        "MCP",
+        "microVM",
+        "self-host"
+      ],
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ai-agent-eval-harness",
+      "title": "ai-agent-eval-harness (AgentV)",
+      "authors": "najeed",
+      "source": "GitHub",
+      "url": "https://github.com/najeed/ai-agent-eval-harness",
+      "type": "harness",
+      "summary": "MultiAgentOps verification OS and evaluation harness with industrial scenarios, mutation testing and tool sandbox.",
+      "usecase": "Use it to verify enterprise agent workflows across thousands of industry scenarios before production.",
+      "tags": [
+        "eval",
+        "verification",
+        "harness",
+        "enterprise"
+      ],
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "kagent",
+      "title": "kagent",
+      "authors": "kagent-dev",
+      "source": "GitHub",
+      "url": "https://github.com/kagent-dev/kagent",
+      "type": "tool",
+      "summary": "Kubernetes-native agent platform with sandbox workflows, templates and group agent commands.",
+      "usecase": "Use it to discover and run agents plus standalone sandboxes under one CLI on a cluster.",
+      "tags": [
+        "kubernetes",
+        "sandbox",
+        "CLI",
+        "agent"
+      ],
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "microvm",
+      "title": "microvm (0xthierry)",
+      "authors": "0xthierry",
+      "source": "GitHub",
+      "url": "https://github.com/0xthierry/microvm",
+      "type": "repo",
+      "summary": "Local Firecracker microVM tool for running isolated coding agents and dev workloads from Dockerfiles.",
+      "usecase": "Use it to give any CLI coding agent a real VM boundary on your laptop with persistent disks and controlled networking.",
+      "tags": [
+        "Firecracker",
+        "local",
+        "microVM",
+        "isolation"
+      ],
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-harness",
       "title": "agentic-harness (skills)",
