@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-04",
+  "lastUpdated": "2026-10-06",
   "issues": [
+    {
+      "date": "2026-10-06",
+      "title": "MicroVM isolation layers that let power users own the agent loop",
+      "blurb": "Today's picks center on cloneable microVM runtimes, Rust and Python harness SDKs, and minimal coding agents that power users can wire into custom eval and control loops without closed IDEs. Fresh sandboxes and self-hosted control planes dominate over brand-name terminals."
+    },
     {
       "date": "2026-10-04",
       "title": "Self-hostable microVM sandboxes and declarative control planes",
@@ -230,14 +235,111 @@
       "date": "2026-08-20",
       "title": "Credit assignment and strategy lock-in in long-horizon agents",
       "blurb": "Recent work converges on why multi-turn and agentic training stalls: outcome rewards starve the decisions that matter, post-training agents lock into an initial strategy, and fixed environments stop expanding the goal distribution. The selected papers introduce reverse-turn and dual-channel credit, group-calibrated distillation, learnable environment designers, and monitors for latent collusion, alongside theoretical treatments of preference indeterminacy and test-time exploitation failure."
-    },
-    {
-      "date": "2026-08-19",
-      "title": "Self-improving agents, reward hacking, and long-horizon trust",
-      "blurb": "Fresh results expose variance and order sensitivity in memory-based self-improvement, show debate curbing judge hacking in RLAIF, and introduce monitors for ontological drift plus neurosymbolic world models. Complementary work tightens LLM judging under risk controls, surfaces MoE hallucination signals, and questions the self-consistency of preference estimates, while an essay reframes mathematical values under capable AI."
     }
   ],
   "items": [
+    {
+      "id": "kuasar-sandbox-2026-10-06",
+      "title": "Kuasar Sandbox",
+      "authors": "kuasar-sandbox",
+      "source": "GitHub",
+      "url": "https://github.com/kuasar-sandbox/kuasar-sandbox",
+      "type": "repo",
+      "dateAdded": "2026-10-06",
+      "summary": "Production microVM platform with independent guest kernels, snapshot templates, pause/resume, on-demand loading and single-to-cluster deployment for agents and RL.",
+      "tags": [
+        "microvm",
+        "high-density",
+        "rl",
+        "cluster"
+      ],
+      "usecase": "Use it to run high-density agent or serverless workloads with KVM isolation and stateful lifecycle control.",
+      "returning": false
+    },
+    {
+      "id": "agentic-harness-engineering-2026-10-06",
+      "title": "Agentic Harness Engineering",
+      "authors": "yzs-lab",
+      "source": "GitHub",
+      "url": "https://github.com/yzs-lab/agentic-harness-engineering",
+      "type": "repo",
+      "dateAdded": "2026-10-06",
+      "summary": "Observability-driven system that automatically evolves coding-agent harness components while holding the base model fixed, lifting Terminal-Bench scores.",
+      "tags": [
+        "evolution",
+        "observability",
+        "eval",
+        "meta-harness"
+      ],
+      "usecase": "Use it to run evaluate-analyze-improve loops that produce transferable frozen harnesses for SWE-bench and other models.",
+      "returning": false
+    },
+    {
+      "id": "agent-house-2026-10-06",
+      "title": "agent-house",
+      "authors": "mariobm",
+      "source": "GitHub",
+      "url": "https://github.com/mariobm/agent-house",
+      "type": "tool",
+      "dateAdded": "2026-10-06",
+      "summary": "Self-hostable stateful Linux microVMs for coding agents with client on Mac/Linux and server-side isolation plus snapshots.",
+      "tags": [
+        "microvm",
+        "self-host",
+        "persistent",
+        "snapshots"
+      ],
+      "usecase": "Use it to give agents persistent interactive shells and files on hardware you control without public ports.",
+      "returning": false
+    },
+    {
+      "id": "docker-cloud-sandboxes-launch-hosted-microvms-for-coding-agents-2026-10-06",
+      "title": "Docker Cloud Sandboxes launch hosted microVMs for coding agents",
+      "authors": "Docker",
+      "source": "Docker / WindowsForum",
+      "url": "https://windowsforum.com/news/docker-cloud-sandboxes-launch-hosted-microvms-for-ai-coding-agents.445887/",
+      "type": "release",
+      "dateAdded": "2026-10-06",
+      "summary": "Docker extended its local Sandboxes product to managed cloud microVMs billed by the second, letting developers move agent sessions between laptop and cloud with one command. Kits ship for multiple coding agents and enforce declared authority at launch.",
+      "tags": [
+        "docker",
+        "microvm",
+        "cloud",
+        "release"
+      ]
+    },
+    {
+      "id": "sidekernel-open-source-microvm-sandbox-for-ai-coding-agents-on-macos-2026-10-06",
+      "title": "SideKernel: open-source microVM sandbox for AI coding agents on macOS",
+      "authors": "Cagri Sarigoz",
+      "source": "BizStack",
+      "url": "https://bizstack.tech/sidekernel-open-source-microvm-sandbox-for-ai-coding-agents-on-macos/",
+      "type": "article",
+      "dateAdded": "2026-10-06",
+      "summary": "SideKernel addresses survey-found usability barriers that keep most developers from sandboxing agents on Mac. It scores high on capability tests among local microVM options designed specifically for coding-agent isolation.",
+      "tags": [
+        "macos",
+        "microvm",
+        "usability",
+        "survey"
+      ]
+    },
+    {
+      "id": "why-ai-agents-need-sandboxes-the-6-core-benefits-of-microvm-isolation-2026-10-06",
+      "title": "Why AI Agents Need Sandboxes: The 6 Core Benefits of MicroVM Isolation",
+      "authors": "Tanvir Kour",
+      "source": "Collabnix",
+      "url": "https://collabnix.com/why-ai-agents-need-sandboxes-the-6-core-benefits-of-microvm-isolation/",
+      "type": "article",
+      "dateAdded": "2026-10-06",
+      "summary": "The piece argues that production agents require hypervisor-level isolation rather than shared-kernel containers to contain blast radius. It details benefits including nested Docker, egress control and reproducible workspaces that containers cannot match.",
+      "tags": [
+        "microvm",
+        "isolation",
+        "security",
+        "benefits"
+      ]
+    },
     {
       "id": "microvm-0xthierry-2026-10-04",
       "title": "microvm (0xthierry)",
@@ -10466,107 +10568,6 @@
         "uncertainty",
         "time series",
         "continuous-time"
-      ]
-    },
-    {
-      "id": "open-mopd-diagnosing-and-fixing-capability-imbalance-in-multi-teacher-on-policy--2026-08-20",
-      "title": "Open-MOPD: Diagnosing and Fixing Capability Imbalance in Multi-Teacher On-Policy Distillation",
-      "authors": "Huan-ang Gao, Haohan Chi, Yong Yan, Shiyuan Feng, Hanlin Wu, Zheng Jiang, Bingxiang He, Wei-Ying Ma, Ya-Qin Zhang, Hao Zhou",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19098",
-      "type": "paper",
-      "dateAdded": "2026-08-20",
-      "summary": "Standard multi-teacher on-policy distillation recovers only 35.6% of the headroom of a domain-routed oracle ensemble because token-level optimization budget is misallocated across domains of unequal length, convergence speed, and reward freshness, not because of gradient conflict. Open-MOPD restores balance via token-share equalization, gap-aware dynamic budget allocation, and student reward refresh, raising headroom recovery to 83.4% on a controlled SmolLM3-3B benchmark. The full post-training recipe, trajectories, and evaluation suites are released.",
-      "tags": [
-        "multi-teacher distillation",
-        "on-policy",
-        "capability balance",
-        "post-training"
-      ]
-    },
-    {
-      "id": "on-the-fragility-of-self-improving-agents-variance-task-order-and-underspecifica-2026-08-19",
-      "title": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
-      "authors": "Qinyuan Ye, Yu Li, Yada Pruksachatkun, Jiaxin Zhang, Chien-Sheng Wu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.18066",
-      "type": "paper",
-      "dateAdded": "2026-08-19",
-      "summary": "Memory-based self-improving agents that maintain textual memory banks show high variance across runs and strong dependence on task order, with default orderings acting as hidden curricula. Underspecification of tasks and environments contributes to fragility; adding rubrics and environment feedback partially mitigates degradation but leaves residual gaps. The work calls for multi-run reporting and human-oversight interfaces to prevent unforeseeable failures.",
-      "tags": [
-        "self-improvement",
-        "agents",
-        "evaluation",
-        "memory",
-        "reliability"
-      ]
-    },
-    {
-      "id": "debate-training-reduces-reward-hacking-in-rlaif-2026-08-19",
-      "title": "Debate Training Reduces Reward Hacking in RLAIF",
-      "authors": "Zachary Kenton, Lili Janzer, Rory Greig, Tian Huey Teh, Kirill Tyshchuk, Jonah Brown-Cohen, Harri Edwards, Senthooran Rajamanoharan, Noah Y. Siegel, Natasha Jaques, Rohin Shah",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.17776",
-      "type": "paper",
-      "dateAdded": "2026-08-19",
-      "summary": "RL finetuning via two-player debate (generator vs critic, weaker LLM judge) maintains judge performance and recovers a large validation accuracy gap versus single-player RLAIF on verifiable math tasks. Weaker judges hack faster but extra debate rounds compensate; word limits on critiques balance the game and prevent critic judge-hacking. Debate incentives can override prompted misalignment, supporting feasibility of multi-agent oversight with careful balancing.",
-      "tags": [
-        "RLAIF",
-        "debate",
-        "reward-hacking",
-        "alignment",
-        "multi-agent"
-      ]
-    },
-    {
-      "id": "mixture-of-expert-blocks-contain-strong-hallucination-detection-signals-2026-08-19",
-      "title": "Mixture-of-Expert Blocks Contain Strong Hallucination Detection Signals",
-      "authors": "Joao Fonseca, Rodrigo Rodrigues, Paolo Romano",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.17687",
-      "type": "paper",
-      "dateAdded": "2026-08-19",
-      "summary": "InnerExpert extracts per-token features from MoE router entropy, expert disagreement, and usage patterns plus standard transformer signals, then trains a lightweight detector on LLM-as-judge labels. It achieves high answer-level and token-level AUROC across datasets and two MoE architectures using only a single forward pass. The method enables continuous updates without manual annotation and localizes hallucinated spans for fine-grained intervention.",
-      "tags": [
-        "hallucination",
-        "MoE",
-        "detection",
-        "interpretability",
-        "LLMs"
-      ]
-    },
-    {
-      "id": "judge-retrieve-or-abstain-uncertainty-guarded-llm-judging-with-provable-risk-gua-2026-08-19",
-      "title": "Judge, Retrieve, or Abstain: Uncertainty-Guarded LLM Judging with Provable Risk Guarantees",
-      "authors": "Sher Badshah, Ali Emami, Hassan Sajjad",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.17994",
-      "type": "paper",
-      "dateAdded": "2026-08-19",
-      "summary": "A risk-controlled framework calibrates uncertainty thresholds via finite-sample Clopper-Pearson intervals so that the false discovery rate among accepted LLM-judge verdicts stays below a user-specified alpha. Low-confidence parametric judgments route to retrieval-augmented re-evaluation under a second calibrated threshold, preserving the guarantee. Across open-domain QA and judges of varying scale it maintains target error rates at substantially higher coverage than single-mode baselines.",
-      "tags": [
-        "LLM-as-judge",
-        "uncertainty",
-        "conformal",
-        "retrieval",
-        "risk-control"
-      ]
-    },
-    {
-      "id": "stagedworkspace-a-versioned-workspace-for-knowledge-work-agents-2026-08-19",
-      "title": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
-      "authors": "Yining Hua, Hongbin Na, Yifan Zhou, Akshay Kalose, Cyrus Ayubcha, Levi Lian",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.18050",
-      "type": "paper",
-      "dateAdded": "2026-08-19",
-      "summary": "StagedWorkspace binds parsed records and review diffs to content hashes of native files, enforcing an explicit workspace-state contract across search, edit, and submission views. Dual parsed/native access yields consistent gains on OfficeQA Pro and APEX-Agents; a review-axis ablation confirms value of visible diffs. The design treats workspace state as an experimental variable and motivates benchmarks that score evidence, staged edits, and artifacts as state transitions.",
-      "tags": [
-        "agents",
-        "workspace",
-        "knowledge-work",
-        "versioning",
-        "tools"
       ]
     }
   ]

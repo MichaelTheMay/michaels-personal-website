@@ -1,7 +1,70 @@
 {
-  "lastUpdated": "2026-10-04",
-  "count": 387,
+  "lastUpdated": "2026-10-06",
+  "count": 390,
   "tools": [
+    {
+      "slug": "agent-house",
+      "title": "agent-house",
+      "authors": "mariobm",
+      "source": "GitHub",
+      "url": "https://github.com/mariobm/agent-house",
+      "type": "tool",
+      "summary": "Self-hostable stateful Linux microVMs for coding agents with client on Mac/Linux and server-side isolation plus snapshots.",
+      "usecase": "Use it to give agents persistent interactive shells and files on hardware you control without public ports.",
+      "tags": [
+        "microvm",
+        "self-host",
+        "persistent",
+        "snapshots"
+      ],
+      "firstSeen": "2026-10-06",
+      "lastSeen": "2026-10-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-harness-engineering",
+      "title": "Agentic Harness Engineering",
+      "authors": "yzs-lab",
+      "source": "GitHub",
+      "url": "https://github.com/yzs-lab/agentic-harness-engineering",
+      "type": "repo",
+      "summary": "Observability-driven system that automatically evolves coding-agent harness components while holding the base model fixed, lifting Terminal-Bench scores.",
+      "usecase": "Use it to run evaluate-analyze-improve loops that produce transferable frozen harnesses for SWE-bench and other models.",
+      "tags": [
+        "evolution",
+        "observability",
+        "eval",
+        "meta-harness"
+      ],
+      "firstSeen": "2026-10-06",
+      "lastSeen": "2026-10-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "kuasar-sandbox",
+      "title": "Kuasar Sandbox",
+      "authors": "kuasar-sandbox",
+      "source": "GitHub",
+      "url": "https://github.com/kuasar-sandbox/kuasar-sandbox",
+      "type": "repo",
+      "summary": "Production microVM platform with independent guest kernels, snapshot templates, pause/resume, on-demand loading and single-to-cluster deployment for agents and RL.",
+      "usecase": "Use it to run high-density agent or serverless workloads with KVM isolation and stateful lifecycle control.",
+      "tags": [
+        "microvm",
+        "high-density",
+        "rl",
+        "cluster"
+      ],
+      "firstSeen": "2026-10-06",
+      "lastSeen": "2026-10-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-sandbox",
       "title": "Agent Sandbox (SheerWill)",
