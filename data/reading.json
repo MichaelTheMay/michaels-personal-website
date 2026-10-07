@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-06",
+  "lastUpdated": "2026-10-07",
   "issues": [
+    {
+      "date": "2026-10-07",
+      "title": "MicroVM sandboxes and policy engines that keep agents out of YOLO mode",
+      "blurb": "Power users are cloning self-hostable microVM runtimes, OS-isolation boxes, and harness SDKs that enforce deny-by-default policies and credential brokering. The through-line is hardware or kernel boundaries plus semantic control planes that let coding agents run free without owning the host."
+    },
     {
       "date": "2026-10-06",
       "title": "MicroVM isolation layers that let power users own the agent loop",
@@ -238,6 +243,149 @@
     }
   ],
   "items": [
+    {
+      "id": "strands-box-2026-10-07",
+      "title": "Strands Box",
+      "authors": "strands-agents / AWS",
+      "source": "GitHub",
+      "url": "https://github.com/strands-agents/box",
+      "type": "tool",
+      "dateAdded": "2026-10-07",
+      "summary": "OS-isolation sandbox with default-deny Dogwood semantic policies, credential injection, and event-history aware rules for any agent harness.",
+      "tags": [
+        "sandbox",
+        "policy",
+        "dogwood",
+        "macos",
+        "os-isolation"
+      ],
+      "usecase": "Use it to confine any coding agent on macOS Apple silicon under temporal and argument-aware policies without secrets entering the box.",
+      "returning": false
+    },
+    {
+      "id": "matchlock-2026-10-07",
+      "title": "Matchlock",
+      "authors": "jingkaihe",
+      "source": "GitHub",
+      "url": "https://github.com/jingkaihe/matchlock",
+      "type": "tool",
+      "dateAdded": "2026-10-07",
+      "summary": "CLI for ephemeral Firecracker/Virtualization.framework microVMs with network allowlisting and host-side MITM secret injection.",
+      "tags": [
+        "microvm",
+        "firecracker",
+        "secrets",
+        "cli",
+        "macos"
+      ],
+      "usecase": "Use it to run any coding agent in a disposable Linux VM where API keys stay on the host and only allowed hosts are reachable.",
+      "returning": false
+    },
+    {
+      "id": "createos-sandbox-sdk-2026-10-07",
+      "title": "CreateOS Sandbox SDK",
+      "authors": "NodeOps-app",
+      "source": "GitHub",
+      "url": "https://github.com/NodeOps-app/createos-sandbox-sdk",
+      "type": "tool",
+      "dateAdded": "2026-10-07",
+      "summary": "TypeScript SDK for CreateOS microVM sandboxes with pause-to-snapshot, fork branching, private networking and typed errors.",
+      "tags": [
+        "sdk",
+        "microvm",
+        "typescript",
+        "fork",
+        "snapshot"
+      ],
+      "usecase": "Use it to launch stateful agent sandboxes, expose ports, manage disks and fork parallel branches from a golden snapshot.",
+      "returning": false
+    },
+    {
+      "id": "anolisa-2026-10-07",
+      "title": "ANOLISA",
+      "authors": "community",
+      "source": "GitHub",
+      "url": "https://github.com/topics/agent-runtime",
+      "type": "harness",
+      "dateAdded": "2026-10-07",
+      "summary": "Agentic OS with runtime, security, observability and tokenless compression for lower cost long-horizon agents.",
+      "tags": [
+        "agentic-os",
+        "runtime",
+        "security",
+        "observability"
+      ],
+      "usecase": "Use it to run agents under an OS-like layer that compresses context and enforces runtime security without extra tokens.",
+      "returning": false
+    },
+    {
+      "id": "openagentcore-2026-10-07",
+      "title": "OpenAgentCore",
+      "authors": "MiniMax-AI",
+      "source": "GitHub",
+      "url": "https://github.com/MiniMax-AI/OpenAgentCore",
+      "type": "harness",
+      "dateAdded": "2026-10-07",
+      "summary": "Self-hosted open implementation of the OpenAI Agents API with multiple native harnesses and sandbox support.",
+      "tags": [
+        "agents-api",
+        "self-hosted",
+        "harness",
+        "sandbox"
+      ],
+      "usecase": "Use it to run Agents API compatible sessions on your own infrastructure with pluggable harnesses and sandboxes.",
+      "returning": false
+    },
+    {
+      "id": "aws-launches-open-source-strands-box-sandbox-2026-10-07",
+      "title": "AWS launches open-source Strands Box sandbox",
+      "authors": "Brandon Vigliarolo",
+      "source": "The Register",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/07/aws-launches-open-source-ai-agent-sandbox-to-prevent-yolo-mode-disasters/5301687",
+      "type": "release",
+      "dateAdded": "2026-10-07",
+      "summary": "AWS open-sourced Strands Box, an OS-isolation sandbox with Dogwood semantic policies and credential injection to stop agents running in YOLO mode. It currently targets macOS Apple silicon with Linux planned, and works with any harness.",
+      "tags": [
+        "aws",
+        "sandbox",
+        "strands",
+        "policy",
+        "release"
+      ]
+    },
+    {
+      "id": "sandbox-forking-completes-the-agent-governance-stack-2026-10-07",
+      "title": "Sandbox Forking Completes the Agent Governance Stack",
+      "authors": "Forkast",
+      "source": "Forkast News",
+      "url": "https://forkast.news/sandbox-forking-completes-the-agent-governance-stack/",
+      "type": "article",
+      "dateAdded": "2026-10-07",
+      "summary": "DigitalOcean Agent Droplets, Uber permission gateways, Daytona CoW forking and Cloudflare isolates all shipped the same week, making per-agent microVM or isolate forks the default governance primitive. Forking cost near zero shifts the default to disposable boundaries for every hop.",
+      "tags": [
+        "forking",
+        "microvm",
+        "governance",
+        "article"
+      ]
+    },
+    {
+      "id": "sandboxed-coding-environments-containers-vs-microvms-vs-os-level-isolators-2026-10-07",
+      "title": "Sandboxed Coding Environments: Containers vs MicroVMs vs OS-Level Isolators",
+      "authors": "AgentPatterns.ai",
+      "source": "AgentPatterns",
+      "url": "https://agentpatterns.ai/security/sandbox-runtime-comparison/",
+      "type": "article",
+      "dateAdded": "2026-10-07",
+      "summary": "Practical comparison of the three isolation families for coding agents, trading startup latency against escape blast radius. Recommends Firecracker microVMs for production untrusted code and bubblewrap or Seatbelt for local dev with migration notes.",
+      "tags": [
+        "comparison",
+        "microvm",
+        "containers",
+        "security",
+        "article"
+      ]
+    },
     {
       "id": "kuasar-sandbox-2026-10-06",
       "title": "Kuasar Sandbox",
@@ -10440,134 +10588,6 @@
         "agent environments",
         "RL",
         "open-ended learning"
-      ]
-    },
-    {
-      "id": "beyond-teacher-likelihood-group-calibrated-on-policy-distillation-for-long-conte-2026-08-20",
-      "title": "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning",
-      "authors": "Zhu Zhang, Jixun Wang, Xiaoang Xu, Xiaorong Wang, Zihan Zhou, Zhiyuan Wang, Shuo Wang, Chaojun Xiao, Yuezhi Zhou",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19181",
-      "type": "paper",
-      "dateAdded": "2026-08-20",
-      "summary": "Token-level on-policy distillation increasingly misaligns with response-level verifiers as context length grows, because teacher likelihood favors locally plausible but globally incomplete answers. GC-OPD normalizes verifier rewards and trajectory OPD scores inside each rollout group, forms a signed disagreement residual, and redistributes it via relative-advantage credit assignment while preserving the original dense signal. On five long-context benchmarks the method lifts Qwen3-4B and Qwen3-8B averages from 29.08 to 40.47 and 35.12 to 44.65, outperforming vanilla OPD.",
-      "tags": [
-        "distillation",
-        "long-context",
-        "on-policy",
-        "credit assignment"
-      ]
-    },
-    {
-      "id": "beyond-the-transcript-detecting-covert-coordination-in-latent-multi-agent-commun-2026-08-20",
-      "title": "Beyond the Transcript: Detecting Covert Coordination in Latent Multi-Agent Communication",
-      "authors": "Ramneet Kaur, Pradyumna Chari, Ramesh Raskar, Jugad Singh, Sumit Kumar Jha, Anirban Roy",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19161",
-      "type": "paper",
-      "dateAdded": "2026-08-20",
-      "summary": "Language-model agents can collude through continuous hidden states invisible in public transcripts. Verifiable Latent Alignments links private latent records to public actions via shared event IDs and deploys a three-layer neutral-only monitor (representation anomalies, counterfactual action influence, sparse autoencoder support) plus black-box and white-box steering. On multi-agent auction benchmarks the monitor reaches AUROC 0.993 for homogeneous agents; full white-box steering recovers bid distributions and cuts collusive low-bid behavior by 47.3 points.",
-      "tags": [
-        "multi-agent",
-        "latent communication",
-        "monitoring",
-        "AI safety"
-      ]
-    },
-    {
-      "id": "eureka-task-conditioned-meta-agent-orchestration-for-scientific-discovery-2026-08-20",
-      "title": "Eureka: Task-Conditioned Meta-Agent Orchestration for Scientific Discovery",
-      "authors": "Alizer Wong, Heng Cui, Yi Tan, Xiongchao Zhan, Liang Lin, Yuxiang Guo, Zhaorong Dai, Zixin Zeng, Wenyuan Li",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19047",
-      "type": "paper",
-      "dateAdded": "2026-08-20",
-      "summary": "Eureka compiles long-horizon tasks into dynamic obligation graphs with explicit acceptance semantics, then forms specialized Macro-Agents via receding-horizon planning and cost-benefit-gated architectural evolution. It completes 170/170 recursive tasks with 3948 certificates and zero false acceptances, while compressing active context and serializing 16000 concurrent executions consistently. Instantiations yield structural results in quantum-process theory and advance a positivity certificate for Suzuki's localized Weil form to 0 < a <= 69/200.",
-      "tags": [
-        "meta-agents",
-        "scientific discovery",
-        "planning",
-        "verification"
-      ]
-    },
-    {
-      "id": "what-is-missing-from-ai-post-training-ai-an-empirical-analysis-2026-08-20",
-      "title": "What is Missing from AI Post-Training AI: An Empirical Analysis",
-      "authors": "Joy Jia Yin Lim, Xin Huang, Hao Peng, Yaxi Lu, Xin Cong, Zhong Zhang, Maosong Sun, Yankai Lin",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19072",
-      "type": "paper",
-      "dateAdded": "2026-08-20",
-      "summary": "LLM agents that end-to-end post-train other models lock their high-level training strategy at the very first step and spend the remaining budget on local adjustments inside that strategy. Experience scaffolds improve execution substantially (+12.6 GSM8K, +40.8 HumanEval) yet leave strategy static; human guidance can redirect the initial choice but agents revert to local loops; extra inference compute helps easy tasks and fails on the hardest. The missing piece is a mechanism for spontaneous mid-execution strategy reevaluation rather than more experience, guidance, or compute.",
-      "tags": [
-        "AI-for-AI",
-        "post-training",
-        "agents",
-        "strategy"
-      ]
-    },
-    {
-      "id": "skillgate-training-in-policy-skill-selection-in-long-horizon-agents-2026-08-20",
-      "title": "SkillGate: Training In-Policy Skill Selection in Long-Horizon Agents",
-      "authors": "Qingyao Li, Wenxiang Jiao, Shuai Shao, Kangning Zhang, Yuan Lu, Yi Guo, Weiwen Liu, Weinan Zhang, Yong Yu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.18852",
-      "type": "paper",
-      "dateAdded": "2026-08-20",
-      "summary": "When agents must choose which skill file to read mid-episode, ordinary outcome-rewarded RL suffers selector credit starvation: the few tokens that name the skill receive vanishing and often wrong-signed advantage as trajectories lengthen. SkillGate partitions token support into disjoint channels so outcome credit reaches only execution tokens while an action-local advantage reaches exactly the skill-naming tokens and is positive only for the correct single read. On five agentic benchmarks with a 16-candidate slate a 9B policy rises from 40.8% to 53.2% success while reading fewer skills and cutting exposure to misleading candidates by two thirds.",
-      "tags": [
-        "skills",
-        "credit assignment",
-        "long-horizon agents",
-        "RL"
-      ]
-    },
-    {
-      "id": "rtpo-reverse-turn-policy-optimization-for-stabilizing-agentic-rl-training-2026-08-20",
-      "title": "RTPO: Reverse-Turn Policy Optimization for Stabilizing Agentic RL Training",
-      "authors": "Yugu Li, Jimmy Cao, Jianglin Qiao, Siyi Hu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.18682",
-      "type": "paper",
-      "dateAdded": "2026-08-20",
-      "summary": "Multi-turn agentic RL is unstable because of rollout-training context mismatch, weak turn-level credit under sparse terminal rewards, and asynchronous policy drift across short and long trajectories. RTPO organizes rollouts as sparse reverse trees and performs turn-level updates in temporal reverse order so each decision is optimized against its actual downstream continuation. Theory shows elimination of context mismatch and drift plus reduced credit bias; experiments improve trajectory-level and turn-level baselines by 21.50% and 10.76%.",
-      "tags": [
-        "agentic RL",
-        "multi-turn",
-        "credit assignment",
-        "stability"
-      ]
-    },
-    {
-      "id": "test-time-scaling-in-the-wild-why-exploitation-not-exploration-is-the-bottleneck-2026-08-20",
-      "title": "Test-Time Scaling in the Wild: Why Exploitation, Not Exploration, Is the Bottleneck",
-      "authors": "Davide Romano, Kanak Raj, Jerrod Parker, Daniele Giofrè",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.18931",
-      "type": "paper",
-      "dateAdded": "2026-08-20",
-      "summary": "A compute-normalized comparison of five test-time scaling families across five open-ended benchmarks (medicine, law, finance, chat, creative writing) shows that the best candidate in the pool improves steadily with budget, so exploration works. Exploitation fails: state-of-the-art reward models correlate only ρ≈0.12 with true quality, tree search collapses diversity, and only cross-candidate fusion consistently beats single-sample baselines yet still recovers roughly 40% of available quality. The candidate pool is not the bottleneck; selecting from it is.",
-      "tags": [
-        "test-time scaling",
-        "reward models",
-        "open-ended generation",
-        "exploitation"
-      ]
-    },
-    {
-      "id": "l-vy-attention-single-pass-predictive-uncertainty-for-continuous-time-attention-2026-08-20",
-      "title": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
-      "authors": "Sotirios P. Chatzis, Loukas Papadoulas",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19171",
-      "type": "paper",
-      "dateAdded": "2026-08-20",
-      "summary": "Lévy Attention replaces softmax cross-attention with a stochastic integral against an inhomogeneous Poisson random measure whose intensity is assembled from query-key compatibilities over continuous time-channel space. In expectation it recovers a mollified cosine-kernel attention trainable with exact gradients, while the same deterministic pass emits closed-form evidence and disagreement statistics that form an exact RMS deviation estimate of the sampled operator. On irregular time-series tasks the free uncertainty signal outperforms multi-pass MC dropout and enables calibrated conformal coverage with a single forward pass.",
-      "tags": [
-        "attention",
-        "uncertainty",
-        "time series",
-        "continuous-time"
       ]
     }
   ]

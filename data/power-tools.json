@@ -1,7 +1,115 @@
 {
-  "lastUpdated": "2026-10-06",
-  "count": 390,
+  "lastUpdated": "2026-10-07",
+  "count": 395,
   "tools": [
+    {
+      "slug": "agent-runtime",
+      "title": "ANOLISA",
+      "authors": "community",
+      "source": "GitHub",
+      "url": "https://github.com/topics/agent-runtime",
+      "type": "harness",
+      "summary": "Agentic OS with runtime, security, observability and tokenless compression for lower cost long-horizon agents.",
+      "usecase": "Use it to run agents under an OS-like layer that compresses context and enforces runtime security without extra tokens.",
+      "tags": [
+        "agentic-os",
+        "runtime",
+        "security",
+        "observability"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "createos-sandbox-sdk",
+      "title": "CreateOS Sandbox SDK",
+      "authors": "NodeOps-app",
+      "source": "GitHub",
+      "url": "https://github.com/NodeOps-app/createos-sandbox-sdk",
+      "type": "tool",
+      "summary": "TypeScript SDK for CreateOS microVM sandboxes with pause-to-snapshot, fork branching, private networking and typed errors.",
+      "usecase": "Use it to launch stateful agent sandboxes, expose ports, manage disks and fork parallel branches from a golden snapshot.",
+      "tags": [
+        "sdk",
+        "microvm",
+        "typescript",
+        "fork",
+        "snapshot"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "matchlock",
+      "title": "Matchlock",
+      "authors": "jingkaihe",
+      "source": "GitHub",
+      "url": "https://github.com/jingkaihe/matchlock",
+      "type": "tool",
+      "summary": "CLI for ephemeral Firecracker/Virtualization.framework microVMs with network allowlisting and host-side MITM secret injection.",
+      "usecase": "Use it to run any coding agent in a disposable Linux VM where API keys stay on the host and only allowed hosts are reachable.",
+      "tags": [
+        "microvm",
+        "firecracker",
+        "secrets",
+        "cli",
+        "macos"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openagentcore",
+      "title": "OpenAgentCore",
+      "authors": "MiniMax-AI",
+      "source": "GitHub",
+      "url": "https://github.com/MiniMax-AI/OpenAgentCore",
+      "type": "harness",
+      "summary": "Self-hosted open implementation of the OpenAI Agents API with multiple native harnesses and sandbox support.",
+      "usecase": "Use it to run Agents API compatible sessions on your own infrastructure with pluggable harnesses and sandboxes.",
+      "tags": [
+        "agents-api",
+        "self-hosted",
+        "harness",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "box",
+      "title": "Strands Box",
+      "authors": "strands-agents / AWS",
+      "source": "GitHub",
+      "url": "https://github.com/strands-agents/box",
+      "type": "tool",
+      "summary": "OS-isolation sandbox with default-deny Dogwood semantic policies, credential injection, and event-history aware rules for any agent harness.",
+      "usecase": "Use it to confine any coding agent on macOS Apple silicon under temporal and argument-aware policies without secrets entering the box.",
+      "tags": [
+        "sandbox",
+        "policy",
+        "dogwood",
+        "macos",
+        "os-isolation"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-house",
       "title": "agent-house",
