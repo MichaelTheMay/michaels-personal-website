@@ -1,7 +1,157 @@
 {
-  "lastUpdated": "2026-10-07",
-  "count": 395,
+  "lastUpdated": "2026-10-08",
+  "count": 402,
   "tools": [
+    {
+      "slug": "abox",
+      "title": "ABox",
+      "authors": "AdminTurnedDevOps",
+      "source": "GitHub",
+      "url": "https://github.com/AdminTurnedDevOps/ABox",
+      "type": "harness",
+      "summary": "Experimental microVM-native zero-trust local agent harness with semantic authorization and host TUI/SDK on Apple Silicon.",
+      "usecase": "Use it to keep prompts tools and model calls inside a libkrun guest while the host only brokers approvals.",
+      "tags": [
+        "microvm",
+        "zero-trust",
+        "local",
+        "harness",
+        "libkrun"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-eval-harness",
+      "title": "agent-eval-harness",
+      "authors": "sebuzdugan",
+      "source": "GitHub",
+      "url": "https://github.com/sebuzdugan/agent-eval-harness",
+      "type": "harness",
+      "summary": "Tiny reproducible eval harness proving per-task microVM isolation is required to stop agents from cheating benchmarks.",
+      "usecase": "Use it to run held-out verification on Tensorlake Firecracker sandboxes so scores cannot be gamed by the agent.",
+      "tags": [
+        "eval",
+        "harness",
+        "isolation",
+        "microvm",
+        "benchmark"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "archkeel",
+      "title": "Archkeel",
+      "authors": "rapiddweller",
+      "source": "GitHub",
+      "url": "https://github.com/rapiddweller/archkeel",
+      "type": "tool",
+      "summary": "Deterministic architecture boundary checker for agent-written code that reports forbidden imports and evidence without an LLM.",
+      "usecase": "Use it to gate agent PRs with static architecture contracts that stay visible as PASS FAIL or UNKNOWN.",
+      "tags": [
+        "architecture",
+        "guardrails",
+        "deterministic",
+        "ci"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "eliza",
+      "title": "elizaOS",
+      "authors": "elizaOS",
+      "source": "GitHub",
+      "url": "https://github.com/elizaOS/eliza",
+      "type": "harness",
+      "summary": "Open-source agentic operating system with core runtime, plugins, local inference, native bridges, and multi-surface apps.",
+      "usecase": "Use it to stand up a full plugin-extensible agent OS that owns memory actions connectors and device bridges.",
+      "tags": [
+        "agent-os",
+        "runtime",
+        "plugins",
+        "typescript",
+        "local-inference"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "orchard",
+      "title": "Orchard",
+      "authors": "microsoft",
+      "source": "GitHub",
+      "url": "https://github.com/microsoft/Orchard",
+      "type": "harness",
+      "summary": "Kubernetes-native agentic modeling framework that decouples Orchard Env sandboxes from any training or harness loop.",
+      "usecase": "Use it to share one cheap sandbox substrate across SFT RL and multiple coding harnesses on spot clusters.",
+      "tags": [
+        "kubernetes",
+        "sandbox",
+        "rl",
+        "training"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "pi-herdsman",
+      "title": "pi-herdsman",
+      "authors": "boadij",
+      "source": "GitHub",
+      "url": "https://github.com/boadij/pi-herdsman",
+      "type": "harness",
+      "summary": "Orchestration layer that turns Pi sessions into coordinated fleets with nested delegation background work and herdr supervision.",
+      "usecase": "Use it to fan parallel Pi coding agents across worktrees while a supervisor owns ownership and handoff.",
+      "tags": [
+        "orchestration",
+        "pi",
+        "multi-agent",
+        "worktree"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "smol-pi",
+      "title": "smol-pi",
+      "authors": "neuroblaze",
+      "source": "GitHub",
+      "url": "https://github.com/neuroblaze/smol-pi",
+      "type": "tool",
+      "summary": "Shell utility that runs the Pi coding agent inside ephemeral smolvm microVMs with scoped mounts and egress modes.",
+      "usecase": "Use it to confine Pi to a disposable kernel so home keys and host processes stay unreachable.",
+      "tags": [
+        "pi",
+        "smolvm",
+        "sandbox",
+        "cli"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-runtime",
       "title": "ANOLISA",
