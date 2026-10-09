@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-08",
+  "lastUpdated": "2026-10-09",
   "issues": [
+    {
+      "date": "2026-10-09",
+      "title": "MicroVM control planes and cloud-native harnesses outpace chat wrappers",
+      "blurb": "Today's picks center on programmable isolation layers and replaceable agent loops that power users can clone, wire, and run under their own policies. Sandbox-as-tool patterns and durable session control planes dominate over single-vendor IDEs."
+    },
     {
       "date": "2026-10-08",
       "title": "Local microVMs and clone-run harnesses that put isolation under every agent loop",
@@ -235,14 +240,182 @@
       "date": "2026-08-22",
       "title": "Adaptive harnesses, concept audits, and the measurement of agent research",
       "blurb": "Recent work tightens the loop between agents and their evaluation environments while exposing how easily claimed gains dissolve under better controls. The through-line runs from co-evolving validation tasks and programmable environment plugins to concept-level unlearning, evidence arbitration, and end-to-end formal theoretical research."
-    },
-    {
-      "date": "2026-08-21",
-      "title": "Skill induction, adaptive allocation, and auditing self-improvement in agents",
-      "blurb": "Recent work measures whether agents can truly improve their own training algorithms or skill memories, while formalizing routing, compute allocation, and transfer under tight budgets and noisy evaluation. The selection stresses controlled benchmarks, null models, and bicriteria guarantees over raw capability claims."
     }
   ],
   "items": [
+    {
+      "id": "gondolin-2026-10-09",
+      "title": "Gondolin",
+      "authors": "earendil-works",
+      "source": "GitHub",
+      "url": "https://github.com/earendil-works/gondolin",
+      "type": "repo",
+      "dateAdded": "2026-10-09",
+      "summary": "Local Linux micro-VMs with a TypeScript control plane for programmable network, filesystem, and secret injection policies.",
+      "tags": [
+        "microvm",
+        "sandbox",
+        "typescript",
+        "control-plane"
+      ],
+      "usecase": "Use it to wrap agent tool calls in disposable QEMU or krun VMs while keeping credentials and egress on the host.",
+      "returning": false
+    },
+    {
+      "id": "mecatl-2026-10-09",
+      "title": "Mecatl",
+      "authors": "stacklok",
+      "source": "GitHub",
+      "url": "https://github.com/stacklok/mecatl",
+      "type": "harness",
+      "dateAdded": "2026-10-09",
+      "summary": "Cloud-native open-source agent harness with provider-agnostic loop, durable state, permissions, gRPC/HTTP APIs, and optional local microVM execution.",
+      "tags": [
+        "harness",
+        "kubernetes",
+        "cloud-native",
+        "permissions"
+      ],
+      "usecase": "Use it to run the same agent loop locally or on Kubernetes with Redis-backed sessions and deny-dominant permissions.",
+      "returning": false
+    },
+    {
+      "id": "zerocore-ai-microsandbox-2026-10-09",
+      "title": "zerocore-ai/microsandbox",
+      "authors": "zerocore-ai",
+      "source": "GitHub",
+      "url": "https://github.com/zerocore-ai/microsandbox",
+      "type": "repo",
+      "dateAdded": "2026-10-09",
+      "summary": "Open-source local-first hardware-isolated sandboxes with instant startup and OCI compatibility for agent workloads.",
+      "tags": [
+        "microvm",
+        "local",
+        "oci"
+      ],
+      "usecase": "Use it as an embeddable microVM backbone for untrusted code execution in agent pipelines.",
+      "returning": false
+    },
+    {
+      "id": "prime-sandboxes-2026-10-09",
+      "title": "Prime Sandboxes",
+      "authors": "Prime Intellect",
+      "source": "Origins AI / product",
+      "url": "https://originshq.com/blog/prime-sandboxes-microvms-agentic-rl/",
+      "type": "tool",
+      "dateAdded": "2026-10-09",
+      "summary": "Hardware-isolated Linux microVMs for agentic RL at scale with large immutable environment catalog and high concurrency.",
+      "tags": [
+        "microvm",
+        "rl",
+        "eval",
+        "catalog"
+      ],
+      "usecase": "Use it to train or evaluate agents against reproducible microVM environments at thousands of concurrent instances.",
+      "returning": false
+    },
+    {
+      "id": "ai-sdk-harness-2026-10-09",
+      "title": "@ai-sdk/harness",
+      "authors": "Vercel AI SDK",
+      "source": "npm",
+      "url": "https://www.npmjs.com/package/@ai-sdk/harness",
+      "type": "harness",
+      "dateAdded": "2026-10-09",
+      "summary": "Experimental HarnessAgent plus sandbox session interfaces for network-aware agent loops in the AI SDK.",
+      "tags": [
+        "sdk",
+        "harness",
+        "typescript",
+        "sandbox"
+      ],
+      "usecase": "Use it to bootstrap typed harness sessions with Vercel or E2B sandboxes and schema-backed outputs.",
+      "returning": false
+    },
+    {
+      "id": "agent-security-harness-2026-10-09",
+      "title": "Agent Security Harness",
+      "authors": "msaleme",
+      "source": "GitHub Marketplace",
+      "url": "https://github.com/marketplace/actions/agent-security-harness",
+      "type": "tool",
+      "dateAdded": "2026-10-09",
+      "summary": "CI action that runs protocol-level adversarial tests against MCP/A2A endpoints with PASS/FAIL/INCONCLUSIVE verdicts.",
+      "tags": [
+        "security",
+        "eval",
+        "ci",
+        "mcp"
+      ],
+      "usecase": "Use it as a gate to probe live agent endpoints for policy violations without false PASS on unreachable targets.",
+      "returning": false
+    },
+    {
+      "id": "e2b-dev-ai-sdk-sandbox-2026-10-09",
+      "title": "e2b-dev/ai-sdk-sandbox",
+      "authors": "e2b-dev",
+      "source": "GitHub",
+      "url": "https://github.com/e2b-dev/ai-sdk-sandbox",
+      "type": "repo",
+      "dateAdded": "2026-10-09",
+      "summary": "E2B sandbox backend for Vercel AI SDK so HarnessAgent code runs inside microVMs.",
+      "tags": [
+        "e2b",
+        "ai-sdk",
+        "sandbox"
+      ],
+      "usecase": "Use it to wire E2B sessions into AI SDK tools and harnesses with restricted surfaces.",
+      "returning": false
+    },
+    {
+      "id": "ryanalberts-comparisons-2026-10-09",
+      "title": "RyanAlberts comparisons",
+      "authors": "RyanAlberts",
+      "source": "GitHub",
+      "url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses/blob/main/comparisons/best-ai-agent-harnesses-2026.md",
+      "type": "repo",
+      "dateAdded": "2026-10-09",
+      "summary": "Category-ranked top harnesses regenerated weekly from live star and capability data.",
+      "tags": [
+        "ranking",
+        "comparison",
+        "harness"
+      ],
+      "usecase": "Use it to shortlist progressive-disclosure, coding, or research harnesses by current metrics.",
+      "returning": false
+    },
+    {
+      "id": "aws-launches-strands-box-open-source-agent-sandbox-2026-10-09",
+      "title": "AWS launches Strands Box open-source agent sandbox",
+      "authors": "Fernando Dingler / AWS",
+      "source": "AWS Open Source Blog",
+      "url": "https://aws.amazon.com/blogs/opensource/introducing-strands-box-ai-agent-sandboxes-powered-by-dogwood/",
+      "type": "release",
+      "dateAdded": "2026-10-09",
+      "summary": "Strands Box combines OS isolation with Dogwood policies, Strands Shell, and Monty so agents face fine-grained action controls rather than YOLO mode. It is Apache-2.0, macOS-first, and works with any harness.",
+      "tags": [
+        "aws",
+        "sandbox",
+        "release",
+        "policy"
+      ]
+    },
+    {
+      "id": "mecatl-the-case-for-a-cloud-native-agent-harness-2026-10-09",
+      "title": "Mecatl: the case for a cloud-native agent harness",
+      "authors": "Craig McLuckie",
+      "source": "CNCF",
+      "url": "https://www.cncf.io/blog/2026/09/28/the-case-for-a-cloud-native-agent-harness/",
+      "type": "article",
+      "dateAdded": "2026-10-09",
+      "summary": "Stacklok argues agent runtimes must be distributed systems with durable state, leases, and replaceable execution planes. Mecatl ships as the open reference that keeps the loop independent of clients and infrastructure.",
+      "tags": [
+        "cncf",
+        "harness",
+        "kubernetes",
+        "essay"
+      ]
+    },
     {
       "id": "elizaos-2026-10-08",
       "title": "elizaOS",
@@ -10445,167 +10618,6 @@
         "safety",
         "benchmarks",
         "LLMs"
-      ]
-    },
-    {
-      "id": "formaltcs-benchmarking-end-to-end-frontier-formal-theoretical-computer-science-r-2026-08-22",
-      "title": "FormalTCS: Benchmarking End-to-End Frontier Formal Theoretical Computer Science Research of Large Language Models",
-      "authors": "Dingzirui Wang, Xuanliang Zhang, Keyan Xu, Qingfu Zhu, Wanxiang Che",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.20153",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "The benchmark draws 175 expert-validated instances from 2025-2026 STOC, FOCS, SODA, and COLT papers, preserving definitions, assumptions, and proof dependencies with Lean formalizations. Autoformalization is the sharpest bottleneck: the best model scores only 11.5 on translating claims into formal statements versus 28.6 Pass@8 on human-provided statements. An automated research pipeline generates 64 claims of which only 6 survive expert evaluation and proof verification, highlighting limited research taste.",
-      "tags": [
-        "formal methods",
-        "TCS",
-        "autoformalization",
-        "agents",
-        "benchmarks"
-      ]
-    },
-    {
-      "id": "task-coevolve-efficient-harness-optimization-via-adaptive-validation-task-select-2026-08-22",
-      "title": "Task-CoEvolve: Efficient Harness Optimization via Adaptive Validation Task Selection",
-      "authors": "Atsuyuki Miyai, Kiyoharu Aizawa, Toshihiko Yamasaki",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.20169",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "Harness optimization rewrites agent scaffolding code from validation performance without weight updates, but full fixed validation sets waste compute on non-discriminative tasks. Task-CoEvolve selects tasks on which candidate harnesses disagree via variance-weighted sampling that tracks the capability frontier, then estimates full-set scores from the sampled subset. It matches full-set final performance while cutting evaluations by 80 percent on text classification and Terminal-Bench 2.1.",
-      "tags": [
-        "agents",
-        "harness optimization",
-        "evaluation efficiency",
-        "co-evolution"
-      ]
-    },
-    {
-      "id": "inject-align-recover-staged-post-training-for-retrieval-free-document-knowledge--2026-08-22",
-      "title": "Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization",
-      "authors": "Qian Kou, Xiaofeng Shi, Xiaosong Qiu, Hua Zhou",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.20281",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "IAR converts a fixed corpus into parametric knowledge via three stages: structured injection through continuation, rewrite, and reconstruction objectives; QA alignment with answer-only supervision; and recovery by merging with the base instruction model. Across multiple model families and corpora it improves the domain-general frontier, gaining 3.6 points domain QA accuracy and 12.1 points mean general performance over vanilla SFT in most settings. Among methods that reach strong domain internalization, IAR retains one of the strongest general-capability profiles.",
-      "tags": [
-        "post-training",
-        "knowledge internalization",
-        "document QA",
-        "model merging"
-      ]
-    },
-    {
-      "id": "envharness-awakening-static-worlds-for-agent-learning-2026-08-22",
-      "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
-      "authors": "Chengsong Huang, Zifeng Wang, Rujun Han, Jun Yan, Yanfei Chen, Zoey CuiZhu, Ke Jiang, Peng Xia, Han Yu, Yufan Zhuang, Yifei Ming, Jiaqi Pan, Bhavana Dalvi Mishra, Jiaxin Huang, Burak Gokturk, Tomas Pfister, Chen-Yu Lee",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19880",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "Static hand-built environments cannot track agent weaknesses or improve with the policy. EnvHarness wraps any static environment with programmable plug-in components that reshape behavior while preserving the original verifier; EnvRigger diagnoses trajectory failures and synthesizes the components automatically. Across five benchmarks it yields up to 9-point gains on held-out instances with fewer steps and supplies a stronger RL co-evolution signal.",
-      "tags": [
-        "agents",
-        "environment generation",
-        "RL",
-        "harnesses"
-      ]
-    },
-    {
-      "id": "when-text-and-numbers-disagree-evidence-arbitration-in-large-language-models-2026-08-22",
-      "title": "When Text and Numbers Disagree: Evidence Arbitration in Large Language Models",
-      "authors": "Mattia Carletti, Edward Phillips, Fredrik K. Gustafsson, Patitapaban Palo, Lei Clifton, Danielle Belgrave, Xiao Gu, David A. Clifton",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.20116",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "A controlled benchmark generates latent risk trajectories that produce both numerical series and text summaries so that exactly one modality matches ground truth. Models show systematic rather than random arbitration: distinct text-versus-number preferences, stronger reliance on temporal recency than on explicit reliability cues, and over-reliance on external forecasts even when they contradict direct evidence. These heuristics pose a clear failure mode for tool-augmented decision systems.",
-      "tags": [
-        "evidence integration",
-        "multimodal reasoning",
-        "decision making",
-        "benchmarks"
-      ]
-    },
-    {
-      "id": "learning-how-to-forget-fine-tuning-for-long-context-sparse-attention-2026-08-22",
-      "title": "Learning how to Forget: Fine-tuning for Long-Context Sparse Attention",
-      "authors": "Matthias Seeger, Zeyu Zhang, Vihang Patil, Konstantinos Benidis, Sebastian Schelter",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19920",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "The method fine-tunes models under any KV-cache sparse-attention policy on modest hardware so the model co-adapts to the selection rule, often outperforming exact-attention training. An efficient H2O implementation with custom kernels is released inside the KeysAndValues library. Co-adaptation lets sparse policies deliver long-context performance without excessive memory budgets.",
-      "tags": [
-        "long context",
-        "sparse attention",
-        "KV cache",
-        "fine-tuning"
-      ]
-    },
-    {
-      "id": "stopping-and-routing-llm-judge-panels-2026-08-22",
-      "title": "Stopping and Routing LLM Judge Panels",
-      "authors": "Bin Zhu, Yi Xie, Yanghui Rao",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19802",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "Judge-panel design is cast as role-conditioned allocation: from a small audit set the method classifies judges as copies, complements, or specialists and produces a policy that drops redundant copies, routes specialists conditionally, and stops when marginal validation gain falls below cost. Across reasoning, code, safety, preference, and math audits the resulting call plans dominate single judges, flat panels, and fixed cascades. The output is a reusable, auditable routing plan for subsequent evaluation batches.",
-      "tags": [
-        "evaluation",
-        "LLM-as-judge",
-        "routing",
-        "cost-aware panels"
-      ]
-    },
-    {
-      "id": "swe-bench-science-can-coding-agents-resolve-engineering-tasks-in-science-2026-08-22",
-      "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
-      "authors": "Zhipeng Xu, Jiahao Lu, Yining Zheng, Yuxin Wang, Xipeng Qiu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19799",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "The benchmark contains 119 repository-level tasks from 98 scientific GitHub projects across 20 domains, organized into issue-driven, expert-exploratory, and engineering-integration paradigms. Even the strongest agent stays below 50 percent pass@1. Four recurring failure modes emerge: missing scientific abstraction, surface-level repair, incomplete system integration, and failure to generalize knowledge; a paired ablation shows that poorly aligned scientific guidance can induce anchoring.",
-      "tags": [
-        "coding agents",
-        "scientific software",
-        "SWE-bench",
-        "failure analysis"
-      ]
-    },
-    {
-      "id": "manifold-drift-in-flow-preference-optimization-a-root-cause-of-reward-hacking-2026-08-22",
-      "title": "Manifold Drift in Flow Preference Optimization: A Root Cause of Reward Hacking",
-      "authors": "Yansen Han, Shengyi Liao, Yuanxing Zhang, Pengfei Wan, Tao Lin",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.20011",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "Preference updates on flow-matching models can displace terminal samples off the pretrained data manifold whenever the induced displacement has a nonzero normal component. ThermoDPO anchors pairwise preference optimization on preferred samples via a temperature-controlled objective that recovers a continuum between rejection sampling and FlowDPO; a weighted variant restores signal at low temperatures. On SD3.5-M it improves OCR by 47.5 percent and the average of four metrics by 16 percent while controlling a reconstruction surrogate for manifold distance.",
-      "tags": [
-        "flow matching",
-        "preference optimization",
-        "reward hacking",
-        "generative models"
-      ]
-    },
-    {
-      "id": "ai4ai-bench-benchmarking-llm-agents-in-algorithmic-design-for-recursive-self-imp-2026-08-21",
-      "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
-      "authors": "Yizhe Chi, Wenyi Li, Deyao Hong, Xiaoqiu Wang, Mingju Gao, Kaisen Yang, Bingxiang He, Youjie Zheng, Calvin Xiao, Qinhuai Na",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.20318",
-      "type": "paper",
-      "dateAdded": "2026-08-21",
-      "summary": "The authors introduce AI4AI-Bench with 10 frozen repositories spanning training algorithm families, where an agent rewrites the training algorithm under a fixed compute budget and is scored by a hidden evaluator against the original under identical reruns. Across 29 configurations the mean normalized score is only 0.166 (best 0.250), with most submissions never altering how the model learns; those that do score higher, and extra reasoning effort mainly increases willingness to attempt algorithmic change. The suite, evaluators, and all scored submissions are released for repeated measurement.",
-      "tags": [
-        "recursive self-improvement",
-        "agents",
-        "benchmarks",
-        "training algorithms"
       ]
     }
   ]

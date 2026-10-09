@@ -1,7 +1,172 @@
 {
-  "lastUpdated": "2026-10-08",
-  "count": 402,
+  "lastUpdated": "2026-10-09",
+  "count": 410,
   "tools": [
+    {
+      "slug": "harness",
+      "title": "@ai-sdk/harness",
+      "authors": "Vercel AI SDK",
+      "source": "npm",
+      "url": "https://www.npmjs.com/package/@ai-sdk/harness",
+      "type": "harness",
+      "summary": "Experimental HarnessAgent plus sandbox session interfaces for network-aware agent loops in the AI SDK.",
+      "usecase": "Use it to bootstrap typed harness sessions with Vercel or E2B sandboxes and schema-backed outputs.",
+      "tags": [
+        "sdk",
+        "harness",
+        "typescript",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-security-harness",
+      "title": "Agent Security Harness",
+      "authors": "msaleme",
+      "source": "GitHub Marketplace",
+      "url": "https://github.com/marketplace/actions/agent-security-harness",
+      "type": "tool",
+      "summary": "CI action that runs protocol-level adversarial tests against MCP/A2A endpoints with PASS/FAIL/INCONCLUSIVE verdicts.",
+      "usecase": "Use it as a gate to probe live agent endpoints for policy violations without false PASS on unreachable targets.",
+      "tags": [
+        "security",
+        "eval",
+        "ci",
+        "mcp"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ai-sdk-sandbox",
+      "title": "e2b-dev/ai-sdk-sandbox",
+      "authors": "e2b-dev",
+      "source": "GitHub",
+      "url": "https://github.com/e2b-dev/ai-sdk-sandbox",
+      "type": "repo",
+      "summary": "E2B sandbox backend for Vercel AI SDK so HarnessAgent code runs inside microVMs.",
+      "usecase": "Use it to wire E2B sessions into AI SDK tools and harnesses with restricted surfaces.",
+      "tags": [
+        "e2b",
+        "ai-sdk",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "gondolin",
+      "title": "Gondolin",
+      "authors": "earendil-works",
+      "source": "GitHub",
+      "url": "https://github.com/earendil-works/gondolin",
+      "type": "repo",
+      "summary": "Local Linux micro-VMs with a TypeScript control plane for programmable network, filesystem, and secret injection policies.",
+      "usecase": "Use it to wrap agent tool calls in disposable QEMU or krun VMs while keeping credentials and egress on the host.",
+      "tags": [
+        "microvm",
+        "sandbox",
+        "typescript",
+        "control-plane"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mecatl",
+      "title": "Mecatl",
+      "authors": "stacklok",
+      "source": "GitHub",
+      "url": "https://github.com/stacklok/mecatl",
+      "type": "harness",
+      "summary": "Cloud-native open-source agent harness with provider-agnostic loop, durable state, permissions, gRPC/HTTP APIs, and optional local microVM execution.",
+      "usecase": "Use it to run the same agent loop locally or on Kubernetes with Redis-backed sessions and deny-dominant permissions.",
+      "tags": [
+        "harness",
+        "kubernetes",
+        "cloud-native",
+        "permissions"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "prime-sandboxes-microvms-agentic-rl",
+      "title": "Prime Sandboxes",
+      "authors": "Prime Intellect",
+      "source": "Origins AI / product",
+      "url": "https://originshq.com/blog/prime-sandboxes-microvms-agentic-rl/",
+      "type": "tool",
+      "summary": "Hardware-isolated Linux microVMs for agentic RL at scale with large immutable environment catalog and high concurrency.",
+      "usecase": "Use it to train or evaluate agents against reproducible microVM environments at thousands of concurrent instances.",
+      "tags": [
+        "microvm",
+        "rl",
+        "eval",
+        "catalog"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "best-ai-agent-harnesses-2026.md",
+      "title": "RyanAlberts comparisons",
+      "authors": "RyanAlberts",
+      "source": "GitHub",
+      "url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses/blob/main/comparisons/best-ai-agent-harnesses-2026.md",
+      "type": "repo",
+      "summary": "Category-ranked top harnesses regenerated weekly from live star and capability data.",
+      "usecase": "Use it to shortlist progressive-disclosure, coding, or research harnesses by current metrics.",
+      "tags": [
+        "ranking",
+        "comparison",
+        "harness"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "microsandbox",
+      "title": "zerocore-ai/microsandbox",
+      "authors": "zerocore-ai",
+      "source": "GitHub",
+      "url": "https://github.com/zerocore-ai/microsandbox",
+      "type": "repo",
+      "summary": "Open-source local-first hardware-isolated sandboxes with instant startup and OCI compatibility for agent workloads.",
+      "usecase": "Use it as an embeddable microVM backbone for untrusted code execution in agent pipelines.",
+      "tags": [
+        "microvm",
+        "local",
+        "oci"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "abox",
       "title": "ABox",
