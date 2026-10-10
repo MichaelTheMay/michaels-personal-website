@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-09",
+  "lastUpdated": "2026-10-10",
   "issues": [
+    {
+      "date": "2026-10-10",
+      "title": "MicroVM forks and local harness control planes overtake cloud IDEs",
+      "blurb": "Power users are wiring disposable kernels, credential brokers, and pluggable loops into their own agent cycles. Today’s picks emphasize clone-and-run sandboxes plus self-hosted runtimes that keep secrets and state off the model path."
+    },
     {
       "date": "2026-10-09",
       "title": "MicroVM control planes and cloud-native harnesses outpace chat wrappers",
@@ -235,14 +240,110 @@
       "date": "2026-08-23",
       "title": "Hardening agents: memory arbitration, silent failures, and context under cost",
       "blurb": "Recent work tackles practical failure modes of LLM agents, from correlated multi-agent memories and silent tool errors to costly context acquisition and limited deployer control over frontier models. The selection emphasizes rigorous benchmarks, formal framings, and recovery mechanisms that make long-horizon agent systems more reliable."
-    },
-    {
-      "date": "2026-08-22",
-      "title": "Adaptive harnesses, concept audits, and the measurement of agent research",
-      "blurb": "Recent work tightens the loop between agents and their evaluation environments while exposing how easily claimed gains dissolve under better controls. The through-line runs from co-evolving validation tasks and programmable environment plugins to concept-level unlearning, evidence arbitration, and end-to-end formal theoretical research."
     }
   ],
   "items": [
+    {
+      "id": "mi-2026-10-10",
+      "title": "mi",
+      "authors": "av",
+      "source": "GitHub",
+      "url": "https://github.com/av/mi",
+      "type": "harness",
+      "dateAdded": "2026-10-10",
+      "summary": "Minimal self-extending sandboxed agentic harness consisting of a loop, two tools and an LLM that hot-loads new tools from .mjs files.",
+      "tags": [
+        "harness",
+        "minimal",
+        "sandbox",
+        "self-extending"
+      ],
+      "usecase": "Use it to bootstrap a coding agent that can extend its own toolset while running inside an optional Docker sandbox.",
+      "returning": false
+    },
+    {
+      "id": "sandcastle-2026-10-10",
+      "title": "Sandcastle",
+      "authors": "various",
+      "source": "GitHub",
+      "url": "https://github.com/topics/agent-sandbox",
+      "type": "repo",
+      "dateAdded": "2026-10-10",
+      "summary": "TypeScript library for orchestrating coding agents inside isolated sandboxes with configurable branch strategies.",
+      "tags": [
+        "sandbox",
+        "typescript",
+        "orchestration"
+      ],
+      "usecase": "Use it to spin parallel agent worktrees that stay isolated until a merge decision is made.",
+      "returning": false
+    },
+    {
+      "id": "agnes-harness-2026-10-10",
+      "title": "Agnes Harness",
+      "authors": "AgnesAI-Labs",
+      "source": "GitHub",
+      "url": "https://github.com/AgnesAI-Labs/agnes-harness",
+      "type": "harness",
+      "dateAdded": "2026-10-10",
+      "summary": "Pluggable agent harness designed for forward-deployed engineering with recoverable evidence-first execution.",
+      "tags": [
+        "harness",
+        "fde",
+        "evidence"
+      ],
+      "usecase": "Use it to run trustable agent workflows that produce auditable artifacts and can resume after failures.",
+      "returning": false
+    },
+    {
+      "id": "deepagents-sbx-2026-10-10",
+      "title": "deepagents-sbx",
+      "authors": "restuhaqza",
+      "source": "GitHub",
+      "url": "https://github.com/restuhaqza/deepagents-sbx",
+      "type": "repo",
+      "dateAdded": "2026-10-10",
+      "summary": "MicroVM backend for Deep Agents that runs every command inside a guest with its own Linux kernel and private Docker daemon.",
+      "tags": [
+        "microvm",
+        "deep-agents",
+        "sandbox"
+      ],
+      "usecase": "Use it to give LangGraph Deep Agents hardware isolation so generated containers never share the host kernel.",
+      "returning": false
+    },
+    {
+      "id": "mvm-2026-10-10",
+      "title": "mvm",
+      "authors": "agentstep",
+      "source": "GitHub",
+      "url": "https://github.com/agentstep/mvm",
+      "type": "tool",
+      "dateAdded": "2026-10-10",
+      "summary": "Hardware-isolated Linux VMs that boot in 0.35 s on Apple Silicon and the same binary on Linux Firecracker hosts.",
+      "tags": [
+        "microvm",
+        "macos",
+        "firecracker"
+      ],
+      "usecase": "Use it to provide coding agents native microVMs on macOS that pause to zero CPU and restore with disk rollback.",
+      "returning": false
+    },
+    {
+      "id": "retool-launches-centralized-enterprise-agent-harness-2026-10-10",
+      "title": "Retool launches centralized enterprise agent harness",
+      "authors": "David Hsu",
+      "source": "Retool Blog",
+      "url": "https://retool.com/blog/introducing-agent-harness",
+      "type": "article",
+      "dateAdded": "2026-10-10",
+      "summary": "Retool opened early access to a shared policy and execution layer that sits between every employee agent and company systems. It virtualizes filesystems and memory per user while enforcing central tool and model controls.",
+      "tags": [
+        "enterprise",
+        "harness",
+        "article"
+      ]
+    },
     {
       "id": "gondolin-2026-10-09",
       "title": "Gondolin",
@@ -10517,107 +10618,6 @@
         "arbitration",
         "correlation bias",
         "retrieval"
-      ]
-    },
-    {
-      "id": "agent-memory-distillation-empowering-small-llm-agents-with-hierarchical-teacher--2026-08-23",
-      "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
-      "authors": "Taeil Kim, Kangsan Kim, Sung Ju Hwang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.07169",
-      "type": "paper",
-      "dateAdded": "2026-08-23",
-      "summary": "Small agents rarely generate enough successful trajectories to build useful memory on their own. AMD is a training-free method that distills hierarchical memory (workflow, subtask, function) from a large teacher agent’s successful traces and injects it proactively or reactively into the student. On AppWorld, BFCL V3 and ToolSandbox it yields large average accuracy gains for 4B-8B students, with subtask memory contributing the most and 4B models benefiting most.",
-      "tags": [
-        "memory distillation",
-        "small models",
-        "tool use",
-        "agents",
-        "hierarchical memory"
-      ]
-    },
-    {
-      "id": "air-traffic-control-using-large-language-models-prompt-engineering-architecture--2026-08-23",
-      "title": "Air Traffic Control Using Large Language Models: Prompt Engineering, Architecture, and Evaluation",
-      "authors": "Mahyar Ghazanfari, Matthias Casanova, Jordan Kam, Alex Zongo, Peng Wei, Torsten Darrell, Alexandre Bayen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19299",
-      "type": "paper",
-      "dateAdded": "2026-08-23",
-      "summary": "The study tests whether LLMs can produce operationally realistic ATC transmissions in a multi-turn stateful pipeline conditioned on dialogue history. Across nine models and five prompt regimes of increasing constraint, light prompts plus a worked in-context example perform best while heavy scripting collapses under self-generated error accumulation. Injecting ground-truth history repairs the collapse, outlining both a path and current limits for LLM-assisted ATC.",
-      "tags": [
-        "LLM evaluation",
-        "safety-critical",
-        "prompt engineering",
-        "dialogue",
-        "ATC"
-      ]
-    },
-    {
-      "id": "loreley-repository-scale-program-evolution-with-quality-diversity-search-2026-08-23",
-      "title": "Loreley: Repository-Scale Program Evolution with Quality-Diversity Search",
-      "authors": "Mohan Chen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19703",
-      "type": "paper",
-      "dateAdded": "2026-08-23",
-      "summary": "Loreley keeps complete repository states in a quality-diversity archive and samples them as parents or context for later agent edits, producing Git commits judged by a project evaluator. In a matched Zstandard experiment against sequential champion editing and independent root proposals, QD engaged stepping-stone ancestry but did not establish a clear endpoint advantage at the tested budget. Earlier campaigns nevertheless produced multi-file improvements, showing the archive mechanism can be engaged.",
-      "tags": [
-        "program evolution",
-        "quality-diversity",
-        "coding agents",
-        "search",
-        "repositories"
-      ]
-    },
-    {
-      "id": "second-thought-reasoning-in-parallel-as-llm-agents-act-and-observe-2026-08-23",
-      "title": "Second Thought: Reasoning in Parallel as LLM Agents Act and Observe",
-      "authors": "Zhensu Sun, Chengran Yang, Yunbo Lyu, Jieke Shi, David Lo",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.13667",
-      "type": "paper",
-      "dateAdded": "2026-08-23",
-      "summary": "In ReAct-style agents the interval between action emission and observation arrival is a reasoning idle window. Second Thought forks auxiliary reasoning branches at the end of each Thought phase, decodes them concurrently with the main loop, and merges results when the observation arrives. Across three benchmarks and three reasoning models it reduces turn count and main-thread decoding (up to 43% in some settings) while preserving or improving Pass@1 relative to compute-matched controls.",
-      "tags": [
-        "parallel reasoning",
-        "ReAct",
-        "inference efficiency",
-        "agents",
-        "test-time compute"
-      ]
-    },
-    {
-      "id": "how-to-navigate-uncertainty-about-ai-consciousness-2026-08-23",
-      "title": "How to Navigate Uncertainty About AI Consciousness",
-      "authors": "Tom McClelland",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.19215",
-      "type": "essay",
-      "dateAdded": "2026-08-23",
-      "summary": "Deep uncertainty about artificial consciousness creates a dilemma between risking harm to potentially sentient systems and wasting resources on insentient ones. The essay argues for shifting from intractable consciousness questions to tractable valence questions: assess whether an AI has states that would constitute valenced experiences if it were conscious. This valence-focused approach is claimed to be sufficient to ground a responsible development stance under persistent uncertainty.",
-      "tags": [
-        "AI consciousness",
-        "valence",
-        "ethics",
-        "uncertainty",
-        "moral status"
-      ]
-    },
-    {
-      "id": "conceptguard-benchmarking-context-sensitive-unlearning-in-large-language-models-2026-08-22",
-      "title": "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models",
-      "authors": "Sahil Kale, Ian Harris",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.20338",
-      "type": "paper",
-      "dateAdded": "2026-08-22",
-      "summary": "Effective unlearning must remove harmful uses of dual-use concepts while preserving benign ones, yet existing benchmarks treat forget and retain sets as disjoint facts and score only direct recall. ConceptGuard constructs complementary forget and retain sets around dual-use concepts and evaluates intent-sensitive contextual separation. Current methods show weak contextual separation, strong forgetting-utility trade-offs, and poor concept-level consistency.",
-      "tags": [
-        "unlearning",
-        "safety",
-        "benchmarks",
-        "LLMs"
       ]
     }
   ]

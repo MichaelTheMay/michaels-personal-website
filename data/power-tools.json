@@ -1,7 +1,108 @@
 {
-  "lastUpdated": "2026-10-09",
-  "count": 410,
+  "lastUpdated": "2026-10-10",
+  "count": 415,
   "tools": [
+    {
+      "slug": "agnes-harness",
+      "title": "Agnes Harness",
+      "authors": "AgnesAI-Labs",
+      "source": "GitHub",
+      "url": "https://github.com/AgnesAI-Labs/agnes-harness",
+      "type": "harness",
+      "summary": "Pluggable agent harness designed for forward-deployed engineering with recoverable evidence-first execution.",
+      "usecase": "Use it to run trustable agent workflows that produce auditable artifacts and can resume after failures.",
+      "tags": [
+        "harness",
+        "fde",
+        "evidence"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "deepagents-sbx",
+      "title": "deepagents-sbx",
+      "authors": "restuhaqza",
+      "source": "GitHub",
+      "url": "https://github.com/restuhaqza/deepagents-sbx",
+      "type": "repo",
+      "summary": "MicroVM backend for Deep Agents that runs every command inside a guest with its own Linux kernel and private Docker daemon.",
+      "usecase": "Use it to give LangGraph Deep Agents hardware isolation so generated containers never share the host kernel.",
+      "tags": [
+        "microvm",
+        "deep-agents",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mi",
+      "title": "mi",
+      "authors": "av",
+      "source": "GitHub",
+      "url": "https://github.com/av/mi",
+      "type": "harness",
+      "summary": "Minimal self-extending sandboxed agentic harness consisting of a loop, two tools and an LLM that hot-loads new tools from .mjs files.",
+      "usecase": "Use it to bootstrap a coding agent that can extend its own toolset while running inside an optional Docker sandbox.",
+      "tags": [
+        "harness",
+        "minimal",
+        "sandbox",
+        "self-extending"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mvm",
+      "title": "mvm",
+      "authors": "agentstep",
+      "source": "GitHub",
+      "url": "https://github.com/agentstep/mvm",
+      "type": "tool",
+      "summary": "Hardware-isolated Linux VMs that boot in 0.35 s on Apple Silicon and the same binary on Linux Firecracker hosts.",
+      "usecase": "Use it to provide coding agents native microVMs on macOS that pause to zero CPU and restore with disk rollback.",
+      "tags": [
+        "microvm",
+        "macos",
+        "firecracker"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-sandbox",
+      "title": "Sandcastle",
+      "authors": "various",
+      "source": "GitHub",
+      "url": "https://github.com/topics/agent-sandbox",
+      "type": "repo",
+      "summary": "TypeScript library for orchestrating coding agents inside isolated sandboxes with configurable branch strategies.",
+      "usecase": "Use it to spin parallel agent worktrees that stay isolated until a merge decision is made.",
+      "tags": [
+        "sandbox",
+        "typescript",
+        "orchestration"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "harness",
       "title": "@ai-sdk/harness",
