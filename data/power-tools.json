@@ -1,7 +1,318 @@
 {
-  "lastUpdated": "2026-10-10",
-  "count": 415,
+  "lastUpdated": "2026-10-11",
+  "count": 430,
   "tools": [
+    {
+      "slug": "agentenv",
+      "title": "AgentENV",
+      "authors": "kvcache-ai",
+      "source": "GitHub",
+      "url": "https://github.com/kvcache-ai/AgentENV",
+      "type": "harness",
+      "summary": "Distributed Firecracker platform for massive-scale agent environments with sub-50 ms snapshot resume and fork support.",
+      "usecase": "Use it to run thousands of parallel agent rollouts or RL environments with cheap idle snapshots and on-demand image loading.",
+      "tags": [
+        "firecracker",
+        "distributed",
+        "rl",
+        "snapshot"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "arrakis",
+      "title": "Arrakis",
+      "authors": "abshkbh",
+      "source": "GitHub",
+      "url": "https://github.com/abshkbh/arrakis",
+      "type": "repo",
+      "summary": "Self-hosted Cloud Hypervisor microVM platform with checkpoint-restore for agent code execution.",
+      "usecase": "Use it to host long-running agent sessions that can snapshot and resume without losing filesystem state.",
+      "tags": [
+        "cloud-hypervisor",
+        "checkpoint",
+        "self-host"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "boxlite",
+      "title": "BoxLite",
+      "authors": "boxlite-ai",
+      "source": "GitHub",
+      "url": "https://github.com/boxlite-ai/boxlite",
+      "type": "tool",
+      "summary": "Daemonless embeddable micro-VM runtime that runs OCI images inside hardware-isolated Boxes with secret brokering and egress allow-lists.",
+      "usecase": "Use it to give any coding agent a persistent, kernel-isolated workspace that boots fast and never leaks host credentials.",
+      "tags": [
+        "microvm",
+        "embeddable",
+        "oci",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "delonix-runtime",
+      "title": "delonix-runtime",
+      "authors": "angolardevops",
+      "source": "GitHub",
+      "url": "https://github.com/angolardevops/delonix-runtime",
+      "type": "repo",
+      "summary": "Daemonless rootless-first Rust container and microVM runtime alternative to Docker/Podman.",
+      "usecase": "Use it as a lightweight local runtime when agents need both OCI containers and microVM isolation without a daemon.",
+      "tags": [
+        "rust",
+        "rootless",
+        "oci",
+        "microvm"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "dicer",
+      "title": "dicer",
+      "authors": "konradasb",
+      "source": "GitHub",
+      "url": "https://github.com/konradasb/dicer",
+      "type": "repo",
+      "summary": "Tool that slices bare-metal hosts into thousands of Firecracker or Cloud Hypervisor microVMs.",
+      "usecase": "Use it to pack high-density agent sandboxes onto metal for cost-efficient parallel evaluation.",
+      "tags": [
+        "firecracker",
+        "density",
+        "bare-metal"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "k7",
+      "title": "Katakate k7",
+      "authors": "Katakate",
+      "source": "GitHub",
+      "url": "https://github.com/Katakate/k7",
+      "type": "repo",
+      "summary": "Kata Containers plus Firecracker microVM stack packaged for K3s agent workloads.",
+      "usecase": "Use it to run agent sandboxes as Kata/Firecracker pods on a lightweight Kubernetes cluster with allow-list egress.",
+      "tags": [
+        "kata",
+        "firecracker",
+        "k8s",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "lingcage",
+      "title": "lingcage",
+      "authors": "lingcage",
+      "source": "GitHub",
+      "url": "https://github.com/lingcage/lingcage",
+      "type": "repo",
+      "summary": "Rust KVM VMM that cages agents inside cloned microVMs with multi-arch support.",
+      "usecase": "Use it to boot once then clone per-sandbox microVMs for dense agent fleets on x86, aarch64 or riscv.",
+      "tags": [
+        "kvm",
+        "clone",
+        "rust",
+        "vmm"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mgit",
+      "title": "mgit",
+      "authors": "hyper-swe",
+      "source": "GitHub",
+      "url": "https://github.com/hyper-swe/mgit",
+      "type": "harness",
+      "summary": "Sandboxed version control where agent work lands in per-task microVMs and only reviewed results reach main git.",
+      "usecase": "Use it to let agents commit freely inside isolated VMs while your real repo stays clean until human accept.",
+      "tags": [
+        "git",
+        "microvm",
+        "audit",
+        "coding"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nibrun",
+      "title": "nibrun",
+      "authors": "ilbertt",
+      "source": "GitHub",
+      "url": "https://github.com/ilbertt/nibrun",
+      "type": "tool",
+      "summary": "One-click Firecracker microVM hosting for single-binary apps with persistent disk and sleep/wake.",
+      "usecase": "Use it to let an agent compile and deploy a tiny service binary into its own isolated microVM in one skill call.",
+      "tags": [
+        "firecracker",
+        "binary",
+        "deploy",
+        "microvm"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nimbus",
+      "title": "Nimbus",
+      "authors": "AshishKumar4",
+      "source": "GitHub",
+      "url": "https://github.com/AshishKumar4/Nimbus",
+      "type": "tool",
+      "summary": "Free unlimited POSIX sandboxes on Cloudflare Workers using WASM and Durable Objects.",
+      "usecase": "Use it to give agents disposable POSIX environments at the edge without managing VMs yourself.",
+      "tags": [
+        "wasm",
+        "cloudflare",
+        "edge",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nvx",
+      "title": "NVX",
+      "authors": "Microsoft Research / Azure Research",
+      "source": "GitHub",
+      "url": "https://github.com/microsoft/nvx",
+      "type": "repo",
+      "summary": "Ultra-light cross-platform micro-VM sandbox built on OpenVMM for untrusted agentic workloads with hardware isolation.",
+      "usecase": "Use it to spin hardware-isolated Linux guests for agent code execution on KVM, MSHV or Windows Hypervisor Platform without a full hypervisor stack.",
+      "tags": [
+        "microvm",
+        "research",
+        "sandbox",
+        "openvmm"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openvmm",
+      "title": "OpenVMM",
+      "authors": "Microsoft",
+      "source": "GitHub",
+      "url": "https://github.com/microsoft/openvmm",
+      "type": "repo",
+      "summary": "Modular cross-platform Rust VMM that underpins NVX and OpenHCL for lightweight guest isolation.",
+      "usecase": "Use it to build or extend custom microVM runtimes when you need a clean Rust VMM base for agent sandboxes.",
+      "tags": [
+        "vmm",
+        "rust",
+        "hypervisor",
+        "research"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sporevm",
+      "title": "SporeVM",
+      "authors": "sporevm",
+      "source": "GitHub",
+      "url": "https://github.com/sporevm/sporevm",
+      "type": "repo",
+      "summary": "Forkable aarch64 (and experimental x86) Linux microVMs with fast save, restore, CoW fan-out and managed networking.",
+      "usecase": "Use it to warm one parent VM then fork hundreds of agent children that share memory pages for parallel coding tasks.",
+      "tags": [
+        "microvm",
+        "fork",
+        "snapshot",
+        "arm64"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "vibe",
+      "title": "Vibe",
+      "authors": "lynaghk",
+      "source": "GitHub",
+      "url": "https://github.com/lynaghk/vibe",
+      "type": "repo",
+      "summary": "Lightweight microVM-oriented sandbox tooling aimed at secure agent code paths.",
+      "usecase": "Use it to prototype hardware-isolated execution environments for untrusted LLM-generated scripts.",
+      "tags": [
+        "microvm",
+        "sandbox",
+        "security"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "volant",
+      "title": "Volant",
+      "authors": "0xchasercat",
+      "source": "GitHub",
+      "url": "https://github.com/0xchasercat/volant",
+      "type": "repo",
+      "summary": "Experimental microVM runtime focused on agent isolation boundaries.",
+      "usecase": "Use it to explore alternative VMM surfaces when standard Firecracker or libkrun paths are constrained.",
+      "tags": [
+        "microvm",
+        "experimental",
+        "isolation"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agnes-harness",
       "title": "Agnes Harness",
