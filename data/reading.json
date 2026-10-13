@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-11",
+  "lastUpdated": "2026-10-13",
   "issues": [
+    {
+      "date": "2026-10-13",
+      "title": "Self-hosted microVM sandboxes and harness control planes that power-users actually clone",
+      "blurb": "Today's crop centers on clone-and-run isolation layers, local-first runtimes, and observability-driven harness evolution. Power users get hardware boundaries, credential brokering, and session hopping without the banned household CLIs or closed IDEs."
+    },
     {
       "date": "2026-10-11",
       "title": "Clone-ready microVM substrates and harness loops that power-users wire under any agent",
@@ -238,6 +243,128 @@
     }
   ],
   "items": [
+    {
+      "id": "tarit-2026-10-13",
+      "title": "Tarit",
+      "authors": "instavm",
+      "source": "GitHub",
+      "url": "https://github.com/instavm/tarit",
+      "type": "harness",
+      "dateAdded": "2026-10-13",
+      "summary": "Rust-vmm based hypervisor plus multi-node orchestrator for ephemeral agent and RL sandboxes with warm pools and snapshots.",
+      "tags": [
+        "hypervisor",
+        "microvm",
+        "orchestrator",
+        "rl"
+      ],
+      "usecase": "Use it to self-host a Firecracker alternative control plane with 35ms acquire times for bursty agent workloads.",
+      "returning": false
+    },
+    {
+      "id": "superserve-2026-10-13",
+      "title": "Superserve",
+      "authors": "superserve-ai",
+      "source": "GitHub",
+      "url": "https://github.com/superserve-ai/superserve",
+      "type": "harness",
+      "dateAdded": "2026-10-13",
+      "summary": "Firecracker microVM infrastructure with long-running sessions, COW forks, credential broker, and TypeScript/Python SDKs.",
+      "tags": [
+        "firecracker",
+        "sandbox",
+        "sdk",
+        "persistent"
+      ],
+      "usecase": "Use it to give autonomous agents persistent isolated VMs that snapshot and fork without 24-hour kill limits.",
+      "returning": false
+    },
+    {
+      "id": "agentdock-2026-10-13",
+      "title": "AgentDock",
+      "authors": "uvwt",
+      "source": "GitHub",
+      "url": "https://github.com/uvwt/agentdock",
+      "type": "tool",
+      "dateAdded": "2026-10-13",
+      "summary": "Secure MCP runtime that lets agents operate local machines, servers, and containers under explicit permission boundaries.",
+      "tags": [
+        "mcp",
+        "runtime",
+        "multi-device",
+        "self-hosted"
+      ],
+      "usecase": "Use it to give any chat agent controlled multi-device file, shell, Git, and browser access without model inference.",
+      "returning": false
+    },
+    {
+      "id": "adnanmasood-agent-fabric-2026-10-13",
+      "title": "adnanmasood/agent-fabric",
+      "authors": "adnanmasood",
+      "source": "GitHub",
+      "url": "https://github.com/adnanmasood/agent-fabric",
+      "type": "harness",
+      "dateAdded": "2026-10-13",
+      "summary": "Enterprise-style agent harness control plane sample with planning, sandboxed execution, A2A delegation, approvals, memory, and budgets.",
+      "tags": [
+        "control-plane",
+        "enterprise",
+        "a2a",
+        "governance"
+      ],
+      "usecase": "Use it as a cloneable reference to wrap an OpenAI Agents SDK loop with governance and FastMCP enterprise tools.",
+      "returning": false
+    },
+    {
+      "id": "chrobakpiotr-agent-harness-2026-10-13",
+      "title": "chrobakpiotr/agent-harness",
+      "authors": "chrobakpiotr",
+      "source": "GitHub",
+      "url": "https://github.com/chrobakpiotr/agent-harness",
+      "type": "repo",
+      "dateAdded": "2026-10-13",
+      "summary": "Reusable execution contract for spec-driven agents covering request/result documents, validators, recovery, and telemetry.",
+      "tags": [
+        "contract",
+        "spec-driven",
+        "telemetry",
+        "python"
+      ],
+      "usecase": "Use it to pin a shared offline-checked contract so multiple backends stay compatible on launch and cancel semantics.",
+      "returning": false
+    },
+    {
+      "id": "aws-strands-box-open-source-agent-sandbox-reaches-developer-preview-2026-10-13",
+      "title": "AWS Strands Box open-source agent sandbox reaches developer preview",
+      "authors": "Mirko Zorz / AWS",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/12/aws-strands-box-open-source-ai-agent-sandbox/",
+      "type": "release",
+      "dateAdded": "2026-10-13",
+      "summary": "AWS shipped Strands Box, an OS-level Seatbelt sandbox for macOS (Linux coming) that routes every shell, Python, MCP, and network action through Dogwood policy checkpoints. Agents can no longer YOLO; rules can condition later actions on earlier outcomes such as rate limits or test-pass gates.",
+      "tags": [
+        "aws",
+        "sandbox",
+        "policy",
+        "macos"
+      ]
+    },
+    {
+      "id": "local-sandboxing-for-github-copilot-generally-available-2026-10-13",
+      "title": "Local sandboxing for GitHub Copilot generally available",
+      "authors": "GitHub",
+      "source": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+      "type": "release",
+      "dateAdded": "2026-10-13",
+      "summary": "GitHub made local sandboxing GA across Copilot CLI, the app, and VS Code Agent Host, powered by Microsoft Execution Containers. Policies now restrict filesystem, network, credentials, and MCP at the OS level independently of the model in use.",
+      "tags": [
+        "github",
+        "copilot",
+        "sandbox",
+        "mxc"
+      ]
+    },
     {
       "id": "nvx-2026-10-11",
       "title": "NVX",
@@ -10512,118 +10639,6 @@
         "self-improvement",
         "recursive-agents",
         "long-horizon-coding"
-      ]
-    },
-    {
-      "id": "correcting-a-learned-physical-invariant-improves-world-model-rollouts-2026-08-25",
-      "title": "Correcting a learned physical invariant improves world-model rollouts",
-      "authors": "Richard Bao",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.23526",
-      "type": "paper",
-      "dateAdded": "2026-08-25",
-      "summary": "A frozen DreamerV3 trained solely on pendulum video spontaneously learns a scalar energy-like invariant that its latent dynamics approximately conserve; the same search finds none in damped counterparts. The invariant drifts during autonomous rollouts; projecting the latent state back onto its initial level set reduces rollout error in conservative models while random constraints usually increase it. This demonstrates that world models can extract physical constraints from pixels yet still violate them when imagining forward, and that explicit correction helps.",
-      "tags": [
-        "world-models",
-        "physical-invariants",
-        "model-based-RL",
-        "rollout-correction"
-      ]
-    },
-    {
-      "id": "srpo-self-reflective-policy-optimization-for-long-horizon-reasoning-2026-08-25",
-      "title": "SRPO: Self-Reflective Policy Optimization for Long-Horizon Reasoning",
-      "authors": "Jialong Liu, Yuling Shi, Ning Yang, Xiaodong Gu, Zuchao Li",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.23493",
-      "type": "paper",
-      "dateAdded": "2026-08-25",
-      "summary": "SRPO lets an LLM analyze its own completed trajectories, synthesize concise reflection patches, and use reflection-conditioned teacher scores on student on-policy rollouts as dense token-level signals. This converts sparse terminal rewards into dense supervision without external critics or larger teachers. On Qwen3-8B it reaches 73.3% AIME'24 with only 8% of the FLOPs of scaled SFT and substantially raises success on WebShop, ALFWorld and SWE-Bench-Lite.",
-      "tags": [
-        "self-reflection",
-        "policy-optimization",
-        "long-horizon-reasoning",
-        "data-efficiency"
-      ]
-    },
-    {
-      "id": "earthverse-benchmarking-scientific-agents-across-dynamic-earth-systems-and-natur-2026-08-25",
-      "title": "EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards",
-      "authors": "Zhiqing Cui, Xinxiang Yin, Yihong Tang, Xinglang Zhang, Yuanzhe Hu, Siru Zhong, Weidong Tang, Yuxuan Liang, Weijia Li, Ming Jin, Shirui Pan, Yuhao Kang, Dingyi Zhuang, Jinhua Zhao",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.23525",
-      "type": "paper",
-      "dateAdded": "2026-08-25",
-      "summary": "EarthVerse supplies 405 package-scoped investigation tasks grounded in 199 real events across 19 hazard families, with executable fine-grained answer units and process rubrics that tolerate multiple valid paths. Agents must select compatible evidence, run transparent calculations, reconcile sources and preserve provenance. Across 25 systems the best mean answer-unit accuracy is 84.65% yet Strict@95 reaches only 34.81%, revealing that stepwise competence rarely yields consistent end-to-end scientific chains.",
-      "tags": [
-        "scientific-agents",
-        "benchmarks",
-        "earth-systems",
-        "provenance"
-      ]
-    },
-    {
-      "id": "skillalchemy-open-world-agent-skill-creation-2026-08-25",
-      "title": "SkillAlchemy: Open-World Agent Skill Creation",
-      "authors": "Hengjun Wang, Shuyue Wei, Boyi Liu, Jun Yang, Yongxin Tong",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.23417",
-      "type": "paper",
-      "dateAdded": "2026-08-25",
-      "summary": "SkillAlchemy creates reusable skills from underspecified briefs and open-world sources by discovering omitted requirements via contrastive evidence, admitting procedures only within evidence-supported scope, and compiling them into grammar-guided packages. On 87 SkillsBench tasks it raises pass rate 19.9 points over no-skill baselines and 8.6 points over the strongest automated baseline, matching human-curated skills. The admission-centered design grounds skill reliability in source evidence rather than model priors alone.",
-      "tags": [
-        "skill-creation",
-        "open-world-agents",
-        "procedural-memory",
-        "evidence-grounding"
-      ]
-    },
-    {
-      "id": "agent-g-gaussian-guidance-for-agentic-reinforcement-learning-2026-08-25",
-      "title": "Agent-G²: Gaussian Guidance for Agentic Reinforcement Learning",
-      "authors": "Zixuan Wang, Yanrui Miao, Zhengxi Lu, Teng Pan, Yiwen Qiu, Hongxing Li, Peng Qiu, Ruiqing Zhang, Yongliang Shen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.23318",
-      "type": "paper",
-      "dateAdded": "2026-08-25",
-      "summary": "Hint-based RL for long-horizon agents benefits from a band of guidance depths whose utility is approximately Gaussian rather than a single optimum. Agent-G² samples depth per task from a Gaussian whose center and spread are estimated online from ordinary policy-optimization rollouts, combining a global baseline with per-cluster difficulty. On ALFWorld and WebShop with 1.5B/7B models it outperforms strong hint-based and hint-free baselines by several points at under one-third the rollout cost of per-sample probing.",
-      "tags": [
-        "agentic-RL",
-        "guidance",
-        "long-horizon",
-        "sample-efficiency"
-      ]
-    },
-    {
-      "id": "weighted-memory-tree-remembering-what-matters-for-long-horizon-llm-agents-2026-08-25",
-      "title": "Weighted Memory Tree: Remembering What Matters for Long-Horizon LLM Agents",
-      "authors": "Quang Dao, Purvi Kathalkar, Kenneth Eaton",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.20631",
-      "type": "paper",
-      "dateAdded": "2026-08-25",
-      "summary": "WMT organizes execution histories into a hierarchy of tasks, subtasks and actions, each carrying a dynamic retention score updated by events and selection-based decay. Completed trajectories can be folded while still remaining accessible, and low-utility or poisoned content is suppressed. On GAIA-Text across three 8B-class models it improves accuracy by roughly 10 points and cuts prompt tokens by 33% relative to linear memory, while limiting the spread of unreliable information.",
-      "tags": [
-        "hierarchical-memory",
-        "long-horizon-agents",
-        "retention",
-        "memory-hygiene"
-      ]
-    },
-    {
-      "id": "open-weight-masked-introspection-measuring-what-language-models-can-report-about-2026-08-25",
-      "title": "Open-Weight Masked Introspection: Measuring What Language Models Can Report About Their Own Computation",
-      "authors": "Emilio Ferrara",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.20569",
-      "type": "paper",
-      "dateAdded": "2026-08-25",
-      "summary": "OWMI intervenes on residual streams, attention heads and SAE features then asks models whether their computation changed, comparing against sham and impact-matched controls. Across eight open-weight models and 78k measurements, verbal reports discriminate real interventions from shams no better than chance (AUROC ~0.5), even though linear probes recover the same interventions at 75-96% accuracy and a fine-tuned reporter succeeds near-perfectly. The bottleneck lies in the mapping from internal state to truthful verbal report, with implications for testimony-based oversight.",
-      "tags": [
-        "introspection",
-        "mechanistic-interpretability",
-        "model-oversight",
-        "open-weight"
       ]
     }
   ]

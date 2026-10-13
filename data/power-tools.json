@@ -1,7 +1,112 @@
 {
-  "lastUpdated": "2026-10-11",
-  "count": 430,
+  "lastUpdated": "2026-10-13",
+  "count": 435,
   "tools": [
+    {
+      "slug": "agent-fabric",
+      "title": "adnanmasood/agent-fabric",
+      "authors": "adnanmasood",
+      "source": "GitHub",
+      "url": "https://github.com/adnanmasood/agent-fabric",
+      "type": "harness",
+      "summary": "Enterprise-style agent harness control plane sample with planning, sandboxed execution, A2A delegation, approvals, memory, and budgets.",
+      "usecase": "Use it as a cloneable reference to wrap an OpenAI Agents SDK loop with governance and FastMCP enterprise tools.",
+      "tags": [
+        "control-plane",
+        "enterprise",
+        "a2a",
+        "governance"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentdock",
+      "title": "AgentDock",
+      "authors": "uvwt",
+      "source": "GitHub",
+      "url": "https://github.com/uvwt/agentdock",
+      "type": "tool",
+      "summary": "Secure MCP runtime that lets agents operate local machines, servers, and containers under explicit permission boundaries.",
+      "usecase": "Use it to give any chat agent controlled multi-device file, shell, Git, and browser access without model inference.",
+      "tags": [
+        "mcp",
+        "runtime",
+        "multi-device",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "chrobakpiotr/agent-harness",
+      "authors": "chrobakpiotr",
+      "source": "GitHub",
+      "url": "https://github.com/chrobakpiotr/agent-harness",
+      "type": "repo",
+      "summary": "Reusable execution contract for spec-driven agents covering request/result documents, validators, recovery, and telemetry.",
+      "usecase": "Use it to pin a shared offline-checked contract so multiple backends stay compatible on launch and cancel semantics.",
+      "tags": [
+        "contract",
+        "spec-driven",
+        "telemetry",
+        "python"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "superserve",
+      "title": "Superserve",
+      "authors": "superserve-ai",
+      "source": "GitHub",
+      "url": "https://github.com/superserve-ai/superserve",
+      "type": "harness",
+      "summary": "Firecracker microVM infrastructure with long-running sessions, COW forks, credential broker, and TypeScript/Python SDKs.",
+      "usecase": "Use it to give autonomous agents persistent isolated VMs that snapshot and fork without 24-hour kill limits.",
+      "tags": [
+        "firecracker",
+        "sandbox",
+        "sdk",
+        "persistent"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "tarit",
+      "title": "Tarit",
+      "authors": "instavm",
+      "source": "GitHub",
+      "url": "https://github.com/instavm/tarit",
+      "type": "harness",
+      "summary": "Rust-vmm based hypervisor plus multi-node orchestrator for ephemeral agent and RL sandboxes with warm pools and snapshots.",
+      "usecase": "Use it to self-host a Firecracker alternative control plane with 35ms acquire times for bursty agent workloads.",
+      "tags": [
+        "hypervisor",
+        "microvm",
+        "orchestrator",
+        "rl"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agentenv",
       "title": "AgentENV",
