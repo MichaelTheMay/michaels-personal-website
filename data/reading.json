@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-13",
+  "lastUpdated": "2026-10-14",
   "issues": [
+    {
+      "date": "2026-10-14",
+      "title": "Secret-brokered microVMs and kernel jails that keep agent hands off host keys",
+      "blurb": "Today's power-user stack clusters around isolation that the agent cannot reason about: hardware microVMs, Landlock/Seatbelt jails, and host-side credential proxies. Clone-and-run sandboxes and thin harnesses dominate because they let you wire untrusted loops without handing over SSH keys or production tokens."
+    },
     {
       "date": "2026-10-13",
       "title": "Self-hosted microVM sandboxes and harness control planes that power-users actually clone",
@@ -230,19 +235,266 @@
       "date": "2026-08-27",
       "title": "Harness intelligence, world models, and auditable multi-agent systems",
       "blurb": "Recent papers shift attention from raw model scale to the surrounding machinery of agents: just-in-time harnesses, code- and video-based world models, stigmergic multi-agent societies, and rigorous checks on traces, repairs, and routing. Together they treat reliability, cost, and long-horizon competence as first-class design problems."
-    },
-    {
-      "date": "2026-08-26",
-      "title": "Recursive memory, co-evolving feedback, and the harness layer of long-horizon agents",
-      "blurb": "Fresh results treat the agent harness, memory architecture, and critic loop as first-class objects that can be evolved, normalized, or jointly optimized. Across long-horizon benchmarks the gains come from recursive evidence-driven updates, action-token-aligned RL, persistent corpus structure, and tighter coupling between tool creation, safety guardrails, and operational state preservation."
-    },
-    {
-      "date": "2026-08-25",
-      "title": "Long-horizon agents: memory systems, world models, and self-reflective harnesses",
-      "blurb": "Recent work converges on the infrastructure needed for agents that act over extended trajectories: selective and hierarchical memory, interactive world models that preserve physical structure, open-world skill induction, and training or harness methods that turn sparse outcomes into dense self-supervision. These papers show concrete gains in control fidelity, data efficiency, and scientific reliability while exposing remaining gaps in consistency and introspection."
     }
   ],
   "items": [
+    {
+      "id": "nono-2026-10-14",
+      "title": "nono",
+      "authors": "nolabs-ai",
+      "source": "GitHub",
+      "url": "https://github.com/nolabs-ai/nono",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "Zero-setup, zero-latency kernel sandbox using Landlock and Seatbelt that enforces least privilege without containers or VMs.",
+      "tags": [
+        "landlock",
+        "seatbelt",
+        "agent-sandbox",
+        "zero-trust"
+      ],
+      "usecase": "Use it to wrap Claude Code, Codex, or Pi with capability packs so filesystem and network access become structurally impossible outside the allowlist.",
+      "returning": false
+    },
+    {
+      "id": "ai-jail-2026-10-14",
+      "title": "ai-jail",
+      "authors": "akitaonrails",
+      "source": "GitHub",
+      "url": "https://github.com/akitaonrails/ai-jail",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "Rust CLI that runs coding agents inside bubblewrap/Landlock/seccomp on Linux or sandbox-exec on macOS with private home and opt-in credentials.",
+      "tags": [
+        "os-sandbox",
+        "bubblewrap",
+        "landlock",
+        "cli"
+      ],
+      "usecase": "Use it to prefix any agent command so the project is writable while host secrets and home stay hidden by default.",
+      "returning": false
+    },
+    {
+      "id": "bromure-2026-10-14",
+      "title": "Bromure",
+      "authors": "rderaison",
+      "source": "GitHub",
+      "url": "https://github.com/rderaison/bromure",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "macOS app that runs agentic coding and browsing inside disposable Linux VMs destroyed on window close, with host-side MITM credential proxy.",
+      "tags": [
+        "macos",
+        "virtualization.framework",
+        "credential-proxy",
+        "ephemeral-vm"
+      ],
+      "usecase": "Use it to give Claude Code or Codex a throwaway Linux kernel where secrets never enter the guest.",
+      "returning": false
+    },
+    {
+      "id": "yolobox-2026-10-14",
+      "title": "yolobox",
+      "authors": "finbarr",
+      "source": "GitHub",
+      "url": "https://github.com/finbarr/yolobox",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "Docker wrapper that mounts only the project directory at its real path so agents can YOLO without seeing the host home.",
+      "tags": [
+        "docker",
+        "yolo-mode",
+        "project-isolation"
+      ],
+      "usecase": "Use it to run any coding agent full-send inside a container while home, SSH keys, and secrets stay on the host.",
+      "returning": false
+    },
+    {
+      "id": "yolo-cage-2026-10-14",
+      "title": "yolo-cage",
+      "authors": "borenstein",
+      "source": "GitHub",
+      "url": "https://github.com/borenstein/yolo-cage",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "Restrictive sandbox that scans egress for secrets, blocks dangerous git operations, and isolates agents per branch.",
+      "tags": [
+        "egress-filter",
+        "git-guardrails",
+        "exfiltration-block"
+      ],
+      "usecase": "Use it to let agents work autonomously while automatically stopping secret exfiltration and self-merge attempts.",
+      "returning": false
+    },
+    {
+      "id": "smolcoder-2026-10-14",
+      "title": "smolcoder",
+      "authors": "leonvanzyl",
+      "source": "GitHub",
+      "url": "https://github.com/leonvanzyl/smolcoder",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "Lightweight coding harness for local open-weight models via Ollama or LM Studio with no API keys and no cloud.",
+      "tags": [
+        "local-llm",
+        "coding-harness",
+        "ollama"
+      ],
+      "usecase": "Use it to turn a local Qwen or similar model into a file-editing, test-running coding agent on your machine.",
+      "returning": false
+    },
+    {
+      "id": "drydock-2026-10-14",
+      "title": "drydock",
+      "authors": "sricola",
+      "source": "GitHub",
+      "url": "https://github.com/sricola/drydock",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "macOS Apple-container sandbox that runs agents in throwaway VMs, brokers short-lived tokens, and only returns approved git diffs.",
+      "tags": [
+        "macos",
+        "apple-container",
+        "diff-gate",
+        "credential-broker"
+      ],
+      "usecase": "Use it to submit unattended coding tasks whose only host-side output is a reviewable diff you must approve.",
+      "returning": false
+    },
+    {
+      "id": "ags-agent-sandbox-2026-10-14",
+      "title": "ags agent-sandbox",
+      "authors": "thomaspeklak",
+      "source": "GitHub",
+      "url": "https://github.com/thomaspeklak/agent-sandbox",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "Rust CLI that launches Claude, Codex, Gemini, OpenCode, or Pi inside rootless Podman with lockdown and credential bridges.",
+      "tags": [
+        "podman",
+        "rootless",
+        "rust-cli"
+      ],
+      "usecase": "Use it to keep host secrets off the agent while still mounting the repo and selected tools into a hardened container.",
+      "returning": false
+    },
+    {
+      "id": "bunkervm-2026-10-14",
+      "title": "BunkerVM",
+      "authors": "ashishgituser",
+      "source": "GitHub",
+      "url": "https://github.com/ashishgituser/bunkervm",
+      "type": "repo",
+      "dateAdded": "2026-10-14",
+      "summary": "Firecracker microVM sandbox with command recording, snapshot, restore, and step-level rewind for agent debugging.",
+      "tags": [
+        "firecracker",
+        "time-travel",
+        "snapshot",
+        "microvm"
+      ],
+      "usecase": "Use it to time-travel an agent run by rewinding the microVM state after a bad command instead of replaying scripts.",
+      "returning": false
+    },
+    {
+      "id": "agent-dev-env-2026-10-14",
+      "title": "agent-dev-env",
+      "authors": "community",
+      "source": "npm/GitHub",
+      "url": "https://www.npmjs.com/package/agent-dev-env",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "Local sandbox VMs for coding agents with pre-built macOS, Windows ARM64, and Ubuntu images that share the work directory.",
+      "tags": [
+        "local-vm",
+        "multi-os",
+        "coding-agent"
+      ],
+      "usecase": "Use it to boot a full-toolchain guest VM on Apple Silicon that keeps your editor on the host while the agent works isolated.",
+      "returning": false
+    },
+    {
+      "id": "fence-2026-10-14",
+      "title": "Fence",
+      "authors": "Use-Tusk",
+      "source": "GitHub",
+      "url": "https://github.com/Use-Tusk/fence",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "Lightweight CLI sandbox that applies OS-native network and filesystem restrictions without a heavy runtime.",
+      "tags": [
+        "cli",
+        "os-native",
+        "filesystem",
+        "network"
+      ],
+      "usecase": "Use it to quickly constrain an agent process to approved paths and hosts before it touches the rest of the machine.",
+      "returning": false
+    },
+    {
+      "id": "landrun-2026-10-14",
+      "title": "Landrun",
+      "authors": "Zouuup",
+      "source": "GitHub",
+      "url": "https://github.com/Zouuup/landrun",
+      "type": "tool",
+      "dateAdded": "2026-10-14",
+      "summary": "Landlock-based sandboxing helper that applies kernel filesystem and network rules without requiring root.",
+      "tags": [
+        "landlock",
+        "unprivileged",
+        "linux"
+      ],
+      "usecase": "Use it to drop unprivileged Landlock policies around agent-generated processes on modern Linux kernels.",
+      "returning": false
+    },
+    {
+      "id": "introducing-chainguard-workspaces-2026-10-14",
+      "title": "Introducing Chainguard Workspaces",
+      "authors": "Tyler Paxton, Elsie Phillips",
+      "source": "Chainguard",
+      "url": "https://www.chainguard.dev/unchained/introducing-chainguard-workspaces",
+      "type": "release",
+      "dateAdded": "2026-10-14",
+      "summary": "Chainguard ships beta Workspaces that give each developer and coding agent a hardened microVM built from zero-CVE packages. Credentials stay outside the guest and are injected by a host-side proxy while warm snapshot pools keep start times short.",
+      "tags": [
+        "microvm",
+        "chainguard",
+        "workspaces",
+        "credential-proxy"
+      ]
+    },
+    {
+      "id": "ai-jail-v2-9-0-2026-10-14",
+      "title": "ai-jail v2.9.0",
+      "authors": "akitaonrails",
+      "source": "GitHub Releases",
+      "url": "https://github.com/akitaonrails/ai-jail/releases",
+      "type": "release",
+      "dateAdded": "2026-10-14",
+      "summary": "The OS sandbox CLI adds --forward-port for selective loopback relay without full network, improves Devin pre-auth handling, and restores Codex under macOS Seatbelt. Backward compatible with existing .ai-jail configs.",
+      "tags": [
+        "ai-jail",
+        "release",
+        "seatbelt",
+        "sandbox"
+      ]
+    },
+    {
+      "id": "what-does-it-mean-to-sandbox-an-ai-coding-agent-2026-10-14",
+      "title": "What Does It Mean to Sandbox an AI Coding Agent?",
+      "authors": "Amod Gupta",
+      "source": "Endor Labs",
+      "url": "https://www.endorlabs.com/learn/what-does-it-mean-to-sandbox-an-ai-coding-agent",
+      "type": "article",
+      "dateAdded": "2026-10-14",
+      "summary": "The piece argues that an agent sandbox must isolate the act of authoring itself, not just the finished code, because agents read files, install packages, and call APIs in one continuous loop. It ranks OS-level enforcement above container shared-kernel setups and walks through real exfiltration cases that succeeded when guardrails lived only inside the agent.",
+      "tags": [
+        "essay",
+        "sandbox-threat-model",
+        "os-isolation"
+      ]
+    },
     {
       "id": "tarit-2026-10-13",
       "title": "Tarit",
@@ -10399,246 +10651,6 @@
         "verification",
         "structured-reasoning",
         "evaluation"
-      ]
-    },
-    {
-      "id": "repair-or-resample-rethinking-failure-debugging-in-llm-multi-agent-systems-2026-08-27",
-      "title": "Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems",
-      "authors": "Zhongwen Luan, Xiaoyu Zhang, Ming Hu, Yue Yang, Jiongchi Yu, Xiaohong Chen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.25920",
-      "type": "paper",
-      "dateAdded": "2026-08-27",
-      "summary": "SymTrace freezes execution before failure anchors so only the downstream trajectory is regenerated, enabling causal rather than stochastic diagnosis. On the annotated SymFail set of 536 trajectories, unguided reruns reproduce failures only 68% of the time and repair just 6.9%. A symptom-driven intervention method raises repair rate to 20.15%, a nearly threefold gain over prior repair techniques.",
-      "tags": [
-        "multi-agent",
-        "debugging",
-        "reliability",
-        "evaluation"
-      ]
-    },
-    {
-      "id": "training-alignment-auditors-via-reinforcement-learning-2026-08-27",
-      "title": "Training Alignment Auditors via Reinforcement Learning",
-      "authors": "Paul Rosu, Rowan Wang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.25460",
-      "type": "paper",
-      "dateAdded": "2026-08-27",
-      "summary": "LLM auditors are trained with RL in environments that plant hidden behaviors in target system prompts; a judge that knows the ground truth supplies pairwise rewards against reference investigations. Pairwise rewards and clean-target negatives keep false positives below 1% while improving investigation quality, realism, and detection of concerning behaviors in production models. Gains transfer to adversarially fine-tuned targets on AuditBench.",
-      "tags": [
-        "alignment",
-        "auditing",
-        "reinforcement-learning",
-        "safety"
-      ]
-    },
-    {
-      "id": "imitation-learning-for-connection-tableau-construction-2026-08-27",
-      "title": "Imitation Learning for Connection-Tableau Construction",
-      "authors": "Fredrik Rømming, Mantas Bakšys, Martin S. Fixman, Sean B. Holden",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.26009",
-      "type": "paper",
-      "dateAdded": "2026-08-27",
-      "summary": "Proof construction in clausal connection tableaux is cast as a policy over a calculus-induced transition system, scored by a graph neural network trained via imitation on found proofs. Removing symbolic backtracking scaffolding still yields policies that solve up to 46% more problems than leanCoP on standard suites and reach proofs in an order of magnitude fewer steps. The result shows structure-transferring learned policies can largely replace search scaffolding inside a formal calculus.",
-      "tags": [
-        "theorem-proving",
-        "imitation-learning",
-        "neuro-symbolic",
-        "GNN"
-      ]
-    },
-    {
-      "id": "recursive-experiential-working-memory-evolution-for-long-horizon-agent-harnesses-2026-08-26",
-      "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
-      "authors": "Zhaochen Yu, Yingcheng Wu, Zhenfei Yin, Kaiyuan Chen, Zhe Zhao, Mengdi Wang, Shuicheng Yan, Ling Yang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24876",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "Recuris couples Working Memory that tracks task progress with Experiential Memory of skills, so skill selection is grounded in current needs rather than full history, and execution traces localize failures for validation-gated skill updates. A fixed Meta-Agent turns that evidence into recursive memory evolution. Across four long-horizon benchmarks and ten models it improves success in 35 of 37 pairs, adding double-digit points to frontier models and cutting common long-horizon failures by up to 80 percent, with the largest gains on the longest tasks.",
-      "tags": [
-        "agents",
-        "memory",
-        "recursive self-improvement",
-        "long-horizon"
-      ]
-    },
-    {
-      "id": "spo-stream-aligned-policy-optimization-for-asynchronous-agentic-rl-2026-08-26",
-      "title": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
-      "authors": "Kai Ruan, Jinghao Lin, Qianshan Wei, Ziqi Zhou, Zihe Huang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24870",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "Group-relative RL waits for sibling rollouts, which is costly for long tool-use trajectories. SPO++ keeps SPO's persistent prompt-level value but standardizes terminal-outcome advantages under the action-token measure rather than whitening per trajectory, and organizes prompt evidence by the policy event that generated it. Matched runs on ALFWorld and Math-TIR show improved online learning efficiency, with action-token-measure normalization as the strongest ablated component.",
-      "tags": [
-        "reinforcement learning",
-        "agents",
-        "asynchronous RL",
-        "policy optimization"
-      ]
-    },
-    {
-      "id": "cafe-self-improving-search-agents-need-co-evolving-feedback-2026-08-26",
-      "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
-      "authors": "Boyang Liu, Senjie Jin, Peixin Wang, Zhangyue Yin, Yibo Wang, Yuhao Zhou, Xinbing Liang, Shizheng Zhu, Yuhui Wang, Jingqi Tong, Zhiheng Xi, Jiazheng Zhang, Clive Bai, Clarenceai, Blaze Chen, Tao Gui, Qi Zhang, Xuanjing Huang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24794",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "CAFE uses a shared-parameter model that alternates between search-agent and critic roles, initializing recovery from the base agent's own failures and coupling online comparative feedback estimates with offline preference optimization on matched trajectories. On seven agentic search benchmarks it outperforms prior RL search agents, retains gains out-of-domain, and reduces hallucinations. One-sided ablations plateau while alternating agent and critic updates continue to improve, showing feedback must co-evolve with the policy.",
-      "tags": [
-        "search agents",
-        "self-improvement",
-        "feedback",
-        "RL"
-      ]
-    },
-    {
-      "id": "meta-n-recursive-self-improvement-through-emergent-depth-2026-08-26",
-      "title": "Meta^n: Recursive Self-Improvement through Emergent Depth",
-      "authors": "Zae Myung Kim, Young-Jun Lee, Seungyeon Jwa, Dongyeop Kang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24735",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "Meta^n keeps a fixed meta-operation Omega and recurses on its growing input of solver traces and code, writing successive strategic pre-process layers and callable helpers whose depth is set by convergence rather than a preset limit. An evolutionary archive searches over layer chains. Across two backbones it beats prior self-improving agents on eight benchmark families, alone scoring above zero on ARC-AGI-2, with most gains from the conditioning each layer passes downward and with distinct layer roles emerging unprompted.",
-      "tags": [
-        "recursive self-improvement",
-        "meta-learning",
-        "agents",
-        "ARC"
-      ]
-    },
-    {
-      "id": "stepguard-learning-step-level-guardrails-with-scalable-supervision-and-safety-ut-2026-08-26",
-      "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
-      "authors": "Zhijie Zheng, Yu Li, Chen Qian, Yuqian Fu, Yanwei Fu, Lu Sheng, Jing Shao, Dongrui Liu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24777",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "StepGuard audits completed trajectories and checks tool actions before execution. StepGen generates paired safe and unsafe trajectories that share context but diverge at the risky step, and Balance-GRPO dynamically balances learning on safe versus unsafe actions by observed accuracy. It matches or exceeds strong open-weight and GPT-class guards, cutting mean attack success rate by 77.3 percent on AgentDojo and AgentDyn while dropping utility only 2.8 points.",
-      "tags": [
-        "safety",
-        "guardrails",
-        "agents",
-        "tool use"
-      ]
-    },
-    {
-      "id": "starharness-evolving-harnesses-with-stratified-search-for-enterprise-environment-2026-08-26",
-      "title": "StarHarness: Evolving Harnesses with Stratified Search for Enterprise Environments",
-      "authors": "Esakkivel Esakkiraja, Denis Akhiyarov, Vikas Yadav, Sai Rajeswar, Patrice Bechard, Sridhar Nemala, Sagar Davasam",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24804",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "StarHarness evolves environment-specific harness components (prompts, tools, skills, subagents, loops) while freezing model weights, using stratified failure pools and held-out selection tasks. On ITBench SRE, EnterpriseOps-Gym, and AutomationBench Finance it lifts full-benchmark scores 20-35 points after a handful of accepted changes. Gains generalize to held-out tasks and transfer across GPT and Qwen families via interface repairs and operational knowledge that shortens trajectories.",
-      "tags": [
-        "agent harness",
-        "enterprise",
-        "evolution",
-        "tool use"
-      ]
-    },
-    {
-      "id": "evidence-blindness-in-direct-corpus-interaction-persistent-navigation-with-atlas-2026-08-26",
-      "title": "Evidence Blindness in Direct Corpus Interaction: Persistent Navigation with AtlasNav",
-      "authors": "Hongyu Guo, Zhiyu Zheng, Zhao Cao",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24764",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "Direct corpus interaction still loses required evidence under finite budgets (Evidence Blindness). AtlasNav organizes the corpus once into a reusable multi-view Corpus Atlas so each query navigates rather than reconstructing structure online. On BrowseComp-Plus it reaches 92.05 percent strict accuracy while cutting online inference cost 30 percent versus prior dynamic-workspace SOTA, realizes complete evidence earlier under matched budgets, and transfers to PhantomWiki and enterprise knowledge.",
-      "tags": [
-        "agentic search",
-        "corpus navigation",
-        "RAG",
-        "evidence"
-      ]
-    },
-    {
-      "id": "parason-revealing-subtask-and-trial-parallelism-in-llm-reasoning-2026-08-26",
-      "title": "Parason: Revealing Subtask and Trial Parallelism in LLM Reasoning",
-      "authors": "Zhengyang Zhang, Zijian Zhang, Jiaxuan Gao, Shusheng Xu, Yi Wu, Song Han, Ligeng Zhu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24658",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "Parason identifies Trial Parallelism (parallel speculative attempts) as the dominant parallelizable fraction of reasoning compute, especially on hard problems, alongside classic Subtask Parallelism. It converts sequential traces into CFG-structured parallel trajectories and trains with PA-GRPO that rewards accuracy, latency, and both parallelism ratios. On AIME24/25 it delivers roughly 1.7x wall-clock acceleration at competitive accuracy by executing the learned structure via tool calls.",
-      "tags": [
-        "test-time compute",
-        "parallel reasoning",
-        "efficiency",
-        "RL"
-      ]
-    },
-    {
-      "id": "joint-optimization-of-tool-creation-and-use-for-large-language-model-agents-2026-08-26",
-      "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
-      "authors": "Zhi Rui Tam, Chieh-Yen Lin, Yun-Nung Chen, Shao-Hua Sun, Hung-yi Lee",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24571",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "SMITH jointly RL-trains tool creation and tool use inside one policy, alternating build tasks (write a tool from examples) and use tasks (invoke pooled tools) with separate reward axes for schema, code, and outcome failures. A 4B Qwen3 reaches 79.8 macro accuracy on held-out procedural tasks, beating a much larger untrained tool-writer, and lifts TabMWP-Hard and out-of-domain GQA without domain-specific training data. Tools it writes also improve smaller and larger external models.",
-      "tags": [
-        "tool creation",
-        "agents",
-        "reinforcement learning",
-        "multi-task"
-      ]
-    },
-    {
-      "id": "when-must-becomes-maybe-constraint-weakening-in-llm-agent-workflows-2026-08-26",
-      "title": "When \"Must\" Becomes \"Maybe\": Constraint Weakening in LLM Agent Workflows",
-      "authors": "Yiheng Sun, Huifei Wang, Yancheng Zhu, Zhenyu Li, Zebin Zhao, Yifan Yuan",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.24569",
-      "type": "paper",
-      "dateAdded": "2026-08-26",
-      "summary": "In multi-stage agent workflows, handoff artifacts can retain topical content of safety blockers while converting binding prerequisites into mere caveats, producing forbidden actions. Across 1296 controlled episodes, normal compression yields 100 percent deactivation and 54 percent forbidden action, while restoring the four state fields (prerequisite, authority, fallback, consequence) restores full preservation. Downstream verification can contain damage without fixing the artifact, isolating a state-transmission failure distinct from information extraction.",
-      "tags": [
-        "multi-agent",
-        "workflows",
-        "safety",
-        "state preservation"
-      ]
-    },
-    {
-      "id": "reworld-an-interactive-world-model-with-long-horizon-memory-2026-08-25",
-      "title": "ReWorld: An Interactive World Model with Long-Horizon Memory",
-      "authors": "Zhifei Chen, Luozhou Wang, Guibao Shen, Dongyu Yan, Shuai Yang, Tianshuo Xu, Yihua Du, Wei Wang, Tianyi Gui, Lianghua Huang, Yingcong Chen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.23565",
-      "type": "paper",
-      "dateAdded": "2026-08-25",
-      "summary": "ReWorld separates short-horizon control from unbounded memory via mixed per-head attention windows, random head routing, and random chunk dropping during training. At inference a fixed-budget KV cache plus pose-indexed landmark bank retrieves relevant history, while a metric-scale-aligned multi-source data engine and LoRA distillation enable real-time 704x1280 interactive video. It achieves state-of-the-art action following and generation quality, regenerating starting views on minute-long out-and-back rollouts where sliding windows fail.",
-      "tags": [
-        "world-models",
-        "long-horizon-memory",
-        "interactive-generation",
-        "KV-cache"
-      ]
-    },
-    {
-      "id": "prime-agent-a-self-improving-rlm-harness-2026-08-25",
-      "title": "Prime Agent: A Self-Improving RLM Harness",
-      "authors": "Seth Karten, Alex L. Zhang, Kevin Thomas, Sebastian Müller, Elie Bakouch, Daniel Auras, Mika Senghaas, Fares Obeid, Konstantin Dunas, Johannes Hagemann, Sami Jaghouar",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.23552",
-      "type": "paper",
-      "dateAdded": "2026-08-25",
-      "summary": "Prime Agent provides an open harness built around a persistent IPython REPL under the Recursive Language Model abstraction, plus Continual Harness state across trajectories and recursive subagents with direct communication. It standardizes execution, recovery, verification and accounting so that harness failures do not mask model capability. The system lifts ARC-AGI-3 RHAE Best@1 from 30% to 95.5% and matches or exceeds strong baselines on long-context coding, kernel generation, emulators and Factorio progression.",
-      "tags": [
-        "agent-harness",
-        "self-improvement",
-        "recursive-agents",
-        "long-horizon-coding"
       ]
     }
   ]

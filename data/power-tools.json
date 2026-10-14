@@ -1,7 +1,253 @@
 {
-  "lastUpdated": "2026-10-13",
-  "count": 435,
+  "lastUpdated": "2026-10-14",
+  "count": 447,
   "tools": [
+    {
+      "slug": "agent-dev-env",
+      "title": "agent-dev-env",
+      "authors": "community",
+      "source": "npm/GitHub",
+      "url": "https://www.npmjs.com/package/agent-dev-env",
+      "type": "tool",
+      "summary": "Local sandbox VMs for coding agents with pre-built macOS, Windows ARM64, and Ubuntu images that share the work directory.",
+      "usecase": "Use it to boot a full-toolchain guest VM on Apple Silicon that keeps your editor on the host while the agent works isolated.",
+      "tags": [
+        "local-vm",
+        "multi-os",
+        "coding-agent"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-sandbox",
+      "title": "ags agent-sandbox",
+      "authors": "thomaspeklak",
+      "source": "GitHub",
+      "url": "https://github.com/thomaspeklak/agent-sandbox",
+      "type": "tool",
+      "summary": "Rust CLI that launches Claude, Codex, Gemini, OpenCode, or Pi inside rootless Podman with lockdown and credential bridges.",
+      "usecase": "Use it to keep host secrets off the agent while still mounting the repo and selected tools into a hardened container.",
+      "tags": [
+        "podman",
+        "rootless",
+        "rust-cli"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ai-jail",
+      "title": "ai-jail",
+      "authors": "akitaonrails",
+      "source": "GitHub",
+      "url": "https://github.com/akitaonrails/ai-jail",
+      "type": "tool",
+      "summary": "Rust CLI that runs coding agents inside bubblewrap/Landlock/seccomp on Linux or sandbox-exec on macOS with private home and opt-in credentials.",
+      "usecase": "Use it to prefix any agent command so the project is writable while host secrets and home stay hidden by default.",
+      "tags": [
+        "os-sandbox",
+        "bubblewrap",
+        "landlock",
+        "cli"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "bromure",
+      "title": "Bromure",
+      "authors": "rderaison",
+      "source": "GitHub",
+      "url": "https://github.com/rderaison/bromure",
+      "type": "tool",
+      "summary": "macOS app that runs agentic coding and browsing inside disposable Linux VMs destroyed on window close, with host-side MITM credential proxy.",
+      "usecase": "Use it to give Claude Code or Codex a throwaway Linux kernel where secrets never enter the guest.",
+      "tags": [
+        "macos",
+        "virtualization.framework",
+        "credential-proxy",
+        "ephemeral-vm"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "bunkervm",
+      "title": "BunkerVM",
+      "authors": "ashishgituser",
+      "source": "GitHub",
+      "url": "https://github.com/ashishgituser/bunkervm",
+      "type": "repo",
+      "summary": "Firecracker microVM sandbox with command recording, snapshot, restore, and step-level rewind for agent debugging.",
+      "usecase": "Use it to time-travel an agent run by rewinding the microVM state after a bad command instead of replaying scripts.",
+      "tags": [
+        "firecracker",
+        "time-travel",
+        "snapshot",
+        "microvm"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "drydock",
+      "title": "drydock",
+      "authors": "sricola",
+      "source": "GitHub",
+      "url": "https://github.com/sricola/drydock",
+      "type": "tool",
+      "summary": "macOS Apple-container sandbox that runs agents in throwaway VMs, brokers short-lived tokens, and only returns approved git diffs.",
+      "usecase": "Use it to submit unattended coding tasks whose only host-side output is a reviewable diff you must approve.",
+      "tags": [
+        "macos",
+        "apple-container",
+        "diff-gate",
+        "credential-broker"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "fence",
+      "title": "Fence",
+      "authors": "Use-Tusk",
+      "source": "GitHub",
+      "url": "https://github.com/Use-Tusk/fence",
+      "type": "tool",
+      "summary": "Lightweight CLI sandbox that applies OS-native network and filesystem restrictions without a heavy runtime.",
+      "usecase": "Use it to quickly constrain an agent process to approved paths and hosts before it touches the rest of the machine.",
+      "tags": [
+        "cli",
+        "os-native",
+        "filesystem",
+        "network"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "landrun",
+      "title": "Landrun",
+      "authors": "Zouuup",
+      "source": "GitHub",
+      "url": "https://github.com/Zouuup/landrun",
+      "type": "tool",
+      "summary": "Landlock-based sandboxing helper that applies kernel filesystem and network rules without requiring root.",
+      "usecase": "Use it to drop unprivileged Landlock policies around agent-generated processes on modern Linux kernels.",
+      "tags": [
+        "landlock",
+        "unprivileged",
+        "linux"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nono",
+      "title": "nono",
+      "authors": "nolabs-ai",
+      "source": "GitHub",
+      "url": "https://github.com/nolabs-ai/nono",
+      "type": "tool",
+      "summary": "Zero-setup, zero-latency kernel sandbox using Landlock and Seatbelt that enforces least privilege without containers or VMs.",
+      "usecase": "Use it to wrap Claude Code, Codex, or Pi with capability packs so filesystem and network access become structurally impossible outside the allowlist.",
+      "tags": [
+        "landlock",
+        "seatbelt",
+        "agent-sandbox",
+        "zero-trust"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "smolcoder",
+      "title": "smolcoder",
+      "authors": "leonvanzyl",
+      "source": "GitHub",
+      "url": "https://github.com/leonvanzyl/smolcoder",
+      "type": "tool",
+      "summary": "Lightweight coding harness for local open-weight models via Ollama or LM Studio with no API keys and no cloud.",
+      "usecase": "Use it to turn a local Qwen or similar model into a file-editing, test-running coding agent on your machine.",
+      "tags": [
+        "local-llm",
+        "coding-harness",
+        "ollama"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "yolo-cage",
+      "title": "yolo-cage",
+      "authors": "borenstein",
+      "source": "GitHub",
+      "url": "https://github.com/borenstein/yolo-cage",
+      "type": "tool",
+      "summary": "Restrictive sandbox that scans egress for secrets, blocks dangerous git operations, and isolates agents per branch.",
+      "usecase": "Use it to let agents work autonomously while automatically stopping secret exfiltration and self-merge attempts.",
+      "tags": [
+        "egress-filter",
+        "git-guardrails",
+        "exfiltration-block"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "yolobox",
+      "title": "yolobox",
+      "authors": "finbarr",
+      "source": "GitHub",
+      "url": "https://github.com/finbarr/yolobox",
+      "type": "tool",
+      "summary": "Docker wrapper that mounts only the project directory at its real path so agents can YOLO without seeing the host home.",
+      "usecase": "Use it to run any coding agent full-send inside a container while home, SSH keys, and secrets stay on the host.",
+      "tags": [
+        "docker",
+        "yolo-mode",
+        "project-isolation"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-fabric",
       "title": "adnanmasood/agent-fabric",
