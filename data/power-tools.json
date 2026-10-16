@@ -1,7 +1,154 @@
 {
-  "lastUpdated": "2026-10-14",
-  "count": 447,
+  "lastUpdated": "2026-10-16",
+  "count": 454,
   "tools": [
+    {
+      "slug": "ag-harness",
+      "title": "ag-harness",
+      "authors": "ag-harness",
+      "source": "crates.io / GitHub",
+      "url": "https://lib.rs/crates/ag-harness",
+      "type": "harness",
+      "summary": "Rust ADE utility for structured LLM turns with deny-by-default tools, durable sessions, and native sandboxed bash.",
+      "usecase": "Use it to enforce typed, grant-gated agent turns with Seatbelt or Landlock isolation.",
+      "tags": [
+        "rust",
+        "deny-by-default",
+        "sandbox",
+        "sessions"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "graphicle",
+      "title": "Graphicle",
+      "authors": "Graphicle-AI",
+      "source": "GitHub",
+      "url": "https://github.com/Graphicle-AI/graphicle",
+      "type": "tool",
+      "summary": "Single Rust binary that builds a tree-sitter code graph plus project memory (docs, decisions, sessions) and serves cited excerpts over MCP within a token budget.",
+      "usecase": "Use it to give any MCP coding agent precise file-and-line context instead of dumping whole files.",
+      "tags": [
+        "memory",
+        "code-graph",
+        "mcp",
+        "local-first"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "graphmemory",
+      "title": "graphmemory",
+      "authors": "graph-memory",
+      "source": "GitHub",
+      "url": "https://github.com/graph-memory/graphmemory",
+      "type": "tool",
+      "summary": "MCP server that indexes docs, code, and files into a semantic graph and exposes dozens of tools for search, knowledge, tasks, and skills.",
+      "usecase": "Use it to give coding agents a shared project knowledge graph with REST and web UI.",
+      "tags": [
+        "memory",
+        "graph",
+        "mcp",
+        "indexing"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-rs",
+      "title": "harness-rs",
+      "authors": "liliang-cn",
+      "source": "GitHub",
+      "url": "https://github.com/liliang-cn/harness-rs",
+      "type": "harness",
+      "summary": "Rust framework that turns models into production agents with typed ReAct loops, staged autonomy levels, guards, and built-in observability.",
+      "usecase": "Use it to build domain-specific agents with compile-time safety and progressive trust gates.",
+      "tags": [
+        "rust",
+        "framework",
+        "production",
+        "guards"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "memory-graph",
+      "title": "MemoryGraph",
+      "authors": "memory-graph",
+      "source": "GitHub",
+      "url": "https://github.com/memory-graph/memory-graph",
+      "type": "tool",
+      "summary": "Graph-DB MCP memory server for coding agents with relationship tracking, typed stores, and session briefing commands.",
+      "usecase": "Use it to persist patterns, fixes, and decisions across agent sessions with explicit links.",
+      "tags": [
+        "memory",
+        "graph",
+        "mcp",
+        "cli"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "polos",
+      "title": "Polos",
+      "authors": "polos-dev",
+      "source": "GitHub",
+      "url": "https://github.com/polos-dev/polos",
+      "type": "harness",
+      "summary": "Open-source agent runtime with Docker or E2B sandboxes, durable workflows that resume mid-step, HITL approvals, Slack triggers, and OpenTelemetry tracing.",
+      "usecase": "Use it to ship production agents that survive crashes and keep costs low via prompt caching.",
+      "tags": [
+        "runtime",
+        "durable",
+        "sandbox",
+        "observability"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agents",
+      "title": "Rivet Agents",
+      "authors": "rivet-dev",
+      "source": "GitHub",
+      "url": "https://github.com/rivet-dev/agents",
+      "type": "harness",
+      "summary": "Durable actor runtime plus sandbox-agent server so coding agents run inside isolated boxes while the harness and memory live outside, controlled over HTTP/SSE.",
+      "usecase": "Use it to keep the agent loop durable and auditable while tools execute in disposable sandboxes.",
+      "tags": [
+        "durable",
+        "actors",
+        "sandbox",
+        "http"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-dev-env",
       "title": "agent-dev-env",
