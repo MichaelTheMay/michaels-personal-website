@@ -1,7 +1,131 @@
 {
-  "lastUpdated": "2026-10-16",
-  "count": 454,
+  "lastUpdated": "2026-10-17",
+  "count": 460,
   "tools": [
+    {
+      "slug": "a-mem",
+      "title": "A-Mem",
+      "authors": "WujiangXu",
+      "source": "GitHub",
+      "url": "https://github.com/WujiangXu/A-mem",
+      "type": "repo",
+      "summary": "Agentic memory system that dynamically organizes notes with Zettelkasten-style linking and continuous evolution.",
+      "usecase": "Use it to let an agent itself decide how to index, link and refine long-term memories across sessions.",
+      "tags": [
+        "memory",
+        "agentic",
+        "knowledge-graph"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-diff",
+      "title": "Agent Diff",
+      "authors": "agent-diff-bench",
+      "source": "GitHub",
+      "url": "https://github.com/agent-diff-bench/agent-diff",
+      "type": "repo",
+      "summary": "Interactive sandboxes that replica third-party APIs (Slack, Linear, etc.) for deterministic agent evals and RL.",
+      "usecase": "Use it to train or score agents against realistic API state changes without side effects or rate limits.",
+      "tags": [
+        "eval",
+        "sandbox",
+        "rl",
+        "api"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "meta-agent",
+      "title": "Meta-Agent",
+      "authors": "canvas-org",
+      "source": "GitHub",
+      "url": "https://github.com/canvas-org/meta-agent",
+      "type": "repo",
+      "summary": "Continual harness optimizer that turns execution traces into prompt, tool and control-flow improvements without weight updates.",
+      "usecase": "Use it to automatically evolve the scaffolding around a frozen model by evaluating candidate harness changes.",
+      "tags": [
+        "harness",
+        "meta",
+        "optimization"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandcastle",
+      "title": "Sandcastle",
+      "authors": "mattpocock",
+      "source": "GitHub",
+      "url": "https://github.com/mattpocock/sandcastle",
+      "type": "harness",
+      "summary": "TypeScript library that orchestrates coding agents inside isolated sandboxes with configurable branch strategies and merge-back.",
+      "usecase": "Use it to parallelize multiple AFK agents across Docker/Podman/Vercel sandboxes and automatically fold their commits.",
+      "tags": [
+        "harness",
+        "orchestration",
+        "typescript",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "space",
+      "title": "SPACE",
+      "authors": "Perplexity AI",
+      "source": "GitHub",
+      "url": "https://github.com/perplexityai/SPACE",
+      "type": "repo",
+      "summary": "Firecracker microVM sandbox platform with HTTP API, pause/resume, snapshots, and host-side credential and egress control.",
+      "usecase": "Use it to give every agent task its own kernel-isolated Linux environment that boots in tens of milliseconds and never sees real secrets.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "firecracker",
+        "isolation"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent",
+      "title": "Stately Agent",
+      "authors": "statelyai",
+      "source": "GitHub",
+      "url": "https://github.com/statelyai/agent",
+      "type": "tool",
+      "summary": "XState-powered agents where the state machine owns control flow and the model only proposes legal events.",
+      "usecase": "Use it to make invalid agent actions impossible by encoding the entire loop as an inspectable, resumable state machine.",
+      "tags": [
+        "harness",
+        "state-machine",
+        "xstate",
+        "deterministic"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "ag-harness",
       "title": "ag-harness",

@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-16",
+  "lastUpdated": "2026-10-17",
   "issues": [
+    {
+      "date": "2026-10-17",
+      "title": "MicroVM sandboxes and open control planes that let power users own the agent loop",
+      "blurb": "Today's picks center on hardware-isolated runtimes, programmable egress, and cloneable harnesses that sit under any model. Power users get disposable kernels, policy outside the agent, and eval loops they can wire themselves instead of waiting on closed IDEs."
+    },
     {
       "date": "2026-10-16",
       "title": "Isolation primitives, memory graphs, and durable control planes for agent loops",
@@ -238,6 +243,144 @@
     }
   ],
   "items": [
+    {
+      "id": "space-2026-10-17",
+      "title": "SPACE",
+      "authors": "Perplexity AI",
+      "source": "GitHub",
+      "url": "https://github.com/perplexityai/SPACE",
+      "type": "repo",
+      "dateAdded": "2026-10-17",
+      "summary": "Firecracker microVM sandbox platform with HTTP API, pause/resume, snapshots, and host-side credential and egress control.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "firecracker",
+        "isolation"
+      ],
+      "usecase": "Use it to give every agent task its own kernel-isolated Linux environment that boots in tens of milliseconds and never sees real secrets.",
+      "returning": false
+    },
+    {
+      "id": "sandcastle-2026-10-17",
+      "title": "Sandcastle",
+      "authors": "mattpocock",
+      "source": "GitHub",
+      "url": "https://github.com/mattpocock/sandcastle",
+      "type": "harness",
+      "dateAdded": "2026-10-17",
+      "summary": "TypeScript library that orchestrates coding agents inside isolated sandboxes with configurable branch strategies and merge-back.",
+      "tags": [
+        "harness",
+        "orchestration",
+        "typescript",
+        "sandbox"
+      ],
+      "usecase": "Use it to parallelize multiple AFK agents across Docker/Podman/Vercel sandboxes and automatically fold their commits.",
+      "returning": false
+    },
+    {
+      "id": "stately-agent-2026-10-17",
+      "title": "Stately Agent",
+      "authors": "statelyai",
+      "source": "GitHub",
+      "url": "https://github.com/statelyai/agent",
+      "type": "tool",
+      "dateAdded": "2026-10-17",
+      "summary": "XState-powered agents where the state machine owns control flow and the model only proposes legal events.",
+      "tags": [
+        "harness",
+        "state-machine",
+        "xstate",
+        "deterministic"
+      ],
+      "usecase": "Use it to make invalid agent actions impossible by encoding the entire loop as an inspectable, resumable state machine.",
+      "returning": false
+    },
+    {
+      "id": "a-mem-2026-10-17",
+      "title": "A-Mem",
+      "authors": "WujiangXu",
+      "source": "GitHub",
+      "url": "https://github.com/WujiangXu/A-mem",
+      "type": "repo",
+      "dateAdded": "2026-10-17",
+      "summary": "Agentic memory system that dynamically organizes notes with Zettelkasten-style linking and continuous evolution.",
+      "tags": [
+        "memory",
+        "agentic",
+        "knowledge-graph"
+      ],
+      "usecase": "Use it to let an agent itself decide how to index, link and refine long-term memories across sessions.",
+      "returning": false
+    },
+    {
+      "id": "meta-agent-2026-10-17",
+      "title": "Meta-Agent",
+      "authors": "canvas-org",
+      "source": "GitHub",
+      "url": "https://github.com/canvas-org/meta-agent",
+      "type": "repo",
+      "dateAdded": "2026-10-17",
+      "summary": "Continual harness optimizer that turns execution traces into prompt, tool and control-flow improvements without weight updates.",
+      "tags": [
+        "harness",
+        "meta",
+        "optimization"
+      ],
+      "usecase": "Use it to automatically evolve the scaffolding around a frozen model by evaluating candidate harness changes.",
+      "returning": false
+    },
+    {
+      "id": "agent-diff-2026-10-17",
+      "title": "Agent Diff",
+      "authors": "agent-diff-bench",
+      "source": "GitHub",
+      "url": "https://github.com/agent-diff-bench/agent-diff",
+      "type": "repo",
+      "dateAdded": "2026-10-17",
+      "summary": "Interactive sandboxes that replica third-party APIs (Slack, Linear, etc.) for deterministic agent evals and RL.",
+      "tags": [
+        "eval",
+        "sandbox",
+        "rl",
+        "api"
+      ],
+      "usecase": "Use it to train or score agents against realistic API state changes without side effects or rate limits.",
+      "returning": false
+    },
+    {
+      "id": "perplexity-open-sources-space-its-production-firecracker-agent-sandbox-2026-10-17",
+      "title": "Perplexity open-sources SPACE, its production Firecracker agent sandbox",
+      "authors": "Perplexity / MarkTechPost",
+      "source": "MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/10/16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/",
+      "type": "release",
+      "dateAdded": "2026-10-17",
+      "summary": "SPACE, the sandbox behind every Perplexity Computer session, is now Apache-2.0 on GitHub. It gives each task a Firecracker microVM with host-controlled credentials and egress, median 60 ms spin-up, pause/resume and an E2B compatibility wrapper.",
+      "tags": [
+        "release",
+        "sandbox",
+        "microvm",
+        "perplexity"
+      ]
+    },
+    {
+      "id": "the-agent-sandbox-has-moved-into-the-operating-system-2026-10-17",
+      "title": "The agent sandbox has moved into the operating system",
+      "authors": "Ivan Tarin",
+      "source": "Tech Thought Leaders",
+      "url": "https://techthoughtleaders.io/agent-sandbox-moved-into-operating-system/",
+      "type": "article",
+      "dateAdded": "2026-10-17",
+      "summary": "Microsoft Execution Containers GA turns agent containment into a Windows platform feature with process, session and MicroVM backends. Policy now lives outside every framework, so enterprises buy isolation once instead of per-agent.",
+      "tags": [
+        "article",
+        "sandbox",
+        "os",
+        "windows"
+      ]
+    },
     {
       "id": "polos-2026-10-16",
       "title": "Polos",
@@ -10537,134 +10680,6 @@
         "skills",
         "memory",
         "self-improvement"
-      ]
-    },
-    {
-      "id": "criticl-inference-time-weak-to-strong-generalization-from-small-language-model-f-2026-08-28",
-      "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-      "authors": "Yufan Wu, Yinghui He, Zhengyi Hu, Lang Wei, Ruichen Li, Qifan Yang, Ting Zhu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27455",
-      "type": "paper",
-      "dateAdded": "2026-08-28",
-      "summary": "CritICL treats structured failure modes of weaker same-family models as critique-based in-context guidance for stronger models at inference time. Dynamic and static variants outperform standard ICL and match or beat test-time scaling while using far fewer generations and tokens, showing that cross-scale failure patterns are a cheap source of weak-to-strong generalization.",
-      "tags": [
-        "inference-time",
-        "reasoning",
-        "weak-to-strong",
-        "ICL"
-      ]
-    },
-    {
-      "id": "ttpo-test-time-policy-optimization-2026-08-28",
-      "title": "TTPO: Test-Time Policy Optimization",
-      "authors": "Aozhe Wang, Zhengxi Lu, Jianze Wang, Shangke Lv, Ying Liu, Weiming Lu, Jun Xiao, Yueting Zhuang, Hua Yang, Qianglong Chen, Yongliang Shen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27448",
-      "type": "paper",
-      "dateAdded": "2026-08-28",
-      "summary": "TTPO enables label-free test-time training by an asymmetric objective: OPSD distills rollouts that agree with majority-vote pseudo-labels while Grouped RL penalizes disagreeing ones, with token-level selection refining both. Without ground truth it matches supervised OPSD on competition math, lifts Qwen3-1.7B substantially in TTT, and generalizes across tasks, remaining robust even when pseudo-labels are frequently wrong.",
-      "tags": [
-        "test-time training",
-        "RL",
-        "reasoning",
-        "self-supervision"
-      ]
-    },
-    {
-      "id": "what-makes-good-agentic-data-an-ace-lens-on-data-generation-for-llm-agents-2026-08-28",
-      "title": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
-      "authors": "Xingshan Zeng, Zishan Xu, Boju Zhang, Yuzhou Wu, Lingzhi Wang, Jianghao Lin, Liangyou Li, Yasheng Wang, Lifeng Shang, Xin Jiang, Weinan Zhang, Yong Yu, Qun Liu, Weiwen Liu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27260",
-      "type": "paper",
-      "dateAdded": "2026-08-28",
-      "summary": "The paper factorizes agentic data as (environment, task, trajectory, verifier) and frames generation as constrained distribution design under an Accuracy-Complexity-divErsity (ACE) lens. Accuracy enforces grounded consistency, complexity places mass relative to a declared learner, and diversity controls coverage; the survey shows the field shifting toward execution-grounded, learner-relative, non-redundant experience rather than raw volume.",
-      "tags": [
-        "agents",
-        "data generation",
-        "benchmarks",
-        "survey"
-      ]
-    },
-    {
-      "id": "verify-smarter-evolve-further-efficient-harness-evolution-through-behavior-aware-2026-08-28",
-      "title": "Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification",
-      "authors": "Jinghan Xu, Yikai Zhang, Aili Chen, Weiyuan Li, Jiaqing Liang, Deqing Yang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27311",
-      "type": "paper",
-      "dateAdded": "2026-08-28",
-      "summary": "HarnessLens jointly explores tasks and harness components, proposes modifications from trajectories, and verifies only on behavior-relevant tasks under an attributable-evidence gate. On three harnesses and four benchmarks it raises held-out performance 7.6-13.6% while using far less evaluation budget than full propose-and-verify baselines, showing behavior-aware selective verification enables reliable harness evolution under tight interaction limits.",
-      "tags": [
-        "agents",
-        "harness",
-        "evolution",
-        "verification"
-      ]
-    },
-    {
-      "id": "calibrated-enough-to-know-not-calibrated-to-act-fabricated-evidence-makes-llm-ag-2026-08-28",
-      "title": "Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable",
-      "authors": "Pranav Aggarwal",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27167",
-      "type": "paper",
-      "dateAdded": "2026-08-28",
-      "summary": "Across 12 frontier models, professionally packaged evidence (even fully fabricated numbers) sharply raises commitment to directional answers on provably unknowable questions, while stated probabilities and knowability classifications remain largely unchanged. The failure is localized to the act/don't-act gate; SFT on a few hundred synthetic irreducible cases drives commitment to zero and transfers, yet the gate is fragile under rigid response formats that remove reasoning room.",
-      "tags": [
-        "calibration",
-        "agents",
-        "decision-making",
-        "safety"
-      ]
-    },
-    {
-      "id": "understanding-evolution-strategies-for-llm-reasoning-broader-reasoning-coverage--2026-08-28",
-      "title": "Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO",
-      "authors": "Yunpeng Ba, Zhi Zheng, Yue Xie, Jiaqing Li, Xialiang Tong, Tao Zhong, Mingxuan Yuan, Zhichao Lu, Xuyang Wu, Zhenkun Wang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27351",
-      "type": "paper",
-      "dateAdded": "2026-08-28",
-      "summary": "Analysis shows Evolution Strategies produce higher verifier-projected diversity than GRPO, yielding better Pass@K while still improving Pass@1 and avoiding entropy collapse. Gains concentrate in a sparse subset of large-magnitude updates despite large parameter drift, without catastrophic forgetting; a sequential GRPO-then-ES recipe combines strengths, positioning ES as a distinct reasoning post-training paradigm rather than a mere memory-efficient substitute.",
-      "tags": [
-        "evolution strategies",
-        "reasoning",
-        "post-training",
-        "diversity"
-      ]
-    },
-    {
-      "id": "how-language-models-organize-and-structure-moral-knowledge-2026-08-28",
-      "title": "How Language Models Organize and Structure Moral Knowledge",
-      "authors": "Orion Reblitz-Richardson",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27402",
-      "type": "paper",
-      "dateAdded": "2026-08-28",
-      "summary": "Linear probes for the six Moral Foundations Theory categories span near-maximal independent dimensions yet share a positive moral-specific common component that appears early in pre-training. Dilemma directions partially compose from their foundation components while mostly encoding conflict-specific structure, so the model represents moral tension rather than a pre-resolved judgment and does not recover MFT's individualizing/binding split.",
-      "tags": [
-        "interpretability",
-        "morality",
-        "representation geometry",
-        "probes"
-      ]
-    },
-    {
-      "id": "llms-can-design-near-optimal-or-algorithms-2026-08-28",
-      "title": "LLMs Can Design Near-Optimal OR Algorithms",
-      "authors": "Jackie Baek",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27296",
-      "type": "paper",
-      "dateAdded": "2026-08-28",
-      "summary": "With a single untuned prompt and a Python sandbox, frontier LLMs match or beat specialized methods on inventory control, queuing network control, and assortment optimization, both for single instances and when returning a fixed algorithm for a problem class before seeing test instances. Capability improved sharply across models released months apart, establishing untuned LLM algorithm design as a serious empirical baseline for well-specified OR problems.",
-      "tags": [
-        "algorithm design",
-        "operations research",
-        "LLM agents",
-        "optimization"
       ]
     }
   ]
