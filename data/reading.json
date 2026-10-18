@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-17",
+  "lastUpdated": "2026-10-18",
   "issues": [
+    {
+      "date": "2026-10-18",
+      "title": "Isolation layers and control planes that power users actually wire under agent loops",
+      "blurb": "Today's digest surfaces clone-and-run microVM and WASM sandboxes, Rust-native harnesses, graph memories, and multi-agent control planes. Power users can drop these into custom loops for isolation, durable state, and orchestration without closed IDEs or household chatbots."
+    },
     {
       "date": "2026-10-17",
       "title": "MicroVM sandboxes and open control planes that let power users own the agent loop",
@@ -235,14 +240,130 @@
       "date": "2026-08-29",
       "title": "Agent scaffolds, circuit concentration, and reasoning coverage floors",
       "blurb": "This issue gathers recent work that treats agent reliability as an architectural and mechanistic problem rather than a pure scaling one. Papers separate action induction from authorization, concentrate causal circuits through post-training, measure information floors in block drafting, guide exploration with weaker models, and fuse RLVR experts while probing eval-awareness framings and large-scale enterprise reasoning."
-    },
-    {
-      "date": "2026-08-28",
-      "title": "Persistent skills, harness evolution, and calibrated agent action",
-      "blurb": "Recent work treats agent improvement as an external systems problem: experience is compiled into reusable skills and wikis, harnesses are evolved under tight verification budgets, and test-time methods expand reasoning coverage without labels. Parallel results expose where models still fail to gate action under fabricated evidence or eval framing, and show that continual mid-training can reclaim frontier capability for sovereign use."
     }
   ],
   "items": [
+    {
+      "id": "neo4j-agent-memory-2026-10-18",
+      "title": "Neo4j Agent Memory",
+      "authors": "neo4j-labs",
+      "source": "GitHub",
+      "url": "https://github.com/neo4j-labs/agent-memory",
+      "type": "repo",
+      "dateAdded": "2026-10-18",
+      "summary": "Graph-native memory system storing conversations knowledge graphs and reasoning traces backed by Neo4j with short-term long-term and reasoning memory plus MCP.",
+      "tags": [
+        "memory",
+        "graph",
+        "neo4j",
+        "mcp"
+      ],
+      "usecase": "Use it to give agents durable entity-resolved memory with audit edges and eval harness that survives sessions across Python and TypeScript.",
+      "returning": false
+    },
+    {
+      "id": "pve-microvm-2026-10-18",
+      "title": "pve-microvm",
+      "authors": "rcarmo",
+      "source": "GitHub",
+      "url": "https://github.com/rcarmo/pve-microvm",
+      "type": "repo",
+      "dateAdded": "2026-10-18",
+      "summary": "Firecracker-like microVMs for Proxmox VE with KVM isolation under 200 ms boot supporting OCI images unikernels and agent workloads.",
+      "tags": [
+        "microvm",
+        "proxmox",
+        "kvm",
+        "homelab"
+      ],
+      "usecase": "Use it to run coding agents as lightweight hardware-isolated VMs inside existing Proxmox homelab or bare-metal clusters.",
+      "returning": false
+    },
+    {
+      "id": "archon-2026-10-18",
+      "title": "Archon",
+      "authors": "coleam00",
+      "source": "GitHub",
+      "url": "https://github.com/coleam00/Archon",
+      "type": "harness",
+      "dateAdded": "2026-10-18",
+      "summary": "Workflow engine for AI coding agents with YAML-defined phases isolated worktrees and validation gates.",
+      "tags": [
+        "workflow",
+        "worktrees",
+        "validation"
+      ],
+      "usecase": "Use it to encode multi-phase coding workflows that spawn agents in worktrees and enforce gates before merge.",
+      "returning": false
+    },
+    {
+      "id": "matt-pocock-skills-2026-10-18",
+      "title": "Matt Pocock Skills",
+      "authors": "mattpocock",
+      "source": "GitHub",
+      "url": "https://github.com/mattpocock/skills",
+      "type": "repo",
+      "dateAdded": "2026-10-18",
+      "summary": "Composable engineering skills for coding agents covering alignment shared language ADRs specs tests and code review loops.",
+      "tags": [
+        "skills",
+        "coding-agents",
+        "adr",
+        "review"
+      ],
+      "usecase": "Use it to drop reusable skill files into agent contexts so they consistently produce ADRs tests and reviews.",
+      "returning": false
+    },
+    {
+      "id": "aiagentos-2026-10-18",
+      "title": "AIagentOS",
+      "authors": "surya-koritala",
+      "source": "GitHub",
+      "url": "https://github.com/surya-koritala/AIagentOS",
+      "type": "harness",
+      "dateAdded": "2026-10-18",
+      "summary": "Governed user-space Rust runtime and control plane for long-lived AI agents with lifecycle scheduling durable context tool authorization quotas and operator interfaces.",
+      "tags": [
+        "rust",
+        "control-plane",
+        "runtime",
+        "governance"
+      ],
+      "usecase": "Use it to treat agents like OS processes with quotas authorization and durable state outside the model loop.",
+      "returning": false
+    },
+    {
+      "id": "digitalocean-harness-runtime-adds-openhands-and-crewai-support-plus-signals-prev-2026-10-18",
+      "title": "DigitalOcean Harness Runtime adds OpenHands and CrewAI support plus Signals preview",
+      "authors": "DigitalOcean",
+      "source": "DigitalOcean Docs",
+      "url": "https://docs.digitalocean.com/release-notes/agent-harness-runtime/",
+      "type": "release",
+      "dateAdded": "2026-10-18",
+      "summary": "October 2026 updates let users run OpenHands Agent Server and CrewAI agents inside isolated sandboxes with model connections. Signals public preview detects behavioral issues like failed tools or loops so operators can surface bad conversations without reading every transcript.",
+      "tags": [
+        "release",
+        "harness",
+        "sandbox",
+        "observability"
+      ]
+    },
+    {
+      "id": "commoditized-the-agent-sandbox-layer-has-become-a-utility-and-the-moat-is-moving-2026-10-18",
+      "title": "Commoditized: The Agent Sandbox Layer Has Become a Utility — and the Moat Is Moving",
+      "authors": "Blair Hayes",
+      "source": "Forkast",
+      "url": "https://forkast.news/commoditized-the-agent-sandbox-layer-has-become-a-utility-and-the-moat-is-moving/",
+      "type": "article",
+      "dateAdded": "2026-10-18",
+      "summary": "The piece argues that per-agent isolation via Firecracker microVMs and similar has converged across E2B Vercel Fly Perplexity and Google K8s CRDs into baseline infrastructure. Moats are shifting upward to orchestration memory and governance now that sandboxes are utilities.",
+      "tags": [
+        "article",
+        "sandbox",
+        "microvm",
+        "infrastructure"
+      ]
+    },
     {
       "id": "space-2026-10-17",
       "title": "SPACE",
@@ -10568,118 +10689,6 @@
         "agents",
         "RSI",
         "efficiency"
-      ]
-    },
-    {
-      "id": "when-tool-outputs-become-commands-separating-action-induction-from-runtime-autho-2026-08-29",
-      "title": "When Tool Outputs Become Commands: Separating Action Induction from Runtime Authorization in Tool-Augmented LLM Agents",
-      "authors": "Xiaokun Guo, Zhen Xu, Dongdong Huo, Yanqiu Zhang, Wei Wang, Qinfu Yang, Dongjin Yu, Yu Wang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27146",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "SARA treats action induction and execution authorization as distinct runtime roles, using a context-isolated Action Probe to record provenance while authorizing tool calls only against user objectives and audited evidence. No-History-Promotion prevents historical recurrence from converting induced actions into authorized ones. Across AgentDojo and AgentDyn the method caps attack success rate at 0.63 percent while preserving competitive task utility.",
-      "tags": [
-        "agent-safety",
-        "tool-use",
-        "authorization",
-        "runtime-security"
-      ]
-    },
-    {
-      "id": "grain-bridging-name-and-narrative-shifts-in-real-world-graph-reasoning-through-i-2026-08-29",
-      "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
-      "authors": "Zike Yuan, Han Zhang, Jianzhi Yan, Le Liu, Cai Ke, Huozhi Zhou, Jian Xie, Jiran Yin, Yukun Cao, Yue Yu, Hui Wang, Ming Liu, Bing Qin",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27142",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "GRAIN is a single-agent RL framework that casts graph reasoning as semantic parsing plus tool execution and trains with a Structure Invariance Reward that validates intermediate graphs against ground-truth topology. This forces robust text-to-structure mappings instead of surface-pattern memorization. It outperforms multi-agent baselines by 16.45 percent accuracy at lower latency and halves the OOD gap of SFT models on the new GRIT benchmark of linguistic shifts.",
-      "tags": [
-        "graph-reasoning",
-        "agentic-RL",
-        "invariance",
-        "OOD"
-      ]
-    },
-    {
-      "id": "beyond-parallel-blindness-information-floors-and-model-gaps-in-block-drafting-2026-08-29",
-      "title": "Beyond Parallel Blindness: Information Floors and Model Gaps in Block Drafting",
-      "authors": "Xinwei Qiang, Xiang Fang, Chang Chen, Yue Guan, Yufei Ding",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27339",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "The authors separate rejection in block drafters into an information floor (minimum expected rejection given conditioning order) and a residual model gap. Estimating both from target rollouts shows the all-parallel floor reaches 0.286 at the final slot, while one realized token removes 86 to 100 percent of that floor. Current drafters sit far above their floors, with model gap accounting for most of observed rejection, clarifying the value of short-range conditioning versus proposal quality.",
-      "tags": [
-        "speculative-decoding",
-        "information-theory",
-        "LLMs",
-        "efficiency"
-      ]
-    },
-    {
-      "id": "circuit-condensation-post-training-that-concentrates-a-behavior-s-causal-circuit-2026-08-29",
-      "title": "Circuit Condensation: Post-Training that Concentrates a Behavior's Causal Circuit",
-      "authors": "Sai Adith Senthil Kumar",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27254",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "Circuit Condensation iteratively prunes low-attribution edges and trains low-rank adapters to restore performance through the remaining graph, retaining cuts only when task and general capability survive. Across four behaviors and eight models it shrinks circuits 8.1 times on average (up to 316 times) relative to frozen discovery baselines, with weight updates driving the reduction. Exhaustive subset tests and pair ablations confirm many edges are removable and reveal inter-edge dependencies, yielding cleaner sufficient sub-circuits that track original next-token distributions.",
-      "tags": [
-        "mechanistic-interpretability",
-        "circuits",
-        "post-training",
-        "sparsity"
-      ]
-    },
-    {
-      "id": "boosting-llm-exploration-via-weak-model-guidance-in-rlvr-2026-08-29",
-      "title": "Boosting LLM Exploration via Weak-Model Guidance in RLVR",
-      "authors": "Xingyu Shen, Huishuai Zhang, Peng Li, Yinchun Wang, Dongyan Zhao",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27420",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "The method forces a strong policy to continue from partial reasoning trajectories produced by a weaker model, injecting distributional discrepancy that disrupts over-confidence and expands reasoning coverage during RLVR. This outer-prefix guidance preserves generative diversity without extra SFT, complex rewards, or intricate prompting. Gains grow with larger k on mathematical benchmarks, showing substantial expansion of pass@k coverage while mitigating entropy collapse.",
-      "tags": [
-        "RLVR",
-        "exploration",
-        "reasoning",
-        "diversity"
-      ]
-    },
-    {
-      "id": "consolidating-rlvr-capabilities-across-domains-a-deep-dive-into-fusion-paradigms-2026-08-29",
-      "title": "Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms",
-      "authors": "Siye Wu, Kai Yang, Yuchen Cai, Xin Xu, Peng-Yuan Wang, Jiaxuan Wang, Jiashun Liu, Jiafei Lyu, Yangkun Chen, Saiyong Yang, Yanghua Xiao",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27409",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "The paper systematically compares three fusion paradigms for multi-domain RLVR experts: Merge of task vectors, Mix RL on pooled datasets, and multi-teacher on-policy distillation. Average performance differs by at most 1.4 points yet single-benchmark gaps reach 8.6 points, with domain relations visible in task-vector geometry. Practical guidelines emerge: Merge for cheap fusion of existing experts, Mix RL when training from scratch with tuned proportions, and MOPD when preserving domain-specific gains is paramount.",
-      "tags": [
-        "RLVR",
-        "model-merging",
-        "multi-domain",
-        "distillation"
-      ]
-    },
-    {
-      "id": "wikiskill-compiling-agent-experience-into-persistent-knowledge-for-skill-evoluti-2026-08-28",
-      "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
-      "authors": "Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng, Andrew Tomkins, Da-Cheng Juan, Tu Vu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27454",
-      "type": "paper",
-      "dateAdded": "2026-08-28",
-      "summary": "WikiSkill co-evolves executable agent skills with a persistent wiki that consolidates raw execution traces into reusable knowledge. Across benchmarks it outperforms prior skill-evolution methods; larger models gain more from evolved skills, smaller models with skills can beat larger models without them, and skills transfer across model families, with the wiki ablation confirming that persistent accumulation is essential.",
-      "tags": [
-        "agents",
-        "skills",
-        "memory",
-        "self-improvement"
       ]
     }
   ]

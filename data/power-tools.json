@@ -1,7 +1,111 @@
 {
-  "lastUpdated": "2026-10-17",
-  "count": 460,
+  "lastUpdated": "2026-10-18",
+  "count": 465,
   "tools": [
+    {
+      "slug": "aiagentos",
+      "title": "AIagentOS",
+      "authors": "surya-koritala",
+      "source": "GitHub",
+      "url": "https://github.com/surya-koritala/AIagentOS",
+      "type": "harness",
+      "summary": "Governed user-space Rust runtime and control plane for long-lived AI agents with lifecycle scheduling durable context tool authorization quotas and operator interfaces.",
+      "usecase": "Use it to treat agents like OS processes with quotas authorization and durable state outside the model loop.",
+      "tags": [
+        "rust",
+        "control-plane",
+        "runtime",
+        "governance"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "archon",
+      "title": "Archon",
+      "authors": "coleam00",
+      "source": "GitHub",
+      "url": "https://github.com/coleam00/Archon",
+      "type": "harness",
+      "summary": "Workflow engine for AI coding agents with YAML-defined phases isolated worktrees and validation gates.",
+      "usecase": "Use it to encode multi-phase coding workflows that spawn agents in worktrees and enforce gates before merge.",
+      "tags": [
+        "workflow",
+        "worktrees",
+        "validation"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "skills",
+      "title": "Matt Pocock Skills",
+      "authors": "mattpocock",
+      "source": "GitHub",
+      "url": "https://github.com/mattpocock/skills",
+      "type": "repo",
+      "summary": "Composable engineering skills for coding agents covering alignment shared language ADRs specs tests and code review loops.",
+      "usecase": "Use it to drop reusable skill files into agent contexts so they consistently produce ADRs tests and reviews.",
+      "tags": [
+        "skills",
+        "coding-agents",
+        "adr",
+        "review"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-memory",
+      "title": "Neo4j Agent Memory",
+      "authors": "neo4j-labs",
+      "source": "GitHub",
+      "url": "https://github.com/neo4j-labs/agent-memory",
+      "type": "repo",
+      "summary": "Graph-native memory system storing conversations knowledge graphs and reasoning traces backed by Neo4j with short-term long-term and reasoning memory plus MCP.",
+      "usecase": "Use it to give agents durable entity-resolved memory with audit edges and eval harness that survives sessions across Python and TypeScript.",
+      "tags": [
+        "memory",
+        "graph",
+        "neo4j",
+        "mcp"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "pve-microvm",
+      "title": "pve-microvm",
+      "authors": "rcarmo",
+      "source": "GitHub",
+      "url": "https://github.com/rcarmo/pve-microvm",
+      "type": "repo",
+      "summary": "Firecracker-like microVMs for Proxmox VE with KVM isolation under 200 ms boot supporting OCI images unikernels and agent workloads.",
+      "usecase": "Use it to run coding agents as lightweight hardware-isolated VMs inside existing Proxmox homelab or bare-metal clusters.",
+      "tags": [
+        "microvm",
+        "proxmox",
+        "kvm",
+        "homelab"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "a-mem",
       "title": "A-Mem",
