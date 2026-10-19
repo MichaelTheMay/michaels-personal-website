@@ -1,7 +1,133 @@
 {
-  "lastUpdated": "2026-10-18",
-  "count": 465,
+  "lastUpdated": "2026-10-19",
+  "count": 471,
   "tools": [
+    {
+      "slug": "agent-memory-control-plane",
+      "title": "Agent Memory Control Plane",
+      "authors": "AlekseiUL",
+      "source": "GitHub",
+      "url": "https://github.com/AlekseiUL/agent-memory-control-plane",
+      "type": "harness",
+      "summary": "Local-first governance layer for agent memory with deterministic routing, ownership, review gates, scope-aware retrieval, and auditable receipts.",
+      "usecase": "Use it to keep multi-agent memory from leaking preferences or silently overriding facts via SQLite and MCP tools.",
+      "tags": [
+        "memory",
+        "governance",
+        "mcp",
+        "local-first"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "firecode",
+      "title": "firecode",
+      "authors": "deadtrickster",
+      "source": "GitHub",
+      "url": "https://github.com/deadtrickster/firecode",
+      "type": "tool",
+      "summary": "Firecracker and libvirt sandboxes for coding agents with layered rootfs, 60ms checkpoint restores, a verify gate, and live run interaction.",
+      "usecase": "Use it to run an agent with root inside a microVM, copy work out only after a host-side verify script passes.",
+      "tags": [
+        "firecracker",
+        "checkpoint",
+        "verify",
+        "cli"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness2",
+      "title": "Harness2",
+      "authors": "Google Research",
+      "source": "GitHub",
+      "url": "https://github.com/google-research/harness2",
+      "type": "harness",
+      "summary": "Research framework for recursive agent harnessing that edits prompts, memory, skills, tools, and subagents via Propose-Probe-Compose while keeping model weights fixed.",
+      "usecase": "Use it to run open-world harness optimization loops on JobBench, LAB, or WorkBuddy and accumulate an improvement library across tasks.",
+      "tags": [
+        "harness-engineering",
+        "recursion",
+        "eval",
+        "research"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "memory-pod-fabric",
+      "title": "Memory Pod Fabric",
+      "authors": "amotivv-inc",
+      "source": "GitHub",
+      "url": "https://github.com/amotivv-inc/memory-pod-fabric",
+      "type": "repo",
+      "summary": "Open protocol for AI memory infrastructure defining pods, capability tokens, Merkle-anchored audit trails, and Memory Card discovery.",
+      "usecase": "Use it to standardize how agents store, retrieve, and share semantic memory across applications with verifiable receipts.",
+      "tags": [
+        "memory",
+        "protocol",
+        "audit",
+        "mpf"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nemo-fabric",
+      "title": "NeMo Fabric",
+      "authors": "NVIDIA",
+      "source": "GitHub",
+      "url": "https://github.com/NVIDIA/NeMo-Fabric",
+      "type": "harness",
+      "summary": "Execution layer that gives apps and eval systems a consistent interface to compose, validate, and switch agent harnesses with normalized telemetry.",
+      "usecase": "Use it to run the same consumer config against Claude Code, deepagents, OpenHands, or Pi adapters without rewriting integrations.",
+      "tags": [
+        "fabric",
+        "adapters",
+        "eval",
+        "nvidia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sample-agentic-fabric",
+      "title": "sample-agentic-fabric",
+      "authors": "aws-samples",
+      "source": "GitHub",
+      "url": "https://github.com/aws-samples/sample-agentic-fabric",
+      "type": "repo",
+      "summary": "Reference Arbiter control plane on AWS that fabricates workers on demand, evaluates authority scopes, and records legibility for multi-agent systems.",
+      "usecase": "Use it to prototype constitutional multi-agent coordination where every dispatch is governed and escalations become case law.",
+      "tags": [
+        "control-plane",
+        "aws",
+        "multi-agent",
+        "governance"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "aiagentos",
       "title": "AIagentOS",

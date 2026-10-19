@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-18",
+  "lastUpdated": "2026-10-19",
   "issues": [
+    {
+      "date": "2026-10-19",
+      "title": "MicroVM sandboxes and recursive harnesses power users actually wire into loops",
+      "blurb": "Today's picks cluster around hardware-isolated execution boundaries, Git-native control planes, and harnesses that improve themselves without touching model weights. Power users get clone-and-run isolation, policy gates, and eval loops instead of another chat IDE."
+    },
     {
       "date": "2026-10-18",
       "title": "Isolation layers and control planes that power users actually wire under agent loops",
@@ -235,14 +240,149 @@
       "date": "2026-08-30",
       "title": "Live harness evolution and long-horizon agent architecture",
       "blurb": "Recent papers treat the agent runtime itself as a first-class, improvable object rather than a fixed wrapper around a model. Supervisors steer workers mid-run, mutable skill state replaces growing conversation histories, operator-structured latent transitions improve world-action models, and neuro-symbolic proof evolution preserves verified structure across attempts. Parallel systems and optimization work on KV repair, sparse attention, DPO scaling, and RLM training parallelism reinforce the same move from static scaffolds toward adaptive, efficient long-horizon execution."
-    },
-    {
-      "date": "2026-08-29",
-      "title": "Agent scaffolds, circuit concentration, and reasoning coverage floors",
-      "blurb": "This issue gathers recent work that treats agent reliability as an architectural and mechanistic problem rather than a pure scaling one. Papers separate action induction from authorization, concentrate causal circuits through post-training, measure information floors in block drafting, guide exploration with weaker models, and fuse RLVR experts while probing eval-awareness framings and large-scale enterprise reasoning."
     }
   ],
   "items": [
+    {
+      "id": "harness2-2026-10-19",
+      "title": "Harness2",
+      "authors": "Google Research",
+      "source": "GitHub",
+      "url": "https://github.com/google-research/harness2",
+      "type": "harness",
+      "dateAdded": "2026-10-19",
+      "summary": "Research framework for recursive agent harnessing that edits prompts, memory, skills, tools, and subagents via Propose-Probe-Compose while keeping model weights fixed.",
+      "tags": [
+        "harness-engineering",
+        "recursion",
+        "eval",
+        "research"
+      ],
+      "usecase": "Use it to run open-world harness optimization loops on JobBench, LAB, or WorkBuddy and accumulate an improvement library across tasks.",
+      "returning": false
+    },
+    {
+      "id": "firecode-2026-10-19",
+      "title": "firecode",
+      "authors": "deadtrickster",
+      "source": "GitHub",
+      "url": "https://github.com/deadtrickster/firecode",
+      "type": "tool",
+      "dateAdded": "2026-10-19",
+      "summary": "Firecracker and libvirt sandboxes for coding agents with layered rootfs, 60ms checkpoint restores, a verify gate, and live run interaction.",
+      "tags": [
+        "firecracker",
+        "checkpoint",
+        "verify",
+        "cli"
+      ],
+      "usecase": "Use it to run an agent with root inside a microVM, copy work out only after a host-side verify script passes.",
+      "returning": false
+    },
+    {
+      "id": "nemo-fabric-2026-10-19",
+      "title": "NeMo Fabric",
+      "authors": "NVIDIA",
+      "source": "GitHub",
+      "url": "https://github.com/NVIDIA/NeMo-Fabric",
+      "type": "harness",
+      "dateAdded": "2026-10-19",
+      "summary": "Execution layer that gives apps and eval systems a consistent interface to compose, validate, and switch agent harnesses with normalized telemetry.",
+      "tags": [
+        "fabric",
+        "adapters",
+        "eval",
+        "nvidia"
+      ],
+      "usecase": "Use it to run the same consumer config against Claude Code, deepagents, OpenHands, or Pi adapters without rewriting integrations.",
+      "returning": false
+    },
+    {
+      "id": "agent-memory-control-plane-2026-10-19",
+      "title": "Agent Memory Control Plane",
+      "authors": "AlekseiUL",
+      "source": "GitHub",
+      "url": "https://github.com/AlekseiUL/agent-memory-control-plane",
+      "type": "harness",
+      "dateAdded": "2026-10-19",
+      "summary": "Local-first governance layer for agent memory with deterministic routing, ownership, review gates, scope-aware retrieval, and auditable receipts.",
+      "tags": [
+        "memory",
+        "governance",
+        "mcp",
+        "local-first"
+      ],
+      "usecase": "Use it to keep multi-agent memory from leaking preferences or silently overriding facts via SQLite and MCP tools.",
+      "returning": false
+    },
+    {
+      "id": "sample-agentic-fabric-2026-10-19",
+      "title": "sample-agentic-fabric",
+      "authors": "aws-samples",
+      "source": "GitHub",
+      "url": "https://github.com/aws-samples/sample-agentic-fabric",
+      "type": "repo",
+      "dateAdded": "2026-10-19",
+      "summary": "Reference Arbiter control plane on AWS that fabricates workers on demand, evaluates authority scopes, and records legibility for multi-agent systems.",
+      "tags": [
+        "control-plane",
+        "aws",
+        "multi-agent",
+        "governance"
+      ],
+      "usecase": "Use it to prototype constitutional multi-agent coordination where every dispatch is governed and escalations become case law.",
+      "returning": false
+    },
+    {
+      "id": "memory-pod-fabric-2026-10-19",
+      "title": "Memory Pod Fabric",
+      "authors": "amotivv-inc",
+      "source": "GitHub",
+      "url": "https://github.com/amotivv-inc/memory-pod-fabric",
+      "type": "repo",
+      "dateAdded": "2026-10-19",
+      "summary": "Open protocol for AI memory infrastructure defining pods, capability tokens, Merkle-anchored audit trails, and Memory Card discovery.",
+      "tags": [
+        "memory",
+        "protocol",
+        "audit",
+        "mpf"
+      ],
+      "usecase": "Use it to standardize how agents store, retrieve, and share semantic memory across applications with verifiable receipts.",
+      "returning": false
+    },
+    {
+      "id": "anthropic-decouples-harness-from-sandbox-to-cut-first-token-time-90-2026-10-19",
+      "title": "Anthropic decouples harness from sandbox to cut first-token time 90%",
+      "authors": "Daniel Singer",
+      "source": "StartupHub.ai",
+      "url": "https://www.startuphub.ai/ai-news/technology/2026/anthropic-split-its-agent-to-cut-start-time-90",
+      "type": "article",
+      "dateAdded": "2026-10-19",
+      "summary": "Anthropic described a three-part split of session log, external harness brain, and on-demand sandboxes so credentials never enter the guest and failures become tool errors the model can recover from. The redesign also blocks prompt-injection exfiltration by injecting secrets only at a host proxy.",
+      "tags": [
+        "anthropic",
+        "harness",
+        "sandbox",
+        "architecture"
+      ]
+    },
+    {
+      "id": "show-hn-brig-microvm-sandbox-for-coding-agents-on-mac-and-linux-2026-10-19",
+      "title": "Show HN: Brig microVM sandbox for coding agents on Mac and Linux",
+      "authors": "spirosoik",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49802729",
+      "type": "release",
+      "dateAdded": "2026-10-19",
+      "summary": "Brig open-sources an Apache-2.0 Go CLI that boots a full guest kernel for agents, mounts only the named project, and keeps host keychain and SSH agent out of reach. The post highlights controlled autonomy for remediation and auto-approved local coding loops.",
+      "tags": [
+        "show-hn",
+        "microvm",
+        "brig",
+        "sandbox"
+      ]
+    },
     {
       "id": "neo4j-agent-memory-2026-10-18",
       "title": "Neo4j Agent Memory",
@@ -10561,134 +10701,6 @@
         "long-context",
         "efficiency",
         "inference"
-      ]
-    },
-    {
-      "id": "clusterattention-a-training-free-speedup-of-bidirectional-attention-2026-08-30",
-      "title": "ClusterAttention: A training-free speedup of bidirectional attention",
-      "authors": "Kasper Nordenram, Amelie Dittmann",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.26965",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "ClusterAttention uses fast recursive clustering of keys and queries per head to form fixed-size power-of-two blocks that run at dense attention latency on GPUs, plus centroid compensation that shrinks approximation error. It is training-free and works for unstructured inputs in a single forward pass. On TabPFN-3 it yields 2-6x speedups at 99%+ accuracy retention; on Wan 2.1 video generation it is both closer to dense attention and faster than a domain-specific baseline.",
-      "tags": [
-        "attention",
-        "sparsity",
-        "efficiency",
-        "training-free"
-      ]
-    },
-    {
-      "id": "performance-foundations-of-parallel-distributed-reasoning-language-models-2026-08-30",
-      "title": "Performance Foundations of Parallel & Distributed Reasoning Language Models",
-      "authors": "Maciej Besta, Leonard Schmidt, Lara Nonino, Robert Gerstenberger, Pierre Pang, Patrik Okanovic, Ales Kubicek, Tiancheng Chen, Baraq Lipshitz, Torsten Hoefler",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27046",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "The paper systematizes RL-for-LLM post-training (PPO, GRPO and variants) from a compute-centric view and builds a taxonomy of intra- and inter-model parallelism for multi-model RLM pipelines, including disaggregated placement, stage fusion and asynchronous execution. Insights are made rigorous via the work-depth model. It analyzes existing frameworks and distills practical guidelines plus open directions for scalable, cost-effective reasoning model training.",
-      "tags": [
-        "RLVR",
-        "systems",
-        "parallelism",
-        "reasoning-models"
-      ]
-    },
-    {
-      "id": "prediction-of-prediction-pop-inter-layer-activation-fusion-for-single-pass-hallu-2026-08-30",
-      "title": "Prediction of Prediction (PoP): Inter-Layer Activation Fusion for Single-Pass Hallucination Detection in Large Language Models",
-      "authors": "Himal Badu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27165",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "PoP fuses intermediate hidden representations across depth inside a single forward pass to capture layer-transition uncertainty as a signal of factual error. On TruthfulQA and related benchmarks it reaches 75.5% AUROC while adding under 1.2% latency and requiring no extra generation passes. The approach targets overconfident false assertions that defeat output-stage uncertainty metrics without multi-sample overhead.",
-      "tags": [
-        "hallucination",
-        "interpretability",
-        "efficiency",
-        "LLM-safety"
-      ]
-    },
-    {
-      "id": "disentangling-optimization-scale-from-preference-scale-in-dpo-2026-08-30",
-      "title": "Disentangling Optimization Scale from Preference Scale in DPO",
-      "authors": "Ivan Kruzhilov",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27032",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "The paper shows that the DPO coefficient beta entangles inverse preference-noise scale with optimization step size, producing non-monotone policy deviation and incomparable loss values across beta at fixed learning rate. A centered-softplus reformulation is argmin-equivalent yet makes the two effects independently tunable and admits a continuous beta-to-0 endpoint. The result clarifies hyperparameter roles and simplifies scheduling for preference optimization.",
-      "tags": [
-        "DPO",
-        "alignment",
-        "optimization",
-        "preference-learning"
-      ]
-    },
-    {
-      "id": "mechanistic-reaction-prediction-via-discrete-flow-matching-on-graph-structured-e-2026-08-29",
-      "title": "Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation",
-      "authors": "Nguyen Xuan-Vu, Octavian Susanu, Daniel Armstrong, Philippe Schwaller",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27429",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "MAELLE models chemical reactions as discrete flow matching over electron occupation vectors on bonding, non-bonding, and hydrogen sites rather than product generation or heuristic graph edits. It constructs intermediate trajectories via optimal transport on a continuous-time Markov chain, recovering interpretable mechanistic edit sequences without elementary-step labels. The method matches leading USPTO-480K accuracy, stays robust under structural and reaction-type shifts, and naturally surfaces side products from full electron redistribution.",
-      "tags": [
-        "chemistry",
-        "flow-matching",
-        "mechanistic-interpretability",
-        "graph-ML"
-      ]
-    },
-    {
-      "id": "corporatebench-large-scale-q-a-benchmarking-with-temporal-knowledge-bases-2026-08-29",
-      "title": "CorporateBench: Large-Scale Q&A Benchmarking with Temporal Knowledge Bases",
-      "authors": "Sil Hamilton, Albert Yu Sun, Oscar J. Romero, Carl-Leander Henneking, David Mimno, Bishan Yang, Igor Labutov",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27391",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "CorporateBench constructs human-validated multi-task Q&A corpora that reach realistic enterprise scale, exceeding 230,000 documents drawn from temporally evolving, logically consistent synthetic firms of 12 to 10,000 employees. It evaluates information extraction and knowledge-base querying under conditions that mirror corporate communication networks. Five LLMs show sharply degrading performance as corpus size approaches real-world scale, exposing a critical gap in existing benchmarks.",
-      "tags": [
-        "benchmarks",
-        "enterprise-AI",
-        "temporal-reasoning",
-        "LLMs"
-      ]
-    },
-    {
-      "id": "not-all-eval-awareness-is-equal-capabilities-framing-predicts-compliance-2026-08-29",
-      "title": "Not All Eval-Awareness Is Equal: Capabilities Framing Predicts Compliance",
-      "authors": "Allison Zhuang, Santiago Aranguri",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27340",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "The paper decomposes verbalized eval-awareness in chain-of-thought into capabilities-flavored, safety-flavored, both, or neither framings and shows they predict compliance very differently. On Qwen3-32B and FORTRESS, capabilities framing yields a 24 to 46 percentage-point compliance gap over safety framing across steering conditions. CoT-prefill interventions confirm causality, demonstrating that aggregate suppression of eval-awareness can leave the safety-relevant component untouched.",
-      "tags": [
-        "safety",
-        "eval-awareness",
-        "mechanistic-interpretability",
-        "steering"
-      ]
-    },
-    {
-      "id": "naive-prompt-optimization-rethinking-the-need-for-complex-prompt-search-2026-08-29",
-      "title": "Naive Prompt Optimization: Rethinking the Need for Complex Prompt Search",
-      "authors": "Yuan Chang, Xiaoqi Chen",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27266",
-      "type": "paper",
-      "dateAdded": "2026-08-29",
-      "summary": "NPO is a lightweight single-lineage method that iteratively revises prompts with a teacher model and rollout feedback, matching or beating GEPA with fewer rollouts. Gains increase with stronger teachers, indicating that teacher reasoning can substitute for optimizer search complexity. Optimized prompts transfer across student models within the same family, showing that simple linear optimization can rival elaborate multi-lineage search for recursive self-improvement.",
-      "tags": [
-        "prompt-optimization",
-        "agents",
-        "RSI",
-        "efficiency"
       ]
     }
   ]
