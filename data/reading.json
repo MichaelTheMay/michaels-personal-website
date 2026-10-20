@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-19",
+  "lastUpdated": "2026-10-20",
   "issues": [
+    {
+      "date": "2026-10-20",
+      "title": "Self-hosted isolation layers and durable runtimes under the agent loop",
+      "blurb": "Power users are wiring cloneable microVM sandboxes, WASM guest OSes, approval-gated TypeScript runtimes, temporal memory graphs, and plan-native harnesses straight into their coding loops. The through-line is infrastructure you own and fork, not another chat IDE."
+    },
     {
       "date": "2026-10-19",
       "title": "MicroVM sandboxes and recursive harnesses power users actually wire into loops",
@@ -235,14 +240,131 @@
       "date": "2026-08-31",
       "title": "Agent harness reliability, recoverable self-evolution, and formal limits on language and structure",
       "blurb": "Recent work tightens the infrastructure around LLM agents with cross-process harnesses, recoverability constraints on self-modification, proactive context tools trained by fine-grained RL, and decisive-error attribution in multi-agent reflection. Parallel results supply formal information-theoretic bounds on recovering meaning from text alone, distance-guided decoding that guarantees CFG acceptance, symbolic program learning with verifiable intermediate rewards, collaborative math formalization platforms, tool-integrated RL for math, and memory-driven chemical hypothesis generation."
-    },
-    {
-      "date": "2026-08-30",
-      "title": "Live harness evolution and long-horizon agent architecture",
-      "blurb": "Recent papers treat the agent runtime itself as a first-class, improvable object rather than a fixed wrapper around a model. Supervisors steer workers mid-run, mutable skill state replaces growing conversation histories, operator-structured latent transitions improve world-action models, and neuro-symbolic proof evolution preserves verified structure across attempts. Parallel systems and optimization work on KV repair, sparse attention, DPO scaling, and RLM training parallelism reinforce the same move from static scaffolds toward adaptive, efficient long-horizon execution."
     }
   ],
   "items": [
+    {
+      "id": "easy-agent-2026-10-20",
+      "title": "Easy Agent",
+      "authors": "ConardLi",
+      "source": "GitHub",
+      "url": "https://github.com/ConardLi/easy-agent",
+      "type": "tool",
+      "dateAdded": "2026-10-20",
+      "summary": "Readable layered terminal coding agent with permission rules, OS sandboxing, MCP, skills, sub-agents and multi-provider support.",
+      "tags": [
+        "terminal",
+        "coding-agent",
+        "permissions",
+        "mcp"
+      ],
+      "usecase": "Use it to run a production-style coding loop next to your repo with fail-closed sandbox and rewindable checkpoints.",
+      "returning": false
+    },
+    {
+      "id": "basically-ai-harness-2026-10-20",
+      "title": "basically-ai-harness",
+      "authors": "TejasQ",
+      "source": "GitHub",
+      "url": "https://github.com/TejasQ/basically-ai-harness",
+      "type": "repo",
+      "dateAdded": "2026-10-20",
+      "summary": "Minimal TypeScript agent harness built branch-by-branch for a harness-engineering talk, covering eval versus agent loops.",
+      "tags": [
+        "typescript",
+        "harness",
+        "educational",
+        "from-scratch"
+      ],
+      "usecase": "Use it to clone and step through a from-scratch harness so you can fork the control flow patterns into your own loop.",
+      "returning": false
+    },
+    {
+      "id": "agent-sdk-go-2026-10-20",
+      "title": "agent-sdk-go",
+      "authors": "agenticenv",
+      "source": "GitHub",
+      "url": "https://github.com/agenticenv/agent-sdk-go",
+      "type": "repo",
+      "dateAdded": "2026-10-20",
+      "summary": "Durable execution framework for Go AI agents that keeps state, tool calls and loops resilient across crashes via durable-go or Temporal.",
+      "tags": [
+        "go",
+        "durable",
+        "sdk",
+        "temporal"
+      ],
+      "usecase": "Use it to write crash-resilient Go agents that resume mid-tool-call without rebuilding session context.",
+      "returning": false
+    },
+    {
+      "id": "eval-harness-nano-step-2026-10-20",
+      "title": "eval-harness (nano-step)",
+      "authors": "nano-step",
+      "source": "GitHub",
+      "url": "https://github.com/nano-step/eval-harness",
+      "type": "harness",
+      "dateAdded": "2026-10-20",
+      "summary": "Typed evaluation for skills and agents with capability, regression and product checks plus provider-neutral evidence grading.",
+      "tags": [
+        "eval",
+        "typed",
+        "ci",
+        "skills"
+      ],
+      "usecase": "Use it to grade OpenCode skills or external runner evidence in CI without collapsing results into a single score.",
+      "returning": false
+    },
+    {
+      "id": "open-multi-agent-core-examples-2026-10-20",
+      "title": "Open Multi-Agent core examples",
+      "authors": "open-multi-agent",
+      "source": "GitHub",
+      "url": "https://github.com/open-multi-agent/open-multi-agent/tree/main/packages/core/examples",
+      "type": "repo",
+      "dateAdded": "2026-10-20",
+      "summary": "Runnable starter teams, PR-review and security agents that demonstrate OMA scheduler, checkpoints and offline dashboard.",
+      "tags": [
+        "examples",
+        "typescript",
+        "multi-agent",
+        "scaffold"
+      ],
+      "usecase": "Use it to scaffold a no-key local demo then swap in your providers for production multi-agent pipelines.",
+      "returning": false
+    },
+    {
+      "id": "what-we-ve-learned-3-years-into-harness-engineering-2026-10-20",
+      "title": "What we’ve learned 3 years into Harness Engineering",
+      "authors": "Bassim Eledath",
+      "source": "Medium / Asurion",
+      "url": "https://medium.com/asurion-product-development/what-weve-learned-3-years-into-harness-engineering-1e8e01943661",
+      "type": "article",
+      "dateAdded": "2026-10-20",
+      "summary": "Asurion traces three years of agentic frameworks into AURA, a single contributor-plugin harness now powering chat and voice. The piece argues the next step is turning the harness into an event-driven agent runtime plus a platform so product teams can keep agents healthy without touching framework code.",
+      "tags": [
+        "harness-engineering",
+        "aura",
+        "enterprise",
+        "essay"
+      ]
+    },
+    {
+      "id": "cloudflare-just-made-ai-agent-sandboxes-6-faster-2026-10-20",
+      "title": "Cloudflare Just Made AI Agent Sandboxes 6× Faster",
+      "authors": "Tech Scoop",
+      "source": "Substack",
+      "url": "https://techscoop.substack.com/p/cloudflare-just-made-ai-agent-sandboxes",
+      "type": "article",
+      "dateAdded": "2026-10-20",
+      "summary": "Cloudflare’s new Containers architecture with durable_object scheduling, filesystem snapshots and Sandbox SDK 1.0 drops median agent sandbox startup from roughly 4 s to 648 ms. Developers now control image, compute, network and snapshot lifecycle directly from Durable Object code.",
+      "tags": [
+        "cloudflare",
+        "sandbox",
+        "containers",
+        "release"
+      ]
+    },
     {
       "id": "harness2-2026-10-19",
       "title": "Harness2",
@@ -10589,118 +10711,6 @@
         "Lean",
         "multiagent",
         "math-collaboration"
-      ]
-    },
-    {
-      "id": "mail-memory-driven-adaptive-incremental-and-literature-grounded-framework-for-hy-2026-08-31",
-      "title": "MAIL: Memory-driven, Adaptive, Incremental, and Literature-grounded Framework for Hypothesis Generation in Chemistry",
-      "authors": "Mahdi Babaei, Xueshen Li, Yutao Kuang, Jolene P. Reid, Yu Gan",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28315",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "MAIL treats hypothesis generation as a temporally grounded process that maintains an evolving conceptual memory path continuously reinterpreting the chemical literature. On TOMATO-Chem and a new high-novelty Nature/Science challenge set it recovers central ideas and methods of historical targets more effectively than baselines and receives the highest expert scores for scientific quality and mechanistic plausibility.",
-      "tags": [
-        "hypothesis-generation",
-        "chemistry",
-        "memory",
-        "literature-grounded"
-      ]
-    },
-    {
-      "id": "pilot-in-the-loop-live-self-improvement-for-long-horizon-agents-2026-08-30",
-      "title": "PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents",
-      "authors": "Yang Xiao, Yusong Sun, Haoyi Wu, Wenyang Hui, Wen Da, Zhaokai Luo, Mu Chuan, Yao Hu, Wenjie Li, Chengyue Jiang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.26530",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "PILOT introduces a supervisor-worker harness that enables live self-improvement: a separate supervisor can redirect or abort an active worker mid-execution while simultaneously distilling procedures and failure modes into reusable skills and memory. Across frozen backbones and multiple benchmarks it ranks first in five of six configurations, outperforming counterpart harnesses by up to 9.8 points on Terminal-Bench 2.0 and delivering double-digit gains plus large reductions in output tokens in the self-improvement setting.",
-      "tags": [
-        "agents",
-        "long-horizon",
-        "self-improvement",
-        "harness"
-      ]
-    },
-    {
-      "id": "proofevolve-neuro-symbolic-evolution-for-formal-automated-theorem-proving-2026-08-30",
-      "title": "ProofEvolve: Neuro-Symbolic Evolution for Formal Automated Theorem Proving",
-      "authors": "Wenqian Ye, Ziwei Guan, Eric Xie, Bohan Liu, Shivani Modi, Buyun Zhang, Ellie Dingqiao Wen, Henry Kautz, Aidong Zhang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.26334",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "ProofEvolve evolves explicit, Lean-verified proof DAGs by letting a neural model propose decompositions, repairs and schema recombinations that the symbolic kernel checks at every step. Verified partial results are retained in a behaviorally indexed archive and extracted into a persistent schema library, so incomplete attempts contribute reusable structure without sacrificing soundness. On three competition-level Lean benchmarks it achieves the highest average solve rate among evaluated systems.",
-      "tags": [
-        "theorem-proving",
-        "neuro-symbolic",
-        "self-improvement",
-        "formal-methods"
-      ]
-    },
-    {
-      "id": "skillls-scalable-long-horizon-agent-skills-2026-08-30",
-      "title": "SKILLLS: Scalable Long-Horizon Agent Skills",
-      "authors": "Sanket Badhe, Priyanka Tiwari, Jonghyun Chung",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.26263",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "SKILLLS replaces append-only conversation history with an explicit mutable execution state: at each step the model sees only the immutable skill specification, the current structured state and the latest observation, discarding intermediate reasoning after a validated update. This prevents prompt growth and context poisoning over long horizons. Across datasets, models and environments it improves task accuracy while substantially cutting cumulative token consumption.",
-      "tags": [
-        "agents",
-        "skills",
-        "long-horizon",
-        "runtime"
-      ]
-    },
-    {
-      "id": "same-model-different-harness-different-coding-agent-results-2026-08-30",
-      "title": "Same Model, Different Harness: Different Coding-Agent Results",
-      "authors": "Sydney Lewis",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.26218",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "Fixing the model and task while varying only harness context management (full history versus mechanical shortening of older tool results plus stall handling) produces large differences in coding-agent outcomes. Under tight context the treatment harness raises fail-to-pass fractions and complete solutions on SWE-bench Verified and Pro, and the same frozen treatment improves three additional models without retuning. The results show that coding-agent evaluations must treat model plus harness as the joint solver.",
-      "tags": [
-        "agents",
-        "harness",
-        "coding",
-        "evaluation"
-      ]
-    },
-    {
-      "id": "making-latent-evolution-explicit-operator-structured-transitions-for-world-actio-2026-08-30",
-      "title": "Making Latent Evolution Explicit: Operator-Structured Transitions for World Action Models",
-      "authors": "Xiaoxiao Lu, Yunlong Dong, Jiahao Shi, Ye Yuan",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27259",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "LEON models latent state evolution for world-action models via context-modulated operator propagation plus additive forcing, grounded in a controlled Koopman generator view. The architecture separates transition realization from representation learning and prediction-policy coupling. Across two WAM formulations it improves closed-loop performance and robustness while remaining effective under full transition replacement.",
-      "tags": [
-        "world-models",
-        "robotics",
-        "latent-dynamics",
-        "architecture"
-      ]
-    },
-    {
-      "id": "twinkv-a-composable-repair-pass-for-kv-cache-eviction-via-pairwise-key-redundanc-2026-08-30",
-      "title": "TwinKV: A Composable Repair Pass for KV Cache Eviction via Pairwise Key Redundancy",
-      "authors": "Hong Chen, Yudong Zeng, Yongwei Huang, Zuhao Ouyang, Junyan Zhang, Xuming Hu",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.27128",
-      "type": "paper",
-      "dateAdded": "2026-08-30",
-      "summary": "A leave-one-out probe shows attention magnitude is essentially uncorrelated with a token's causal contribution, undermining common eviction heuristics. TwinKV is a training-free, attention-free repair pass that detects near-duplicate keys, identifies orphans and redundant donors, and swaps them while preserving the original budget and scoring rule. Composed with four recent policies it improves a majority of configurations on LongBench, LooGLE and RULER for multiple small models.",
-      "tags": [
-        "KV-cache",
-        "long-context",
-        "efficiency",
-        "inference"
       ]
     }
   ]

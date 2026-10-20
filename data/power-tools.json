@@ -1,7 +1,112 @@
 {
-  "lastUpdated": "2026-10-19",
-  "count": 471,
+  "lastUpdated": "2026-10-20",
+  "count": 476,
   "tools": [
+    {
+      "slug": "agent-sdk-go",
+      "title": "agent-sdk-go",
+      "authors": "agenticenv",
+      "source": "GitHub",
+      "url": "https://github.com/agenticenv/agent-sdk-go",
+      "type": "repo",
+      "summary": "Durable execution framework for Go AI agents that keeps state, tool calls and loops resilient across crashes via durable-go or Temporal.",
+      "usecase": "Use it to write crash-resilient Go agents that resume mid-tool-call without rebuilding session context.",
+      "tags": [
+        "go",
+        "durable",
+        "sdk",
+        "temporal"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "basically-ai-harness",
+      "title": "basically-ai-harness",
+      "authors": "TejasQ",
+      "source": "GitHub",
+      "url": "https://github.com/TejasQ/basically-ai-harness",
+      "type": "repo",
+      "summary": "Minimal TypeScript agent harness built branch-by-branch for a harness-engineering talk, covering eval versus agent loops.",
+      "usecase": "Use it to clone and step through a from-scratch harness so you can fork the control flow patterns into your own loop.",
+      "tags": [
+        "typescript",
+        "harness",
+        "educational",
+        "from-scratch"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "easy-agent",
+      "title": "Easy Agent",
+      "authors": "ConardLi",
+      "source": "GitHub",
+      "url": "https://github.com/ConardLi/easy-agent",
+      "type": "tool",
+      "summary": "Readable layered terminal coding agent with permission rules, OS sandboxing, MCP, skills, sub-agents and multi-provider support.",
+      "usecase": "Use it to run a production-style coding loop next to your repo with fail-closed sandbox and rewindable checkpoints.",
+      "tags": [
+        "terminal",
+        "coding-agent",
+        "permissions",
+        "mcp"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "eval-harness",
+      "title": "eval-harness (nano-step)",
+      "authors": "nano-step",
+      "source": "GitHub",
+      "url": "https://github.com/nano-step/eval-harness",
+      "type": "harness",
+      "summary": "Typed evaluation for skills and agents with capability, regression and product checks plus provider-neutral evidence grading.",
+      "usecase": "Use it to grade OpenCode skills or external runner evidence in CI without collapsing results into a single score.",
+      "tags": [
+        "eval",
+        "typed",
+        "ci",
+        "skills"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "examples",
+      "title": "Open Multi-Agent core examples",
+      "authors": "open-multi-agent",
+      "source": "GitHub",
+      "url": "https://github.com/open-multi-agent/open-multi-agent/tree/main/packages/core/examples",
+      "type": "repo",
+      "summary": "Runnable starter teams, PR-review and security agents that demonstrate OMA scheduler, checkpoints and offline dashboard.",
+      "usecase": "Use it to scaffold a no-key local demo then swap in your providers for production multi-agent pipelines.",
+      "tags": [
+        "examples",
+        "typescript",
+        "multi-agent",
+        "scaffold"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-memory-control-plane",
       "title": "Agent Memory Control Plane",
