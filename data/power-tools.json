@@ -1,7 +1,90 @@
 {
-  "lastUpdated": "2026-10-20",
-  "count": 476,
+  "lastUpdated": "2026-10-21",
+  "count": 480,
   "tools": [
+    {
+      "slug": "nexent",
+      "title": "nexent",
+      "authors": "ModelEngine-Group",
+      "source": "GitHub",
+      "url": "https://github.com/ModelEngine-Group/nexent",
+      "type": "harness",
+      "summary": "Zero-code platform that auto-generates production-grade agents using harness engineering principles with unified tools, skills, memory, and control planes.",
+      "usecase": "Use it to generate constrained agent systems with feedback loops and built-in orchestration without writing the loop from scratch.",
+      "tags": [
+        "harness",
+        "zero-code",
+        "control-plane"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "oh-my-hermes",
+      "title": "oh-my-hermes",
+      "authors": "rlaope",
+      "source": "GitHub",
+      "url": "https://github.com/rlaope/oh-my-hermes",
+      "type": "harness",
+      "summary": "Packages that layer mixture-of-models routing, long-term project memory, priced cost telemetry, and native TUI surfaces onto Hermes Agent for coding and team workflows.",
+      "usecase": "Use it to upgrade a Hermes base with subagent teams, memory packs, and live cost HUD without forking the core agent.",
+      "tags": [
+        "harness",
+        "memory",
+        "skills",
+        "tui"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "qwenpaw",
+      "title": "QwenPaw",
+      "authors": "agentscope-ai",
+      "source": "GitHub",
+      "url": "https://github.com/agentscope-ai/QwenPaw",
+      "type": "tool",
+      "summary": "Personal AI assistant runtime with multi-chat-app support, extensible skills, MCP, and self-hosted or cloud deploy options.",
+      "usecase": "Use it to deploy a personal super-agent that lives in chat apps and grows capabilities via skills.",
+      "tags": [
+        "tool",
+        "personal-agent",
+        "skills",
+        "mcp"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-agent-runtime",
+      "title": "SandBase Harness",
+      "authors": "sandbaseai",
+      "source": "GitHub",
+      "url": "https://github.com/sandbaseai/awesome-agent-runtime",
+      "type": "harness",
+      "summary": "Local-first TypeScript runtime with persistent sessions, sandboxed tools, MCP, memory, credentials, audit logs, and replay.",
+      "usecase": "Use it to own a self-hosted agent runtime with full audit and replay for long sessions.",
+      "tags": [
+        "harness",
+        "local-first",
+        "audit",
+        "mcp"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-sdk-go",
       "title": "agent-sdk-go",

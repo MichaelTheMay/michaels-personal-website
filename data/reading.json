@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-20",
+  "lastUpdated": "2026-10-21",
   "issues": [
+    {
+      "date": "2026-10-21",
+      "title": "Recursive harness optimizers and microVM sandboxes that power users actually wire in",
+      "blurb": "Today's picks center on cloneable harness runtimes, recursive improvement loops around fixed models, and hardware-isolated microVM sandboxes. Power users get control planes, memory fabrics, and eval surfaces they can drop into their own agent loops without vendor lock-in."
+    },
     {
       "date": "2026-10-20",
       "title": "Self-hosted isolation layers and durable runtimes under the agent loop",
@@ -243,6 +248,93 @@
     }
   ],
   "items": [
+    {
+      "id": "oh-my-hermes-2026-10-21",
+      "title": "oh-my-hermes",
+      "authors": "rlaope",
+      "source": "GitHub",
+      "url": "https://github.com/rlaope/oh-my-hermes",
+      "type": "harness",
+      "dateAdded": "2026-10-21",
+      "summary": "Packages that layer mixture-of-models routing, long-term project memory, priced cost telemetry, and native TUI surfaces onto Hermes Agent for coding and team workflows.",
+      "tags": [
+        "harness",
+        "memory",
+        "skills",
+        "tui"
+      ],
+      "usecase": "Use it to upgrade a Hermes base with subagent teams, memory packs, and live cost HUD without forking the core agent.",
+      "returning": false
+    },
+    {
+      "id": "qwenpaw-2026-10-21",
+      "title": "QwenPaw",
+      "authors": "agentscope-ai",
+      "source": "GitHub",
+      "url": "https://github.com/agentscope-ai/QwenPaw",
+      "type": "tool",
+      "dateAdded": "2026-10-21",
+      "summary": "Personal AI assistant runtime with multi-chat-app support, extensible skills, MCP, and self-hosted or cloud deploy options.",
+      "tags": [
+        "tool",
+        "personal-agent",
+        "skills",
+        "mcp"
+      ],
+      "usecase": "Use it to deploy a personal super-agent that lives in chat apps and grows capabilities via skills.",
+      "returning": false
+    },
+    {
+      "id": "nexent-2026-10-21",
+      "title": "nexent",
+      "authors": "ModelEngine-Group",
+      "source": "GitHub",
+      "url": "https://github.com/ModelEngine-Group/nexent",
+      "type": "harness",
+      "dateAdded": "2026-10-21",
+      "summary": "Zero-code platform that auto-generates production-grade agents using harness engineering principles with unified tools, skills, memory, and control planes.",
+      "tags": [
+        "harness",
+        "zero-code",
+        "control-plane"
+      ],
+      "usecase": "Use it to generate constrained agent systems with feedback loops and built-in orchestration without writing the loop from scratch.",
+      "returning": false
+    },
+    {
+      "id": "sandbase-harness-2026-10-21",
+      "title": "SandBase Harness",
+      "authors": "sandbaseai",
+      "source": "GitHub",
+      "url": "https://github.com/sandbaseai/awesome-agent-runtime",
+      "type": "harness",
+      "dateAdded": "2026-10-21",
+      "summary": "Local-first TypeScript runtime with persistent sessions, sandboxed tools, MCP, memory, credentials, audit logs, and replay.",
+      "tags": [
+        "harness",
+        "local-first",
+        "audit",
+        "mcp"
+      ],
+      "usecase": "Use it to own a self-hosted agent runtime with full audit and replay for long sessions.",
+      "returning": false
+    },
+    {
+      "id": "chainguard-launches-workspaces-for-security-first-agent-isolation-2026-10-21",
+      "title": "Chainguard launches Workspaces for security-first agent isolation",
+      "authors": "Joab Jackson",
+      "source": "DevOps.com",
+      "url": "https://devops.com/chainguard-debuts-a-security-first-agent-platform",
+      "type": "release",
+      "dateAdded": "2026-10-21",
+      "summary": "Chainguard released Workspaces in beta, placing agents in hardware-isolated ephemeral microVMs built from zero-CVE Chainguard OS packages. The platform maps agents to repositories and toolchains while using Chainguard Checks for CI-style verification of generated code.",
+      "tags": [
+        "release",
+        "sandbox",
+        "security",
+        "microvm"
+      ]
+    },
     {
       "id": "easy-agent-2026-10-20",
       "title": "Easy Agent",
@@ -10631,86 +10723,6 @@
         "reflection",
         "failure-attribution",
         "collaboration"
-      ]
-    },
-    {
-      "id": "learning-to-use-tools-reinforcement-learning-for-tool-integrated-mathematical-re-2026-08-31",
-      "title": "Learning to Use Tools: Reinforcement Learning for Tool-Integrated Mathematical Reasoning",
-      "authors": "Minghui Xu, Zi Wang",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28447",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "After diagnosing that calculation errors dominate Countdown failures, the authors create tool-formatted SFT data and then apply on-policy RL (RLOO, GRPO, DAPO) with verifiable final-answer rewards. Tool-DAPO raises pass@1 from 35.8 percent (tool-SFT) to 66.0 percent on a fresh 1024-problem held-out set, showing that RL further improves tool-calling even under sparse outcome rewards.",
-      "tags": [
-        "tool-use",
-        "RL",
-        "mathematical-reasoning",
-        "Countdown"
-      ]
-    },
-    {
-      "id": "program-learning-with-verifiable-rewards-symbolic-backpropagation-for-post-train-2026-08-31",
-      "title": "Program Learning with Verifiable Rewards: Symbolic Backpropagation for Post-Training LLMs",
-      "authors": "Vishvesh Bhat",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28421",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "PLVR learns explicit programs composed of deterministic and neural primitives by symbolic backpropagation: typed ontologies propagate required input contracts backward via type inference, yielding dense per-step verifiable rewards. On LiveCodeBench and Tau2Bench, 30B models equipped with the learned programs outperform matched-budget RL and much larger frontier models; ablating the backward pass collapses program quality, identifying credit assignment rather than the type system as the source of gain.",
-      "tags": [
-        "program-learning",
-        "verifiable-rewards",
-        "symbolic-backprop",
-        "post-training"
-      ]
-    },
-    {
-      "id": "a-formal-limitation-on-learning-human-language-from-textual-corpora-2026-08-31",
-      "title": "A Formal Limitation on Learning Human Language From Textual Corpora",
-      "authors": "Emily Cheng, Ryan Cotterell",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28560",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "Modeling language as a joint distribution over meanings, contexts and utterances, the authors derive information-theoretic upper bounds on the probability that any featurizer (including LLM hidden states) recovers intended meaning from the utterance representation alone. The bounds separate irreducible uncertainty from uncertainty resolvable only by extralinguistic context and hold for both discrete and continuous meaning spaces; experiments on artificial languages, Mandarin zero pronouns and color reference corroborate the theory.",
-      "tags": [
-        "information-theory",
-        "language-learning",
-        "formal-bounds",
-        "LLM-representations"
-      ]
-    },
-    {
-      "id": "stay-within-your-bounds-distance-guided-decoding-for-guaranteed-context-free-gra-2026-08-31",
-      "title": "Stay Within Your Bounds: Distance-Guided Decoding for Guaranteed Context-Free Grammar Compliance",
-      "authors": "Vincenzo Collura, Karim Tit, Eleonora Giunchiglia, Mike Papadakis, Maxime Cordy",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28229",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "The decoder precomputes bounded pushdown summaries that label reachability and upper-bound distance to acceptance, then uses them online for horizon-aware pruning and beam search. Every generated string is guaranteed to be accepted by the target CFG; on JSON, SQL and LTL the method simultaneously enforces syntactic validity and improves completion quality relative to existing constrained decoders.",
-      "tags": [
-        "constrained-decoding",
-        "CFG",
-        "formal-languages",
-        "structured-output"
-      ]
-    },
-    {
-      "id": "prove2me-an-open-collaborative-platform-for-scaling-math-formalization-2026-08-31",
-      "title": "Prove2Me: An Open Collaborative Platform for Scaling Math Formalization",
-      "authors": "Shuze Chen, Kunal Marwaha, Xiaoyang Lu, Henry Yuen, Tianyi Peng",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28433",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "Prove2Me lets users launch formalization missions that AI agents complete in Lean 4, with specialized harnesses and reuse mechanisms so agents can build on one another's partial proofs. The platform turns large-scale verified mathematics into a crowd-sourced human-AI collaboration whose correctness is machine-checked rather than peer-reviewed.",
-      "tags": [
-        "formalization",
-        "Lean",
-        "multiagent",
-        "math-collaboration"
       ]
     }
   ]
