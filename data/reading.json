@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-21",
+  "lastUpdated": "2026-10-22",
   "issues": [
+    {
+      "date": "2026-10-22",
+      "title": "Branchable microVMs and meta-harnesses lock down the agent execution plane",
+      "blurb": "Power users are wiring hardware-isolated microVMs, plugin harnesses, and observability-driven evolution loops into local stacks. The through-line is clone-and-run infrastructure under the agent that ships fast, stays obscure enough to customize, and outruns closed IDE defaults."
+    },
     {
       "date": "2026-10-21",
       "title": "Recursive harness optimizers and microVM sandboxes that power users actually wire in",
@@ -240,14 +245,90 @@
       "date": "2026-09-01",
       "title": "Clone-and-run loops from the research stack",
       "blurb": "A 100-line SWE agent, an open computer-use desktop, an MCP runtime, a multi-CLI orchestrator, and DeepCode's agent harness. These are repos you clone, not products that want a seat at your IDE."
-    },
-    {
-      "date": "2026-08-31",
-      "title": "Agent harness reliability, recoverable self-evolution, and formal limits on language and structure",
-      "blurb": "Recent work tightens the infrastructure around LLM agents with cross-process harnesses, recoverability constraints on self-modification, proactive context tools trained by fine-grained RL, and decisive-error attribution in multi-agent reflection. Parallel results supply formal information-theoretic bounds on recovering meaning from text alone, distance-guided decoding that guarantees CFG acceptance, symbolic program learning with verifiable intermediate rewards, collaborative math formalization platforms, tool-integrated RL for math, and memory-driven chemical hypothesis generation."
     }
   ],
   "items": [
+    {
+      "id": "zeroshot-2026-10-22",
+      "title": "zeroshot",
+      "authors": "the-open-engine",
+      "source": "GitHub",
+      "url": "https://github.com/the-open-engine/zeroshot",
+      "type": "harness",
+      "dateAdded": "2026-10-22",
+      "summary": "Open-source orchestration engine that enforces review-repair graphs and workflow profiles over mixed coding agents.",
+      "tags": [
+        "orchestration",
+        "meta-harness",
+        "review-loops"
+      ],
+      "usecase": "Use it to define security-review gates and retry limits so small models match larger ones at lower cost.",
+      "returning": false
+    },
+    {
+      "id": "graphmemory-2026-10-22",
+      "title": "GraphMemory",
+      "authors": "bradAGI",
+      "source": "GitHub",
+      "url": "https://github.com/bradAGI/GraphMemory",
+      "type": "repo",
+      "dateAdded": "2026-10-22",
+      "summary": "Embedded hybrid graph and vector database for GraphRAG pipelines powered by DuckDB.",
+      "tags": [
+        "memory",
+        "graphrag",
+        "duckdb"
+      ],
+      "usecase": "Use it to give agents hybrid search, graph traversal, and context assembly in a single Python package.",
+      "returning": false
+    },
+    {
+      "id": "kumabox-2026-10-22",
+      "title": "KumaBox",
+      "authors": "kgpp34",
+      "source": "GitHub",
+      "url": "https://github.com/kgpp34/KumaBox",
+      "type": "repo",
+      "dateAdded": "2026-10-22",
+      "summary": "Lightweight Cloud Hypervisor microVM sandbox runtime for agents and untrusted workloads.",
+      "tags": [
+        "microvm",
+        "cloud-hypervisor",
+        "isolation"
+      ],
+      "usecase": "Use it to script full VM lifecycle, snapshots, and guest execution from any agent tool call or CI job.",
+      "returning": false
+    },
+    {
+      "id": "github-trending-oct-22-2026-ai-agents-llm-tools-and-infra-2026-10-22",
+      "title": "GitHub Trending Oct 22 2026: AI Agents, LLM Tools, and Infra",
+      "authors": "StartupCorners",
+      "source": "StartupCorners",
+      "url": "https://startupcorners.com/digest/devtools-digest-2026-10-22",
+      "type": "article",
+      "dateAdded": "2026-10-22",
+      "summary": "Daily digest of trending repos shows coding-agent fleets, swarm harnesses, and isolation layers dominating velocity. Orca, ruflo, and related orchestration tools lead the day's gains while sandbox infra stays active.",
+      "tags": [
+        "trending",
+        "orchestration",
+        "digest"
+      ]
+    },
+    {
+      "id": "perplexity-open-sources-space-its-microvm-sandbox-for-agents-2026-10-22",
+      "title": "Perplexity open-sources SPACE, its microVM sandbox for agents",
+      "authors": "Tomáš",
+      "source": "bokvi",
+      "url": "https://blog.bokvi.com/blog/perplexity-space-agent-sandbox/",
+      "type": "release",
+      "dateAdded": "2026-10-22",
+      "summary": "SPACE ships under Apache 2.0 as the Firecracker platform behind Perplexity Computer, with 60 ms median creates and external credential control. The writeup covers red-team results, HTTP API shape, and self-host paths on KVM.",
+      "tags": [
+        "microvm",
+        "sandbox",
+        "release"
+      ]
+    },
     {
       "id": "oh-my-hermes-2026-10-21",
       "title": "oh-my-hermes",
@@ -10644,86 +10725,6 @@
       "returning": false,
       "source": "GitHub",
       "id": "osworld-2.0-2026-09-01"
-    },
-    {
-      "title": "Ironcurtain",
-      "authors": "provos",
-      "url": "https://github.com/provos/ironcurtain",
-      "type": "article",
-      "summary": "A secure runtime for autonomous agents with policy from plain-English constitutions. Aimed at people who will not give a coding agent root.",
-      "tags": [
-        "security",
-        "runtime",
-        "policy"
-      ],
-      "dateAdded": "2026-09-01",
-      "returning": false,
-      "source": "GitHub",
-      "id": "ironcurtain-2026-09-01"
-    },
-    {
-      "id": "logos-an-agent-harness-on-a-cross-process-bus-2026-08-31",
-      "title": "Logos: An Agent Harness on a Cross-Process Bus",
-      "authors": "Hanzhang Jia, Liheng Zeng, Hao Cheng, Yi Gao, Bo Ma",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28553",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "The paper shows that the spatiotemporal-composability calculus for agents does not require a single shared process. It constructs Logos as a ROS-like harness in which each plugin is an independent process whose only shared state is an append-only transcript. Experiments demonstrate that eighty sessions resume without repeated side effects after kills at every boundary of the tool-call cycle, while a single-process baseline loses every co-resident session to one fault.",
-      "tags": [
-        "agent-harness",
-        "fault-tolerance",
-        "multiagent",
-        "composability"
-      ]
-    },
-    {
-      "id": "evoundo-recoverability-constrained-self-evolution-for-llm-agent-harnesses-2026-08-31",
-      "title": "EvoUndo: Recoverability-Constrained Self-Evolution for LLM Agent Harnesses",
-      "authors": "Tanmay Sah, Dolly Sah, Harshul Jain, Tanya Sah",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28363",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "EvoUndo formalizes self-modification of prompts, tools and harnesses so that every capability-improving mutation can be verified for recoverability across counterfactual states. Of 197 natural capability-gaining mutations that fail recoverability, conventional repair recovers none, while an extended recovery calculus plus exact state-address grounding recovers the large majority under oracle analysis. The results show that reliable self-evolution requires joint design of verification, grounding, witness semantics and recovery-language expressivity rather than iterative prompting alone.",
-      "tags": [
-        "self-evolution",
-        "agent-harness",
-        "recoverability",
-        "verification"
-      ]
-    },
-    {
-      "id": "contextpilot-teaching-agents-for-proactive-context-management-via-fine-grained-r-2026-08-31",
-      "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
-      "authors": "Zhuoshi Pan, Qizhi Pei, Junru Lu, Honglin Lin, H. Vicky Zhao, Di Yin, Xing Sun",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28476",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "ContextPilot augments the agent toolset with planning, long-term memory and soft offloading primitives, then trains context-editing policy with an RL method that identifies critical edits via context and entropy variation and estimates action-level advantages from branched trajectories. On long-context QA and deep-search tasks the method yields higher accuracy with substantially more compact working contexts than prior proactive-management baselines across multiple base models.",
-      "tags": [
-        "context-management",
-        "RL",
-        "long-horizon-agents",
-        "tool-use"
-      ]
-    },
-    {
-      "id": "finding-where-the-buck-stops-an-automated-failure-attribution-based-reflection-f-2026-08-31",
-      "title": "Finding Where the Buck Stops: An Automated Failure Attribution-Based Reflection Framework for Multi-Agent Collaboration",
-      "authors": "Xiaoqing Wang, Keman Huang, Bin Liang, Hongyu Li, Xiaoyong Du, Wuqiong Pan",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2608.28264",
-      "type": "paper",
-      "dateAdded": "2026-08-31",
-      "summary": "DoCtOR first attributes the decisive error step and agent via automated failure analysis, generates a counterfactual correction, and then elicits targeted reflection only from the responsible agent. The diagnose-then-correct loop improves success rates by 22-27 percent over strong reflection baselines on HotPotQA, ChartQAPro and Mind2Web while avoiding contamination of non-culpable agents' memories.",
-      "tags": [
-        "multi-agent",
-        "reflection",
-        "failure-attribution",
-        "collaboration"
-      ]
     }
   ]
 }

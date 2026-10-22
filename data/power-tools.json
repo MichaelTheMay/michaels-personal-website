@@ -1,7 +1,67 @@
 {
-  "lastUpdated": "2026-10-21",
-  "count": 480,
+  "lastUpdated": "2026-10-22",
+  "count": 483,
   "tools": [
+    {
+      "slug": "graphmemory",
+      "title": "GraphMemory",
+      "authors": "bradAGI",
+      "source": "GitHub",
+      "url": "https://github.com/bradAGI/GraphMemory",
+      "type": "repo",
+      "summary": "Embedded hybrid graph and vector database for GraphRAG pipelines powered by DuckDB.",
+      "usecase": "Use it to give agents hybrid search, graph traversal, and context assembly in a single Python package.",
+      "tags": [
+        "memory",
+        "graphrag",
+        "duckdb"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "kumabox",
+      "title": "KumaBox",
+      "authors": "kgpp34",
+      "source": "GitHub",
+      "url": "https://github.com/kgpp34/KumaBox",
+      "type": "repo",
+      "summary": "Lightweight Cloud Hypervisor microVM sandbox runtime for agents and untrusted workloads.",
+      "usecase": "Use it to script full VM lifecycle, snapshots, and guest execution from any agent tool call or CI job.",
+      "tags": [
+        "microvm",
+        "cloud-hypervisor",
+        "isolation"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "zeroshot",
+      "title": "zeroshot",
+      "authors": "the-open-engine",
+      "source": "GitHub",
+      "url": "https://github.com/the-open-engine/zeroshot",
+      "type": "harness",
+      "summary": "Open-source orchestration engine that enforces review-repair graphs and workflow profiles over mixed coding agents.",
+      "usecase": "Use it to define security-review gates and retry limits so small models match larger ones at lower cost.",
+      "tags": [
+        "orchestration",
+        "meta-harness",
+        "review-loops"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "nexent",
       "title": "nexent",
