@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-22",
+  "lastUpdated": "2026-10-23",
   "issues": [
+    {
+      "date": "2026-10-23",
+      "title": "Local microVMs and open harnesses take the agent loop offline",
+      "blurb": "Power users are cloning branchable hardware-isolated sandboxes and thin control planes, wiring them into durable loops instead of closed IDE chatbots. Isolation, checkpoints, and programmable runtimes now sit under the model rather than around a vendor UI."
+    },
     {
       "date": "2026-10-22",
       "title": "Branchable microVMs and meta-harnesses lock down the agent execution plane",
@@ -248,6 +253,90 @@
     }
   ],
   "items": [
+    {
+      "id": "agent-eval-harness-2026-10-23",
+      "title": "agent-eval-harness",
+      "authors": "Siddharth-1001",
+      "source": "GitHub",
+      "url": "https://github.com/Siddharth-1001/agent-eval-harness",
+      "type": "harness",
+      "dateAdded": "2026-10-23",
+      "summary": "Local-first evaluation framework that traces full agent behavior, not just LLM outputs, with structured metrics and side-by-side comparisons.",
+      "tags": [
+        "eval",
+        "harness",
+        "local",
+        "traces"
+      ],
+      "usecase": "Use it to measure tool success rates, cost creep, and regressions without sending traces to a hosted platform.",
+      "returning": false
+    },
+    {
+      "id": "vmette-2026-10-23",
+      "title": "Vmette",
+      "authors": "chamuka-inc",
+      "source": "GitHub",
+      "url": "https://github.com/chamuka-inc/vmette",
+      "type": "tool",
+      "dateAdded": "2026-10-23",
+      "summary": "Hardware-isolated microVM sandbox aimed at local AI agents on macOS, recently shown on HN for safe full-permission runs.",
+      "tags": [
+        "microvm",
+        "macos",
+        "sandbox",
+        "local"
+      ],
+      "usecase": "Use it to run agents with root-like freedom inside a guest while the host stays untouched.",
+      "returning": false
+    },
+    {
+      "id": "tanstack-ai-1-0-stabilizes-agent-toolkit-and-experimental-harnesses-2026-10-23",
+      "title": "TanStack AI 1.0 stabilizes agent toolkit and experimental harnesses",
+      "authors": "TanStack",
+      "source": "AI Agent Store / TanStack",
+      "url": "https://aiagentstore.ai/ai-agent-news/2026-october",
+      "type": "release",
+      "dateAdded": "2026-10-23",
+      "summary": "TanStack shipped a 1.0 release covering 76 packages with stable support for agents, subagents, coding workflows, sandboxes, provider adapters, and an experimental multi-environment harness. Builders get a portable open-source surface for chat UIs and tool-calling agents without vendor lock-in.",
+      "tags": [
+        "release",
+        "harness",
+        "sdk",
+        "portable"
+      ]
+    },
+    {
+      "id": "agentos-2026-10-23-adds-channels-settings-and-cleaner-harness-session-ux-2026-10-23",
+      "title": "AgentOS 2026.10.23 adds Channels settings and cleaner harness session UX",
+      "authors": "use-agent-os",
+      "source": "GitHub",
+      "url": "https://github.com/use-agent-os/agent-os/blob/main/RELEASES.md",
+      "type": "release",
+      "dateAdded": "2026-10-23",
+      "summary": "The daily AgentOS build brings the Channels screen into the desktop app with live adapter status and guided pairing, plus fixes so finished coding-harness children no longer appear stuck as Running. ACP harness cards and session bars continue to improve visibility of delegated coding runs.",
+      "tags": [
+        "release",
+        "agentos",
+        "harness",
+        "desktop"
+      ]
+    },
+    {
+      "id": "agent-safehouse-brings-deny-first-macos-sandboxing-to-local-coding-agents-2026-10-23",
+      "title": "Agent Safehouse brings deny-first macOS sandboxing to local coding agents",
+      "authors": "eugene1g / atombender",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=47301085",
+      "type": "article",
+      "dateAdded": "2026-10-23",
+      "summary": "The Show HN post and creator notes describe a pure sandbox-exec policy generator that needs no containers or VMs, with pre-built profiles and a web policy builder. Power users can lock agents to the minimum permissions that still allow auto-updates and keychain while keeping everything local.",
+      "tags": [
+        "article",
+        "macos",
+        "sandbox",
+        "local"
+      ]
+    },
     {
       "id": "zeroshot-2026-10-22",
       "title": "zeroshot",
@@ -10642,89 +10731,6 @@
       "returning": false,
       "source": "GitHub",
       "id": "deepcode-2026-09-01"
-    },
-    {
-      "title": "open-computer-use",
-      "authors": "e2b-dev",
-      "url": "https://github.com/e2b-dev/open-computer-use",
-      "type": "tool",
-      "summary": "Computer-use agents on open models plus an E2B desktop sandbox. The open alternative to a vendor's computer-use API.",
-      "usecase": "Use it to let an open model click through a desktop app inside a throwaway VM.",
-      "tags": [
-        "computer use",
-        "sandbox",
-        "open models"
-      ],
-      "dateAdded": "2026-09-01",
-      "returning": false,
-      "source": "GitHub",
-      "id": "open-computer-use-2026-09-01"
-    },
-    {
-      "title": "mcp-agent",
-      "authors": "lastmile-ai",
-      "url": "https://github.com/lastmile-ai/mcp-agent",
-      "type": "harness",
-      "summary": "Build effective agents with Model Context Protocol and small workflow patterns.",
-      "usecase": "Use it to compose MCP servers into a durable agent without standing up a full IDE plugin.",
-      "tags": [
-        "mcp",
-        "runtime",
-        "workflows"
-      ],
-      "dateAdded": "2026-09-01",
-      "returning": false,
-      "source": "GitHub",
-      "id": "mcp-agent-2026-09-01"
-    },
-    {
-      "title": "CLI Agent Orchestrator",
-      "authors": "awslabs",
-      "url": "https://github.com/awslabs/cli-agent-orchestrator",
-      "type": "harness",
-      "summary": "AWS Labs multi-agent orchestration for AI coding CLIs. The interesting part is the coordinator, not the branded CLIs it wraps.",
-      "usecase": "Use it to run two vendor CLIs as workers under one policy instead of alt-tabbing between terminals.",
-      "tags": [
-        "orchestration",
-        "cli",
-        "aws"
-      ],
-      "dateAdded": "2026-09-01",
-      "returning": false,
-      "source": "GitHub",
-      "id": "cli-agent-orchestrator-2026-09-01"
-    },
-    {
-      "title": "Devtools must be open source",
-      "authors": "exe.dev",
-      "source": "blog.exe.dev",
-      "url": "https://blog.exe.dev/devtools-must-be-open-source",
-      "type": "article",
-      "summary": "A 700-point HN essay arguing that the tools you code with have to be inspectable. Agent CLIs are becoming the new IDE, and lock-in is the default path.",
-      "tags": [
-        "open source",
-        "devtools",
-        "essay"
-      ],
-      "dateAdded": "2026-09-01",
-      "returning": false,
-      "id": "devtools-must-be-open-source-2026-09-01"
-    },
-    {
-      "title": "OSWorld 2.0",
-      "authors": "xlang-ai",
-      "url": "https://github.com/xlang-ai/OSWorld-V2",
-      "type": "release",
-      "summary": "The long-horizon computer-use benchmark, version 2. If you are training or grading desktop agents, this is the eval the serious repos cite.",
-      "tags": [
-        "benchmark",
-        "computer use",
-        "eval"
-      ],
-      "dateAdded": "2026-09-01",
-      "returning": false,
-      "source": "GitHub",
-      "id": "osworld-2.0-2026-09-01"
     }
   ]
 }

@@ -1,7 +1,49 @@
 {
-  "lastUpdated": "2026-10-22",
-  "count": 483,
+  "lastUpdated": "2026-10-23",
+  "count": 485,
   "tools": [
+    {
+      "slug": "agent-eval-harness",
+      "title": "agent-eval-harness",
+      "authors": "Siddharth-1001",
+      "source": "GitHub",
+      "url": "https://github.com/Siddharth-1001/agent-eval-harness",
+      "type": "harness",
+      "summary": "Local-first evaluation framework that traces full agent behavior, not just LLM outputs, with structured metrics and side-by-side comparisons.",
+      "usecase": "Use it to measure tool success rates, cost creep, and regressions without sending traces to a hosted platform.",
+      "tags": [
+        "eval",
+        "harness",
+        "local",
+        "traces"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "vmette",
+      "title": "Vmette",
+      "authors": "chamuka-inc",
+      "source": "GitHub",
+      "url": "https://github.com/chamuka-inc/vmette",
+      "type": "tool",
+      "summary": "Hardware-isolated microVM sandbox aimed at local AI agents on macOS, recently shown on HN for safe full-permission runs.",
+      "usecase": "Use it to run agents with root-like freedom inside a guest while the host stays untouched.",
+      "tags": [
+        "microvm",
+        "macos",
+        "sandbox",
+        "local"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "graphmemory",
       "title": "GraphMemory",
