@@ -1,7 +1,112 @@
 {
-  "lastUpdated": "2026-10-23",
-  "count": 485,
+  "lastUpdated": "2026-10-24",
+  "count": 490,
   "tools": [
+    {
+      "slug": "welcome-home-agents",
+      "title": "Agent HQ primitives (open ecosystem view)",
+      "authors": "GitHub",
+      "source": "GitHub Blog",
+      "url": "https://github.blog/news-insights/company-news/welcome-home-agents/",
+      "type": "tool",
+      "summary": "Mission-control style orchestration surface that unifies assignment, steering and tracking of multiple coding agents across GitHub, VS Code, mobile and CLI.",
+      "usecase": "Use it to study how a single control plane can route work to heterogeneous agents while keeping enterprise review and metrics.",
+      "tags": [
+        "orchestration",
+        "mission-control",
+        "multi-agent",
+        "platform"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-harness-engineering",
+      "title": "Awesome Harness Engineering",
+      "authors": "ai-boost",
+      "source": "GitHub",
+      "url": "https://github.com/ai-boost/awesome-harness-engineering",
+      "type": "repo",
+      "summary": "Curated map of harness engineering primitives covering context, tools, memory, sandboxes, permissions, evals and observability.",
+      "usecase": "Use it to map the five harness primitives and find the matching open-source module for each.",
+      "tags": [
+        "awesome-list",
+        "context",
+        "memory",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "devops-agent-harness",
+      "title": "DevOps Agent Harness",
+      "authors": "stwins60",
+      "source": "GitHub",
+      "url": "https://github.com/stwins60/devops-agent-harness",
+      "type": "harness",
+      "summary": "Model-agnostic harness that turns any coding agent into a governed DevOps engineer with policy, approvals, audit, secret redaction and rollback enforced outside the LLM.",
+      "usecase": "Use it to drive Jira-to-PR incident response or Kubernetes diagnosis while every tool call hits an external policy engine.",
+      "tags": [
+        "devops",
+        "policy",
+        "mcp",
+        "approvals"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "multiharness-orchestrating-autonomous-multi-agent-workflows-across-open-source-coding-harnesses-3b40",
+      "title": "Multiharness",
+      "authors": "eror-0",
+      "source": "GitHub / DEV",
+      "url": "https://dev.to/eror-0/multiharness-orchestrating-autonomous-multi-agent-workflows-across-open-source-coding-harnesses-3b40",
+      "type": "harness",
+      "summary": "Go multi-agent orchestrator that delegates planner, implementer and reviewer roles across open coding harnesses with iterative review loops.",
+      "usecase": "Use it to run a Codex planner plus OpenCode executor team on one folder with configurable reasoning levels.",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "go",
+        "coding"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sidekernel",
+      "title": "SideKernel",
+      "authors": "minoansecurity",
+      "source": "GitHub",
+      "url": "https://github.com/minoansecurity/sidekernel",
+      "type": "tool",
+      "summary": "Zero-dependency macOS microVM sandbox using only Apple frameworks and a Rust guest agent for Claude and other coding agents.",
+      "usecase": "Use it to launch an ephemeral Linux microVM from the current directory with sclaude or scodex wrappers.",
+      "tags": [
+        "macos",
+        "microvm",
+        "sandbox",
+        "rust"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-eval-harness",
       "title": "agent-eval-harness",

@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-23",
+  "lastUpdated": "2026-10-24",
   "issues": [
+    {
+      "date": "2026-10-24",
+      "title": "MicroVM sandboxes meet self-evolving harnesses and external control planes",
+      "blurb": "Power users get clone-and-run isolation layers, observability-driven harness evolution, and policy engines that sit outside the model. The through-line is infrastructure you wire into agent loops yourself rather than another chat IDE."
+    },
     {
       "date": "2026-10-23",
       "title": "Local microVMs and open harnesses take the agent loop offline",
@@ -245,14 +250,115 @@
       "date": "2026-09-02",
       "title": "Runtimes, memory, and proof that the agent did the work",
       "blurb": "The interesting layer this week is underneath the model: a runtime agents live on, graph memory that survives sessions, a fleet ADE, computer-use drivers, and a harness that checks the artifacts instead of the transcript."
-    },
-    {
-      "date": "2026-09-01",
-      "title": "Clone-and-run loops from the research stack",
-      "blurb": "A 100-line SWE agent, an open computer-use desktop, an MCP runtime, a multi-CLI orchestrator, and DeepCode's agent harness. These are repos you clone, not products that want a seat at your IDE."
     }
   ],
   "items": [
+    {
+      "id": "devops-agent-harness-2026-10-24",
+      "title": "DevOps Agent Harness",
+      "authors": "stwins60",
+      "source": "GitHub",
+      "url": "https://github.com/stwins60/devops-agent-harness",
+      "type": "harness",
+      "dateAdded": "2026-10-24",
+      "summary": "Model-agnostic harness that turns any coding agent into a governed DevOps engineer with policy, approvals, audit, secret redaction and rollback enforced outside the LLM.",
+      "tags": [
+        "devops",
+        "policy",
+        "mcp",
+        "approvals"
+      ],
+      "usecase": "Use it to drive Jira-to-PR incident response or Kubernetes diagnosis while every tool call hits an external policy engine.",
+      "returning": false
+    },
+    {
+      "id": "sidekernel-2026-10-24",
+      "title": "SideKernel",
+      "authors": "minoansecurity",
+      "source": "GitHub",
+      "url": "https://github.com/minoansecurity/sidekernel",
+      "type": "tool",
+      "dateAdded": "2026-10-24",
+      "summary": "Zero-dependency macOS microVM sandbox using only Apple frameworks and a Rust guest agent for Claude and other coding agents.",
+      "tags": [
+        "macos",
+        "microvm",
+        "sandbox",
+        "rust"
+      ],
+      "usecase": "Use it to launch an ephemeral Linux microVM from the current directory with sclaude or scodex wrappers.",
+      "returning": false
+    },
+    {
+      "id": "awesome-harness-engineering-2026-10-24",
+      "title": "Awesome Harness Engineering",
+      "authors": "ai-boost",
+      "source": "GitHub",
+      "url": "https://github.com/ai-boost/awesome-harness-engineering",
+      "type": "repo",
+      "dateAdded": "2026-10-24",
+      "summary": "Curated map of harness engineering primitives covering context, tools, memory, sandboxes, permissions, evals and observability.",
+      "tags": [
+        "awesome-list",
+        "context",
+        "memory",
+        "sandbox"
+      ],
+      "usecase": "Use it to map the five harness primitives and find the matching open-source module for each.",
+      "returning": false
+    },
+    {
+      "id": "multiharness-2026-10-24",
+      "title": "Multiharness",
+      "authors": "eror-0",
+      "source": "GitHub / DEV",
+      "url": "https://dev.to/eror-0/multiharness-orchestrating-autonomous-multi-agent-workflows-across-open-source-coding-harnesses-3b40",
+      "type": "harness",
+      "dateAdded": "2026-10-24",
+      "summary": "Go multi-agent orchestrator that delegates planner, implementer and reviewer roles across open coding harnesses with iterative review loops.",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "go",
+        "coding"
+      ],
+      "usecase": "Use it to run a Codex planner plus OpenCode executor team on one folder with configurable reasoning levels.",
+      "returning": false
+    },
+    {
+      "id": "agent-hq-primitives-open-ecosystem-view-2026-10-24",
+      "title": "Agent HQ primitives (open ecosystem view)",
+      "authors": "GitHub",
+      "source": "GitHub Blog",
+      "url": "https://github.blog/news-insights/company-news/welcome-home-agents/",
+      "type": "tool",
+      "dateAdded": "2026-10-24",
+      "summary": "Mission-control style orchestration surface that unifies assignment, steering and tracking of multiple coding agents across GitHub, VS Code, mobile and CLI.",
+      "tags": [
+        "orchestration",
+        "mission-control",
+        "multi-agent",
+        "platform"
+      ],
+      "usecase": "Use it to study how a single control plane can route work to heterogeneous agents while keeping enterprise review and metrics.",
+      "returning": false
+    },
+    {
+      "id": "google-agent-compute-engine-preview-hardware-isolated-microvms-for-gemini-work-a-2026-10-24",
+      "title": "Google Agent Compute Engine preview: hardware-isolated microVMs for Gemini work agents",
+      "authors": "Google Cloud",
+      "source": "SiliconANGLE / ComputeLabs",
+      "url": "https://siliconangle.com/2026/10/22/google-cloud-introduces-agent-compute-engine-to-host-ai-agents/",
+      "type": "article",
+      "dateAdded": "2026-10-24",
+      "summary": "Google describes a compute service already powering Gemini agents that separates the trusted harness from a hardware-isolated microVM sandbox with fast checkpoint and Titanium offload. Customer preview is slated for the coming months alongside Agent Gateway model routing.",
+      "tags": [
+        "google",
+        "microvm",
+        "sandbox",
+        "infrastructure"
+      ]
+    },
     {
       "id": "agent-eval-harness-2026-10-23",
       "title": "agent-eval-harness",
@@ -10632,105 +10738,6 @@
       "returning": false,
       "source": "GitHub",
       "id": "oh-my-agent-2026-09-02"
-    },
-    {
-      "title": "CUA",
-      "authors": "trycua",
-      "url": "https://github.com/trycua/cua",
-      "type": "tool",
-      "summary": "Open-source computer-use 2.0: drivers, cross-OS fleets, and benchmarks for training and evaluating desktop agents.",
-      "usecase": "Use it to give a coding agent a real desktop when the job is a GUI installer, not an API.",
-      "tags": [
-        "computer use",
-        "desktop",
-        "benchmarks"
-      ],
-      "dateAdded": "2026-09-02",
-      "returning": false,
-      "source": "GitHub",
-      "id": "cua-2026-09-02"
-    },
-    {
-      "title": "Harness engineering for self-improvement",
-      "authors": "Lilian Weng",
-      "source": "lilianweng.github.io",
-      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
-      "type": "article",
-      "summary": "Weng essay on the scaffolding around self-improving agents. The harness, not the next model bump, is where competence compounds.",
-      "tags": [
-        "harness",
-        "essay",
-        "self-improvement"
-      ],
-      "dateAdded": "2026-09-02",
-      "returning": false,
-      "id": "harness-engineering-for-self-improvement-2026-09-02"
-    },
-    {
-      "title": "graff (codegraff)",
-      "authors": "justrach",
-      "url": "https://github.com/justrach/codegraff",
-      "type": "release",
-      "summary": "A fast agentic coding harness in Zig: multi-provider, MCP, workflows. Tiny star count, serious systems taste.",
-      "tags": [
-        "zig",
-        "harness",
-        "mcp"
-      ],
-      "dateAdded": "2026-09-02",
-      "returning": false,
-      "source": "GitHub",
-      "id": "graff-(codegraff)-2026-09-02"
-    },
-    {
-      "title": "Agent skills that bring team coding standards to coding agents",
-      "authors": "Tikal",
-      "url": "https://github.com/tikalk/adlc-team-skills",
-      "type": "release",
-      "summary": "A public skills pack that encodes a team's coding standards as agent skills. The style guide becomes a tool, not a wiki page.",
-      "tags": [
-        "skills",
-        "standards",
-        "agents"
-      ],
-      "dateAdded": "2026-09-02",
-      "returning": false,
-      "source": "GitHub",
-      "id": "agent-skills-that-bring-team-coding-standards-to-coding-agen-2026-09-02"
-    },
-    {
-      "title": "mini-SWE-agent",
-      "authors": "SWE-agent",
-      "url": "https://github.com/SWE-agent/mini-swe-agent",
-      "type": "repo",
-      "summary": "The 100-line AI agent from the Princeton SWE-agent line. Research origin, radical simplicity, still beating bloated wrappers on SWE-bench-class work.",
-      "usecase": "Use it to throw a GitHub issue at a 100-line loop you can actually read, fork, and instrument.",
-      "tags": [
-        "research",
-        "swe-bench",
-        "minimal"
-      ],
-      "dateAdded": "2026-09-01",
-      "returning": false,
-      "source": "GitHub",
-      "id": "mini-swe-agent-2026-09-01"
-    },
-    {
-      "title": "DeepCode",
-      "authors": "HKUDS",
-      "url": "https://github.com/HKUDS/DeepCode",
-      "type": "harness",
-      "summary": "Open agentic coding from HKU: agent harness, loop engineering, multi-agent orchestration. Academic lab software that ships as a repo you run.",
-      "usecase": "Use it when you want a research harness with a real coding loop, not a chatbot with extra steps.",
-      "tags": [
-        "research",
-        "harness",
-        "multi-agent"
-      ],
-      "dateAdded": "2026-09-01",
-      "returning": false,
-      "source": "GitHub",
-      "id": "deepcode-2026-09-01"
     }
   ]
 }
