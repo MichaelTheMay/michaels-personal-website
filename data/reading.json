@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-24",
+  "lastUpdated": "2026-10-25",
   "issues": [
+    {
+      "date": "2026-10-25",
+      "title": "Decentralized swarms meet OS-level sandboxes under the agent loop",
+      "blurb": "Power users get clone-and-run multi-agent coordination that scales without a central boss plus lightweight isolation primitives that keep credentials and host state out of every coding session. The through-line is control planes and sandboxes you wire yourself rather than closed IDEs."
+    },
     {
       "date": "2026-10-24",
       "title": "MicroVM sandboxes meet self-evolving harnesses and external control planes",
@@ -253,6 +258,53 @@
     }
   ],
   "items": [
+    {
+      "id": "agensh-2026-10-25",
+      "title": "Agensh",
+      "authors": "Microsoft Research (Zhihao Zhan et al.)",
+      "source": "GitHub",
+      "url": "https://github.com/microsoft/Agensh",
+      "type": "harness",
+      "dateAdded": "2026-10-25",
+      "summary": "Self-organized multi-agent harness that scales to 1024 agents with async task claiming, shared workspace, and no central orchestrator.",
+      "tags": [
+        "multi-agent",
+        "decentralized",
+        "research-origin"
+      ],
+      "usecase": "Use it to spin up large peer teams that rebuild reference programs from observations on ProgramBench-style tasks.",
+      "returning": false
+    },
+    {
+      "id": "anthropic-open-sources-sandbox-runtime-for-container-free-agent-isolation-2026-10-25",
+      "title": "Anthropic open-sources sandbox-runtime for container-free agent isolation",
+      "authors": "Anthropic / Emergent",
+      "source": "emergent.sh",
+      "url": "https://emergent.sh/news/anthropic-launches-sandbox-runtime-ai-agent",
+      "type": "release",
+      "dateAdded": "2026-10-25",
+      "summary": "srt ships as an OS-level tool using Seatbelt on macOS and bubblewrap on Linux plus network proxies. It powers Claude Code security and is now available for any agent or MCP server that needs filesystem and egress restrictions without containers.",
+      "tags": [
+        "sandbox",
+        "release",
+        "security"
+      ]
+    },
+    {
+      "id": "ai-agent-sandboxes-compared-eight-options-platform-teams-are-evaluating-this-qua-2026-10-25",
+      "title": "AI Agent Sandboxes Compared: eight options platform teams are evaluating this quarter",
+      "authors": "InfraZen Engineering",
+      "source": "infrazen.io",
+      "url": "https://infrazen.io/blog/ai-agent-sandboxes-compared-2026",
+      "type": "article",
+      "dateAdded": "2026-10-25",
+      "summary": "The piece ranks gVisor, Kata, Firecracker and policy sandboxes by isolation boundary, maturity and the ten controls that actually stop recent agent escapes. It argues most published failures were control gaps rather than kernel escapes and maps each option to laptop versus cluster use.",
+      "tags": [
+        "comparison",
+        "sandbox",
+        "engineering"
+      ]
+    },
     {
       "id": "devops-agent-harness-2026-10-24",
       "title": "DevOps Agent Harness",
@@ -10687,57 +10739,6 @@
       "returning": false,
       "source": "GitHub",
       "id": "herdr-2026-09-02"
-    },
-    {
-      "title": "Orca",
-      "authors": "stablyai",
-      "url": "https://github.com/stablyai/orca",
-      "type": "tool",
-      "summary": "An ADE for a fleet of parallel agents. Run any coding agent against your repo in parallel panes instead of one blessed CLI.",
-      "usecase": "Use it to fan the same failing test across four agents and keep only the patch that compiles.",
-      "tags": [
-        "fleet",
-        "ade",
-        "parallel"
-      ],
-      "dateAdded": "2026-09-02",
-      "returning": false,
-      "source": "GitHub",
-      "id": "orca-2026-09-02"
-    },
-    {
-      "title": "Mnemon",
-      "authors": "mnemon-dev",
-      "url": "https://github.com/mnemon-dev/mnemon",
-      "type": "repo",
-      "summary": "LLM-supervised persistent memory for agents: graph recall, cross-session knowledge, no vector-store cargo cult.",
-      "usecase": "Use it to give a coding agent a graph of the last two weeks of decisions so it stops re-deriving your architecture every session.",
-      "tags": [
-        "memory",
-        "graph",
-        "agents"
-      ],
-      "dateAdded": "2026-09-02",
-      "returning": false,
-      "source": "GitHub",
-      "id": "mnemon-2026-09-02"
-    },
-    {
-      "title": "oh-my-agent",
-      "authors": "first-fluke",
-      "url": "https://github.com/first-fluke/oh-my-agent",
-      "type": "harness",
-      "summary": "A multi-agent harness that checks the work by artifacts, not vibes. Stop-hooks verify diffs, tests, and files before the run is allowed to claim success.",
-      "usecase": "Use it to stop a coding agent from declaring done when the test file was never written.",
-      "tags": [
-        "verification",
-        "stop-hooks",
-        "harness"
-      ],
-      "dateAdded": "2026-09-02",
-      "returning": false,
-      "source": "GitHub",
-      "id": "oh-my-agent-2026-09-02"
     }
   ]
 }

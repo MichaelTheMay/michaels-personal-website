@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-10-24",
-  "count": 490,
+  "lastUpdated": "2026-10-25",
+  "count": 491,
   "tools": [
+    {
+      "slug": "agensh",
+      "title": "Agensh",
+      "authors": "Microsoft Research (Zhihao Zhan et al.)",
+      "source": "GitHub",
+      "url": "https://github.com/microsoft/Agensh",
+      "type": "harness",
+      "summary": "Self-organized multi-agent harness that scales to 1024 agents with async task claiming, shared workspace, and no central orchestrator.",
+      "usecase": "Use it to spin up large peer teams that rebuild reference programs from observations on ProgramBench-style tasks.",
+      "tags": [
+        "multi-agent",
+        "decentralized",
+        "research-origin"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "welcome-home-agents",
       "title": "Agent HQ primitives (open ecosystem view)",
