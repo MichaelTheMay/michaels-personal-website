@@ -1,7 +1,112 @@
 {
-  "lastUpdated": "2026-10-25",
-  "count": 491,
+  "lastUpdated": "2026-10-26",
+  "count": 496,
   "tools": [
+    {
+      "slug": "agent-reliability",
+      "title": "agent-reliability",
+      "authors": "kladak",
+      "source": "GitHub",
+      "url": "https://github.com/kladak/agent-reliability",
+      "type": "harness",
+      "summary": "Reliability platform with schema-validated tool routing, JSONL traces, deterministic graders and CI regression gates.",
+      "usecase": "Use it to add offline eval reports and fail-the-build gates to any tool-using agent loop.",
+      "tags": [
+        "eval",
+        "reliability",
+        "traces",
+        "ci"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentplane",
+      "title": "agentplane",
+      "authors": "hupe1980",
+      "source": "GitHub",
+      "url": "https://github.com/hupe1980/agentplane",
+      "type": "harness",
+      "summary": "Durable, replayable Rust agent runtime whose journal is the single plan of record for every step and decision.",
+      "usecase": "Use it to run agents that can be fully audited, replayed and resumed from a cryptographically consistent log.",
+      "tags": [
+        "runtime",
+        "journal",
+        "rust",
+        "replay"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agents-sandbox",
+      "title": "agents-sandbox",
+      "authors": "inoio",
+      "source": "GitHub",
+      "url": "https://github.com/inoio/agents-sandbox",
+      "type": "tool",
+      "summary": "Launcher that places supported coding agents inside per-project microVMs while keeping secrets and host paths under operator control.",
+      "usecase": "Use it to keep your existing agent CLI workflow yet isolate each repo and inject secrets only as placeholders.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "secrets",
+        "launcher"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "coop",
+      "title": "coop",
+      "authors": "trailofbits",
+      "source": "GitHub",
+      "url": "https://github.com/trailofbits/coop",
+      "type": "tool",
+      "summary": "Rust CLI that spins disposable Firecracker or Lima VMs so coding agents get full Docker, git and compiler access with zero host risk.",
+      "usecase": "Use it to launch Claude Code, Codex or Grok Build inside a fresh isolated VM per project and tear it down when done.",
+      "tags": [
+        "microvm",
+        "isolation",
+        "cli",
+        "firecracker"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "runtm-coding-agent-runtime-control-plane",
+      "title": "Runtm",
+      "authors": "runtm-ai",
+      "source": "GitHub",
+      "url": "https://github.com/runtm-ai/runtm-coding-agent-runtime-control-plane",
+      "type": "harness",
+      "summary": "Open-source sandboxes and control plane where coding agents build, test and deploy software with live HTTPS URLs, logs and previews.",
+      "usecase": "Use it to let any coding agent ship real software inside isolated environments that expose instant preview endpoints.",
+      "tags": [
+        "sandbox",
+        "deploy",
+        "runtime",
+        "control-plane"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agensh",
       "title": "Agensh",
