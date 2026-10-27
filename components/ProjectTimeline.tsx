@@ -96,11 +96,13 @@ function ProjectCard({ project }: { project: Project }) {
             </span>
           ))}
       </div>
-      <p
-        className={`mt-3 leading-relaxed text-muted ${hasVideo ? "max-w-2xl" : "max-w-md"}`}
-      >
-        {project.description}
-      </p>
+      <div className={`mt-3 space-y-3 ${hasVideo ? "max-w-2xl" : "max-w-md"}`}>
+        {project.description.split(/\n{2,}/).map((para, i) => (
+          <p key={i} className="leading-relaxed text-muted">
+            {para}
+          </p>
+        ))}
+      </div>
       <div className="mt-4 flex flex-wrap items-center gap-3">
         {primary && (
           <a
