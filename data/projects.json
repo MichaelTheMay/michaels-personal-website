@@ -36,5 +36,20 @@
       "project": "https://mycelicmemory.com",
       "github": "https://github.com/MycelicMemory/MycelicMemory"
     }
+  },
+  {
+    "slug": "traceview",
+    "group": "flagship",
+    "date": "Oct 2026",
+    "title": "Traceview",
+    "badge": "Open source · MIT",
+    "description": "A flight recorder for browser agents. Agents like Browser Use and Claude in Chrome crash on step 7 of a 12-step workflow and leave you with a stack trace that explains nothing. Traceview captures every step as the agent runs — the DOM before and after, screenshots with a compare slider, the exact prompt the model saw, and the token cost of each call — then replays it in a local-first viewer. One line of instrumentation, SQLite plus flat files under your home dir, no cloud and no phone-home.",
+    "image": "/projects/traceview.webp",
+    "video": {
+      "mp4": "/projects/traceview.mp4",
+      "webm": "/projects/traceview.webm",
+      "caption": "Scrubbing a recorded agent run — trace list, DOM diff, and LLM call detail."
+    },
+    "links": { "github": "https://github.com/MichaelTheMay/traceview" }
   }
 ]
