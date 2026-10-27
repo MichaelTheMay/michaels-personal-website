@@ -1,7 +1,133 @@
 {
-  "lastUpdated": "2026-10-26",
-  "count": 496,
+  "lastUpdated": "2026-10-27",
+  "count": 502,
   "tools": [
+    {
+      "slug": "agentmemory",
+      "title": "agentmemory",
+      "authors": "rohitg00",
+      "source": "GitHub",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "type": "repo",
+      "summary": "Persistent memory layer for coding agents that ranks high on real-world session and temporal retrieval benchmarks.",
+      "usecase": "Use it to give any MCP or CLI coding agent durable cross-session recall without pasting full history.",
+      "tags": [
+        "memory",
+        "mcp",
+        "coding-agent",
+        "retrieval"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "alt-agent-harness",
+      "title": "alt-agent-harness",
+      "authors": "mngaonkar",
+      "source": "GitHub",
+      "url": "https://github.com/mngaonkar/alt-agent-harness",
+      "type": "repo",
+      "summary": "Tiny skill-based local agent harness that makes the model, tools and disk skills fully visible in one sitting.",
+      "usecase": "Use it to learn and extend a minimal laptop agent loop with Anthropic-style skills folders.",
+      "tags": [
+        "harness",
+        "skills",
+        "minimal",
+        "local"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cordum",
+      "title": "Cordum",
+      "authors": "cordum-io",
+      "source": "GitHub",
+      "url": "https://github.com/cordum-io/cordum",
+      "type": "harness",
+      "summary": "Agent control plane and action firewall that enforces policy and human approval before risky tool calls, shell commands and production changes with audit evidence.",
+      "usecase": "Use it to insert a deterministic governance layer in front of any framework before agents act.",
+      "tags": [
+        "control-plane",
+        "policy",
+        "audit",
+        "safety"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cap",
+      "title": "Cordum CAP",
+      "authors": "cordum-io",
+      "source": "GitHub",
+      "url": "https://github.com/cordum-io/cap",
+      "type": "repo",
+      "summary": "Open wire protocol for agent clusters that adds jobs, heartbeats, safety hooks and workflows over a message bus.",
+      "usecase": "Use it to standardize how distributed agents coordinate and apply policy before dispatch.",
+      "tags": [
+        "protocol",
+        "control-plane",
+        "cluster",
+        "safety"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "greywall",
+      "title": "Greywall",
+      "authors": "GreyhavenHQ",
+      "source": "GitHub",
+      "url": "https://github.com/GreyhavenHQ/greywall",
+      "type": "tool",
+      "summary": "Container-free deny-by-default sandbox for coding agents that enforces kernel filesystem, network and syscall isolation on Linux and macOS.",
+      "usecase": "Use it to wrap Claude Code or similar CLIs so they cannot touch secrets outside the working tree.",
+      "tags": [
+        "sandbox",
+        "isolation",
+        "security",
+        "cli"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "kitaru",
+      "title": "Kitaru",
+      "authors": "zenml-io",
+      "source": "GitHub",
+      "url": "https://github.com/zenml-io/kitaru",
+      "type": "harness",
+      "summary": "Record-replay and improvement system that treats agent runs as evidence-rich sessions with evaluators and cohorts.",
+      "usecase": "Use it to capture production agent traces, define evaluators and run bounded replay experiments.",
+      "tags": [
+        "eval",
+        "observability",
+        "replay",
+        "sdk"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-reliability",
       "title": "agent-reliability",

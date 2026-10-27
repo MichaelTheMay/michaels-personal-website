@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-26",
+  "lastUpdated": "2026-10-27",
   "issues": [
+    {
+      "date": "2026-10-27",
+      "title": "Cloneable harnesses, WASM sandboxes and control planes that own the agent loop",
+      "blurb": "Power users get self-hostable runtimes, millisecond sandboxes and policy layers they can wire into any coding agent. The through-line is infrastructure you actually clone, run and extend instead of closed IDE chatbots."
+    },
     {
       "date": "2026-10-26",
       "title": "MicroVM isolation and harness routers overtake single-agent CLIs",
@@ -258,6 +263,144 @@
     }
   ],
   "items": [
+    {
+      "id": "greywall-2026-10-27",
+      "title": "Greywall",
+      "authors": "GreyhavenHQ",
+      "source": "GitHub",
+      "url": "https://github.com/GreyhavenHQ/greywall",
+      "type": "tool",
+      "dateAdded": "2026-10-27",
+      "summary": "Container-free deny-by-default sandbox for coding agents that enforces kernel filesystem, network and syscall isolation on Linux and macOS.",
+      "tags": [
+        "sandbox",
+        "isolation",
+        "security",
+        "cli"
+      ],
+      "usecase": "Use it to wrap Claude Code or similar CLIs so they cannot touch secrets outside the working tree.",
+      "returning": false
+    },
+    {
+      "id": "cordum-2026-10-27",
+      "title": "Cordum",
+      "authors": "cordum-io",
+      "source": "GitHub",
+      "url": "https://github.com/cordum-io/cordum",
+      "type": "harness",
+      "dateAdded": "2026-10-27",
+      "summary": "Agent control plane and action firewall that enforces policy and human approval before risky tool calls, shell commands and production changes with audit evidence.",
+      "tags": [
+        "control-plane",
+        "policy",
+        "audit",
+        "safety"
+      ],
+      "usecase": "Use it to insert a deterministic governance layer in front of any framework before agents act.",
+      "returning": false
+    },
+    {
+      "id": "agentmemory-2026-10-27",
+      "title": "agentmemory",
+      "authors": "rohitg00",
+      "source": "GitHub",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "type": "repo",
+      "dateAdded": "2026-10-27",
+      "summary": "Persistent memory layer for coding agents that ranks high on real-world session and temporal retrieval benchmarks.",
+      "tags": [
+        "memory",
+        "mcp",
+        "coding-agent",
+        "retrieval"
+      ],
+      "usecase": "Use it to give any MCP or CLI coding agent durable cross-session recall without pasting full history.",
+      "returning": false
+    },
+    {
+      "id": "cordum-cap-2026-10-27",
+      "title": "Cordum CAP",
+      "authors": "cordum-io",
+      "source": "GitHub",
+      "url": "https://github.com/cordum-io/cap",
+      "type": "repo",
+      "dateAdded": "2026-10-27",
+      "summary": "Open wire protocol for agent clusters that adds jobs, heartbeats, safety hooks and workflows over a message bus.",
+      "tags": [
+        "protocol",
+        "control-plane",
+        "cluster",
+        "safety"
+      ],
+      "usecase": "Use it to standardize how distributed agents coordinate and apply policy before dispatch.",
+      "returning": false
+    },
+    {
+      "id": "kitaru-2026-10-27",
+      "title": "Kitaru",
+      "authors": "zenml-io",
+      "source": "GitHub",
+      "url": "https://github.com/zenml-io/kitaru",
+      "type": "harness",
+      "dateAdded": "2026-10-27",
+      "summary": "Record-replay and improvement system that treats agent runs as evidence-rich sessions with evaluators and cohorts.",
+      "tags": [
+        "eval",
+        "observability",
+        "replay",
+        "sdk"
+      ],
+      "usecase": "Use it to capture production agent traces, define evaluators and run bounded replay experiments.",
+      "returning": false
+    },
+    {
+      "id": "alt-agent-harness-2026-10-27",
+      "title": "alt-agent-harness",
+      "authors": "mngaonkar",
+      "source": "GitHub",
+      "url": "https://github.com/mngaonkar/alt-agent-harness",
+      "type": "repo",
+      "dateAdded": "2026-10-27",
+      "summary": "Tiny skill-based local agent harness that makes the model, tools and disk skills fully visible in one sitting.",
+      "tags": [
+        "harness",
+        "skills",
+        "minimal",
+        "local"
+      ],
+      "usecase": "Use it to learn and extend a minimal laptop agent loop with Anthropic-style skills folders.",
+      "returning": false
+    },
+    {
+      "id": "gpt-6-1-terra-arrives-in-github-copilot-2026-10-27",
+      "title": "GPT-6.1 Terra arrives in GitHub Copilot",
+      "authors": "GitHub",
+      "source": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/",
+      "type": "release",
+      "dateAdded": "2026-10-27",
+      "summary": "OpenAI’s GPT-6.1 Terra is generally available across Copilot surfaces for everyday agentic coding and terminal work at lower cost than the Sol variant. Early tests show stronger results on terminal and C# tasks than prior Terra models.",
+      "tags": [
+        "model",
+        "copilot",
+        "release"
+      ]
+    },
+    {
+      "id": "4-key-decisions-to-solidify-your-harness-2026-10-27",
+      "title": "4 Key Decisions to Solidify Your Harness",
+      "authors": "Tejas Kumar",
+      "source": "Decoding AI",
+      "url": "https://www.decodingai.com/p/4-key-decisions-to-solidify-your",
+      "type": "article",
+      "dateAdded": "2026-10-27",
+      "summary": "The essay argues that after the agent loop works, harness engineering reduces to four ownership questions: who decides done, who holds keys, who says stop, and who is blamed. It shows how moving those decisions into deterministic harness code separates model bugs from scaffolding bugs.",
+      "tags": [
+        "essay",
+        "harness-engineering",
+        "architecture"
+      ]
+    },
     {
       "id": "coop-2026-10-26",
       "title": "coop",
@@ -10607,142 +10750,6 @@
         "mcp",
         "runtime",
         "workflows"
-      ]
-    },
-    {
-      "id": "mini-swe-agent-2026-09-03",
-      "title": "mini-SWE-agent",
-      "authors": "SWE-agent",
-      "source": "GitHub",
-      "url": "https://github.com/SWE-agent/mini-swe-agent",
-      "type": "repo",
-      "dateAdded": "2026-09-03",
-      "summary": "The 100-line AI agent from the Princeton SWE-agent line. Research origin, radical simplicity, still beating bloated wrappers on SWE-bench-class work.",
-      "usecase": "Use it to throw a GitHub issue at a 100-line loop you can actually read, fork, and instrument.",
-      "returning": false,
-      "tags": [
-        "research",
-        "swe-bench",
-        "minimal"
-      ]
-    },
-    {
-      "id": "mnemon-2026-09-03",
-      "title": "Mnemon",
-      "authors": "mnemon-dev",
-      "source": "GitHub",
-      "url": "https://github.com/mnemon-dev/mnemon",
-      "type": "repo",
-      "dateAdded": "2026-09-03",
-      "summary": "LLM-supervised persistent memory for agents: graph recall, cross-session knowledge, no vector-store cargo cult.",
-      "usecase": "Use it to give a coding agent a graph of the last two weeks of decisions so it stops re-deriving your architecture.",
-      "returning": false,
-      "tags": [
-        "memory",
-        "graph",
-        "agents"
-      ]
-    },
-    {
-      "id": "oh-my-agent-2026-09-03",
-      "title": "oh-my-agent",
-      "authors": "first-fluke",
-      "source": "GitHub",
-      "url": "https://github.com/first-fluke/oh-my-agent",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "A multi-agent harness that checks the work by artifacts, not vibes. Stop-hooks verify diffs, tests, and files before the run is allowed to claim success.",
-      "usecase": "Use it to stop a coding agent from declaring done when the test file was never written.",
-      "returning": false,
-      "tags": [
-        "verification",
-        "stop-hooks",
-        "harness"
-      ]
-    },
-    {
-      "id": "oh-my-claudecode-2026-09-03",
-      "title": "oh-my-claudecode",
-      "authors": "Yeachan-Heo",
-      "source": "GitHub",
-      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "Teams-first multi-agent orchestration for Claude Code. Not Claude Code itself: the swarm layer people bolt on.",
-      "usecase": "Use it to run a team of Claude Code workers on one repo with a shared plan file.",
-      "returning": false,
-      "tags": [
-        "orchestration",
-        "teams",
-        "claude-code-layer"
-      ]
-    },
-    {
-      "id": "oh-my-pi-2026-09-03",
-      "title": "oh-my-pi",
-      "authors": "can1357",
-      "source": "GitHub",
-      "url": "https://github.com/can1357/oh-my-pi",
-      "type": "tool",
-      "dateAdded": "2026-09-03",
-      "summary": "A coding agent with the IDE wired in. Created New Year's Eve 2025, still being pushed daily.",
-      "usecase": "Use it when you want the agent and the editor to share one process instead of a plugin talking to a CLI.",
-      "returning": false,
-      "tags": [
-        "ide",
-        "coding agent",
-        "open source"
-      ]
-    },
-    {
-      "id": "omnigent-2026-09-03",
-      "title": "Omnigent",
-      "authors": "omnigent-ai",
-      "source": "GitHub",
-      "url": "https://github.com/omnigent-ai/omnigent",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "Open-source meta-harness: one orchestrator that fans work across several coding agents. Born June 2026, already the loudest new control plane on GitHub.",
-      "usecase": "Use it to run three different coding agents on the same ticket and merge the first one that lands a green test.",
-      "returning": false,
-      "tags": [
-        "meta-harness",
-        "orchestration",
-        "open source"
-      ]
-    },
-    {
-      "id": "open-computer-use-2026-09-03",
-      "title": "open-computer-use",
-      "authors": "e2b-dev",
-      "source": "GitHub",
-      "url": "https://github.com/e2b-dev/open-computer-use",
-      "type": "tool",
-      "dateAdded": "2026-09-03",
-      "summary": "Computer-use agents on open models plus an E2B desktop sandbox. The open alternative to a vendor's computer-use API.",
-      "usecase": "Use it to let an open model click through a desktop app inside a throwaway VM.",
-      "returning": false,
-      "tags": [
-        "computer use",
-        "sandbox",
-        "open models"
-      ]
-    },
-    {
-      "id": "orca-2026-09-03",
-      "title": "Orca",
-      "authors": "stablyai",
-      "source": "GitHub",
-      "url": "https://github.com/stablyai/orca",
-      "type": "tool",
-      "dateAdded": "2026-09-03",
-      "summary": "An ADE for a fleet of parallel agents. Run any coding agent against your repo in parallel panes instead of one blessed CLI.",
-      "usecase": "Use it to fan the same failing test across four agents and keep only the patch that compiles.",
-      "returning": false,
-      "tags": [
-        "fleet",
-        "ade",
-        "parallel"
       ]
     }
   ]
