@@ -40,7 +40,7 @@
   {
     "slug": "traceview",
     "group": "flagship",
-    "date": "Sep 2026",
+    "date": "Oct 2026",
     "title": "Traceview",
     "badge": "Open source · MIT",
     "description": "A flight recorder for browser agents. Agents like Browser Use and Claude in Chrome crash on step 7 of a 12-step workflow and leave you with a stack trace that explains nothing. Traceview captures every step as the agent runs — the DOM before and after, screenshots with a compare slider, the exact prompt the model saw, and the token cost of each call — then replays it in a local-first viewer. One line of instrumentation, SQLite plus flat files under your home dir, no cloud and no phone-home.\n\nI run Traceview on every project I build, because the audit trail it captures becomes a substrate I can reason on top of: I mine the recorded runs for patterns and turn them into self-improving suggestions, each surfaced as a human-approval ticket that, once I sign off, is handed to a sandboxed Claude Code session that implements it. The same trail drives debugging — when an error surfaces anywhere in my agentic pipelines, Traceview pins it to the exact step that failed, and I convert that into a bug-fix ticket and then into a prompt for a sandboxed Claude Code session running in an isolated git worktree that lands the fix.",
