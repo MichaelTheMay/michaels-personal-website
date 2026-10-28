@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-27",
+  "lastUpdated": "2026-10-28",
   "issues": [
+    {
+      "date": "2026-10-28",
+      "title": "MicroVM density and branchable isolation redefine agent runtimes",
+      "blurb": "Today's picks emphasize hardware-isolated microVMs, WASM sandboxes, and Kubernetes control planes that oversubscribe idle agents while preserving full state, credentials outside the guest, and clone-ready checkpoints. Power users get clone-and-run harnesses that turn long-horizon loops into durable, inspectable infrastructure rather than chat sessions."
+    },
     {
       "date": "2026-10-27",
       "title": "Cloneable harnesses, WASM sandboxes and control planes that own the agent loop",
@@ -263,6 +268,162 @@
     }
   ],
   "items": [
+    {
+      "id": "fast-sandbox-2026-10-28",
+      "title": "Fast Sandbox",
+      "authors": "opensandbox-group",
+      "source": "GitHub",
+      "url": "https://github.com/opensandbox-group/fast-sandbox",
+      "type": "harness",
+      "dateAdded": "2026-10-28",
+      "summary": "Firecracker microVM runtime on Kubernetes with warm Fastlet pools, snapshot restore, and XFS reflink for sub-100 ms agent sandbox creation.",
+      "tags": [
+        "firecracker",
+        "kubernetes",
+        "snapshot",
+        "pool"
+      ],
+      "usecase": "Use it to back high-throughput eval or code-interpreter fleets with hardware isolation and declarative CRDs.",
+      "returning": false
+    },
+    {
+      "id": "jayzeng-agentmemory-2026-10-28",
+      "title": "jayzeng agentmemory",
+      "authors": "jayzeng",
+      "source": "GitHub",
+      "url": "https://github.com/jayzeng/agentmemory",
+      "type": "tool",
+      "dateAdded": "2026-10-28",
+      "summary": "Local-first Markdown memory layer with daily logs, scratchpad, qmd search, and MCP server for any coding agent.",
+      "tags": [
+        "memory",
+        "markdown",
+        "mcp",
+        "local"
+      ],
+      "usecase": "Use it to give agents durable project memory that works offline and installs as skills or MCP tools.",
+      "returning": false
+    },
+    {
+      "id": "agent-harness-test-2026-10-28",
+      "title": "Agent-Harness test",
+      "authors": "Suirotciv",
+      "source": "GitHub",
+      "url": "https://github.com/Suirotciv/Agent-Harness",
+      "type": "harness",
+      "dateAdded": "2026-10-28",
+      "summary": "Pytest-friendly test harness that asserts tool-call sequences, arguments, and safety properties on agent traces without live APIs.",
+      "tags": [
+        "eval",
+        "pytest",
+        "traces",
+        "safety"
+      ],
+      "usecase": "Use it to gate CI on deterministic agent behavior by replaying cassettes of real-world action traces.",
+      "returning": false
+    },
+    {
+      "id": "codeduet-microvm-sandbox-2026-10-28",
+      "title": "codeduet microvm sandbox",
+      "authors": "CodeDuet",
+      "source": "GitHub",
+      "url": "https://github.com/CodeDuet/codeduet-microvm-ai-agent-sandbox",
+      "type": "tool",
+      "dateAdded": "2026-10-28",
+      "summary": "Cloud Hypervisor based microVM sandbox system with Python SDK supporting Linux and Windows guests for hardware-isolated agent code.",
+      "tags": [
+        "cloud-hypervisor",
+        "sdk",
+        "multi-os",
+        "isolation"
+      ],
+      "usecase": "Use it to launch REST-managed VMs that execute untrusted agent code with bidirectional host-guest HTTP.",
+      "returning": false
+    },
+    {
+      "id": "harness-engineering-guide-2026-10-28",
+      "title": "harness-engineering-guide",
+      "authors": "nexu-io",
+      "source": "GitHub",
+      "url": "https://github.com/nexu-io/harness-engineering-guide",
+      "type": "repo",
+      "dateAdded": "2026-10-28",
+      "summary": "Practical open guide to harness engineering with copy-and-run code for loops, tools, memory, guardrails, and sandboxes.",
+      "tags": [
+        "guide",
+        "patterns",
+        "tutorials",
+        "sandbox"
+      ],
+      "usecase": "Use it to bootstrap a production harness by cloning the tutorials and adapting the sandbox and skill patterns.",
+      "returning": false
+    },
+    {
+      "id": "agentworld-2026-10-28",
+      "title": "agentworld",
+      "authors": "openagents-org",
+      "source": "GitHub",
+      "url": "https://github.com/openagents-org/agentworld",
+      "type": "repo",
+      "dateAdded": "2026-10-28",
+      "summary": "2D multiplayer environment plus reference harness for long-horizon multi-agent collaboration, tasks, and leaderboard evals.",
+      "tags": [
+        "benchmark",
+        "multi-agent",
+        "eval",
+        "harness"
+      ],
+      "usecase": "Use it to benchmark custom agent harnesses on shared-world resource gathering, crafting, and coordination tasks.",
+      "returning": false
+    },
+    {
+      "id": "microsoft-copilot-harness-lands-in-foundry-agent-service-2026-10-28",
+      "title": "Microsoft Copilot harness lands in Foundry Agent Service",
+      "authors": "Tina Schuchman, Vladimir Fedorov",
+      "source": "Microsoft Foundry Blog",
+      "url": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/",
+      "type": "release",
+      "dateAdded": "2026-10-28",
+      "summary": "The multi-model Copilot harness that already powers GitHub Copilot experiences is now available as a managed execution system in Foundry. Developers bring skills, tools, and MCP connections while Microsoft runs the agent loop and sandbox.",
+      "tags": [
+        "release",
+        "harness",
+        "multi-model",
+        "foundry"
+      ]
+    },
+    {
+      "id": "github-universe-2026-evolves-every-layer-for-agentic-delivery-2026-10-28",
+      "title": "GitHub Universe 2026 evolves every layer for agentic delivery",
+      "authors": "GitHub",
+      "source": "The GitHub Blog",
+      "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+      "type": "article",
+      "dateAdded": "2026-10-28",
+      "summary": "Universe shipped the Copilot app for issue-to-merge agent work, Copilot projects for multi-repo parallel sessions, and session continuity across clients. The multi-model harness and cloud agent infrastructure are now the default path for agentic software delivery.",
+      "tags": [
+        "universe",
+        "copilot",
+        "agentic",
+        "cloud"
+      ]
+    },
+    {
+      "id": "octoverse-2026-agents-drive-record-commits-and-pull-requests-2026-10-28",
+      "title": "Octoverse 2026: agents drive record commits and pull requests",
+      "authors": "GitHub",
+      "source": "The GitHub Blog",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "type": "article",
+      "dateAdded": "2026-10-28",
+      "summary": "Repos with agent configuration files show eight times the commits of those without, and over 40 percent of pull requests now start with an agent draft. Cloud agents and persistent multi-agent orchestration moved from experiment to mainstream developer workflow.",
+      "tags": [
+        "octoverse",
+        "stats",
+        "agents",
+        "prs"
+      ]
+    },
     {
       "id": "greywall-2026-10-27",
       "title": "Greywall",
@@ -10597,159 +10758,6 @@
         "isolation",
         "ebpf",
         "runtime"
-      ]
-    },
-    {
-      "id": "context-mode-2026-09-03",
-      "title": "context-mode",
-      "authors": "mksglu",
-      "source": "GitHub",
-      "url": "https://github.com/mksglu/context-mode",
-      "type": "tool",
-      "dateAdded": "2026-09-03",
-      "summary": "Context-window surgery for coding agents. Sandboxes tool output so the model sees the signal instead of a 40k-token log.",
-      "usecase": "Use it when your agent keeps blowing the window on build logs and you need the loop to survive a real compile.",
-      "returning": false,
-      "tags": [
-        "context",
-        "tool output",
-        "coding agents"
-      ]
-    },
-    {
-      "id": "cua-2026-09-03",
-      "title": "CUA",
-      "authors": "trycua",
-      "source": "GitHub",
-      "url": "https://github.com/trycua/cua",
-      "type": "tool",
-      "dateAdded": "2026-09-03",
-      "summary": "Open-source computer-use 2.0: drivers, cross-OS fleets, and benchmarks for training and evaluating desktop agents.",
-      "usecase": "Use it to give a coding agent a real desktop when the job is a GUI installer, not an API.",
-      "returning": false,
-      "tags": [
-        "computer use",
-        "desktop",
-        "benchmarks"
-      ]
-    },
-    {
-      "id": "deepcode-2026-09-03",
-      "title": "DeepCode",
-      "authors": "HKUDS",
-      "source": "GitHub",
-      "url": "https://github.com/HKUDS/DeepCode",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "Open agentic coding from HKU: agent harness, loop engineering, multi-agent orchestration. Academic lab software that ships as a repo you run.",
-      "usecase": "Use it when you want a research harness with a real coding loop, not a chatbot with extra steps.",
-      "returning": false,
-      "tags": [
-        "research",
-        "harness",
-        "multi-agent"
-      ]
-    },
-    {
-      "id": "ghostex-2026-09-03",
-      "title": "Ghostex",
-      "authors": "maddada",
-      "source": "GitHub",
-      "url": "https://github.com/maddada/Ghostex",
-      "type": "tool",
-      "dateAdded": "2026-09-03",
-      "summary": "Rust and GPUI native agent CLI manager for macOS. Ghostty terminals plus Codex-app UX, without Electron.",
-      "usecase": "Use it to manage a stack of native agent CLIs in Ghostty instead of a webview IDE.",
-      "returning": false,
-      "tags": [
-        "rust",
-        "macos",
-        "terminal"
-      ]
-    },
-    {
-      "id": "codegraff-2026-09-03",
-      "title": "graff",
-      "authors": "justrach",
-      "source": "GitHub",
-      "url": "https://github.com/justrach/codegraff",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "Fast agentic coding harness in Zig: multi-provider, MCP, workflows.",
-      "usecase": "Use it when you want a coding loop with systems-language latency, not a Node daemon.",
-      "returning": false,
-      "tags": [
-        "zig",
-        "harness",
-        "mcp"
-      ]
-    },
-    {
-      "id": "herdr-2026-09-03",
-      "title": "Herdr",
-      "authors": "herdrdev",
-      "source": "GitHub",
-      "url": "https://github.com/herdrdev/herdr",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "The runtime your coding agents live on. Not another chat wrapper: a place agents persist, resume, and share a machine.",
-      "usecase": "Use it when you want agents to survive a laptop sleep and pick up the same checkout, secrets, and tools.",
-      "returning": false,
-      "tags": [
-        "runtime",
-        "persistence",
-        "agents"
-      ]
-    },
-    {
-      "id": "ironcurtain-2026-09-03",
-      "title": "Ironcurtain",
-      "authors": "provos",
-      "source": "GitHub",
-      "url": "https://github.com/provos/ironcurtain",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "Secure runtime for autonomous agents. Policy from plain-English constitutions.",
-      "usecase": "Use it when you will not give a coding agent root and still want it to act.",
-      "returning": false,
-      "tags": [
-        "security",
-        "runtime",
-        "policy"
-      ]
-    },
-    {
-      "id": "loopx-2026-09-03",
-      "title": "LoopX",
-      "authors": "huangruiteng",
-      "source": "GitHub",
-      "url": "https://github.com/huangruiteng/loopx",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "A long-horizon control plane that keeps coding agents on durable, governed work instead of one-shot chats. Power users treat it as the supervisor, not another model.",
-      "usecase": "Use it to keep an overnight refactor alive across tool crashes, with a human gate on the risky steps.",
-      "returning": false,
-      "tags": [
-        "control plane",
-        "long-horizon",
-        "orchestration"
-      ]
-    },
-    {
-      "id": "mcp-agent-2026-09-03",
-      "title": "mcp-agent",
-      "authors": "lastmile-ai",
-      "source": "GitHub",
-      "url": "https://github.com/lastmile-ai/mcp-agent",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "Build effective agents with Model Context Protocol and small workflow patterns.",
-      "usecase": "Use it to compose MCP servers into a durable agent without standing up a full IDE plugin.",
-      "returning": false,
-      "tags": [
-        "mcp",
-        "runtime",
-        "workflows"
       ]
     }
   ]

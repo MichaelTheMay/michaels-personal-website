@@ -1,7 +1,133 @@
 {
-  "lastUpdated": "2026-10-27",
-  "count": 502,
+  "lastUpdated": "2026-10-28",
+  "count": 508,
   "tools": [
+    {
+      "slug": "agent-harness",
+      "title": "Agent-Harness test",
+      "authors": "Suirotciv",
+      "source": "GitHub",
+      "url": "https://github.com/Suirotciv/Agent-Harness",
+      "type": "harness",
+      "summary": "Pytest-friendly test harness that asserts tool-call sequences, arguments, and safety properties on agent traces without live APIs.",
+      "usecase": "Use it to gate CI on deterministic agent behavior by replaying cassettes of real-world action traces.",
+      "tags": [
+        "eval",
+        "pytest",
+        "traces",
+        "safety"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentworld",
+      "title": "agentworld",
+      "authors": "openagents-org",
+      "source": "GitHub",
+      "url": "https://github.com/openagents-org/agentworld",
+      "type": "repo",
+      "summary": "2D multiplayer environment plus reference harness for long-horizon multi-agent collaboration, tasks, and leaderboard evals.",
+      "usecase": "Use it to benchmark custom agent harnesses on shared-world resource gathering, crafting, and coordination tasks.",
+      "tags": [
+        "benchmark",
+        "multi-agent",
+        "eval",
+        "harness"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "codeduet-microvm-ai-agent-sandbox",
+      "title": "codeduet microvm sandbox",
+      "authors": "CodeDuet",
+      "source": "GitHub",
+      "url": "https://github.com/CodeDuet/codeduet-microvm-ai-agent-sandbox",
+      "type": "tool",
+      "summary": "Cloud Hypervisor based microVM sandbox system with Python SDK supporting Linux and Windows guests for hardware-isolated agent code.",
+      "usecase": "Use it to launch REST-managed VMs that execute untrusted agent code with bidirectional host-guest HTTP.",
+      "tags": [
+        "cloud-hypervisor",
+        "sdk",
+        "multi-os",
+        "isolation"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "fast-sandbox",
+      "title": "Fast Sandbox",
+      "authors": "opensandbox-group",
+      "source": "GitHub",
+      "url": "https://github.com/opensandbox-group/fast-sandbox",
+      "type": "harness",
+      "summary": "Firecracker microVM runtime on Kubernetes with warm Fastlet pools, snapshot restore, and XFS reflink for sub-100 ms agent sandbox creation.",
+      "usecase": "Use it to back high-throughput eval or code-interpreter fleets with hardware isolation and declarative CRDs.",
+      "tags": [
+        "firecracker",
+        "kubernetes",
+        "snapshot",
+        "pool"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-engineering-guide",
+      "title": "harness-engineering-guide",
+      "authors": "nexu-io",
+      "source": "GitHub",
+      "url": "https://github.com/nexu-io/harness-engineering-guide",
+      "type": "repo",
+      "summary": "Practical open guide to harness engineering with copy-and-run code for loops, tools, memory, guardrails, and sandboxes.",
+      "usecase": "Use it to bootstrap a production harness by cloning the tutorials and adapting the sandbox and skill patterns.",
+      "tags": [
+        "guide",
+        "patterns",
+        "tutorials",
+        "sandbox"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentmemory",
+      "title": "jayzeng agentmemory",
+      "authors": "jayzeng",
+      "source": "GitHub",
+      "url": "https://github.com/jayzeng/agentmemory",
+      "type": "tool",
+      "summary": "Local-first Markdown memory layer with daily logs, scratchpad, qmd search, and MCP server for any coding agent.",
+      "usecase": "Use it to give agents durable project memory that works offline and installs as skills or MCP tools.",
+      "tags": [
+        "memory",
+        "markdown",
+        "mcp",
+        "local"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agentmemory",
       "title": "agentmemory",
