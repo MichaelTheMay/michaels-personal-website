@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-28",
+  "lastUpdated": "2026-10-29",
   "issues": [
+    {
+      "date": "2026-10-29",
+      "title": "Self-hosted sandboxes and harnesses that own the agent loop",
+      "blurb": "Power users get cloneable isolation layers, control planes, and evolution loops that wire agents into durable production systems without closed IDE lock-in. The through-line is infrastructure you actually run and extend yourself."
+    },
     {
       "date": "2026-10-28",
       "title": "MicroVM density and branchable isolation redefine agent runtimes",
@@ -260,14 +265,93 @@
       "date": "2026-09-04",
       "title": "Clone-ready harnesses and runtimes that put the agent loop under your control",
       "blurb": "Today's picks favor lightweight WASM OSes, Rust terminal harnesses, typed agent SDKs, browser MCP surfaces, and memory graphs you can wire directly into durable loops. Power users get sandboxes, control planes, and eval hooks without vendor lock-in."
-    },
-    {
-      "date": "2026-09-03",
-      "title": "The combined power-user stack",
-      "blurb": "Every algorithm from this week in one list: control planes, research-origin loops, infra under the agent, and systems-language harnesses. Deduped, clone-and-run, no household CLIs."
     }
   ],
   "items": [
+    {
+      "id": "sandstorm-2026-10-29",
+      "title": "Sandstorm",
+      "authors": "deeplethe",
+      "source": "GitHub",
+      "url": "https://github.com/deeplethe/sandstorm",
+      "type": "repo",
+      "dateAdded": "2026-10-29",
+      "summary": "gVisor-based fleet that checkpoints idle agent sandboxes so cheap machines hold thousands of paused instances.",
+      "tags": [
+        "gvisor",
+        "checkpoint",
+        "fleet",
+        "density"
+      ],
+      "usecase": "Use it to oversubscribe hosts and wake frozen sandboxes on demand for fan-out agent workloads.",
+      "returning": false
+    },
+    {
+      "id": "ka-harness-2026-10-29",
+      "title": "Ka Harness",
+      "authors": "jaltez",
+      "source": "GitHub",
+      "url": "https://github.com/jaltez/ka",
+      "type": "tool",
+      "dateAdded": "2026-10-29",
+      "summary": "Extremely lightweight model-agnostic coding agent harness written in Rust as a single static binary.",
+      "tags": [
+        "rust",
+        "lightweight",
+        "tui",
+        "local"
+      ],
+      "usecase": "Use it to run a fast local TUI or headless agent loop with no daemons or telemetry.",
+      "returning": false
+    },
+    {
+      "id": "github-agentic-workflows-generally-available-2026-10-29",
+      "title": "GitHub Agentic Workflows generally available",
+      "authors": "GitHub",
+      "source": "GitHub Blog",
+      "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/",
+      "type": "release",
+      "dateAdded": "2026-10-29",
+      "summary": "GitHub Agentic Workflows from GitHub Next is now GA. Natural language Markdown compiles to Actions YAML with sandboxed agents, model routing, budget forecasting and micro-VM isolation options.",
+      "tags": [
+        "github",
+        "actions",
+        "workflows",
+        "release"
+      ]
+    },
+    {
+      "id": "microsoft-opens-github-built-copilot-harness-via-foundry-2026-10-29",
+      "title": "Microsoft opens GitHub-built Copilot harness via Foundry",
+      "authors": "David Ramel",
+      "source": "Visual Studio Magazine",
+      "url": "https://visualstudiomagazine.com/articles/2026/10/28/microsoft-opens-github-built-copilot-harness-to-developers-through-foundry.aspx",
+      "type": "article",
+      "dateAdded": "2026-10-29",
+      "summary": "Microsoft is releasing the internal multi-model Copilot agent harness through Foundry as both SDK and managed runtime. It supports 20-plus frontier models, MCP, skills and a recent Rust port for lower overhead.",
+      "tags": [
+        "microsoft",
+        "foundry",
+        "harness",
+        "sdk"
+      ]
+    },
+    {
+      "id": "anthropic-open-sources-sandbox-runtime-for-os-level-agent-isolation-2026-10-29",
+      "title": "Anthropic open-sources sandbox-runtime for OS-level agent isolation",
+      "authors": "MarkTechPost",
+      "source": "MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox/",
+      "type": "release",
+      "dateAdded": "2026-10-29",
+      "summary": "Anthropic released sandbox-runtime, an OS-level sandbox using Seatbelt on macOS and bubblewrap on Linux. It restricts filesystem and network for any process or MCP server without containers and powers Claude Code bash isolation.",
+      "tags": [
+        "anthropic",
+        "sandbox",
+        "os-level",
+        "security"
+      ]
+    },
     {
       "id": "fast-sandbox-2026-10-28",
       "title": "Fast Sandbox",
@@ -10677,87 +10761,6 @@
         "show-hn",
         "rust",
         "harness"
-      ]
-    },
-    {
-      "id": "show-hn-kit-claude-code-but-concise-2026-09-04",
-      "title": "Show HN: Kit. Claude Code but Concise",
-      "authors": "danielkov",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49537801",
-      "type": "release",
-      "dateAdded": "2026-09-04",
-      "summary": "Kit ships as a single-binary coding runtime with one compose tool, ACP server, A2A, and dynamic skill reload. It aims for lower token cost and cleaner subagent orchestration than full IDEs.",
-      "tags": [
-        "release",
-        "cli",
-        "acp"
-      ]
-    },
-    {
-      "id": "show-hn-mcp-use-v2-rebuilt-from-scratch-for-stateless-2026-07-28-mcp-spec-2026-09-04",
-      "title": "Show HN: mcp-use v2 rebuilt from scratch for stateless 2026-07-28 MCP spec",
-      "authors": "luigipederzani",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49198472",
-      "type": "release",
-      "dateAdded": "2026-09-04",
-      "summary": "v2 drops sessions for the new stateless MCP revision and delivers higher throughput plus a smaller install. It targets MCP apps with HMR views and agent-friendly headless debugging.",
-      "tags": [
-        "mcp",
-        "typescript",
-        "release"
-      ]
-    },
-    {
-      "id": "agenvoy-2026-09-03",
-      "title": "Agenvoy",
-      "authors": "agenvoy",
-      "source": "GitHub",
-      "url": "https://github.com/agenvoy/Agenvoy",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "Self-hosted AI agent harness in a single Go binary. Writes, sandbox-tests, and repairs its own code. No Electron, no account.",
-      "usecase": "Use it as a local coding worker you can scp onto a box and run unattended against a failing test suite.",
-      "returning": false,
-      "tags": [
-        "go",
-        "self-hosted",
-        "self-repair"
-      ]
-    },
-    {
-      "id": "cmux-2026-09-03",
-      "title": "cmux",
-      "authors": "manaflow-ai",
-      "source": "GitHub",
-      "url": "https://github.com/manaflow-ai/cmux",
-      "type": "tool",
-      "dateAdded": "2026-09-03",
-      "summary": "Open-source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents.",
-      "usecase": "Use it as the terminal surface when you are running a swarm of CLIs and need to see which one just finished.",
-      "returning": false,
-      "tags": [
-        "terminal",
-        "macos",
-        "notifications"
-      ]
-    },
-    {
-      "id": "containarium-2026-09-03",
-      "title": "Containarium",
-      "authors": "FootprintAI",
-      "source": "GitHub",
-      "url": "https://github.com/FootprintAI/Containarium",
-      "type": "harness",
-      "dateAdded": "2026-09-03",
-      "summary": "Open-source agent runtime with SSH-native isolation, eBPF egress policy, Kubernetes and LXC backends.",
-      "usecase": "Use it to run untrusted coding agents with real network policy instead of hope.",
-      "returning": false,
-      "tags": [
-        "isolation",
-        "ebpf",
-        "runtime"
       ]
     }
   ]

@@ -1,7 +1,49 @@
 {
-  "lastUpdated": "2026-10-28",
-  "count": 508,
+  "lastUpdated": "2026-10-29",
+  "count": 510,
   "tools": [
+    {
+      "slug": "ka",
+      "title": "Ka Harness",
+      "authors": "jaltez",
+      "source": "GitHub",
+      "url": "https://github.com/jaltez/ka",
+      "type": "tool",
+      "summary": "Extremely lightweight model-agnostic coding agent harness written in Rust as a single static binary.",
+      "usecase": "Use it to run a fast local TUI or headless agent loop with no daemons or telemetry.",
+      "tags": [
+        "rust",
+        "lightweight",
+        "tui",
+        "local"
+      ],
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandstorm",
+      "title": "Sandstorm",
+      "authors": "deeplethe",
+      "source": "GitHub",
+      "url": "https://github.com/deeplethe/sandstorm",
+      "type": "repo",
+      "summary": "gVisor-based fleet that checkpoints idle agent sandboxes so cheap machines hold thousands of paused instances.",
+      "usecase": "Use it to oversubscribe hosts and wake frozen sandboxes on demand for fan-out agent workloads.",
+      "tags": [
+        "gvisor",
+        "checkpoint",
+        "fleet",
+        "density"
+      ],
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-harness",
       "title": "Agent-Harness test",
