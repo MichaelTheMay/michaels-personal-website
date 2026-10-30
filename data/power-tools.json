@@ -1,7 +1,110 @@
 {
-  "lastUpdated": "2026-10-29",
-  "count": 510,
+  "lastUpdated": "2026-10-30",
+  "count": 514,
   "tools": [
+    {
+      "slug": "agro",
+      "title": "AGRO",
+      "authors": "mifunedev",
+      "source": "GitHub",
+      "url": "https://github.com/mifunedev/agro",
+      "type": "harness",
+      "summary": "Agent Governance Runtime Orchestrator that packages Docker sandboxes and shared procedures for side-by-side coding harnesses under operator control.",
+      "usecase": "Use it to give multiple coding agents a portable workspace with Herdr, microsandbox and tool installs inside one governed sandbox.",
+      "tags": [
+        "governance",
+        "docker",
+        "workspace",
+        "herdr"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-agent-sandboxes",
+      "title": "awesome-agent-sandboxes",
+      "authors": "arjan",
+      "source": "GitHub",
+      "url": "https://github.com/arjan/awesome-agent-sandboxes",
+      "type": "repo",
+      "summary": "Curated list of code-execution sandboxes for LLM agents spanning cloud microVMs, self-hosted Firecracker options and process jails.",
+      "usecase": "Use it to pick isolation strength versus startup latency for your agent eval or production hands.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "comparison"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "herdr",
+      "title": "Herdr",
+      "authors": "herdrdev",
+      "source": "GitHub",
+      "url": "https://github.com/herdrdev/herdr",
+      "type": "harness",
+      "summary": "Rust terminal workspace and multiplexer runtime that hosts coding agents with TUI panes, orchestration hooks and low-overhead session management.",
+      "usecase": "Use it as the interactive shell layer under multiple parallel agent CLIs on a single machine.",
+      "tags": [
+        "runtime",
+        "persistence",
+        "agents"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-10-30",
+      "algorithms": [
+        "velocity"
+      ]
+    },
+    {
+      "slug": "hotcell",
+      "title": "hotcell",
+      "authors": "directionally-local",
+      "source": "GitHub",
+      "url": "https://github.com/directionally-local/hotcell",
+      "type": "tool",
+      "summary": "Self-hosted sandbox daemon supporting Docker, Firecracker or Apple Virtualization microVMs with API keys that never enter the guest and admission control.",
+      "usecase": "Use it to pack as many agent sandboxes as your Mac Mini or bare-metal box can hold under one daemon.",
+      "tags": [
+        "self-hosted",
+        "firecracker",
+        "apple-vz",
+        "secrets"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "runtime",
+      "title": "Runtime",
+      "authors": "withruntime",
+      "source": "GitHub",
+      "url": "https://github.com/withruntime/runtime",
+      "type": "tool",
+      "summary": "Firecracker microVM sandboxes with multi-language SDKs, CLI, MCP server and drop-in integrations for common agent frameworks.",
+      "usecase": "Use it to give LangChain, OpenAI Agents or smolagents a one-call Firecracker backend with credential brokering.",
+      "tags": [
+        "firecracker",
+        "sdk",
+        "mcp",
+        "integrations"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "ka",
       "title": "Ka Harness",
@@ -10311,26 +10414,6 @@
       "lastSeen": "2026-09-03",
       "algorithms": [
         "systems"
-      ]
-    },
-    {
-      "slug": "herdr",
-      "title": "Herdr",
-      "authors": "herdrdev",
-      "source": "GitHub",
-      "url": "https://github.com/herdrdev/herdr",
-      "type": "harness",
-      "summary": "The runtime your coding agents live on. Not another chat wrapper: a place agents persist, resume, and share a machine.",
-      "usecase": "Use it when you want agents to survive a laptop sleep and pick up the same checkout, secrets, and tools.",
-      "tags": [
-        "runtime",
-        "persistence",
-        "agents"
-      ],
-      "firstSeen": "2026-09-03",
-      "lastSeen": "2026-09-03",
-      "algorithms": [
-        "velocity"
       ]
     },
     {

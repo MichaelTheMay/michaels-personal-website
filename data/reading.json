@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-29",
+  "lastUpdated": "2026-10-30",
   "issues": [
+    {
+      "date": "2026-10-30",
+      "title": "MicroVM isolation and K8s control planes that put the agent loop under power-user ownership",
+      "blurb": "Today's picks center on cloneable sandboxes, zero-trust runtimes, and self-hosted harnesses that isolate untrusted agent code while exposing orchestration primitives. Power users get density, credential brokering, and durable sessions without closed IDE lock-in."
+    },
     {
       "date": "2026-10-29",
       "title": "Self-hosted sandboxes and harnesses that own the agent loop",
@@ -268,6 +273,127 @@
     }
   ],
   "items": [
+    {
+      "id": "hotcell-2026-10-30",
+      "title": "hotcell",
+      "authors": "directionally-local",
+      "source": "GitHub",
+      "url": "https://github.com/directionally-local/hotcell",
+      "type": "tool",
+      "dateAdded": "2026-10-30",
+      "summary": "Self-hosted sandbox daemon supporting Docker, Firecracker or Apple Virtualization microVMs with API keys that never enter the guest and admission control.",
+      "tags": [
+        "self-hosted",
+        "firecracker",
+        "apple-vz",
+        "secrets"
+      ],
+      "usecase": "Use it to pack as many agent sandboxes as your Mac Mini or bare-metal box can hold under one daemon.",
+      "returning": false
+    },
+    {
+      "id": "runtime-2026-10-30",
+      "title": "Runtime",
+      "authors": "withruntime",
+      "source": "GitHub",
+      "url": "https://github.com/withruntime/runtime",
+      "type": "tool",
+      "dateAdded": "2026-10-30",
+      "summary": "Firecracker microVM sandboxes with multi-language SDKs, CLI, MCP server and drop-in integrations for common agent frameworks.",
+      "tags": [
+        "firecracker",
+        "sdk",
+        "mcp",
+        "integrations"
+      ],
+      "usecase": "Use it to give LangChain, OpenAI Agents or smolagents a one-call Firecracker backend with credential brokering.",
+      "returning": false
+    },
+    {
+      "id": "agro-2026-10-30",
+      "title": "AGRO",
+      "authors": "mifunedev",
+      "source": "GitHub",
+      "url": "https://github.com/mifunedev/agro",
+      "type": "harness",
+      "dateAdded": "2026-10-30",
+      "summary": "Agent Governance Runtime Orchestrator that packages Docker sandboxes and shared procedures for side-by-side coding harnesses under operator control.",
+      "tags": [
+        "governance",
+        "docker",
+        "workspace",
+        "herdr"
+      ],
+      "usecase": "Use it to give multiple coding agents a portable workspace with Herdr, microsandbox and tool installs inside one governed sandbox.",
+      "returning": false
+    },
+    {
+      "id": "awesome-agent-sandboxes-2026-10-30",
+      "title": "awesome-agent-sandboxes",
+      "authors": "arjan",
+      "source": "GitHub",
+      "url": "https://github.com/arjan/awesome-agent-sandboxes",
+      "type": "repo",
+      "dateAdded": "2026-10-30",
+      "summary": "Curated list of code-execution sandboxes for LLM agents spanning cloud microVMs, self-hosted Firecracker options and process jails.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "comparison"
+      ],
+      "usecase": "Use it to pick isolation strength versus startup latency for your agent eval or production hands.",
+      "returning": false
+    },
+    {
+      "id": "herdr-2026-10-30",
+      "title": "herdr",
+      "authors": "herdrdev",
+      "source": "GitHub",
+      "url": "https://github.com/herdrdev/herdr",
+      "type": "tool",
+      "dateAdded": "2026-10-30",
+      "summary": "Rust terminal workspace and multiplexer runtime that hosts coding agents with TUI panes, orchestration hooks and low-overhead session management.",
+      "tags": [
+        "rust",
+        "tui",
+        "multiplexer",
+        "terminal"
+      ],
+      "usecase": "Use it as the interactive shell layer under multiple parallel agent CLIs on a single machine.",
+      "returning": false
+    },
+    {
+      "id": "akamai-launches-agent-sandbox-and-inference-for-ai-generated-code-2026-10-30",
+      "title": "Akamai launches Agent Sandbox and Inference for AI-generated code",
+      "authors": "CryptoBriefing",
+      "source": "CryptoBriefing",
+      "url": "https://cryptobriefing.com/akamai-launches-agent-sandbox-ai-security/",
+      "type": "release",
+      "dateAdded": "2026-10-30",
+      "summary": "Akamai shipped Agent Sandbox in beta, isolating agent-written code inside WebAssembly via the open Spin framework with tight compute, memory and egress limits. It launched alongside Akamai Inference, a managed OpenAI-compatible service for open-weight models.",
+      "tags": [
+        "sandbox",
+        "wasm",
+        "akamai",
+        "inference"
+      ]
+    },
+    {
+      "id": "managed-deep-agents-0-10-public-beta-adds-browser-use-and-async-subagents-2026-10-30",
+      "title": "Managed Deep Agents 0.10 public beta adds browser use and async subagents",
+      "authors": "LangChain",
+      "source": "X / LangChain",
+      "url": "https://x.com/LangChain/status/2115854162202444119",
+      "type": "release",
+      "dateAdded": "2026-10-30",
+      "summary": "LangChain released Managed Deep Agents 0.10 with built-in browser tools running in LangSmith sandboxes so agents can act on sites without APIs. Async subagents let long tasks run in the background while the main agent continues the conversation.",
+      "tags": [
+        "langchain",
+        "browser",
+        "subagents",
+        "sandbox"
+      ]
+    },
     {
       "id": "sandstorm-2026-10-29",
       "title": "Sandstorm",
@@ -10639,129 +10765,6 @@
       ],
       "usecase": "Use it to run coding agents that learn from experience and retain context without prompt stuffing.",
       "returning": false
-    },
-    {
-      "id": "e2b-desktop-2026-09-04",
-      "title": "E2B Desktop",
-      "authors": "e2b-dev",
-      "source": "GitHub",
-      "url": "https://github.com/e2b-dev/desktop",
-      "type": "repo",
-      "dateAdded": "2026-09-04",
-      "summary": "Open-source virtual desktop sandbox for computer-use agents with graphical environment and streaming.",
-      "tags": [
-        "sandbox",
-        "computer-use",
-        "desktop",
-        "e2b"
-      ],
-      "usecase": "Use it to give agents a full isolated desktop for GUI automation and secure code execution.",
-      "returning": false
-    },
-    {
-      "id": "mcp-use-2026-09-04",
-      "title": "mcp-use",
-      "authors": "mcp-use",
-      "source": "GitHub",
-      "url": "https://github.com/mcp-use/mcp-use",
-      "type": "tool",
-      "dateAdded": "2026-09-04",
-      "summary": "TypeScript framework for building MCP servers and apps rebuilt for the stateless 2026 MCP spec.",
-      "tags": [
-        "mcp",
-        "typescript",
-        "servers",
-        "apps"
-      ],
-      "usecase": "Use it to ship high-throughput MCP servers with inspector, HMR views, and headless screenshot debugging for agents.",
-      "returning": false
-    },
-    {
-      "id": "dmux-2026-09-04",
-      "title": "dmux",
-      "authors": "standardagents",
-      "source": "GitHub",
-      "url": "https://github.com/standardagents/dmux",
-      "type": "harness",
-      "dateAdded": "2026-09-04",
-      "summary": "Dev agent multiplexer that creates git worktrees and tmux panes for parallel coding agents.",
-      "tags": [
-        "worktrees",
-        "tmux",
-        "orchestration",
-        "parallel"
-      ],
-      "usecase": "Use it to launch isolated agent sessions per task then merge or PR the results from a single board.",
-      "returning": false
-    },
-    {
-      "id": "agent-harness-2026-09-04",
-      "title": "agent-harness",
-      "authors": "SUNRNEHUI",
-      "source": "GitHub",
-      "url": "https://github.com/SUNRNEHUI/agent-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-04",
-      "summary": "Plan-native execution harness adding intent-to-contract synthesis, durable handoff, and evidence-based acceptance.",
-      "tags": [
-        "plan",
-        "contracts",
-        "reliability",
-        "skills"
-      ],
-      "usecase": "Use it to add portable contracts and audit gates across Codex, Claude Code, or other file-and-shell agents.",
-      "returning": false
-    },
-    {
-      "id": "praisonai-2026-09-04",
-      "title": "PraisonAI",
-      "authors": "MervinPraison",
-      "source": "GitHub",
-      "url": "https://github.com/MervinPraison/PraisonAI",
-      "type": "harness",
-      "dateAdded": "2026-09-04",
-      "summary": "Fast multi-agent workforce framework with planning, memory, RAG, dashboards, and multi-provider support.",
-      "tags": [
-        "multi-agent",
-        "workforce",
-        "python",
-        "mcp"
-      ],
-      "usecase": "Use it to spin up autonomous agent teams with low-latency orchestration for production workflows.",
-      "returning": false
-    },
-    {
-      "id": "aios-2026-09-04",
-      "title": "AIOS",
-      "authors": "agiresearch",
-      "source": "GitHub",
-      "url": "https://github.com/agiresearch/AIOS",
-      "type": "repo",
-      "dateAdded": "2026-09-04",
-      "summary": "AI Agent Operating System with kernel and SDK for scheduling, context, memory, tools, and computer-use sandboxes.",
-      "tags": [
-        "os",
-        "kernel",
-        "sandbox",
-        "multi-agent"
-      ],
-      "usecase": "Use it to treat agents as first-class OS processes with shared resource management and deployment modes.",
-      "returning": false
-    },
-    {
-      "id": "show-hn-vt-code-my-attempt-at-building-a-coding-agent-harness-2026-09-04",
-      "title": "Show HN: VT Code – My attempt at building a coding-agent harness",
-      "authors": "vinhnx",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49550066",
-      "type": "article",
-      "dateAdded": "2026-09-04",
-      "summary": "A year-long Rust harness project focused on tool execution, context, sandboxing, permissions, and long-running reliability. The author invites feedback from others building similar agent loops.",
-      "tags": [
-        "show-hn",
-        "rust",
-        "harness"
-      ]
     }
   ]
 }
