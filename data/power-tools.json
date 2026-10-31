@@ -1,7 +1,70 @@
 {
-  "lastUpdated": "2026-10-30",
-  "count": 514,
+  "lastUpdated": "2026-10-31",
+  "count": 517,
   "tools": [
+    {
+      "slug": "hvi-vmm",
+      "title": "hvi-vmm",
+      "authors": "brig-sh",
+      "source": "GitHub",
+      "url": "https://github.com/brig-sh/hvi-vmm",
+      "type": "repo",
+      "summary": "Small microVMM (Hypervisor.framework on macOS, KVM on Linux) that powers Brig sandboxes with consistent virtio devices and seatbelt.",
+      "usecase": "Use it to embed or drive a minimal Linux guest VMM when building custom agent isolation on Apple Silicon or Linux.",
+      "tags": [
+        "vmm",
+        "kvm",
+        "hypervisor",
+        "microvm"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "k8e",
+      "title": "k8e",
+      "authors": "xiaods",
+      "source": "GitHub",
+      "url": "https://github.com/xiaods/k8e",
+      "type": "tool",
+      "summary": "Single-binary under 100MB agentic sandbox matrix turning any Linux host into an E2B-compatible platform with gVisor/Kata/Firecracker, warm pools and Cilium policies.",
+      "usecase": "Use it to stand up a self-hosted multi-runtime sandbox cluster in under a minute and connect coding agents via CLI or skill.",
+      "tags": [
+        "sandbox",
+        "e2b-compatible",
+        "single-binary",
+        "gvisor"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "memharness",
+      "title": "MemHarness",
+      "authors": "KnowledgeXLab",
+      "source": "GitHub",
+      "url": "https://github.com/KnowledgeXLab/MemHarness",
+      "type": "repo",
+      "summary": "Framework that makes agents reconstruct rather than replay memories through observation-retrieval-critique-reconstruction-action stages.",
+      "usecase": "Use it to train or run agents that critique and rewrite retrieved experience into state-aligned guidance before acting.",
+      "tags": [
+        "memory",
+        "reconstruction",
+        "rl",
+        "harness"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agro",
       "title": "AGRO",

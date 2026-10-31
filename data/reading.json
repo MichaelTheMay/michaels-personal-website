@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-30",
+  "lastUpdated": "2026-10-31",
   "issues": [
+    {
+      "date": "2026-10-31",
+      "title": "Local microVM sandboxes densify agent fleets",
+      "blurb": "Power users are cloning self-hosted microVM runtimes and control planes that boot in tens of milliseconds, keep secrets outside the guest, and fork warm state so one machine safely hosts dense agent sessions. These repos emphasize systems-language isolation and clone-and-run harnesses over closed IDE loops."
+    },
     {
       "date": "2026-10-30",
       "title": "MicroVM isolation and K8s control planes that put the agent loop under power-user ownership",
@@ -273,6 +278,92 @@
     }
   ],
   "items": [
+    {
+      "id": "k8e-2026-10-31",
+      "title": "k8e",
+      "authors": "xiaods",
+      "source": "GitHub",
+      "url": "https://github.com/xiaods/k8e",
+      "type": "tool",
+      "dateAdded": "2026-10-31",
+      "summary": "Single-binary under 100MB agentic sandbox matrix turning any Linux host into an E2B-compatible platform with gVisor/Kata/Firecracker, warm pools and Cilium policies.",
+      "tags": [
+        "sandbox",
+        "e2b-compatible",
+        "single-binary",
+        "gvisor"
+      ],
+      "usecase": "Use it to stand up a self-hosted multi-runtime sandbox cluster in under a minute and connect coding agents via CLI or skill.",
+      "returning": false
+    },
+    {
+      "id": "memharness-2026-10-31",
+      "title": "MemHarness",
+      "authors": "KnowledgeXLab",
+      "source": "GitHub",
+      "url": "https://github.com/KnowledgeXLab/MemHarness",
+      "type": "repo",
+      "dateAdded": "2026-10-31",
+      "summary": "Framework that makes agents reconstruct rather than replay memories through observation-retrieval-critique-reconstruction-action stages.",
+      "tags": [
+        "memory",
+        "reconstruction",
+        "rl",
+        "harness"
+      ],
+      "usecase": "Use it to train or run agents that critique and rewrite retrieved experience into state-aligned guidance before acting.",
+      "returning": false
+    },
+    {
+      "id": "hvi-vmm-2026-10-31",
+      "title": "hvi-vmm",
+      "authors": "brig-sh",
+      "source": "GitHub",
+      "url": "https://github.com/brig-sh/hvi-vmm",
+      "type": "repo",
+      "dateAdded": "2026-10-31",
+      "summary": "Small microVMM (Hypervisor.framework on macOS, KVM on Linux) that powers Brig sandboxes with consistent virtio devices and seatbelt.",
+      "tags": [
+        "vmm",
+        "kvm",
+        "hypervisor",
+        "microvm"
+      ],
+      "usecase": "Use it to embed or drive a minimal Linux guest VMM when building custom agent isolation on Apple Silicon or Linux.",
+      "returning": false
+    },
+    {
+      "id": "cubesandbox-v0-7-adds-cross-node-pause-resume-and-control-plane-separation-2026-10-31",
+      "title": "CubeSandbox v0.7 adds cross-node pause/resume and control-plane separation",
+      "authors": "TencentCloud",
+      "source": "GitHub Releases",
+      "url": "https://github.com/TencentCloud/CubeSandbox/releases",
+      "type": "release",
+      "dateAdded": "2026-10-31",
+      "summary": "The release ships S3-backed suspend/resume across nodes, CubeOps multi-replica control plane, faster networking and MCP gateway support inside sandboxes. It keeps sub-60ms boots and E2B compatibility while improving ops for multi-node agent fleets.",
+      "tags": [
+        "release",
+        "microvm",
+        "control-plane",
+        "e2b"
+      ]
+    },
+    {
+      "id": "agentos-library-brings-wasm-posix-sandboxes-into-the-process-2026-10-31",
+      "title": "agentOS library brings WASM POSIX sandboxes into the process",
+      "authors": "Rivet",
+      "source": "Rivet",
+      "url": "https://rivet.dev/agentos/",
+      "type": "article",
+      "dateAdded": "2026-10-31",
+      "summary": "Rivet documents agentOS as an npm-installable lightweight OS that gives agents files, shell and networking via V8 and WebAssembly with 4.8 ms cold starts. The write-up contrasts it with full microVMs and shows how host functions keep credentials out of the guest.",
+      "tags": [
+        "wasm",
+        "sandbox",
+        "library",
+        "release"
+      ]
+    },
     {
       "id": "hotcell-2026-10-30",
       "title": "hotcell",
@@ -10674,96 +10765,6 @@
         "agents"
       ],
       "usecase": "Use it to give agents a real-time context graph that invalidates stale facts and supports hybrid retrieval.",
-      "returning": false
-    },
-    {
-      "id": "composio-2026-09-04",
-      "title": "Composio",
-      "authors": "ComposioHQ",
-      "source": "GitHub",
-      "url": "https://github.com/ComposioHQ/composio",
-      "type": "tool",
-      "dateAdded": "2026-09-04",
-      "summary": "Tool layer with 1000+ integrations, auth, search, and sandboxed workbench so agents stop reinventing OAuth.",
-      "tags": [
-        "tools",
-        "integrations",
-        "auth",
-        "mcp"
-      ],
-      "usecase": "Use it to drop authenticated toolkits into any agent harness for Gmail, GitHub, Slack, and more.",
-      "returning": false
-    },
-    {
-      "id": "harness-kit-2026-09-04",
-      "title": "Harness Kit",
-      "authors": "deepklarity",
-      "source": "GitHub",
-      "url": "https://github.com/deepklarity/harness-kit",
-      "type": "harness",
-      "dateAdded": "2026-09-04",
-      "summary": "Multi-agent orchestration CLI plus task board with TDD-first patterns, RCA, and cost-aware delegation.",
-      "tags": [
-        "orchestration",
-        "patterns",
-        "task-board",
-        "cli"
-      ],
-      "usecase": "Use it to decompose specs into dependency graphs, route tasks to cheapest capable agents, and keep evidence trails.",
-      "returning": false
-    },
-    {
-      "id": "kit-2026-09-04",
-      "title": "Kit",
-      "authors": "speakeasy-api",
-      "source": "GitHub",
-      "url": "https://github.com/speakeasy-api/kit",
-      "type": "tool",
-      "dateAdded": "2026-09-04",
-      "summary": "Coding agent runtime with one compose tool, ACP server, A2A, and subagent orchestration in a static binary.",
-      "tags": [
-        "runtime",
-        "acp",
-        "compose",
-        "cli"
-      ],
-      "usecase": "Use it as a concise daily-driver harness that reloads skills and MCP dynamically and hosts other agents over ACP.",
-      "returning": false
-    },
-    {
-      "id": "agno-2026-09-04",
-      "title": "Agno",
-      "authors": "agno-agi",
-      "source": "GitHub",
-      "url": "https://github.com/agno-agi/agno",
-      "type": "harness",
-      "dateAdded": "2026-09-04",
-      "summary": "Framework and AgentOS runtime for building, serving, and managing agent platforms with UI control plane.",
-      "tags": [
-        "platform",
-        "runtime",
-        "control-plane",
-        "python"
-      ],
-      "usecase": "Use it to own your full agent stack including sessions, memory, traces, and MCP in your own cloud.",
-      "returning": false
-    },
-    {
-      "id": "letta-code-2026-09-04",
-      "title": "Letta Code",
-      "authors": "letta-ai",
-      "source": "GitHub",
-      "url": "https://github.com/letta-ai/letta-code",
-      "type": "tool",
-      "dateAdded": "2026-09-04",
-      "summary": "Memory-first stateful coding agent that persists identity and long-term memory across sessions and models.",
-      "tags": [
-        "memory",
-        "stateful",
-        "coding-agent",
-        "letta"
-      ],
-      "usecase": "Use it to run coding agents that learn from experience and retain context without prompt stuffing.",
       "returning": false
     }
   ]
