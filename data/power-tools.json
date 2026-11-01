@@ -1,7 +1,49 @@
 {
-  "lastUpdated": "2026-10-31",
-  "count": 517,
+  "lastUpdated": "2026-11-01",
+  "count": 519,
   "tools": [
+    {
+      "slug": "awesome-harness-engineering",
+      "title": "awesome-harness-engineering",
+      "authors": "walkinglabs",
+      "source": "GitHub",
+      "url": "https://github.com/walkinglabs/awesome-harness-engineering",
+      "type": "repo",
+      "summary": "Curated tools and guides covering control planes, verifiers, trajectories and self-evolution patterns for agents.",
+      "usecase": "Use it to locate RailWarden-style control planes and flameox profilers you can wire into CI.",
+      "tags": [
+        "awesome-list",
+        "control-plane",
+        "verifiers"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "localharness",
+      "title": "LocalHarness",
+      "authors": "ahwurm",
+      "source": "GitHub",
+      "url": "https://github.com/ahwurm/localharness",
+      "type": "harness",
+      "summary": "Self-hosted harness sized for local LLMs (vLLM, llama.cpp, Ollama) with YAML agents, permission gates and plugin helpers.",
+      "usecase": "Use it to run coding and research agents against models you already host with full event streams and no telemetry.",
+      "tags": [
+        "local-llm",
+        "vllm",
+        "ollama",
+        "plugins",
+        "permission-gate"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "hvi-vmm",
       "title": "hvi-vmm",

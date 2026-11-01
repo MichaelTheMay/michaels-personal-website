@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-10-31",
+  "lastUpdated": "2026-11-01",
   "issues": [
+    {
+      "date": "2026-11-01",
+      "title": "K8s-native substrates and branchable microVM harnesses that densify agent isolation",
+      "blurb": "Power users get zero-trust actor multiplexing, declarative task orchestrators, and hardware-isolated local sandboxes that keep secrets and egress outside the loop. The through-line is control planes and runtimes you clone, wire, and oversubscribe instead of renting closed IDE agents."
+    },
     {
       "date": "2026-10-31",
       "title": "Local microVM sandboxes densify agent fleets",
@@ -278,6 +283,90 @@
     }
   ],
   "items": [
+    {
+      "id": "localharness-2026-11-01",
+      "title": "LocalHarness",
+      "authors": "ahwurm",
+      "source": "GitHub",
+      "url": "https://github.com/ahwurm/localharness",
+      "type": "harness",
+      "dateAdded": "2026-11-01",
+      "summary": "Self-hosted harness sized for local LLMs (vLLM, llama.cpp, Ollama) with YAML agents, permission gates and plugin helpers.",
+      "tags": [
+        "local-llm",
+        "vllm",
+        "ollama",
+        "plugins",
+        "permission-gate"
+      ],
+      "usecase": "Use it to run coding and research agents against models you already host with full event streams and no telemetry.",
+      "returning": false
+    },
+    {
+      "id": "awesome-harness-engineering-2026-11-01",
+      "title": "awesome-harness-engineering",
+      "authors": "walkinglabs",
+      "source": "GitHub",
+      "url": "https://github.com/walkinglabs/awesome-harness-engineering",
+      "type": "repo",
+      "dateAdded": "2026-11-01",
+      "summary": "Curated tools and guides covering control planes, verifiers, trajectories and self-evolution patterns for agents.",
+      "tags": [
+        "awesome-list",
+        "control-plane",
+        "verifiers"
+      ],
+      "usecase": "Use it to locate RailWarden-style control planes and flameox profilers you can wire into CI.",
+      "returning": false
+    },
+    {
+      "id": "ai-agent-sandboxes-where-should-your-agent-run-2026-2026-11-01",
+      "title": "AI Agent Sandboxes: Where Should Your Agent Run? (2026)",
+      "authors": "Stan Chang",
+      "source": "Taskade",
+      "url": "https://www.taskade.com/blog/ai-agent-sandboxes",
+      "type": "article",
+      "dateAdded": "2026-11-01",
+      "summary": "Vendor-neutral field guide that settles on microVMs as the default isolation tier and argues the agent loop should live outside the sandbox as brain versus hands. It compares twenty options on threat model, secrets placement and lifetime.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "architecture",
+        "comparison"
+      ]
+    },
+    {
+      "id": "running-ai-agents-on-kubernetes-agent-sandbox-kagent-and-more-2026-11-01",
+      "title": "Running AI Agents on Kubernetes: Agent Sandbox, kagent and More",
+      "authors": "Signadot",
+      "source": "Signadot Blog",
+      "url": "https://www.signadot.com/blog/running-ai-agents-on-kubernetes/",
+      "type": "article",
+      "dateAdded": "2026-11-01",
+      "summary": "Engineering writeup that positions Agent Sandbox, Agent Substrate, AX and kagent as the four open projects that fill the gap for thousands of concurrent isolated agents. It contrasts one-pod-per-agent versus high-density actor multiplexing.",
+      "tags": [
+        "kubernetes",
+        "substrate",
+        "ax",
+        "production"
+      ]
+    },
+    {
+      "id": "isolation-security-scale-2026-11-01",
+      "title": "Isolation. Security. Scale.",
+      "authors": "CNCF",
+      "source": "CNCF Blog",
+      "url": "https://www.cncf.io/blog/2026/10/26/isolation-security-scale/",
+      "type": "article",
+      "dateAdded": "2026-11-01",
+      "summary": "CNCF post that walks through how kagent plus Agent Substrate deliver production isolation with gVisor and microVMs. It explains the actor-worker model and why plain containers fall short for untrusted agents.",
+      "tags": [
+        "cncf",
+        "substrate",
+        "kagent",
+        "isolation"
+      ]
+    },
     {
       "id": "k8e-2026-10-31",
       "title": "k8e",
@@ -10675,96 +10764,6 @@
         "typescript"
       ],
       "usecase": "Use it to give coding or research agents reliable web navigation and extraction without brittle selectors.",
-      "returning": false
-    },
-    {
-      "id": "chrome-devtools-mcp-2026-09-04",
-      "title": "Chrome DevTools MCP",
-      "authors": "ChromeDevTools",
-      "source": "GitHub",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "type": "tool",
-      "dateAdded": "2026-09-04",
-      "summary": "Official MCP server exposing full Chrome DevTools for automation, performance traces, network, console, and debugging.",
-      "tags": [
-        "mcp",
-        "devtools",
-        "browser",
-        "performance"
-      ],
-      "usecase": "Use it to let an agent inspect LCP, take heap snapshots, or drive live Chrome sessions during coding tasks.",
-      "returning": false
-    },
-    {
-      "id": "smolagents-2026-09-04",
-      "title": "smolagents",
-      "authors": "huggingface",
-      "source": "GitHub",
-      "url": "https://github.com/huggingface/smolagents",
-      "type": "repo",
-      "dateAdded": "2026-09-04",
-      "summary": "Barebones Python library for code-as-action agents that write and execute Python in sandboxes like E2B.",
-      "tags": [
-        "code-agent",
-        "python",
-        "sandbox",
-        "huggingface"
-      ],
-      "usecase": "Use it to prototype multi-step agents that compose tools via real code rather than JSON tool calls.",
-      "returning": false
-    },
-    {
-      "id": "pydantic-ai-2026-09-04",
-      "title": "Pydantic AI",
-      "authors": "pydantic",
-      "source": "GitHub",
-      "url": "https://github.com/pydantic/pydantic-ai",
-      "type": "tool",
-      "dateAdded": "2026-09-04",
-      "summary": "Typed Python AI SDK and agent framework with structured outputs, multi-model support, and MCP integration.",
-      "tags": [
-        "typed",
-        "python",
-        "mcp",
-        "agents"
-      ],
-      "usecase": "Use it to build type-safe agent loops with validated I/O and Logfire observability for production services.",
-      "returning": false
-    },
-    {
-      "id": "openai-agents-sdk-2026-09-04",
-      "title": "OpenAI Agents SDK",
-      "authors": "openai",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-agents-python",
-      "type": "harness",
-      "dateAdded": "2026-09-04",
-      "summary": "Lightweight provider-agnostic framework for multi-agent workflows with handoffs, guardrails, and tracing.",
-      "tags": [
-        "multi-agent",
-        "sdk",
-        "python",
-        "tracing"
-      ],
-      "usecase": "Use it to compose specialist agents with structured handoffs and run them against any tool-calling LLM.",
-      "returning": false
-    },
-    {
-      "id": "graphiti-2026-09-04",
-      "title": "Graphiti",
-      "authors": "getzep",
-      "source": "GitHub",
-      "url": "https://github.com/getzep/graphiti",
-      "type": "repo",
-      "dateAdded": "2026-09-04",
-      "summary": "Framework for building temporal knowledge graphs that track changing facts with provenance for agent memory.",
-      "tags": [
-        "memory",
-        "knowledge-graph",
-        "temporal",
-        "agents"
-      ],
-      "usecase": "Use it to give agents a real-time context graph that invalidates stale facts and supports hybrid retrieval.",
       "returning": false
     }
   ]
