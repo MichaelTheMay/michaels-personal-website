@@ -10,6 +10,21 @@
     "links": { "project": "https://getlexie.ai" }
   },
   {
+    "slug": "tree-of-life",
+    "group": "flagship",
+    "date": "Nov 2026",
+    "title": "Tree of Life",
+    "badge": "Live · 2.5M taxa",
+    "description": "An interactive map of every known organism. All 2.5 million taxa from the Catalogue of Life sit in one zoomable WebGL circle pack, so you can fly from the root of life down to a single species without a page load, with photos inside the circles and an article pane that follows you as you go. Search, guided tours, and sunburst, icicle, tree, outline, and mosaic views all read from the same data.\n\nI built it by merging open datasets (Catalogue of Life, Open Tree of Life, Wikidata, iNaturalist, and Wikimedia Commons) into one backbone with 1.9 million image records, and every fact and image keeps its source and license. The tree streams to the browser as static tiles from a CDN, so the whole thing runs on a single small serverless Postgres database.",
+    "image": "/projects/tree-of-life.webp",
+    "video": {
+      "mp4": "/projects/tree-of-life.mp4",
+      "webm": "/projects/tree-of-life.webm",
+      "caption": "The built-in tour, from the root of life down to the lion."
+    },
+    "links": { "project": "https://tree-of-life-nine.vercel.app" }
+  },
+  {
     "slug": "parallely",
     "group": "flagship",
     "date": "Jun 2026",
