@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-01",
+  "lastUpdated": "2026-11-02",
   "issues": [
+    {
+      "date": "2026-11-02",
+      "title": "Branchable microVMs and K8s actor pools for agent density",
+      "blurb": "Today's picks center on hardware-isolated sandboxes that still multiplex densely. CoW forks, warm spores and Substrate-style actor workers let power users run more agents without sharing kernels or leaking secrets."
+    },
     {
       "date": "2026-11-01",
       "title": "K8s-native substrates and branchable microVM harnesses that densify agent isolation",
@@ -283,6 +288,40 @@
     }
   ],
   "items": [
+    {
+      "id": "owasp-agent-memory-guard-2026-11-02",
+      "title": "OWASP Agent Memory Guard",
+      "authors": "OWASP",
+      "source": "GitHub",
+      "url": "https://github.com/OWASP/www-project-agent-memory-guard",
+      "type": "tool",
+      "dateAdded": "2026-11-02",
+      "summary": "Runtime defense against memory and context poisoning (ASI06) that drops into LangChain OpenAI Agents AutoGen CrewAI and mem0.",
+      "tags": [
+        "memory",
+        "security",
+        "owasp"
+      ],
+      "usecase": "Use it to detect poisoned memories even after a context reset in production agent stacks.",
+      "returning": false
+    },
+    {
+      "id": "harnessrouter-2026-11-02",
+      "title": "HarnessRouter",
+      "authors": "HarnessRouter",
+      "source": "GitHub",
+      "url": "https://github.com/HarnessRouter",
+      "type": "harness",
+      "dateAdded": "2026-11-02",
+      "summary": "Unified interface and API that runs multiple agent harnesses inside isolated sandboxes so products receive finished work rather than tokens.",
+      "tags": [
+        "api",
+        "multi-harness",
+        "sandbox"
+      ],
+      "usecase": "Use it to send a task once and get codebases docs or artifacts back from Codex Claude Code or other harnesses.",
+      "returning": false
+    },
     {
       "id": "localharness-2026-11-01",
       "title": "LocalHarness",
@@ -10728,42 +10767,6 @@
         "mcp"
       ],
       "usecase": "Use it to run long autonomous coding loops from a TUI or headless mode with built-in verification and worktree isolation.",
-      "returning": false
-    },
-    {
-      "id": "deep-agents-2026-09-04",
-      "title": "Deep Agents",
-      "authors": "langchain-ai",
-      "source": "GitHub",
-      "url": "https://github.com/langchain-ai/deepagents",
-      "type": "harness",
-      "dateAdded": "2026-09-04",
-      "summary": "Batteries-included opinionated agent harness on LangGraph with planning, filesystem tools, sub-agents, and context management.",
-      "tags": [
-        "langgraph",
-        "harness",
-        "subagents",
-        "python"
-      ],
-      "usecase": "Use it to spin up a production-ready long-horizon research or coding agent and override only the pieces you need.",
-      "returning": false
-    },
-    {
-      "id": "stagehand-2026-09-04",
-      "title": "Stagehand",
-      "authors": "browserbase",
-      "source": "GitHub",
-      "url": "https://github.com/browserbase/stagehand",
-      "type": "tool",
-      "dateAdded": "2026-09-04",
-      "summary": "SDK for browser agents built on Playwright with natural language actions, self-healing, and multi-language support.",
-      "tags": [
-        "browser",
-        "playwright",
-        "agent-sdk",
-        "typescript"
-      ],
-      "usecase": "Use it to give coding or research agents reliable web navigation and extraction without brittle selectors.",
       "returning": false
     }
   ]

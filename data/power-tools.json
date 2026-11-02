@@ -1,7 +1,47 @@
 {
-  "lastUpdated": "2026-11-01",
-  "count": 519,
+  "lastUpdated": "2026-11-02",
+  "count": 521,
   "tools": [
+    {
+      "slug": "harnessrouter",
+      "title": "HarnessRouter",
+      "authors": "HarnessRouter",
+      "source": "GitHub",
+      "url": "https://github.com/HarnessRouter",
+      "type": "harness",
+      "summary": "Unified interface and API that runs multiple agent harnesses inside isolated sandboxes so products receive finished work rather than tokens.",
+      "usecase": "Use it to send a task once and get codebases docs or artifacts back from Codex Claude Code or other harnesses.",
+      "tags": [
+        "api",
+        "multi-harness",
+        "sandbox"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "www-project-agent-memory-guard",
+      "title": "OWASP Agent Memory Guard",
+      "authors": "OWASP",
+      "source": "GitHub",
+      "url": "https://github.com/OWASP/www-project-agent-memory-guard",
+      "type": "tool",
+      "summary": "Runtime defense against memory and context poisoning (ASI06) that drops into LangChain OpenAI Agents AutoGen CrewAI and mem0.",
+      "usecase": "Use it to detect poisoned memories even after a context reset in production agent stacks.",
+      "tags": [
+        "memory",
+        "security",
+        "owasp"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "awesome-harness-engineering",
       "title": "awesome-harness-engineering",
