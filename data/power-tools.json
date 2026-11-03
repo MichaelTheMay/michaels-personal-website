@@ -1,7 +1,112 @@
 {
-  "lastUpdated": "2026-11-02",
-  "count": 521,
+  "lastUpdated": "2026-11-03",
+  "count": 525,
   "tools": [
+    {
+      "slug": "awesome-agent-infra",
+      "title": "awesome-agent-infra",
+      "authors": "shenli",
+      "source": "GitHub",
+      "url": "https://github.com/shenli/awesome-agent-infra",
+      "type": "repo",
+      "summary": "Curated production infrastructure list covering runtimes, sandboxes, workspaces, tool protocols, security, and evaluation.",
+      "usecase": "Use it to assemble a full agent stack from runtime to observability without vendor blogs.",
+      "tags": [
+        "awesome-list",
+        "infra",
+        "runtime",
+        "security"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "firecracker",
+      "title": "firecracker pulse activity",
+      "authors": "firecracker-microvm",
+      "source": "GitHub",
+      "url": "https://github.com/firecracker-microvm/firecracker",
+      "type": "repo",
+      "summary": "Upstream microVM monitor still receiving weekly commits that underpins most agent sandbox fleets.",
+      "usecase": "Use it to track snapshot and virtio improvements you can consume via higher-level agent sandboxes.",
+      "tags": [
+        "microvm",
+        "upstream",
+        "kvm",
+        "snapshot"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "graphiti",
+      "title": "Graphiti",
+      "authors": "getzep",
+      "source": "GitHub",
+      "url": "https://github.com/getzep/graphiti",
+      "type": "repo",
+      "summary": "Temporal knowledge-graph memory layer that many harnesses pair for bi-temporal facts and provenance.",
+      "usecase": "Use it to give agents structured long-term recall with validity windows instead of pure vector dumps.",
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "temporal",
+        "agents"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-11-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "item",
+      "title": "Meclaw-style actor OS",
+      "authors": "mmeyerlein",
+      "source": "GitHub",
+      "url": "https://news.ycombinator.com/item?id=49778923",
+      "type": "repo",
+      "summary": "Message-graph actor substrate where each cell owns its SQLite and sandbox instead of a single agent loop.",
+      "usecase": "Use it to decompose harnesses into isolated actors that route tool and LLM messages conditionally.",
+      "tags": [
+        "actor",
+        "os",
+        "sandbox",
+        "graph"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox-operator",
+      "title": "sandbox-operator",
+      "authors": "cocoonstack",
+      "source": "GitHub",
+      "url": "https://github.com/cocoonstack/sandbox-operator",
+      "type": "harness",
+      "summary": "Aggregated Kubernetes API server that serves E2B-compatible sandboxes from node-local warm pools without per-sandbox etcd objects.",
+      "usecase": "Use it to scale tens of thousands of microVMs while keeping etcd write load near zero.",
+      "tags": [
+        "kubernetes",
+        "e2b",
+        "warm-pool",
+        "operator"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "harnessrouter",
       "title": "HarnessRouter",
@@ -10161,27 +10266,6 @@
         "computer-use",
         "desktop",
         "e2b"
-      ],
-      "firstSeen": "2026-09-04",
-      "lastSeen": "2026-09-04",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "graphiti",
-      "title": "Graphiti",
-      "authors": "getzep",
-      "source": "GitHub",
-      "url": "https://github.com/getzep/graphiti",
-      "type": "repo",
-      "summary": "Framework for building temporal knowledge graphs that track changing facts with provenance for agent memory.",
-      "usecase": "Use it to give agents a real-time context graph that invalidates stale facts and supports hybrid retrieval.",
-      "tags": [
-        "memory",
-        "knowledge-graph",
-        "temporal",
-        "agents"
       ],
       "firstSeen": "2026-09-04",
       "lastSeen": "2026-09-04",

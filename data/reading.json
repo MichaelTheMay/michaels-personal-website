@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-02",
+  "lastUpdated": "2026-11-03",
   "issues": [
+    {
+      "date": "2026-11-03",
+      "title": "MicroVM fleets and K8s actor planes that scale agent isolation",
+      "blurb": "Today's digest favors self-hostable isolation runtimes and declarative control planes over chat frontends. Power users get clone-ready microVMs, warm pools, and resume-aware orchestrators they can wire straight into custom loops."
+    },
     {
       "date": "2026-11-02",
       "title": "Branchable microVMs and K8s actor pools for agent density",
@@ -280,14 +285,147 @@
       "date": "2026-09-05",
       "title": "Sandboxes, control planes, and systems harnesses that power users actually wire in",
       "blurb": "Today's picks lean into clone-and-run infra under the agent: microVM and K8s sandboxes, meta-harness scaffolds, Go/Rust TUIs, and production SDKs. These are the pieces that turn a model into a durable loop without the usual closed IDE tax."
-    },
-    {
-      "date": "2026-09-04",
-      "title": "Clone-ready harnesses and runtimes that put the agent loop under your control",
-      "blurb": "Today's picks favor lightweight WASM OSes, Rust terminal harnesses, typed agent SDKs, browser MCP surfaces, and memory graphs you can wire directly into durable loops. Power users get sandboxes, control planes, and eval hooks without vendor lock-in."
     }
   ],
   "items": [
+    {
+      "id": "sandbox-operator-2026-11-03",
+      "title": "sandbox-operator",
+      "authors": "cocoonstack",
+      "source": "GitHub",
+      "url": "https://github.com/cocoonstack/sandbox-operator",
+      "type": "harness",
+      "dateAdded": "2026-11-03",
+      "summary": "Aggregated Kubernetes API server that serves E2B-compatible sandboxes from node-local warm pools without per-sandbox etcd objects.",
+      "tags": [
+        "kubernetes",
+        "e2b",
+        "warm-pool",
+        "operator"
+      ],
+      "usecase": "Use it to scale tens of thousands of microVMs while keeping etcd write load near zero.",
+      "returning": false
+    },
+    {
+      "id": "awesome-agent-infra-2026-11-03",
+      "title": "awesome-agent-infra",
+      "authors": "shenli",
+      "source": "GitHub",
+      "url": "https://github.com/shenli/awesome-agent-infra",
+      "type": "repo",
+      "dateAdded": "2026-11-03",
+      "summary": "Curated production infrastructure list covering runtimes, sandboxes, workspaces, tool protocols, security, and evaluation.",
+      "tags": [
+        "awesome-list",
+        "infra",
+        "runtime",
+        "security"
+      ],
+      "usecase": "Use it to assemble a full agent stack from runtime to observability without vendor blogs.",
+      "returning": false
+    },
+    {
+      "id": "graphiti-style-memory-pointers-2026-11-03",
+      "title": "Graphiti-style memory pointers",
+      "authors": "getzep community",
+      "source": "GitHub",
+      "url": "https://github.com/getzep/graphiti",
+      "type": "repo",
+      "dateAdded": "2026-11-03",
+      "summary": "Temporal knowledge-graph memory layer that many harnesses pair for bi-temporal facts and provenance.",
+      "tags": [
+        "memory",
+        "graph",
+        "temporal",
+        "zep"
+      ],
+      "usecase": "Use it to give agents structured long-term recall with validity windows instead of pure vector dumps.",
+      "returning": false
+    },
+    {
+      "id": "meclaw-style-actor-os-2026-11-03",
+      "title": "Meclaw-style actor OS",
+      "authors": "mmeyerlein",
+      "source": "GitHub",
+      "url": "https://news.ycombinator.com/item?id=49778923",
+      "type": "repo",
+      "dateAdded": "2026-11-03",
+      "summary": "Message-graph actor substrate where each cell owns its SQLite and sandbox instead of a single agent loop.",
+      "tags": [
+        "actor",
+        "os",
+        "sandbox",
+        "graph"
+      ],
+      "usecase": "Use it to decompose harnesses into isolated actors that route tool and LLM messages conditionally.",
+      "returning": false
+    },
+    {
+      "id": "firecracker-pulse-activity-2026-11-03",
+      "title": "firecracker pulse activity",
+      "authors": "firecracker-microvm",
+      "source": "GitHub",
+      "url": "https://github.com/firecracker-microvm/firecracker",
+      "type": "repo",
+      "dateAdded": "2026-11-03",
+      "summary": "Upstream microVM monitor still receiving weekly commits that underpins most agent sandbox fleets.",
+      "tags": [
+        "microvm",
+        "upstream",
+        "kvm",
+        "snapshot"
+      ],
+      "usecase": "Use it to track snapshot and virtio improvements you can consume via higher-level agent sandboxes.",
+      "returning": false
+    },
+    {
+      "id": "crowdstrike-buys-fiddler-and-dreadnode-for-nearly-500m-to-secure-agents-2026-11-03",
+      "title": "CrowdStrike buys Fiddler and Dreadnode for nearly $500M to secure agents",
+      "authors": "Ram Iyer",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/",
+      "type": "article",
+      "dateAdded": "2026-11-03",
+      "summary": "CrowdStrike is acquiring Fiddler AI for observability of agents and Dreadnode for automated security testing of models and agents. The deals expand Falcon into pre-deploy evaluation and runtime monitoring as enterprises roll out agents at scale.",
+      "tags": [
+        "security",
+        "acquisition",
+        "observability",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "top-5-sandboxes-for-ai-coding-agents-in-2026-2026-11-03",
+      "title": "Top 5 Sandboxes for AI Coding Agents in 2026",
+      "authors": "Tanvir Kour",
+      "source": "Collabnix",
+      "url": "https://collabnix.com/top-5-sandboxes-for-running-ai-coding-agents-safely-in-2026/",
+      "type": "article",
+      "dateAdded": "2026-11-03",
+      "summary": "Practical comparison of Docker Sandboxes, E2B, Daytona, Modal, and Microsandbox focused on isolation, start times, and laptop versus cloud use. It shows how to run coding agents safely without giving them host permissions.",
+      "tags": [
+        "sandbox",
+        "comparison",
+        "coding-agents",
+        "howto"
+      ]
+    },
+    {
+      "id": "github-copilot-universe-releases-bring-local-sandboxes-and-harness-defaults-2026-11-03",
+      "title": "GitHub Copilot Universe releases bring local sandboxes and harness defaults",
+      "authors": "GitHub",
+      "source": "GitHub Blog",
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases/",
+      "type": "release",
+      "dateAdded": "2026-11-03",
+      "summary": "VS Code and JetBrains Copilot updates make local sandboxes generally available and set the Microsoft Copilot harness as default. Cloud sessions, Agent Host isolation, and parallel model runs also landed for Universe.",
+      "tags": [
+        "release",
+        "copilot",
+        "sandbox",
+        "harness"
+      ]
+    },
     {
       "id": "owasp-agent-memory-guard-2026-11-02",
       "title": "OWASP Agent Memory Guard",
@@ -10633,140 +10771,6 @@
         "tokens"
       ],
       "usecase": "Use it to shrink context before it hits the model while preserving answer quality on long agent runs.",
-      "returning": false
-    },
-    {
-      "id": "litellm-2026-09-05",
-      "title": "LiteLLM",
-      "authors": "BerriAI",
-      "source": "GitHub",
-      "url": "https://github.com/BerriAI/litellm",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "Unified interface and proxy for 100-plus LLMs with routing, caching, budgets, and agent SDK gateways.",
-      "tags": [
-        "proxy",
-        "routing",
-        "multi-provider"
-      ],
-      "usecase": "Use it as the model router and spend control plane in front of any custom harness.",
-      "returning": false
-    },
-    {
-      "id": "roo-code-2026-09-05",
-      "title": "Roo Code",
-      "authors": "RooCodeInc",
-      "source": "GitHub",
-      "url": "https://github.com/RooCodeInc/Roo-Code",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "VS Code and Cursor extension in the Cline lineage with approval-gated modes, strong MCP support, and custom agent modes.",
-      "tags": [
-        "ide",
-        "mcp",
-        "extension"
-      ],
-      "usecase": "Use it for plan-then-act coding inside the editor with per-step gates and MCP tools.",
-      "returning": false
-    },
-    {
-      "id": "trae-agent-2026-09-05",
-      "title": "Trae Agent",
-      "authors": "ByteDance",
-      "source": "GitHub",
-      "url": "https://github.com/bytedance/trae-agent",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "Research-friendly Python CLI agent for software engineering with modular architecture and multi-LLM support.",
-      "tags": [
-        "cli",
-        "research",
-        "python"
-      ],
-      "usecase": "Use it to prototype SWE-bench style loops or modular coding agents without heavy product shells.",
-      "returning": false
-    },
-    {
-      "id": "chorus-2026-09-05",
-      "title": "Chorus",
-      "authors": "community",
-      "source": "GitHub",
-      "url": "https://github.com/bradagi/awesome-cli-coding-agents",
-      "type": "harness",
-      "dateAdded": "2026-09-05",
-      "summary": "CLI harness pattern for multi-LLM peer review before shipping code, listed among rising terminal agent tooling.",
-      "tags": [
-        "review",
-        "multi-llm",
-        "cli"
-      ],
-      "usecase": "Use it to add a multi-model review gate in front of any coding agent commit flow.",
-      "returning": false
-    },
-    {
-      "id": "hermes-agent-v0-21-pantheon-release-adds-bot-mode-and-live-subagent-steering-2026-09-05",
-      "title": "Hermes Agent v0.21 Pantheon release adds Bot Mode and live subagent steering",
-      "authors": "Nous Research",
-      "source": "GitHub / hermes-agent docs",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "type": "release",
-      "dateAdded": "2026-09-05",
-      "summary": "The August 31 Pantheon release bundles Bot Mode into the desktop app, gives cron jobs memory continuity, enables mid-flight subagent steering, and expands the MCP command surface. It continues the self-improving skill loop while remaining fully self-hostable.",
-      "tags": [
-        "release",
-        "self-improving",
-        "multi-agent"
-      ]
-    },
-    {
-      "id": "the-harness-not-the-model-why-power-users-keep-rebuilding-the-loop-2026-09-05",
-      "title": "The harness, not the model: why power users keep rebuilding the loop",
-      "authors": "various engineering blogs",
-      "source": "Agitech / zero8 / harnesses.sh style writeups",
-      "url": "https://agitech.group/blog/ai-coding-agent-stack-harness-beats-model-2026",
-      "type": "article",
-      "dateAdded": "2026-09-05",
-      "summary": "Recent builder essays argue that sandbox fabric, permission gates, context eviction, and eval loops now dominate reliability more than checkpoint swaps. They map practical scorecards for tool harnesses versus closed IDE shells and show why mid-tier open runtimes keep winning power-user workflows.",
-      "tags": [
-        "essay",
-        "harness-engineering",
-        "analysis"
-      ]
-    },
-    {
-      "id": "agentos-2026-09-04",
-      "title": "agentOS",
-      "authors": "rivet-dev",
-      "source": "GitHub",
-      "url": "https://github.com/rivet-dev/agentos",
-      "type": "harness",
-      "dateAdded": "2026-09-04",
-      "summary": "Lightweight WASM and V8 isolate OS library that runs agents inside your process with millisecond cold starts and direct host bindings.",
-      "tags": [
-        "wasm",
-        "sandbox",
-        "runtime",
-        "acp"
-      ],
-      "usecase": "Use it to embed Pi or other ACP agents as in-process VMs with granular permissions instead of spinning full sandboxes.",
-      "returning": false
-    },
-    {
-      "id": "vt-code-2026-09-04",
-      "title": "VT Code",
-      "authors": "vinhnx",
-      "source": "GitHub",
-      "url": "https://github.com/vinhnx/VTCode",
-      "type": "tool",
-      "dateAdded": "2026-09-04",
-      "summary": "Rust terminal coding agent and harness with sandboxed tools, durable sessions, MCP, skills, and multi-provider support.",
-      "tags": [
-        "rust",
-        "tui",
-        "coding-agent",
-        "mcp"
-      ],
-      "usecase": "Use it to run long autonomous coding loops from a TUI or headless mode with built-in verification and worktree isolation.",
       "returning": false
     }
   ]
