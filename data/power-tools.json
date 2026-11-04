@@ -1,7 +1,90 @@
 {
-  "lastUpdated": "2026-11-03",
-  "count": 525,
+  "lastUpdated": "2026-11-04",
+  "count": 529,
   "tools": [
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness shared",
+      "authors": "oscar-chw",
+      "source": "GitHub",
+      "url": "https://github.com/oscar-chw/agent-harness",
+      "type": "harness",
+      "summary": "Shared rules, memory, work graph and command guard that works across multiple coding agents on one machine.",
+      "usecase": "Use it to give Claude Code, Codex and others one memory store and a guard that blocks catastrophic shell commands.",
+      "tags": [
+        "memory",
+        "guard",
+        "multi-agent",
+        "mcp"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "amh",
+      "title": "AMH",
+      "authors": "faded-penguin021",
+      "source": "GitHub",
+      "url": "https://github.com/faded-penguin021/AMH",
+      "type": "harness",
+      "summary": "Agentic Maintenance Harness that gives coding agents a memory hierarchy, verification ladder and reusable workflows for long-lived repos.",
+      "usecase": "Use it to seatbelt multi-session agent work with startup prompts, shared scratchpads and long-term ledgers.",
+      "tags": [
+        "memory",
+        "verification",
+        "harness"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sample-aws-self-hosted-sandbox",
+      "title": "AWS self-hosted agent sandbox",
+      "authors": "aws-samples",
+      "source": "GitHub",
+      "url": "https://github.com/aws-samples/sample-aws-self-hosted-sandbox",
+      "type": "repo",
+      "summary": "Production-grade AI agent sandbox platform on AWS using microVM architecture with lower cost, data sovereignty and K8s integration.",
+      "usecase": "Use it to stand up Firecracker-style sandboxes on your own metal or spot fleet instead of a hosted provider.",
+      "tags": [
+        "aws",
+        "firecracker",
+        "self-hosted",
+        "k8s"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mitos",
+      "title": "mitos",
+      "authors": "paperclipinc",
+      "source": "GitHub",
+      "url": "https://github.com/paperclipinc/mitos",
+      "type": "harness",
+      "summary": "Kubernetes-native snapshot-fork microVM sandboxes for AI agents with millisecond warm claims and copy-on-write forking.",
+      "usecase": "Use it to fork live Firecracker sandboxes for parallel agent attempts while keeping durable workspaces on your cluster.",
+      "tags": [
+        "kubernetes",
+        "firecracker",
+        "fork",
+        "sandbox"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "awesome-agent-infra",
       "title": "awesome-agent-infra",

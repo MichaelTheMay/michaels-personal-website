@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-03",
+  "lastUpdated": "2026-11-04",
   "issues": [
+    {
+      "date": "2026-11-04",
+      "title": "MicroVM sandboxes and open harnesses power users clone into real loops",
+      "blurb": "Today's digest favors hardware-isolated runtimes, self-hosted control planes, and clone-ready harness engineering over chat UIs. Power users get branchable microVMs, K8s sandbox CRDs, and local-first agent loops they can wire themselves."
+    },
     {
       "date": "2026-11-03",
       "title": "MicroVM fleets and K8s actor planes that scale agent isolation",
@@ -288,6 +293,109 @@
     }
   ],
   "items": [
+    {
+      "id": "mitos-2026-11-04",
+      "title": "mitos",
+      "authors": "paperclipinc",
+      "source": "GitHub",
+      "url": "https://github.com/paperclipinc/mitos",
+      "type": "harness",
+      "dateAdded": "2026-11-04",
+      "summary": "Kubernetes-native snapshot-fork microVM sandboxes for AI agents with millisecond warm claims and copy-on-write forking.",
+      "tags": [
+        "kubernetes",
+        "firecracker",
+        "fork",
+        "sandbox"
+      ],
+      "usecase": "Use it to fork live Firecracker sandboxes for parallel agent attempts while keeping durable workspaces on your cluster.",
+      "returning": false
+    },
+    {
+      "id": "amh-2026-11-04",
+      "title": "AMH",
+      "authors": "faded-penguin021",
+      "source": "GitHub",
+      "url": "https://github.com/faded-penguin021/AMH",
+      "type": "harness",
+      "dateAdded": "2026-11-04",
+      "summary": "Agentic Maintenance Harness that gives coding agents a memory hierarchy, verification ladder and reusable workflows for long-lived repos.",
+      "tags": [
+        "memory",
+        "verification",
+        "harness"
+      ],
+      "usecase": "Use it to seatbelt multi-session agent work with startup prompts, shared scratchpads and long-term ledgers.",
+      "returning": false
+    },
+    {
+      "id": "agent-harness-shared-2026-11-04",
+      "title": "agent-harness shared",
+      "authors": "oscar-chw",
+      "source": "GitHub",
+      "url": "https://github.com/oscar-chw/agent-harness",
+      "type": "harness",
+      "dateAdded": "2026-11-04",
+      "summary": "Shared rules, memory, work graph and command guard that works across multiple coding agents on one machine.",
+      "tags": [
+        "memory",
+        "guard",
+        "multi-agent",
+        "mcp"
+      ],
+      "usecase": "Use it to give Claude Code, Codex and others one memory store and a guard that blocks catastrophic shell commands.",
+      "returning": false
+    },
+    {
+      "id": "aws-self-hosted-agent-sandbox-2026-11-04",
+      "title": "AWS self-hosted agent sandbox",
+      "authors": "aws-samples",
+      "source": "GitHub",
+      "url": "https://github.com/aws-samples/sample-aws-self-hosted-sandbox",
+      "type": "repo",
+      "dateAdded": "2026-11-04",
+      "summary": "Production-grade AI agent sandbox platform on AWS using microVM architecture with lower cost, data sovereignty and K8s integration.",
+      "tags": [
+        "aws",
+        "firecracker",
+        "self-hosted",
+        "k8s"
+      ],
+      "usecase": "Use it to stand up Firecracker-style sandboxes on your own metal or spot fleet instead of a hosted provider.",
+      "returning": false
+    },
+    {
+      "id": "harbor-adds-docker-sandboxes-for-isolated-agent-evals-2026-11-04",
+      "title": "Harbor adds Docker Sandboxes for isolated agent evals",
+      "authors": "Claudio Masolo",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/10/ai-agents-harbor-docker/",
+      "type": "release",
+      "dateAdded": "2026-11-04",
+      "summary": "Docker announced Harbor now runs each evaluation task in its own microVM via Docker Sandboxes. Tasks stay isolated from host and peers, with the same workloads runnable locally or in Docker Cloud, already tested at 64 concurrent tasks.",
+      "tags": [
+        "harbor",
+        "docker",
+        "eval",
+        "microvm"
+      ]
+    },
+    {
+      "id": "ai-tool-release-briefs-for-4-november-2026-2026-11-04",
+      "title": "AI tool release briefs for 4 November 2026",
+      "authors": "The Agentic Weekly",
+      "source": "theagenticweekly.com",
+      "url": "https://theagenticweekly.com/news/tools",
+      "type": "article",
+      "dateAdded": "2026-11-04",
+      "summary": "Forty-eight sourced briefs cover fresh agent and model tooling drops including Claude-issued auth beta, llama.cpp 0.9.0 FP8 support, Dify nested workflow tracing, and Agent Autoloop 1.0 for background CLI agents. The roundup stays product- and changelog-focused rather than paper abstracts.",
+      "tags": [
+        "releases",
+        "changelog",
+        "agents",
+        "devtools"
+      ]
+    },
     {
       "id": "sandbox-operator-2026-11-03",
       "title": "sandbox-operator",
@@ -10669,108 +10777,6 @@
         "optimization"
       ],
       "usecase": "Use it to instrument and iterate on agent workflows with playgrounds, evals, and production monitoring.",
-      "returning": false
-    },
-    {
-      "id": "agenta-2026-09-05",
-      "title": "Agenta",
-      "authors": "Agenta-AI",
-      "source": "GitHub",
-      "url": "https://github.com/Agenta-AI/agenta",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "Open-source workspace for building, versioning, and collaborating on agents and automations with MCP and self-hosting.",
-      "tags": [
-        "workspace",
-        "mcp",
-        "self-hosted"
-      ],
-      "usecase": "Use it to prototype and share agent workflows as a team with prompt and skill management.",
-      "returning": false
-    },
-    {
-      "id": "zeroclaw-2026-09-05",
-      "title": "ZeroClaw",
-      "authors": "zeroclaw-labs",
-      "source": "GitHub",
-      "url": "https://github.com/zeroclaw-labs/zeroclaw",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "Single Rust binary agent runtime with multi-channel support, provider plugins, supervised autonomy, and OS-level sandbox options.",
-      "tags": [
-        "rust",
-        "runtime",
-        "multi-channel"
-      ],
-      "usecase": "Use it to run a low-overhead personal or team agent across Discord, Telegram, and CLI with policy gates.",
-      "returning": false
-    },
-    {
-      "id": "nanoclaw-2026-09-05",
-      "title": "NanoClaw",
-      "authors": "nanocoai",
-      "source": "GitHub",
-      "url": "https://github.com/nanocoai/nanoclaw",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "Lightweight container-isolated AI assistant inspired by larger claw-style agents, designed for readable code and secure defaults.",
-      "tags": [
-        "container",
-        "security",
-        "assistant"
-      ],
-      "usecase": "Use it to deploy per-agent containers with shared rooms while keeping the codebase small enough to audit.",
-      "returning": false
-    },
-    {
-      "id": "agent-security-harness-2026-09-05",
-      "title": "Agent Security Harness",
-      "authors": "msaleme",
-      "source": "GitHub",
-      "url": "https://github.com/msaleme/red-team-blue-team-agent-fabric",
-      "type": "harness",
-      "dateAdded": "2026-09-05",
-      "summary": "Adversarial testing harness with hundreds of executable protocol-level tests for MCP, A2A, and governance controls.",
-      "tags": [
-        "security",
-        "eval",
-        "mcp"
-      ],
-      "usecase": "Use it to CI-gate agent endpoints by actively probing for policy bypass and tool poisoning.",
-      "returning": false
-    },
-    {
-      "id": "agentteams-2026-09-05",
-      "title": "AgentTeams",
-      "authors": "agentscope-ai",
-      "source": "GitHub",
-      "url": "https://github.com/agentscope-ai/AgentTeams",
-      "type": "harness",
-      "dateAdded": "2026-09-05",
-      "summary": "Collaborative multi-agent OS using Matrix rooms for transparent human-in-the-loop coordination across heterogeneous runtimes.",
-      "tags": [
-        "multi-agent",
-        "matrix",
-        "orchestration"
-      ],
-      "usecase": "Use it to run mixed OpenClaw, Hermes, and other workers in shared rooms with file exchange and audit.",
-      "returning": false
-    },
-    {
-      "id": "headroom-2026-09-05",
-      "title": "Headroom",
-      "authors": "community (via best-of lists)",
-      "source": "GitHub",
-      "url": "https://github.com/ryanalberts/best-of-agent-harnesses",
-      "type": "repo",
-      "dateAdded": "2026-09-05",
-      "summary": "Content-aware compression layer for tool outputs, logs, and RAG chunks that claims large token reductions for coding agents.",
-      "tags": [
-        "context",
-        "compression",
-        "tokens"
-      ],
-      "usecase": "Use it to shrink context before it hits the model while preserving answer quality on long agent runs.",
       "returning": false
     }
   ]
