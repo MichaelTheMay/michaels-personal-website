@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-04",
+  "lastUpdated": "2026-11-05",
   "issues": [
+    {
+      "date": "2026-11-05",
+      "title": "Self-hosted sandboxes and decentralized harnesses that scale agents without the big IDEs",
+      "blurb": "Today's picks center on cloneable runtimes, K8s CRDs, WASM and microVM isolation, and multi-agent coordination layers that power users wire into their own loops instead of relying on closed chatbots. Fresh control planes and eval-ready isolation beat brand-name terminals."
+    },
     {
       "date": "2026-11-04",
       "title": "MicroVM sandboxes and open harnesses power users clone into real loops",
@@ -293,6 +298,39 @@
     }
   ],
   "items": [
+    {
+      "id": "turi-labs-awesome-harness-2026-11-05",
+      "title": "Turi-Labs awesome-harness",
+      "authors": "Turi-Labs",
+      "source": "GitHub",
+      "url": "https://github.com/Turi-Labs/awesome-harness",
+      "type": "repo",
+      "dateAdded": "2026-11-05",
+      "summary": "Curated resources for building reliable AI agent harnesses covering context, tools, memory, sandboxing, and guardrails.",
+      "tags": [
+        "awesome-list",
+        "reliability",
+        "sandboxing"
+      ],
+      "usecase": "Use it to pick sandbox and runtime components when designing a custom agent control plane.",
+      "returning": false
+    },
+    {
+      "id": "baseten-sandboxes-go-public-2026-11-05",
+      "title": "Baseten Sandboxes go public",
+      "authors": "Baseten",
+      "source": "AgentStack Index / Baseten",
+      "url": "https://agentstackindex.com/radar/tag/agent-platforms/",
+      "type": "release",
+      "dateAdded": "2026-11-05",
+      "summary": "Baseten opened public sandboxes for agentic apps, each an isolated environment for commands and files that starts from base or custom images. Free until mid-November with CLI and SDK control, concurrent limits, and permanent delete on teardown.",
+      "tags": [
+        "sandbox",
+        "release",
+        "Baseten",
+        "free-tier"
+      ]
+    },
     {
       "id": "mitos-2026-11-04",
       "title": "mitos",
@@ -10743,40 +10781,6 @@
         "binary"
       ],
       "usecase": "Use it to install a zero-Node coding agent that reads, edits, shells, and plans inside any repo.",
-      "returning": false
-    },
-    {
-      "id": "mission-control-2026-09-05",
-      "title": "Mission Control",
-      "authors": "builderz-labs",
-      "source": "GitHub",
-      "url": "https://github.com/builderz-labs/mission-control",
-      "type": "harness",
-      "dateAdded": "2026-09-05",
-      "summary": "Self-hosted control plane for dispatching tasks, reviewing runs, tracking spend, and operating multiple agent runtimes.",
-      "tags": [
-        "control-plane",
-        "ops",
-        "observability"
-      ],
-      "usecase": "Use it to operate fleets of coding agents with observability, spend controls, and task queues.",
-      "returning": false
-    },
-    {
-      "id": "coze-loop-2026-09-05",
-      "title": "Coze Loop",
-      "authors": "coze-dev",
-      "source": "GitHub",
-      "url": "https://github.com/coze-dev/coze-loop",
-      "type": "harness",
-      "dateAdded": "2026-09-05",
-      "summary": "Full-lifecycle agent optimization platform covering development, debugging, evaluation, and monitoring.",
-      "tags": [
-        "eval",
-        "observability",
-        "optimization"
-      ],
-      "usecase": "Use it to instrument and iterate on agent workflows with playgrounds, evals, and production monitoring.",
       "returning": false
     }
   ]

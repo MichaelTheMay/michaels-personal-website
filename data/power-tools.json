@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-11-04",
-  "count": 529,
+  "lastUpdated": "2026-11-05",
+  "count": 530,
   "tools": [
+    {
+      "slug": "awesome-harness",
+      "title": "Turi-Labs awesome-harness",
+      "authors": "Turi-Labs",
+      "source": "GitHub",
+      "url": "https://github.com/Turi-Labs/awesome-harness",
+      "type": "repo",
+      "summary": "Curated resources for building reliable AI agent harnesses covering context, tools, memory, sandboxing, and guardrails.",
+      "usecase": "Use it to pick sandbox and runtime components when designing a custom agent control plane.",
+      "tags": [
+        "awesome-list",
+        "reliability",
+        "sandboxing"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-harness",
       "title": "agent-harness shared",
