@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-06",
   "issues": [
+    {
+      "date": "2026-11-06",
+      "title": "Open microVM sandboxes and K8s control planes power users actually clone",
+      "blurb": "Today's list favors hardware-isolated sandboxes, warm-pool orchestrators, and harnesses that keep the agent loop outside the box. Power users get clone-and-run density, local-first isolation, and permissioned control planes without the household chatbots."
+    },
     {
       "date": "2026-11-05",
       "title": "Self-hosted sandboxes and decentralized harnesses that scale agents without the big IDEs",
@@ -290,14 +295,166 @@
       "date": "2026-09-06",
       "title": "Rust harnesses and open control planes that scale agent fleets",
       "blurb": "Power users are wiring clone-and-run sandboxes, memory-efficient loops, and verification gates into custom fleets. These repos prioritize systems-language runtimes, declarative orchestration, and independent judges over closed IDE chatbots."
-    },
-    {
-      "date": "2026-09-05",
-      "title": "Sandboxes, control planes, and systems harnesses that power users actually wire in",
-      "blurb": "Today's picks lean into clone-and-run infra under the agent: microVM and K8s sandboxes, meta-harness scaffolds, Go/Rust TUIs, and production SDKs. These are the pieces that turn a model into a durable loop without the usual closed IDE tax."
     }
   ],
   "items": [
+    {
+      "id": "harness-kit-2026-11-06",
+      "title": "Harness Kit",
+      "authors": "deepklarity",
+      "source": "GitHub",
+      "url": "https://github.com/deepklarity/harness-kit",
+      "type": "harness",
+      "dateAdded": "2026-11-06",
+      "summary": "Multi-agent orchestration CLI, task board with proof-of-work, and pattern-engineering skills for TDD-first agent work.",
+      "tags": [
+        "orchestration",
+        "tdd",
+        "skills",
+        "task-board"
+      ],
+      "usecase": "Use it to decompose specs into DAGs, route tasks to agents, and keep an evidence trail through merge.",
+      "returning": false
+    },
+    {
+      "id": "microagent-2026-11-06",
+      "title": "microagent",
+      "authors": "geoffbelknap",
+      "source": "GitHub",
+      "url": "https://github.com/geoffbelknap/microagent",
+      "type": "tool",
+      "dateAdded": "2026-11-06",
+      "summary": "Go toolkit for running AI agent workspaces inside Firecracker-style microVMs from OCI images.",
+      "tags": [
+        "firecracker",
+        "go",
+        "oci",
+        "microvm"
+      ],
+      "usecase": "Use it to create, start, exec, and snapshot disposable Linux VMs for agent tasks with network reports.",
+      "returning": false
+    },
+    {
+      "id": "sandboxd-2026-11-06",
+      "title": "sandboxd",
+      "authors": "avirajkhare00",
+      "source": "GitHub",
+      "url": "https://github.com/avirajkhare00/sandboxd",
+      "type": "tool",
+      "dateAdded": "2026-11-06",
+      "summary": "Firecracker microVM sandboxes behind a four-endpoint HTTP API plus MCP server for coding agents.",
+      "tags": [
+        "firecracker",
+        "mcp",
+        "http-api",
+        "egress"
+      ],
+      "usecase": "Use it to restore golden snapshots in ~100 ms with deny-by-default egress and destroy-on-finish isolation.",
+      "returning": false
+    },
+    {
+      "id": "harness-engineering-2026-11-06",
+      "title": "harness-engineering",
+      "authors": "Intense-Visions",
+      "source": "GitHub",
+      "url": "https://github.com/Intense-Visions/harness-engineering",
+      "type": "repo",
+      "dateAdded": "2026-11-06",
+      "summary": "Mechanical constraints, load-bearing skills, and linter-backed workflows for shipping with AI agents without chaos.",
+      "tags": [
+        "skills",
+        "linter",
+        "workflow",
+        "harness-engineering"
+      ],
+      "usecase": "Use it to scaffold harness-managed projects with strategy, planning, TDD, and verification skills.",
+      "returning": false
+    },
+    {
+      "id": "letta-code-2026-11-06",
+      "title": "letta-code",
+      "authors": "letta-ai",
+      "source": "GitHub",
+      "url": "https://github.com/letta-ai/letta-code",
+      "type": "tool",
+      "dateAdded": "2026-11-06",
+      "summary": "Stateful agents with self-improving experience, long-term memory, and harness-agnostic trajectories.",
+      "tags": [
+        "memory",
+        "stateful",
+        "continual-learning"
+      ],
+      "usecase": "Use it to give coding agents persistent memory and continual learning across sessions and models.",
+      "returning": false
+    },
+    {
+      "id": "smol-smol-machines-2026-11-06",
+      "title": "smol (smol-machines)",
+      "authors": "smol-machines",
+      "source": "GitHub",
+      "url": "https://github.com/smol-machines/smol",
+      "type": "tool",
+      "dateAdded": "2026-11-06",
+      "summary": "CLI and Machine API that drives local embedded smolvm microVMs or cloud fleet with the same interface.",
+      "tags": [
+        "microvm",
+        "cli",
+        "sdk",
+        "branching"
+      ],
+      "usecase": "Use it to branch sandboxes, pack portable machines, and run RL-style reward forks from one API.",
+      "returning": false
+    },
+    {
+      "id": "carze-herdr-smolmachine-2026-11-06",
+      "title": "carze/herdr-smolmachine",
+      "authors": "carze",
+      "source": "GitHub",
+      "url": "https://github.com/carze/herdr-smolmachine",
+      "type": "tool",
+      "dateAdded": "2026-11-06",
+      "summary": "herdr plugin that launches each coding agent inside its own smolvm microVM while keeping session multiplexing.",
+      "tags": [
+        "plugin",
+        "smolvm",
+        "herdr",
+        "isolation"
+      ],
+      "usecase": "Use it to sandbox herdr-managed agents in throwaway hardware-isolated boxes with workspace mounts.",
+      "returning": false
+    },
+    {
+      "id": "google-donates-agent-substrate-and-gvisor-to-cncf-2026-11-06",
+      "title": "Google donates Agent Substrate and gVisor to CNCF",
+      "authors": "Google Open Source / Google Cloud",
+      "source": "Google Open Source Blog",
+      "url": "https://opensource.googleblog.com/2026/11/sandboxing-untrusted-ai-agents-at-scale.html",
+      "type": "release",
+      "dateAdded": "2026-11-06",
+      "summary": "Agent Substrate reaches 1.0 and lands in CNCF Sandbox with gVisor and OpenRL. The stack targets multi-million agent density via gVisor isolation and warm worker pools on any Kubernetes cluster.",
+      "tags": [
+        "cncf",
+        "agent-substrate",
+        "gvisor",
+        "kubernetes"
+      ]
+    },
+    {
+      "id": "agent-substrate-1-0-ga-on-gke-and-cncf-sandbox-acceptance-2026-11-06",
+      "title": "Agent Substrate 1.0 GA on GKE and CNCF Sandbox acceptance",
+      "authors": "Drew Bradstock",
+      "source": "Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/open-infrastructure-for-autonomous-agents-comes-to-cncf",
+      "type": "release",
+      "dateAdded": "2026-11-06",
+      "summary": "Google announces Agent Substrate 1.0 as generally available on GKE alongside the CNCF donation. Early partners report high density suspend/resume rates for idle agent actors.",
+      "tags": [
+        "gke",
+        "release",
+        "agent-runtime",
+        "cncf"
+      ]
+    },
     {
       "id": "turi-labs-awesome-harness-2026-11-05",
       "title": "Turi-Labs awesome-harness",
@@ -10623,165 +10780,6 @@
         "interoperability",
         "show-hn"
       ]
-    },
-    {
-      "id": "mouse-tops-frontierharness-leaderboard-using-completion-loops-on-kimi-k3-2026-09-06",
-      "title": "Mouse tops FrontierHarness leaderboard using completion loops on Kimi K3",
-      "authors": "Aeroi",
-      "source": "Hacker News / mouse.dev",
-      "url": "https://news.ycombinator.com/item?id=49560389",
-      "type": "article",
-      "dateAdded": "2026-09-06",
-      "summary": "Mouse, built on a customized OpenCode base with specialized rules, skills, and loops, scored highest pass rate and first on time among twelve harnesses all running the same Kimi K3 model. The writeup details overnight Night Shift mode and the completion-loop changes that drove the result.",
-      "tags": [
-        "article",
-        "benchmark",
-        "harness",
-        "leaderboard"
-      ]
-    },
-    {
-      "id": "crush-2026-09-05",
-      "title": "Crush",
-      "authors": "Charmbracelet",
-      "source": "GitHub",
-      "url": "https://github.com/charmbracelet/crush",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "Go-native terminal coding agent with polished TUI, LSP intelligence, multi-provider switching mid-session, MCP extensibility, and session persistence.",
-      "tags": [
-        "cli",
-        "tui",
-        "go",
-        "mcp",
-        "lsp"
-      ],
-      "usecase": "Use it to run provider-agnostic agentic coding sessions directly in the terminal with LSP-backed edits and MCP tools.",
-      "returning": false
-    },
-    {
-      "id": "agent-sandbox-2026-09-05",
-      "title": "Agent Sandbox",
-      "authors": "Kubernetes SIGs",
-      "source": "GitHub",
-      "url": "https://github.com/kubernetes-sigs/agent-sandbox",
-      "type": "harness",
-      "dateAdded": "2026-09-05",
-      "summary": "Kubernetes CRD and controller for isolated, stateful, singleton workloads tailored to AI agent runtimes and RL, with warm pools and stable identity.",
-      "tags": [
-        "kubernetes",
-        "sandbox",
-        "crd",
-        "infra"
-      ],
-      "usecase": "Use it to declare and manage long-lived agent sandboxes on any K8s cluster with pause/resume and template claims.",
-      "returning": false
-    },
-    {
-      "id": "cubesandbox-2026-09-05",
-      "title": "CubeSandbox",
-      "authors": "Tencent Cloud",
-      "source": "GitHub",
-      "url": "https://github.com/TencentCloud/CubeSandbox",
-      "type": "repo",
-      "dateAdded": "2026-09-05",
-      "summary": "RustVMM/KVM microVM sandbox service with sub-60ms boot, hardware isolation, under 5MB overhead, and E2B SDK drop-in compatibility.",
-      "tags": [
-        "sandbox",
-        "microvm",
-        "e2b",
-        "rust"
-      ],
-      "usecase": "Use it to self-host high-density, hardware-isolated code execution backends for agent tool calls.",
-      "returning": false
-    },
-    {
-      "id": "aio-sandbox-2026-09-05",
-      "title": "AIO Sandbox",
-      "authors": "agent-infra",
-      "source": "GitHub",
-      "url": "https://github.com/agent-infra/sandbox",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "Single Docker container packing browser, shell, filesystem, MCP servers, VSCode Server, and Jupyter for unified agent environments.",
-      "tags": [
-        "sandbox",
-        "docker",
-        "mcp",
-        "browser"
-      ],
-      "usecase": "Use it to give coding or computer-use agents one shared sandbox with VNC, CDP, and MCP endpoints.",
-      "returning": false
-    },
-    {
-      "id": "strands-agents-2026-09-05",
-      "title": "Strands Agents",
-      "authors": "strands-agents",
-      "source": "GitHub",
-      "url": "https://github.com/strands-agents/harness-sdk",
-      "type": "harness",
-      "dateAdded": "2026-09-05",
-      "summary": "Open-source Python and TypeScript SDK for building production agent loops with lifecycle controls, MCP, memory, multi-agent patterns, guardrails, and evals.",
-      "tags": [
-        "sdk",
-        "python",
-        "typescript",
-        "mcp"
-      ],
-      "usecase": "Use it to replace hand-rolled agent loops with a portable, model-agnostic harness you control end-to-end.",
-      "returning": false
-    },
-    {
-      "id": "metaharness-2026-09-05",
-      "title": "metaharness",
-      "authors": "ruvnet",
-      "source": "GitHub",
-      "url": "https://github.com/ruvnet/metaharness",
-      "type": "harness",
-      "dateAdded": "2026-09-05",
-      "summary": "Scaffold that generates a focused, branded agent harness with npx CLI, MCP server, scoped memory, skills, and witness-signed releases for multiple host runtimes.",
-      "tags": [
-        "meta-harness",
-        "scaffold",
-        "mcp",
-        "cli"
-      ],
-      "usecase": "Use it to spin up a repo-specific harness that drops into existing coding agents with governance and provenance.",
-      "returning": false
-    },
-    {
-      "id": "qwen-code-2026-09-05",
-      "title": "Qwen Code",
-      "authors": "QwenLM / Alibaba",
-      "source": "GitHub",
-      "url": "https://github.com/QwenLM/qwen-code",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "Open-source terminal coding agent with auto-memory, skills, sub-agents, teams, MCP, plan mode, and multi-protocol support optimized for Qwen coder models.",
-      "tags": [
-        "cli",
-        "coding-agent",
-        "open-source"
-      ],
-      "usecase": "Use it to run headless or interactive agentic coding workflows with free OAuth tiers and IDE plugins.",
-      "returning": false
-    },
-    {
-      "id": "kimi-code-cli-2026-09-05",
-      "title": "Kimi Code CLI",
-      "authors": "Moonshot AI",
-      "source": "GitHub",
-      "url": "https://github.com/MoonshotAI/kimi-code",
-      "type": "tool",
-      "dateAdded": "2026-09-05",
-      "summary": "Single-binary terminal coding agent with fast TUI startup, skills, MCP, and ACP IDE integration, model-agnostic beyond Kimi defaults.",
-      "tags": [
-        "cli",
-        "coding-agent",
-        "binary"
-      ],
-      "usecase": "Use it to install a zero-Node coding agent that reads, edits, shells, and plans inside any repo.",
-      "returning": false
     }
   ]
 }

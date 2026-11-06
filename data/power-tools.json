@@ -1,7 +1,154 @@
 {
-  "lastUpdated": "2026-11-05",
-  "count": 530,
+  "lastUpdated": "2026-11-06",
+  "count": 535,
   "tools": [
+    {
+      "slug": "herdr-smolmachine",
+      "title": "carze/herdr-smolmachine",
+      "authors": "carze",
+      "source": "GitHub",
+      "url": "https://github.com/carze/herdr-smolmachine",
+      "type": "tool",
+      "summary": "herdr plugin that launches each coding agent inside its own smolvm microVM while keeping session multiplexing.",
+      "usecase": "Use it to sandbox herdr-managed agents in throwaway hardware-isolated boxes with workspace mounts.",
+      "tags": [
+        "plugin",
+        "smolvm",
+        "herdr",
+        "isolation"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-kit",
+      "title": "Harness Kit",
+      "authors": "deepklarity",
+      "source": "GitHub",
+      "url": "https://github.com/deepklarity/harness-kit",
+      "type": "harness",
+      "summary": "Multi-agent orchestration CLI, task board with proof-of-work, and pattern-engineering skills for TDD-first agent work.",
+      "usecase": "Use it to decompose specs into DAGs, route tasks to agents, and keep an evidence trail through merge.",
+      "tags": [
+        "orchestration",
+        "patterns",
+        "task-board",
+        "cli"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-11-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-engineering",
+      "title": "harness-engineering",
+      "authors": "Intense-Visions",
+      "source": "GitHub",
+      "url": "https://github.com/Intense-Visions/harness-engineering",
+      "type": "repo",
+      "summary": "Mechanical constraints, load-bearing skills, and linter-backed workflows for shipping with AI agents without chaos.",
+      "usecase": "Use it to scaffold harness-managed projects with strategy, planning, TDD, and verification skills.",
+      "tags": [
+        "skills",
+        "linter",
+        "workflow",
+        "harness-engineering"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "letta-code",
+      "title": "Letta Code",
+      "authors": "letta-ai",
+      "source": "GitHub",
+      "url": "https://github.com/letta-ai/letta-code",
+      "type": "tool",
+      "summary": "Stateful agents with self-improving experience, long-term memory, and harness-agnostic trajectories.",
+      "usecase": "Use it to give coding agents persistent memory and continual learning across sessions and models.",
+      "tags": [
+        "memory",
+        "stateful",
+        "coding-agent",
+        "letta"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-11-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "microagent",
+      "title": "microagent",
+      "authors": "geoffbelknap",
+      "source": "GitHub",
+      "url": "https://github.com/geoffbelknap/microagent",
+      "type": "tool",
+      "summary": "Go toolkit for running AI agent workspaces inside Firecracker-style microVMs from OCI images.",
+      "usecase": "Use it to create, start, exec, and snapshot disposable Linux VMs for agent tasks with network reports.",
+      "tags": [
+        "firecracker",
+        "go",
+        "oci",
+        "microvm"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandboxd",
+      "title": "sandboxd",
+      "authors": "avirajkhare00",
+      "source": "GitHub",
+      "url": "https://github.com/avirajkhare00/sandboxd",
+      "type": "tool",
+      "summary": "Firecracker microVM sandboxes behind a four-endpoint HTTP API plus MCP server for coding agents.",
+      "usecase": "Use it to restore golden snapshots in ~100 ms with deny-by-default egress and destroy-on-finish isolation.",
+      "tags": [
+        "firecracker",
+        "mcp",
+        "http-api",
+        "egress"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "smol",
+      "title": "smol (smol-machines)",
+      "authors": "smol-machines",
+      "source": "GitHub",
+      "url": "https://github.com/smol-machines/smol",
+      "type": "tool",
+      "summary": "CLI and Machine API that drives local embedded smolvm microVMs or cloud fleet with the same interface.",
+      "usecase": "Use it to branch sandboxes, pack portable machines, and run RL-style reward forks from one API.",
+      "tags": [
+        "microvm",
+        "cli",
+        "sdk",
+        "branching"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "awesome-harness",
       "title": "Turi-Labs awesome-harness",
@@ -10377,27 +10524,6 @@
       ]
     },
     {
-      "slug": "harness-kit",
-      "title": "Harness Kit",
-      "authors": "deepklarity",
-      "source": "GitHub",
-      "url": "https://github.com/deepklarity/harness-kit",
-      "type": "harness",
-      "summary": "Multi-agent orchestration CLI plus task board with TDD-first patterns, RCA, and cost-aware delegation.",
-      "usecase": "Use it to decompose specs into dependency graphs, route tasks to cheapest capable agents, and keep evidence trails.",
-      "tags": [
-        "orchestration",
-        "patterns",
-        "task-board",
-        "cli"
-      ],
-      "firstSeen": "2026-09-04",
-      "lastSeen": "2026-09-04",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "kit",
       "title": "Kit",
       "authors": "speakeasy-api",
@@ -10411,27 +10537,6 @@
         "acp",
         "compose",
         "cli"
-      ],
-      "firstSeen": "2026-09-04",
-      "lastSeen": "2026-09-04",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "letta-code",
-      "title": "Letta Code",
-      "authors": "letta-ai",
-      "source": "GitHub",
-      "url": "https://github.com/letta-ai/letta-code",
-      "type": "tool",
-      "summary": "Memory-first stateful coding agent that persists identity and long-term memory across sessions and models.",
-      "usecase": "Use it to run coding agents that learn from experience and retain context without prompt stuffing.",
-      "tags": [
-        "memory",
-        "stateful",
-        "coding-agent",
-        "letta"
       ],
       "firstSeen": "2026-09-04",
       "lastSeen": "2026-09-04",
