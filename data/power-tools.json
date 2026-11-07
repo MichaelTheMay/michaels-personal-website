@@ -1,7 +1,196 @@
 {
-  "lastUpdated": "2026-11-06",
-  "count": 535,
+  "lastUpdated": "2026-11-07",
+  "count": 542,
   "tools": [
+    {
+      "slug": "agent-sandbox",
+      "title": "Agent Sandbox",
+      "authors": "Kubernetes SIGs",
+      "source": "GitHub",
+      "url": "https://github.com/kubernetes-sigs/agent-sandbox",
+      "type": "harness",
+      "summary": "Kubernetes CRD and controller that manages isolated stateful singleton pods for AI agent runtimes and RL evals with warm pools and gVisor or Kata isolation.",
+      "usecase": "Use it to claim pre-warmed sandboxes via SandboxClaim so untrusted agent code starts in under a second on any conformant cluster.",
+      "tags": [
+        "kubernetes",
+        "sandbox",
+        "crd",
+        "infra"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-11-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agenvoy",
+      "title": "Agenvoy",
+      "authors": "pardnchiu",
+      "source": "GitHub",
+      "url": "https://github.com/pardnchiu/Agenvoy",
+      "type": "tool",
+      "summary": "Single Go binary local harness that runs 24/7, auto-builds missing tools, exposes them over MCP and keeps memory schedules on disk.",
+      "usecase": "Use it to keep a personal agent always on your machine that shares a sandboxed tool library with other agents via MCP.",
+      "tags": [
+        "go",
+        "local",
+        "mcp",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox",
+      "title": "AIO Sandbox",
+      "authors": "agent-infra",
+      "source": "GitHub",
+      "url": "https://github.com/agent-infra/sandbox",
+      "type": "tool",
+      "summary": "Single Docker container that unifies browser VNC, shell, filesystem, Jupyter, VSCode Server and pre-wired MCP servers for agents.",
+      "usecase": "Use it to give any coding agent a complete computer with shared FS so browser downloads are immediately available to shell and file tools.",
+      "tags": [
+        "sandbox",
+        "docker",
+        "mcp",
+        "browser"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-11-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "castor-server",
+      "title": "Castor Server",
+      "authors": "substratum-labs",
+      "source": "GitHub",
+      "url": "https://github.com/substratum-labs/castor-server",
+      "type": "harness",
+      "summary": "Self-hosted microkernel-style agent OS with budget tokens, deterministic replay, time-travel fork and HITL modify.",
+      "usecase": "Use it to interpose a capability kernel between any model and tools so every action is budgeted and replayable.",
+      "tags": [
+        "microkernel",
+        "budget",
+        "replay",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "dapr-agents",
+      "title": "Dapr Agents",
+      "authors": "dapr",
+      "source": "GitHub",
+      "url": "https://github.com/dapr/dapr-agents",
+      "type": "harness",
+      "summary": "CNCF framework that builds durable autonomous agents on Dapr workflows with built-in state, retries, security and OpenTelemetry.",
+      "usecase": "Use it to guarantee multi-step agent workflows complete across node failures while scaling thousands of agents per core.",
+      "tags": [
+        "dapr",
+        "durable",
+        "workflow",
+        "cncf"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "duragent",
+      "title": "Duragent",
+      "authors": "giosakti",
+      "source": "GitHub",
+      "url": "https://github.com/giosakti/duragent",
+      "type": "tool",
+      "summary": "One ~10 MB binary durable agent runtime where sessions are append-only event logs and agents are plain YAML plus Markdown files.",
+      "usecase": "Use it to run crash-surviving personal or product agents that you can cat, grep and git-diff with zero language runtime dependencies.",
+      "tags": [
+        "rust",
+        "durable",
+        "single-binary",
+        "files"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hive",
+      "title": "Hive",
+      "authors": "aden-hive",
+      "source": "GitHub",
+      "url": "https://github.com/adenhq/hive",
+      "type": "harness",
+      "summary": "Open multi-agent colony runtime where a queen agent learns a task then fans out identical workers that coordinate through a shared SQL tracker.",
+      "usecase": "Use it to turn one outcome request into parallel audited workers that resume from the tracker after crashes without drawing a static graph.",
+      "tags": [
+        "multi-agent",
+        "colony",
+        "tracker",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "opencomputer",
+      "title": "OpenComputer",
+      "authors": "diggerhq",
+      "source": "GitHub",
+      "url": "https://github.com/diggerhq/opencomputer",
+      "type": "tool",
+      "summary": "CLI and skills that let agents create checkpointable cloud sandboxes, exec commands, fork and expose previews.",
+      "usecase": "Use it to give any skills-compatible agent the ability to spin isolated computers for tests or long tasks.",
+      "tags": [
+        "sandbox",
+        "skills",
+        "cli",
+        "checkpoint"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "skillsandbox",
+      "title": "SkillSandbox",
+      "authors": "theMachineClay",
+      "source": "GitHub",
+      "url": "https://github.com/theMachineClay/skillsandbox",
+      "type": "repo",
+      "summary": "Rust capability sandbox that forces agent skills to declare network FS and env needs then enforces them with seccomp and default-deny.",
+      "usecase": "Use it to run untrusted marketplace skills without leaking SSH keys or cookies while producing an audit trail.",
+      "tags": [
+        "rust",
+        "skills",
+        "capability",
+        "seccomp"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "herdr-smolmachine",
       "title": "carze/herdr-smolmachine",
@@ -9928,27 +10117,6 @@
       ]
     },
     {
-      "slug": "agent-sandbox",
-      "title": "Agent Sandbox",
-      "authors": "Kubernetes SIGs",
-      "source": "GitHub",
-      "url": "https://github.com/kubernetes-sigs/agent-sandbox",
-      "type": "harness",
-      "summary": "Kubernetes CRD and controller for isolated, stateful, singleton workloads tailored to AI agent runtimes and RL, with warm pools and stable identity.",
-      "usecase": "Use it to declare and manage long-lived agent sandboxes on any K8s cluster with pause/resume and template claims.",
-      "tags": [
-        "kubernetes",
-        "sandbox",
-        "crd",
-        "infra"
-      ],
-      "firstSeen": "2026-09-05",
-      "lastSeen": "2026-09-05",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "red-team-blue-team-agent-fabric",
       "title": "Agent Security Harness",
       "authors": "msaleme",
@@ -10001,27 +10169,6 @@
         "multi-agent",
         "matrix",
         "orchestration"
-      ],
-      "firstSeen": "2026-09-05",
-      "lastSeen": "2026-09-05",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "sandbox",
-      "title": "AIO Sandbox",
-      "authors": "agent-infra",
-      "source": "GitHub",
-      "url": "https://github.com/agent-infra/sandbox",
-      "type": "tool",
-      "summary": "Single Docker container packing browser, shell, filesystem, MCP servers, VSCode Server, and Jupyter for unified agent environments.",
-      "usecase": "Use it to give coding or computer-use agents one shared sandbox with VNC, CDP, and MCP endpoints.",
-      "tags": [
-        "sandbox",
-        "docker",
-        "mcp",
-        "browser"
       ],
       "firstSeen": "2026-09-05",
       "lastSeen": "2026-09-05",

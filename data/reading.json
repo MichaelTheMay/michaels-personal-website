@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-06",
+  "lastUpdated": "2026-11-07",
   "issues": [
+    {
+      "date": "2026-11-07",
+      "title": "K8s actor planes and durable colonies lock the harness layer",
+      "blurb": "Power users clone fresh control planes, single-binary runtimes and colony trackers that turn models into auditable loops. Isolation density, crash-resilient sessions and queen-worker orchestration dominate over closed IDE chatbots."
+    },
     {
       "date": "2026-11-06",
       "title": "Open microVM sandboxes and K8s control planes power users actually clone",
@@ -298,6 +303,168 @@
     }
   ],
   "items": [
+    {
+      "id": "agent-sandbox-2026-11-07",
+      "title": "Agent Sandbox",
+      "authors": "Kubernetes SIG Apps",
+      "source": "GitHub",
+      "url": "https://github.com/kubernetes-sigs/agent-sandbox",
+      "type": "harness",
+      "dateAdded": "2026-11-07",
+      "summary": "Kubernetes CRD and controller that manages isolated stateful singleton pods for AI agent runtimes and RL evals with warm pools and gVisor or Kata isolation.",
+      "tags": [
+        "kubernetes",
+        "sandbox",
+        "crd",
+        "gvisor"
+      ],
+      "usecase": "Use it to claim pre-warmed sandboxes via SandboxClaim so untrusted agent code starts in under a second on any conformant cluster.",
+      "returning": false
+    },
+    {
+      "id": "hive-2026-11-07",
+      "title": "Hive",
+      "authors": "aden-hive",
+      "source": "GitHub",
+      "url": "https://github.com/adenhq/hive",
+      "type": "harness",
+      "dateAdded": "2026-11-07",
+      "summary": "Open multi-agent colony runtime where a queen agent learns a task then fans out identical workers that coordinate through a shared SQL tracker.",
+      "tags": [
+        "multi-agent",
+        "colony",
+        "tracker",
+        "self-hosted"
+      ],
+      "usecase": "Use it to turn one outcome request into parallel audited workers that resume from the tracker after crashes without drawing a static graph.",
+      "returning": false
+    },
+    {
+      "id": "aio-sandbox-2026-11-07",
+      "title": "AIO Sandbox",
+      "authors": "agent-infra",
+      "source": "GitHub",
+      "url": "https://github.com/agent-infra/sandbox",
+      "type": "tool",
+      "dateAdded": "2026-11-07",
+      "summary": "Single Docker container that unifies browser VNC, shell, filesystem, Jupyter, VSCode Server and pre-wired MCP servers for agents.",
+      "tags": [
+        "docker",
+        "mcp",
+        "browser",
+        "all-in-one"
+      ],
+      "usecase": "Use it to give any coding agent a complete computer with shared FS so browser downloads are immediately available to shell and file tools.",
+      "returning": false
+    },
+    {
+      "id": "agenvoy-2026-11-07",
+      "title": "Agenvoy",
+      "authors": "pardnchiu",
+      "source": "GitHub",
+      "url": "https://github.com/pardnchiu/Agenvoy",
+      "type": "tool",
+      "dateAdded": "2026-11-07",
+      "summary": "Single Go binary local harness that runs 24/7, auto-builds missing tools, exposes them over MCP and keeps memory schedules on disk.",
+      "tags": [
+        "go",
+        "local",
+        "mcp",
+        "self-hosted"
+      ],
+      "usecase": "Use it to keep a personal agent always on your machine that shares a sandboxed tool library with other agents via MCP.",
+      "returning": false
+    },
+    {
+      "id": "duragent-2026-11-07",
+      "title": "Duragent",
+      "authors": "giosakti",
+      "source": "GitHub",
+      "url": "https://github.com/giosakti/duragent",
+      "type": "tool",
+      "dateAdded": "2026-11-07",
+      "summary": "One ~10 MB binary durable agent runtime where sessions are append-only event logs and agents are plain YAML plus Markdown files.",
+      "tags": [
+        "rust",
+        "durable",
+        "single-binary",
+        "files"
+      ],
+      "usecase": "Use it to run crash-surviving personal or product agents that you can cat, grep and git-diff with zero language runtime dependencies.",
+      "returning": false
+    },
+    {
+      "id": "dapr-agents-2026-11-07",
+      "title": "Dapr Agents",
+      "authors": "dapr",
+      "source": "GitHub",
+      "url": "https://github.com/dapr/dapr-agents",
+      "type": "harness",
+      "dateAdded": "2026-11-07",
+      "summary": "CNCF framework that builds durable autonomous agents on Dapr workflows with built-in state, retries, security and OpenTelemetry.",
+      "tags": [
+        "dapr",
+        "durable",
+        "workflow",
+        "cncf"
+      ],
+      "usecase": "Use it to guarantee multi-step agent workflows complete across node failures while scaling thousands of agents per core.",
+      "returning": false
+    },
+    {
+      "id": "opencomputer-2026-11-07",
+      "title": "OpenComputer",
+      "authors": "diggerhq",
+      "source": "GitHub",
+      "url": "https://github.com/diggerhq/opencomputer",
+      "type": "tool",
+      "dateAdded": "2026-11-07",
+      "summary": "CLI and skills that let agents create checkpointable cloud sandboxes, exec commands, fork and expose previews.",
+      "tags": [
+        "sandbox",
+        "skills",
+        "cli",
+        "checkpoint"
+      ],
+      "usecase": "Use it to give any skills-compatible agent the ability to spin isolated computers for tests or long tasks.",
+      "returning": false
+    },
+    {
+      "id": "skillsandbox-2026-11-07",
+      "title": "SkillSandbox",
+      "authors": "theMachineClay",
+      "source": "GitHub",
+      "url": "https://github.com/theMachineClay/skillsandbox",
+      "type": "repo",
+      "dateAdded": "2026-11-07",
+      "summary": "Rust capability sandbox that forces agent skills to declare network FS and env needs then enforces them with seccomp and default-deny.",
+      "tags": [
+        "rust",
+        "skills",
+        "capability",
+        "seccomp"
+      ],
+      "usecase": "Use it to run untrusted marketplace skills without leaking SSH keys or cookies while producing an audit trail.",
+      "returning": false
+    },
+    {
+      "id": "castor-server-2026-11-07",
+      "title": "Castor Server",
+      "authors": "substratum-labs",
+      "source": "GitHub",
+      "url": "https://github.com/substratum-labs/castor-server",
+      "type": "harness",
+      "dateAdded": "2026-11-07",
+      "summary": "Self-hosted microkernel-style agent OS with budget tokens, deterministic replay, time-travel fork and HITL modify.",
+      "tags": [
+        "microkernel",
+        "budget",
+        "replay",
+        "self-hosted"
+      ],
+      "usecase": "Use it to interpose a capability kernel between any model and tools so every action is budgeted and replayable.",
+      "returning": false
+    },
     {
       "id": "harness-kit-2026-11-06",
       "title": "Harness Kit",
@@ -10622,164 +10789,6 @@
       ],
       "usecase": "Use it to clone a battle-tested issue-to-PR agent stack and adapt the YAML config for custom benchmarks or cybersecurity tasks.",
       "returning": false
-    },
-    {
-      "id": "remote-swe-agents-2026-09-06",
-      "title": "remote-swe-agents",
-      "authors": "aws-samples",
-      "source": "GitHub",
-      "url": "https://github.com/aws-samples/remote-swe-agents",
-      "type": "repo",
-      "dateAdded": "2026-09-06",
-      "summary": "Self-hosted fully open-source autonomous SWE agent example on AWS that works in dedicated cloud environments and opens PRs.",
-      "tags": [
-        "aws",
-        "autonomous",
-        "swe",
-        "cloud"
-      ],
-      "usecase": "Use it to run laptop-free coding agents that clone, edit, test, and submit pull requests inside isolated AWS workspaces.",
-      "returning": false
-    },
-    {
-      "id": "agentic-harness-2026-09-06",
-      "title": "Agentic Harness",
-      "authors": "moortekweb-art",
-      "source": "GitHub",
-      "url": "https://github.com/moortekweb-art/agentic-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-06",
-      "summary": "Self-hosted completion gate that wraps coding agents with independent verification, durable evidence, CLI, and local GUI before reporting done.",
-      "tags": [
-        "verification",
-        "gate",
-        "completion",
-        "self-hosted"
-      ],
-      "usecase": "Use it to force an external check and report.md before any agent can claim a goal is finished across compatible CLIs.",
-      "returning": false
-    },
-    {
-      "id": "harness-2026-09-06",
-      "title": "Harness",
-      "authors": "majiayu000",
-      "source": "GitHub",
-      "url": "https://github.com/majiayu000/harness",
-      "type": "harness",
-      "dateAdded": "2026-09-06",
-      "summary": "Rust control plane for fleets of parallel coding agents with orchestration, policy enforcement, cross-agent review, and observability.",
-      "tags": [
-        "rust",
-        "control-plane",
-        "fleet",
-        "policy"
-      ],
-      "usecase": "Use it to assign work, police permissions, and run independent reviews across Claude Code or Codex adapters in long-running fleets.",
-      "returning": false
-    },
-    {
-      "id": "openharness-2026-09-06",
-      "title": "OpenHarness",
-      "authors": "maisieyang",
-      "source": "GitHub",
-      "url": "https://github.com/maisieyang/open-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-06",
-      "summary": "Local-first Python control plane for coding agents featuring Default, Plan, externally judged Goals, sandboxed execution, durable context, plugins, and evals.",
-      "tags": [
-        "python",
-        "control-plane",
-        "judge",
-        "sandbox"
-      ],
-      "usecase": "Use it to drive REPL sessions with independent judges that decide continue, complete, or pause based on artifacts rather than agent claims.",
-      "returning": false
-    },
-    {
-      "id": "har-2026-09-06",
-      "title": "HAR",
-      "authors": "os-factory",
-      "source": "GitHub",
-      "url": "https://github.com/os-factory/har",
-      "type": "harness",
-      "dateAdded": "2026-09-06",
-      "summary": "Open agent harness CLI plus MCP that runs coding agents in isolated worktrees with deterministic launch, verify, and teardown stages.",
-      "tags": [
-        "worktree",
-        "verify",
-        "mcp",
-        "cli"
-      ],
-      "usecase": "Use it to turn any repo into verified software-factory slots that wrap Claude Code, Cursor, or Codex with project-native checks.",
-      "returning": false
-    },
-    {
-      "id": "blaxel-sandbox-2026-09-06",
-      "title": "Blaxel Sandbox",
-      "authors": "blaxel-ai",
-      "source": "GitHub",
-      "url": "https://github.com/blaxel-ai/sandbox",
-      "type": "repo",
-      "dateAdded": "2026-09-06",
-      "summary": "Open-source microVM sandbox templates and hub for persistent agent compute with standby resume, MCP tools, filesystem, and process APIs.",
-      "tags": [
-        "sandbox",
-        "microvm",
-        "mcp",
-        "persistent"
-      ],
-      "usecase": "Use it to give agents dedicated Linux environments that resume in tens of milliseconds while keeping full state across idle periods.",
-      "returning": false
-    },
-    {
-      "id": "sandboxer-2026-09-06",
-      "title": "Sandboxer",
-      "authors": "hyperterse",
-      "source": "GitHub",
-      "url": "https://github.com/hyperterse/sandboxer",
-      "type": "repo",
-      "dateAdded": "2026-09-06",
-      "summary": "Unified client libraries in Go, Python, and TypeScript that talk directly to E2B, Daytona, Blaxel, Runloop, Fly, or local Docker sandboxes.",
-      "tags": [
-        "sandbox",
-        "multi-provider",
-        "sdk",
-        "abstraction"
-      ],
-      "usecase": "Use it to switch sandbox providers behind one mental model for create, exec, filesystem, and teardown without rewriting agent code.",
-      "returning": false
-    },
-    {
-      "id": "trueforge-open-sources-its-production-agent-harness-with-30-percent-lower-cost-t-2026-09-06",
-      "title": "TrueForge open-sources its production agent harness with 30 percent lower cost than Claude Managed Agents",
-      "authors": "TrueFoundry",
-      "source": "TrueFoundry Blog / VentureBeat",
-      "url": "https://www.truefoundry.com/blog/engineering/trueforge-open-source-agent-harness/",
-      "type": "release",
-      "dateAdded": "2026-09-06",
-      "summary": "TrueFoundry released TrueForge under MIT as a vendor-neutral harness with MCP, skills, sandboxing, and compaction. Benchmarks show matching quality at substantially lower token and dollar cost versus managed alternatives on identical tasks.",
-      "tags": [
-        "release",
-        "harness",
-        "open-source",
-        "cost"
-      ]
-    },
-    {
-      "id": "show-hn-supafork-lets-you-store-share-and-fork-agent-sessions-across-harnesses-2026-09-06",
-      "title": "Show HN: Supafork lets you store, share, and fork agent sessions across harnesses",
-      "authors": "supafork",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49524608",
-      "type": "article",
-      "dateAdded": "2026-09-06",
-      "summary": "Supafork provides a GitHub-like layer for AI agent sessions so users can save complete runs from Claude Code, Codex, Pi, and others, organize collections, and import across harnesses. The launch post highlights CLI import plus public or private forking of workflows.",
-      "tags": [
-        "article",
-        "sessions",
-        "interoperability",
-        "show-hn"
-      ]
     }
   ]
 }
