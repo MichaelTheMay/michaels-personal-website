@@ -1,7 +1,216 @@
 {
-  "lastUpdated": "2026-11-07",
-  "count": 542,
+  "lastUpdated": "2026-11-08",
+  "count": 551,
   "tools": [
+    {
+      "slug": "amazon-bedrock-agentcore-samples",
+      "title": "AgentCore samples",
+      "authors": "AWS Labs",
+      "source": "GitHub",
+      "url": "https://github.com/awslabs/amazon-bedrock-agentcore-samples",
+      "type": "repo",
+      "summary": "Samples and CLI for Amazon Bedrock AgentCore that add managed memory, identity, code interpreter, browser tools, and observability to any framework on AWS.",
+      "usecase": "Use it to prototype production agents with durable memory and identity on Bedrock without rewriting your existing LangGraph or CrewAI loops.",
+      "tags": [
+        "AWS",
+        "memory",
+        "identity",
+        "samples"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-agentic-memory",
+      "title": "awesome-agentic-memory",
+      "authors": "Anandesh-Sharma",
+      "source": "GitHub",
+      "url": "https://github.com/Anandesh-Sharma/awesome-agentic-memory",
+      "type": "repo",
+      "summary": "Curated map of agent memory frameworks, taxonomies, benchmarks, and deep dives covering hybrid vector-graph, OS-style paging, and coding-agent portable stores.",
+      "usecase": "Use it to select and wire a memory layer (Mem0-style or coding-specific) into your harness based on stars, approach, and license.",
+      "tags": [
+        "memory",
+        "awesome-list",
+        "taxonomy",
+        "benchmarks"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-harness-engineering",
+      "title": "Awesome-Harness-Engineering",
+      "authors": "Jiaaqiliu",
+      "source": "GitHub",
+      "url": "https://github.com/Jiaaqiliu/Awesome-Harness-Engineering",
+      "type": "repo",
+      "summary": "Dense collection of resources on harness engineering covering context, guardrails, evals, observability, orchestration, and production architecture patterns.",
+      "usecase": "Use it as a reading and implementation map when designing the environment around agents for reliability rather than just prompting.",
+      "tags": [
+        "harness-engineering",
+        "awesome-list",
+        "production",
+        "patterns"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cua",
+      "title": "CUA",
+      "authors": "trycua",
+      "source": "GitHub",
+      "url": "https://github.com/trycua/cua",
+      "type": "tool",
+      "summary": "Open-source computer-use stack with cross-OS sandboxes, drivers, and benchmarks for training, evaluating, and data-generating desktop agents at scale.",
+      "usecase": "Use it to spin identical Mac or Windows VMs from snapshots, run agent tasks with screen access, and collect scored trajectories for RL or eval.",
+      "tags": [
+        "computer use",
+        "desktop",
+        "benchmarks"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "infra"
+      ]
+    },
+    {
+      "slug": "kosa8",
+      "title": "kosa8",
+      "authors": "kosa8ai",
+      "source": "kosa8.com",
+      "url": "https://kosa8.com",
+      "type": "tool",
+      "summary": "Local-first sealed microVM sandboxes with own kernel, closed-by-default network, checkpoint/rewind in under a second, and egress broker that keeps API keys on the host.",
+      "usecase": "Use it to give each coding agent an air-gapped reversible machine with MCP and Claude Code plugin support for regulated or high-risk runs.",
+      "tags": [
+        "microVM",
+        "checkpoint",
+        "air-gapped",
+        "MCP"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "late-cli",
+      "title": "Late CLI",
+      "authors": "mlhher",
+      "source": "GitHub",
+      "url": "https://github.com/mlhher/late-cli",
+      "type": "tool",
+      "summary": "Native Go coding-agent CLI that isolates orchestrator context from ephemeral subagents so a 64k window can drive 200k-plus tokens of work, with rootless Podman sandboxing for unattended runs.",
+      "usecase": "Use it to run long autonomous coding sessions on local LLMs without context collapse by forcing plan-verify isolation and parallel subagents.",
+      "tags": [
+        "CLI",
+        "local-LLM",
+        "subagents",
+        "Go"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mainplane",
+      "title": "Mainplane",
+      "authors": "mainplane-ai",
+      "source": "GitHub",
+      "url": "https://github.com/mainplane-ai/mainplane",
+      "type": "harness",
+      "summary": "Self-hostable open-source agent ecosystem and harness that links agents to devices, shared drives, and computer-use with model-agnostic providers and context-efficient tool restriction.",
+      "usecase": "Use it to run always-on personal or multi-device agents on your own hardware with fine-grained security and no external tunnel required.",
+      "tags": [
+        "harness",
+        "self-hosted",
+        "computer-use",
+        "Go"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nemoclaw",
+      "title": "NemoClaw",
+      "authors": "NVIDIA",
+      "source": "GitHub",
+      "url": "https://github.com/NVIDIA/NemoClaw",
+      "type": "tool",
+      "summary": "Reference stack that runs supported agents (OpenClaw, Hermes, LangChain Deep Agents) more securely inside OpenShell with managed inference, network policy, and lifecycle CLI.",
+      "usecase": "Use it to drop existing agent CLIs into OpenShell sandboxes with guided onboarding and state persistence without rewriting the agent.",
+      "tags": [
+        "OpenShell",
+        "sandbox",
+        "CLI",
+        "NVIDIA"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "powercontext",
+      "title": "PowerContext",
+      "authors": "OceanBase",
+      "source": "GitHub",
+      "url": "https://github.com/oceanbase/powercontext",
+      "type": "repo",
+      "summary": "Open-source context service that stores revisioned Memory, Handoff, Experience, and Skill artifacts outside any single conversation so work survives session or agent switches.",
+      "usecase": "Use it to hand off durable decisions and next steps between coding agents or teammates via MCP or HTTP without reloading full transcripts.",
+      "tags": [
+        "memory",
+        "handoff",
+        "MCP",
+        "context"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox-mcp",
+      "title": "sandbox-mcp",
+      "authors": "shanselman",
+      "source": "GitHub",
+      "url": "https://github.com/shanselman/sandbox-mcp",
+      "type": "tool",
+      "summary": "MIT-licensed CLI and MCP server that boots disposable Windows 11 Sandbox guests, deploys apps, drives UI Automation, captures evidence, then deletes the machine.",
+      "usecase": "Use it to let an agent test desktop apps on a clean PC with screenshots and click automation without polluting the host.",
+      "tags": [
+        "Windows",
+        "MCP",
+        "sandbox",
+        "UI-automation"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-sandbox",
       "title": "Agent Sandbox",
@@ -10917,26 +11126,6 @@
       "lastSeen": "2026-09-03",
       "algorithms": [
         "perfected",
-        "infra"
-      ]
-    },
-    {
-      "slug": "cua",
-      "title": "CUA",
-      "authors": "trycua",
-      "source": "GitHub",
-      "url": "https://github.com/trycua/cua",
-      "type": "tool",
-      "summary": "Open-source computer-use 2.0: drivers, cross-OS fleets, and benchmarks for training and evaluating desktop agents.",
-      "usecase": "Use it to give a coding agent a real desktop when the job is a GUI installer, not an API.",
-      "tags": [
-        "computer use",
-        "desktop",
-        "benchmarks"
-      ],
-      "firstSeen": "2026-09-03",
-      "lastSeen": "2026-09-03",
-      "algorithms": [
         "infra"
       ]
     },
