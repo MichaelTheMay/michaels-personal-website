@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-10",
   "issues": [
+    {
+      "date": "2026-11-10",
+      "title": "Self-hosted harness loops meet hardware-isolated microVMs",
+      "blurb": "Power users are cloning open control planes, Rust and Go agent loops, and local microVM sandboxes they can wire under any model. The through-line is clone-and-run isolation plus harness engineering that outruns closed IDEs."
+    },
     {
       "date": "2026-11-08",
       "title": "Isolation-first harnesses and durable memory that let power users own the agent loop",
@@ -300,14 +305,190 @@
       "date": "2026-09-07",
       "title": "Composable harness kernels and parallel sandboxes power users actually own",
       "blurb": "Today's list favors clone-and-run control planes, governance wrappers, and massively parallel execution substrates. Power users get swappable loops, evidence gates, and eval harnesses they can wire into their own agent fleets without closed IDE lock-in."
-    },
-    {
-      "date": "2026-09-06",
-      "title": "Rust harnesses and open control planes that scale agent fleets",
-      "blurb": "Power users are wiring clone-and-run sandboxes, memory-efficient loops, and verification gates into custom fleets. These repos prioritize systems-language runtimes, declarative orchestration, and independent judges over closed IDE chatbots."
     }
   ],
   "items": [
+    {
+      "id": "strands-harness-sdk-2026-11-10",
+      "title": "Strands Harness SDK",
+      "authors": "strands-agents",
+      "source": "GitHub",
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "type": "harness",
+      "dateAdded": "2026-11-10",
+      "summary": "Open SDK and assembled harness for production agents in Python and TypeScript with lifecycle controls, MCP, memory, multi-agent patterns, and evals.",
+      "tags": [
+        "harness",
+        "python",
+        "typescript",
+        "mcp",
+        "evals"
+      ],
+      "usecase": "Use it to replace a hand-rolled agent loop with create_harness defaults you can override for any model and cloud.",
+      "returning": false
+    },
+    {
+      "id": "pullrun-2026-11-10",
+      "title": "Pullrun",
+      "authors": "pullrun",
+      "source": "GitHub",
+      "url": "https://github.com/pullrun/pullrun",
+      "type": "tool",
+      "dateAdded": "2026-11-10",
+      "summary": "AI agent sandbox runtime that boots OCI images as Firecracker microVM, Linux container, or Apple Silicon VM in about 400 ms with MCP and P2P image sync.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "mcp",
+        "oci",
+        "rust"
+      ],
+      "usecase": "Use it to give coding agents fast multi-backend sandboxes with zero-copy storage and native MCP hooks.",
+      "returning": false
+    },
+    {
+      "id": "harness-evals-2026-11-10",
+      "title": "Harness Evals",
+      "authors": "garrytan",
+      "source": "GitHub",
+      "url": "https://github.com/garrytan/g-harness-evals",
+      "type": "repo",
+      "dateAdded": "2026-11-10",
+      "summary": "Open harness evaluation suite that holds model and tasks fixed, swaps only harness prompts/tools/memory, and reports pass rate, cost, and time.",
+      "tags": [
+        "evals",
+        "harness",
+        "benchmark",
+        "cost"
+      ],
+      "usecase": "Use it to pick a harness by measured cost per solved Terminal-Bench task instead of brand claims.",
+      "returning": false
+    },
+    {
+      "id": "agentic-sandbox-2026-11-10",
+      "title": "Agentic Sandbox",
+      "authors": "jmagly",
+      "source": "GitHub",
+      "url": "https://github.com/jmagly/agentic-sandbox",
+      "type": "harness",
+      "dateAdded": "2026-11-10",
+      "summary": "Self-hostable runtime for persistent autonomous coding agents with KVM-isolated VMs or rootless containers, A2A protocol, dashboard, and virtiofs.",
+      "tags": [
+        "sandbox",
+        "kvm",
+        "self-hosted",
+        "a2a",
+        "persistent"
+      ],
+      "usecase": "Use it to keep long-running agents alive in their own kernels on your hardware with no hosted control plane.",
+      "returning": false
+    },
+    {
+      "id": "zeph-2026-11-10",
+      "title": "Zeph",
+      "authors": "bug-ops",
+      "source": "GitHub",
+      "url": "https://github.com/bug-ops/zeph",
+      "type": "tool",
+      "dateAdded": "2026-11-10",
+      "summary": "Memory-first single Rust binary agent with graph memory, self-learning skills, multi-model routing, sandboxed tools, and local or cloud backends.",
+      "tags": [
+        "memory",
+        "graph",
+        "rust",
+        "sandbox",
+        "local"
+      ],
+      "usecase": "Use it to run a portable agent that remembers decision rationale across sessions with OS-level tool isolation.",
+      "returning": false
+    },
+    {
+      "id": "agentic-harness-engineering-ahe-2026-11-10",
+      "title": "Agentic Harness Engineering (AHE)",
+      "authors": "china-qijizhifeng",
+      "source": "GitHub",
+      "url": "https://github.com/china-qijizhifeng/agentic-harness-engineering",
+      "type": "repo",
+      "dateAdded": "2026-11-10",
+      "summary": "Observability-driven system that automatically evolves coding-agent harness components while holding the base model fixed, with Terminal-Bench lifts.",
+      "tags": [
+        "harness-engineering",
+        "evals",
+        "observability",
+        "evolution"
+      ],
+      "usecase": "Use it to iterate prompts, tools, middleware, and memory on evidence from failed tasks until the frozen harness transfers.",
+      "returning": false
+    },
+    {
+      "id": "fastvm-2026-11-10",
+      "title": "FastVM",
+      "authors": "tuananh",
+      "source": "GitHub",
+      "url": "https://github.com/tuananh/fastvm",
+      "type": "tool",
+      "dateAdded": "2026-11-10",
+      "summary": "Single-host Firecracker/KVM microVM sandbox runtime with ~100 ms boots, idle sleep to disk, wake-on-network, HTTP API, and CLI.",
+      "tags": [
+        "microvm",
+        "firecracker",
+        "sandbox",
+        "go"
+      ],
+      "usecase": "Use it to host dense agent sandboxes that sleep when idle and resume with queued network frames already in the guest path.",
+      "returning": false
+    },
+    {
+      "id": "agentvcs-2026-11-10",
+      "title": "AgentVCS",
+      "authors": "EvolvingAgentsLabs",
+      "source": "GitHub",
+      "url": "https://github.com/EvolvingAgentsLabs/agentvcs",
+      "type": "repo",
+      "dateAdded": "2026-11-10",
+      "summary": "Version control for agent harnesses that change while they run: stamped steps, gated patches, metric blame, and three-way merge of harness manifests.",
+      "tags": [
+        "vcs",
+        "harness",
+        "rust",
+        "mcp",
+        "versioning"
+      ],
+      "usecase": "Use it to track and merge evolving harness configs with evidence-backed conflict resolution during live agent runs.",
+      "returning": false
+    },
+    {
+      "id": "mecatl-open-cloud-native-agent-harness-for-infrastructure-you-control-2026-11-10",
+      "title": "Mecatl: open cloud-native agent harness for infrastructure you control",
+      "authors": "Stacklok",
+      "source": "Stacklok Blog",
+      "url": "https://stacklok.com/blog/the-8-best-agent-harnesses-for-enterprise-teams-in-2026-ranked/",
+      "type": "article",
+      "dateAdded": "2026-11-10",
+      "summary": "Stacklok positions Mecatl as a Kubernetes-first open harness with durable state, OIDC identity, and the same loop from laptop to mecak8s. The piece ranks enterprise harnesses and argues governance should live in the open runtime.",
+      "tags": [
+        "harness",
+        "kubernetes",
+        "enterprise",
+        "governance"
+      ]
+    },
+    {
+      "id": "trueforge-open-source-agent-harness-reaches-production-ready-catalogs-and-sdk-2026-11-10",
+      "title": "TrueForge open-source agent harness reaches production-ready catalogs and SDK",
+      "authors": "TrueFoundry",
+      "source": "TrueFoundry",
+      "url": "https://www.truefoundry.com/blog/engineering/trueforge-open-source-agent-harness/",
+      "type": "release",
+      "dateAdded": "2026-11-10",
+      "summary": "TrueForge ships as an MIT harness with chat UI, HTTP API, TypeScript SDK, MCP skills, and on-demand sandboxes. The writeup reports matching managed-agent quality at lower cost when you bring your own model.",
+      "tags": [
+        "harness",
+        "open-source",
+        "sdk",
+        "sandbox"
+      ]
+    },
     {
       "id": "mainplane-2026-11-08",
       "title": "Mainplane",
@@ -10619,178 +10800,6 @@
         "shell"
       ],
       "usecase": "Use it to score shell-native coding agents on multi-step terminal tasks with concurrent Harbor jobs.",
-      "returning": false
-    },
-    {
-      "id": "agentscope-java-2026-09-07",
-      "title": "AgentScope Java",
-      "authors": "agentscope-ai",
-      "source": "GitHub",
-      "url": "https://github.com/agentscope-ai/agentscope-java",
-      "type": "tool",
-      "dateAdded": "2026-09-07",
-      "summary": "Production Java framework for distributed long-running agents with workspace sandboxes, multi-agent spawn, session recovery and control-plane dashboard.",
-      "tags": [
-        "java",
-        "distributed",
-        "sandbox",
-        "multi-agent"
-      ],
-      "usecase": "Use it to deploy enterprise multi-agent systems with Redis-backed memory and Kubernetes sandboxes.",
-      "returning": false
-    },
-    {
-      "id": "openagentharness-2026-09-07",
-      "title": "OpenAgentHarness",
-      "authors": "fairyshine",
-      "source": "GitHub",
-      "url": "https://github.com/fairyshine/OpenAgentHarness",
-      "type": "harness",
-      "dateAdded": "2026-09-07",
-      "summary": "Headless workspace-first agent engine exposing HTTP APIs for sessions, runs, actions, sandboxes and SSE streaming for embedded products.",
-      "tags": [
-        "headless",
-        "api",
-        "sandbox",
-        "typescript"
-      ],
-      "usecase": "Use it as the backend runtime under your own chat UI and tenant model for internal agent platforms.",
-      "returning": false
-    },
-    {
-      "id": "ai-harness-engineering-2026-09-07",
-      "title": "ai_harness_engineering",
-      "authors": "Cobus Greyling",
-      "source": "GitHub",
-      "url": "https://github.com/cobusgreyling/ai_harness_engineering",
-      "type": "repo",
-      "dateAdded": "2026-09-07",
-      "summary": "Minimal reference implementation of six harness components (tools, memory, context, planning, verification, guardrails) with CLI and Gradio demo.",
-      "tags": [
-        "python",
-        "reference",
-        "guardrails",
-        "demo"
-      ],
-      "usecase": "Use it to study and fork a complete small harness stack powered by Nemotron before building your own.",
-      "returning": false
-    },
-    {
-      "id": "lox-agent-harness-2026-09-07",
-      "title": "lox/agent-harness",
-      "authors": "lox",
-      "source": "GitHub",
-      "url": "https://github.com/lox/agent-harness",
-      "type": "repo",
-      "dateAdded": "2026-09-07",
-      "summary": "Minimal composable Go library that implements the core tool-calling agent loop with hooks and thread state.",
-      "tags": [
-        "go",
-        "minimal",
-        "tool-calling",
-        "library"
-      ],
-      "usecase": "Use it to embed a tiny provider-agnostic agent loop inside Go services without pulling a full framework.",
-      "returning": false
-    },
-    {
-      "id": "best-of-agent-harnesses-2026-09-07",
-      "title": "best-of-Agent-Harnesses",
-      "authors": "RyanAlberts",
-      "source": "GitHub",
-      "url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses",
-      "type": "repo",
-      "dateAdded": "2026-09-07",
-      "summary": "Weekly-rescored curated list of 100+ harnesses with MCP server, llms.txt and JSON so agents can recommend harnesses by capability.",
-      "tags": [
-        "catalog",
-        "mcp",
-        "harness",
-        "meta"
-      ],
-      "usecase": "Use it as a live catalog and MCP endpoint to let your own agent pick the right harness for a task.",
-      "returning": false
-    },
-    {
-      "id": "show-hn-benzi-code-intelligence-infrastructure-for-frontier-ai-models-2026-09-07",
-      "title": "Show HN: Benzi – Code Intelligence Infrastructure for Frontier AI Models",
-      "authors": "tweedler290",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49599867",
-      "type": "article",
-      "dateAdded": "2026-09-07",
-      "summary": "Benzi supplies deterministic code intelligence via tool calls so agents read far less source while still getting blast-radius and static analysis. Early numbers claim strong SWE-bench Verified results at low cost by avoiding full-file context dumps.",
-      "tags": [
-        "show-hn",
-        "coding",
-        "static-analysis"
-      ]
-    },
-    {
-      "id": "deepseek-harness-developer-preview-everything-is-a-plugin-2026-09-07",
-      "title": "DeepSeek Harness developer preview: Everything is a plugin",
-      "authors": "DeepSeek",
-      "source": "DeepSeek",
-      "url": "https://deepseek.com/harness/en/",
-      "type": "release",
-      "dateAdded": "2026-09-07",
-      "summary": "DeepSeek opened the MIT-licensed dsh harness where model, tools, loop, sandbox and UI are all Cordis plugins. Developers can launch a local web UI with npx or build from the public monorepo and start swapping capabilities immediately.",
-      "tags": [
-        "release",
-        "plugin",
-        "open-source"
-      ]
-    },
-    {
-      "id": "agents-cli-1-5-0-release-notes-2026-09-07",
-      "title": "agents-cli 1.5.0 release notes",
-      "authors": "Google",
-      "source": "GitHub",
-      "url": "https://github.com/google/agents-cli/blob/main/RELEASE_NOTES.md",
-      "type": "release",
-      "dateAdded": "2026-09-07",
-      "summary": "The September 1 drop adds an extension system with LangChain template, infra show, update-only deploy and labels for Agent Runtime. It tightens ADK telemetry and offline setup so power users can extend and redeploy agent stacks without full reprovisioning.",
-      "tags": [
-        "release",
-        "cli",
-        "adk",
-        "google"
-      ]
-    },
-    {
-      "id": "trueforge-2026-09-06",
-      "title": "TrueForge",
-      "authors": "TrueFoundry",
-      "source": "GitHub",
-      "url": "https://github.com/truefoundry/trueforge",
-      "type": "harness",
-      "dateAdded": "2026-09-06",
-      "summary": "Open-source agent harness runtime that handles model calls, MCP tools, skills, sandboxing, approvals, context compaction, and session state with chat UI plus TypeScript SDK.",
-      "tags": [
-        "harness",
-        "mcp",
-        "sandbox",
-        "sdk"
-      ],
-      "usecase": "Use it to deploy cost-controlled multi-step agents locally or hosted while swapping any model provider and MCP servers.",
-      "returning": false
-    },
-    {
-      "id": "jcode-2026-09-06",
-      "title": "jcode",
-      "authors": "1jehuang",
-      "source": "GitHub",
-      "url": "https://github.com/1jehuang/jcode",
-      "type": "tool",
-      "dateAdded": "2026-09-06",
-      "summary": "High-performance Rust coding agent harness optimized for low RAM, fast boot, semantic memory graphs, side panels, and native swarm collaboration across sessions.",
-      "tags": [
-        "rust",
-        "harness",
-        "swarm",
-        "memory"
-      ],
-      "usecase": "Use it to run dozens of parallel coding sessions on limited hardware with automatic conflict notification and memory recall.",
       "returning": false
     }
   ]

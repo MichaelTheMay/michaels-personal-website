@@ -1,7 +1,178 @@
 {
-  "lastUpdated": "2026-11-08",
-  "count": 551,
+  "lastUpdated": "2026-11-10",
+  "count": 556,
   "tools": [
+    {
+      "slug": "agentic-harness-engineering",
+      "title": "Agentic Harness Engineering (AHE)",
+      "authors": "china-qijizhifeng",
+      "source": "GitHub",
+      "url": "https://github.com/china-qijizhifeng/agentic-harness-engineering",
+      "type": "repo",
+      "summary": "Observability-driven system that automatically evolves coding-agent harness components while holding the base model fixed, with Terminal-Bench lifts.",
+      "usecase": "Use it to iterate prompts, tools, middleware, and memory on evidence from failed tasks until the frozen harness transfers.",
+      "tags": [
+        "harness-engineering",
+        "observability",
+        "evolution",
+        "eval"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-11-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-sandbox",
+      "title": "agentic-sandbox",
+      "authors": "jmagly",
+      "source": "GitHub",
+      "url": "https://github.com/jmagly/agentic-sandbox",
+      "type": "harness",
+      "summary": "Self-hostable runtime for persistent autonomous coding agents with KVM-isolated VMs or rootless containers, A2A protocol, dashboard, and virtiofs.",
+      "usecase": "Use it to keep long-running agents alive in their own kernels on your hardware with no hosted control plane.",
+      "tags": [
+        "sandbox",
+        "kvm",
+        "self-hosted",
+        "persistent"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-11-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentvcs",
+      "title": "AgentVCS",
+      "authors": "EvolvingAgentsLabs",
+      "source": "GitHub",
+      "url": "https://github.com/EvolvingAgentsLabs/agentvcs",
+      "type": "repo",
+      "summary": "Version control for agent harnesses that change while they run: stamped steps, gated patches, metric blame, and three-way merge of harness manifests.",
+      "usecase": "Use it to track and merge evolving harness configs with evidence-backed conflict resolution during live agent runs.",
+      "tags": [
+        "vcs",
+        "harness",
+        "rust",
+        "mcp",
+        "versioning"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "fastvm",
+      "title": "FastVM",
+      "authors": "tuananh",
+      "source": "GitHub",
+      "url": "https://github.com/tuananh/fastvm",
+      "type": "tool",
+      "summary": "Single-host Firecracker/KVM microVM sandbox runtime with ~100 ms boots, idle sleep to disk, wake-on-network, HTTP API, and CLI.",
+      "usecase": "Use it to host dense agent sandboxes that sleep when idle and resume with queued network frames already in the guest path.",
+      "tags": [
+        "microvm",
+        "firecracker",
+        "sandbox",
+        "go"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "g-harness-evals",
+      "title": "Harness Evals",
+      "authors": "garrytan",
+      "source": "GitHub",
+      "url": "https://github.com/garrytan/g-harness-evals",
+      "type": "repo",
+      "summary": "Open harness evaluation suite that holds model and tasks fixed, swaps only harness prompts/tools/memory, and reports pass rate, cost, and time.",
+      "usecase": "Use it to pick a harness by measured cost per solved Terminal-Bench task instead of brand claims.",
+      "tags": [
+        "evals",
+        "harness",
+        "benchmark",
+        "cost"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "pullrun",
+      "title": "Pullrun",
+      "authors": "pullrun",
+      "source": "GitHub",
+      "url": "https://github.com/pullrun/pullrun",
+      "type": "tool",
+      "summary": "AI agent sandbox runtime that boots OCI images as Firecracker microVM, Linux container, or Apple Silicon VM in about 400 ms with MCP and P2P image sync.",
+      "usecase": "Use it to give coding agents fast multi-backend sandboxes with zero-copy storage and native MCP hooks.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "mcp",
+        "oci",
+        "rust"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-sdk",
+      "title": "Strands Agents",
+      "authors": "strands-agents",
+      "source": "GitHub",
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "type": "harness",
+      "summary": "Open SDK and assembled harness for production agents in Python and TypeScript with lifecycle controls, MCP, memory, multi-agent patterns, and evals.",
+      "usecase": "Use it to replace a hand-rolled agent loop with create_harness defaults you can override for any model and cloud.",
+      "tags": [
+        "sdk",
+        "python",
+        "typescript",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-11-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "zeph",
+      "title": "Zeph",
+      "authors": "bug-ops",
+      "source": "GitHub",
+      "url": "https://github.com/bug-ops/zeph",
+      "type": "tool",
+      "summary": "Memory-first single Rust binary agent with graph memory, self-learning skills, multi-model routing, sandboxed tools, and local or cloud backends.",
+      "usecase": "Use it to run a portable agent that remembers decision rationale across sessions with OS-level tool isolation.",
+      "tags": [
+        "memory",
+        "graph",
+        "rust",
+        "sandbox",
+        "local"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "amazon-bedrock-agentcore-samples",
       "title": "AgentCore samples",
@@ -9948,48 +10119,6 @@
       ]
     },
     {
-      "slug": "agentic-harness-engineering",
-      "title": "Agentic Harness Engineering (AHE)",
-      "authors": "china-qijizhifeng",
-      "source": "GitHub",
-      "url": "https://github.com/china-qijizhifeng/agentic-harness-engineering",
-      "type": "repo",
-      "summary": "Observability-driven system that automatically evolves coding-agent harness components such as prompts, tools, middleware, and memory while holding the base model fixed.",
-      "usecase": "Use it to iterate harness configs over evaluate-analyze-improve loops and freeze transferable components that lift Terminal-Bench scores.",
-      "tags": [
-        "harness-engineering",
-        "observability",
-        "evolution",
-        "eval"
-      ],
-      "firstSeen": "2026-09-06",
-      "lastSeen": "2026-09-06",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "agentic-sandbox",
-      "title": "agentic-sandbox",
-      "authors": "jmagly",
-      "source": "GitHub",
-      "url": "https://github.com/jmagly/agentic-sandbox",
-      "type": "harness",
-      "summary": "Self-hostable runtime for persistent autonomous coding agents using KVM-isolated VMs or rootless containers with A2A protocol, dashboard, and virtiofs storage.",
-      "usecase": "Use it to run long-lived agent sessions on your own hardware with signed AgentCard discovery and mission dispatch without a hosted control plane.",
-      "tags": [
-        "sandbox",
-        "kvm",
-        "self-hosted",
-        "persistent"
-      ],
-      "firstSeen": "2026-09-06",
-      "lastSeen": "2026-09-06",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "agenttier",
       "title": "AgentTier",
       "authors": "agenttier",
@@ -10622,27 +10751,6 @@
         "ide",
         "mcp",
         "extension"
-      ],
-      "firstSeen": "2026-09-05",
-      "lastSeen": "2026-09-05",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "harness-sdk",
-      "title": "Strands Agents",
-      "authors": "strands-agents",
-      "source": "GitHub",
-      "url": "https://github.com/strands-agents/harness-sdk",
-      "type": "harness",
-      "summary": "Open-source Python and TypeScript SDK for building production agent loops with lifecycle controls, MCP, memory, multi-agent patterns, guardrails, and evals.",
-      "usecase": "Use it to replace hand-rolled agent loops with a portable, model-agnostic harness you control end-to-end.",
-      "tags": [
-        "sdk",
-        "python",
-        "typescript",
-        "mcp"
       ],
       "firstSeen": "2026-09-05",
       "lastSeen": "2026-09-05",
