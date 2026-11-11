@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-10",
+  "lastUpdated": "2026-11-11",
   "issues": [
+    {
+      "date": "2026-11-11",
+      "title": "MicroVM control planes power users actually clone",
+      "blurb": "Today's list clusters around hardware-isolated sandboxes, open agent harness loops, and Kubernetes-scale actor runtimes that keep credentials and guest kernels off the agent path. Power users get clone-and-run isolation, policy gates, and long-horizon orchestration without closed IDEs."
+    },
     {
       "date": "2026-11-10",
       "title": "Self-hosted harness loops meet hardware-isolated microVMs",
@@ -308,6 +313,207 @@
     }
   ],
   "items": [
+    {
+      "id": "trueforge-2026-11-11",
+      "title": "TrueForge",
+      "authors": "TrueFoundry",
+      "source": "GitHub",
+      "url": "https://github.com/truefoundry/trueforge",
+      "type": "harness",
+      "dateAdded": "2026-11-11",
+      "summary": "MIT TypeScript agent harness that owns the execution loop, MCP tools, skills, sandbox-as-tool, approvals, and session state with UI plus HTTP SDK.",
+      "tags": [
+        "harness",
+        "typescript",
+        "mcp",
+        "sandbox-as-tool",
+        "self-hosted"
+      ],
+      "usecase": "Use it to stand up a production agent loop on your infra with catalog-driven models and sandboxes provisioned only when code runs.",
+      "returning": false
+    },
+    {
+      "id": "hyperlight-2026-11-11",
+      "title": "Hyperlight",
+      "authors": "hyperlight-dev / Microsoft origin, CNCF",
+      "source": "GitHub",
+      "url": "https://github.com/hyperlight-dev/hyperlight",
+      "type": "repo",
+      "dateAdded": "2026-11-11",
+      "summary": "Embeddable Rust VMM library for hypervisor-isolated micro-VMs with millisecond boot and microsecond guest calls, no full guest OS required.",
+      "tags": [
+        "vmm",
+        "embedded",
+        "rust",
+        "cncf",
+        "isolation"
+      ],
+      "usecase": "Use it to link sandboxed untrusted code execution directly into your agent host process or language runtime.",
+      "returning": false
+    },
+    {
+      "id": "hyperlight-unikraft-2026-11-11",
+      "title": "hyperlight-unikraft",
+      "authors": "hyperlight-dev",
+      "source": "GitHub",
+      "url": "https://github.com/hyperlight-dev/hyperlight-unikraft",
+      "type": "repo",
+      "dateAdded": "2026-11-11",
+      "summary": "Runs ordinary Linux programs (Python, Node, Go, Bash) inside Hyperlight micro-VMs backed by a Unikraft unikernel guest.",
+      "tags": [
+        "unikraft",
+        "microvm",
+        "python",
+        "agents",
+        "snapshot"
+      ],
+      "usecase": "Use it to execute agent-generated shell or interpreter steps in hardware-isolated guests restored from warm snapshots.",
+      "returning": false
+    },
+    {
+      "id": "hyperagent-2026-11-11",
+      "title": "HyperAgent",
+      "authors": "hyperlight-dev",
+      "source": "GitHub",
+      "url": "https://github.com/hyperlight-dev/hyperagent",
+      "type": "tool",
+      "dateAdded": "2026-11-11",
+      "summary": "Code-acting agent runtime that writes JavaScript handlers and runs them inside Hyperlight micro-VMs via the GitHub Copilot SDK with no default FS or net.",
+      "tags": [
+        "javascript",
+        "copilot-sdk",
+        "sandbox",
+        "mcp",
+        "cli"
+      ],
+      "usecase": "Use it to let an agent compute, transform data, or call MCP tools while every JS payload stays inside a sealed micro-VM.",
+      "returning": false
+    },
+    {
+      "id": "memgraph-ai-toolkit-2026-11-11",
+      "title": "Memgraph AI Toolkit",
+      "authors": "memgraph",
+      "source": "GitHub",
+      "url": "https://github.com/memgraph/ai-toolkit",
+      "type": "repo",
+      "dateAdded": "2026-11-11",
+      "summary": "Python packages for persistent agent memory, knowledge graphs, GraphRAG, and MCP plus LangChain integrations on Memgraph.",
+      "tags": [
+        "memory",
+        "graph",
+        "mcp",
+        "graphrag",
+        "python"
+      ],
+      "usecase": "Use it to give coding agents a context graph that stores sessions, tool calls, and skills across tools and restarts.",
+      "returning": false
+    },
+    {
+      "id": "best-of-agent-harnesses-2026-11-11",
+      "title": "best-of-Agent-Harnesses",
+      "authors": "RyanAlberts",
+      "source": "GitHub",
+      "url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses",
+      "type": "repo",
+      "dateAdded": "2026-11-11",
+      "summary": "Weekly rescored ranked list of 180-plus agent harnesses plus templates, playbooks, MCP notes, and filterable capability pages.",
+      "tags": [
+        "ranking",
+        "harness",
+        "mcp",
+        "catalog"
+      ],
+      "usecase": "Use it to shortlist harnesses by autonomy, recovery, and simplicity before wiring one into your loop.",
+      "returning": false
+    },
+    {
+      "id": "agent-memory-techniques-2026-11-11",
+      "title": "Agent Memory Techniques",
+      "authors": "NirDiamant",
+      "source": "GitHub",
+      "url": "https://github.com/NirDiamant/Agent_Memory_Techniques",
+      "type": "repo",
+      "dateAdded": "2026-11-11",
+      "summary": "Thirty runnable Jupyter notebooks covering buffers, vectors, graphs, episodic memory, Mem0/Letta/Zep/Graphiti patterns, and LoCoMo-style evals.",
+      "tags": [
+        "memory",
+        "notebooks",
+        "eval",
+        "graphiti",
+        "education"
+      ],
+      "usecase": "Use it to prototype and compare memory backends side by side before locking one into a production harness.",
+      "returning": false
+    },
+    {
+      "id": "openshell-driver-substrate-2026-11-11",
+      "title": "openshell-driver-substrate",
+      "authors": "dims",
+      "source": "GitHub",
+      "url": "https://github.com/dims/openshell-driver-substrate",
+      "type": "repo",
+      "dateAdded": "2026-11-11",
+      "summary": "OpenShell ComputeDriver that maps sandbox lifecycle onto Agent Substrate actors with suspend/resume and egress policy.",
+      "tags": [
+        "openshell",
+        "substrate",
+        "driver",
+        "integration"
+      ],
+      "usecase": "Use it to run stock OpenShell gateways on Substrate so sandboxes snapshot instead of cold-starting every time.",
+      "returning": false
+    },
+    {
+      "id": "cncf-expands-agent-runtime-portfolio-with-agent-substrate-and-openshell-2026-11-11",
+      "title": "CNCF expands agent runtime portfolio with Agent Substrate and OpenShell",
+      "authors": "CNCF",
+      "source": "CNCF Announcements",
+      "url": "https://www.cncf.io/announcements/2026/11/10/cncf-hits-major-milestones-with-global-community-growth-record-industry-investment-and-a-new-generation-of-projects-to-build-ai-systems-in-production/",
+      "type": "release",
+      "dateAdded": "2026-11-11",
+      "summary": "At KubeCon NA 2026 the foundation highlighted new Sandbox projects Agent Substrate and OpenShell among 32 additions, framing open zero-trust runtimes as core cloud-native infrastructure for autonomous agents. The note pairs community growth metrics with explicit calls to treat agent security and density as first-class CNCF concerns.",
+      "tags": [
+        "cncf",
+        "openshell",
+        "agent-substrate",
+        "kubecon",
+        "release"
+      ]
+    },
+    {
+      "id": "run-linux-apps-in-hypervisor-isolated-micro-vms-with-hyperlight-2026-11-11",
+      "title": "Run Linux apps in hypervisor-isolated micro-VMs with Hyperlight",
+      "authors": "Danilo Chiarlone, Microsoft",
+      "source": "CNCF Blog",
+      "url": "https://www.cncf.io/blog/2026/11/09/run-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight/",
+      "type": "article",
+      "dateAdded": "2026-11-11",
+      "summary": "The post explains Hyperlight as an embeddable VMM plus hyperlight-unikraft path for ordinary Linux guests, with integrations for smolagents, MCP servers, Kubernetes warm pools, and OpenAI Agents SDK sandboxes. It argues agents need millisecond isolation without privileged containers, and shows concrete wiring patterns power users can copy.",
+      "tags": [
+        "hyperlight",
+        "microvm",
+        "cncf",
+        "agents",
+        "engineering"
+      ]
+    },
+    {
+      "id": "openshell-on-kubernetes-a-guide-for-platform-engineers-2026-11-11",
+      "title": "OpenShell on Kubernetes: a guide for platform engineers",
+      "authors": "Jim Bugwadia, Nirmata",
+      "source": "CNCF Blog",
+      "url": "https://www.cncf.io/blog/2026/11/11/openshell-on-kubernetes-a-guide-for-platform-engineers/",
+      "type": "article",
+      "dateAdded": "2026-11-11",
+      "summary": "A same-day platform guide contrasts OpenShell policy gates with Agent Substrate density scheduling, maps Pod settings OpenShell actually checks, and sketches how the two CNCF sandboxes can complement each other. It is written for operators who must land agent fleets on shared clusters without rewriting every harness.",
+      "tags": [
+        "openshell",
+        "kubernetes",
+        "platform",
+        "policy",
+        "cncf"
+      ]
+    },
     {
       "id": "strands-harness-sdk-2026-11-10",
       "title": "Strands Harness SDK",
@@ -10603,203 +10809,6 @@
         "multi-agent"
       ],
       "usecase": "Use it to wrap an existing OpenAI-compatible client in two lines and enforce tool permissions plus cost tracking.",
-      "returning": false
-    },
-    {
-      "id": "harbor-2026-09-07",
-      "title": "Harbor",
-      "authors": "harbor-framework",
-      "source": "GitHub",
-      "url": "https://github.com/harbor-framework/harbor",
-      "type": "harness",
-      "dateAdded": "2026-09-07",
-      "summary": "Evaluation and optimization framework that runs arbitrary coding agents against Terminal-Bench and other datasets across thousands of sandboxed environments.",
-      "tags": [
-        "eval",
-        "terminal-bench",
-        "rl",
-        "python"
-      ],
-      "usecase": "Use it to benchmark Claude-style or custom agents head-to-head on Terminal-Bench 2.0 with concurrent rollouts.",
-      "returning": false
-    },
-    {
-      "id": "openharness-hkuds-2026-09-07",
-      "title": "OpenHarness (HKUDS)",
-      "authors": "HKUDS",
-      "source": "GitHub",
-      "url": "https://github.com/HKUDS/OpenHarness",
-      "type": "harness",
-      "dateAdded": "2026-09-07",
-      "summary": "Lightweight open agent infrastructure with tool loop, 43+ tools, skills, memory, multi-agent coordination, permissions and a personal ohmo gateway.",
-      "tags": [
-        "python",
-        "skills",
-        "memory",
-        "multi-agent"
-      ],
-      "usecase": "Use it to run a self-hosted personal coding agent over chat channels that forks branches and opens PRs.",
-      "returning": false
-    },
-    {
-      "id": "agent-sandbox-2026-09-07",
-      "title": "Agent-Sandbox",
-      "authors": "agent-sandbox",
-      "source": "GitHub",
-      "url": "https://github.com/agent-sandbox/agent-sandbox",
-      "type": "repo",
-      "dateAdded": "2026-09-07",
-      "summary": "Self-hosted E2B-compatible sandbox platform for untrusted LLM code, browser use, computer use and multi-tenant isolation on Kubernetes.",
-      "tags": [
-        "sandbox",
-        "kubernetes",
-        "e2b",
-        "computer-use"
-      ],
-      "usecase": "Use it to give every agent turn its own isolated container with shell, VNC and MCP lifecycle control.",
-      "returning": false
-    },
-    {
-      "id": "agentic-harness-rust-2026-09-07",
-      "title": "agentic-harness (Rust)",
-      "authors": "codejunkie99",
-      "source": "GitHub",
-      "url": "https://github.com/codejunkie99/agentic-harness",
-      "type": "tool",
-      "dateAdded": "2026-09-07",
-      "summary": "Rust-native agent runtime, SDK and CLI that ships one binary for laptop, CI, remote Linux sandboxes or edge with HTTP session environments.",
-      "tags": [
-        "rust",
-        "cli",
-        "sandbox",
-        "coding"
-      ],
-      "usecase": "Use it to build a coding agent that edits, tests and PRs from a single native binary without a JS runtime.",
-      "returning": false
-    },
-    {
-      "id": "repomaster-2026-09-07",
-      "title": "RepoMaster",
-      "authors": "QuantaAlpha",
-      "source": "GitHub",
-      "url": "https://github.com/QuantaAlpha/RepoMaster",
-      "type": "repo",
-      "dateAdded": "2026-09-07",
-      "summary": "Repo-scoped research harness that builds function and module graphs so agents explore only needed context with lower token use on coding benches.",
-      "tags": [
-        "graph",
-        "python",
-        "coding",
-        "research"
-      ],
-      "usecase": "Use it to drive graph-guided exploration of large monorepos before the agent writes patches.",
-      "returning": false
-    },
-    {
-      "id": "inspect-ai-2026-09-07",
-      "title": "inspect_ai",
-      "authors": "UKGovernmentBEIS",
-      "source": "GitHub",
-      "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
-      "type": "harness",
-      "dateAdded": "2026-09-07",
-      "summary": "Flexible framework for LLM evaluations with agents, scorers, datasets and sandboxed tool use aimed at rigorous agent benchmarking.",
-      "tags": [
-        "eval",
-        "python",
-        "benchmark",
-        "agents"
-      ],
-      "usecase": "Use it to define custom agent eval suites with reproducible scorers and parallel task runners.",
-      "returning": false
-    },
-    {
-      "id": "deerflow-2026-09-07",
-      "title": "DeerFlow",
-      "authors": "ByteDance",
-      "source": "GitHub",
-      "url": "https://github.com/bytedance/deer-flow",
-      "type": "harness",
-      "dateAdded": "2026-09-07",
-      "summary": "Long-horizon SuperAgent harness on LangGraph with sub-agents, sandboxes, memory, skills and message gateway for multi-hour research and coding tasks.",
-      "tags": [
-        "langgraph",
-        "sandbox",
-        "multi-agent",
-        "skills"
-      ],
-      "usecase": "Use it to orchestrate lead-plus-subagent research and code workflows that survive minutes to hours.",
-      "returning": false
-    },
-    {
-      "id": "deepseek-harness-2026-09-07",
-      "title": "DeepSeek Harness",
-      "authors": "DeepSeek AI",
-      "source": "GitHub",
-      "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-07",
-      "summary": "Everything-is-a-plugin agent harness on Cordis where model, tools, loop, sandbox, storage and UI are all swappable plugins under MIT.",
-      "tags": [
-        "plugin",
-        "typescript",
-        "sandbox",
-        "open-source"
-      ],
-      "usecase": "Use it to compose a custom agent loop by mounting only the plugins you need then run the local web UI.",
-      "returning": false
-    },
-    {
-      "id": "swe-bench-2026-09-07",
-      "title": "SWE-bench",
-      "authors": "SWE-bench",
-      "source": "GitHub",
-      "url": "https://github.com/SWE-bench/SWE-bench",
-      "type": "repo",
-      "dateAdded": "2026-09-07",
-      "summary": "Canonical software-engineering benchmark and harness for issue-to-patch agent evaluation across real GitHub repositories.",
-      "tags": [
-        "benchmark",
-        "swe",
-        "python",
-        "eval"
-      ],
-      "usecase": "Use it to measure pass@1 of your coding harness on verified GitHub issues with official Docker runners.",
-      "returning": false
-    },
-    {
-      "id": "agencybench-2026-09-07",
-      "title": "AgencyBench",
-      "authors": "GAIR-NLP",
-      "source": "GitHub",
-      "url": "https://github.com/GAIR-NLP/AgencyBench",
-      "type": "repo",
-      "dateAdded": "2026-09-07",
-      "summary": "Open agent benchmark suite focused on realistic multi-step agency tasks beyond simple coding patches.",
-      "tags": [
-        "benchmark",
-        "agents",
-        "eval"
-      ],
-      "usecase": "Use it to stress-test long-horizon planning and tool use outside SWE-bench style unit tests.",
-      "returning": false
-    },
-    {
-      "id": "terminal-bench-2026-09-07",
-      "title": "Terminal-Bench",
-      "authors": "harbor-framework",
-      "source": "GitHub",
-      "url": "https://github.com/harbor-framework/terminal-bench",
-      "type": "repo",
-      "dateAdded": "2026-09-07",
-      "summary": "Benchmark measuring agents on complicated real terminal workflows with Harbor as the official runner.",
-      "tags": [
-        "terminal",
-        "benchmark",
-        "eval",
-        "shell"
-      ],
-      "usecase": "Use it to score shell-native coding agents on multi-step terminal tasks with concurrent Harbor jobs.",
       "returning": false
     }
   ]

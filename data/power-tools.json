@@ -1,7 +1,180 @@
 {
-  "lastUpdated": "2026-11-10",
-  "count": 556,
+  "lastUpdated": "2026-11-11",
+  "count": 562,
   "tools": [
+    {
+      "slug": "agent_memory_techniques",
+      "title": "Agent Memory Techniques",
+      "authors": "NirDiamant",
+      "source": "GitHub",
+      "url": "https://github.com/NirDiamant/Agent_Memory_Techniques",
+      "type": "repo",
+      "summary": "Thirty runnable Jupyter notebooks covering buffers, vectors, graphs, episodic memory, Mem0/Letta/Zep/Graphiti patterns, and LoCoMo-style evals.",
+      "usecase": "Use it to prototype and compare memory backends side by side before locking one into a production harness.",
+      "tags": [
+        "memory",
+        "notebooks",
+        "eval",
+        "graphiti",
+        "education"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "best-of-agent-harnesses",
+      "title": "best-of-Agent-Harnesses",
+      "authors": "RyanAlberts",
+      "source": "GitHub",
+      "url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses",
+      "type": "repo",
+      "summary": "Weekly rescored ranked list of 180-plus agent harnesses plus templates, playbooks, MCP notes, and filterable capability pages.",
+      "usecase": "Use it to shortlist harnesses by autonomy, recovery, and simplicity before wiring one into your loop.",
+      "tags": [
+        "catalog",
+        "mcp",
+        "harness",
+        "meta"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-11-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hyperagent",
+      "title": "HyperAgent",
+      "authors": "hyperlight-dev",
+      "source": "GitHub",
+      "url": "https://github.com/hyperlight-dev/hyperagent",
+      "type": "tool",
+      "summary": "Code-acting agent runtime that writes JavaScript handlers and runs them inside Hyperlight micro-VMs via the GitHub Copilot SDK with no default FS or net.",
+      "usecase": "Use it to let an agent compute, transform data, or call MCP tools while every JS payload stays inside a sealed micro-VM.",
+      "tags": [
+        "javascript",
+        "copilot-sdk",
+        "sandbox",
+        "mcp",
+        "cli"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hyperlight",
+      "title": "Hyperlight",
+      "authors": "hyperlight-dev / Microsoft origin, CNCF",
+      "source": "GitHub",
+      "url": "https://github.com/hyperlight-dev/hyperlight",
+      "type": "repo",
+      "summary": "Embeddable Rust VMM library for hypervisor-isolated micro-VMs with millisecond boot and microsecond guest calls, no full guest OS required.",
+      "usecase": "Use it to link sandboxed untrusted code execution directly into your agent host process or language runtime.",
+      "tags": [
+        "vmm",
+        "embedded",
+        "rust",
+        "cncf",
+        "isolation"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hyperlight-unikraft",
+      "title": "hyperlight-unikraft",
+      "authors": "hyperlight-dev",
+      "source": "GitHub",
+      "url": "https://github.com/hyperlight-dev/hyperlight-unikraft",
+      "type": "repo",
+      "summary": "Runs ordinary Linux programs (Python, Node, Go, Bash) inside Hyperlight micro-VMs backed by a Unikraft unikernel guest.",
+      "usecase": "Use it to execute agent-generated shell or interpreter steps in hardware-isolated guests restored from warm snapshots.",
+      "tags": [
+        "unikraft",
+        "microvm",
+        "python",
+        "agents",
+        "snapshot"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ai-toolkit",
+      "title": "Memgraph AI Toolkit",
+      "authors": "memgraph",
+      "source": "GitHub",
+      "url": "https://github.com/memgraph/ai-toolkit",
+      "type": "repo",
+      "summary": "Python packages for persistent agent memory, knowledge graphs, GraphRAG, and MCP plus LangChain integrations on Memgraph.",
+      "usecase": "Use it to give coding agents a context graph that stores sessions, tool calls, and skills across tools and restarts.",
+      "tags": [
+        "memory",
+        "graph",
+        "mcp",
+        "graphrag",
+        "python"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openshell-driver-substrate",
+      "title": "openshell-driver-substrate",
+      "authors": "dims",
+      "source": "GitHub",
+      "url": "https://github.com/dims/openshell-driver-substrate",
+      "type": "repo",
+      "summary": "OpenShell ComputeDriver that maps sandbox lifecycle onto Agent Substrate actors with suspend/resume and egress policy.",
+      "usecase": "Use it to run stock OpenShell gateways on Substrate so sandboxes snapshot instead of cold-starting every time.",
+      "tags": [
+        "openshell",
+        "substrate",
+        "driver",
+        "integration"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "trueforge",
+      "title": "TrueForge",
+      "authors": "TrueFoundry",
+      "source": "GitHub",
+      "url": "https://github.com/truefoundry/trueforge",
+      "type": "harness",
+      "summary": "MIT TypeScript agent harness that owns the execution loop, MCP tools, skills, sandbox-as-tool, approvals, and session state with UI plus HTTP SDK.",
+      "usecase": "Use it to stand up a production agent loop on your infra with catalog-driven models and sandboxes provisioned only when code runs.",
+      "tags": [
+        "harness",
+        "mcp",
+        "sandbox",
+        "sdk"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-11-11",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agentic-harness-engineering",
       "title": "Agentic Harness Engineering (AHE)",
@@ -9783,27 +9956,6 @@
       ]
     },
     {
-      "slug": "best-of-agent-harnesses",
-      "title": "best-of-Agent-Harnesses",
-      "authors": "RyanAlberts",
-      "source": "GitHub",
-      "url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses",
-      "type": "repo",
-      "summary": "Weekly-rescored curated list of 100+ harnesses with MCP server, llms.txt and JSON so agents can recommend harnesses by capability.",
-      "usecase": "Use it as a live catalog and MCP endpoint to let your own agent pick the right harness for a task.",
-      "tags": [
-        "catalog",
-        "mcp",
-        "harness",
-        "meta"
-      ],
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-07",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "deepseek-harness",
       "title": "DeepSeek Harness",
       "authors": "DeepSeek AI",
@@ -10426,27 +10578,6 @@
         "harness",
         "research-origin",
         "python"
-      ],
-      "firstSeen": "2026-09-06",
-      "lastSeen": "2026-09-06",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "trueforge",
-      "title": "TrueForge",
-      "authors": "TrueFoundry",
-      "source": "GitHub",
-      "url": "https://github.com/truefoundry/trueforge",
-      "type": "harness",
-      "summary": "Open-source agent harness runtime that handles model calls, MCP tools, skills, sandboxing, approvals, context compaction, and session state with chat UI plus TypeScript SDK.",
-      "usecase": "Use it to deploy cost-controlled multi-step agents locally or hosted while swapping any model provider and MCP servers.",
-      "tags": [
-        "harness",
-        "mcp",
-        "sandbox",
-        "sdk"
       ],
       "firstSeen": "2026-09-06",
       "lastSeen": "2026-09-06",
