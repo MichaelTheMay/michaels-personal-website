@@ -1,7 +1,175 @@
 {
-  "lastUpdated": "2026-11-11",
-  "count": 562,
+  "lastUpdated": "2026-11-12",
+  "count": 568,
   "tools": [
+    {
+      "slug": "agent-harness-lab",
+      "title": "agent-harness-lab",
+      "authors": "mihazs",
+      "source": "GitHub",
+      "url": "https://github.com/mihazs/agent-harness-lab",
+      "type": "repo",
+      "summary": "Evidence-driven lab for diagnosing coding-agent workflows, process mining, and paired evaluation of harness or skill changes.",
+      "usecase": "Use it to stage and A/B test AGENTS.md or skill edits against executable tasks before rolling them out.",
+      "tags": [
+        "eval",
+        "diagnosis",
+        "skills",
+        "harness"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentbox",
+      "title": "agentbox (rlaope)",
+      "authors": "rlaope",
+      "source": "GitHub",
+      "url": "https://github.com/rlaope/agentbox",
+      "type": "harness",
+      "summary": "Server-side framework for running coding agents as a SaaS backend execution engine with session isolation.",
+      "usecase": "Use it to acquire isolated sessions, apply task-specific harnesses, and return artifacts from pi, Codex or Claude.",
+      "tags": [
+        "backend",
+        "session",
+        "isolation",
+        "saas"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cubesandbox",
+      "title": "CubeSandbox",
+      "authors": "Tencent Cloud",
+      "source": "GitHub",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "type": "repo",
+      "summary": "RustVMM and KVM based lightweight sandbox service with sub-60ms starts, E2B compatibility, and extreme density.",
+      "usecase": "Use it to spin hardware-isolated agent sandboxes at high concurrency with under 5 MB overhead.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "e2b",
+        "rust"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-11-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "deer-flow",
+      "title": "DeerFlow",
+      "authors": "ByteDance",
+      "source": "GitHub",
+      "url": "https://github.com/bytedance/deer-flow",
+      "type": "harness",
+      "summary": "Long-horizon super-agent harness built on LangGraph with sub-agents, skills, memory, sandboxes, and a message gateway.",
+      "usecase": "Use it to run multi-hour research-coding-create workflows that spawn sub-agents and produce reports or slides.",
+      "tags": [
+        "langgraph",
+        "sandbox",
+        "multi-agent",
+        "skills"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-11-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "orkas",
+      "title": "Orkas",
+      "authors": "Orkas-AI",
+      "source": "GitHub",
+      "url": "https://github.com/Orkas-AI/Orkas",
+      "type": "tool",
+      "summary": "Local-first MIT desktop app whose Commander decomposes goals and coordinates 16 specialist agents plus external coding CLIs.",
+      "usecase": "Use it to drive research, content, slides, and code deliverables from one chat on your own machine with BYO keys.",
+      "tags": [
+        "desktop",
+        "multi-agent",
+        "local-first",
+        "commander"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "primusclaw",
+      "title": "PrimusClaw",
+      "authors": "AMD-AGI",
+      "source": "GitHub",
+      "url": "https://github.com/AMD-AGI/PrimusClaw",
+      "type": "harness",
+      "summary": "Open managed agent runtime for Kubernetes clusters that keeps session state, a Brain harness, and per-session Hands sandboxes next to GPUs.",
+      "usecase": "Use it to self-host long-horizon agent sessions with GPU access and production-proven density on your own Instinct or generic cluster.",
+      "tags": [
+        "kubernetes",
+        "gpu",
+        "runtime",
+        "sandbox"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "scoutcode",
+      "title": "scoutcode",
+      "authors": "gentraxyz",
+      "source": "GitHub",
+      "url": "https://github.com/gentraxyz/scoutcode",
+      "type": "tool",
+      "summary": "Open-source AI harness and orchestrator with dual memory, dreaming, local model support, and MCP exposure.",
+      "usecase": "Use it to run a local harness that keeps project and user memory, reviews code in a sidebar, and exposes your PC via MCP.",
+      "tags": [
+        "harness",
+        "memory",
+        "local",
+        "mcp"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "yoagent",
+      "title": "yoagent",
+      "authors": "yologdev",
+      "source": "GitHub",
+      "url": "https://github.com/yologdev/yoagent",
+      "type": "repo",
+      "summary": "Rust crate that implements the core agent loop with native support for seven LLM protocols, tools, streaming, extensions, and wasm targets.",
+      "usecase": "Use it to ship a testable native or Cloudflare Worker binary that runs tool-calling agents with fail-closed policies.",
+      "tags": [
+        "rust",
+        "agent-loop",
+        "wasm",
+        "extensions"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent_memory_techniques",
       "title": "Agent Memory Techniques",
@@ -9977,27 +10145,6 @@
       ]
     },
     {
-      "slug": "deer-flow",
-      "title": "DeerFlow",
-      "authors": "ByteDance",
-      "source": "GitHub",
-      "url": "https://github.com/bytedance/deer-flow",
-      "type": "harness",
-      "summary": "Long-horizon SuperAgent harness on LangGraph with sub-agents, sandboxes, memory, skills and message gateway for multi-hour research and coding tasks.",
-      "usecase": "Use it to orchestrate lead-plus-subagent research and code workflows that survive minutes to hours.",
-      "tags": [
-        "langgraph",
-        "sandbox",
-        "multi-agent",
-        "skills"
-      ],
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-07",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "adk-python",
       "title": "Google ADK Python",
       "authors": "Google",
@@ -10700,27 +10847,6 @@
         "go",
         "mcp",
         "lsp"
-      ],
-      "firstSeen": "2026-09-05",
-      "lastSeen": "2026-09-05",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "cubesandbox",
-      "title": "CubeSandbox",
-      "authors": "Tencent Cloud",
-      "source": "GitHub",
-      "url": "https://github.com/TencentCloud/CubeSandbox",
-      "type": "repo",
-      "summary": "RustVMM/KVM microVM sandbox service with sub-60ms boot, hardware isolation, under 5MB overhead, and E2B SDK drop-in compatibility.",
-      "usecase": "Use it to self-host high-density, hardware-isolated code execution backends for agent tool calls.",
-      "tags": [
-        "sandbox",
-        "microvm",
-        "e2b",
-        "rust"
       ],
       "firstSeen": "2026-09-05",
       "lastSeen": "2026-09-05",

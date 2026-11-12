@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-12",
   "issues": [
+    {
+      "date": "2026-11-12",
+      "title": "Density sandboxes and systems-language loops outpace closed IDE harnesses",
+      "blurb": "Today's picks center on cloneable control planes, Rust and Go agent loops, and high-density microVM or Kubernetes sandboxes that power users can wire into their own durable agent runtimes without relying on household coding IDEs."
+    },
     {
       "date": "2026-11-11",
       "title": "MicroVM control planes power users actually clone",
@@ -305,14 +310,200 @@
       "date": "2026-09-08",
       "title": "Pluggable kernels and computer-separated runtimes outrun monolith CLIs",
       "blurb": "Today's picks center on microkernel harnesses, runtime-versus-computer separation, cross-agent control planes, and WASM or local-first sandboxes that power users can clone, wire, and evolve without vendor lock-in."
-    },
-    {
-      "date": "2026-09-07",
-      "title": "Composable harness kernels and parallel sandboxes power users actually own",
-      "blurb": "Today's list favors clone-and-run control planes, governance wrappers, and massively parallel execution substrates. Power users get swappable loops, evidence gates, and eval harnesses they can wire into their own agent fleets without closed IDE lock-in."
     }
   ],
   "items": [
+    {
+      "id": "yoagent-2026-11-12",
+      "title": "yoagent",
+      "authors": "yologdev",
+      "source": "GitHub",
+      "url": "https://github.com/yologdev/yoagent",
+      "type": "repo",
+      "dateAdded": "2026-11-12",
+      "summary": "Rust crate that implements the core agent loop with native support for seven LLM protocols, tools, streaming, extensions, and wasm targets.",
+      "tags": [
+        "rust",
+        "agent-loop",
+        "wasm",
+        "extensions"
+      ],
+      "usecase": "Use it to ship a testable native or Cloudflare Worker binary that runs tool-calling agents with fail-closed policies.",
+      "returning": false
+    },
+    {
+      "id": "orkas-2026-11-12",
+      "title": "Orkas",
+      "authors": "Orkas-AI",
+      "source": "GitHub",
+      "url": "https://github.com/Orkas-AI/Orkas",
+      "type": "tool",
+      "dateAdded": "2026-11-12",
+      "summary": "Local-first MIT desktop app whose Commander decomposes goals and coordinates 16 specialist agents plus external coding CLIs.",
+      "tags": [
+        "desktop",
+        "multi-agent",
+        "local-first",
+        "commander"
+      ],
+      "usecase": "Use it to drive research, content, slides, and code deliverables from one chat on your own machine with BYO keys.",
+      "returning": false
+    },
+    {
+      "id": "agent-harness-lab-2026-11-12",
+      "title": "agent-harness-lab",
+      "authors": "mihazs",
+      "source": "GitHub",
+      "url": "https://github.com/mihazs/agent-harness-lab",
+      "type": "repo",
+      "dateAdded": "2026-11-12",
+      "summary": "Evidence-driven lab for diagnosing coding-agent workflows, process mining, and paired evaluation of harness or skill changes.",
+      "tags": [
+        "eval",
+        "diagnosis",
+        "skills",
+        "harness"
+      ],
+      "usecase": "Use it to stage and A/B test AGENTS.md or skill edits against executable tasks before rolling them out.",
+      "returning": false
+    },
+    {
+      "id": "primusclaw-2026-11-12",
+      "title": "PrimusClaw",
+      "authors": "AMD-AGI",
+      "source": "GitHub",
+      "url": "https://github.com/AMD-AGI/PrimusClaw",
+      "type": "harness",
+      "dateAdded": "2026-11-12",
+      "summary": "Open managed agent runtime for Kubernetes clusters that keeps session state, a Brain harness, and per-session Hands sandboxes next to GPUs.",
+      "tags": [
+        "kubernetes",
+        "gpu",
+        "runtime",
+        "sandbox"
+      ],
+      "usecase": "Use it to self-host long-horizon agent sessions with GPU access and production-proven density on your own Instinct or generic cluster.",
+      "returning": false
+    },
+    {
+      "id": "deerflow-2026-11-12",
+      "title": "DeerFlow",
+      "authors": "bytedance",
+      "source": "GitHub",
+      "url": "https://github.com/bytedance/deer-flow",
+      "type": "harness",
+      "dateAdded": "2026-11-12",
+      "summary": "Long-horizon super-agent harness built on LangGraph with sub-agents, skills, memory, sandboxes, and a message gateway.",
+      "tags": [
+        "langgraph",
+        "subagents",
+        "skills",
+        "long-horizon"
+      ],
+      "usecase": "Use it to run multi-hour research-coding-create workflows that spawn sub-agents and produce reports or slides.",
+      "returning": false
+    },
+    {
+      "id": "agentbox-rlaope-2026-11-12",
+      "title": "agentbox (rlaope)",
+      "authors": "rlaope",
+      "source": "GitHub",
+      "url": "https://github.com/rlaope/agentbox",
+      "type": "harness",
+      "dateAdded": "2026-11-12",
+      "summary": "Server-side framework for running coding agents as a SaaS backend execution engine with session isolation.",
+      "tags": [
+        "backend",
+        "session",
+        "isolation",
+        "saas"
+      ],
+      "usecase": "Use it to acquire isolated sessions, apply task-specific harnesses, and return artifacts from pi, Codex or Claude.",
+      "returning": false
+    },
+    {
+      "id": "cubesandbox-2026-11-12",
+      "title": "CubeSandbox",
+      "authors": "TencentCloud",
+      "source": "GitHub",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "type": "tool",
+      "dateAdded": "2026-11-12",
+      "summary": "RustVMM and KVM based lightweight sandbox service with sub-60ms starts, E2B compatibility, and extreme density.",
+      "tags": [
+        "microvm",
+        "e2b",
+        "density",
+        "rust"
+      ],
+      "usecase": "Use it to spin hardware-isolated agent sandboxes at high concurrency with under 5 MB overhead.",
+      "returning": false
+    },
+    {
+      "id": "scoutcode-2026-11-12",
+      "title": "scoutcode",
+      "authors": "gentraxyz",
+      "source": "GitHub",
+      "url": "https://github.com/gentraxyz/scoutcode",
+      "type": "tool",
+      "dateAdded": "2026-11-12",
+      "summary": "Open-source AI harness and orchestrator with dual memory, dreaming, local model support, and MCP exposure.",
+      "tags": [
+        "harness",
+        "memory",
+        "local",
+        "mcp"
+      ],
+      "usecase": "Use it to run a local harness that keeps project and user memory, reviews code in a sidebar, and exposes your PC via MCP.",
+      "returning": false
+    },
+    {
+      "id": "agent-harness-engineering-separating-model-capabilities-from-enforcement-2026-11-12",
+      "title": "Agent harness engineering: Separating model capabilities from enforcement",
+      "authors": "Red Hat Developer",
+      "source": "Red Hat Developer",
+      "url": "https://developers.redhat.com/articles/2026/11/12/agent-harness-engineering-separating-model-capabilities-enforcement",
+      "type": "article",
+      "dateAdded": "2026-11-12",
+      "summary": "The piece argues that reliability now lives in the harness layer that mediates tools, state, and verification rather than in raw model weights. It contrasts workflow, coding, research, and runtime harness shapes and shows why the security boundary moves once the harness owns execution.",
+      "tags": [
+        "harness-engineering",
+        "security",
+        "architecture"
+      ]
+    },
+    {
+      "id": "amd-opens-the-managed-agent-runtime-behind-its-instinct-gpu-clusters-2026-11-12",
+      "title": "AMD opens the managed agent runtime behind its Instinct GPU clusters",
+      "authors": "delimitter",
+      "source": "DEV Community",
+      "url": "https://dev.to/delimitter/amd-opens-the-managed-agent-runtime-behind-its-own-instinct-gpu-clusters-473",
+      "type": "release",
+      "dateAdded": "2026-11-12",
+      "summary": "AMD open-sourced PrimusClaw, the managed agent runtime that has run production sessions on Instinct clusters since April 2026. The release includes session storage, a Brain harness, per-session sandboxes, and Kubernetes deployment next to GPUs under an MIT license.",
+      "tags": [
+        "release",
+        "gpu",
+        "runtime",
+        "kubernetes"
+      ]
+    },
+    {
+      "id": "self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-2026-11-12",
+      "title": "Self-Healing Coding Agents: How to Build a Production-Grade Harness Loop with MCP",
+      "authors": "Wang Guo",
+      "source": "DEV Community",
+      "url": "https://dev.to/wangguode/self-healing-coding-agents-how-to-build-a-production-grade-harness-loop-with-mcp-48i9",
+      "type": "article",
+      "dateAdded": "2026-11-12",
+      "summary": "The writeup details a five-step self-healing harness that uses isolated worktrees, AST pre-tool guards, ephemeral execution, and MCP to converge on safe code changes. It ships dual Java and Python open-source implementations that hard-block dangerous actions before they reach the shell.",
+      "tags": [
+        "self-healing",
+        "mcp",
+        "guardrails",
+        "production"
+      ]
+    },
     {
       "id": "trueforge-2026-11-11",
       "title": "TrueForge",
@@ -10617,198 +10808,6 @@
         "pipeline"
       ],
       "usecase": "Use it to reduce drift and token spend on multi-step coding tasks under a fixed budget.",
-      "returning": false
-    },
-    {
-      "id": "bmo-agent-2026-09-08",
-      "title": "bmo-agent",
-      "authors": "joelhans",
-      "source": "GitHub",
-      "url": "https://github.com/joelhans/bmo-agent",
-      "type": "tool",
-      "dateAdded": "2026-09-08",
-      "summary": "Self-improving terminal coding agent that writes new tools when it hits limits and maintains reflection-driven skills.",
-      "tags": [
-        "self-improving",
-        "tools",
-        "terminal",
-        "memory"
-      ],
-      "usecase": "Use it to grow a personal toolset automatically across repeated coding sessions.",
-      "returning": false
-    },
-    {
-      "id": "agent-sandbox-scitix-2026-09-08",
-      "title": "Agent Sandbox (scitix)",
-      "authors": "scitix",
-      "source": "GitHub",
-      "url": "https://github.com/scitix/Agent-Sandbox",
-      "type": "repo",
-      "dateAdded": "2026-09-08",
-      "summary": "Fast multi-cloud sandbox engine with pre-warmed pools, Kubernetes CRDs, and E2B-compatible API for agent and RL workloads.",
-      "tags": [
-        "sandbox",
-        "k8s",
-        "rl",
-        "multi-cloud"
-      ],
-      "usecase": "Use it to allocate sub-60ms isolated environments for high-frequency agent loops.",
-      "returning": false
-    },
-    {
-      "id": "agent-sandbox-wasm-2026-09-08",
-      "title": "agent-sandbox (WASM)",
-      "authors": "Parassharmaa",
-      "source": "GitHub",
-      "url": "https://github.com/Parassharmaa/agent-sandbox",
-      "type": "repo",
-      "dateAdded": "2026-09-08",
-      "summary": "Embeddable WASM sandbox with 80+ CLI tools, shell interpreter, JS runtime, and SSRF-safe networking under 13ms startup.",
-      "tags": [
-        "wasm",
-        "sandbox",
-        "cli",
-        "embeddable"
-      ],
-      "usecase": "Use it to execute agent-generated code without Docker on any host that runs WASM.",
-      "returning": false
-    },
-    {
-      "id": "autonomous-harness-2026-09-08",
-      "title": "Autonomous Harness",
-      "authors": "autonomous-ai",
-      "source": "GitHub",
-      "url": "https://github.com/autonomous-ai/autonomous-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-08",
-      "summary": "Hardware-plus-software control plane that routes spoken or typed intent to agents across local and remote machines.",
-      "tags": [
-        "control-plane",
-        "multi-machine",
-        "hardware",
-        "cli"
-      ],
-      "usecase": "Use it to drive multiple coding agents from one device as a left-hand control surface.",
-      "returning": false
-    },
-    {
-      "id": "harness-101-2026-09-08",
-      "title": "Harness 101",
-      "authors": "adamaoc",
-      "source": "GitHub",
-      "url": "https://github.com/adamaoc/harness-101",
-      "type": "repo",
-      "dateAdded": "2026-09-08",
-      "summary": "Minimal TypeScript coding harness plus line-by-line tutorial explaining every piece of a working agent loop.",
-      "tags": [
-        "tutorial",
-        "minimal",
-        "typescript",
-        "learning"
-      ],
-      "usecase": "Use it to learn and fork a readable baseline harness before adding production features.",
-      "returning": false
-    },
-    {
-      "id": "show-hn-bestie-a-coding-agent-that-respects-you-2026-09-08",
-      "title": "Show HN: Bestie, a coding agent that respects you",
-      "authors": "jolexxa",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49612123",
-      "type": "release",
-      "dateAdded": "2026-09-08",
-      "summary": "Bestie ships as a native terminal harness with an inspector pane that surfaces every tool call, background job, and shell process. The author emphasizes restrictive sandboxing and visibility over black-box autonomy.",
-      "tags": [
-        "show-hn",
-        "terminal",
-        "visibility"
-      ]
-    },
-    {
-      "id": "harnesskit-v1-10-1-release-notes-2026-09-08",
-      "title": "HarnessKit v1.10.1 release notes",
-      "authors": "RealZST",
-      "source": "GitHub",
-      "url": "https://github.com/RealZST/HarnessKit/releases/latest",
-      "type": "release",
-      "dateAdded": "2026-09-08",
-      "summary": "The release keeps MCP secrets intact across disable/enable cycles and adds global hook install support for Kiro. It continues the cross-agent extension manager path for skills, plugins, and configs.",
-      "tags": [
-        "release",
-        "mcp",
-        "multi-agent"
-      ]
-    },
-    {
-      "id": "voltagent-2026-09-07",
-      "title": "VoltAgent",
-      "authors": "VoltAgent",
-      "source": "GitHub",
-      "url": "https://github.com/VoltAgent/voltagent",
-      "type": "harness",
-      "dateAdded": "2026-09-07",
-      "summary": "Open-source TypeScript agent engineering platform with core runtime, workflows, supervisors, MCP tools, memory adapters, guardrails, and a paired observability console.",
-      "tags": [
-        "typescript",
-        "multi-agent",
-        "mcp",
-        "observability"
-      ],
-      "usecase": "Use it to spin up typed multi-agent teams with durable memory and production evals from a single create-voltagent-app scaffold.",
-      "returning": false
-    },
-    {
-      "id": "google-adk-python-2026-09-07",
-      "title": "Google ADK Python",
-      "authors": "Google",
-      "source": "GitHub",
-      "url": "https://github.com/google/adk-python",
-      "type": "tool",
-      "dateAdded": "2026-09-07",
-      "summary": "Code-first Agent Development Kit with graph workflow runtime, task delegation, HITL tool confirmation, multi-agent hierarchies, and deploy paths to Cloud Run or Vertex.",
-      "tags": [
-        "python",
-        "workflow",
-        "multi-agent",
-        "eval"
-      ],
-      "usecase": "Use it to define deterministic agent graphs and eval sets in pure Python then ship them to any model backend.",
-      "returning": false
-    },
-    {
-      "id": "swe-rex-2026-09-07",
-      "title": "SWE-ReX",
-      "authors": "SWE-agent team",
-      "source": "GitHub",
-      "url": "https://github.com/SWE-agent/SWE-ReX",
-      "type": "repo",
-      "dateAdded": "2026-09-07",
-      "summary": "Sandboxed remote execution layer for AI agents that keeps the same API across local shells, Docker, Modal, Fargate and parallel sessions.",
-      "tags": [
-        "sandbox",
-        "parallel",
-        "swe-bench",
-        "python"
-      ],
-      "usecase": "Use it to run hundreds of coding-agent trajectories in parallel without rewriting agent logic for each backend.",
-      "returning": false
-    },
-    {
-      "id": "autoharness-2026-09-07",
-      "title": "AutoHarness",
-      "authors": "aiming-lab",
-      "source": "GitHub",
-      "url": "https://github.com/aiming-lab/AutoHarness",
-      "type": "harness",
-      "dateAdded": "2026-09-07",
-      "summary": "Lightweight governance wrapper that turns any LLM client into a governed agent via a 6-to-14 step pipeline, YAML constitutions, risk patterns and audit logs.",
-      "tags": [
-        "governance",
-        "python",
-        "safety",
-        "multi-agent"
-      ],
-      "usecase": "Use it to wrap an existing OpenAI-compatible client in two lines and enforce tool permissions plus cost tracking.",
       "returning": false
     }
   ]
