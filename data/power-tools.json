@@ -1,7 +1,175 @@
 {
-  "lastUpdated": "2026-11-12",
-  "count": 568,
+  "lastUpdated": "2026-11-13",
+  "count": 576,
   "tools": [
+    {
+      "slug": "acontext",
+      "title": "Acontext",
+      "authors": "memodb-io",
+      "source": "GitHub",
+      "url": "https://github.com/memodb-io/Acontext",
+      "type": "tool",
+      "summary": "Open-source skill memory layer that automatically turns agent run learnings into editable shareable skill files instead of opaque vectors.",
+      "usecase": "Use it to capture what worked, turn it into inspectable skills, and reuse them across agents and frameworks.",
+      "tags": [
+        "skills",
+        "memory",
+        "self-learning",
+        "files"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "celesto",
+      "title": "Celesto",
+      "authors": "CelestoAI",
+      "source": "GitHub",
+      "url": "https://github.com/CelestoAI/celesto",
+      "type": "tool",
+      "summary": "Secure persistent computers for agents with ~500ms microVM starts, local or cloud providers, browser/desktop runtimes, snapshots, and network policy.",
+      "usecase": "Use it to give coding or computer-use agents disposable full Linux desktops that keep state across sessions.",
+      "tags": [
+        "sandbox",
+        "computer-use",
+        "persistent",
+        "microvm"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "brig-sh",
+      "title": "hull + hvi (Brig stack)",
+      "authors": "brig-sh",
+      "source": "GitHub",
+      "url": "https://github.com/brig-sh",
+      "type": "repo",
+      "summary": "Open microVM runtime components (hull on macOS, hvi-vmm) that power Brig and boot OCI images as real VMs under Hypervisor.framework or KVM.",
+      "usecase": "Use it to embed or extend the same open microVMM stack that isolates coding agents on Apple Silicon and Linux.",
+      "tags": [
+        "microvm",
+        "VMM",
+        "open-source",
+        "runtime"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "memanto",
+      "title": "Memanto",
+      "authors": "moorcheh-ai",
+      "source": "GitHub",
+      "url": "https://github.com/moorcheh-ai/memanto",
+      "type": "tool",
+      "summary": "Memory agent that sits beside other agents, settles contradictions, retires stale facts, and briefs fleets with zero LLM tokens on write.",
+      "usecase": "Use it to maintain a living shared memory that every agent can recall instantly without extraction cost.",
+      "tags": [
+        "memory",
+        "multi-agent",
+        "local",
+        "zero-token-write"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "memsearch",
+      "title": "memsearch",
+      "authors": "zilliztech",
+      "source": "GitHub",
+      "url": "https://github.com/zilliztech/memsearch",
+      "type": "tool",
+      "summary": "Persistent unified memory layer backed by Markdown and Milvus that captures and recalls across multiple coding harnesses with skill-based interfaces.",
+      "usecase": "Use it to give every agent the same searchable long-term memory so sessions in one harness feed the next.",
+      "tags": [
+        "memory",
+        "Milvus",
+        "cross-harness",
+        "skills"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "open-muse",
+      "title": "OpenMuse (via Celesto)",
+      "authors": "CelestoAI",
+      "source": "GitHub",
+      "url": "https://github.com/CelestoAI/celesto/tree/main/open-muse",
+      "type": "repo",
+      "summary": "Open-source computer coworker built on Celesto that browses in disposable Linux desktops with human approval for clicks and form changes.",
+      "usecase": "Use it to run a watchable browser agent that stays inside a sealed desktop while you steer or take over.",
+      "tags": [
+        "computer-use",
+        "browser",
+        "desktop",
+        "sandbox"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "orca-agent-engine",
+      "title": "Orca Agent Engine",
+      "authors": "orca-ae",
+      "source": "GitHub",
+      "url": "https://github.com/orca-ae/orca-agent-engine",
+      "type": "harness",
+      "summary": "Self-hosted managed-agents compatible runtime with registry, harness-server, pluggable sandboxes, and AI gateway that injects vault credentials outside the guest.",
+      "usecase": "Use it to run Anthropic-style managed agent sessions on your own infra with egress mediation and session streaming.",
+      "tags": [
+        "managed-agents",
+        "control-plane",
+        "sandbox",
+        "gateway"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbox-check",
+      "title": "sandbox-check",
+      "authors": "humanethq",
+      "source": "GitHub",
+      "url": "https://github.com/humanethq/sandbox-check",
+      "type": "tool",
+      "summary": "Zero-dependency Go CLI that audits isolation from inside containers, pods, or microVMs for IMDS leaks, proxy bypass, host ports, caps, and env secrets.",
+      "usecase": "Use it to verify that an agent sandbox actually blocks cloud metadata, SSRF, and secret exfil before you trust it.",
+      "tags": [
+        "security",
+        "audit",
+        "sandbox",
+        "CLI"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-harness-lab",
       "title": "agent-harness-lab",

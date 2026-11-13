@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-12",
+  "lastUpdated": "2026-11-13",
   "issues": [
+    {
+      "date": "2026-11-13",
+      "title": "MicroVM isolation layers and control planes that put power users in charge of the agent loop",
+      "blurb": "Today's picks center on clone-and-run sandboxes, memory substrates, and durable control planes that let you wire isolation, credentials, and long-horizon state under any model without handing the runtime to a closed IDE. Power users get hardware boundaries, snapshot forks, and harness-agnostic orchestration they can actually own."
+    },
     {
       "date": "2026-11-12",
       "title": "Density sandboxes and systems-language loops outpace closed IDE harnesses",
@@ -313,6 +318,182 @@
     }
   ],
   "items": [
+    {
+      "id": "celesto-2026-11-13",
+      "title": "Celesto",
+      "authors": "CelestoAI",
+      "source": "GitHub",
+      "url": "https://github.com/CelestoAI/celesto",
+      "type": "tool",
+      "dateAdded": "2026-11-13",
+      "summary": "Secure persistent computers for agents with ~500ms microVM starts, local or cloud providers, browser/desktop runtimes, snapshots, and network policy.",
+      "tags": [
+        "sandbox",
+        "computer-use",
+        "persistent",
+        "microvm"
+      ],
+      "usecase": "Use it to give coding or computer-use agents disposable full Linux desktops that keep state across sessions.",
+      "returning": false
+    },
+    {
+      "id": "memsearch-2026-11-13",
+      "title": "memsearch",
+      "authors": "zilliztech",
+      "source": "GitHub",
+      "url": "https://github.com/zilliztech/memsearch",
+      "type": "tool",
+      "dateAdded": "2026-11-13",
+      "summary": "Persistent unified memory layer backed by Markdown and Milvus that captures and recalls across multiple coding harnesses with skill-based interfaces.",
+      "tags": [
+        "memory",
+        "Milvus",
+        "cross-harness",
+        "skills"
+      ],
+      "usecase": "Use it to give every agent the same searchable long-term memory so sessions in one harness feed the next.",
+      "returning": false
+    },
+    {
+      "id": "memanto-2026-11-13",
+      "title": "Memanto",
+      "authors": "moorcheh-ai",
+      "source": "GitHub",
+      "url": "https://github.com/moorcheh-ai/memanto",
+      "type": "tool",
+      "dateAdded": "2026-11-13",
+      "summary": "Memory agent that sits beside other agents, settles contradictions, retires stale facts, and briefs fleets with zero LLM tokens on write.",
+      "tags": [
+        "memory",
+        "multi-agent",
+        "local",
+        "zero-token-write"
+      ],
+      "usecase": "Use it to maintain a living shared memory that every agent can recall instantly without extraction cost.",
+      "returning": false
+    },
+    {
+      "id": "orca-agent-engine-2026-11-13",
+      "title": "Orca Agent Engine",
+      "authors": "orca-ae",
+      "source": "GitHub",
+      "url": "https://github.com/orca-ae/orca-agent-engine",
+      "type": "harness",
+      "dateAdded": "2026-11-13",
+      "summary": "Self-hosted managed-agents compatible runtime with registry, harness-server, pluggable sandboxes, and AI gateway that injects vault credentials outside the guest.",
+      "tags": [
+        "managed-agents",
+        "control-plane",
+        "sandbox",
+        "gateway"
+      ],
+      "usecase": "Use it to run Anthropic-style managed agent sessions on your own infra with egress mediation and session streaming.",
+      "returning": false
+    },
+    {
+      "id": "acontext-2026-11-13",
+      "title": "Acontext",
+      "authors": "memodb-io",
+      "source": "GitHub",
+      "url": "https://github.com/memodb-io/Acontext",
+      "type": "tool",
+      "dateAdded": "2026-11-13",
+      "summary": "Open-source skill memory layer that automatically turns agent run learnings into editable shareable skill files instead of opaque vectors.",
+      "tags": [
+        "skills",
+        "memory",
+        "self-learning",
+        "files"
+      ],
+      "usecase": "Use it to capture what worked, turn it into inspectable skills, and reuse them across agents and frameworks.",
+      "returning": false
+    },
+    {
+      "id": "openmuse-via-celesto-2026-11-13",
+      "title": "OpenMuse (via Celesto)",
+      "authors": "CelestoAI",
+      "source": "GitHub",
+      "url": "https://github.com/CelestoAI/celesto/tree/main/open-muse",
+      "type": "repo",
+      "dateAdded": "2026-11-13",
+      "summary": "Open-source computer coworker built on Celesto that browses in disposable Linux desktops with human approval for clicks and form changes.",
+      "tags": [
+        "computer-use",
+        "browser",
+        "desktop",
+        "sandbox"
+      ],
+      "usecase": "Use it to run a watchable browser agent that stays inside a sealed desktop while you steer or take over.",
+      "returning": false
+    },
+    {
+      "id": "hull-hvi-brig-stack-2026-11-13",
+      "title": "hull + hvi (Brig stack)",
+      "authors": "brig-sh",
+      "source": "GitHub",
+      "url": "https://github.com/brig-sh",
+      "type": "repo",
+      "dateAdded": "2026-11-13",
+      "summary": "Open microVM runtime components (hull on macOS, hvi-vmm) that power Brig and boot OCI images as real VMs under Hypervisor.framework or KVM.",
+      "tags": [
+        "microvm",
+        "VMM",
+        "open-source",
+        "runtime"
+      ],
+      "usecase": "Use it to embed or extend the same open microVMM stack that isolates coding agents on Apple Silicon and Linux.",
+      "returning": false
+    },
+    {
+      "id": "sandbox-check-2026-11-13",
+      "title": "sandbox-check",
+      "authors": "humanethq",
+      "source": "GitHub",
+      "url": "https://github.com/humanethq/sandbox-check",
+      "type": "tool",
+      "dateAdded": "2026-11-13",
+      "summary": "Zero-dependency Go CLI that audits isolation from inside containers, pods, or microVMs for IMDS leaks, proxy bypass, host ports, caps, and env secrets.",
+      "tags": [
+        "security",
+        "audit",
+        "sandbox",
+        "CLI"
+      ],
+      "usecase": "Use it to verify that an agent sandbox actually blocks cloud metadata, SSRF, and secret exfil before you trust it.",
+      "returning": false
+    },
+    {
+      "id": "firecracker-1-18-adds-nitro-sandboxes-support-2026-11-13",
+      "title": "Firecracker 1.18 adds Nitro Sandboxes support",
+      "authors": "Amazon Web Services",
+      "source": "GitHub Releases",
+      "url": "https://github.com/firecracker-microvm/firecracker/releases",
+      "type": "release",
+      "dateAdded": "2026-11-13",
+      "summary": "Firecracker v1.18.0 introduces the ability to launch and manage Nitro Sandboxes as an alternative to KVM, driving the Nitro Enclaves driver while keeping the existing API, jailer, and virtio model. The release also tightens snapshot and metrics paths used by many agent microVM stacks.",
+      "tags": [
+        "Firecracker",
+        "Nitro",
+        "microvm",
+        "release"
+      ]
+    },
+    {
+      "id": "github-agentic-workflows-reach-general-availability-with-isolation-and-budget-co-2026-11-13",
+      "title": "GitHub Agentic Workflows reach general availability with isolation and budget controls",
+      "authors": "Mark Silvester",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/",
+      "type": "article",
+      "dateAdded": "2026-11-13",
+      "summary": "GitHub made Agentic Workflows GA so coding agents run inside Actions with read-only starts, separate write jobs, sandbox firewalls, and threat-detection scans. Defaults cap spend at 1,000 AI Credits per run and add ARC/DinD support for self-hosted Kubernetes runners while keeping least-privilege boundaries.",
+      "tags": [
+        "GitHub",
+        "Actions",
+        "agentic",
+        "isolation"
+      ]
+    },
     {
       "id": "yoagent-2026-11-12",
       "title": "yoagent",
@@ -10628,186 +10809,6 @@
         "security"
       ],
       "usecase": "Use it to give agents unix-tool access across heterogeneous data sources without N SDKs.",
-      "returning": false
-    },
-    {
-      "id": "h5i-2026-09-08",
-      "title": "h5i",
-      "authors": "h5i-dev",
-      "source": "GitHub",
-      "url": "https://github.com/h5i-dev/h5i",
-      "type": "tool",
-      "dateAdded": "2026-09-08",
-      "summary": "Pure-Rust security-first headless browser and multi-tier sandbox (process to microVM) built for agent automation and red-teaming.",
-      "tags": [
-        "browser",
-        "sandbox",
-        "rust",
-        "security"
-      ],
-      "usecase": "Use it to contain agent web and workspace actions with auditable network policies.",
-      "returning": false
-    },
-    {
-      "id": "opendray-2026-09-08",
-      "title": "Opendray",
-      "authors": "Opendray",
-      "source": "GitHub",
-      "url": "https://github.com/Opendray/opendray",
-      "type": "harness",
-      "dateAdded": "2026-09-08",
-      "summary": "Self-hosted gateway that keeps coding-agent sessions alive on your server and drives them from web, mobile, or chat channels with shared memory.",
-      "tags": [
-        "gateway",
-        "self-hosted",
-        "multi-channel",
-        "memory"
-      ],
-      "usecase": "Use it to reattach to long-running agent sessions from any device without SSH fragility.",
-      "returning": false
-    },
-    {
-      "id": "tlbx-2026-09-08",
-      "title": "tlbx",
-      "authors": "tlbx-ai",
-      "source": "GitHub",
-      "url": "https://github.com/tlbx-ai/tlbx",
-      "type": "tool",
-      "dateAdded": "2026-09-08",
-      "summary": "Self-hosted terminal and agent-controller multiplexer that renders persistent shells and coding-agent UIs in any browser.",
-      "tags": [
-        "multiplexer",
-        "browser",
-        "remote",
-        "agents"
-      ],
-      "usecase": "Use it to continue agent work from phone or tablet while the host stays awake.",
-      "returning": false
-    },
-    {
-      "id": "agend-terminal-2026-09-08",
-      "title": "AgEnD Terminal",
-      "authors": "suzuke",
-      "source": "GitHub",
-      "url": "https://github.com/suzuke/agend-terminal",
-      "type": "harness",
-      "dateAdded": "2026-09-08",
-      "summary": "Rust PTY fleet manager that declares multi-agent teams in YAML, launches backends, manages worktrees, and wires MCP between them.",
-      "tags": [
-        "fleet",
-        "pty",
-        "rust",
-        "worktrees"
-      ],
-      "usecase": "Use it to run a declared fleet of coding agents with auto-respawn and branch isolation.",
-      "returning": false
-    },
-    {
-      "id": "happy-agent-2026-09-08",
-      "title": "Happy Agent",
-      "authors": "slopus",
-      "source": "GitHub",
-      "url": "https://github.com/slopus/happy-agent",
-      "type": "harness",
-      "dateAdded": "2026-09-08",
-      "summary": "Universal local harness that reuses your existing provider subscriptions with model-native prompts, tools, durable sessions, and subagents.",
-      "tags": [
-        "multi-provider",
-        "subscriptions",
-        "tui",
-        "sessions"
-      ],
-      "usecase": "Use it to run one consistent loop across multiple model subscriptions without new accounts.",
-      "returning": false
-    },
-    {
-      "id": "adk-rust-2026-09-08",
-      "title": "ADK-Rust",
-      "authors": "zavora-ai",
-      "source": "GitHub",
-      "url": "https://github.com/zavora-ai/adk-rust",
-      "type": "repo",
-      "dateAdded": "2026-09-08",
-      "summary": "Production Rust agent development kit with modular crates for models, tools, memory, eval, guardrails, sandbox, and realtime.",
-      "tags": [
-        "rust",
-        "sdk",
-        "modular",
-        "eval"
-      ],
-      "usecase": "Use it to build type-safe low-overhead agents and serve them over HTTP or voice.",
-      "returning": false
-    },
-    {
-      "id": "grok-build-2026-09-08",
-      "title": "Grok Build",
-      "authors": "xai-org",
-      "source": "GitHub",
-      "url": "https://github.com/xai-org/grok-build",
-      "type": "tool",
-      "dateAdded": "2026-09-08",
-      "summary": "Rust full-screen TUI coding agent with headless CI mode, ACP embedding, MCP, sandboxing, and plugin hooks.",
-      "tags": [
-        "rust",
-        "tui",
-        "acp",
-        "cli"
-      ],
-      "usecase": "Use it to run interactive or scripted coding sessions with ACP editor integration.",
-      "returning": false
-    },
-    {
-      "id": "bestie-2026-09-08",
-      "title": "Bestie",
-      "authors": "jolexxa",
-      "source": "GitHub",
-      "url": "https://github.com/jolexxa/bestie",
-      "type": "tool",
-      "dateAdded": "2026-09-08",
-      "summary": "Native terminal coding-agent harness focused on full visibility via an inspector pane for every tool call and shell process.",
-      "tags": [
-        "terminal",
-        "inspector",
-        "sandbox",
-        "visibility"
-      ],
-      "usecase": "Use it when you want sandboxing and compaction with zero hidden agent actions.",
-      "returning": false
-    },
-    {
-      "id": "useagent-2026-09-08",
-      "title": "useAgent",
-      "authors": "useagenthq",
-      "source": "GitHub",
-      "url": "https://github.com/useagenthq/useagent",
-      "type": "harness",
-      "dateAdded": "2026-09-08",
-      "summary": "Open-source coworker platform that gives existing coding agents their own cloud computer and returns finished artifacts.",
-      "tags": [
-        "coworker",
-        "cloud-computer",
-        "multi-agent",
-        "self-hosted"
-      ],
-      "usecase": "Use it to turn subscription agents into durable team coworkers that hand back PRs and sites.",
-      "returning": false
-    },
-    {
-      "id": "bello-2026-09-08",
-      "title": "Bello",
-      "authors": "Makson179",
-      "source": "GitHub",
-      "url": "https://github.com/Makson179/Bello",
-      "type": "harness",
-      "dateAdded": "2026-09-08",
-      "summary": "Supervised pipeline that keeps long-horizon coding runs on track with independent review, guards, and cost-aware model assignment.",
-      "tags": [
-        "supervision",
-        "review",
-        "cost",
-        "pipeline"
-      ],
-      "usecase": "Use it to reduce drift and token spend on multi-step coding tasks under a fixed budget.",
       "returning": false
     }
   ]
