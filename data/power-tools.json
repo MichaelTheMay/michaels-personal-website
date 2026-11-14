@@ -1,7 +1,112 @@
 {
-  "lastUpdated": "2026-11-13",
-  "count": 576,
+  "lastUpdated": "2026-11-14",
+  "count": 579,
   "tools": [
+    {
+      "slug": "agent-sandbox",
+      "title": "Agent Sandbox (scitix)",
+      "authors": "scitix",
+      "source": "GitHub",
+      "url": "https://github.com/scitix/Agent-Sandbox",
+      "type": "repo",
+      "summary": "Kubernetes multi-cloud sandbox engine that serves the E2B API via warm pools and in-place image swaps for RL, evals, and coding agents.",
+      "usecase": "Use it to provision thousands of isolated environments per hour for SWE-bench style loops without cold-start scheduling tax.",
+      "tags": [
+        "sandbox",
+        "k8s",
+        "rl",
+        "multi-cloud"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-11-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "bot-bottle",
+      "title": "bot-bottle",
+      "authors": "diderisoft",
+      "source": "GitHub",
+      "url": "https://github.com/diderisoft/bot-bottle",
+      "type": "harness",
+      "summary": "Security-first local orchestrator that runs coding agents in microVMs or containers behind a gateway that holds credentials and enforces markdown bottle policies with DLP.",
+      "usecase": "Use it to let unsupervised agents work on your laptop while secrets stay outside the guest and every outbound request is scanned and allowlisted.",
+      "tags": [
+        "security",
+        "dlp",
+        "microvm",
+        "gateway"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "certified-memory-governance-layer",
+      "title": "CMGL",
+      "authors": "kadubon",
+      "source": "GitHub",
+      "url": "https://github.com/kadubon/certified-memory-governance-layer",
+      "type": "repo",
+      "summary": "Certified memory governance layer that sits between agent runtimes and backends like Mem0 or Graphiti with receipts, ledgers and authority gates.",
+      "usecase": "Use it to admit or block memory writes and retrieval with typed evidence before long-running agents pollute their own context.",
+      "tags": [
+        "memory",
+        "governance",
+        "ledger",
+        "control"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "coderunner",
+      "title": "CodeRunner",
+      "authors": "instavm",
+      "source": "GitHub",
+      "url": "https://github.com/instavm/coderunner",
+      "type": "tool",
+      "summary": "Local Apple Silicon sandbox for AI agents with explicit host mounts, network controls, MCP server and skills for common agent tasks.",
+      "usecase": "Use it to run agent-generated code and Jupyter-style tools in an isolated environment you configure on macOS.",
+      "tags": [
+        "local",
+        "macos",
+        "mcp",
+        "sandbox"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "pydantic-ai",
+      "title": "Pydantic AI",
+      "authors": "pydantic",
+      "source": "GitHub",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "type": "tool",
+      "summary": "Composable capability library on Pydantic AI that snaps coding tools, sandboxes, memory, planning, sub-agents, guardrails and durable execution onto typed agents.",
+      "usecase": "Use it to assemble a production coding or research agent from modular capabilities that survive restarts across Temporal, DBOS or local step persistence.",
+      "tags": [
+        "typed",
+        "python",
+        "mcp",
+        "agents"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-11-14",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "acontext",
       "title": "Acontext",
@@ -9790,27 +9895,6 @@
     },
     {
       "slug": "agent-sandbox",
-      "title": "Agent Sandbox (scitix)",
-      "authors": "scitix",
-      "source": "GitHub",
-      "url": "https://github.com/scitix/Agent-Sandbox",
-      "type": "repo",
-      "summary": "Fast multi-cloud sandbox engine with pre-warmed pools, Kubernetes CRDs, and E2B-compatible API for agent and RL workloads.",
-      "usecase": "Use it to allocate sub-60ms isolated environments for high-frequency agent loops.",
-      "tags": [
-        "sandbox",
-        "k8s",
-        "rl",
-        "multi-cloud"
-      ],
-      "firstSeen": "2026-09-08",
-      "lastSeen": "2026-09-08",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "agent-sandbox",
       "title": "agent-sandbox (WASM)",
       "authors": "Parassharmaa",
       "source": "GitHub",
@@ -11489,27 +11573,6 @@
         "workforce",
         "python",
         "mcp"
-      ],
-      "firstSeen": "2026-09-04",
-      "lastSeen": "2026-09-04",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "pydantic-ai",
-      "title": "Pydantic AI",
-      "authors": "pydantic",
-      "source": "GitHub",
-      "url": "https://github.com/pydantic/pydantic-ai",
-      "type": "tool",
-      "summary": "Typed Python AI SDK and agent framework with structured outputs, multi-model support, and MCP integration.",
-      "usecase": "Use it to build type-safe agent loops with validated I/O and Logfire observability for production services.",
-      "tags": [
-        "typed",
-        "python",
-        "mcp",
-        "agents"
       ],
       "firstSeen": "2026-09-04",
       "lastSeen": "2026-09-04",

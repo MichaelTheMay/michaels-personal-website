@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-13",
+  "lastUpdated": "2026-11-14",
   "issues": [
+    {
+      "date": "2026-11-14",
+      "title": "Hardware-isolated sandboxes meet self-improving control planes",
+      "blurb": "Power users are cloning microVM runtimes for real kernel isolation and stacking durable learning layers on top of existing harnesses. The leverage sits in clone-and-run sandboxes, credential brokers, and eval-ready control planes rather than another chat IDE."
+    },
     {
       "date": "2026-11-13",
       "title": "MicroVM isolation layers and control planes that put power users in charge of the agent loop",
@@ -310,14 +315,144 @@
       "date": "2026-09-09",
       "title": "Composable foundries and live self-evolving harnesses",
       "blurb": "Power users are wiring foundries that compose and evolve the harness itself, live self-modifiers that rewrite tools mid-task, and verification gates or sandboxes that sit under any agent loop. The through-line is ownership of the runtime layer rather than another terminal chatbot."
-    },
-    {
-      "date": "2026-09-08",
-      "title": "Pluggable kernels and computer-separated runtimes outrun monolith CLIs",
-      "blurb": "Today's picks center on microkernel harnesses, runtime-versus-computer separation, cross-agent control planes, and WASM or local-first sandboxes that power users can clone, wire, and evolve without vendor lock-in."
     }
   ],
   "items": [
+    {
+      "id": "bot-bottle-2026-11-14",
+      "title": "bot-bottle",
+      "authors": "diderisoft",
+      "source": "GitHub",
+      "url": "https://github.com/diderisoft/bot-bottle",
+      "type": "harness",
+      "dateAdded": "2026-11-14",
+      "summary": "Security-first local orchestrator that runs coding agents in microVMs or containers behind a gateway that holds credentials and enforces markdown bottle policies with DLP.",
+      "tags": [
+        "security",
+        "dlp",
+        "microvm",
+        "gateway"
+      ],
+      "usecase": "Use it to let unsupervised agents work on your laptop while secrets stay outside the guest and every outbound request is scanned and allowlisted.",
+      "returning": false
+    },
+    {
+      "id": "scitix-agent-sandbox-2026-11-14",
+      "title": "scitix Agent-Sandbox",
+      "authors": "scitix",
+      "source": "GitHub",
+      "url": "https://github.com/scitix/Agent-Sandbox",
+      "type": "harness",
+      "dateAdded": "2026-11-14",
+      "summary": "Kubernetes multi-cloud sandbox engine that serves the E2B API via warm pools and in-place image swaps for RL, evals, and coding agents.",
+      "tags": [
+        "kubernetes",
+        "e2b",
+        "rl",
+        "warm-pool"
+      ],
+      "usecase": "Use it to provision thousands of isolated environments per hour for SWE-bench style loops without cold-start scheduling tax.",
+      "returning": false
+    },
+    {
+      "id": "pydantic-ai-harness-2026-11-14",
+      "title": "Pydantic AI Harness",
+      "authors": "pydantic",
+      "source": "GitHub",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "type": "harness",
+      "dateAdded": "2026-11-14",
+      "summary": "Composable capability library on Pydantic AI that snaps coding tools, sandboxes, memory, planning, sub-agents, guardrails and durable execution onto typed agents.",
+      "tags": [
+        "python",
+        "capabilities",
+        "durable",
+        "coder"
+      ],
+      "usecase": "Use it to assemble a production coding or research agent from modular capabilities that survive restarts across Temporal, DBOS or local step persistence.",
+      "returning": false
+    },
+    {
+      "id": "coderunner-2026-11-14",
+      "title": "CodeRunner",
+      "authors": "instavm",
+      "source": "GitHub",
+      "url": "https://github.com/instavm/coderunner",
+      "type": "tool",
+      "dateAdded": "2026-11-14",
+      "summary": "Local Apple Silicon sandbox for AI agents with explicit host mounts, network controls, MCP server and skills for common agent tasks.",
+      "tags": [
+        "local",
+        "macos",
+        "mcp",
+        "sandbox"
+      ],
+      "usecase": "Use it to run agent-generated code and Jupyter-style tools in an isolated environment you configure on macOS.",
+      "returning": false
+    },
+    {
+      "id": "cmgl-2026-11-14",
+      "title": "CMGL",
+      "authors": "kadubon",
+      "source": "GitHub",
+      "url": "https://github.com/kadubon/certified-memory-governance-layer",
+      "type": "repo",
+      "dateAdded": "2026-11-14",
+      "summary": "Certified memory governance layer that sits between agent runtimes and backends like Mem0 or Graphiti with receipts, ledgers and authority gates.",
+      "tags": [
+        "memory",
+        "governance",
+        "ledger",
+        "control"
+      ],
+      "usecase": "Use it to admit or block memory writes and retrieval with typed evidence before long-running agents pollute their own context.",
+      "returning": false
+    },
+    {
+      "id": "introducing-agentrun-run-smarter-agents-use-fewer-tokens-2026-11-14",
+      "title": "Introducing AgentRun: Run smarter agents. Use fewer tokens.",
+      "authors": "Parcha Labs",
+      "source": "AgentRun Blog",
+      "url": "https://agentrun.ai/blog/introducing-agentrun-run-smarter-agents-use-fewer-tokens",
+      "type": "release",
+      "dateAdded": "2026-11-14",
+      "summary": "Parcha open-sourced AgentRun as an alpha that layers self-improvement, durable runs, mission control and on-demand computers on top of pi, Claude Code, Codex or OpenCode. Templates ship for code review, KYB and competitor monitoring so teams can start from working jobs instead of empty loops.",
+      "tags": [
+        "release",
+        "control-plane",
+        "open-source"
+      ]
+    },
+    {
+      "id": "the-best-python-agent-harnesses-in-2026-2026-11-14",
+      "title": "The best Python agent harnesses in 2026",
+      "authors": "Douwe Maan",
+      "source": "Pydantic",
+      "url": "https://pydantic.dev/articles/best-python-agent-harnesses",
+      "type": "article",
+      "dateAdded": "2026-11-14",
+      "summary": "Pydantic ranks its own harness first for composable capabilities, twelve sandboxes and durable engines, then compares Strands, Microsoft Agent Framework and OpenHands for different stacks. The piece treats the harness as the stable product while models stay swappable.",
+      "tags": [
+        "article",
+        "python",
+        "harness-comparison"
+      ]
+    },
+    {
+      "id": "the-agent-harness-era-why-multi-model-orchestration-is-becoming-the-real-ai-plat-2026-11-14",
+      "title": "The Agent Harness Era: Why Multi-Model Orchestration Is Becoming the Real AI Platform",
+      "authors": "AndBeyond.tech",
+      "source": "AndBeyond.tech",
+      "url": "https://www.andbeyond.tech/agent-harness-era/",
+      "type": "article",
+      "dateAdded": "2026-11-14",
+      "summary": "The essay argues that late-2026 announcements around Copilot harness and multi-model orchestration made the runtime the real platform layer. Sandboxes, approval gates and session continuity now matter more than raw model benchmarks for deployable agent work.",
+      "tags": [
+        "article",
+        "orchestration",
+        "platform"
+      ]
+    },
     {
       "id": "celesto-2026-11-13",
       "title": "Celesto",
@@ -10672,143 +10807,6 @@
         "LangGraph"
       ],
       "usecase": "Use it to deploy an internal software-factory agent that researches repos, validates changes, and delivers pull requests in isolated environments.",
-      "returning": false
-    },
-    {
-      "id": "gui-agent-harness-2026-09-09",
-      "title": "GUI Agent Harness",
-      "authors": "Fzkuji",
-      "source": "GitHub",
-      "url": "https://github.com/Fzkuji/GUI-Agent-Skills",
-      "type": "tool",
-      "dateAdded": "2026-09-09",
-      "summary": "CLI that turns an LLM into a desktop GUI agent with iterative visual grounding, memory, and observe-verify-plan-dispatch loop.",
-      "tags": [
-        "GUI",
-        "grounding",
-        "desktop"
-      ],
-      "usecase": "Use it to automate desktop tasks from natural language with screenshot-based element grounding and verification.",
-      "returning": false
-    },
-    {
-      "id": "show-hn-opair-a-coding-harness-that-eschews-autonomy-2026-09-09",
-      "title": "Show HN: Opair, a coding harness that eschews autonomy",
-      "authors": "philbo",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49625009",
-      "type": "article",
-      "dateAdded": "2026-09-09",
-      "summary": "Opair deliberately limits shell and write access, splits driver versus navigator modes, and aims for pair-programming style collaboration instead of unattended diffs. The post argues that less autonomy and continuous human involvement produce better outcomes than full agent fleets.",
-      "tags": [
-        "HN",
-        "philosophy",
-        "pair"
-      ]
-    },
-    {
-      "id": "dive-into-frontierharness-eval-claude-code-cost-5-6-for-the-same-pass-rate-2026-09-09",
-      "title": "Dive into FrontierHarness Eval: Claude Code cost 5.6× for the same pass rate",
-      "authors": "ADD-SP",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49628679",
-      "type": "article",
-      "dateAdded": "2026-09-09",
-      "summary": "Analysis of a shared-model harness bake-off shows large cost spreads for identical pass rates, with failed attempts still billed. Commenters note that harness design and caching dominate the economics once the model is fixed.",
-      "tags": [
-        "cost",
-        "eval",
-        "harness"
-      ]
-    },
-    {
-      "id": "pluggableharness-agent-2026-09-08",
-      "title": "PluggableHarness Agent",
-      "authors": "pluggableharness",
-      "source": "GitHub",
-      "url": "https://github.com/pluggableharness/agent",
-      "type": "harness",
-      "dateAdded": "2026-09-08",
-      "summary": "Go microkernel coding harness with seven out-of-process plugin categories, HCL config, policy gate, and durable session replay.",
-      "tags": [
-        "microkernel",
-        "plugins",
-        "go",
-        "terminal"
-      ],
-      "usecase": "Use it to assemble a custom agent loop from versioned providers without forking a monolith.",
-      "returning": false
-    },
-    {
-      "id": "uniharness-2026-09-08",
-      "title": "UniHarness",
-      "authors": "UnicomAI",
-      "source": "GitHub",
-      "url": "https://github.com/UnicomAI/UniHarness",
-      "type": "harness",
-      "dateAdded": "2026-09-08",
-      "summary": "Python agent harness that separates the runtime (keys, config) from a pluggable Computer layer (local, VM, E2B) so the agent cannot read its own secrets.",
-      "tags": [
-        "computer-protocol",
-        "sandbox",
-        "python",
-        "mcp"
-      ],
-      "usecase": "Use it to ship CLI, chat, cowork, or headless products from one isolated runtime.",
-      "returning": false
-    },
-    {
-      "id": "harnesskit-2026-09-08",
-      "title": "HarnessKit",
-      "authors": "RealZST",
-      "source": "GitHub",
-      "url": "https://github.com/RealZST/HarnessKit",
-      "type": "tool",
-      "dateAdded": "2026-09-08",
-      "summary": "Desktop and CLI manager that unifies skills, MCP servers, plugins, hooks, configs, memory, and rules across many coding agents.",
-      "tags": [
-        "skills",
-        "mcp",
-        "multi-agent",
-        "desktop"
-      ],
-      "usecase": "Use it to inventory and sync extensions for every agent on your machine from one console.",
-      "returning": false
-    },
-    {
-      "id": "sandbase-harness-2026-09-08",
-      "title": "SandBase Harness",
-      "authors": "sandbaseai",
-      "source": "GitHub",
-      "url": "https://github.com/sandbaseai/sandbase-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-08",
-      "summary": "Local-first self-hosted runtime and MCP bridge with sandboxed sessions, credential vault, audit/replay, and a built-in Console.",
-      "tags": [
-        "local-first",
-        "mcp",
-        "sandbox",
-        "console"
-      ],
-      "usecase": "Use it to run durable agent sessions on your own infra with full audit trails.",
-      "returning": false
-    },
-    {
-      "id": "mirage-2026-09-08",
-      "title": "Mirage",
-      "authors": "strukto-ai",
-      "source": "GitHub",
-      "url": "https://github.com/strukto-ai/mirage",
-      "type": "tool",
-      "dateAdded": "2026-09-08",
-      "summary": "Virtual terminal and filesystem for agents that mounts S3, Drive, Slack and more under one root with virtualized CLIs and runtimes.",
-      "tags": [
-        "virtual-terminal",
-        "vfs",
-        "cli",
-        "security"
-      ],
-      "usecase": "Use it to give agents unix-tool access across heterogeneous data sources without N SDKs.",
       "returning": false
     }
   ]
