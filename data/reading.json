@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-14",
+  "lastUpdated": "2026-11-15",
   "issues": [
+    {
+      "date": "2026-11-15",
+      "title": "Open microVM sandboxes that put isolation and forking under power-user control",
+      "blurb": "Today's digest centers on clone-and-run microVM runtimes, snapshot/fork harnesses, and local-first agent sandboxes that power users can wire into their own loops. These tools emphasize hardware isolation, credential brokering, and MCP hooks without closed IDE lock-in."
+    },
     {
       "date": "2026-11-14",
       "title": "Hardware-isolated sandboxes meet self-improving control planes",
@@ -318,6 +323,55 @@
     }
   ],
   "items": [
+    {
+      "id": "headroom-2026-11-15",
+      "title": "Headroom",
+      "authors": "Apertur3",
+      "source": "GitHub",
+      "url": "https://github.com/Apertur3/headroom",
+      "type": "tool",
+      "dateAdded": "2026-11-15",
+      "summary": "Fuel gauge daemon for AI coding agents that reads real plan limits and answers go, wait, or reroute without leaking credentials.",
+      "tags": [
+        "quota",
+        "observability",
+        "cli"
+      ],
+      "usecase": "Use it to gate agent turns on actual vendor usage quotas via statusline or /usage probes.",
+      "returning": false
+    },
+    {
+      "id": "openclaw-graphiti-memory-2026-11-15",
+      "title": "openclaw-graphiti-memory",
+      "authors": "clawdbrunner",
+      "source": "GitHub",
+      "url": "https://github.com/clawdbrunner/openclaw-graphiti-memory",
+      "type": "repo",
+      "dateAdded": "2026-11-15",
+      "summary": "Hybrid three-layer memory (private files, shared files, Graphiti temporal graph) for multi-agent OpenClaw setups.",
+      "tags": [
+        "memory",
+        "graph",
+        "multi-agent"
+      ],
+      "usecase": "Use it to give agent teams private notes plus a shared temporal knowledge graph for cross-agent recall.",
+      "returning": false
+    },
+    {
+      "id": "microvm-sandboxes-for-ai-agents-explained-2026-11-15",
+      "title": "MicroVM sandboxes for AI agents explained",
+      "authors": "Daniel Reed",
+      "source": "Aiholics",
+      "url": "https://aiholics.com/microvm-sandboxes-ai-agents-memory-snapshots/",
+      "type": "article",
+      "dateAdded": "2026-11-15",
+      "summary": "Explains how a hibernating microVM gives each agent a private mini-computer that can be paused to memory and resumed in seconds. Covers Firecracker numbers and why hardware isolation beats shared-kernel containers for untrusted agent code.",
+      "tags": [
+        "microvm",
+        "sandbox",
+        "explainer"
+      ]
+    },
     {
       "id": "bot-bottle-2026-11-14",
       "title": "bot-bottle",
@@ -10756,57 +10810,6 @@
         "multi-provider"
       ],
       "usecase": "Use it to run a provider-agnostic coding loop that ships as both interactive CLI and embeddable SDK.",
-      "returning": false
-    },
-    {
-      "id": "harnessed-2026-09-09",
-      "title": "harnessed",
-      "authors": "easyinplay",
-      "source": "GitHub",
-      "url": "https://github.com/easyinplay/harnessed",
-      "type": "harness",
-      "dateAdded": "2026-09-09",
-      "summary": "Composition orchestrator that assembles upstream skills and agents via manifests into a gated BDD-SDD-TDD workflow without vendoring code.",
-      "tags": [
-        "composition",
-        "skills",
-        "orchestration"
-      ],
-      "usecase": "Use it to wire gstack, GSD, and superpowers-style packs into one discuss-plan-build-verify-ship engine with checkpoints.",
-      "returning": false
-    },
-    {
-      "id": "2026-agent-harness-2026-09-09",
-      "title": "2026-agent-harness",
-      "authors": "bishopZ",
-      "source": "GitHub",
-      "url": "https://github.com/bishopZ/2026-agent-harness",
-      "type": "repo",
-      "dateAdded": "2026-09-09",
-      "summary": "Lifecycle system combining persistent wiki-style memory with staged skill discipline and human gates across an eleven-stage idea pipeline.",
-      "tags": [
-        "lifecycle",
-        "skills",
-        "memory"
-      ],
-      "usecase": "Use it to clone a complete on-disk agent workflow that moves ideas from backlog through build and growth with explicit sign-off.",
-      "returning": false
-    },
-    {
-      "id": "open-swe-2026-09-09",
-      "title": "Open SWE",
-      "authors": "langchain-ai",
-      "source": "GitHub",
-      "url": "https://github.com/langchain-ai/open-swe",
-      "type": "harness",
-      "dateAdded": "2026-09-09",
-      "summary": "Open-source asynchronous coding agent built on Deep Agents that plans, codes, reviews, and opens PRs from GitHub issues or a dashboard.",
-      "tags": [
-        "async",
-        "PR",
-        "LangGraph"
-      ],
-      "usecase": "Use it to deploy an internal software-factory agent that researches repos, validates changes, and delivers pull requests in isolated environments.",
       "returning": false
     }
   ]

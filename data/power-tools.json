@@ -1,7 +1,47 @@
 {
-  "lastUpdated": "2026-11-14",
-  "count": 579,
+  "lastUpdated": "2026-11-15",
+  "count": 581,
   "tools": [
+    {
+      "slug": "headroom",
+      "title": "Headroom",
+      "authors": "Apertur3",
+      "source": "GitHub",
+      "url": "https://github.com/Apertur3/headroom",
+      "type": "tool",
+      "summary": "Fuel gauge daemon for AI coding agents that reads real plan limits and answers go, wait, or reroute without leaking credentials.",
+      "usecase": "Use it to gate agent turns on actual vendor usage quotas via statusline or /usage probes.",
+      "tags": [
+        "quota",
+        "observability",
+        "cli"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "openclaw-graphiti-memory",
+      "title": "openclaw-graphiti-memory",
+      "authors": "clawdbrunner",
+      "source": "GitHub",
+      "url": "https://github.com/clawdbrunner/openclaw-graphiti-memory",
+      "type": "repo",
+      "summary": "Hybrid three-layer memory (private files, shared files, Graphiti temporal graph) for multi-agent OpenClaw setups.",
+      "usecase": "Use it to give agent teams private notes plus a shared temporal knowledge graph for cross-agent recall.",
+      "tags": [
+        "memory",
+        "graph",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-sandbox",
       "title": "Agent Sandbox (scitix)",
