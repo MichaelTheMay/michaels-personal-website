@@ -1,7 +1,178 @@
 {
-  "lastUpdated": "2026-11-15",
-  "count": 581,
+  "lastUpdated": "2026-11-16",
+  "count": 585,
   "tools": [
+    {
+      "slug": "agent-substrate",
+      "title": "Agent Substrate",
+      "authors": "CNCF / community",
+      "source": "CNCF",
+      "url": "https://www.cncf.io/projects/agent-substrate/",
+      "type": "harness",
+      "summary": "CNCF Sandbox secure-by-default agent execution runtime designed for running millions of sandboxes with strong isolation.",
+      "usecase": "Use it to evaluate or adopt a community-backed Kubernetes-native substrate for high-density agent sandbox fleets.",
+      "tags": [
+        "cncf",
+        "sandbox",
+        "kubernetes",
+        "runtime",
+        "isolation"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "coral",
+      "title": "Coral",
+      "authors": "withcoral",
+      "source": "GitHub",
+      "url": "https://github.com/withcoral/coral",
+      "type": "harness",
+      "summary": "Self-hosted execution rails where agents write short TypeScript programs as reusable custom tools under per-call policy and V8 isolation.",
+      "usecase": "Use it to let agents author and share custom tools against enterprise APIs while Coral enforces permissions and strips credentials from the model context.",
+      "tags": [
+        "tools",
+        "policy",
+        "v8",
+        "enterprise",
+        "rust"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "frag-falcon",
+      "title": "frag-falcon",
+      "authors": "vaccovecrana",
+      "source": "GitHub",
+      "url": "https://github.com/vaccovecrana/frag-falcon",
+      "type": "tool",
+      "summary": "libkrun-based microVM hypervisor that runs Docker images with virtiofs rootfs and a native GraalVM packaging.",
+      "usecase": "Use it to turn OCI images into microVMs with host directory volumes without raw disk images for agent workloads.",
+      "tags": [
+        "libkrun",
+        "oci",
+        "hypervisor",
+        "self-hosted"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness",
+      "title": "Harness",
+      "authors": "majiayu000",
+      "source": "GitHub",
+      "url": "https://github.com/majiayu000/harness",
+      "type": "harness",
+      "summary": "Rust control plane for fleets of parallel coding agents with orchestration, policy, cross-agent review and observability.",
+      "usecase": "Use it to assign work across many Claude Code or Codex style agents under shared policy and continuous review loops.",
+      "tags": [
+        "rust",
+        "control-plane",
+        "fleet",
+        "policy"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-11-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mirage",
+      "title": "Mirage",
+      "authors": "strukto-ai",
+      "source": "GitHub",
+      "url": "https://github.com/strukto-ai/mirage",
+      "type": "tool",
+      "summary": "Virtual terminal and filesystem for agents that unifies shells, CLIs and services under one light in-process interface with profiles.",
+      "usecase": "Use it to give agents a single virtual shell over S3, Slack, Gmail and runtimes so most commands stay cheap and only heavy work hits a sandbox.",
+      "tags": [
+        "virtual-terminal",
+        "vfs",
+        "cli",
+        "security"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-11-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "nono",
+      "title": "nono",
+      "authors": "always-further / nolabs-ai",
+      "source": "GitHub",
+      "url": "https://github.com/always-further/nono",
+      "type": "tool",
+      "summary": "Zero-trust agent runtime security with kernel-enforced sandboxes for tools, credentials and skills across common coding agents.",
+      "usecase": "Use it to wrap any coding agent so every tool runs in an ephemeral sandbox with explicit file, net and credential permissions.",
+      "tags": [
+        "security",
+        "sandbox",
+        "zero-trust",
+        "runtime",
+        "cli"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandbase-harness",
+      "title": "SandBase Harness",
+      "authors": "sandbaseai",
+      "source": "GitHub",
+      "url": "https://github.com/sandbaseai/sandbase-harness",
+      "type": "harness",
+      "summary": "Local-first TypeScript agent runtime with sandboxed sessions, MCP bridge, credentials, memory, audit/replay and Console.",
+      "usecase": "Use it to run durable auditable agent sessions on SQLite with Docker or Kubernetes backends and a local console for inspection.",
+      "tags": [
+        "local-first",
+        "mcp",
+        "sandbox",
+        "console"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-11-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "smolagents",
+      "title": "smolagents",
+      "authors": "huggingface",
+      "source": "GitHub",
+      "url": "https://github.com/huggingface/smolagents",
+      "type": "repo",
+      "summary": "Minimal code-as-action agent library where the model writes Python executed inside sandboxes such as E2B or Modal.",
+      "usecase": "Use it to build lightweight agents that emit executable Python instead of tool JSON and run the code in an isolated backend.",
+      "tags": [
+        "code-agent",
+        "python",
+        "sandbox",
+        "huggingface"
+      ],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-11-16",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "headroom",
       "title": "Headroom",
@@ -10144,27 +10315,6 @@
       ]
     },
     {
-      "slug": "mirage",
-      "title": "Mirage",
-      "authors": "strukto-ai",
-      "source": "GitHub",
-      "url": "https://github.com/strukto-ai/mirage",
-      "type": "tool",
-      "summary": "Virtual terminal and filesystem for agents that mounts S3, Drive, Slack and more under one root with virtualized CLIs and runtimes.",
-      "usecase": "Use it to give agents unix-tool access across heterogeneous data sources without N SDKs.",
-      "tags": [
-        "virtual-terminal",
-        "vfs",
-        "cli",
-        "security"
-      ],
-      "firstSeen": "2026-09-08",
-      "lastSeen": "2026-09-08",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "opendray",
       "title": "Opendray",
       "authors": "Opendray",
@@ -10199,27 +10349,6 @@
         "plugins",
         "go",
         "terminal"
-      ],
-      "firstSeen": "2026-09-08",
-      "lastSeen": "2026-09-08",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "sandbase-harness",
-      "title": "SandBase Harness",
-      "authors": "sandbaseai",
-      "source": "GitHub",
-      "url": "https://github.com/sandbaseai/sandbase-harness",
-      "type": "harness",
-      "summary": "Local-first self-hosted runtime and MCP bridge with sandboxed sessions, credential vault, audit/replay, and a built-in Console.",
-      "usecase": "Use it to run durable agent sessions on your own infra with full audit trails.",
-      "tags": [
-        "local-first",
-        "mcp",
-        "sandbox",
-        "console"
       ],
       "firstSeen": "2026-09-08",
       "lastSeen": "2026-09-08",
@@ -10807,27 +10936,6 @@
         "verify",
         "mcp",
         "cli"
-      ],
-      "firstSeen": "2026-09-06",
-      "lastSeen": "2026-09-06",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "harness",
-      "title": "Harness",
-      "authors": "majiayu000",
-      "source": "GitHub",
-      "url": "https://github.com/majiayu000/harness",
-      "type": "harness",
-      "summary": "Rust control plane for fleets of parallel coding agents with orchestration, policy enforcement, cross-agent review, and observability.",
-      "usecase": "Use it to assign work, police permissions, and run independent reviews across Claude Code or Codex adapters in long-running fleets.",
-      "tags": [
-        "rust",
-        "control-plane",
-        "fleet",
-        "policy"
       ],
       "firstSeen": "2026-09-06",
       "lastSeen": "2026-09-06",
@@ -11613,27 +11721,6 @@
         "workforce",
         "python",
         "mcp"
-      ],
-      "firstSeen": "2026-09-04",
-      "lastSeen": "2026-09-04",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "smolagents",
-      "title": "smolagents",
-      "authors": "huggingface",
-      "source": "GitHub",
-      "url": "https://github.com/huggingface/smolagents",
-      "type": "repo",
-      "summary": "Barebones Python library for code-as-action agents that write and execute Python in sandboxes like E2B.",
-      "usecase": "Use it to prototype multi-step agents that compose tools via real code rather than JSON tool calls.",
-      "tags": [
-        "code-agent",
-        "python",
-        "sandbox",
-        "huggingface"
       ],
       "firstSeen": "2026-09-04",
       "lastSeen": "2026-09-04",

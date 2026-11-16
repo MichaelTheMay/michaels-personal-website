@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-16",
   "issues": [
+    {
+      "date": "2026-11-16",
+      "title": "Local microVMs and open control planes that own the agent loop",
+      "blurb": "Today's digest favors clone-and-run isolation layers plus harnesses that add durable runs, learning, and policy on top of any coding agent. Power users get hardware boundaries and governance without vendor IDEs."
+    },
     {
       "date": "2026-11-15",
       "title": "Open microVM sandboxes that put isolation and forking under power-user control",
@@ -315,14 +320,192 @@
       "date": "2026-09-10",
       "title": "MicroVM sandboxes and team control planes that contain agent fleets",
       "blurb": "Power users are wiring isolation first: local microVMs, Kubernetes control planes, and gateway-enforced team harnesses that keep credentials and blast radius outside the model loop. Clone these to run parallel agents safely without leaning on closed IDEs."
-    },
-    {
-      "date": "2026-09-09",
-      "title": "Composable foundries and live self-evolving harnesses",
-      "blurb": "Power users are wiring foundries that compose and evolve the harness itself, live self-modifiers that rewrite tools mid-task, and verification gates or sandboxes that sit under any agent loop. The through-line is ownership of the runtime layer rather than another terminal chatbot."
     }
   ],
   "items": [
+    {
+      "id": "coral-2026-11-16",
+      "title": "Coral",
+      "authors": "withcoral",
+      "source": "GitHub",
+      "url": "https://github.com/withcoral/coral",
+      "type": "harness",
+      "dateAdded": "2026-11-16",
+      "summary": "Self-hosted execution rails where agents write short TypeScript programs as reusable custom tools under per-call policy and V8 isolation.",
+      "tags": [
+        "tools",
+        "policy",
+        "v8",
+        "enterprise",
+        "rust"
+      ],
+      "usecase": "Use it to let agents author and share custom tools against enterprise APIs while Coral enforces permissions and strips credentials from the model context.",
+      "returning": false
+    },
+    {
+      "id": "sandbase-harness-2026-11-16",
+      "title": "SandBase Harness",
+      "authors": "sandbaseai",
+      "source": "GitHub",
+      "url": "https://github.com/sandbaseai/sandbase-harness",
+      "type": "harness",
+      "dateAdded": "2026-11-16",
+      "summary": "Local-first TypeScript agent runtime with sandboxed sessions, MCP bridge, credentials, memory, audit/replay and Console.",
+      "tags": [
+        "runtime",
+        "mcp",
+        "audit",
+        "local-first",
+        "typescript"
+      ],
+      "usecase": "Use it to run durable auditable agent sessions on SQLite with Docker or Kubernetes backends and a local console for inspection.",
+      "returning": false
+    },
+    {
+      "id": "nono-2026-11-16",
+      "title": "nono",
+      "authors": "always-further / nolabs-ai",
+      "source": "GitHub",
+      "url": "https://github.com/always-further/nono",
+      "type": "tool",
+      "dateAdded": "2026-11-16",
+      "summary": "Zero-trust agent runtime security with kernel-enforced sandboxes for tools, credentials and skills across common coding agents.",
+      "tags": [
+        "security",
+        "sandbox",
+        "zero-trust",
+        "runtime",
+        "cli"
+      ],
+      "usecase": "Use it to wrap any coding agent so every tool runs in an ephemeral sandbox with explicit file, net and credential permissions.",
+      "returning": false
+    },
+    {
+      "id": "mirage-2026-11-16",
+      "title": "Mirage",
+      "authors": "strukto-ai",
+      "source": "GitHub",
+      "url": "https://github.com/strukto-ai/mirage",
+      "type": "tool",
+      "dateAdded": "2026-11-16",
+      "summary": "Virtual terminal and filesystem for agents that unifies shells, CLIs and services under one light in-process interface with profiles.",
+      "tags": [
+        "virtual-terminal",
+        "vfs",
+        "agent-tools",
+        "profiles",
+        "low-overhead"
+      ],
+      "usecase": "Use it to give agents a single virtual shell over S3, Slack, Gmail and runtimes so most commands stay cheap and only heavy work hits a sandbox.",
+      "returning": false
+    },
+    {
+      "id": "frag-falcon-2026-11-16",
+      "title": "frag-falcon",
+      "authors": "vaccovecrana",
+      "source": "GitHub",
+      "url": "https://github.com/vaccovecrana/frag-falcon",
+      "type": "tool",
+      "dateAdded": "2026-11-16",
+      "summary": "libkrun-based microVM hypervisor that runs Docker images with virtiofs rootfs and a native GraalVM packaging.",
+      "tags": [
+        "libkrun",
+        "oci",
+        "hypervisor",
+        "self-hosted"
+      ],
+      "usecase": "Use it to turn OCI images into microVMs with host directory volumes without raw disk images for agent workloads.",
+      "returning": false
+    },
+    {
+      "id": "harness-2026-11-16",
+      "title": "Harness",
+      "authors": "majiayu000",
+      "source": "GitHub",
+      "url": "https://github.com/majiayu000/harness",
+      "type": "harness",
+      "dateAdded": "2026-11-16",
+      "summary": "Rust control plane for fleets of parallel coding agents with orchestration, policy, cross-agent review and observability.",
+      "tags": [
+        "control-plane",
+        "fleet",
+        "policy",
+        "rust",
+        "orchestration"
+      ],
+      "usecase": "Use it to assign work across many Claude Code or Codex style agents under shared policy and continuous review loops.",
+      "returning": false
+    },
+    {
+      "id": "smolagents-2026-11-16",
+      "title": "smolagents",
+      "authors": "huggingface",
+      "source": "GitHub",
+      "url": "https://github.com/huggingface/smolagents",
+      "type": "repo",
+      "dateAdded": "2026-11-16",
+      "summary": "Minimal code-as-action agent library where the model writes Python executed inside sandboxes such as E2B or Modal.",
+      "tags": [
+        "code-as-action",
+        "python",
+        "sandbox",
+        "minimal",
+        "hf"
+      ],
+      "usecase": "Use it to build lightweight agents that emit executable Python instead of tool JSON and run the code in an isolated backend.",
+      "returning": false
+    },
+    {
+      "id": "agent-substrate-2026-11-16",
+      "title": "Agent Substrate",
+      "authors": "CNCF / community",
+      "source": "CNCF",
+      "url": "https://www.cncf.io/projects/agent-substrate/",
+      "type": "harness",
+      "dateAdded": "2026-11-16",
+      "summary": "CNCF Sandbox secure-by-default agent execution runtime designed for running millions of sandboxes with strong isolation.",
+      "tags": [
+        "cncf",
+        "sandbox",
+        "kubernetes",
+        "runtime",
+        "isolation"
+      ],
+      "usecase": "Use it to evaluate or adopt a community-backed Kubernetes-native substrate for high-density agent sandbox fleets.",
+      "returning": false
+    },
+    {
+      "id": "hands-on-with-docker-sandboxes-v0-53-0-2026-11-16",
+      "title": "Hands-on with Docker Sandboxes v0.53.0",
+      "authors": "Ajeet Singh Raina",
+      "source": "DEV Community",
+      "url": "https://dev.to/ajeetraina/hands-on-with-docker-sandboxes-v0530-giving-your-ai-agents-a-safe-place-to-play-lpm",
+      "type": "article",
+      "dateAdded": "2026-11-16",
+      "summary": "Walkthrough of the new Docker sbx microVM sandboxes that give agents their own kernel, Docker daemon and allowlisted network without requiring Desktop. Covers install, diagnose, and launching shell sandboxes for safe agent play.",
+      "tags": [
+        "docker",
+        "sandbox",
+        "microvm",
+        "release"
+      ]
+    },
+    {
+      "id": "show-hn-coral-execution-rails-for-agents-2026-11-16",
+      "title": "Show HN: Coral execution rails for agents",
+      "authors": "withcoral / James",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50517803",
+      "type": "article",
+      "dateAdded": "2026-11-16",
+      "summary": "Launch discussion of the open-source Coral gateway where agents write TypeScript programs as custom tools under V8 isolation and per-call policy. Early users report faster cheaper runs across SRE and internal systems.",
+      "tags": [
+        "tools",
+        "policy",
+        "show-hn",
+        "open-source"
+      ]
+    },
     {
       "id": "headroom-2026-11-15",
       "title": "Headroom",
@@ -10642,175 +10825,6 @@
         "hn",
         "execution"
       ]
-    },
-    {
-      "id": "how-to-sandbox-ai-coding-agents-8-tools-for-2026-2026-09-10",
-      "title": "How to Sandbox AI Coding Agents: 8 Tools for 2026",
-      "authors": "DevOps.dev",
-      "source": "DevOps.dev",
-      "url": "https://blog.devops.dev/eight-agentic-tools-worth-your-time-before-the-year-ends-4151c79a8db9",
-      "type": "article",
-      "dateAdded": "2026-09-10",
-      "summary": "The piece argues that harness attention has outrun boundary attention and walks through eight concrete sandbox and isolation options. It highlights seatbelt, bubblewrap, microVMs and provider sandboxes as the layer that actually decides whether an agent can hurt you.",
-      "tags": [
-        "article",
-        "sandbox",
-        "security",
-        "2026"
-      ]
-    },
-    {
-      "id": "live-swe-agent-2026-09-09",
-      "title": "Live-SWE-agent",
-      "authors": "OpenAutoCoder",
-      "source": "GitHub",
-      "url": "https://github.com/OpenAutoCoder/live-swe-agent",
-      "type": "repo",
-      "dateAdded": "2026-09-09",
-      "summary": "Runtime self-evolving software engineering agent that starts from a minimal bash scaffold and rewrites its own tools and scaffold while solving real issues.",
-      "tags": [
-        "self-evolving",
-        "SWE",
-        "minimal"
-      ],
-      "usecase": "Use it to run an agent that expands its own capabilities on the fly against SWE-bench style GitHub issues.",
-      "returning": false
-    },
-    {
-      "id": "harnessx-2026-09-09",
-      "title": "HarnessX",
-      "authors": "Darwin-Agent",
-      "source": "GitHub",
-      "url": "https://github.com/Darwin-Agent/HarnessX",
-      "type": "harness",
-      "dateAdded": "2026-09-09",
-      "summary": "Harness foundry that composes typed processors across nine dimensions, adapts configs from traces, and evolves harnesses plus models from reward-annotated trajectories.",
-      "tags": [
-        "foundry",
-        "composition",
-        "evolution"
-      ],
-      "usecase": "Use it to forge reusable coding or research harnesses, then let the meta-loop search better processor stacks without rewriting the agent.",
-      "returning": false
-    },
-    {
-      "id": "claw-code-agent-2026-09-09",
-      "title": "Claw Code Agent",
-      "authors": "HarnessLab",
-      "source": "GitHub",
-      "url": "https://github.com/HarnessLab/claw-code-agent",
-      "type": "repo",
-      "dateAdded": "2026-09-09",
-      "summary": "Zero-external-dependency Python reimplementation of a full coding-agent architecture with plugins, nested delegation, MCP, worktrees, and a local GUI.",
-      "tags": [
-        "Python",
-        "local-models",
-        "plugins"
-      ],
-      "usecase": "Use it to run a complete local-model coding loop with session persistence and custom agent profiles without Rust or TypeScript toolchains.",
-      "returning": false
-    },
-    {
-      "id": "gsd-core-2026-09-09",
-      "title": "GSD Core",
-      "authors": "open-gsd",
-      "source": "GitHub",
-      "url": "https://github.com/open-gsd/gsd-core",
-      "type": "harness",
-      "dateAdded": "2026-09-09",
-      "summary": "Meta-prompting and context-engineering system that drives agents through discuss-plan-execute-verify-ship phases in fresh subagent windows to avoid context rot.",
-      "tags": [
-        "meta-prompting",
-        "context",
-        "spec-driven"
-      ],
-      "usecase": "Use it to install phase commands into your preferred coding agent and ship milestones with structured state that survives compaction.",
-      "returning": false
-    },
-    {
-      "id": "sandbox-agent-2026-09-09",
-      "title": "sandbox-agent",
-      "authors": "rivet-dev",
-      "source": "GitHub",
-      "url": "https://github.com/rivet-dev/sandbox-agent",
-      "type": "tool",
-      "dateAdded": "2026-09-09",
-      "summary": "Lightweight server that runs inside any sandbox and exposes HTTP/SSE control for coding agents so you can drive them remotely with streaming and permissions.",
-      "tags": [
-        "sandbox",
-        "HTTP",
-        "remote"
-      ],
-      "usecase": "Use it to install a static binary into E2B or Docker sandboxes and control Claude-style or OpenCode agents over the network from your app.",
-      "returning": false
-    },
-    {
-      "id": "opensandbox-2026-09-09",
-      "title": "OpenSandbox",
-      "authors": "opensandbox-group",
-      "source": "GitHub",
-      "url": "https://github.com/opensandbox-group/OpenSandbox",
-      "type": "repo",
-      "dateAdded": "2026-09-09",
-      "summary": "General-purpose sandbox platform with multi-language SDKs, CLI, MCP, Docker/Kubernetes runtimes, and built-in command, filesystem, and code-interpreter environments.",
-      "tags": [
-        "sandbox",
-        "K8s",
-        "SDK"
-      ],
-      "usecase": "Use it to spin up isolated coding-agent or GUI-agent environments with a unified API for local or cluster deployment.",
-      "returning": false
-    },
-    {
-      "id": "evolving-agent-harnesses-2026-09-09",
-      "title": "evolving-agent-harnesses",
-      "authors": "prakashkagitha",
-      "source": "GitHub",
-      "url": "https://github.com/prakashkagitha/evolving-agent-harnesses",
-      "type": "repo",
-      "dateAdded": "2026-09-09",
-      "summary": "Research program and code where a fixed small model mines its own failures and redesigns its harness under a verified non-regression gate.",
-      "tags": [
-        "self-harness",
-        "small-models",
-        "SWE-bench"
-      ],
-      "usecase": "Use it to evolve a minimal draft-write_test-fix harness with Haiku-class models and measure SWE-bench lifts without weight updates.",
-      "returning": false
-    },
-    {
-      "id": "agent-harness-go-2026-09-09",
-      "title": "agent-harness (Go)",
-      "authors": "BA-CalderonMorales",
-      "source": "GitHub",
-      "url": "https://github.com/BA-CalderonMorales/agent-harness",
-      "type": "repo",
-      "dateAdded": "2026-09-09",
-      "summary": "Clean-room Go implementation of production coding-agent harness patterns with TUI, OpenRouter/Anthropic support, and local-first defaults.",
-      "tags": [
-        "Go",
-        "TUI",
-        "clean-room"
-      ],
-      "usecase": "Use it to study or extend a minimal systems-language harness that boots a terminal UI and talks to local or remote models.",
-      "returning": false
-    },
-    {
-      "id": "openharness-2026-09-09",
-      "title": "openharness",
-      "authors": "AgentBoardTT",
-      "source": "GitHub",
-      "url": "https://github.com/AgentBoardTT/openharness",
-      "type": "tool",
-      "dateAdded": "2026-09-09",
-      "summary": "CLI plus SDK coding agent claimed to hit perfect scores on an internal Harness-Bench across multiple providers.",
-      "tags": [
-        "CLI",
-        "SDK",
-        "multi-provider"
-      ],
-      "usecase": "Use it to run a provider-agnostic coding loop that ships as both interactive CLI and embeddable SDK.",
-      "returning": false
     }
   ]
 }
