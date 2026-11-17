@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-16",
+  "lastUpdated": "2026-11-17",
   "issues": [
+    {
+      "date": "2026-11-17",
+      "title": "MicroVM sandboxes and local control planes power users clone first",
+      "blurb": "Today's picks favor hardware isolation you can run on a laptop or cluster, git-native memory you can review, and harness layers that sit under any coding loop. Power users get clone-and-wire pieces for sandboxes, evals, and self-improving runtimes instead of another chat IDE."
+    },
     {
       "date": "2026-11-16",
       "title": "Local microVMs and open control planes that own the agent loop",
@@ -323,6 +328,78 @@
     }
   ],
   "items": [
+    {
+      "id": "okf-agent-memory-2026-11-17",
+      "title": "OKF Agent Memory",
+      "authors": "okf-memory",
+      "source": "GitHub",
+      "url": "https://github.com/okf-memory/okf-agent-memory",
+      "type": "repo",
+      "dateAdded": "2026-11-17",
+      "summary": "Git-native project memory implementing Google OKF v0.2 as Markdown plus YAML, with sub-300µs BM25 search, embedded MCP, progressive disclosure, and provenance tiers.",
+      "tags": [
+        "memory",
+        "git-native",
+        "mcp",
+        "okf"
+      ],
+      "usecase": "Use it to give every coding agent a reviewable knowledge/ folder that cuts context bloat without a vector DB.",
+      "returning": false
+    },
+    {
+      "id": "nanovms-ops-2026-11-17",
+      "title": "nanovms ops",
+      "authors": "nanovms",
+      "source": "GitHub",
+      "url": "https://github.com/nanovms/ops",
+      "type": "tool",
+      "dateAdded": "2026-11-17",
+      "summary": "CLI and orchestrator to build and run Nanos unikernels as minimal single-process sandboxes for services and agents.",
+      "tags": [
+        "unikernel",
+        "sandbox",
+        "ops",
+        "minimal"
+      ],
+      "usecase": "Use it to package agent tools as unikernels with a tiny attack surface instead of full Linux guests.",
+      "returning": false
+    },
+    {
+      "id": "agentmem-os-2026-11-17",
+      "title": "AgentMem-OS",
+      "authors": "Sahith59",
+      "source": "GitHub",
+      "url": "https://github.com/Sahith59/AgentMem-OS",
+      "type": "repo",
+      "dateAdded": "2026-11-17",
+      "summary": "Local-first four-layer agent memory engine (dialogue, verified facts, temporal graph, memory forks) scoring high on LongMemEval.",
+      "tags": [
+        "memory",
+        "local-first",
+        "graph",
+        "eval"
+      ],
+      "usecase": "Use it to give multi-agent systems inherit-only patterns without leaking raw chat into child agents.",
+      "returning": false
+    },
+    {
+      "id": "harness-study-2026-11-17",
+      "title": "Harness Study",
+      "authors": "li2092",
+      "source": "GitHub",
+      "url": "https://github.com/li2092/harness-study",
+      "type": "repo",
+      "dateAdded": "2026-11-17",
+      "summary": "Bilingual from-scratch tutorial that decomposes harnesses into eight runtime mechanisms plus a safety control plane, verifiers, and trajectories.",
+      "tags": [
+        "tutorial",
+        "harness-engineering",
+        "safety",
+        "patterns"
+      ],
+      "usecase": "Use it to design or audit your own agent loop against a concrete engineering checklist.",
+      "returning": false
+    },
     {
       "id": "coral-2026-11-16",
       "title": "Coral",
@@ -10757,74 +10834,6 @@
       ],
       "usecase": "Use it to pick a sandbox whose egress and secrets model match your threat model before you wire the agent loop.",
       "returning": false
-    },
-    {
-      "id": "boxlite-microsandbox-family-2026-09-10",
-      "title": "boxlite / microsandbox family",
-      "authors": "various",
-      "source": "GitHub",
-      "url": "https://github.com/msyvr/awesome-agent-sandboxes",
-      "type": "repo",
-      "dateAdded": "2026-09-10",
-      "summary": "Living index of portable self-contained sandboxes including microVMs, containers and isolation harnesses for coding agents.",
-      "tags": [
-        "awesome-list",
-        "microvm",
-        "isolation",
-        "local"
-      ],
-      "usecase": "Use it to survey local-first options like BoxLite and microsandbox then clone the one that matches your OS and density needs.",
-      "returning": false
-    },
-    {
-      "id": "adios-dev-sandboxes-2026-09-10",
-      "title": "Adios.dev sandboxes",
-      "authors": "clovis818",
-      "source": "HN / product",
-      "url": "https://adios.dev",
-      "type": "tool",
-      "dateAdded": "2026-09-10",
-      "summary": "Fast isolated execution sandboxes aimed at AI agents with low cold-start latency for code and tool loops.",
-      "tags": [
-        "sandbox",
-        "fast",
-        "execution",
-        "agents"
-      ],
-      "usecase": "Use it to give agents disposable runtimes that spin up quickly for eval batches or one-shot code execution without long-lived VMs.",
-      "returning": false
-    },
-    {
-      "id": "onecli-2-6-ships-outbound-channel-capabilities-and-approval-loops-2026-09-10",
-      "title": "OneCLI 2.6 ships outbound channel capabilities and approval loops",
-      "authors": "onecli",
-      "source": "GitHub Releases",
-      "url": "https://github.com/onecli/onecli/releases",
-      "type": "release",
-      "dateAdded": "2026-09-10",
-      "summary": "Version 2.6.0 adds outbound channel capabilities on an approval loop so team agents can request human sign-off inside chat before acting. The release continues the v2 focus on per-employee sandboxes, gateway credential injection, and fail-closed policy.",
-      "tags": [
-        "release",
-        "teams",
-        "approval",
-        "harness"
-      ]
-    },
-    {
-      "id": "adios-dev-launches-fast-isolated-sandboxes-for-ai-agents-2026-09-10",
-      "title": "Adios.dev launches fast isolated sandboxes for AI agents",
-      "authors": "clovis818",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49635498",
-      "type": "release",
-      "dateAdded": "2026-09-10",
-      "summary": "Adios.dev appeared on HN as a fresh option for fast isolated execution environments tailored to agent workloads. It targets low-latency sandboxes that agents can spin for code and tool use without heavy cold starts.",
-      "tags": [
-        "release",
-        "sandbox",
-        "hn",
-        "execution"
-      ]
     }
   ]
 }

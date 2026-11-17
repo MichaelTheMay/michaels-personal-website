@@ -1,7 +1,91 @@
 {
-  "lastUpdated": "2026-11-16",
-  "count": 585,
+  "lastUpdated": "2026-11-17",
+  "count": 589,
   "tools": [
+    {
+      "slug": "agentmem-os",
+      "title": "AgentMem-OS",
+      "authors": "Sahith59",
+      "source": "GitHub",
+      "url": "https://github.com/Sahith59/AgentMem-OS",
+      "type": "repo",
+      "summary": "Local-first four-layer agent memory engine (dialogue, verified facts, temporal graph, memory forks) scoring high on LongMemEval.",
+      "usecase": "Use it to give multi-agent systems inherit-only patterns without leaking raw chat into child agents.",
+      "tags": [
+        "memory",
+        "local-first",
+        "graph",
+        "eval"
+      ],
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-study",
+      "title": "Harness Study",
+      "authors": "li2092",
+      "source": "GitHub",
+      "url": "https://github.com/li2092/harness-study",
+      "type": "repo",
+      "summary": "Bilingual from-scratch tutorial that decomposes harnesses into eight runtime mechanisms plus a safety control plane, verifiers, and trajectories.",
+      "usecase": "Use it to design or audit your own agent loop against a concrete engineering checklist.",
+      "tags": [
+        "tutorial",
+        "harness-engineering",
+        "safety",
+        "patterns"
+      ],
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ops",
+      "title": "nanovms ops",
+      "authors": "nanovms",
+      "source": "GitHub",
+      "url": "https://github.com/nanovms/ops",
+      "type": "tool",
+      "summary": "CLI and orchestrator to build and run Nanos unikernels as minimal single-process sandboxes for services and agents.",
+      "usecase": "Use it to package agent tools as unikernels with a tiny attack surface instead of full Linux guests.",
+      "tags": [
+        "unikernel",
+        "sandbox",
+        "ops",
+        "minimal"
+      ],
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "okf-agent-memory",
+      "title": "OKF Agent Memory",
+      "authors": "okf-memory",
+      "source": "GitHub",
+      "url": "https://github.com/okf-memory/okf-agent-memory",
+      "type": "repo",
+      "summary": "Git-native project memory implementing Google OKF v0.2 as Markdown plus YAML, with sub-300µs BM25 search, embedded MCP, progressive disclosure, and provenance tiers.",
+      "usecase": "Use it to give every coding agent a reviewable knowledge/ folder that cuts context bloat without a vector DB.",
+      "tags": [
+        "memory",
+        "git-native",
+        "mcp",
+        "okf"
+      ],
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-substrate",
       "title": "Agent Substrate",
