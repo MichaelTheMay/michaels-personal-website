@@ -1,7 +1,289 @@
 {
-  "lastUpdated": "2026-11-17",
-  "count": 589,
+  "lastUpdated": "2026-11-18",
+  "count": 601,
   "tools": [
+    {
+      "slug": "agent-sandbox",
+      "title": "Agent-Sandbox",
+      "authors": "agent-sandbox",
+      "source": "GitHub",
+      "url": "https://github.com/agent-sandbox/agent-sandbox",
+      "type": "repo",
+      "summary": "Self-hosted enterprise sandbox platform that exposes E2B-compatible REST and MCP APIs over Kubernetes for code, browser, and computer-use isolation.",
+      "usecase": "Use it to give multi-tenant agents per-session sandboxes without writing kubectl, while supporting browser and desktop workloads.",
+      "tags": [
+        "sandbox",
+        "kubernetes",
+        "e2b",
+        "computer-use"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentic-harness",
+      "title": "agentic-harness (Rust)",
+      "authors": "codejunkie99",
+      "source": "GitHub",
+      "url": "https://github.com/codejunkie99/agentic-harness",
+      "type": "tool",
+      "summary": "Rust-native agent runtime, SDK, and CLI that ships the same binary for laptop, CI, remote Linux sandbox, or edge.",
+      "usecase": "Use it to build coding agents that edit repos and run tests then deploy the identical binary into a remote sandbox.",
+      "tags": [
+        "rust",
+        "cli",
+        "sandbox",
+        "coding"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "caveman",
+      "title": "Caveman",
+      "authors": "Julius Brussee",
+      "source": "GitHub",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "type": "tool",
+      "summary": "Skill pack plus optional local proxy that forces terse agent replies and compresses tool output while keeping code and errors exact.",
+      "usecase": "Use it to cut session tokens across many harnesses by switching the agent into caveman, ultracave, or megacave modes.",
+      "tags": [
+        "compression",
+        "skills",
+        "proxy"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cupcake",
+      "title": "Cupcake",
+      "authors": "EQTY Lab",
+      "source": "GitHub",
+      "url": "https://github.com/eqtylab/cupcake",
+      "type": "tool",
+      "summary": "Native policy enforcement layer for coding agents that evaluates tool calls against OPA/Rego Wasm policies and optional LLM-as-judge without consuming model context.",
+      "usecase": "Use it to block or rewrite risky shell and MCP actions across multiple harnesses before they execute, while injecting feedback the agent can act on.",
+      "tags": [
+        "policy",
+        "opa",
+        "guardrails"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "environment-harness",
+      "title": "environment-harness",
+      "authors": "kimpton-ai",
+      "source": "GitHub",
+      "url": "https://github.com/kimpton-ai/environment-harness",
+      "type": "repo",
+      "summary": "Harness for running agents inside persistent shared environments that records private observations, checkpoints, and auditable evidence.",
+      "usecase": "Use it to evaluate multi-agent simulations where each participant sees a different view of the same state and you keep full trajectories.",
+      "tags": [
+        "eval",
+        "multi-agent",
+        "checkpoints"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "graphify",
+      "title": "Graphify",
+      "authors": "Graphify-Labs",
+      "source": "GitHub",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "type": "tool",
+      "summary": "Skill and library that turns a codebase plus docs and schemas into a queryable knowledge graph via deterministic AST parsing, no vector store required.",
+      "usecase": "Use it to give coding agents a structural map of the repo they can query over MCP instead of dumping whole files.",
+      "tags": [
+        "knowledge-graph",
+        "code-analysis",
+        "mcp"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-memory",
+      "title": "harness-memory",
+      "authors": "tomRumi",
+      "source": "GitHub",
+      "url": "https://github.com/tomRumi/harness-memory",
+      "type": "tool",
+      "summary": "Go memory service that stores notes, facts, and agent-written wiki pages as markdown in a git repo exposed over MCP.",
+      "usecase": "Use it to give any MCP-speaking harness a shared, human-editable long-term memory that agents themselves curate.",
+      "tags": [
+        "memory",
+        "mcp",
+        "git"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "lightspeed",
+      "title": "Lightspeed",
+      "authors": "SmartComputer",
+      "source": "GitHub",
+      "url": "https://github.com/smartcomputer-ai/lightspeed",
+      "type": "harness",
+      "summary": "Deterministic agent harness written in Rust that targets Temporal for durable, replayable agent workflows.",
+      "usecase": "Use it to wrap model calls inside Temporal activities so long-horizon agent runs can be paused, resumed, and audited.",
+      "tags": [
+        "temporal",
+        "durable",
+        "rust"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "neko",
+      "title": "neko",
+      "authors": "SuperHQ AI",
+      "source": "GitHub",
+      "url": "https://github.com/superhq-ai/neko",
+      "type": "repo",
+      "summary": "Lightweight single-binary agent runtime aimed at Raspberry Pi and low-end VPS with file-based memory, MCP tools, and Telegram gateway.",
+      "usecase": "Use it to keep a always-on personal agent on edge hardware that stores memory as plain markdown.",
+      "tags": [
+        "edge",
+        "memory",
+        "mcp"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "omniroute",
+      "title": "OmniRoute",
+      "authors": "cheaper-inference",
+      "source": "GitHub",
+      "url": "https://github.com/cheaper-inference/OmniRoute",
+      "type": "tool",
+      "summary": "Self-hosted AI gateway that unifies hundreds of providers behind one OpenAI-compatible endpoint with quota-aware fallback and RTK/Caveman token compression.",
+      "usecase": "Use it to point every coding agent at free or cheap models while automatically compressing shell and tool output.",
+      "tags": [
+        "gateway",
+        "compression",
+        "routing"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "rtk",
+      "title": "RTK",
+      "authors": "rtk-ai",
+      "source": "GitHub",
+      "url": "https://github.com/rtk-ai/rtk",
+      "type": "tool",
+      "summary": "Single Rust binary CLI proxy that compresses common developer command output by 60-90 percent before it reaches an agent context.",
+      "usecase": "Use it to intercept git, test, and build output so agents see compact summaries instead of raw logs.",
+      "tags": [
+        "compression",
+        "cli",
+        "tokens"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sculptor",
+      "title": "Sculptor",
+      "authors": "Imbue",
+      "source": "GitHub",
+      "url": "https://github.com/imbue-ai/sculptor",
+      "type": "tool",
+      "summary": "Desktop app for launching coding agents in parallel isolated workspaces with review and steering controls.",
+      "usecase": "Use it to farm out concurrent coding tasks to separate agents and merge results under human oversight.",
+      "tags": [
+        "desktop",
+        "parallel",
+        "workspaces"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "shuru",
+      "title": "shuru",
+      "authors": "SuperHQ AI",
+      "source": "GitHub",
+      "url": "https://github.com/superhq-ai/shuru",
+      "type": "repo",
+      "summary": "Local-first microVM sandbox that boots ephemeral Linux VMs on macOS Virtualization.framework or experimental KVM, with checkpoints, VirtioFS mounts, and host-side secret substitution.",
+      "usecase": "Use it to run agent-generated installs and tests inside a disposable rootfs that resets after every session while keeping project files and API keys on the host.",
+      "tags": [
+        "sandbox",
+        "microvm",
+        "local-first"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "stoneforge",
+      "title": "Stoneforge",
+      "authors": "stoneforge-ai",
+      "source": "GitHub",
+      "url": "https://github.com/stoneforge-ai/stoneforge",
+      "type": "harness",
+      "summary": "Open-source multi-agent orchestration platform that dispatches director-worker-steward roles into git worktrees with automated merge review and messaging.",
+      "usecase": "Use it to spin parallel coding agents on isolated branches, track tasks, and let stewards merge only after tests pass.",
+      "tags": [
+        "multi-agent",
+        "worktrees",
+        "orchestration"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agentmem-os",
       "title": "AgentMem-OS",
@@ -10516,48 +10798,6 @@
         "benchmark",
         "agents",
         "eval"
-      ],
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-07",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "agent-sandbox",
-      "title": "Agent-Sandbox",
-      "authors": "agent-sandbox",
-      "source": "GitHub",
-      "url": "https://github.com/agent-sandbox/agent-sandbox",
-      "type": "repo",
-      "summary": "Self-hosted E2B-compatible sandbox platform for untrusted LLM code, browser use, computer use and multi-tenant isolation on Kubernetes.",
-      "usecase": "Use it to give every agent turn its own isolated container with shell, VNC and MCP lifecycle control.",
-      "tags": [
-        "sandbox",
-        "kubernetes",
-        "e2b",
-        "computer-use"
-      ],
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-07",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "agentic-harness",
-      "title": "agentic-harness (Rust)",
-      "authors": "codejunkie99",
-      "source": "GitHub",
-      "url": "https://github.com/codejunkie99/agentic-harness",
-      "type": "tool",
-      "summary": "Rust-native agent runtime, SDK and CLI that ships one binary for laptop, CI, remote Linux sandboxes or edge with HTTP session environments.",
-      "usecase": "Use it to build a coding agent that edits, tests and PRs from a single native binary without a JS runtime.",
-      "tags": [
-        "rust",
-        "cli",
-        "sandbox",
-        "coding"
       ],
       "firstSeen": "2026-09-07",
       "lastSeen": "2026-09-07",
