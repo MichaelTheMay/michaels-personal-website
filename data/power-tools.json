@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-11-18",
-  "count": 601,
+  "lastUpdated": "2026-11-19",
+  "count": 602,
   "tools": [
+    {
+      "slug": "agent-vm",
+      "title": "agent-vm",
+      "authors": "sylvinus",
+      "source": "GitHub",
+      "url": "https://github.com/sylvinus/agent-vm",
+      "type": "tool",
+      "summary": "One-binary Lima-based disposable Linux VMs scoped to a project folder so agents get a kernel without host secrets.",
+      "usecase": "Use it to launch Claude Code, OpenCode or similar inside a per-project VM with guarded git mounts and network controls.",
+      "tags": [
+        "vm",
+        "lima",
+        "local",
+        "isolation",
+        "coding-agent"
+      ],
+      "firstSeen": "2026-11-19",
+      "lastSeen": "2026-11-19",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-sandbox",
       "title": "Agent-Sandbox",

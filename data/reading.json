@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-18",
+  "lastUpdated": "2026-11-19",
   "issues": [
+    {
+      "date": "2026-11-19",
+      "title": "MicroVM control planes that outrun chat-loop sandboxes",
+      "blurb": "Today’s picks cluster around hardware-isolated runtimes, local-first harnesses, and snapshot-fork platforms you can actually wire into agent loops. Power users get clone-and-run isolation without the household IDE tax."
+    },
     {
       "date": "2026-11-18",
       "title": "MicroVM isolation and policy planes under the agent loop",
@@ -325,14 +330,79 @@
       "date": "2026-09-11",
       "title": "Disposable VMs and resource meshes under every agent loop",
       "blurb": "Power users are cloning lightweight isolation layers, capability-secure runtimes, and programmatic harnesses that turn sandboxes and cross-machine resources into first-class wiring instead of chat afterthoughts. The through-line is infrastructure you actually run inside your own loops."
-    },
-    {
-      "date": "2026-09-10",
-      "title": "MicroVM sandboxes and team control planes that contain agent fleets",
-      "blurb": "Power users are wiring isolation first: local microVMs, Kubernetes control planes, and gateway-enforced team harnesses that keep credentials and blast radius outside the model loop. Clone these to run parallel agents safely without leaning on closed IDEs."
     }
   ],
   "items": [
+    {
+      "id": "agent-vm-2026-11-19",
+      "title": "agent-vm",
+      "authors": "sylvinus",
+      "source": "GitHub",
+      "url": "https://github.com/sylvinus/agent-vm",
+      "type": "tool",
+      "dateAdded": "2026-11-19",
+      "summary": "One-binary Lima-based disposable Linux VMs scoped to a project folder so agents get a kernel without host secrets.",
+      "tags": [
+        "vm",
+        "lima",
+        "local",
+        "isolation",
+        "coding-agent"
+      ],
+      "usecase": "Use it to launch Claude Code, OpenCode or similar inside a per-project VM with guarded git mounts and network controls.",
+      "returning": false
+    },
+    {
+      "id": "langsmith-sandboxes-reach-ga-with-microvm-isolation-2026-11-19",
+      "title": "LangSmith Sandboxes reach GA with microVM isolation",
+      "authors": "byteiota",
+      "source": "byteiota",
+      "url": "https://byteiota.com/langsmith-sandboxes-ga-microvms-agent-code/",
+      "type": "release",
+      "dateAdded": "2026-11-19",
+      "summary": "LangSmith Sandboxes are generally available with hardware-virtualized microVMs per agent, sub-second cold starts, and credential brokering outside the guest. The GA adds a Sandbox CLI, snapshots, and tighter Deep Agents integration for production code execution.",
+      "tags": [
+        "langsmith",
+        "sandbox",
+        "microvm",
+        "ga",
+        "release"
+      ]
+    },
+    {
+      "id": "ai-agent-sandboxes-become-infrastructure-2026-11-19",
+      "title": "AI agent sandboxes become infrastructure",
+      "authors": "i-scoop",
+      "source": "i-scoop.eu",
+      "url": "https://www.i-scoop.eu/ai-agent-sandbox/",
+      "type": "article",
+      "dateAdded": "2026-11-19",
+      "summary": "The piece argues that sandbox doors (egress, credentials, policy) now matter more than walls alone as microVMs and gVisor become baseline. It maps isolation levels and recent CNCF and vendor moves that treat agent compute as platform infrastructure.",
+      "tags": [
+        "sandbox",
+        "infrastructure",
+        "policy",
+        "microvm",
+        "essay"
+      ]
+    },
+    {
+      "id": "strands-box-stops-lambda-microvm-escape-attempts-2026-11-19",
+      "title": "Strands Box stops Lambda microVM escape attempts",
+      "authors": "AWS Builder Center",
+      "source": "builder.aws.com",
+      "url": "https://builder.aws.com/content/3LytpCABCdpSVyom2dv07I5PRq7",
+      "type": "article",
+      "dateAdded": "2026-11-19",
+      "summary": "An engineer nested agents inside Lambda microVMs and measured escape techniques including DNS tunnels. The microVM held the core boundary while a Strands-Box style policy layer blocked remaining exfil paths and cut sensitive exposure to zero.",
+      "tags": [
+        "security",
+        "lambda",
+        "microvm",
+        "policy",
+        "strands"
+      ]
+    },
     {
       "id": "shuru-2026-11-18",
       "title": "shuru",
@@ -10749,72 +10819,6 @@
         "agent-workflow"
       ],
       "usecase": "Use it to bootstrap, audit, and release-cut feature inventories so agents keep documentation current without manual effort.",
-      "returning": false
-    },
-    {
-      "id": "show-hn-ridge-connect-coding-agents-to-local-ssh-docker-and-s3-resources-2026-09-11",
-      "title": "Show HN: Ridge - Connect coding agents to local, SSH, Docker, and S3 resources",
-      "authors": "vasinov",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49647368",
-      "type": "release",
-      "dateAdded": "2026-09-11",
-      "summary": "Ridge ships a resource mesh so agents discover and operate across local projects, containers, SSH hosts, and S3 without custom transfer scripts. Parent agents can delegate scoped resources to workers while the harness stays in charge of planning.",
-      "tags": [
-        "resources",
-        "mcp",
-        "multi-machine",
-        "show-hn"
-      ]
-    },
-    {
-      "id": "show-hn-maskshift-a-maximalist-coding-agent-with-zero-npm-dependencies-2026-09-11",
-      "title": "Show HN: MaskShift – a maximalist coding agent with zero NPM dependencies",
-      "authors": "Nafeeur",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49591238",
-      "type": "release",
-      "dateAdded": "2026-09-11",
-      "summary": "MaskShift launches as a local-first harness with 148+ native tools, lazy MCP, multi-provider support, and zero runtime npm deps. It bridges existing agents and keeps recovery via checkpoints and audit logs.",
-      "tags": [
-        "harness",
-        "zero-deps",
-        "cli",
-        "show-hn"
-      ]
-    },
-    {
-      "id": "show-hn-toolcraft-open-source-ai-harness-and-starter-for-building-design-apps-2026-09-11",
-      "title": "Show HN: Toolcraft – open-source AI harness and starter for building design apps",
-      "authors": "AlexBV",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49658747",
-      "type": "article",
-      "dateAdded": "2026-09-11",
-      "summary": "Toolcraft releases an MIT starter with canvas, component library, layers, timelines, and an AI harness that teaches agents the design system plus automated checks. It targets custom design tools that agents can extend instead of generic chat UIs.",
-      "tags": [
-        "design",
-        "starter",
-        "harness",
-        "show-hn"
-      ]
-    },
-    {
-      "id": "onecli-2026-09-10",
-      "title": "OneCLI",
-      "authors": "onecli",
-      "source": "GitHub",
-      "url": "https://github.com/onecli/onecli",
-      "type": "harness",
-      "dateAdded": "2026-09-10",
-      "summary": "Open-source sandboxed agent harness for teams that gives every employee an isolated personal agent with gateway-injected credentials and policy enforcement.",
-      "tags": [
-        "sandbox",
-        "teams",
-        "gateway",
-        "policy"
-      ],
-      "usecase": "Use it to provision per-employee agents behind a single org policy so secrets never enter agent context while still allowing Slack and dashboard control.",
       "returning": false
     }
   ]
