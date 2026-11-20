@@ -1,7 +1,278 @@
 {
-  "lastUpdated": "2026-11-19",
-  "count": 602,
+  "lastUpdated": "2026-11-20",
+  "count": 611,
   "tools": [
+    {
+      "slug": "2026-agent-harness",
+      "title": "2026-agent-harness",
+      "authors": "bishopZ",
+      "source": "GitHub",
+      "url": "https://github.com/bishopZ/2026-agent-harness",
+      "type": "repo",
+      "summary": "Clone-and-run lifecycle system combining persistent wiki-style memory with staged human-gated skills for multi-project agent work.",
+      "usecase": "Use it to force every idea through an 11-stage pipeline with explicit sign-off so agent sessions stop restarting from zero.",
+      "tags": [
+        "lifecycle",
+        "skills",
+        "memory"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "atomic-agents",
+      "title": "Atomic Agents",
+      "authors": "Eigenwise",
+      "source": "GitHub",
+      "url": "https://github.com/Eigenwise/atomic-agents",
+      "type": "repo",
+      "summary": "Lightweight modular Python framework for agentic pipelines built from single-purpose, composable agents, tools, and context providers.",
+      "usecase": "Use it to assemble production agent graphs from small typed pieces instead of a monolithic multi-agent framework.",
+      "tags": [
+        "python",
+        "framework",
+        "composable",
+        "pipelines"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "devspace",
+      "title": "DevSpace",
+      "authors": "Waishnav",
+      "source": "GitHub",
+      "url": "https://github.com/Waishnav/devspace",
+      "type": "harness",
+      "summary": "Agent-agnostic bridge that connects chat hosts to your machine over a tunnel you own and lets agents delegate to other local coding CLIs in worktrees.",
+      "usecase": "Use it to let ChatGPT or Claude hand real repo work to Codex/Pi/Cursor subagents with review cards on diffs before apply.",
+      "tags": [
+        "mcp",
+        "delegation",
+        "worktree",
+        "bridge"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "edera-agent",
+      "title": "edera-agent",
+      "authors": "edera-dev",
+      "source": "GitHub",
+      "url": "https://github.com/edera-dev/edera-agent",
+      "type": "repo",
+      "summary": "Reference integration of Kubernetes Agent Sandbox CRDs with the Edera runtime so each agent sandbox boots in its own kernel zone.",
+      "usecase": "Use it to harden k8s agent sandboxes by swapping runtimeClassName to Edera without rewriting the Sandbox API or workload shape.",
+      "tags": [
+        "kubernetes",
+        "runtime",
+        "isolation",
+        "crd"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "emdash",
+      "title": "Emdash",
+      "authors": "generalaction",
+      "source": "GitHub",
+      "url": "https://github.com/generalaction/emdash",
+      "type": "tool",
+      "summary": "Open-source agentic development environment (YC W26) for running multiple coding agents in parallel git worktrees with ticket ingest and diff review.",
+      "usecase": "Use it as a desktop control surface to launch isolated agent tasks from Linear/Jira/GitHub issues and merge only the diffs you accept.",
+      "tags": [
+        "desktop",
+        "worktree",
+        "multi-agent",
+        "yc"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "everos",
+      "title": "EverOS",
+      "authors": "EverMind-AI",
+      "source": "GitHub",
+      "url": "https://github.com/EverMind-AI/EverOS",
+      "type": "repo",
+      "summary": "Portable local-first Markdown-native memory layer meant to travel with agents across apps and sessions as a user-owned context substrate.",
+      "usecase": "Use it to give every coding harness the same durable personal and project memory without locking context into one vendor session store.",
+      "tags": [
+        "memory",
+        "local-first",
+        "markdown",
+        "cross-harness"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "gke-sandboxes",
+      "title": "gke-sandboxes",
+      "authors": "comp-work",
+      "source": "GitHub",
+      "url": "https://github.com/comp-work/gke-sandboxes",
+      "type": "repo",
+      "summary": "Self-hosted GKE workspace sandboxes with gVisor, filesystem snapshots, sleep/wake, warm pools, and low per-hour awake cost in your own GCP project.",
+      "usecase": "Use it to give each cloud agent a cheap, resumable Linux workspace you control instead of renting managed sandbox minutes.",
+      "tags": [
+        "gke",
+        "gvisor",
+        "snapshot",
+        "self-host"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hyperfide",
+      "title": "Hyperfide",
+      "authors": "Sidiora-Labs",
+      "source": "GitHub",
+      "url": "https://github.com/Sidiora-Labs/hyperfide",
+      "type": "harness",
+      "summary": "Single-binary agent workflow engine with durable fleet supervisors, code-graph indexing in SQLite, and manager/worker waves across git worktrees.",
+      "usecase": "Use it to run long-horizon multi-agent delivery fleets that plan, implement, verify, and land changes with crash-resumable supervision.",
+      "tags": [
+        "fleet",
+        "worktree",
+        "workflow",
+        "cli"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "microsandbox",
+      "title": "microsandbox",
+      "authors": "superradcompany",
+      "source": "GitHub",
+      "url": "https://github.com/superradcompany/microsandbox",
+      "type": "repo",
+      "summary": "Local-first programmable microVM runtime and library with multi-language SDKs, OCI image support, MCP server, and active snapshot/network work for untrusted agent code.",
+      "usecase": "Use it to embed fast microVM isolation in your own agent loop or expose sandbox create/exec to any MCP-capable coding agent.",
+      "tags": [
+        "microvm",
+        "local-first",
+        "sdk",
+        "isolation"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "omnigent",
+      "title": "Omnigent",
+      "authors": "omnigent-ai",
+      "source": "GitHub",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "type": "harness",
+      "summary": "Open meta-harness that wraps many coding CLIs and custom agents under one session, policy, sandbox, and multi-device collaboration layer.",
+      "usecase": "Use it to supervise mixed Claude/Codex/Pi/custom sessions from terminal, browser, or phone with shared spend and approval policies.",
+      "tags": [
+        "meta-harness",
+        "orchestration",
+        "open source"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "perfected"
+      ]
+    },
+    {
+      "slug": "pi",
+      "title": "Pi",
+      "authors": "earendil-works",
+      "source": "GitHub",
+      "url": "https://github.com/earendil-works/pi",
+      "type": "harness",
+      "summary": "Minimal extensible coding-agent harness with unified LLM API, TUI, RPC, packages for skills/extensions, and active shipping as a power-user base loop.",
+      "usecase": "Use it to own a thin agent loop you can extend with npm packages and pair with sandboxes like Gondolin instead of adopting a heavyweight IDE agent.",
+      "tags": [
+        "harness",
+        "cli",
+        "extensible",
+        "multi-provider"
+      ],
+      "firstSeen": "2026-09-06",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "raven",
+      "title": "Raven",
+      "authors": "EverMind-AI",
+      "source": "GitHub",
+      "url": "https://github.com/EverMind-AI/Raven",
+      "type": "harness",
+      "summary": "Harness-of-harnesses super-agent that orchestrates specialized research, code, design, and oncall agents with DAG planning and self-evolving harness loops.",
+      "usecase": "Use it to coordinate multi-domain agent teams under one host agent that can propose and validate improvements to its own harness.",
+      "tags": [
+        "rsi",
+        "multi-agent",
+        "orchestration",
+        "memory"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "wasd-engine",
+      "title": "WASD Engine",
+      "authors": "WASDEngine",
+      "source": "GitHub",
+      "url": "https://github.com/WASDEngine/WASD-Engine",
+      "type": "tool",
+      "summary": "Open MCP server and desktop harness that gives agents a real game studio stack (Godot, Blender, GIMP, audio) so games are not pure code slop.",
+      "usecase": "Use it to one-shot higher quality Godot games with agent-driven art and playtest loops that still export as normal projects.",
+      "tags": [
+        "gamedev",
+        "mcp",
+        "godot",
+        "harness"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-vm",
       "title": "agent-vm",
@@ -10044,27 +10315,6 @@
       ]
     },
     {
-      "slug": "microsandbox",
-      "title": "microsandbox",
-      "authors": "superradcompany",
-      "source": "GitHub",
-      "url": "https://github.com/superradcompany/microsandbox",
-      "type": "repo",
-      "summary": "Local-first microVM runtime and multi-language SDKs that give agents hardware-isolated environments with OCI images, secrets brokering, and MCP support.",
-      "usecase": "Use it to embed sub-second microVMs in your agent loop so untrusted code runs with its own kernel without Docker daemon overhead.",
-      "tags": [
-        "microvm",
-        "local-first",
-        "sdk",
-        "isolation"
-      ],
-      "firstSeen": "2026-09-10",
-      "lastSeen": "2026-09-10",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "omnara",
       "title": "omnara",
       "authors": "omnara-ai",
@@ -10186,26 +10436,6 @@
       ],
       "firstSeen": "2026-09-10",
       "lastSeen": "2026-09-10",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "2026-agent-harness",
-      "title": "2026-agent-harness",
-      "authors": "bishopZ",
-      "source": "GitHub",
-      "url": "https://github.com/bishopZ/2026-agent-harness",
-      "type": "repo",
-      "summary": "Lifecycle system combining persistent wiki-style memory with staged skill discipline and human gates across an eleven-stage idea pipeline.",
-      "usecase": "Use it to clone a complete on-disk agent workflow that moves ideas from backlog through build and growth with explicit sign-off.",
-      "tags": [
-        "lifecycle",
-        "skills",
-        "memory"
-      ],
-      "firstSeen": "2026-09-09",
-      "lastSeen": "2026-09-09",
       "algorithms": [
         "digest"
       ]
@@ -11353,27 +11583,6 @@
       ]
     },
     {
-      "slug": "pi",
-      "title": "Pi",
-      "authors": "earendil-works",
-      "source": "GitHub",
-      "url": "https://github.com/earendil-works/pi",
-      "type": "harness",
-      "summary": "Minimal extensible coding agent harness with unified multi-provider LLM API, agent core loop, TUI, skills, extensions, and session persistence.",
-      "usecase": "Use it to build or extend a lean coding CLI that stays small at core while adding TypeScript packages for custom tools and themes.",
-      "tags": [
-        "harness",
-        "cli",
-        "extensible",
-        "multi-provider"
-      ],
-      "firstSeen": "2026-09-06",
-      "lastSeen": "2026-09-06",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "remote-swe-agents",
       "title": "remote-swe-agents",
       "authors": "aws-samples",
@@ -12416,26 +12625,6 @@
       "lastSeen": "2026-09-03",
       "algorithms": [
         "velocity"
-      ]
-    },
-    {
-      "slug": "omnigent",
-      "title": "Omnigent",
-      "authors": "omnigent-ai",
-      "source": "GitHub",
-      "url": "https://github.com/omnigent-ai/omnigent",
-      "type": "harness",
-      "summary": "Open-source meta-harness: one orchestrator that fans work across several coding agents. Born June 2026, already the loudest new control plane on GitHub.",
-      "usecase": "Use it to run three different coding agents on the same ticket and merge the first one that lands a green test.",
-      "tags": [
-        "meta-harness",
-        "orchestration",
-        "open source"
-      ],
-      "firstSeen": "2026-09-03",
-      "lastSeen": "2026-09-03",
-      "algorithms": [
-        "perfected"
       ]
     },
     {
