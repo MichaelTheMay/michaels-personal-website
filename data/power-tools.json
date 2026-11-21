@@ -1,7 +1,171 @@
 {
-  "lastUpdated": "2026-11-20",
-  "count": 611,
+  "lastUpdated": "2026-11-21",
+  "count": 618,
   "tools": [
+    {
+      "slug": "agentenv",
+      "title": "agentenv (declarative)",
+      "authors": "windoliver",
+      "source": "GitHub",
+      "url": "https://github.com/windoliver/agentenv",
+      "type": "tool",
+      "summary": "Declarative composer that turns one agentenv.yaml into a pinned sandbox, agent, context backend, and inference stack.",
+      "usecase": "Use it to materialize reproducible coding-agent environments the same way you pin a conda or pixi lockfile.",
+      "tags": [
+        "declarative",
+        "compose",
+        "sandbox",
+        "repro"
+      ],
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "apple-pie-ai",
+      "title": "apple-pie-ai Android harness",
+      "authors": "apple-pie-ai",
+      "source": "GitHub",
+      "url": "https://github.com/apple-pie-ai",
+      "type": "tool",
+      "summary": "TUI/CLI harness for Android workflows that runs plan-code-review in worktrees with emulator locking and budget gates.",
+      "usecase": "Use it to drive Android ticket-to-PR loops from the terminal with one agent owning the emulator at a time.",
+      "tags": [
+        "android",
+        "tui",
+        "worktree"
+      ],
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sample-lambda-microvm-claude-managed-agents",
+      "title": "aws-samples/sample-lambda-microvm-claude-managed-agents",
+      "authors": "aws-samples",
+      "source": "GitHub",
+      "url": "https://github.com/aws-samples/sample-lambda-microvm-claude-managed-agents",
+      "type": "repo",
+      "summary": "Reference pattern that runs Claude self-hosted sandboxes inside AWS Lambda MicroVMs with orchestrator plus ephemeral VM per session.",
+      "usecase": "Use it to keep agent tool execution inside your AWS account while Anthropic owns the control plane.",
+      "tags": [
+        "lambda",
+        "microvm",
+        "aws",
+        "claude"
+      ],
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "bot-inator",
+      "title": "bot-inator",
+      "authors": "Bforsyth1234",
+      "source": "GitHub",
+      "url": "https://github.com/Bforsyth1234/bot-inator",
+      "type": "tool",
+      "summary": "Local-first macOS menu-bar agent that watches activity, proposes help, and writes its own sandboxed tools only after approval.",
+      "usecase": "Use it to let a local model invent one-off automation tools for Downloads or mail without granting blanket permissions.",
+      "tags": [
+        "macos",
+        "local",
+        "tools",
+        "sandbox"
+      ],
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-ai-coding-sandboxes",
+      "title": "Cleanroom / smol-machines patterns",
+      "authors": "fhiltscher et al.",
+      "source": "GitHub",
+      "url": "https://github.com/fhiltscher/awesome-ai-coding-sandboxes",
+      "type": "repo",
+      "summary": "Security-posture-first ranking of coding sandboxes by isolation, egress control, and secrets handling.",
+      "usecase": "Use it to filter for deny-by-default egress plus brokered secrets before you pick a production sandbox.",
+      "tags": [
+        "sandbox",
+        "security",
+        "egress",
+        "awesome-list"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-11-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "awesome-agent-orchestrators",
+      "title": "erson/awesome-agent-orchestrators",
+      "authors": "erson",
+      "source": "GitHub",
+      "url": "https://github.com/erson/awesome-agent-orchestrators",
+      "type": "repo",
+      "summary": "Metrics-backed atlas of orchestration tools with activity, stars, and category views for multi-agent control.",
+      "usecase": "Use it to compare live maintenance signals when wiring a multi-agent control plane.",
+      "tags": [
+        "orchestration",
+        "metrics",
+        "index"
+      ],
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "pdj555/agent-harness",
+      "authors": "pdj555",
+      "source": "GitHub",
+      "url": "https://github.com/pdj555/agent-harness",
+      "type": "repo",
+      "summary": "Spec-check harness that catches sabotaged code changes which still pass project tests, proving verification must stay outside the agent.",
+      "usecase": "Use it to gate agent PRs with independent spec checks instead of trusting the same tests the agent can see.",
+      "tags": [
+        "verification",
+        "spec",
+        "evals"
+      ],
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-sandbox",
+      "title": "vivek1504/agent-sandbox",
+      "authors": "vivek1504",
+      "source": "GitHub",
+      "url": "https://github.com/vivek1504/agent-sandbox",
+      "type": "tool",
+      "summary": "Firecracker microVM sandbox giving each agent a disposable Linux machine with millisecond boots and native MCP.",
+      "usecase": "Use it to give untrusted agent code its own kernel and tear it down after each session.",
+      "tags": [
+        "firecracker",
+        "mcp",
+        "disposable"
+      ],
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "2026-agent-harness",
       "title": "2026-agent-harness",
@@ -10223,27 +10387,6 @@
         "self-host",
         "mcp",
         "tools"
-      ],
-      "firstSeen": "2026-09-10",
-      "lastSeen": "2026-09-10",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "awesome-ai-coding-sandboxes",
-      "title": "Cleanroom / smol-machines patterns",
-      "authors": "fhiltscher et al.",
-      "source": "GitHub",
-      "url": "https://github.com/fhiltscher/awesome-ai-coding-sandboxes",
-      "type": "repo",
-      "summary": "Security-first ranked list of agent sandboxes emphasizing deny-default egress, secrets brokering and isolation strength.",
-      "usecase": "Use it to pick a sandbox whose egress and secrets model match your threat model before you wire the agent loop.",
-      "tags": [
-        "sandbox",
-        "security",
-        "egress",
-        "awesome-list"
       ],
       "firstSeen": "2026-09-10",
       "lastSeen": "2026-09-10",

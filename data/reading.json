@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-20",
+  "lastUpdated": "2026-11-21",
   "issues": [
+    {
+      "date": "2026-11-21",
+      "title": "MicroVM control planes and forkable agent loops that power users actually wire",
+      "blurb": "Today's picks cluster around hardware-isolated microVMs, snapshot/fork runtimes, and harness eval layers that sit under any coding agent. Power users get cloneable control planes, policy-gated egress, and measurable cost-per-task harnesses instead of another chat IDE."
+    },
     {
       "date": "2026-11-20",
       "title": "MicroVM control planes and meta-harnesses take the agent loop off the host",
@@ -330,14 +335,180 @@
       "date": "2026-09-12",
       "title": "Durable workers over replaceable runtimes: sandboxes, verifiers, and control planes",
       "blurb": "Today's picks emphasize persistent agent identity above disposable compute, with deterministic gates, independent patch verification, and context compression that power users can clone into their loops."
-    },
-    {
-      "date": "2026-09-11",
-      "title": "Disposable VMs and resource meshes under every agent loop",
-      "blurb": "Power users are cloning lightweight isolation layers, capability-secure runtimes, and programmatic harnesses that turn sandboxes and cross-machine resources into first-class wiring instead of chat afterthoughts. The through-line is infrastructure you actually run inside your own loops."
     }
   ],
   "items": [
+    {
+      "id": "agentenv-declarative-2026-11-21",
+      "title": "agentenv (declarative)",
+      "authors": "windoliver",
+      "source": "GitHub",
+      "url": "https://github.com/windoliver/agentenv",
+      "type": "tool",
+      "dateAdded": "2026-11-21",
+      "summary": "Declarative composer that turns one agentenv.yaml into a pinned sandbox, agent, context backend, and inference stack.",
+      "tags": [
+        "declarative",
+        "compose",
+        "sandbox",
+        "repro"
+      ],
+      "usecase": "Use it to materialize reproducible coding-agent environments the same way you pin a conda or pixi lockfile.",
+      "returning": false
+    },
+    {
+      "id": "bot-inator-2026-11-21",
+      "title": "bot-inator",
+      "authors": "Bforsyth1234",
+      "source": "GitHub",
+      "url": "https://github.com/Bforsyth1234/bot-inator",
+      "type": "tool",
+      "dateAdded": "2026-11-21",
+      "summary": "Local-first macOS menu-bar agent that watches activity, proposes help, and writes its own sandboxed tools only after approval.",
+      "tags": [
+        "macos",
+        "local",
+        "tools",
+        "sandbox"
+      ],
+      "usecase": "Use it to let a local model invent one-off automation tools for Downloads or mail without granting blanket permissions.",
+      "returning": false
+    },
+    {
+      "id": "pdj555-agent-harness-2026-11-21",
+      "title": "pdj555/agent-harness",
+      "authors": "pdj555",
+      "source": "GitHub",
+      "url": "https://github.com/pdj555/agent-harness",
+      "type": "repo",
+      "dateAdded": "2026-11-21",
+      "summary": "Spec-check harness that catches sabotaged code changes which still pass project tests, proving verification must stay outside the agent.",
+      "tags": [
+        "verification",
+        "spec",
+        "evals"
+      ],
+      "usecase": "Use it to gate agent PRs with independent spec checks instead of trusting the same tests the agent can see.",
+      "returning": false
+    },
+    {
+      "id": "awesome-ai-coding-sandboxes-2026-11-21",
+      "title": "awesome-ai-coding-sandboxes",
+      "authors": "fhiltscher",
+      "source": "GitHub",
+      "url": "https://github.com/fhiltscher/awesome-ai-coding-sandboxes",
+      "type": "repo",
+      "dateAdded": "2026-11-21",
+      "summary": "Security-posture-first ranking of coding sandboxes by isolation, egress control, and secrets handling.",
+      "tags": [
+        "security",
+        "ranking",
+        "egress"
+      ],
+      "usecase": "Use it to filter for deny-by-default egress plus brokered secrets before you pick a production sandbox.",
+      "returning": false
+    },
+    {
+      "id": "apple-pie-ai-android-harness-2026-11-21",
+      "title": "apple-pie-ai Android harness",
+      "authors": "apple-pie-ai",
+      "source": "GitHub",
+      "url": "https://github.com/apple-pie-ai",
+      "type": "tool",
+      "dateAdded": "2026-11-21",
+      "summary": "TUI/CLI harness for Android workflows that runs plan-code-review in worktrees with emulator locking and budget gates.",
+      "tags": [
+        "android",
+        "tui",
+        "worktree"
+      ],
+      "usecase": "Use it to drive Android ticket-to-PR loops from the terminal with one agent owning the emulator at a time.",
+      "returning": false
+    },
+    {
+      "id": "erson-awesome-agent-orchestrators-2026-11-21",
+      "title": "erson/awesome-agent-orchestrators",
+      "authors": "erson",
+      "source": "GitHub",
+      "url": "https://github.com/erson/awesome-agent-orchestrators",
+      "type": "repo",
+      "dateAdded": "2026-11-21",
+      "summary": "Metrics-backed atlas of orchestration tools with activity, stars, and category views for multi-agent control.",
+      "tags": [
+        "orchestration",
+        "metrics",
+        "index"
+      ],
+      "usecase": "Use it to compare live maintenance signals when wiring a multi-agent control plane.",
+      "returning": false
+    },
+    {
+      "id": "vivek1504-agent-sandbox-2026-11-21",
+      "title": "vivek1504/agent-sandbox",
+      "authors": "vivek1504",
+      "source": "GitHub",
+      "url": "https://github.com/vivek1504/agent-sandbox",
+      "type": "tool",
+      "dateAdded": "2026-11-21",
+      "summary": "Firecracker microVM sandbox giving each agent a disposable Linux machine with millisecond boots and native MCP.",
+      "tags": [
+        "firecracker",
+        "mcp",
+        "disposable"
+      ],
+      "usecase": "Use it to give untrusted agent code its own kernel and tear it down after each session.",
+      "returning": false
+    },
+    {
+      "id": "aws-samples-sample-lambda-microvm-claude-managed-agents-2026-11-21",
+      "title": "aws-samples/sample-lambda-microvm-claude-managed-agents",
+      "authors": "aws-samples",
+      "source": "GitHub",
+      "url": "https://github.com/aws-samples/sample-lambda-microvm-claude-managed-agents",
+      "type": "repo",
+      "dateAdded": "2026-11-21",
+      "summary": "Reference pattern that runs Claude self-hosted sandboxes inside AWS Lambda MicroVMs with orchestrator plus ephemeral VM per session.",
+      "tags": [
+        "lambda",
+        "microvm",
+        "aws",
+        "claude"
+      ],
+      "usecase": "Use it to keep agent tool execution inside your AWS account while Anthropic owns the control plane.",
+      "returning": false
+    },
+    {
+      "id": "aws-lambda-microvms-expands-to-7-more-regions-2026-11-21",
+      "title": "AWS Lambda MicroVMs expands to 7 more regions",
+      "authors": "AWS",
+      "source": "AWS What's New",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-microvms-7-regions/",
+      "type": "release",
+      "dateAdded": "2026-11-21",
+      "summary": "Lambda MicroVMs reached 21 regions with near-instant launch, VM isolation, and state preservation aimed at AI coding assistants and agent code. Developers can build images from Dockerfiles and expose dedicated HTTPS endpoints for agent toolkits.",
+      "tags": [
+        "aws",
+        "microvm",
+        "regions",
+        "release"
+      ]
+    },
+    {
+      "id": "this-month-in-aws-devops-agent-sandboxes-and-chat-extensions-2026-11-21",
+      "title": "This Month in AWS DevOps Agent: sandboxes and chat extensions",
+      "authors": "Nereida Woo, Matheus Arrais",
+      "source": "AWS Cloud Operations Blog",
+      "url": "https://aws.amazon.com/blogs/mt/this-month-in-aws-devops-agent-november-2026/",
+      "type": "article",
+      "dateAdded": "2026-11-21",
+      "summary": "AWS DevOps Agent gained preview sandboxes for isolated Linux code execution during investigations, plus chat reach into Teams, Slack, and MCP clients. Sandboxes are scoped per conversation, default to read-only AWS calls, and discard after the session ends.",
+      "tags": [
+        "aws",
+        "devops-agent",
+        "sandbox",
+        "article"
+      ]
+    },
     {
       "id": "microsandbox-2026-11-20",
       "title": "microsandbox",
@@ -10645,179 +10816,6 @@
         "recovery"
       ],
       "usecase": "Use it to crash-recover by waking any harness instance against the durable session and a fresh sandbox.",
-      "returning": false
-    },
-    {
-      "id": "docker-sandboxes-in-gha-2026-09-12",
-      "title": "Docker Sandboxes in GHA",
-      "authors": "Docker",
-      "source": "Blog",
-      "url": "https://www.docker.com/blog/running-ai-agents-in-github-actions-with-docker-sandboxes/",
-      "type": "tool",
-      "dateAdded": "2026-09-12",
-      "summary": "MicroVM sandboxes as a GitHub Agentic Workflows runtime so agents can run containers under network policy.",
-      "tags": [
-        "sandbox",
-        "ci",
-        "github-actions",
-        "microvm"
-      ],
-      "usecase": "Use it to let CI agents fix integration tests with Testcontainers while the runner stays isolated.",
-      "returning": false
-    },
-    {
-      "id": "omnigent-2026-09-12",
-      "title": "Omnigent",
-      "authors": "Databricks",
-      "source": "GitHub/Blog",
-      "url": "https://www.databricks.com/blog/introducing-omnigent-meta-harness-combine-control-and-share-your-agents",
-      "type": "harness",
-      "dateAdded": "2026-09-12",
-      "summary": "Apache-2.0 meta-harness that wraps existing agents in sandboxed sessions with composition, cost policies, and OS sandbox.",
-      "tags": [
-        "meta-harness",
-        "composition",
-        "policy",
-        "sandbox"
-      ],
-      "usecase": "Use it to compose multiple harnesses under shared policy and pause runs after a dollar budget threshold.",
-      "returning": false
-    },
-    {
-      "id": "strands-adjacent-tools-pack-note-2026-09-12",
-      "title": "Strands-adjacent tools pack note",
-      "authors": "community",
-      "source": "GitHub",
-      "url": "https://github.com/tiennm99/awesome-coding-agents",
-      "type": "repo",
-      "dateAdded": "2026-09-12",
-      "summary": "Daily-updated star ranking of coding agents that surfaces mid-tier movers outside household CLIs.",
-      "tags": [
-        "catalog",
-        "rankings",
-        "discovery"
-      ],
-      "usecase": "Use it to scan 7-day delta movers and clone rising harnesses before they hit mainstream lists.",
-      "returning": false
-    },
-    {
-      "id": "openai-agents-api-public-beta-the-harness-becomes-a-managed-product-2026-09-12",
-      "title": "OpenAI Agents API public beta: the harness becomes a managed product",
-      "authors": "Nitish Garg / CellCog",
-      "source": "CellCog",
-      "url": "https://cellcog.ai/blog/openai-agents-api/",
-      "type": "release",
-      "dateAdded": "2026-09-12",
-      "summary": "OpenAI shipped a managed Agents API on 10 Sep 2026 that runs the Codex-style harness with sessions, compaction, tool search, subagents, and partner sandboxes. Builders can target hosted or self-hosted execution under standard API pricing.",
-      "tags": [
-        "openai",
-        "agents-api",
-        "harness",
-        "release"
-      ]
-    },
-    {
-      "id": "deepseek-harness-flaw-let-agents-disable-their-own-file-sandbox-2026-09-12",
-      "title": "DeepSeek Harness flaw let agents disable their own file sandbox",
-      "authors": "Swati Khandelwal",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/deepseek-harness-flaw-let-ai-agents.html",
-      "type": "article",
-      "dateAdded": "2026-09-12",
-      "summary": "A sandbox escape in DeepSeek Harness allowed a sandboxed coding agent to turn off file isolation with one command. Fixed builds landed on npm days after the GitHub patch, underscoring supply-chain lag for agent runtimes.",
-      "tags": [
-        "security",
-        "sandbox",
-        "deepseek",
-        "vulnerability"
-      ]
-    },
-    {
-      "id": "harness-platform-ships-autonomous-worker-agents-for-software-delivery-2026-09-12",
-      "title": "Harness platform ships Autonomous Worker Agents for software delivery",
-      "authors": "Harness",
-      "source": "Harness Blog",
-      "url": "https://www.harness.io/blog/introducing-autonomous-worker-agents",
-      "type": "release",
-      "dateAdded": "2026-09-12",
-      "summary": "Harness added Autonomous Worker Agents that run as governed pipeline steps with container sandboxes, scoped credentials, and audit trails. The release targets the build-test-deploy gap after code is written.",
-      "tags": [
-        "ci-cd",
-        "worker-agents",
-        "enterprise",
-        "release"
-      ]
-    },
-    {
-      "id": "clawk-2026-09-11",
-      "title": "clawk",
-      "authors": "clawkwork",
-      "source": "GitHub",
-      "url": "https://github.com/clawkwork/clawk",
-      "type": "tool",
-      "dateAdded": "2026-09-11",
-      "summary": "CLI that boots a disposable Linux microVM per project so coding agents run with root inside the guest while host files and keys stay unreachable.",
-      "tags": [
-        "sandbox",
-        "microvm",
-        "cli",
-        "isolation"
-      ],
-      "usecase": "Use it to attach Claude Code, Codex, or a shell to a per-repo VM with network allow-lists and resume via attach without Docker.",
-      "returning": false
-    },
-    {
-      "id": "astrid-2026-09-11",
-      "title": "Astrid",
-      "authors": "astrid-runtime",
-      "source": "GitHub",
-      "url": "https://github.com/astrid-runtime/astrid",
-      "type": "repo",
-      "dateAdded": "2026-09-11",
-      "summary": "Portable capability-secure OS runtime built from WebAssembly capsules that compose without inheriting full authority.",
-      "tags": [
-        "wasm",
-        "capability-security",
-        "runtime",
-        "sandbox"
-      ],
-      "usecase": "Use it to run agent workloads as isolated capsules with explicit capabilities on macOS or Linux without full VMs.",
-      "returning": false
-    },
-    {
-      "id": "open-ptc-agent-2026-09-11",
-      "title": "open-ptc-agent",
-      "authors": "Chen-zexi",
-      "source": "GitHub",
-      "url": "https://github.com/Chen-zexi/open-ptc-agent",
-      "type": "harness",
-      "dateAdded": "2026-09-11",
-      "summary": "Open implementation of programmatic tool calling that lets the model write code to invoke MCP tools inside a Daytona sandbox instead of serial JSON calls.",
-      "tags": [
-        "ptc",
-        "mcp",
-        "sandbox",
-        "langgraph"
-      ],
-      "usecase": "Use it to collapse multi-step tool loops into one code-execution turn with progressive discovery and session persistence.",
-      "returning": false
-    },
-    {
-      "id": "maskshift-2026-09-11",
-      "title": "MaskShift",
-      "authors": "nafeeur",
-      "source": "GitHub",
-      "url": "https://github.com/nafeeur/MaskShift",
-      "type": "tool",
-      "dateAdded": "2026-09-11",
-      "summary": "Maximalist local-first coding harness with 149 native tools, zero npm runtime deps, lazy MCP, and bridges to other agents.",
-      "tags": [
-        "harness",
-        "cli",
-        "zero-deps",
-        "multi-provider"
-      ],
-      "usecase": "Use it to give any model a full control plane for LSP, containers, SSH, Git worktrees, and skills while keeping only relevant tools in context.",
       "returning": false
     }
   ]
