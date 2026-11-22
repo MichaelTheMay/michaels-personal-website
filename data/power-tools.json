@@ -1,7 +1,90 @@
 {
-  "lastUpdated": "2026-11-21",
-  "count": 618,
+  "lastUpdated": "2026-11-22",
+  "count": 620,
   "tools": [
+    {
+      "slug": "awesome-ai-sandboxes",
+      "title": "awesome-ai-sandboxes",
+      "authors": "awesome-llms-labs",
+      "source": "GitHub",
+      "url": "https://github.com/awesome-llms-labs/awesome-ai-sandboxes",
+      "type": "repo",
+      "summary": "Comprehensive up-to-date directory of AI and coding-agent sandboxes covering cloud services, self-hosted runtimes, and security posture.",
+      "usecase": "Use it to compare isolation backends, egress controls, and pricing before choosing a sandbox for agent-generated code execution.",
+      "tags": [
+        "directory",
+        "sandbox",
+        "comparison",
+        "security"
+      ],
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cognee",
+      "title": "cognee",
+      "authors": "topoteretes",
+      "source": "GitHub",
+      "url": "https://github.com/topoteretes/cognee",
+      "type": "tool",
+      "summary": "Open-source AI memory platform that turns documents, code, and conversations into a local knowledge graph searchable by agents using free small models.",
+      "usecase": "Use it to give any agent persistent long-term memory that runs fully offline on CPU with editable graph visualization and import from other memory stores.",
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "local",
+        "python"
+      ],
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "deepcode",
+      "title": "DeepCode",
+      "authors": "HKUDS",
+      "source": "GitHub",
+      "url": "https://github.com/HKUDS/DeepCode",
+      "type": "harness",
+      "summary": "Open agentic coding harness that combines loop engineering, multi-agent orchestration, and sandbox integration for software tasks.",
+      "usecase": "Use it to run multi-agent coding workflows with explicit harness layers that you can inspect, extend, and evaluate against your own benchmarks.",
+      "tags": [
+        "research",
+        "harness",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-11-22",
+      "algorithms": [
+        "research"
+      ]
+    },
+    {
+      "slug": "openharness",
+      "title": "OpenHarness (HKUDS)",
+      "authors": "HKUDS",
+      "source": "GitHub",
+      "url": "https://github.com/HKUDS/OpenHarness",
+      "type": "harness",
+      "summary": "Open agent harness framework focused on agent loop engineering and multi-agent orchestration for coding and research tasks.",
+      "usecase": "Use it to assemble a custom open harness with explicit loop control, sub-agents, and evaluation hooks instead of relying on closed product loops.",
+      "tags": [
+        "python",
+        "skills",
+        "memory",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-11-22",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agentenv",
       "title": "agentenv (declarative)",
@@ -11390,27 +11473,6 @@
       ]
     },
     {
-      "slug": "openharness",
-      "title": "OpenHarness (HKUDS)",
-      "authors": "HKUDS",
-      "source": "GitHub",
-      "url": "https://github.com/HKUDS/OpenHarness",
-      "type": "harness",
-      "summary": "Lightweight open agent infrastructure with tool loop, 43+ tools, skills, memory, multi-agent coordination, permissions and a personal ohmo gateway.",
-      "usecase": "Use it to run a self-hosted personal coding agent over chat channels that forks branches and opens PRs.",
-      "tags": [
-        "python",
-        "skills",
-        "memory",
-        "multi-agent"
-      ],
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-07",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "repomaster",
       "title": "RepoMaster",
       "authors": "QuantaAlpha",
@@ -12548,26 +12610,6 @@
       "algorithms": [
         "perfected",
         "infra"
-      ]
-    },
-    {
-      "slug": "deepcode",
-      "title": "DeepCode",
-      "authors": "HKUDS",
-      "source": "GitHub",
-      "url": "https://github.com/HKUDS/DeepCode",
-      "type": "harness",
-      "summary": "Open agentic coding from HKU: agent harness, loop engineering, multi-agent orchestration. Academic lab software that ships as a repo you run.",
-      "usecase": "Use it when you want a research harness with a real coding loop, not a chatbot with extra steps.",
-      "tags": [
-        "research",
-        "harness",
-        "multi-agent"
-      ],
-      "firstSeen": "2026-09-03",
-      "lastSeen": "2026-09-03",
-      "algorithms": [
-        "research"
       ]
     },
     {

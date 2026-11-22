@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-21",
+  "lastUpdated": "2026-11-22",
   "issues": [
+    {
+      "date": "2026-11-22",
+      "title": "Programmable microVM control planes outpace closed coding loops",
+      "blurb": "Today's picks center on host-side policy engines, snapshottable Firecracker and libkrun sandboxes, and local-first harness SDKs that power users can clone and wire into durable agent loops. Isolation, secret brokering, and cost-aware evals dominate over polished consumer CLIs."
+    },
     {
       "date": "2026-11-21",
       "title": "MicroVM control planes and forkable agent loops that power users actually wire",
@@ -338,6 +343,94 @@
     }
   ],
   "items": [
+    {
+      "id": "cognee-2026-11-22",
+      "title": "cognee",
+      "authors": "topoteretes",
+      "source": "GitHub",
+      "url": "https://github.com/topoteretes/cognee",
+      "type": "tool",
+      "dateAdded": "2026-11-22",
+      "summary": "Open-source AI memory platform that turns documents, code, and conversations into a local knowledge graph searchable by agents using free small models.",
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "local",
+        "python"
+      ],
+      "usecase": "Use it to give any agent persistent long-term memory that runs fully offline on CPU with editable graph visualization and import from other memory stores.",
+      "returning": false
+    },
+    {
+      "id": "awesome-ai-sandboxes-2026-11-22",
+      "title": "awesome-ai-sandboxes",
+      "authors": "awesome-llms-labs",
+      "source": "GitHub",
+      "url": "https://github.com/awesome-llms-labs/awesome-ai-sandboxes",
+      "type": "repo",
+      "dateAdded": "2026-11-22",
+      "summary": "Comprehensive up-to-date directory of AI and coding-agent sandboxes covering cloud services, self-hosted runtimes, and security posture.",
+      "tags": [
+        "directory",
+        "sandbox",
+        "comparison",
+        "security"
+      ],
+      "usecase": "Use it to compare isolation backends, egress controls, and pricing before choosing a sandbox for agent-generated code execution.",
+      "returning": false
+    },
+    {
+      "id": "openharness-2026-11-22",
+      "title": "OpenHarness",
+      "authors": "HKUDS",
+      "source": "GitHub",
+      "url": "https://github.com/HKUDS/OpenHarness",
+      "type": "harness",
+      "dateAdded": "2026-11-22",
+      "summary": "Open agent harness framework focused on agent loop engineering and multi-agent orchestration for coding and research tasks.",
+      "tags": [
+        "open-source",
+        "orchestration",
+        "coding",
+        "framework"
+      ],
+      "usecase": "Use it to assemble a custom open harness with explicit loop control, sub-agents, and evaluation hooks instead of relying on closed product loops.",
+      "returning": false
+    },
+    {
+      "id": "deepcode-2026-11-22",
+      "title": "DeepCode",
+      "authors": "HKUDS",
+      "source": "GitHub",
+      "url": "https://github.com/HKUDS/DeepCode",
+      "type": "harness",
+      "dateAdded": "2026-11-22",
+      "summary": "Open agentic coding harness that combines loop engineering, multi-agent orchestration, and sandbox integration for software tasks.",
+      "tags": [
+        "coding",
+        "multi-agent",
+        "harness",
+        "sandbox"
+      ],
+      "usecase": "Use it to run multi-agent coding workflows with explicit harness layers that you can inspect, extend, and evaluate against your own benchmarks.",
+      "returning": false
+    },
+    {
+      "id": "google-launches-agent-compute-engine-for-isolated-ai-agents-2026-11-22",
+      "title": "Google launches Agent Compute Engine for isolated AI agents",
+      "authors": "Wisevoter",
+      "source": "Wisevoter",
+      "url": "https://wisevoter.com/world/us/2026/11/22/google-agent-compute-engine-isolated-ai-agents",
+      "type": "release",
+      "dateAdded": "2026-11-22",
+      "summary": "Google announced a managed service that runs AI agents inside isolated microVMs with checkpointing, external secret injection via an Agent Gateway, and copy-on-write memory sharing. The service keeps credentials outside the sandbox and targets preview availability in the coming months on Google Cloud.",
+      "tags": [
+        "google",
+        "microvm",
+        "release",
+        "managed"
+      ]
+    },
     {
       "id": "agentenv-declarative-2026-11-21",
       "title": "agentenv (declarative)",
@@ -10728,94 +10821,6 @@
         "audit"
       ],
       "usecase": "Use it to wrap autonomous agents in non-bypassable pipelines that escalate to humans with sealed audit trails.",
-      "returning": false
-    },
-    {
-      "id": "all-the-vibes-agent-harness-2026-09-12",
-      "title": "All-The-Vibes Agent-Harness",
-      "authors": "All-The-Vibes",
-      "source": "GitHub",
-      "url": "https://github.com/All-The-Vibes/Agent-Harness",
-      "type": "repo",
-      "dateAdded": "2026-09-12",
-      "summary": "Five-pillar framework, white paper, and prompt guide for building harnesses around context, tools, loops, and policy.",
-      "tags": [
-        "framework",
-        "pillars",
-        "prompts",
-        "design"
-      ],
-      "usecase": "Use it to scaffold and test your own orchestration layer with explicit continue, retry, and halt signals.",
-      "returning": false
-    },
-    {
-      "id": "open-executive-2026-09-12",
-      "title": "Open Executive",
-      "authors": "SenteLabsAI",
-      "source": "GitHub",
-      "url": "https://github.com/SenteLabsAI/OpenExecutive",
-      "type": "repo",
-      "dateAdded": "2026-09-12",
-      "summary": "Virtual executive persona backed by eight specialist agents behind a single coherent FastAPI and Next.js surface.",
-      "tags": [
-        "multi-agent",
-        "executive",
-        "specialists"
-      ],
-      "usecase": "Use it to clone a multi-specialist executive stack and route strategy, finance, and ops questions through one voice.",
-      "returning": false
-    },
-    {
-      "id": "agent-harness-lib-rs-style-2026-09-12",
-      "title": "agent-harness (lib.rs style)",
-      "authors": "Tosin Amuda",
-      "source": "GitHub",
-      "url": "https://lib.rs/crates/agent-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-12",
-      "summary": "Rust crate that drives multiple coding agents behind one trait with normalized streaming RunEvent vocabulary.",
-      "tags": [
-        "rust",
-        "unified-api",
-        "streaming",
-        "multi-provider"
-      ],
-      "usecase": "Use it to call Claude Code, Codex, or OpenAI-compatible loops from Rust without parsing each CLI format.",
-      "returning": false
-    },
-    {
-      "id": "agent-patterns-rah-2026-09-12",
-      "title": "Agent Patterns RAH",
-      "authors": "AgentPatterns.ai",
-      "source": "Docs",
-      "url": "https://agentpatterns.ai/patterns/agent-design/recursive-agent-harnesses/",
-      "type": "repo",
-      "dateAdded": "2026-09-12",
-      "summary": "Pattern where a parent agent spawns full subagent harnesses in parallel rather than bare model calls.",
-      "tags": [
-        "pattern",
-        "recursive",
-        "subagents"
-      ],
-      "usecase": "Use it to structure long jobs so the recursive unit carries filesystem tools, planning, and its own context.",
-      "returning": false
-    },
-    {
-      "id": "session-harness-sandbox-separation-2026-09-12",
-      "title": "Session Harness Sandbox Separation",
-      "authors": "AgentPatterns.ai",
-      "source": "Docs",
-      "url": "https://agentpatterns.ai/patterns/agent-design/session-harness-sandbox-separation/",
-      "type": "repo",
-      "dateAdded": "2026-09-12",
-      "summary": "Split long-running agents into append-only session log, stateless harness, and provisioned sandbox primitives.",
-      "tags": [
-        "pattern",
-        "session",
-        "sandbox",
-        "recovery"
-      ],
-      "usecase": "Use it to crash-recover by waking any harness instance against the durable session and a fresh sandbox.",
       "returning": false
     }
   ]
