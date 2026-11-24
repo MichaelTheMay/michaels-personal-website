@@ -3,8 +3,8 @@
   "issues": [
     {
       "date": "2026-11-24",
-      "title": "Self-hostable microVM control planes and harness factories",
-      "blurb": "Today's picks center on clone-and-run isolation layers, meta-harnesses that mint repo-specific agents, and eval kits that score loops by cost. Power users get hardware boundaries, credential vaults, and branchable state without closed IDEs."
+      "title": "MicroVM isolation and cross-harness control planes that outrun single-agent IDEs",
+      "blurb": "Power users are wiring hardware-isolated sandboxes, durable control planes, and pluggable memory into their own loops. The through-line is cloneable runtime infrastructure that makes any coding agent safer, cheaper, and longer-running without locking you to a household IDE."
     },
     {
       "date": "2026-11-22",
@@ -340,14 +340,263 @@
       "date": "2026-09-13",
       "title": "Portable brains, evidence gates, and fleet control planes for agent loops",
       "blurb": "Today's picks center on clone-and-run harnesses that give power users durable memory across tools, proof-before-done verification, systems-language runtimes, and multi-agent orchestration without locking into household IDEs."
-    },
-    {
-      "date": "2026-09-12",
-      "title": "Durable workers over replaceable runtimes: sandboxes, verifiers, and control planes",
-      "blurb": "Today's picks emphasize persistent agent identity above disposable compute, with deterministic gates, independent patch verification, and context compression that power users can clone into their loops."
     }
   ],
   "items": [
+    {
+      "id": "potpie-2026-11-24",
+      "title": "Potpie",
+      "authors": "potpie-ai",
+      "source": "GitHub",
+      "url": "https://github.com/potpie-ai/potpie",
+      "type": "tool",
+      "dateAdded": "2026-11-24",
+      "summary": "Context graph that indexes code, history, decisions and workflows so agents reason with project-specific knowledge.",
+      "tags": [
+        "context-graph",
+        "memory",
+        "sdlc"
+      ],
+      "usecase": "Use it to install skills into your coding agents so they answer, plan and debug against a living graph of your SDLC.",
+      "returning": false
+    },
+    {
+      "id": "lazycodex-2026-11-24",
+      "title": "LazyCodex",
+      "authors": "code-yeongyu",
+      "source": "GitHub",
+      "url": "https://github.com/code-yeongyu/lazycodex",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Project-memory, planning, execution and verified-completion harness packaged for Codex on complex codebases.",
+      "tags": [
+        "codex",
+        "planning",
+        "verification"
+      ],
+      "usecase": "Use it to drop OmO-style quality gates and multi-step planning into Codex without rebuilding the agent loop.",
+      "returning": false
+    },
+    {
+      "id": "claude-mem-2026-11-24",
+      "title": "claude-mem",
+      "authors": "thedotmack",
+      "source": "GitHub",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "type": "tool",
+      "dateAdded": "2026-11-24",
+      "summary": "Session-memory plugin that captures agent work, AI-compresses it, and injects relevant context into future sessions across many harnesses.",
+      "tags": [
+        "memory",
+        "mcp",
+        "cross-harness"
+      ],
+      "usecase": "Use it to stop agents from re-reading the same files and re-asking the same questions after every restart.",
+      "returning": false
+    },
+    {
+      "id": "kun-2026-11-24",
+      "title": "Kun",
+      "authors": "KunAgent",
+      "source": "GitHub",
+      "url": "https://github.com/KunAgent/Kun",
+      "type": "tool",
+      "dateAdded": "2026-11-24",
+      "summary": "Local-first desktop and TUI workspace with one runtime for coding, design, documents and multi-agent collaboration.",
+      "tags": [
+        "local-first",
+        "workspace",
+        "multi-agent"
+      ],
+      "usecase": "Use it to keep sessions, memory and approvals on your machine while dispatching work to Claude Code, Codex or personal agents.",
+      "returning": false
+    },
+    {
+      "id": "zeron-2026-11-24",
+      "title": "Zeron",
+      "authors": "zeronsh",
+      "source": "GitHub",
+      "url": "https://github.com/zeronsh/zeron",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Native local-first control plane for Claude Code, Codex, Cursor, Devin and other coding agents with optional multi-device sync.",
+      "tags": [
+        "control-plane",
+        "local-first",
+        "multi-agent"
+      ],
+      "usecase": "Use it to supervise multiple coding agents from one desktop or headless CLI without a hosted account.",
+      "returning": false
+    },
+    {
+      "id": "context-mode-2026-11-24",
+      "title": "context-mode",
+      "authors": "mksglu",
+      "source": "GitHub",
+      "url": "https://github.com/mksglu/context-mode",
+      "type": "tool",
+      "dateAdded": "2026-11-24",
+      "summary": "Local plugin that sandboxes tool output and uses SQLite FTS so agents see summaries instead of full dumps, cutting context bytes.",
+      "tags": [
+        "context",
+        "progressive-disclosure",
+        "mcp"
+      ],
+      "usecase": "Use it to keep long tool traces out of the model window while still letting the agent search details on demand.",
+      "returning": false
+    },
+    {
+      "id": "ouroboros-2026-11-24",
+      "title": "Ouroboros",
+      "authors": "Q00",
+      "source": "GitHub",
+      "url": "https://github.com/Q00/ouroboros",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Interview-gated Agent OS that turns goals into checkable specs, runs them on 14 harnesses, and verifies acceptance criteria.",
+      "tags": [
+        "agent-os",
+        "spec-first",
+        "multi-runtime"
+      ],
+      "usecase": "Use it to force spec-first coding so your existing agent builds the right thing and proves it against written gates.",
+      "returning": false
+    },
+    {
+      "id": "agent-substrate-2026-11-24",
+      "title": "Agent Substrate",
+      "authors": "agent-substrate",
+      "source": "GitHub",
+      "url": "https://github.com/agent-substrate/substrate",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Zero-trust Kubernetes runtime that maps idle agent actors onto warm workers with fast resume and multi-runtime isolation.",
+      "tags": [
+        "kubernetes",
+        "sandbox",
+        "cncf",
+        "actors"
+      ],
+      "usecase": "Use it to run millions of mostly-idle agents on standard Kubernetes without Pod-per-session control-plane thrash.",
+      "returning": false
+    },
+    {
+      "id": "wakeshift-2026-11-24",
+      "title": "Wakeshift",
+      "authors": "wakeshift",
+      "source": "GitHub",
+      "url": "https://github.com/wakeshift/server",
+      "type": "tool",
+      "dateAdded": "2026-11-24",
+      "summary": "Open-source MCP Events bridge that delivers standard events and wakes harnesses that still lack native subscription.",
+      "tags": [
+        "mcp",
+        "events",
+        "interop"
+      ],
+      "usecase": "Use it so your MCP server can push build-done or job-done events into Claude Code, Codex, Cursor and others within seconds.",
+      "returning": false
+    },
+    {
+      "id": "actplane-2026-11-24",
+      "title": "ActPlane",
+      "authors": "eunomia-bpf",
+      "source": "GitHub",
+      "url": "https://github.com/eunomia-bpf/ActPlane",
+      "type": "tool",
+      "dateAdded": "2026-11-24",
+      "summary": "eBPF information-flow policy engine that enforces agent harness rules at the syscall boundary regardless of shell tricks.",
+      "tags": [
+        "ebpf",
+        "policy",
+        "security",
+        "harness"
+      ],
+      "usecase": "Use it to declare kernel-level rules such as no git push outside /src and have them hold even when the agent shells out.",
+      "returning": false
+    },
+    {
+      "id": "cerulion-2026-11-24",
+      "title": "Cerulion",
+      "authors": "cerulion-inc",
+      "source": "GitHub",
+      "url": "https://github.com/cerulion-inc/cerulion",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Open-source robotics harness and zero-copy runtime that gives any LLM agent a body under robot-enforced safety limits.",
+      "tags": [
+        "robotics",
+        "physical-ai",
+        "mcp",
+        "ros2"
+      ],
+      "usecase": "Use it to close the loop on physical tasks with MCP tools, recorded failure replay, and ROS 2 compatibility.",
+      "returning": false
+    },
+    {
+      "id": "pluggableharness-agent-2026-11-24",
+      "title": "pluggableharness agent",
+      "authors": "pluggableharness",
+      "source": "GitHub",
+      "url": "https://github.com/pluggableharness/agent",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Microkernel-style terminal harness where model, tools, context, memory and frontend are all swappable providers.",
+      "tags": [
+        "pluggable",
+        "microkernel",
+        "terminal"
+      ],
+      "usecase": "Use it to define an agent.hcl profile and run a safety-gated loop without forking a monolithic coding agent.",
+      "returning": false
+    },
+    {
+      "id": "qcon-sf-2026-the-harness-is-the-new-operating-system-2026-11-24",
+      "title": "QCon SF 2026: The Harness Is the New Operating System",
+      "authors": "Andrew Hoblitzell",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/11/harness-new-operating-system/",
+      "type": "article",
+      "dateAdded": "2026-11-24",
+      "summary": "Mad Labs CEO Manju Rajashekhar argued that the harness around a model, not the weights, decides agent reliability and safety. He mapped context, interfaces, execution and feedback onto classic OS jobs and showed the same model scoring wildly different results across harnesses.",
+      "tags": [
+        "harness-engineering",
+        "qcon",
+        "keynote"
+      ]
+    },
+    {
+      "id": "google-donates-agent-substrate-and-gvisor-to-the-cncf-2026-11-24",
+      "title": "Google Donates Agent Substrate and gVisor to the CNCF",
+      "authors": "Craig Risi",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/11/google-substrate-gvisor-cncf/",
+      "type": "release",
+      "dateAdded": "2026-11-24",
+      "summary": "Google placed Agent Substrate and gVisor under CNCF governance to secure untrusted agent code at scale. Substrate separates idle actor state from warm workers so agents resume in under 500 ms without Pod-per-session thrash.",
+      "tags": [
+        "cncf",
+        "sandbox",
+        "kubernetes",
+        "gvisor"
+      ]
+    },
+    {
+      "id": "sandboxing-ai-coding-agents-nono-vs-docker-sandboxes-vs-microsandbox-vs-openshel-2026-11-24",
+      "title": "Sandboxing AI Coding Agents: nono vs Docker Sandboxes vs Microsandbox vs OpenShell",
+      "authors": "Kudelski Security Research",
+      "source": "Kudelski Security",
+      "url": "https://kudelskisecurity.com/research/sandboxing-coding-agents",
+      "type": "article",
+      "dateAdded": "2026-11-24",
+      "summary": "A side-by-side security and UX comparison of four agent sandboxes scored isolation, secrets handling, live policy and agent profiles. OpenShell and Docker Sandboxes led on security posture while nono excelled on speed and credential injection.",
+      "tags": [
+        "sandbox",
+        "security",
+        "comparison",
+        "microvm"
+      ]
+    },
     {
       "id": "metaharness-2026-11-24",
       "title": "MetaHarness",
@@ -10558,268 +10807,6 @@
         "workforce"
       ],
       "usecase": "Use it to install runners on your machines, schedule agent pods with capacity limits, and command a large fleet without one-box bottlenecks.",
-      "returning": false
-    },
-    {
-      "id": "ruflo-2026-09-13",
-      "title": "ruflo",
-      "authors": "ruvnet",
-      "source": "GitHub",
-      "url": "https://github.com/ruvnet/ruflo",
-      "type": "harness",
-      "dateAdded": "2026-09-13",
-      "summary": "Meta-harness that turns Claude Code or Codex into coordinated swarms with adaptive memory, federation, 100+ specialized agents, and self-learning loops.",
-      "tags": [
-        "swarm",
-        "memory",
-        "federation",
-        "meta-harness"
-      ],
-      "usecase": "Use it to init a nervous system around your existing coding agent so tasks auto-route, learn from success, and federate securely across machines.",
-      "returning": false
-    },
-    {
-      "id": "superpowers-2026-09-13",
-      "title": "superpowers",
-      "authors": "obra",
-      "source": "GitHub",
-      "url": "https://github.com/obra/superpowers",
-      "type": "repo",
-      "dateAdded": "2026-09-13",
-      "summary": "Composable skills framework and software development methodology that forces specs, TDD plans, and subagent-driven execution across many coding agents.",
-      "tags": [
-        "skills",
-        "tdd",
-        "methodology",
-        "multi-agent"
-      ],
-      "usecase": "Use it to install skills that make any supported harness pause for design sign-off then drive red-green TDD subagents until the plan is complete.",
-      "returning": false
-    },
-    {
-      "id": "gas-town-2026-09-13",
-      "title": "Gas Town",
-      "authors": "gastownhall",
-      "source": "GitHub",
-      "url": "https://github.com/gastownhall/gastown",
-      "type": "harness",
-      "dateAdded": "2026-09-13",
-      "summary": "Multi-agent workspace manager with git-backed persistent hooks, mailboxes, and a Mayor coordinator for reliable long-running coding agent fleets.",
-      "tags": [
-        "persistence",
-        "multi-agent",
-        "workspace",
-        "coordinator"
-      ],
-      "usecase": "Use it to keep work state across agent restarts, hand off tasks via persistent hooks, and scale to dozens of agents without losing context.",
-      "returning": false
-    },
-    {
-      "id": "agents-best-practices-2026-09-13",
-      "title": "agents-best-practices",
-      "authors": "DenisSergeevitch",
-      "source": "GitHub",
-      "url": "https://github.com/DenisSergeevitch/agents-best-practices",
-      "type": "repo",
-      "dateAdded": "2026-09-13",
-      "summary": "Provider-neutral Agent Skill for designing, generating MVP blueprints, auditing, and refactoring agentic harnesses.",
-      "tags": [
-        "skill",
-        "blueprint",
-        "audit",
-        "design"
-      ],
-      "usecase": "Use it to generate a production-safe harness blueprint for a domain, then audit an existing loop for missing authorization and observation rules.",
-      "returning": false
-    },
-    {
-      "id": "agentic-coding-harness-benchmarks-2026-09-13",
-      "title": "agentic-coding-harness-benchmarks",
-      "authors": "aarora79",
-      "source": "GitHub",
-      "url": "https://github.com/aarora79/agentic-coding-harness-benchmarks",
-      "type": "repo",
-      "dateAdded": "2026-09-13",
-      "summary": "Benchmark harness that drives real long-horizon coding tasks through multiple agents and models then plots cost/quality Pareto frontiers.",
-      "tags": [
-        "benchmark",
-        "pareto",
-        "eval",
-        "cost"
-      ],
-      "usecase": "Use it to score models across harnesses on your own repos, produce a live frontier, and let a swe-router skill pick the cheapest model that clears the bar.",
-      "returning": false
-    },
-    {
-      "id": "agentic-harness-sevenschulte-2026-09-13",
-      "title": "agentic-harness (sevenschulte)",
-      "authors": "sevenschulte",
-      "source": "GitHub",
-      "url": "https://github.com/sevenschulte/agentic-harness",
-      "type": "repo",
-      "dateAdded": "2026-09-13",
-      "summary": "Reference six-layer harness for agentic coding with identity, rules, skills, hooks, memory, and adapters for multiple runtimes.",
-      "tags": [
-        "reference",
-        "layers",
-        "skills",
-        "hooks"
-      ],
-      "usecase": "Use it to clone a working reference, adapt the six layers to your preferred agent, and ship a fork-friendly team harness in an afternoon.",
-      "returning": false
-    },
-    {
-      "id": "agent-harness-agent-zero-plugin-2026-09-13",
-      "title": "agent_harness (Agent Zero plugin)",
-      "authors": "a0-community-plugins",
-      "source": "GitHub",
-      "url": "https://github.com/a0-community-plugins/agent_harness",
-      "type": "tool",
-      "dateAdded": "2026-09-13",
-      "summary": "Plugin that adds coding workflows, safety checkpoints, per-chat workspaces, and optional parallel task graphs to Agent Zero.",
-      "tags": [
-        "plugin",
-        "task-graph",
-        "checkpoint",
-        "workspace"
-      ],
-      "usecase": "Use it to upgrade Agent Zero with pro/ultra modes, action-bound approvals, and task-graph parallel subagents without touching core code.",
-      "returning": false
-    },
-    {
-      "id": "symphony-2026-09-13",
-      "title": "Symphony",
-      "authors": "openai",
-      "source": "GitHub",
-      "url": "https://github.com/openai/symphony",
-      "type": "harness",
-      "dateAdded": "2026-09-13",
-      "summary": "Spec and reference that turns tracker issues into isolated autonomous implementation runs with proof-of-work artifacts for landing PRs.",
-      "tags": [
-        "autonomous",
-        "issue",
-        "proof",
-        "orchestration"
-      ],
-      "usecase": "Use it to watch Linear or GitHub issues, spawn sandboxed coding agents per ticket, and accept only runs that ship CI status plus walkthrough proof.",
-      "returning": false
-    },
-    {
-      "id": "agent-harness-guide-2026-09-13",
-      "title": "agent-harness-guide",
-      "authors": "paolo-perrone",
-      "source": "GitHub",
-      "url": "https://github.com/paoloap-py/agent-harness-guide",
-      "type": "repo",
-      "dateAdded": "2026-09-13",
-      "summary": "Five runnable layers of an agent harness, each demonstrating the failure it prevents, with no API key required.",
-      "tags": [
-        "educational",
-        "layers",
-        "sandbox",
-        "demo"
-      ],
-      "usecase": "Use it to clone and run the demos that show execution boundaries, sandboxing, memory, verification, and context so you can harden your own loop.",
-      "returning": false
-    },
-    {
-      "id": "strands-agents-tools-2026-09-13",
-      "title": "strands-agents tools",
-      "authors": "strands-agents",
-      "source": "GitHub",
-      "url": "https://github.com/strands-agents/tools",
-      "type": "repo",
-      "dateAdded": "2026-09-13",
-      "summary": "Companion tool pack for the Strands harness SDK giving agents file, shell, browser, and domain capabilities under lifecycle controls.",
-      "tags": [
-        "tools",
-        "sdk",
-        "mcp",
-        "production"
-      ],
-      "usecase": "Use it to wire production-ready tools into a Strands agent loop with turn limits, budgets, MCP, and tracing already in place.",
-      "returning": false
-    },
-    {
-      "id": "docker-cagent-v1-130-0-expands-eval-assertions-and-safety-classifiers-2026-09-13",
-      "title": "Docker cagent v1.130.0 expands eval assertions and safety classifiers",
-      "authors": "Docker",
-      "source": "GitHub Releases",
-      "url": "https://github.com/docker/cagent/releases",
-      "type": "release",
-      "dateAdded": "2026-09-13",
-      "summary": "The release adds assertions schema, verify scripts that run inside the eval container, pass@k metrics, and broader destructive-command patterns in the safety classifier. It also simplifies the built-in coder agent and updates Go toolchain declarations.",
-      "tags": [
-        "release",
-        "eval",
-        "safety",
-        "docker"
-      ]
-    },
-    {
-      "id": "harness-1-10-1-dependency-refresh-lands-on-2026-09-13-2026-09-13",
-      "title": "Harness 1.10.1 dependency refresh lands on 2026-09-13",
-      "authors": "capotej / boldblackai",
-      "source": "GitHub",
-      "url": "https://github.com/capotej/harness/blob/main/CHANGELOG.md",
-      "type": "release",
-      "dateAdded": "2026-09-13",
-      "summary": "A same-day patch bumps pnpm, pi-coding-agent, opencode-ai, hermes-agent and related tooling inside container images with no CLI surface changes. It keeps the multi-agent container stack current for daily power-user runs.",
-      "tags": [
-        "changelog",
-        "dependencies",
-        "container"
-      ]
-    },
-    {
-      "id": "the-anatomy-of-a-coding-agent-harness-2026-09-13",
-      "title": "The anatomy of a coding-agent harness",
-      "authors": "AnthonyAlcaraz",
-      "source": "GitHub Gist",
-      "url": "https://gist.github.com/AnthonyAlcaraz/5ec6b0067597bdebb13e8552b94c9379",
-      "type": "article",
-      "dateAdded": "2026-09-13",
-      "summary": "A close reading of a recent harness-engineering paper argues that a hundred-line loop already covers the seven core subsystems and that the extra million lines buy safety, recovery, cost control and extensibility rather than raw task completion. It maps Mini-SWE-Agent against production agents on those exact axes.",
-      "tags": [
-        "essay",
-        "harness-engineering",
-        "analysis"
-      ]
-    },
-    {
-      "id": "sandbox0-2026-09-12",
-      "title": "Sandbox0",
-      "authors": "sandbox0-ai",
-      "source": "GitHub",
-      "url": "https://github.com/sandbox0-ai/sandbox0",
-      "type": "repo",
-      "dateAdded": "2026-09-12",
-      "summary": "Persistent encrypted gVisor sandboxes scheduled by Nomad, with durable RootFS in object storage and replaceable compute nodes.",
-      "tags": [
-        "sandbox",
-        "gvisor",
-        "nomad",
-        "persistent"
-      ],
-      "usecase": "Use it to run long-lived agent workspaces that pause and resume identity without treating every session as disposable.",
-      "returning": false
-    },
-    {
-      "id": "agent-machines-2026-09-12",
-      "title": "Agent Machines",
-      "authors": "Kevin-Liu-01",
-      "source": "GitHub",
-      "url": "https://github.com/Kevin-Liu-01/Agent-Machines",
-      "type": "harness",
-      "dateAdded": "2026-09-12",
-      "summary": "Control plane that keeps Worker identity, memory, and evidence while routing runtimes and sandbox substrates underneath.",
-      "tags": [
-        "control-plane",
-        "workers",
-        "routing",
-        "fleet"
-      ],
-      "usecase": "Use it to provision specialist workers once and swap E2B, Daytona, or Vercel sandboxes without rewriting the agent contract.",
       "returning": false
     }
   ]

@@ -1,7 +1,49 @@
 {
   "lastUpdated": "2026-11-24",
-  "count": 624,
+  "count": 633,
   "tools": [
+    {
+      "slug": "actplane",
+      "title": "ActPlane",
+      "authors": "eunomia-bpf",
+      "source": "GitHub",
+      "url": "https://github.com/eunomia-bpf/ActPlane",
+      "type": "tool",
+      "summary": "eBPF information-flow policy engine that enforces agent harness rules at the syscall boundary regardless of shell tricks.",
+      "usecase": "Use it to declare kernel-level rules such as no git push outside /src and have them hold even when the agent shells out.",
+      "tags": [
+        "ebpf",
+        "policy",
+        "security",
+        "harness"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "substrate",
+      "title": "Agent Substrate",
+      "authors": "agent-substrate",
+      "source": "GitHub",
+      "url": "https://github.com/agent-substrate/substrate",
+      "type": "harness",
+      "summary": "Zero-trust Kubernetes runtime that maps idle agent actors onto warm workers with fast resume and multi-runtime isolation.",
+      "usecase": "Use it to run millions of mostly-idle agents on standard Kubernetes without Pod-per-session control-plane thrash.",
+      "tags": [
+        "control-plane",
+        "kubernetes",
+        "multiplex",
+        "lifecycle"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "agent-memory-benchmark",
       "title": "agent-memory-benchmark",
@@ -21,6 +63,68 @@
       "lastSeen": "2026-11-24",
       "algorithms": [
         "digest"
+      ]
+    },
+    {
+      "slug": "cerulion",
+      "title": "Cerulion",
+      "authors": "cerulion-inc",
+      "source": "GitHub",
+      "url": "https://github.com/cerulion-inc/cerulion",
+      "type": "harness",
+      "summary": "Open-source robotics harness and zero-copy runtime that gives any LLM agent a body under robot-enforced safety limits.",
+      "usecase": "Use it to close the loop on physical tasks with MCP tools, recorded failure replay, and ROS 2 compatibility.",
+      "tags": [
+        "robotics",
+        "physical-ai",
+        "mcp",
+        "ros2"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "claude-mem",
+      "title": "claude-mem",
+      "authors": "thedotmack",
+      "source": "GitHub",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "type": "tool",
+      "summary": "Session-memory plugin that captures agent work, AI-compresses it, and injects relevant context into future sessions across many harnesses.",
+      "usecase": "Use it to stop agents from re-reading the same files and re-asking the same questions after every restart.",
+      "tags": [
+        "memory",
+        "mcp",
+        "cross-harness"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "context-mode",
+      "title": "context-mode",
+      "authors": "mksglu",
+      "source": "GitHub",
+      "url": "https://github.com/mksglu/context-mode",
+      "type": "tool",
+      "summary": "Local plugin that sandboxes tool output and uses SQLite FTS so agents see summaries instead of full dumps, cutting context bytes.",
+      "usecase": "Use it to keep long tool traces out of the model window while still letting the agent search details on demand.",
+      "tags": [
+        "context",
+        "tool output",
+        "coding agents"
+      ],
+      "firstSeen": "2026-09-03",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "perfected",
+        "infra"
       ]
     },
     {
@@ -87,6 +191,46 @@
       ]
     },
     {
+      "slug": "kun",
+      "title": "Kun",
+      "authors": "KunAgent",
+      "source": "GitHub",
+      "url": "https://github.com/KunAgent/Kun",
+      "type": "tool",
+      "summary": "Local-first desktop and TUI workspace with one runtime for coding, design, documents and multi-agent collaboration.",
+      "usecase": "Use it to keep sessions, memory and approvals on your machine while dispatching work to Claude Code, Codex or personal agents.",
+      "tags": [
+        "local-first",
+        "workspace",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "lazycodex",
+      "title": "LazyCodex",
+      "authors": "code-yeongyu",
+      "source": "GitHub",
+      "url": "https://github.com/code-yeongyu/lazycodex",
+      "type": "harness",
+      "summary": "Project-memory, planning, execution and verified-completion harness packaged for Codex on complex codebases.",
+      "usecase": "Use it to drop OmO-style quality gates and multi-step planning into Codex without rebuilding the agent loop.",
+      "tags": [
+        "codex",
+        "planning",
+        "verification"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
       "slug": "metaharness",
       "title": "metaharness",
       "authors": "ruvnet",
@@ -122,6 +266,107 @@
         "SDK"
       ],
       "firstSeen": "2026-09-09",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ouroboros",
+      "title": "Ouroboros",
+      "authors": "Q00",
+      "source": "GitHub",
+      "url": "https://github.com/Q00/ouroboros",
+      "type": "harness",
+      "summary": "Interview-gated Agent OS that turns goals into checkable specs, runs them on 14 harnesses, and verifies acceptance criteria.",
+      "usecase": "Use it to force spec-first coding so your existing agent builds the right thing and proves it against written gates.",
+      "tags": [
+        "agent-os",
+        "spec-first",
+        "multi-runtime"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent",
+      "title": "PluggableHarness Agent",
+      "authors": "pluggableharness",
+      "source": "GitHub",
+      "url": "https://github.com/pluggableharness/agent",
+      "type": "harness",
+      "summary": "Microkernel-style terminal harness where model, tools, context, memory and frontend are all swappable providers.",
+      "usecase": "Use it to define an agent.hcl profile and run a safety-gated loop without forking a monolithic coding agent.",
+      "tags": [
+        "microkernel",
+        "plugins",
+        "go",
+        "terminal"
+      ],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "potpie",
+      "title": "Potpie",
+      "authors": "potpie-ai",
+      "source": "GitHub",
+      "url": "https://github.com/potpie-ai/potpie",
+      "type": "tool",
+      "summary": "Context graph that indexes code, history, decisions and workflows so agents reason with project-specific knowledge.",
+      "usecase": "Use it to install skills into your coding agents so they answer, plan and debug against a living graph of your SDLC.",
+      "tags": [
+        "context-graph",
+        "memory",
+        "sdlc"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "server",
+      "title": "Wakeshift",
+      "authors": "wakeshift",
+      "source": "GitHub",
+      "url": "https://github.com/wakeshift/server",
+      "type": "tool",
+      "summary": "Open-source MCP Events bridge that delivers standard events and wakes harnesses that still lack native subscription.",
+      "usecase": "Use it so your MCP server can push build-done or job-done events into Claude Code, Codex, Cursor and others within seconds.",
+      "tags": [
+        "mcp",
+        "events",
+        "interop"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "zeron",
+      "title": "Zeron",
+      "authors": "zeronsh",
+      "source": "GitHub",
+      "url": "https://github.com/zeronsh/zeron",
+      "type": "harness",
+      "summary": "Native local-first control plane for Claude Code, Codex, Cursor, Devin and other coding agents with optional multi-device sync.",
+      "usecase": "Use it to supervise multiple coding agents from one desktop or headless CLI without a hosted account.",
+      "tags": [
+        "control-plane",
+        "local-first",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-11-24",
       "lastSeen": "2026-11-24",
       "algorithms": [
         "digest"
@@ -10477,27 +10722,6 @@
       ]
     },
     {
-      "slug": "substrate",
-      "title": "Agent Substrate",
-      "authors": "agent-substrate",
-      "source": "GitHub",
-      "url": "https://github.com/agent-substrate/substrate",
-      "type": "harness",
-      "summary": "High-density control plane for agent sandboxes that multiplexes many idle agents onto fewer workers with sub-second suspend/resume over Kubernetes.",
-      "usecase": "Use it to schedule large fleets of agent actors onto shared workers so cold starts stay low while density stays high for RL or evals.",
-      "tags": [
-        "control-plane",
-        "kubernetes",
-        "multiplex",
-        "lifecycle"
-      ],
-      "firstSeen": "2026-09-10",
-      "lastSeen": "2026-09-10",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "agentbox",
       "title": "AgentBox",
       "authors": "madarco",
@@ -11277,27 +11501,6 @@
         "self-hosted",
         "multi-channel",
         "memory"
-      ],
-      "firstSeen": "2026-09-08",
-      "lastSeen": "2026-09-08",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "agent",
-      "title": "PluggableHarness Agent",
-      "authors": "pluggableharness",
-      "source": "GitHub",
-      "url": "https://github.com/pluggableharness/agent",
-      "type": "harness",
-      "summary": "Go microkernel coding harness with seven out-of-process plugin categories, HCL config, policy gate, and durable session replay.",
-      "usecase": "Use it to assemble a custom agent loop from versioned providers without forking a monolith.",
-      "tags": [
-        "microkernel",
-        "plugins",
-        "go",
-        "terminal"
       ],
       "firstSeen": "2026-09-08",
       "lastSeen": "2026-09-08",
@@ -12673,27 +12876,6 @@
       "lastSeen": "2026-09-03",
       "algorithms": [
         "systems"
-      ]
-    },
-    {
-      "slug": "context-mode",
-      "title": "context-mode",
-      "authors": "mksglu",
-      "source": "GitHub",
-      "url": "https://github.com/mksglu/context-mode",
-      "type": "tool",
-      "summary": "Context-window surgery for coding agents. Sandboxes tool output so the model sees the signal instead of a 40k-token log.",
-      "usecase": "Use it when your agent keeps blowing the window on build logs and you need the loop to survive a real compile.",
-      "tags": [
-        "context",
-        "tool output",
-        "coding agents"
-      ],
-      "firstSeen": "2026-09-03",
-      "lastSeen": "2026-09-03",
-      "algorithms": [
-        "perfected",
-        "infra"
       ]
     },
     {
