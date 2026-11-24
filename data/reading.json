@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-22",
+  "lastUpdated": "2026-11-24",
   "issues": [
+    {
+      "date": "2026-11-24",
+      "title": "Self-hostable microVM control planes and harness factories",
+      "blurb": "Today's picks center on clone-and-run isolation layers, meta-harnesses that mint repo-specific agents, and eval kits that score loops by cost. Power users get hardware boundaries, credential vaults, and branchable state without closed IDEs."
+    },
     {
       "date": "2026-11-22",
       "title": "Programmable microVM control planes outpace closed coding loops",
@@ -343,6 +348,162 @@
     }
   ],
   "items": [
+    {
+      "id": "metaharness-2026-11-24",
+      "title": "MetaHarness",
+      "authors": "ruvnet",
+      "source": "GitHub",
+      "url": "https://github.com/ruvnet/metaharness",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Factory that scaffolds a branded agent harness with CLI, MCP server, scoped memory, skills, governance, and witness-signed releases from any repo.",
+      "tags": [
+        "meta-harness",
+        "scaffolding",
+        "MCP",
+        "governance"
+      ],
+      "usecase": "Use it to mint a repo-specific harness zip that drops into multiple coding runtimes with Darwin evolution and cost-aware routing.",
+      "returning": false
+    },
+    {
+      "id": "cubepod-2026-11-24",
+      "title": "CubePod",
+      "authors": "cubeplexai",
+      "source": "GitHub",
+      "url": "https://github.com/cubeplexai/cubepod",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Kubernetes-native persistent writable RootFS microVM platform with E2B-compatible API, warm pools, and zero-trust egress vault.",
+      "tags": [
+        "microvm",
+        "kubernetes",
+        "E2B-compatible",
+        "persistence"
+      ],
+      "usecase": "Use it to give long-lived agents dual-volume block-backed RootFS that hibernates to zero CPU then resumes across nodes in about one second.",
+      "returning": false
+    },
+    {
+      "id": "hyperlight-sandbox-2026-11-24",
+      "title": "hyperlight-sandbox",
+      "authors": "hyperlight-dev",
+      "source": "GitHub",
+      "url": "https://github.com/hyperlight-dev/hyperlight-sandbox",
+      "type": "tool",
+      "dateAdded": "2026-11-24",
+      "summary": "Multi-backend sandbox framework on Hyperlight VMM with Wasm and JS guests, host tool dispatch, snapshots, and capability-based access.",
+      "tags": [
+        "hyperlight",
+        "wasm",
+        "sandbox",
+        "CNCF"
+      ],
+      "usecase": "Use it to let agents write scripts that call host tools inside hardware-isolated guests while enforcing file and network allow-lists.",
+      "returning": false
+    },
+    {
+      "id": "opensandbox-2026-11-24",
+      "title": "OpenSandbox",
+      "authors": "opensandbox-group",
+      "source": "GitHub",
+      "url": "https://github.com/opensandbox-group/OpenSandbox",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Self-hostable sandbox control plane and multi-language SDKs with Docker/K8s backends plus credential vault for egress injection.",
+      "tags": [
+        "sandbox",
+        "control-plane",
+        "credentials",
+        "MCP"
+      ],
+      "usecase": "Use it to stand up a local or cluster sandbox service where agents run commands and files while real secrets stay outside the guest.",
+      "returning": false
+    },
+    {
+      "id": "harness-relay-2026-11-24",
+      "title": "harness-relay",
+      "authors": "Agentic-System-Lab",
+      "source": "GitHub",
+      "url": "https://github.com/Agentic-System-Lab/harness-relay",
+      "type": "harness",
+      "dateAdded": "2026-11-24",
+      "summary": "Local group-chat relay that coordinates multiple coding CLIs and open-source agents with OS sandboxes and turn-taking.",
+      "tags": [
+        "multi-agent",
+        "relay",
+        "sandbox",
+        "TUI"
+      ],
+      "usecase": "Use it to run role-based multi-agent coding sessions where each participant stays sandboxed and answers the others.",
+      "returning": false
+    },
+    {
+      "id": "agent-memory-benchmark-2026-11-24",
+      "title": "agent-memory-benchmark",
+      "authors": "datapace-ai",
+      "source": "GitHub",
+      "url": "https://github.com/datapace-ai/agent-memory-benchmark",
+      "type": "repo",
+      "dateAdded": "2026-11-24",
+      "summary": "Vendor-neutral LongMemEval benchmark of Mem0, Graphiti, Letta and baselines on free models with token accounting.",
+      "tags": [
+        "memory",
+        "benchmark",
+        "LongMemEval",
+        "tokens"
+      ],
+      "usecase": "Use it to measure which memory layer actually reduces tokens versus file search on your own laptop.",
+      "returning": false
+    },
+    {
+      "id": "opensandbox-1-2-1-adds-exchange-credentials-for-agent-egress-2026-11-24",
+      "title": "OpenSandbox 1.2.1 adds exchange credentials for agent egress",
+      "authors": "Sh Raj",
+      "source": "DEV Community",
+      "url": "https://dev.to/sh20raj/opensandbox-121-build-isolated-execution-environments-for-ai-agents-508b",
+      "type": "release",
+      "dateAdded": "2026-11-24",
+      "summary": "The self-hostable sandbox runtime ships 1.2.1 with a credential vault that injects short-lived headers at the egress sidecar so agents never see real secrets. Multi-language SDKs, MCP server, and Docker/K8s backends make it a practical control plane for coding agents this week.",
+      "tags": [
+        "sandbox",
+        "credentials",
+        "release",
+        "self-host"
+      ]
+    },
+    {
+      "id": "google-agent-compute-engine-isolates-agents-in-microvms-with-external-secrets-2026-11-24",
+      "title": "Google Agent Compute Engine isolates agents in microVMs with external secrets",
+      "authors": "Renato Losio",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/",
+      "type": "article",
+      "dateAdded": "2026-11-24",
+      "summary": "Google launched a managed service that runs agents in isolated microVMs, checkpoints idle ones, and keeps credentials outside via an Agent Gateway. The design separates harness from sandbox so untrusted guests only receive explicit commands.",
+      "tags": [
+        "google",
+        "microvm",
+        "credentials",
+        "release"
+      ]
+    },
+    {
+      "id": "aws-nitro-sandboxes-give-every-eks-pod-a-hardware-boundary-2026-11-24",
+      "title": "AWS Nitro Sandboxes give every EKS pod a hardware boundary",
+      "authors": "Damien Gallagher",
+      "source": "DEV Community",
+      "url": "https://dev.to/damogallagher/aws-nitro-sandboxes-a-hardware-boundary-for-every-eks-pod-and-ecs-task-11jl",
+      "type": "article",
+      "dateAdded": "2026-11-24",
+      "summary": "Nitro Sandboxes carve lightweight VMs with their own kernels from running EC2 instances for pods and tasks. Platform teams can annotate network isolation and finally give code-executing agents a hardware boundary without dedicating whole nodes.",
+      "tags": [
+        "aws",
+        "nitro",
+        "eks",
+        "isolation"
+      ]
+    },
     {
       "id": "cognee-2026-11-22",
       "title": "cognee",
@@ -10659,168 +10820,6 @@
         "fleet"
       ],
       "usecase": "Use it to provision specialist workers once and swap E2B, Daytona, or Vercel sandboxes without rewriting the agent contract.",
-      "returning": false
-    },
-    {
-      "id": "bounded-agent-harness-2026-09-12",
-      "title": "Bounded Agent Harness",
-      "authors": "cexplayer01",
-      "source": "GitHub",
-      "url": "https://github.com/cexplayer01/bounded-agent-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-12",
-      "summary": "Deterministic control plane that compiles validated plans into specialist workflows with authority, budget, and contract checks.",
-      "tags": [
-        "deterministic",
-        "contracts",
-        "specialists",
-        "control-plane"
-      ],
-      "usecase": "Use it to fail closed on capability mismatch, budget overflow, or unknown contracts before any model call runs.",
-      "returning": false
-    },
-    {
-      "id": "agent-harness-siddhant-2026-09-12",
-      "title": "agent-harness (Siddhant)",
-      "authors": "Siddhant-K-code",
-      "source": "GitHub",
-      "url": "https://github.com/Siddhant-K-code/agent-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-12",
-      "summary": "Local BYOK coding harness with project chat, isolated Docker or AgentCore runs, and independent patch verification.",
-      "tags": [
-        "verifier",
-        "byok",
-        "isolated",
-        "coding"
-      ],
-      "usecase": "Use it to turn a repo question into a budgeted coding run whose patch only lands after an external verifier passes.",
-      "returning": false
-    },
-    {
-      "id": "agent-harness-rs-2026-09-12",
-      "title": "agent-harness-rs",
-      "authors": "yifanes",
-      "source": "GitHub",
-      "url": "https://github.com/yifanes/agent-harness-rs",
-      "type": "harness",
-      "dateAdded": "2026-09-12",
-      "summary": "Rust agent loop with local tools, MCP, compaction, silent-stop detection, and optional E2B sandbox runtime.",
-      "tags": [
-        "rust",
-        "agent-loop",
-        "mcp",
-        "sandbox"
-      ],
-      "usecase": "Use it to embed a typed streaming agent loop in a systems binary with pluggable sandbox executors.",
-      "returning": false
-    },
-    {
-      "id": "headroom-2026-09-12",
-      "title": "Headroom",
-      "authors": "headroomlabs-ai",
-      "source": "GitHub",
-      "url": "https://github.com/headroomlabs-ai/headroom",
-      "type": "tool",
-      "dateAdded": "2026-09-12",
-      "summary": "Content-aware compressor for tool outputs, logs, files, and RAG that drops in as library, proxy, or MCP server.",
-      "tags": [
-        "compression",
-        "context",
-        "proxy",
-        "mcp"
-      ],
-      "usecase": "Use it to cut coding-agent token spend 20 percent or more while keeping full originals retrievable on demand.",
-      "returning": false
-    },
-    {
-      "id": "harnext-2026-09-12",
-      "title": "harnext",
-      "authors": "QualityUnit",
-      "source": "GitHub",
-      "url": "https://github.com/QualityUnit/harnext",
-      "type": "tool",
-      "dateAdded": "2026-09-12",
-      "summary": "Terminal coding agent plus CI harness that generates staged GitHub Actions from issue labels to merged PR.",
-      "tags": [
-        "cli",
-        "ci",
-        "github-actions",
-        "coding"
-      ],
-      "usecase": "Use it to wire an interactive REPL and self-hosted runner that carries labeled issues through verify and merge.",
-      "returning": false
-    },
-    {
-      "id": "agent-orchestrator-2026-09-12",
-      "title": "Agent Orchestrator",
-      "authors": "Untrivial-ai",
-      "source": "GitHub",
-      "url": "https://github.com/Untrivial-ai/agent-orchestrator",
-      "type": "harness",
-      "dateAdded": "2026-09-12",
-      "summary": "Supervise teams of coding agents from plan to merge across 27 harnesses with desktop, web, mobile, and cloud surfaces.",
-      "tags": [
-        "orchestration",
-        "multi-agent",
-        "fleet",
-        "kanban"
-      ],
-      "usecase": "Use it to split a project into workspaces, assign any supported harness, and track PRs and reviews in one Kanban.",
-      "returning": false
-    },
-    {
-      "id": "plandex-2026-09-12",
-      "title": "Plandex",
-      "authors": "plandex-ai",
-      "source": "GitHub",
-      "url": "https://github.com/plandex-ai/plandex",
-      "type": "tool",
-      "dateAdded": "2026-09-12",
-      "summary": "Terminal coding agent for large multi-file tasks with cumulative diff sandbox, project maps, and configurable autonomy.",
-      "tags": [
-        "cli",
-        "large-context",
-        "diff-sandbox",
-        "coding"
-      ],
-      "usecase": "Use it to plan and apply changes spanning dozens of files while keeping diffs isolated until you accept them.",
-      "returning": false
-    },
-    {
-      "id": "agent-governance-toolkit-2026-09-12",
-      "title": "Agent Governance Toolkit",
-      "authors": "microsoft",
-      "source": "GitHub",
-      "url": "https://github.com/microsoft/agent-governance-toolkit",
-      "type": "harness",
-      "dateAdded": "2026-09-12",
-      "summary": "Runtime policy engine and mesh packages that enforce OWASP agentic risks at sub-millisecond latency across languages.",
-      "tags": [
-        "governance",
-        "policy",
-        "runtime",
-        "security"
-      ],
-      "usecase": "Use it to intercept every tool call with YAML, OPA, or Cedar rules before side effects leave the agent process.",
-      "returning": false
-    },
-    {
-      "id": "cage-2026-09-12",
-      "title": "CAGE",
-      "authors": "google",
-      "source": "GitHub",
-      "url": "https://github.com/google/cybernetic-agent-governance-engine",
-      "type": "harness",
-      "dateAdded": "2026-09-12",
-      "summary": "Domain-agnostic Kubernetes governance substrate with control barrier functions, consensus, and cryptographic evidence.",
-      "tags": [
-        "governance",
-        "kubernetes",
-        "safety",
-        "audit"
-      ],
-      "usecase": "Use it to wrap autonomous agents in non-bypassable pipelines that escalate to humans with sealed audit trails.",
       "returning": false
     }
   ]

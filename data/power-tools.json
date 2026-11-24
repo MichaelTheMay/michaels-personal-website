@@ -1,7 +1,132 @@
 {
-  "lastUpdated": "2026-11-22",
-  "count": 620,
+  "lastUpdated": "2026-11-24",
+  "count": 624,
   "tools": [
+    {
+      "slug": "agent-memory-benchmark",
+      "title": "agent-memory-benchmark",
+      "authors": "datapace-ai",
+      "source": "GitHub",
+      "url": "https://github.com/datapace-ai/agent-memory-benchmark",
+      "type": "repo",
+      "summary": "Vendor-neutral LongMemEval benchmark of Mem0, Graphiti, Letta and baselines on free models with token accounting.",
+      "usecase": "Use it to measure which memory layer actually reduces tokens versus file search on your own laptop.",
+      "tags": [
+        "memory",
+        "benchmark",
+        "LongMemEval",
+        "tokens"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "cubepod",
+      "title": "CubePod",
+      "authors": "cubeplexai",
+      "source": "GitHub",
+      "url": "https://github.com/cubeplexai/cubepod",
+      "type": "harness",
+      "summary": "Kubernetes-native persistent writable RootFS microVM platform with E2B-compatible API, warm pools, and zero-trust egress vault.",
+      "usecase": "Use it to give long-lived agents dual-volume block-backed RootFS that hibernates to zero CPU then resumes across nodes in about one second.",
+      "tags": [
+        "microvm",
+        "kubernetes",
+        "E2B-compatible",
+        "persistence"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "harness-relay",
+      "title": "harness-relay",
+      "authors": "Agentic-System-Lab",
+      "source": "GitHub",
+      "url": "https://github.com/Agentic-System-Lab/harness-relay",
+      "type": "harness",
+      "summary": "Local group-chat relay that coordinates multiple coding CLIs and open-source agents with OS sandboxes and turn-taking.",
+      "usecase": "Use it to run role-based multi-agent coding sessions where each participant stays sandboxed and answers the others.",
+      "tags": [
+        "multi-agent",
+        "relay",
+        "sandbox",
+        "TUI"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "hyperlight-sandbox",
+      "title": "hyperlight-sandbox",
+      "authors": "hyperlight-dev",
+      "source": "GitHub",
+      "url": "https://github.com/hyperlight-dev/hyperlight-sandbox",
+      "type": "tool",
+      "summary": "Multi-backend sandbox framework on Hyperlight VMM with Wasm and JS guests, host tool dispatch, snapshots, and capability-based access.",
+      "usecase": "Use it to let agents write scripts that call host tools inside hardware-isolated guests while enforcing file and network allow-lists.",
+      "tags": [
+        "hyperlight",
+        "wasm",
+        "sandbox",
+        "CNCF"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "metaharness",
+      "title": "metaharness",
+      "authors": "ruvnet",
+      "source": "GitHub",
+      "url": "https://github.com/ruvnet/metaharness",
+      "type": "harness",
+      "summary": "Factory that scaffolds a branded agent harness with CLI, MCP server, scoped memory, skills, governance, and witness-signed releases from any repo.",
+      "usecase": "Use it to mint a repo-specific harness zip that drops into multiple coding runtimes with Darwin evolution and cost-aware routing.",
+      "tags": [
+        "meta-harness",
+        "scaffold",
+        "mcp",
+        "cli"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "opensandbox",
+      "title": "OpenSandbox",
+      "authors": "opensandbox-group",
+      "source": "GitHub",
+      "url": "https://github.com/opensandbox-group/OpenSandbox",
+      "type": "repo",
+      "summary": "Self-hostable sandbox control plane and multi-language SDKs with Docker/K8s backends plus credential vault for egress injection.",
+      "usecase": "Use it to stand up a local or cluster sandbox service where agents run commands and files while real secrets stay outside the guest.",
+      "tags": [
+        "sandbox",
+        "K8s",
+        "SDK"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-11-24",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "awesome-ai-sandboxes",
       "title": "awesome-ai-sandboxes",
@@ -10867,26 +10992,6 @@
       ]
     },
     {
-      "slug": "opensandbox",
-      "title": "OpenSandbox",
-      "authors": "opensandbox-group",
-      "source": "GitHub",
-      "url": "https://github.com/opensandbox-group/OpenSandbox",
-      "type": "repo",
-      "summary": "General-purpose sandbox platform with multi-language SDKs, CLI, MCP, Docker/Kubernetes runtimes, and built-in command, filesystem, and code-interpreter environments.",
-      "usecase": "Use it to spin up isolated coding-agent or GUI-agent environments with a unified API for local or cluster deployment.",
-      "tags": [
-        "sandbox",
-        "K8s",
-        "SDK"
-      ],
-      "firstSeen": "2026-09-09",
-      "lastSeen": "2026-09-09",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "sandbox-agent",
       "title": "sandbox-agent",
       "authors": "rivet-dev",
@@ -12067,27 +12172,6 @@
         "proxy",
         "routing",
         "multi-provider"
-      ],
-      "firstSeen": "2026-09-05",
-      "lastSeen": "2026-09-05",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "metaharness",
-      "title": "metaharness",
-      "authors": "ruvnet",
-      "source": "GitHub",
-      "url": "https://github.com/ruvnet/metaharness",
-      "type": "harness",
-      "summary": "Scaffold that generates a focused, branded agent harness with npx CLI, MCP server, scoped memory, skills, and witness-signed releases for multiple host runtimes.",
-      "usecase": "Use it to spin up a repo-specific harness that drops into existing coding agents with governance and provenance.",
-      "tags": [
-        "meta-harness",
-        "scaffold",
-        "mcp",
-        "cli"
       ],
       "firstSeen": "2026-09-05",
       "lastSeen": "2026-09-05",
