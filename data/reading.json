@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-24",
+  "lastUpdated": "2026-11-25",
   "issues": [
+    {
+      "date": "2026-11-25",
+      "title": "MicroVM isolation and local-first harnesses that power users actually wire into loops",
+      "blurb": "Today the through-line is hardware-isolated sandboxes and self-hosted control planes you can clone, embed, and drive from your own agent loops. Power users get branchable VMs, permission gates for local models, and Kubernetes-native runtimes instead of closed IDE chatbots."
+    },
     {
       "date": "2026-11-24",
       "title": "MicroVM isolation and cross-harness control planes that outrun single-agent IDEs",
@@ -335,14 +340,183 @@
       "date": "2026-09-14",
       "title": "Clone-and-run harnesses that own sandboxes, state, and multi-agent wiring under any coding agent",
       "blurb": "Today's list favors OS-native sandboxes, durable control planes, and systems-language runtimes you can clone into a real loop. Power comes from isolation, receipts, and cross-agent coordination rather than another branded chat UI."
-    },
-    {
-      "date": "2026-09-13",
-      "title": "Portable brains, evidence gates, and fleet control planes for agent loops",
-      "blurb": "Today's picks center on clone-and-run harnesses that give power users durable memory across tools, proof-before-done verification, systems-language runtimes, and multi-agent orchestration without locking into household IDEs."
     }
   ],
   "items": [
+    {
+      "id": "mvvm-2026-11-25",
+      "title": "MVVM",
+      "authors": "Multi-V-VM",
+      "source": "GitHub",
+      "url": "https://github.com/Multi-V-VM/MVVM",
+      "type": "repo",
+      "dateAdded": "2026-11-25",
+      "summary": "WebAssembly-based secure container framework for live migration of LLM agent workspaces across heterogeneous edge and cloud with enclave protection.",
+      "tags": [
+        "wasm",
+        "migration",
+        "enclave",
+        "heterogeneous"
+      ],
+      "usecase": "Use it to migrate agent state between ARM phones, RISC-V and x86 servers while preserving privacy and speculative execution.",
+      "returning": false
+    },
+    {
+      "id": "sandcastle-2026-11-25",
+      "title": "sandcastle",
+      "authors": "sandcastle",
+      "source": "GitHub",
+      "url": "https://github.com/sandcastle-run/sandcastle",
+      "type": "harness",
+      "dateAdded": "2026-11-25",
+      "summary": "TypeScript library for orchestrating coding agents inside isolated sandboxes with configurable branch strategies and worktree isolation.",
+      "tags": [
+        "typescript",
+        "sandbox",
+        "orchestration",
+        "worktree"
+      ],
+      "usecase": "Use it to spawn parallel sandboxed agent runs with sandcastle.run() and deterministic git branch handling.",
+      "returning": false
+    },
+    {
+      "id": "autoharness-2026-11-25",
+      "title": "AutoHarness",
+      "authors": "aiming-lab",
+      "source": "GitHub",
+      "url": "https://github.com/aiming-lab/AutoHarness",
+      "type": "harness",
+      "dateAdded": "2026-11-25",
+      "summary": "Automated harness engineering toolkit that searches and evaluates harness configurations for target agents and models.",
+      "tags": [
+        "auto-tuning",
+        "eval",
+        "harness-engineering",
+        "search"
+      ],
+      "usecase": "Use it to evolve prompt, skill and tool setups that raise resolve rate while holding model weights fixed.",
+      "returning": false
+    },
+    {
+      "id": "ntm-2026-11-25",
+      "title": "NTM",
+      "authors": "Dicklesworthstone",
+      "source": "GitHub",
+      "url": "https://github.com/Dicklesworthstone/ntm",
+      "type": "tool",
+      "dateAdded": "2026-11-25",
+      "summary": "Go control plane that spawns, tiles and coordinates multiple AI coding agents inside named tmux sessions.",
+      "tags": [
+        "tmux",
+        "control-plane",
+        "multi-agent",
+        "go"
+      ],
+      "usecase": "Use it to manage parallel agent workspaces with deterministic pane layout and shared status without leaving the terminal.",
+      "returning": false
+    },
+    {
+      "id": "compartment-2026-11-25",
+      "title": "Compartment",
+      "authors": "MaxFreedomPollard",
+      "source": "GitHub",
+      "url": "https://github.com/MaxFreedomPollard/Compartment",
+      "type": "repo",
+      "dateAdded": "2026-11-25",
+      "summary": "Encrypted offline agent memory store with MCP interface and GUI for private long-term facts.",
+      "tags": [
+        "memory",
+        "encrypted",
+        "mcp",
+        "offline"
+      ],
+      "usecase": "Use it to give local agents durable encrypted memory that never leaves the machine and is queryable over MCP.",
+      "returning": false
+    },
+    {
+      "id": "ragleap-core-2026-11-25",
+      "title": "RagLeap Core",
+      "authors": "ragleap",
+      "source": "GitHub",
+      "url": "https://github.com/ragleap/ragleap-core",
+      "type": "harness",
+      "dateAdded": "2026-11-25",
+      "summary": "Agent runtime focused on delegated sub-agents with gate-controlled spawning, inherited permissions and signed run records.",
+      "tags": [
+        "delegation",
+        "permissions",
+        "audit",
+        "subagents"
+      ],
+      "usecase": "Use it to harden multi-agent systems so child agents only start under explicit authorization and leave auditable signed traces.",
+      "returning": false
+    },
+    {
+      "id": "ag-harness-2026-11-25",
+      "title": "ag-harness",
+      "authors": "ag-harness",
+      "source": "crates.io / GitHub",
+      "url": "https://crates.io/crates/ag-harness",
+      "type": "harness",
+      "dateAdded": "2026-11-25",
+      "summary": "Rust native sandbox harness with fine-grained path grants, network policies and explicit unsandboxed execution approvals.",
+      "tags": [
+        "rust",
+        "native-sandbox",
+        "permissions",
+        "seatbelt"
+      ],
+      "usecase": "Use it to run coding agent tool calls under Seatbelt or bubblewrap with least-privilege filesystem and network grants.",
+      "returning": false
+    },
+    {
+      "id": "agent-sandbox-security-is-a-necessity-not-an-afterthought-2026-11-25",
+      "title": "Agent sandbox security is a necessity, not an afterthought",
+      "authors": "Maddy Osman",
+      "source": "DEV Community / DigitalOcean",
+      "url": "https://dev.to/digitalocean/agent-sandbox-security-is-a-necessity-not-an-afterthought-3j5p",
+      "type": "article",
+      "dateAdded": "2026-11-25",
+      "summary": "Recent escape incidents show that prompt instructions are only suggestions. Real boundaries come from network policy, filesystem mounts, credential brokering and audited channels in and out of every sandbox.",
+      "tags": [
+        "security",
+        "sandbox",
+        "egress",
+        "production"
+      ]
+    },
+    {
+      "id": "same-model-11-harnesses-what-the-harness-leaderboard-v0-1-9-tells-engineers-2026-11-25",
+      "title": "Same Model, 11 Harnesses: What the Harness Leaderboard v0.1.9 Tells Engineers",
+      "authors": "supachai jaturaprom",
+      "source": "DEV Community",
+      "url": "https://dev.to/supachai/same-model-11-harnesses-what-the-harness-leaderboard-v019-tells-engineers-3lpb",
+      "type": "article",
+      "dateAdded": "2026-11-25",
+      "summary": "Holding weights fixed across eleven coding harnesses produces a ten-point macro resolve spread and up to twenty-two points on single models. Only three sit on the accuracy-versus-cost Pareto frontier, proving harness choice dominates model choice for many tasks.",
+      "tags": [
+        "benchmark",
+        "harness",
+        "leaderboard",
+        "cost"
+      ]
+    },
+    {
+      "id": "qcon-san-francisco-2026-automating-spark-upgrades-with-codex-agents-at-openai-2026-11-25",
+      "title": "QCon San Francisco 2026: Automating Spark Upgrades with Codex Agents at OpenAI",
+      "authors": "InfoQ",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/11/openai-spark-fleet/",
+      "type": "release",
+      "dateAdded": "2026-11-25",
+      "summary": "OpenAI engineering described production Codex agents that claim Spark upgrade jobs, run shadow validations, classify errors and auto-roll back. The same primitives now handle continuous efficiency tuning and incident support under strict permission boundaries.",
+      "tags": [
+        "production",
+        "codex",
+        "spark",
+        "automation"
+      ]
+    },
     {
       "id": "potpie-2026-11-24",
       "title": "Potpie",
@@ -10633,180 +10807,6 @@
         "runtime"
       ],
       "usecase": "Use it to run resilient multi-worker agent loops that survive crashes with full step history in Postgres.",
-      "returning": false
-    },
-    {
-      "id": "nanobot-2026-09-14",
-      "title": "nanobot",
-      "authors": "HKUDS",
-      "source": "GitHub",
-      "url": "https://github.com/HKUDS/nanobot",
-      "type": "tool",
-      "dateAdded": "2026-09-14",
-      "summary": "Ultra-light self-hosted personal agent framework with WebUI, memory, MCP, multi-agent delegation, cron, and OpenAI-compatible API.",
-      "tags": [
-        "self-hosted",
-        "memory",
-        "mcp",
-        "personal-agent"
-      ],
-      "usecase": "Use it to run a small readable core that coordinates helpers, tools, and chat-app gateways on your own box.",
-      "returning": false
-    },
-    {
-      "id": "awesome-agent-sandbox-2026-09-14",
-      "title": "Awesome Agent Sandbox",
-      "authors": "fishman",
-      "source": "GitHub",
-      "url": "https://github.com/fishman/awesome-agent-sandbox",
-      "type": "repo",
-      "dateAdded": "2026-09-14",
-      "summary": "Curated map of portable microVM and container isolation harnesses for coding agents with boot-time and mount comparisons.",
-      "tags": [
-        "sandbox",
-        "microvm",
-        "awesome-list",
-        "isolation"
-      ],
-      "usecase": "Use it to pick and clone the right microVM or rootless container primitive before wiring your own agent loop.",
-      "returning": false
-    },
-    {
-      "id": "show-hn-rebuno-open-source-runtime-for-production-agents-2026-09-14",
-      "title": "Show HN: Rebuno, open-source runtime for production agents",
-      "authors": "nnww",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49699591",
-      "type": "release",
-      "dateAdded": "2026-09-14",
-      "summary": "Rebuno runs agents as HTTP services with signed webhooks, Postgres step state, and YAML policies evaluated outside the model prompt. Crashes resume from recorded outcomes with safe_to_retry and at_most_once semantics plus Python and TypeScript SDKs.",
-      "tags": [
-        "runtime",
-        "policy",
-        "production",
-        "show-hn"
-      ]
-    },
-    {
-      "id": "show-hn-agentdrive-persistent-versioned-file-storage-for-ai-agents-2026-09-14",
-      "title": "Show HN: AgentDrive, persistent versioned file storage for AI agents",
-      "authors": "tokencanopy",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49699287",
-      "type": "release",
-      "dateAdded": "2026-09-14",
-      "summary": "Private beta ships versioned workspaces, hosted MCP for coding agents, upload sessions, share links, and workspace-scoped audit. The MCP surface stays narrow so agents share artifacts across repos without swallowing a full storage API.",
-      "tags": [
-        "storage",
-        "mcp",
-        "workspace",
-        "show-hn"
-      ]
-    },
-    {
-      "id": "openai-agents-api-exposes-the-managed-codex-harness-with-hosted-sandboxes-2026-09-14",
-      "title": "OpenAI Agents API exposes the managed Codex harness with hosted sandboxes",
-      "authors": "Flowtivity / OpenAI community",
-      "source": "Flowtivity",
-      "url": "https://flowtivity.ai/blog/openai-agents-api-codex-harness/",
-      "type": "article",
-      "dateAdded": "2026-09-14",
-      "summary": "Public beta runs the open Codex harness as a cloud service with durable sessions, context compaction, multi-agent orchestration, and optional OpenAI-hosted or partner sandboxes. Developers bring tools and choose compute while OpenAI owns the loop infrastructure.",
-      "tags": [
-        "agents-api",
-        "codex-harness",
-        "sandbox",
-        "release"
-      ]
-    },
-    {
-      "id": "blitzos-2026-09-13",
-      "title": "BlitzOS",
-      "authors": "blitzdotdev",
-      "source": "GitHub",
-      "url": "https://github.com/blitzdotdev/BlitzOS",
-      "type": "harness",
-      "dateAdded": "2026-09-13",
-      "summary": "Self-hostable control plane and workspace runtime that gives teammates zero-setup agent environments with shared credentials, ACP harness support, and cloud VMs.",
-      "tags": [
-        "control-plane",
-        "workspace",
-        "self-host",
-        "acp"
-      ],
-      "usecase": "Use it to provision isolated agent workspaces for a team, inject org credentials, and run any ACP-compatible coding agent on Hetzner or AWS.",
-      "returning": false
-    },
-    {
-      "id": "agentic-stack-2026-09-13",
-      "title": "agentic-stack",
-      "authors": "codejunkie99",
-      "source": "GitHub",
-      "url": "https://github.com/codejunkie99/agentic-stack",
-      "type": "repo",
-      "dateAdded": "2026-09-13",
-      "summary": "Portable .agent/ folder carrying memory, skills, and protocols that plugs into many coding harnesses so knowledge survives tool switches.",
-      "tags": [
-        "memory",
-        "skills",
-        "portable",
-        "multi-harness"
-      ],
-      "usecase": "Use it to drop one brain into a project and keep the same skills and memory when moving between Claude Code, Cursor, OpenCode, Hermes, or a DIY Python loop.",
-      "returning": false
-    },
-    {
-      "id": "agent-execution-harness-2026-09-13",
-      "title": "agent-execution-harness",
-      "authors": "lordaeternus",
-      "source": "GitHub",
-      "url": "https://github.com/lordaeternus/agent-execution-harness",
-      "type": "harness",
-      "dateAdded": "2026-09-13",
-      "summary": "Evidence-backed execution harness that forces plans, gates, artifacts, codebase memory, learning loops, and verified claims before an agent can say done.",
-      "tags": [
-        "evidence",
-        "verification",
-        "plan",
-        "memory"
-      ],
-      "usecase": "Use it to wrap any coding agent so every task produces auditable evidence, finish checks, and compact learning notes without extra token bloat.",
-      "returning": false
-    },
-    {
-      "id": "maestro-2026-09-13",
-      "title": "Maestro",
-      "authors": "RunMaestro",
-      "source": "GitHub",
-      "url": "https://github.com/RunMaestro/Maestro",
-      "type": "tool",
-      "dateAdded": "2026-09-13",
-      "summary": "Cross-platform desktop command center for orchestrating fleets of coding agents with git worktrees, auto-run playbooks, and parallel isolated sessions.",
-      "tags": [
-        "orchestration",
-        "desktop",
-        "worktree",
-        "fleet"
-      ],
-      "usecase": "Use it to run unlimited agents in parallel across projects, auto-execute markdown playbooks for long unattended runs, and merge worktree results with one click.",
-      "returning": false
-    },
-    {
-      "id": "agentsmesh-2026-09-13",
-      "title": "AgentsMesh",
-      "authors": "AgentsMesh",
-      "source": "GitHub",
-      "url": "https://github.com/AgentsMesh/AgentsMesh",
-      "type": "harness",
-      "dateAdded": "2026-09-13",
-      "summary": "AI agent workforce platform that schedules, isolates, and steers hundreds of coding agents across self-hosted runner fleets from one console.",
-      "tags": [
-        "fleet",
-        "scheduler",
-        "self-host",
-        "workforce"
-      ],
-      "usecase": "Use it to install runners on your machines, schedule agent pods with capacity limits, and command a large fleet without one-box bottlenecks.",
       "returning": false
     }
   ]

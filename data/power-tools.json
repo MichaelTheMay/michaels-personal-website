@@ -1,7 +1,154 @@
 {
-  "lastUpdated": "2026-11-24",
-  "count": 633,
+  "lastUpdated": "2026-11-25",
+  "count": 639,
   "tools": [
+    {
+      "slug": "ag-harness",
+      "title": "ag-harness",
+      "authors": "ag-harness",
+      "source": "crates.io / GitHub",
+      "url": "https://crates.io/crates/ag-harness",
+      "type": "harness",
+      "summary": "Rust native sandbox harness with fine-grained path grants, network policies and explicit unsandboxed execution approvals.",
+      "usecase": "Use it to run coding agent tool calls under Seatbelt or bubblewrap with least-privilege filesystem and network grants.",
+      "tags": [
+        "rust",
+        "native-sandbox",
+        "permissions",
+        "seatbelt"
+      ],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "autoharness",
+      "title": "AutoHarness",
+      "authors": "aiming-lab",
+      "source": "GitHub",
+      "url": "https://github.com/aiming-lab/AutoHarness",
+      "type": "harness",
+      "summary": "Automated harness engineering toolkit that searches and evaluates harness configurations for target agents and models.",
+      "usecase": "Use it to evolve prompt, skill and tool setups that raise resolve rate while holding model weights fixed.",
+      "tags": [
+        "governance",
+        "python",
+        "safety",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-11-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "compartment",
+      "title": "Compartment",
+      "authors": "MaxFreedomPollard",
+      "source": "GitHub",
+      "url": "https://github.com/MaxFreedomPollard/Compartment",
+      "type": "repo",
+      "summary": "Encrypted offline agent memory store with MCP interface and GUI for private long-term facts.",
+      "usecase": "Use it to give local agents durable encrypted memory that never leaves the machine and is queryable over MCP.",
+      "tags": [
+        "memory",
+        "encrypted",
+        "mcp",
+        "offline"
+      ],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "mvvm",
+      "title": "MVVM",
+      "authors": "Multi-V-VM",
+      "source": "GitHub",
+      "url": "https://github.com/Multi-V-VM/MVVM",
+      "type": "repo",
+      "summary": "WebAssembly-based secure container framework for live migration of LLM agent workspaces across heterogeneous edge and cloud with enclave protection.",
+      "usecase": "Use it to migrate agent state between ARM phones, RISC-V and x86 servers while preserving privacy and speculative execution.",
+      "tags": [
+        "wasm",
+        "migration",
+        "enclave",
+        "heterogeneous"
+      ],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ntm",
+      "title": "NTM",
+      "authors": "Dicklesworthstone",
+      "source": "GitHub",
+      "url": "https://github.com/Dicklesworthstone/ntm",
+      "type": "tool",
+      "summary": "Go control plane that spawns, tiles and coordinates multiple AI coding agents inside named tmux sessions.",
+      "usecase": "Use it to manage parallel agent workspaces with deterministic pane layout and shared status without leaving the terminal.",
+      "tags": [
+        "tmux",
+        "control-plane",
+        "multi-agent",
+        "go"
+      ],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "ragleap-core",
+      "title": "RagLeap Core",
+      "authors": "ragleap",
+      "source": "GitHub",
+      "url": "https://github.com/ragleap/ragleap-core",
+      "type": "harness",
+      "summary": "Agent runtime focused on delegated sub-agents with gate-controlled spawning, inherited permissions and signed run records.",
+      "usecase": "Use it to harden multi-agent systems so child agents only start under explicit authorization and leave auditable signed traces.",
+      "tags": [
+        "delegation",
+        "permissions",
+        "audit",
+        "subagents"
+      ],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "sandcastle",
+      "title": "sandcastle",
+      "authors": "sandcastle",
+      "source": "GitHub",
+      "url": "https://github.com/sandcastle-run/sandcastle",
+      "type": "harness",
+      "summary": "TypeScript library for orchestrating coding agents inside isolated sandboxes with configurable branch strategies and worktree isolation.",
+      "usecase": "Use it to spawn parallel sandboxed agent runs with sandcastle.run() and deterministic git branch handling.",
+      "tags": [
+        "typescript",
+        "sandbox",
+        "orchestration",
+        "worktree"
+      ],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-25",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "actplane",
       "title": "ActPlane",
@@ -11626,27 +11773,6 @@
         "reference",
         "guardrails",
         "demo"
-      ],
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-07",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "autoharness",
-      "title": "AutoHarness",
-      "authors": "aiming-lab",
-      "source": "GitHub",
-      "url": "https://github.com/aiming-lab/AutoHarness",
-      "type": "harness",
-      "summary": "Lightweight governance wrapper that turns any LLM client into a governed agent via a 6-to-14 step pipeline, YAML constitutions, risk patterns and audit logs.",
-      "usecase": "Use it to wrap an existing OpenAI-compatible client in two lines and enforce tool permissions plus cost tracking.",
-      "tags": [
-        "governance",
-        "python",
-        "safety",
-        "multi-agent"
       ],
       "firstSeen": "2026-09-07",
       "lastSeen": "2026-09-07",
