@@ -1,7 +1,215 @@
 {
-  "lastUpdated": "2026-11-25",
-  "count": 639,
+  "lastUpdated": "2026-11-26",
+  "count": 647,
   "tools": [
+    {
+      "slug": "red-team-blue-team-agent-fabric",
+      "title": "Agent Security Harness",
+      "authors": "msaleme",
+      "source": "GitHub",
+      "url": "https://github.com/msaleme/red-team-blue-team-agent-fabric",
+      "type": "harness",
+      "summary": "Executable security harness with hundreds of adversarial tests covering MCP, A2A, governance and OWASP Agentic.",
+      "usecase": "Use it to red-team your agent stack against supply-chain, decision and benchmark integrity attacks.",
+      "tags": [
+        "security",
+        "eval",
+        "mcp"
+      ],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness",
+      "authors": "markhazlett",
+      "source": "GitHub",
+      "url": "https://github.com/markhazlett/agent-harness",
+      "type": "harness",
+      "summary": "Portable toolkit of hooks, skills and planning commands that turn terminal agents into reliable teammates.",
+      "usecase": "Use it to run weekly-goal to ship workflows with automatic main-branch and .env guards.",
+      "tags": [
+        "hooks",
+        "skills",
+        "planning",
+        "guardrails"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness",
+      "authors": "fainir",
+      "source": "GitHub",
+      "url": "https://github.com/fainir/agent-harness",
+      "type": "harness",
+      "summary": "Skills, rules and hooks that size jobs, verify results and self-improve while asking owners one action at a time.",
+      "usecase": "Use it to turn any AGENTS.md agent into a product team or portfolio manager with durable ledgers.",
+      "tags": [
+        "skills",
+        "self-improve",
+        "verification",
+        "owner"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness",
+      "authors": "TheElephantCoder",
+      "source": "GitHub",
+      "url": "https://github.com/TheElephantCoder/agent-harness",
+      "type": "harness",
+      "summary": "Performance layer adding skills, instincts, memory and research-first workflow across coding agents.",
+      "usecase": "Use it to cut cold-start latency and force research before any code edit.",
+      "tags": [
+        "performance",
+        "memory",
+        "skills",
+        "research-first"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness",
+      "title": "agent-harness (Go)",
+      "authors": "BA-CalderonMorales",
+      "source": "GitHub",
+      "url": "https://github.com/BA-CalderonMorales/agent-harness",
+      "type": "repo",
+      "summary": "Clean-room Go implementation of agentic coding harness patterns with streaming loops, tool dispatch, and permission modes.",
+      "usecase": "Use it to build or extend production-style coding agents with OpenRouter or Anthropic backends in a learnable codebase.",
+      "tags": [
+        "Go",
+        "TUI",
+        "clean-room"
+      ],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harness-starter",
+      "title": "agent-harness-starter",
+      "authors": "kim-dongho",
+      "source": "GitHub",
+      "url": "https://github.com/kim-dongho/agent-harness-starter",
+      "type": "harness",
+      "summary": "Hook system that auto-validates agent edits, records learnings and tracks self-healing across agents.",
+      "usecase": "Use it to generate project-specific hooks for lint, type-check and security on every file change.",
+      "tags": [
+        "hooks",
+        "validation",
+        "learning",
+        "multi-agent"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-harnesses-explained",
+      "title": "agent-harnesses-explained",
+      "authors": "BrendanJamesLynskey",
+      "source": "GitHub",
+      "url": "https://github.com/BrendanJamesLynskey/agent-harnesses-explained",
+      "type": "repo",
+      "summary": "Animated chapters and deterministic simulator that dissect agent loops, context budgets and permissions.",
+      "usecase": "Use it to study and prototype harness invariants with matching Python and TypeScript sims.",
+      "tags": [
+        "education",
+        "simulator",
+        "loop",
+        "invariants"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agent-memory-mcp",
+      "title": "agent-memory-mcp",
+      "authors": "ipiton",
+      "source": "GitHub",
+      "url": "https://github.com/ipiton/agent-memory-mcp",
+      "type": "tool",
+      "summary": "MCP server for persistent agent memory with semantic search, steward cleanup and drift scanning.",
+      "usecase": "Use it to store decisions and runbooks that agents search jointly with project docs.",
+      "tags": [
+        "memory",
+        "mcp",
+        "semantic",
+        "drift"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agentmemory",
+      "title": "AgentMemory",
+      "authors": "AndrewMoryakov",
+      "source": "GitHub",
+      "url": "https://github.com/AndrewMoryakov/AgentMemory",
+      "type": "tool",
+      "summary": "Shared local memory runtime exposing CLI, HTTP and MCP over pluggable providers like mem0.",
+      "usecase": "Use it to give every AI client the same memory operations with diagnostics and export.",
+      "tags": [
+        "memory",
+        "mcp",
+        "cli",
+        "providers"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "repository-harness",
+      "title": "repository-harness",
+      "authors": "hoangnb24",
+      "source": "GitHub",
+      "url": "https://github.com/hoangnb24/repository-harness",
+      "type": "repo",
+      "summary": "Protocol and safe updater that turns any software repo into a legible agent-ready workspace.",
+      "usecase": "Use it to install durable product docs, decisions and CI evidence so agents stop failing on ordinary engineering gaps.",
+      "tags": [
+        "repo-protocol",
+        "context",
+        "updater",
+        "workspace"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "ag-harness",
       "title": "ag-harness",
@@ -11163,26 +11371,6 @@
       ]
     },
     {
-      "slug": "agent-harness",
-      "title": "agent-harness (Go)",
-      "authors": "BA-CalderonMorales",
-      "source": "GitHub",
-      "url": "https://github.com/BA-CalderonMorales/agent-harness",
-      "type": "repo",
-      "summary": "Clean-room Go implementation of production coding-agent harness patterns with TUI, OpenRouter/Anthropic support, and local-first defaults.",
-      "usecase": "Use it to study or extend a minimal systems-language harness that boots a terminal UI and talks to local or remote models.",
-      "tags": [
-        "Go",
-        "TUI",
-        "clean-room"
-      ],
-      "firstSeen": "2026-09-09",
-      "lastSeen": "2026-09-09",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
       "slug": "claw-code-agent",
       "title": "Claw Code Agent",
       "authors": "HarnessLab",
@@ -12322,26 +12510,6 @@
       ],
       "firstSeen": "2026-09-06",
       "lastSeen": "2026-09-06",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "red-team-blue-team-agent-fabric",
-      "title": "Agent Security Harness",
-      "authors": "msaleme",
-      "source": "GitHub",
-      "url": "https://github.com/msaleme/red-team-blue-team-agent-fabric",
-      "type": "harness",
-      "summary": "Adversarial testing harness with hundreds of executable protocol-level tests for MCP, A2A, and governance controls.",
-      "usecase": "Use it to CI-gate agent endpoints by actively probing for policy bypass and tool poisoning.",
-      "tags": [
-        "security",
-        "eval",
-        "mcp"
-      ],
-      "firstSeen": "2026-09-05",
-      "lastSeen": "2026-09-05",
       "algorithms": [
         "digest"
       ]
