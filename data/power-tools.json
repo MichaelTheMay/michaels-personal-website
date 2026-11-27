@@ -1,7 +1,69 @@
 {
-  "lastUpdated": "2026-11-26",
-  "count": 647,
+  "lastUpdated": "2026-11-27",
+  "count": 649,
   "tools": [
+    {
+      "slug": "agent-control",
+      "title": "Agent Control",
+      "authors": "agentcontrol",
+      "source": "GitHub",
+      "url": "https://github.com/agentcontrol/agent-control",
+      "type": "harness",
+      "summary": "Centralized control plane that applies configurable runtime guardrails across agent fleets.",
+      "usecase": "Use it to block prompt injection, PII leaks and policy violations from one API without touching agent code.",
+      "tags": [
+        "guardrails",
+        "policy",
+        "runtime",
+        "control-plane"
+      ],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-11-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "agy-fast",
+      "title": "agy-fast",
+      "authors": "INK-Q",
+      "source": "GitHub",
+      "url": "https://github.com/INK-Q/agy-fast",
+      "type": "tool",
+      "summary": "Zero-dependency local MCP plugin that batches searches, outlines, edits and checks for Google Antigravity.",
+      "usecase": "Use it to cut LLM turns, token quota and upload traffic by 30 percent plus while leaving native diffs and safety intact.",
+      "tags": [
+        "mcp",
+        "accelerator",
+        "coding",
+        "plugin"
+      ],
+      "firstSeen": "2026-11-27",
+      "lastSeen": "2026-11-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
+    {
+      "slug": "q-agent-harness",
+      "title": "q-agent-harness",
+      "authors": "kju4q",
+      "source": "GitHub",
+      "url": "https://github.com/kju4q/q-agent-harness",
+      "type": "harness",
+      "summary": "Starter kit that packages maps, guardrails and feedback loops for reliable agent software shipping.",
+      "usecase": "Use it to clone a clean harness skeleton and add your own tools and verification before the first production run.",
+      "tags": [
+        "harness",
+        "starter",
+        "guardrails"
+      ],
+      "firstSeen": "2026-11-27",
+      "lastSeen": "2026-11-27",
+      "algorithms": [
+        "digest"
+      ]
+    },
     {
       "slug": "red-team-blue-team-agent-fabric",
       "title": "Agent Security Harness",
@@ -11027,27 +11089,6 @@
         "fast",
         "execution",
         "agents"
-      ],
-      "firstSeen": "2026-09-10",
-      "lastSeen": "2026-09-10",
-      "algorithms": [
-        "digest"
-      ]
-    },
-    {
-      "slug": "agent-control",
-      "title": "Agent Control",
-      "authors": "agentcontrol",
-      "source": "GitHub",
-      "url": "https://github.com/agentcontrol/agent-control",
-      "type": "harness",
-      "summary": "Centralized runtime control plane that wraps model and tool calls with configurable evaluators to block injections, PII and policy violations.",
-      "usecase": "Use it to enforce org-wide guardrails on LangChain, CrewAI or Strands agents via a single @control decorator without redeploying every agent.",
-      "tags": [
-        "guardrails",
-        "policy",
-        "runtime",
-        "control-plane"
       ],
       "firstSeen": "2026-09-10",
       "lastSeen": "2026-09-10",

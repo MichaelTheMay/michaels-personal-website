@@ -1,6 +1,11 @@
 {
-  "lastUpdated": "2026-11-26",
+  "lastUpdated": "2026-11-27",
   "issues": [
+    {
+      "date": "2026-11-27",
+      "title": "MicroVM isolation and pluggable control planes that let power users own every agent loop",
+      "blurb": "Today's digest favors clone-and-run sandboxes, memory guards, and harness starters still shipping weekly. Power users get hardware boundaries, policy planes, and eval hooks they can wire directly instead of renting closed IDEs."
+    },
     {
       "date": "2026-11-26",
       "title": "Self-hosted microVM sandboxes meet pluggable harness kernels",
@@ -340,14 +345,93 @@
       "date": "2026-09-15",
       "title": "In-process agent OSes and durable control planes over disposable sandboxes",
       "blurb": "Today's clone-and-run stack favors Rust and Go runtimes that embed isolation, policy, and multi-agent rooms inside your process or cluster instead of renting another microVM. Power users wire these control planes, OS sandboxes, and unified harness routers into long-lived loops."
-    },
-    {
-      "date": "2026-09-14",
-      "title": "Clone-and-run harnesses that own sandboxes, state, and multi-agent wiring under any coding agent",
-      "blurb": "Today's list favors OS-native sandboxes, durable control planes, and systems-language runtimes you can clone into a real loop. Power comes from isolation, receipts, and cross-agent coordination rather than another branded chat UI."
     }
   ],
   "items": [
+    {
+      "id": "agy-fast-2026-11-27",
+      "title": "agy-fast",
+      "authors": "INK-Q",
+      "source": "GitHub",
+      "url": "https://github.com/INK-Q/agy-fast",
+      "type": "tool",
+      "dateAdded": "2026-11-27",
+      "summary": "Zero-dependency local MCP plugin that batches searches, outlines, edits and checks for Google Antigravity.",
+      "tags": [
+        "mcp",
+        "accelerator",
+        "coding",
+        "plugin"
+      ],
+      "usecase": "Use it to cut LLM turns, token quota and upload traffic by 30 percent plus while leaving native diffs and safety intact.",
+      "returning": false
+    },
+    {
+      "id": "agent-control-2026-11-27",
+      "title": "agent-control",
+      "authors": "agentcontrol",
+      "source": "GitHub",
+      "url": "https://github.com/agentcontrol/agent-control",
+      "type": "harness",
+      "dateAdded": "2026-11-27",
+      "summary": "Centralized control plane that applies configurable runtime guardrails across agent fleets.",
+      "tags": [
+        "control-plane",
+        "guardrails",
+        "safety"
+      ],
+      "usecase": "Use it to block prompt injection, PII leaks and policy violations from one API without touching agent code.",
+      "returning": false
+    },
+    {
+      "id": "q-agent-harness-2026-11-27",
+      "title": "q-agent-harness",
+      "authors": "kju4q",
+      "source": "GitHub",
+      "url": "https://github.com/kju4q/q-agent-harness",
+      "type": "harness",
+      "dateAdded": "2026-11-27",
+      "summary": "Starter kit that packages maps, guardrails and feedback loops for reliable agent software shipping.",
+      "tags": [
+        "harness",
+        "starter",
+        "guardrails"
+      ],
+      "usecase": "Use it to clone a clean harness skeleton and add your own tools and verification before the first production run.",
+      "returning": false
+    },
+    {
+      "id": "anthropic-three-agent-harness-cost-breakdown-resurfaces-2026-11-27",
+      "title": "Anthropic three-agent harness cost breakdown resurfaces",
+      "authors": "i10X News",
+      "source": "i10x.ai",
+      "url": "https://i10x.ai/news/anthropic-harness-planner-generator-evaluator-cost-breakdown",
+      "type": "article",
+      "dateAdded": "2026-11-27",
+      "summary": "An eight-month-old Anthropic Labs post on planner-generator-evaluator harnesses is circulating again. Detailed logs show the evaluator consumed only about 8 percent of a $124 run while the generator took over 90 percent.",
+      "tags": [
+        "harness",
+        "cost",
+        "anthropic",
+        "essay"
+      ]
+    },
+    {
+      "id": "the-harness-daily-notes-tighter-gpt-6-2-limits-and-mcp-skill-loading-2026-11-27",
+      "title": "The Harness Daily notes tighter GPT-6.2 limits and MCP skill loading",
+      "authors": "Harness Hub",
+      "source": "harness-hub.org",
+      "url": "https://www.harness-hub.org/daily",
+      "type": "article",
+      "dateAdded": "2026-11-27",
+      "summary": "Friday edition covers Claude Code loading skills from MCP servers and reports that OpenAI cut GPT-6.2 usage so certain harnesses hit limits 25-40 percent faster. Community threads also debate sandbox side channels.",
+      "tags": [
+        "news",
+        "harness",
+        "mcp",
+        "limits"
+      ]
+    },
     {
       "id": "agent-harness-2026-11-26",
       "title": "agent-harness",
@@ -10723,90 +10807,6 @@
         "architecture",
         "essay"
       ]
-    },
-    {
-      "id": "harness-rebuilt-its-git-repository-for-nonstop-ai-agent-traffic-2026-09-15",
-      "title": "Harness rebuilt its Git repository for nonstop AI agent traffic",
-      "authors": "The New Stack",
-      "source": "The New Stack",
-      "url": "https://thenewstack.io/harness-ai-code-review/",
-      "type": "article",
-      "dateAdded": "2026-09-15",
-      "summary": "Engineering writeup on how agent-generated PR floods forced deeper Git and review pipeline changes. Covers why enterprises are loosening gates while still needing governance around agent traffic.",
-      "tags": [
-        "engineering",
-        "git",
-        "code-review"
-      ]
-    },
-    {
-      "id": "introducing-the-agents-api-2026-09-15",
-      "title": "Introducing the Agents API",
-      "authors": "OpenAI",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/introducing-the-agents-api/",
-      "type": "release",
-      "dateAdded": "2026-09-15",
-      "summary": "Product drop for a managed Agents API powered by the Codex harness for orchestration, long-running sessions, and tool use. Positions cloud agents as a launch path for teams that want hosted control without owning the full runtime.",
-      "tags": [
-        "release",
-        "api",
-        "cloud-agents"
-      ]
-    },
-    {
-      "id": "neo-2026-09-14",
-      "title": "Neo",
-      "authors": "owainlewis",
-      "source": "GitHub",
-      "url": "https://github.com/owainlewis/neo",
-      "type": "harness",
-      "dateAdded": "2026-09-14",
-      "summary": "Minimalist Go multi-agent coding harness with visible plans, parallel subagents, sandbox-first tools, and a single native binary.",
-      "tags": [
-        "go",
-        "multi-agent",
-        "coding-harness",
-        "sandbox"
-      ],
-      "usecase": "Use it to drive repo tasks from inspection through tests and review in one terminal without a heavy plugin stack.",
-      "returning": false
-    },
-    {
-      "id": "trellis-2026-09-14",
-      "title": "Trellis",
-      "authors": "mindfold-ai",
-      "source": "GitHub",
-      "url": "https://github.com/mindfold-ai/Trellis",
-      "type": "harness",
-      "dateAdded": "2026-09-14",
-      "summary": "Repo-native engineering harness that persists specs, task PRDs, journals, and multi-platform agent hooks so sessions stop starting from zero.",
-      "tags": [
-        "specs",
-        "memory",
-        "multi-platform",
-        "agentic-coding"
-      ],
-      "usecase": "Use it to inject scoped conventions and task context into any coding agent across a monorepo team.",
-      "returning": false
-    },
-    {
-      "id": "hive-2026-09-14",
-      "title": "Hive",
-      "authors": "aden-hive",
-      "source": "GitHub",
-      "url": "https://github.com/aden-hive/hive",
-      "type": "harness",
-      "dateAdded": "2026-09-14",
-      "summary": "Production multi-agent runtime where a Queen pilots work then fans out worker clones with crash-safe state, cost limits, and human oversight.",
-      "tags": [
-        "colonies",
-        "production",
-        "HITL",
-        "multi-agent"
-      ],
-      "usecase": "Use it to turn a business outcome into a colony of long-running agents with shared ledger and park/resume.",
-      "returning": false
     }
   ]
 }
